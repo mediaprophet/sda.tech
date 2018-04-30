@@ -862,21 +862,62 @@ hr {
   display: inline-block;
   margin-right: 24px;
 }
-// Job
 
-.job-contents{
+// Job
+.job-contents, .course-guide-main{
   text-align: left;
   h3 {
     font-weight: bold;
   }
 
+  a {
+    color: $purple-sda-color !important;
+    padding: 0px !important;
+  }
+
+  a:hover{
+    text-decoration: none !important;
+    color: $blue-sda-color !important;
+    transition: transparent !important;
+
+  }
+
+
+     a.active {
+      background-color: #f5f5f5 !important;
+     }
+
+     a:hover:not(.active) {background-color: #f5f5f5 !important; }
+
 }
 
-.jobDescription{
+.groupLink {
+  a {
+    color: $purple-sda-color !important;
+    padding: 0px !important;
+  }
+
+  a:hover{
+    text-decoration: none !important;
+    color: $blue-sda-color !important;
+    transition: transparent !important;
+
+  }
+
+
+     a.active {
+      background-color: transparent !important;
+     }
+
+     a:hover:not(.active) {background-color: transparent !important; }
+
+}
+
+.jobDescription, .course-desc{
   padding: 40px;
 }
 
-.jobRef{
+.jobRef {
 
    color: $purple-sda-color !important;
    padding: 0px !important;
@@ -884,9 +925,13 @@ hr {
    &:hover {
      text-decoration: none !important;
      color: $blue-sda-color !important;
+     transition: transparent !important;
+
    }
 
 }
+
+
 
 .status-projects {
   width: 100%;
@@ -1185,4 +1230,12 @@ button::-moz-focus-inner {
 	font-size: 1.15em !important;
 	text-rendering: optimizeLegibility !important;
 	-webkit-font-smoothing: antialiased !important;
+}
+
+// clear CSS
+.transitionClear {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important ;
 }

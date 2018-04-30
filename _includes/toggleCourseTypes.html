@@ -6,7 +6,9 @@
     document.getElementById('winter').classList.remove('active');
     document.getElementById('allCourses').style.display = 'none';
     document.getElementById('old').classList.remove('active');
-
+    document.getElementById('guidelines').style.display = 'none';
+    document.getElementById('courseguide').classList.remove('active');
+    // history.pushState(null, null, '/ss/');
   }
 
   function activeWinterCourses() {
@@ -16,6 +18,10 @@
     document.getElementById('winter').classList.add('active');
     document.getElementById('allCourses').style.display = 'none';
     document.getElementById('old').classList.remove('active');
+    document.getElementById('guidelines').style.display = 'none';
+    document.getElementById('courseguide').classList.remove('active');
+    // history.pushState(null, null, '/ws/');
+
   }
 
   function allOldCourses() {
@@ -25,5 +31,23 @@
     document.getElementById('winter').classList.remove('active');
     document.getElementById('allCourses').style.display = 'block';
     document.getElementById('old').classList.add('active');
+    document.getElementById('guidelines').style.display = 'none';
+    document.getElementById('courseguide').classList.remove('active');
+    // history.pushState(null, null, '/archivedcourses/');
+
   }
+
+  function activeGeneralGuide(){
+    document.getElementById('summerCourses').style.display = 'none';
+    document.getElementById('summer').classList.remove('active');
+    document.getElementById('winterCourses').style.display = 'none';
+    document.getElementById('winter').classList.remove('active');
+    document.getElementById('allCourses').style.display = 'none';
+    document.getElementById('old').classList.remove('active');
+    document.getElementById('guidelines').style.display = 'block';
+    document.getElementById('courseguide').classList.add('active');
+    // history.pushState(null, null, '/courseguidelines/');
+
+  }
+
 </script>

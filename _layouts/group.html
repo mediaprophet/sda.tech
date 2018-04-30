@@ -10,41 +10,43 @@ layout: default
     <article class="post">
       <div class="pagination">
         <div class="post-content">
-          <br class="horizontal-separator" />
-          <h2 style="text-align:center;"><i class="{{ page.rdf | rdf_property: 'sda:imageclass'}}"></i> {{ page.rdf | rdf_property: 'rdfs:label'}}</h2>
-          <br class="horizontal-separator2" />
-          <div class="description-project">
-            <p>{{ page.rdf | rdf_property: 'dct:description'}}</p>
-          </div>
-          <br class="horizontal-separator" />
-          <div class="members-projects">
-            <h3>Members</h3>
-            <div class="membersofProject">
-              {% for result in resultset2 %} {% assign url= result.person | remove: "http://sda.tech/" %}
-              <!-- <img src="{{result.image}}" style="width:48px;height:48px;border-radius:50%;display:block;margin:0 auto;">
-              <a href="../{{url}}"><h4>{{result.personname}}</h4></a> -->
-              <div class="chip">
-                <img src="{{result.image}}" alt="Person" width="96" height="96">
-                <a href="../{{url}}">{{result.personname}}</a>
-              </div>
+          <div class="container groupLink">
+            <br class="horizontal-separator" />
+            <h2 style="text-align:center;"><i class="{{ page.rdf | rdf_property: 'sda:imageclass'}}"></i> {{ page.rdf | rdf_property: 'rdfs:label'}}</h2>
+            <br class="horizontal-separator2" />
+            <div class="description-project">
+              <p>{{ page.rdf | rdf_property: 'dct:description'}}</p>
+            </div>
+            <br class="horizontal-separator" />
+            <div class="members-projects">
+              <h3>Members</h3>
+              <div class="membersofProject">
+                {% for result in resultset2 %} {% assign url= result.person | remove: "http://sda.tech/" %}
+                <!-- <img src="{{result.image}}" style="width:48px;height:48px;border-radius:50%;display:block;margin:0 auto;">
+                <a href="../{{url}}"><h4>{{result.personname}}</h4></a> -->
+                <div class="chip">
+                  <img src="{{result.image}}" alt="Person" width="96" height="96">
+                  <a href="../../{{url}}">{{result.personname}}</a>
+                </div>
 
-              {% endfor %}
-            </div>
-            <br class="horizontal-separator2" />
-            <br class="horizontal-separator2" />
-            <h3>Projects</h3>
-            <div class="partnersOfProject">
-              {% for result in resultset %} {% assign url= result.projects | remove: "http://sda.tech/" %}
-              <div class="chip">
-                <img src="{{result.image}}" alt="Person" width="96" height="96">
-                <a href="../{{url}}">{{result.projectname}}</a>
+                {% endfor %}
               </div>
-              {% endfor %}
+              <br class="horizontal-separator2" />
+              <br class="horizontal-separator2" />
+              <h3>Projects</h3>
+              <div class="partnersOfProject">
+                {% for result in resultset %} {% assign url= result.projects | remove: "http://sda.tech/" %}
+                <div class="chip">
+                  <img src="{{result.image}}" alt="Person" width="96" height="96">
+                  <a href="../../{{url}}">{{result.projectname}}</a>
+                </div>
+                {% endfor %}
+              </div>
             </div>
+            <br class="horizontal-separator2" />
+            <h3>Publications</h3>
+            <br class="horizontal-separator" />
           </div>
-          <br class="horizontal-separator2" />
-          <h3>Publications</h3>
-          <br class="horizontal-separator" />
         </div>
       </div>
     </article>

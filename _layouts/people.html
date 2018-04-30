@@ -4,10 +4,14 @@ layout: default
 ---
 {% include togglePeopleTypes.html %}
 <div class="pagination">
-  {% for people in site.data.peopleTypes %} {% assign p = people.name %} {% if site.activePeople == p %}
-  <a href="#" id="{{people.name | remove: " " }}" class="active responsiveTabItem" onclick="changeActivePersons('{{people.name}}')"><i class="{{people.class}}" aria-hidden="true"></i>
-     {{people.name}}</a> {% else %}
-  <a href="#" id="{{people.name | remove: " " }}" class="responsiveTabItem" onclick="changeActivePersons('{{people.name}}')"><i class="{{people.class}}" aria-hidden="true"></i> {{people.name}}</a> {% endif%} {% endfor %}
+  {% for people in site.data.peopleTypes %} {% assign p = people.name %}
+    {% if p  == "Student Assistants" %}
+      <br class="breakpoint-pagination"/><br class="breakpoint-pagination"/>
+    {% endif %}
+    {% if site.activePeople == p %}
+    <a href="#" id="{{people.name | remove: " " }}" class="active responsiveTabItem" onclick="changeActivePersons('{{people.name}}')"><i class="{{people.class}}" aria-hidden="true"></i>
+       {{people.name}}</a> {% else %}
+    <a href="#" id="{{people.name | remove: " " }}" class="responsiveTabItem" onclick="changeActivePersons('{{people.name}}')"><i class="{{people.class}}" aria-hidden="true"></i> {{people.name}}</a> {% endif%} {% endfor %}
   <br/><br/>
   <hr class="ruleh" />
 </div>
