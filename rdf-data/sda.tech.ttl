@@ -160,7 +160,7 @@ sdaperson:HamedShariatYazdi a foaf:Person, sdatech:seniorResearcher ;
                   foaf:familyName "Shariat Yazdi" ;
                   foaf:name "Dr. Hamed Shariat Yazdi" ;
                   foaf:mbox <mailto:shariat@cs.uni-bonn.de> ;
-                  foaf:depiction <https://media.licdn.com/media/AAMAAgDuAAgAAQAAAAAAABBwAAAAJDIzMDNiNDg0LTk5ZTctNGRjOC1hNDg3LWQ3YjQ0NTYzZWE4Mw.bin> ;
+                  foaf:depiction <http://www.clker.com/cliparts/d/L/P/X/z/i/no-image-icon-md.png> ;
                   foaf:phone <tel:+49-341-123456789> ;
                   foaf:title "Dr. " ;
                   foaf:status "Senior Researcher" ;
@@ -1305,7 +1305,7 @@ sdaperson:AsifKhan a foaf:Person, sdatech:studentAssistant ;
                    foaf:name "Asif Khan" ;
                    foaf:nick "ASif" ;
                    foaf:mbox <mailto:mak4086@gmail.com> ;
-                   foaf:depiction <https://media.licdn.com/media/AAMABADuAAgAAQAAAAAAABG8AAAAJGFkODcwZDUzLTk2YmYtNDM4OC1iMzYzLTlhYTZiMDQxNjhjMg.bin> ;
+                   foaf:depiction <http://www.clker.com/cliparts/d/L/P/X/z/i/no-image-icon-md.png> ;
                    foaf:phone "" ;
                    foaf:firstName "Asif" ;
                    foaf:title "" ;
@@ -1325,7 +1325,7 @@ sdaperson:PiyushChawla a foaf:Person, sdatech:studentAssistant ;
                    foaf:name "Piyush Chawla" ;
                    foaf:nick "Piyush" ;
                    foaf:mbox <mailto:f2014120@hyderabad.bits-pilani.ac.in> ;
-                   foaf:depiction <https://media.licdn.com/dms/image/C5603AQGnQcdyBb-FqA/profile-displayphoto-shrink_800_800/0?e=1528711200&v=beta&t=oKt4RQyFW-dFPri2Hzjy8kdY-OqLRAAgYsR_gQdHv0k> ;
+                   foaf:depiction <http://www.clker.com/cliparts/d/L/P/X/z/i/no-image-icon-md.png> ;
                    foaf:phone "" ;
                    foaf:firstName "Piyush" ;
                    foaf:title "" ;
@@ -2645,109 +2645,9 @@ ex:SemanticDataWebTechnologies a ex:course ;
                                ex:language "English" ;
                                ex:summer2017 "Summer Semester 2017" .
 
-ex:WAVE a ex:project ;
-        rdfs:label "WAVE is a Project" ;
-        foaf:Person ex:OliverOctopus, ex:AlfredEel ;
-        foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
-        ex:description "The power of the Qrowd combines with RDF" ;
-        ex:longdescription "QROWD offers local government and transportation businesses innovative solutions to improve mobility, reduce traffic congestion and make navigation safer and more efficient. QROWD will integrate different sources of data – maximizing the value of Big Data in planning and managing urban traffic and mobility." ;
-        ex:twitter "" ;
-        ex:homepage "" ;
-        ex:source "" ;
-        ex:download "" ;
-        ex:partners ex:agroknow ;
-        ex:incubator "Incubator Project" .
-
-ex:SHORE a ex:project ;
-        rdfs:label "WAVE" ;
-        foaf:Person ex:OliverOctopus, ex:AlfredEel ;
-        foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
-        ex:description "The power of the Qrowd combines with RDF" ;
-        ex:longdescription "QROWD offers local government and transportation businesses innovative solutions to improve mobility, reduce traffic congestion and make navigation safer and more efficient. QROWD will integrate different sources of data – maximizing the value of Big Data in planning and managing urban traffic and mobility." ;
-        ex:twitter "" ;
-        ex:homepage "" ;
-        ex:source "" ;
-        ex:download "" ;
-        ex:partners ex:agroknow ;
-        ex:incubator "Incubator Project" .
-
-ex:CORALS a ex:project ;
-        rdfs:label "WAVE" ;
-        foaf:Person ex:OliverOctopus, ex:AlfredEel ;
-        foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
-        ex:description "The power of the Qrowd combines with RDF" ;
-        ex:longdescription "QROWD offers local government and transportation businesses innovative solutions to improve mobility, reduce traffic congestion and make navigation safer and more efficient. QROWD will integrate different sources of data – maximizing the value of Big Data in planning and managing urban traffic and mobility." ;
-        ex:twitter "" ;
-        ex:homepage "" ;
-        ex:source "" ;
-        ex:download "" ;
-        ex:partners ex:agroknow ;
-        ex:incubator "Incubator Project" .
-
-ex:abc a ex:thesisItem ;
-       rdfs:label "Distributed in-memory Processig" ;
-       foaf:Person ex:OliverOctopus, ex:AlfredEel ;
-       ex:longdescription "SPARQL queriessearch for specified patterns in RDF data using triple patterns as building blocks. Although many different solutions for efficient querying have been proposed in the past. We want to explore the novel tensor based RDF representations and use them for fast and scalable Querying on large scale cluster. We will use a computational in-memory framework for distributed SPARQL query answering,based on the notion of degree of freedom of a triple. This algorithm relies on a general model of RDF graph based on the firstprinciples of linear algebra, in particular ontensorial calculus." ;
-       ex:homepage "http://ai4bd.com/?page_id=4" ;
-       ex:level "Bachelors,Master" ;
-       ex:open "Open" .
-
-ex:bad a ex:teaching ;
-       rdfs:label "bad" ;
-       ex:description "The future of SHared Ontology REfining for enterprise business" ;
-       ex:longdescription "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla suscipit nulla vel mollis. Aliquam erat volutpat. Nam et aliquam nisl. Ut sit amet pellentesque elit. Praesent sagittis tempus accumsan. In a nisi orci. Nullam at sagittis dolor. Sed nec auctor tellus. Phasellus ac magna ac mi posuere molestie. Integer dapibus venenatis nisl eget eleifend. Fusce ut pulvinar ipsum. Nulla elementum erat elit, et tempor massa aliquet vel. Vestibulum metus enim, tempus sed ligula et, pellentesque auctor lacus. Vivamus vel elit non justo rutrum ullamcorper vel et massa. Duis libero nisi, porta ullamcorper justo eu, imperdiet mattis ex. Fusce rhoncus. " .
-
-
-ex:comfort a ex:teaching ;
-           rdfs:label "comfort" ;
-           ex:description "The future of SHared Ontology REfining for enterprise business" ;
-           ex:longdescription "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla suscipit nulla vel mollis. Aliquam erat volutpat. Nam et aliquam nisl. Ut sit amet pellentesque elit. Praesent sagittis tempus accumsan. In a nisi orci. Nullam at sagittis dolor. Sed nec auctor tellus. Phasellus ac magna ac mi posuere molestie. Integer dapibus venenatis nisl eget eleifend. Fusce ut pulvinar ipsum. Nulla elementum erat elit, et tempor massa aliquet vel. Vestibulum metus enim, tempus sed ligula et, pellentesque auctor lacus. Vivamus vel elit non justo rutrum ullamcorper vel et massa. Duis libero nisi, porta ullamcorper justo eu, imperdiet mattis ex. Fusce rhoncus. " .
-
-
-ex:disSparql a ex:thesisItem ;
-             rdfs:label "Distributed in-memory SPARQL Processing" ;
-             foaf:Person ex:OliverOctopus, ex:AlfredEel ;
-             ex:longdescription "SPARQL queriessearch for specified patterns in RDF data using triple patterns as building blocks. Although many different solutions for efficient querying have been proposed in the past. We want to explore the novel tensor based RDF representations and use them for fast and scalable Querying on large scale cluster. We will use a computational in-memory framework for distributed SPARQL query answering,based on the notion of degree of freedom of a triple. This algorithm relies on a general model of RDF graph based on the firstprinciples of linear algebra, in particular ontensorial calculus." ;
-             ex:homepage "http://ai4bd.com/?page_id=4" ;
-             ex:level "Bachelors,Master" ;
-             ex:open "Open" .
-
-ex:easy a ex:teaching ;
-        rdfs:label "easy" ;
-        ex:description "The future of SHared Ontology REfining for enterprise business" ;
-        ex:longdescription "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla suscipit nulla vel mollis. Aliquam erat volutpat. Nam et aliquam nisl. Ut sit amet pellentesque elit. Praesent sagittis tempus accumsan. In a nisi orci. Nullam at sagittis dolor. Sed nec auctor tellus. Phasellus ac magna ac mi posuere molestie. Integer dapibus venenatis nisl eget eleifend. Fusce ut pulvinar ipsum. Nulla elementum erat elit, et tempor massa aliquet vel. Vestibulum metus enim, tempus sed ligula et, pellentesque auctor lacus. Vivamus vel elit non justo rutrum ullamcorper vel et massa. Duis libero nisi, porta ullamcorper justo eu, imperdiet mattis ex. Fusce rhoncus. " .
-
-ex:entRes a ex:thesisItem ;
-          rdfs:label "Entity Resolution of Unfinished topics" ;
-          foaf:Person ex:OliverOctopus, ex:AlfredEel ;
-          ex:longdescription "Entity resolution is the task of identifying all mentions that represent the same real-world entity within a knowledge base or across multiple knowledge bases. We address the problem of performing entity resolution on RDF graphs containing multiple types of nodes, using the links between instances of different types to improve the accuracy." ;
-          ex:homepage "http://ai4bd.com/?page_id=4" ;
-          ex:level "B,M" ;
-          ex:closed "Closed" .
-
-ex:entResOne a ex:thesisItem ;
-             rdfs:label "Entity Resolution of Closed Subjects" ;
-             foaf:Person ex:OliverOctopus, ex:AlfredEel ;
-             ex:longdescription "Entity resolution is the task of identifying all mentions that represent the same real-world entity within a knowledge base or across multiple knowledge bases. We address the problem of performing entity resolution on RDF graphs containing multiple types of nodes, using the links between instances of different types to improve the accuracy." ;
-             ex:homepage "http://ai4bd.com/?page_id=4" ;
-             ex:level "B,M" ;
-             ex:closed "Closed" .
-
-ex:entityRes a ex:thesisItem ;
-             rdfs:label "Entity Resolution of particular Topics" ;
-             foaf:Person ex:OliverOctopus, ex:AlfredEel ;
-             ex:longdescription "Entity resolution is the task of identifying all mentions that represent the same real-world entity within a knowledge base or across multiple knowledge bases. We address the problem of performing entity resolution on RDF graphs containing multiple types of nodes, using the links between instances of different types to improve the accuracy." ;
-             ex:homepage "http://ai4bd.com/?page_id=4" ;
-             ex:level "B,M" ;
-             ex:closed "Closed" .
 
 sdatech:group a foaf:Document ;
          rdfs:label "Groups" .
-
-ex:inhouse a ex:job ;
-           rdfs:label "inhouse" ;
-           ex:description "The future of SHared Ontology REfining for enterprise business" ;
-           ex:longdescription "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla suscipit nulla vel mollis. Aliquam erat volutpat. Nam et aliquam nisl. Ut sit amet pellentesque elit. Praesent sagittis tempus accumsan. In a nisi orci. Nullam at sagittis dolor. Sed nec auctor tellus. Phasellus ac magna ac mi posuere molestie. Integer dapibus venenatis nisl eget eleifend. Fusce ut pulvinar ipsum. Nulla elementum erat elit, et tempor massa aliquet vel. Vestibulum metus enim, tempus sed ligula et, pellentesque auctor lacus. Vivamus vel elit non justo rutrum ullamcorper vel et massa. Duis libero nisi, porta ullamcorper justo eu, imperdiet mattis ex. Fusce rhoncus. " .
 
 sdatech:job a foaf:Document ;
        rdfs:label "Jobs" .
@@ -2776,25 +2676,8 @@ sdatech:contact a foaf:Document ;
 sdatech:blog a foaf:Document ;
       rdfs:label "Blog" .
 
-ex:linkeddata a ex:researchinterests ;
-              rdfs:label "linked data" ;
-              ex:description "The future of SHared Ontology REfining for enterprise business" ;
-              ex:longdescription "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla suscipit nulla vel mollis. Aliquam erat volutpat. Nam et aliquam nisl. Ut sit amet pellentesque elit. Praesent sagittis tempus accumsan. In a nisi orci. Nullam at sagittis dolor. Sed nec auctor tellus. Phasellus ac magna ac mi posuere molestie. Integer dapibus venenatis nisl eget eleifend. Fusce ut pulvinar ipsum. Nulla elementum erat elit, et tempor massa aliquet vel. Vestibulum metus enim, tempus sed ligula et, pellentesque auctor lacus. Vivamus vel elit non justo rutrum ullamcorper vel et massa. Duis libero nisi, porta ullamcorper justo eu, imperdiet mattis ex. Fusce rhoncus. " .
-
-ex:opendata a ex:researchinterests ;
-            rdfs:label "open data" ;
-            ex:description "The future of SHared Ontology REfining for enterprise business" ;
-            ex:longdescription "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla suscipit nulla vel mollis. Aliquam erat volutpat. Nam et aliquam nisl. Ut sit amet pellentesque elit. Praesent sagittis tempus accumsan. In a nisi orci. Nullam at sagittis dolor. Sed nec auctor tellus. Phasellus ac magna ac mi posuere molestie. Integer dapibus venenatis nisl eget eleifend. Fusce ut pulvinar ipsum. Nulla elementum erat elit, et tempor massa aliquet vel. Vestibulum metus enim, tempus sed ligula et, pellentesque auctor lacus. Vivamus vel elit non justo rutrum ullamcorper vel et massa. Duis libero nisi, porta ullamcorper justo eu, imperdiet mattis ex. Fusce rhoncus. " .
-
-ex:outhouse a ex:job ;
-            rdfs:label "outhouse" ;
-            ex:description "The future of SHared Ontology REfining for enterprise business" ;
-            ex:longdescription "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla suscipit nulla vel mollis. Aliquam erat volutpat. Nam et aliquam nisl. Ut sit amet pellentesque elit. Praesent sagittis tempus accumsan. In a nisi orci. Nullam at sagittis dolor. Sed nec auctor tellus. Phasellus ac magna ac mi posuere molestie. Integer dapibus venenatis nisl eget eleifend. Fusce ut pulvinar ipsum. Nulla elementum erat elit, et tempor massa aliquet vel. Vestibulum metus enim, tempus sed ligula et, pellentesque auctor lacus. Vivamus vel elit non justo rutrum ullamcorper vel et massa. Duis libero nisi, porta ullamcorper justo eu, imperdiet mattis ex. Fusce rhoncus. " .
-
 sdatech:partners a foaf:Document ;
             rdfs:label "Partners" .
-
-
 
 sdatech:people a foaf:Document ;
           rdfs:label "People" .
@@ -2828,9 +2711,9 @@ sdatech:masterthesis a foaf:Document ;
 sdatech:ongoingthesis a foaf:Document ;
           rdfs:label "On Going Thesis" .
 
-
-ex:thesisItem a ex:thesis ;
-              rdfs:label "Thesis Item" .
+###############################################
+###########Container Membership Nav############
+###############################################
 
 rdf:_1 a rdfs:ContainerMembershipProperty ;
        rdfs:label "1" .

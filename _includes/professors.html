@@ -9,7 +9,7 @@
     <div style="margin: 24px 0;">
       <a href="{{include.website}}" target="_blank"><i class="fa fa-globe"></i></a>
       <a href="{{include.linkedin}}" target="_blank"><i class="fa fa-linkedin"></i></a>
-      <a href="{{include.mailto}}" target="_blank"><i class="fa fa-envelope-o"></i></a>
+      <a href="mailto:{{include.mailto | remove: 'mailto' | encode_email }}" target="_blank"><i class="fa fa-envelope-o"></i></a>
    </div>
   </div>
 </div>

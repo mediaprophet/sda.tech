@@ -59,7 +59,7 @@ plugins:
   - jekyll-feed
   - jekyll-rdf
   - jekyll-twitter-plugin
-
+  - jekyll-email-protect
 
 #Configuration of jekyll-rdf in our template
 jekyll_rdf:
