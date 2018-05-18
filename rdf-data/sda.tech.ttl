@@ -134,6 +134,25 @@ sdaperson:AsjaFischer a foaf:Person, sdatech:seniorResearcher ;
                   sda:group sdagroup:DeepLearning .
                   #foaf:currentProject sdaproject: .
 
+sdaperson:MariaMaleshkova a foaf:Person, sdatech:seniorResearcher ;
+                  sda:publicationsTag "maleshkova" ;
+                  sda:room "1.065" ;
+                  foaf:firstName "Maria" ;
+                  foaf:familyName "Maleshkova" ;
+                  foaf:name "Dr. Maria Maleshkova" ;
+                  foaf:mbox <mailto:maria.maleshkova@cs.uni-bonn.de> ;
+                  foaf:depiction <https://media.licdn.com/dms/image/C4E03AQEve-K3TKlCTg/profile-displayphoto-shrink_800_800/0?e=1531958400&v=beta&t=YFrlE8qfWn3XZdDjghTtazXfRd9DpTQCK9PHf0LFvAI> ;
+                  foaf:phone <tel:+49-341-123456789> ;
+                  foaf:title "Dr. " ;
+                  foaf:status "Assistant Professor (Akademische Rätin)" ;
+                  sda:linkedin "https://www.linkedin.com/in/maleshkova/" ;
+                  ov:businessCard <http://aksw.org/vCard/Bonn> ;
+                  schema:location <http://sda.tech/Address/SDA> ;
+                  cv:aboutPerson "Dr. Maria Maleshkova is an Assistant Professor at the Computer Science Department III of the University of Bonn. Before, she was a postdoctoral researcher at the Karlsruhe Service Research Institute (KSRI) and the Institute of Applied Informatics and Formal Description Methods (AIFB) at the Karlsruhe Institute of Technology. Her research work covers the Web of Things (WoT) and semantics-based data integration topics as well as work in the area of the semantic description of Web APIs, RESTful services and their joint use with Linked Data. Prior to that, she was a Research Associate and a PhD student at the Knowledge Media Institute (KMi) at the Open University, where she worked on projects in the domain of SOA and Web Services." .
+                  #sda:publication sdapublication:Publication1 ;
+                  #sda:group sdagroup:DeepLearning .
+                  #foaf:currentProject sdaproject: .
+
 sdaperson:AlexanderKister a foaf:Person, sdatech:seniorResearcher ;
                   sda:publicationsTag "kister" ;
                   sda:room "A108" ;
