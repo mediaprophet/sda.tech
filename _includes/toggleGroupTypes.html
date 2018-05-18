@@ -6,24 +6,31 @@
     if (name == "{{site.data.groupTypes[0].name}}") {
       document.getElementById('dsa').style.display = 'inline-block';
       document.getElementById('DistributedSemanticAnalytics').classList.add('active');
+      history.pushState(null, null, '/Group/DistributedSemanticAnalytics/');
     } else if (name == "{{site.data.groupTypes[1].name}}") {
       document.getElementById('sqa').style.display = 'inline-block';
       document.getElementById('SemanticQuestionAnswering').classList.add('active');
+      history.pushState(null, null, '/Group/SemanticQuestionAnswering/');
     } else if (name == "{{site.data.groupTypes[2].name}}") {
       document.getElementById('sml').style.display = 'inline-block';
       document.getElementById('StructuredMachineLearning').classList.add('active');
+      history.pushState(null, null, '/Group/StructuredMachineLearning/');
     } else if (name == "{{site.data.groupTypes[3].name}}") {
       document.getElementById('dl').style.display = 'inline-block';
       document.getElementById('DeepLearning').classList.add('active');
+      history.pushState(null, null, '/Group/DeepLearning/');
     } else if (name == "{{site.data.groupTypes[4].name}}") {
       document.getElementById('sdm').style.display = 'inline-block';
       document.getElementById('SemanticDataManagement').classList.add('active');
+      history.pushState(null, null, '/Group/SemanticDataManagement/');
     } else if (name == "{{site.data.groupTypes[5].name}}") {
       document.getElementById('seds').style.display = 'inline-block';
       document.getElementById('SoftwareEngineeringforDataScience').classList.add('active');
+      history.pushState(null, null, '/Group/SoftwareEngineeringForDataScience/');
     } else if (name == "{{site.data.groupTypes[6].name}}") {
       document.getElementById('knv').style.display = 'inline-block';
       document.getElementById('KnowledgeExtractionandValidation').classList.add('active');
+      history.pushState(null, null, '/Group/KnowledgeExtractionAndValidation/');
     } else
       console.log("Invalid People Type Name");
   }

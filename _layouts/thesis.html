@@ -1,10 +1,13 @@
 ---
 rdf_prefix_path: sda.tech.pref
 layout: default
+toggleOnDiv: allThesis
+toggledURLTo: /thesis/bachelorthesis
 ---
 {% include toggleThesisTypes.html %}
 {% include toggleBachelorThesis.html %}
 {% include toggleMasterThesis.html %}
+{% include toggleInitialPageLink.html div=page.toggleOnDiv linkto=page.toggledURLTo %}
 
 <!--Querry to GET all the Contact Persons of the Thesis   -->
 {% capture query %} SELECT  ?thesis ?thesisTitle ?person ?personName ?personImage WHERE{

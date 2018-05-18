@@ -1,8 +1,11 @@
 ---
 rdf_prefix_path: sda.tech.pref
 layout: default
+toggleOnDiv: allProjects
+toggledURLTo: /job/akademischeJob/
 ---
 {%include toggleJobTypes.html%}
+{% include toggleInitialPageLink.html div=page.toggleOnDiv linkto=page.toggledURLTo %}
 <article class="post">
   {%include jobHeader.html active="akadRat"%}
   {%include jobContent.html active="akadRat"%}

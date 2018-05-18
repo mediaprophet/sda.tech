@@ -1,0 +1,11 @@
+<script>
+var linkTo = "{{include.linkto}}" ;
+var divId = "{{include.div}}";
+
+document.getElementById(divId).onload = toggleInitialLink();
+
+function toggleInitialLink() {
+  history.pushState(null, null, linkTo);
+}
+
+</script>

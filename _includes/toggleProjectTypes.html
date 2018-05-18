@@ -1,13 +1,24 @@
 <script>
-  function activeFundedProjects() {
-    document.getElementById('fundedProjects').style.display = 'block';
+
+  function clearAllProjectHeaders() {
     document.getElementById('funded').classList.add('active');
-    document.getElementById('openSourceProjects').style.display = 'none';
     document.getElementById('opensrc').classList.remove('active');
-    document.getElementById('incubatorProjects').style.display = 'none';
     document.getElementById('incubators').classList.remove('active');
-    document.getElementById('allProjects').style.display = 'none';
     document.getElementById('all').classList.remove('active');
+    document.getElementById('archprojects').classList.remove('active');
+  }
+
+  function clearAllProjectContents(){
+    document.getElementById('fundedProjects').style.display = 'none';
+    document.getElementById('openSourceProjects').style.display = 'none';
+    document.getElementById('incubatorProjects').style.display = 'none';
+    document.getElementById('allProjects').style.display = 'none';
+    document.getElementById('archProjectList').style.display = 'none';
+  }
+
+
+  function activeFundedProjects() {
+
   }
 
   function activeOpenSourceProjects() {
