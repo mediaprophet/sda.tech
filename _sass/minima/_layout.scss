@@ -11,7 +11,7 @@
   background-color: #ffffff; /* Modern Browsers */
   box-shadow: 8px 5px 4px rgba(224, 224, 224, 0.7);
   // Positioning context for the mobile navigation icon
-  // position: fixed;
+  position: fixed;
   width: 100%;
   overflow: hidden;
   z-index: 9999;
@@ -37,10 +37,10 @@
   background-color: darken(#ffffff, 30);
   text-align: right;
   vertical-align: middle;
-  // position: fixed;
+  position: fixed;
   width: 100%;
   overflow: hidden;
-  z-index: 9999;
+  z-index: 10000;
 
     a {
       display: inline-flex;
@@ -222,6 +222,7 @@
 
   .site-nav{
     z-index: 9999 !important;
+    position: fixed;
   }
 }
 
