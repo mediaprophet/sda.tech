@@ -11,7 +11,7 @@
   background-color: #ffffff; /* Modern Browsers */
   box-shadow: 8px 5px 4px rgba(224, 224, 224, 0.7);
   // Positioning context for the mobile navigation icon
-  position: fixed;
+  // position: fixed;
   width: 100%;
   overflow: hidden;
   z-index: 9999;
@@ -33,11 +33,11 @@
   border-bottom: 1px solid #e0e0e0;
   padding: 0px 0;
   color: $carbon-color;
-  height: 12px;
-  background-color: darken($red, 30);
+  height: 6px;
+  background-color: darken(#ffffff, 30);
   text-align: right;
   vertical-align: middle;
-  position: fixed;
+  // position: fixed;
   width: 100%;
   overflow: hidden;
   z-index: 9999;
@@ -76,6 +76,8 @@
   .nav-trigger {
       display: none;
   }
+
+
 
   .menu-icon {
     display: none;
@@ -216,6 +218,10 @@
     float: none;
     width: -webkit-calc(100% - (#{$spacing-unit} / 2));
     width:         calc(100% - (#{$spacing-unit} / 2));
+  }
+
+  .site-nav{
+    z-index: 9999 !important;
   }
 }
 
