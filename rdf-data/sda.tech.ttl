@@ -81,7 +81,7 @@ sdaperson:HajiraJabeen a foaf:Person, sdatech:seniorResearcher ;
                   rdfs:seeAlso <http://aksw.org/HajiraJabeen> ;
                   owl:sameAs <http://aksw.org/HajiraJabeen> ;
                   sda:publicationsTag "jabeen" ;
-                  sda:room "A108" ;
+                  sda:room "1.066" ;
                   foaf:firstName "Hajira" ;
                   foaf:familyName "Jabeen" ;
                   foaf:name "Dr. Hajira Jabeen" ;
@@ -100,7 +100,7 @@ sdaperson:HajiraJabeen a foaf:Person, sdatech:seniorResearcher ;
 
 sdaperson:GuenterKniesel a foaf:Person, sdatech:seniorResearcher ;
                   sda:publicationsTag "kniesel" ;
-                  sda:room "A107" ;
+                  sda:room "1.065" ;
                   foaf:firstName "Günter" ;
                   foaf:familyName "Kniesel" ;
                   foaf:name "Dr. Günter Kniesel" ;
@@ -117,7 +117,7 @@ sdaperson:GuenterKniesel a foaf:Person, sdatech:seniorResearcher ;
 
 sdaperson:AsjaFischer a foaf:Person, sdatech:seniorResearcher ;
                   sda:publicationsTag "fischer" ;
-                  sda:room "A108" ;
+                  sda:room "1.065" ;
                   foaf:firstName "Asja" ;
                   foaf:familyName "Fischer" ;
                   foaf:name "Dr. Asja Fischer" ;
@@ -174,7 +174,7 @@ sdaperson:AlexanderKister a foaf:Person, sdatech:seniorResearcher ;
 
 sdaperson:HamedShariatYazdi a foaf:Person, sdatech:seniorResearcher ;
                   sda:publicationsTag "yazdi" ;
-                  sda:room "A108" ;
+                  sda:room "1.066" ;
                   foaf:firstName "Hamed" ;
                   foaf:familyName "Shariat Yazdi" ;
                   foaf:name "Dr. Hamed Shariat Yazdi" ;
@@ -379,7 +379,7 @@ sdaperson:MohnishDubey a foaf:Person, sdatech:phdStudent ;
                    rdfs:seeAlso <http://aksw.org/MohnishDubey> ;
                    owl:sameAs <http://aksw.org/MohnishDubey> ;
                    sda:publicationsTag "dubey" ;
-                   sda:room "A123" ;
+                   sda:room "1.051" ;
                    foaf:familyName "Dubey" ;
                    foaf:name "Mohnish Dubey" ;
                    foaf:nick "Mohnish" ;
@@ -429,7 +429,7 @@ sdaperson:DiegoEsteves a foaf:Person, sdatech:phdStudent ;
                    rdfs:seeAlso <http://aksw.org/DiegoEsteves> ;
                    owl:sameAs <http://aksw.org/DiegoEsteves> ;
                    sda:publicationsTag "esteves" ;
-                   sda:room "A120" ;
+                   sda:room "1.068" ;
                    foaf:familyName "Esteves" ;
                    foaf:name "Diego Esteves" ;
                    foaf:nick "Diego" ;
@@ -452,7 +452,7 @@ sdaperson:DiegoEsteves a foaf:Person, sdatech:phdStudent ;
 
 sdaperson:FathoniMusyaffa a foaf:Person, sdatech:phdStudent ;
                    sda:publicationsTag "musyaffa" ;
-                   sda:room "A119" ;
+                   sda:room "1.068" ;
                    foaf:familyName "Musyaffa" ;
                    foaf:name "Fathoni A. Musyaffa" ;
                    foaf:nick "Fathoni" ;
@@ -472,7 +472,7 @@ sdaperson:FathoniMusyaffa a foaf:Person, sdatech:phdStudent ;
 
 sdaperson:MousaviNajmeh a foaf:Person, sdatech:phdStudent ;
                    sda:publicationsTag "mousavi" ;
-                   sda:room "A118" ;
+                   sda:room "1.068" ;
                    foaf:familyName "Mousavi Nejad" ;
                    foaf:name "Najmeh Mousavi Nejad" ;
                    foaf:nick "Najmeh" ;
@@ -492,7 +492,7 @@ sdaperson:MousaviNajmeh a foaf:Person, sdatech:phdStudent ;
 
 sdaperson:DebanjanChaudhuri a foaf:Person, sdatech:phdStudent ;
                    sda:publicationsTag "chaudhuri" ;
-                   sda:room "A120" ;
+                   sda:room "1.064" ;
                    foaf:familyName "Chaudhuri" ;
                    foaf:name "Debanjan Chaudhuri" ;
                    foaf:nick "Debanjan" ;
@@ -677,7 +677,7 @@ sdaperson:ShimaaIbrahim a foaf:Person, sdatech:phdStudent ;
 
 sdaperson:SaharVahdati a foaf:Person, sdatech:phdStudent ;
                    sda:publicationsTag "vahdati" ;
-                   sda:room "" ;
+                   sda:room "1.126" ;
                    foaf:familyName "Vahdati" ;
                    foaf:name "Sahar Vahdati" ;
                    foaf:nick "Sahar" ;
@@ -697,7 +697,7 @@ sdaperson:SaharVahdati a foaf:Person, sdatech:phdStudent ;
 
 sdaperson:ElisaMargarethSibarani a foaf:Person, sdatech:phdStudent ;
                    sda:publicationsTag "Sibarani" ;
-                   sda:room "" ;
+                   sda:room "1.068" ;
                    foaf:familyName "Sibarani" ;
                    foaf:name "Elisa Margareth Sibarani" ;
                    foaf:nick "Sibarani" ;
@@ -739,7 +739,7 @@ sdaperson:AfshinSadeghi a foaf:Person, sdatech:phdStudent ;
 
 sdaperson:IsaiahOnandoMulang a foaf:Person, sdatech:phdStudent ;
                    sda:publicationsTag "mulang" ;
-                   sda:room "" ;
+                   sda:room "1.068" ;
                    foaf:familyName "Onando Mulang'" ;
                    foaf:name "Isaiah Onando Mulang'" ;
                    foaf:nick "Isaiah" ;
@@ -759,7 +759,7 @@ sdaperson:IsaiahOnandoMulang a foaf:Person, sdatech:phdStudent ;
 
 sdaperson:DenisLukovnikov a foaf:Person, sdatech:phdStudent ;
                    sda:publicationsTag "lukovnikov" ;
-                   sda:room "" ;
+                   sda:room "1.064" ;
                    foaf:familyName "Lukovnikov" ;
                    foaf:name "Denis Lukovnikov" ;
                    foaf:nick "Denis" ;
@@ -1119,7 +1119,7 @@ sdaperson:VitalisWiens a foaf:Person, sdatech:associateReseracher ;
 
 sdaperson:JuliusKaufmann a foaf:Person, sdatech:studentAssistant ;
                    sda:publicationsTag "kaufmann" ;
-                   sda:room "" ;
+                   sda:room "Pool 1.055" ;
                    foaf:familyName "Kaufmann" ;
                    foaf:name "Julius Kaufmann" ;
                    foaf:nick "Julius" ;
@@ -1159,7 +1159,7 @@ sdaperson:NileshChakraborty a foaf:Person, sdatech:studentAssistant ;
 
 sdaperson:GauravMaheshwari a foaf:Person, sdatech:studentAssistant ;
                    sda:publicationsTag "maheshwari" ;
-                   sda:room "" ;
+                   sda:room "1.064" ;
                    foaf:familyName "Maheshwari" ;
                    foaf:name "Gaurav Maheshwari" ;
                    foaf:nick "Gaurav" ;
@@ -1179,7 +1179,7 @@ sdaperson:GauravMaheshwari a foaf:Person, sdatech:studentAssistant ;
 
 sdaperson:PriyanshTrivedi a foaf:Person, sdatech:studentAssistant ;
                    sda:publicationsTag "trivedi" ;
-                   sda:room "" ;
+                   sda:room "1.064" ;
                    foaf:familyName "Trivedi" ;
                    foaf:name "Priyansh Trivedi" ;
                    foaf:nick "Priyansh" ;
@@ -1279,7 +1279,7 @@ sdaperson:YersonRoa a foaf:Person, sdatech:studentAssistant ;
 
 sdaperson:DebayanBanerjee a foaf:Person, sdatech:studentAssistant ;
                    sda:publicationsTag "banerjee" ;
-                   sda:room "" ;
+                   sda:room "Pool 1.055" ;
                    foaf:familyName "Banerjee" ;
                    foaf:name "Debayan Banerjee" ;
                    foaf:nick "Debayan" ;
@@ -1299,7 +1299,7 @@ sdaperson:DebayanBanerjee a foaf:Person, sdatech:studentAssistant ;
 
 sdaperson:MingQu a foaf:Person, sdatech:studentAssistant ;
                    sda:publicationsTag "qu" ;
-                   sda:room "" ;
+                   sda:room "Pool 1.055" ;
                    foaf:familyName "Qu" ;
                    foaf:name "Ming Qu" ;
                    foaf:nick "Ming" ;
@@ -1319,7 +1319,7 @@ sdaperson:MingQu a foaf:Person, sdatech:studentAssistant ;
 
 sdaperson:AsifKhan a foaf:Person, sdatech:studentAssistant ;
                    sda:publicationsTag "khan" ;
-                   sda:room "" ;
+                   sda:room "Pool 1.055" ;
                    foaf:familyName "Khan" ;
                    foaf:name "Asif Khan" ;
                    foaf:nick "ASif" ;
@@ -1339,7 +1339,7 @@ sdaperson:AsifKhan a foaf:Person, sdatech:studentAssistant ;
 
 sdaperson:PiyushChawla a foaf:Person, sdatech:studentAssistant ;
                    sda:publicationsTag "chawla" ;
-                   sda:room "" ;
+                   sda:room "Pool 1.055" ;
                    foaf:familyName "Chawla" ;
                    foaf:name "Piyush Chawla" ;
                    foaf:nick "Piyush" ;
@@ -1377,6 +1377,25 @@ sdaperson:MehdiAli a foaf:Person, sdatech:studentAssistant ;
                    schema:location <http://sda.tech/Address/SDA> ;
                    cv:aboutPerson "Mehdi Ali is a Student Assistant at the Computer Science Department III of the University of Bonn." .
 
+sdaperson:AdrianBajraktari a foaf:Person, sdatech:studentAssistant ;
+                   sda:publicationsTag "bajraktari" ;
+                   sda:room "" ;
+                   foaf:familyName "Bajraktari" ;
+                   foaf:name "Adrian Bajraktari" ;
+                   foaf:nick "Adrian" ;
+                   foaf:mbox <mailto:nabu.adrian@gmail.com> ;
+                   foaf:depiction <https://scontent-frt3-2.xx.fbcdn.net/v/t1.0-9/31956129_994237480741085_1379931885072809984_n.jpg?_nc_cat=0&oh=ad3612c20acc62fb11ede546faf91f40&oe=5B85B06A> ;
+                   foaf:phone "" ;
+                   foaf:firstName "Adrian" ;
+                   foaf:title "" ;
+                   foaf:status "Student Assistant" ;
+                   sda:website "" ;
+                   sda:twitter "https://twitter.com/nachbuddler" ;
+                   sda:facebook "https://facebook.com/adrian.bajraktari.3" ;
+                   sda:github "" ;
+                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
+                   schema:location <http://sda.tech/Address/SDA> ;
+                   cv:aboutPerson "Adrian Bajraktari is a Student Assistant at the Computer Science Department III of the University of Bonn." .
 
 ##############################Interns####################################
 
@@ -2930,12 +2949,12 @@ sda:thesisLevel a owl:DatatypeProperty;
                   rdfs:label "Level of complexity of the thesis." .
 
 <http://sda.tech/Address/SDA> a schema:PostalAddress ;
-                                rdfs:label "Smart Data Analytics, Römerstraße 164, 53117 Bonn" ;
+                                rdfs:label "Smart Data Analytics, Endenicher Allee 19a, 53115 Bonn" ;
                                 schema:addressCountry "Germany" ;
                                 schema:addressLocality "Bonn" ;
                                 schema:postalCode "53117" ;
-                                schema:streetAddress "Römerstraße 164" ;
-                                sysont:range "164" ;
+                                schema:streetAddress "Endenicher Allee 19a" ;
+                                sysont:range "19a" ;
                                 geo:lat "50.7519185"^^xsd:float ;
                                 geo:long "7.0943671"^^xsd:float ;
                                 geo:geometry "POINT(7.0943671 50.7519185)" .
