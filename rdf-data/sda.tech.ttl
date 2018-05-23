@@ -1765,6 +1765,269 @@ sdaproject:LinDA a foaf:Project, sdatech:fundedProject ;
                  sda:status "active" ;
                  sda:partners sdapartner:UniversityOfAthens .
 
+sdaproject:BeIoT a foaf:Project, sdatech:fundedProject ;
+                 foaf:name "Be-IoT" ;
+                 rdfs:label "Be-IoT" ;
+                 ex:description "The business engine for IoT pilots: Turning the Internet of things in Europe into an economically successful and socially accepted vibrant ecosystem.";
+                 ex:longdescription "The business engine for IoT pilots: Turning the Internet of things in Europe into an economically successful and socially accepted vibrant ecosystem. The vision is to build a broad and vibrant ecosystem around the pilot projects that increase the collaboration between them, generates economic impact through new innovative business models and creates trust in the internet of things by transparent information about social challenges such as privacy and security implications. The vision will be reached by focussing on following objectives: support the collaboration and knowledge exchange between pilots and other relevant EU-projects (e.g. FIWARE), build the bridge between pilots and relevant stakeholders (e.g. potential customers such as European small and medium sized enterprises (SMEs), entrepreneurs and developers, but also researchers and policy makers) and thus expand the ecosystem further, set the ground for upcoming business building activities by creating awareness and also by facilitating and fostering societal acceptance (e.g. by running a variety of innovation activities). Building on the above mentioned developments this initiative will set the ground for the development of concrete new customer-oriented businesses based on the emerging pilots. Those business models will be derived through a proven systematic user centric ideation and validation process increasing the market acceptance and success rate of these business models. The emerging new businesses shall have a substantial economic impact in Europe.";
+                 foaf:member sdaperson:JensLehmann ;
+                 foaf:homepage <https://iot-epi.eu/> ;
+                 foaf:depiction <https://iot-epi.eu/wp-content/uploads/2016/09/logo-2.png> ;
+                 sda:funded "Funded Project" ;
+                 sda:twitter "https://twitter.com/IoT_EPI" ;
+                 sda:source "" ;
+                 sda:download "" ;
+                 sda:publicationTag "beiot" ;
+                 dct:abstract "The business engine for IoT pilots: Turning the Internet of things in Europe into an economically successful and socially accepted vibrant ecosystem.";
+                 #sdapartner:partner sdapartner:TomTomDevelopmentGermanyGmbHD, sdapartner:YellowMapD, sdapartner:Metaphacts ;
+                 doap:maintainer sda:JensLehmann ;
+                 #sda:relatedProject sdaproject:GeoKnow, sdaproject:SANSAStack ;
+                 #pf:endDate "2019-02-28"^^xsd:date ;
+                 #pf:startDate "2016-03-01"^^xsd:date ;
+                 #sdapublication:publication sdapublication:Publication1 ;
+                 sda:status "active" .
+
+sdaproject:DIACHRON a foaf:Project, sdatech:fundedProject ;
+                 foaf:name "DIACHRON" ;
+                 rdfs:label "DIACHRON" ;
+                 ex:description "Preserving the Evolving Data Web: Making Open / Linked Data Diachronic";
+                 ex:longdescription "Preserving the Evolving Data Web: Making Open / Linked Data Diachronic. DIACHRON intends to address and cope with certain issues arising from the evolution of the data such as: (a) Monitor the changes of LOD datasets (tracking the evolution); (b) Identify the cause of the evolution of the datasets in respect with the real world evolution of the entities the datasets describe (provenance problem); (c) Repair various data deficiencies (curation problem); (d)Temporal and spatial quality assessment of the harvested LOD datasets and determination of the datasets versions that need to be preserved (appraisal); (e) Archive multiple versions of data and cite them accordingly to make the reference of previous data feasible (archiving and citation); (f) Retrieve and query previous versions (time traveling queries) The DIACHRON solution aims not only to store previous versions for preservation in case of future need of them, but to create a live repository of the data that captures and highlights data evolution by keeping all data (current and previous) accessible, combined with a toolset that handles the full life cycle of the Data Web.";
+                 foaf:member sdaperson:JensLehmann ;
+                 foaf:homepage <http://www.diachron-fp7.eu/> ;
+                 foaf:depiction <http://www.diachron-fp7.eu/uploads/2/1/2/0/21208652/4006116.png?239> ;
+                 sda:funded "Funded Project" ;
+                 sda:twitter "https://twitter.com/DIACHRON_FP7" ;
+                 sda:source "" ;
+                 sda:download "" ;
+                 sda:publicationTag "diachron" ;
+                 dct:abstract "Preserving the Evolving Data Web: Making Open / Linked Data Diachronic";
+                 #sdapartner:partner sdapartner:TomTomDevelopmentGermanyGmbHD, sdapartner:YellowMapD, sdapartner:Metaphacts ;
+                 doap:maintainer sda:JensLehmann ;
+                 #sda:relatedProject sdaproject:GeoKnow, sdaproject:SANSAStack ;
+                 #pf:endDate "2019-02-28"^^xsd:date ;
+                 #pf:startDate "2016-03-01"^^xsd:date ;
+                 #sdapublication:publication sdapublication:Publication1 ;
+                 sda:status "active" .
+
+sdaproject:EDSA a foaf:Project, sdatech:fundedProject ;
+                 foaf:name "EDSA" ;
+                 rdfs:label "EDSA" ;
+                 ex:description "European Data Science Academy";
+                 ex:longdescription "The European Data Science Academy (EDSA) will establish a virtuous learning production cycle whereby we: a) analyse the required sector specific skillsets for data analysts across the main industrial sectors in Europe; b) develop modular and adaptable data science curricula to meet these needs; and c) deliver training supported by multi-platform and multilingual learning resources based on our curricula. The curricula and learning resources will be continuously evaluated by pedagogical and data science experts during both development and deployment.";
+                 foaf:member sdaperson:JensLehmann ;
+                 foaf:homepage <http://edsa-project.eu/> ;
+                 foaf:depiction <http://edsa-project.eu/edsa-data/themes/edsa/images/edsa-logo.png> ;
+                 sda:funded "Funded Project" ;
+                 sda:twitter "https://twitter.com/edsa_project" ;
+                 sda:source "" ;
+                 sda:download "" ;
+                 sda:publicationTag "edsa" ;
+                 dct:abstract "European Data Science Academy";
+                 #sdapartner:partner sdapartner:TomTomDevelopmentGermanyGmbHD, sdapartner:YellowMapD, sdapartner:Metaphacts ;
+                 doap:maintainer sda:JensLehmann ;
+                 #sda:relatedProject sdaproject:GeoKnow, sdaproject:SANSAStack ;
+                 #pf:endDate "2019-02-28"^^xsd:date ;
+                 #pf:startDate "2016-03-01"^^xsd:date ;
+                 #sdapublication:publication sdapublication:Publication1 ;
+                 sda:status "active" .
+
+sdaproject:LiDaKrA a foaf:Project, sdatech:fundedProject ;
+                 foaf:name "LiDaKrA" ;
+                 rdfs:label "LiDaKrA" ;
+                 ex:description "Linked-Data-basierte Kriminalanalyse (Linked Data based crime analysis)";
+                 ex:longdescription "The Web not only gives rise to new forms of crime, it also enables new technology for crime investigation. Suspects leave traces on the Web, items are being sold and bought on the Web, and a wealth of public open data about organizations and places is available on the Web. LiDaKrA aims at a holistic approach to extract, network and fuse crime-relevant information from public and private sources such as: the Web in general, the Social Web (social networks, blogs or wikis), Deep Web (eCommerce databases such as ebay or Amazon Marketplace), Dark Web (informations from the Tor network), Data Web (open data such as DBpedia or GeoNames). The technical components will be implemented in an integrated platform and will be evaluated in concrete use cases with multiple stakeholders from crime investigation authorities. ";
+                 foaf:member sdaperson:JensLehmann ;
+                 foaf:homepage <> ;
+                 foaf:depiction <> ;
+                 sda:funded "Funded Project" ;
+                 sda:twitter "" ;
+                 sda:source "" ;
+                 sda:download "" ;
+                 sda:publicationTag "lidakra" ;
+                 dct:abstract "Linked-Data-basierte Kriminalanalyse (Linked Data based crime analysis)";
+                 #sdapartner:partner sdapartner:TomTomDevelopmentGermanyGmbHD, sdapartner:YellowMapD, sdapartner:Metaphacts ;
+                 doap:maintainer sda:JensLehmann, sda:ChristophLange;
+                 #sda:relatedProject sdaproject:GeoKnow, sdaproject:SANSAStack ;
+                 #pf:endDate "2019-02-28"^^xsd:date ;
+                 #pf:startDate "2016-03-01"^^xsd:date ;
+                 #sdapublication:publication sdapublication:Publication1 ;
+                 sda:status "active" .
+
+sdaproject:LUCID a foaf:Project, sdatech:fundedProject ;
+                 foaf:name "LUCID" ;
+                 rdfs:label "LUCID" ;
+                 ex:description "LINKED VALUE CHAIN DATA";
+                 ex:longdescription "LUCID is a BMBF funded 2-year project which will change the way how partners in supply chain networks will communicate with each other. In LUCID we research and develop on Linked Data technologies in order to allow partners in supply chains to describe their work, their company and their products for other participants. This allows for building distributed networks of supply chain partners on the Web without a centralized infrastructure. LUCID is funded by the german Federal Ministry of Education and Research (BMBF) in KMU-innovativ: Informations- und Kommunikationstechnologien initiative, which part of the IKT 2020 - Forschung für Innovation funding programme.";
+                 foaf:member sdaperson:JensLehmann ;
+                 foaf:homepage <https://www.lucid-project.org/> ;
+                 foaf:depiction <https://www.lucid-project.org/static/img/logo-www.lucid-project.org.png> ;
+                 sda:funded "Funded Project" ;
+                 sda:twitter "" ;
+                 sda:source "" ;
+                 sda:download "" ;
+                 sda:publicationTag "lucid" ;
+                 dct:abstract "LINKED VALUE CHAIN DATA";
+                 #sdapartner:partner sdapartner:TomTomDevelopmentGermanyGmbHD, sdapartner:YellowMapD, sdapartner:Metaphacts ;
+                 doap:maintainer sda:JensLehmann;
+                 #sda:relatedProject sdaproject:GeoKnow, sdaproject:SANSAStack ;
+                 #pf:endDate "2019-02-28"^^xsd:date ;
+                 #pf:startDate "2016-03-01"^^xsd:date ;
+                 #sdapublication:publication sdapublication:Publication1 ;
+                 sda:status "active" .
+
+sdaproject:ODINE a foaf:Project, sdatech:fundedProject ;
+                 foaf:name "ODINE" ;
+                 rdfs:label "ODINE" ;
+                 ex:description "Open Data Incubator for Europe";
+                 ex:longdescription "The first Open Data Incubator for Europe. Europe is supporting the next generation of digital businesses. The Open Data Incubator for Europe (ODINE) is part of that support - it helps European citizens build sustainable businesses using open data. It will offer up to €100.000 and will set up an environment and EU-wide network, including business angels, VCs and funding agencies, to support small and medium enterprises and startups in creating commercial value from open data.";
+                 foaf:member sdaperson:JensLehmann ;
+                 foaf:homepage <https://opendataincubator.eu/> ;
+                 foaf:depiction <https://opendataincubator.eu/files/2016/01/logo.svg> ;
+                 sda:funded "Funded Project" ;
+                 sda:twitter "https://twitter.com/ODincubator" ;
+                 sda:source "" ;
+                 sda:download "" ;
+                 sda:publicationTag "odine" ;
+                 dct:abstract "Open Data Incubator for Europe";
+                 #sdapartner:partner sdapartner:TomTomDevelopmentGermanyGmbHD, sdapartner:YellowMapD, sdapartner:Metaphacts ;
+                 doap:maintainer sda:JensLehmann;
+                 #sda:relatedProject sdaproject:GeoKnow, sdaproject:SANSAStack ;
+                 #pf:endDate "2019-02-28"^^xsd:date ;
+                 #pf:startDate "2016-03-01"^^xsd:date ;
+                 #sdapublication:publication sdapublication:Publication1 ;
+                 sda:status "active" .
+
+sdaproject:OpenAIRE2020 a foaf:Project, sdatech:fundedProject ;
+                 foaf:name "OpenAIRE2020" ;
+                 rdfs:label "OpenAIRE2020" ;
+                 ex:description "Open access infrastructure for research in Europe to manage and monitor the outcomes of European funded research.";
+                 ex:longdescription "OpenAIRE2020 represents a pivotal phase in the long-term effort to implement and strengthen the impact of the Open Access policies of the European Commission, building on the achievements of the OpenAIRE projects. OpenAIRE2020 will expand and leverage its focus from (1) the agents and resources of scholarly communication to workflows and processes, (2) from publications to data, software, and other research outputs, and the links between them, and (3) strengthen the relationship of European Open Access infrastructures with other regions of the world, in particular Latin America and the U.S. Through these efforts OpenAIRE2020 will truly support and accelerate Open Science and Scholarship, of which Open Access is of fundamental importance.";
+                 foaf:member sdaperson:JensLehmann ;
+                 foaf:homepage <https://openaire.eu/> ;
+                 foaf:depiction <https://www.openaire.eu/images/site_images/Logo_Vertical.png> ;
+                 sda:funded "Funded Project" ;
+                 sda:twitter "https://twitter.com/OpenAIRE_eu" ;
+                 sda:source "" ;
+                 sda:download "" ;
+                 sda:publicationTag "openaire" ;
+                 dct:abstract "Open Data Incubator for Europe";
+                 #sdapartner:partner sdapartner:TomTomDevelopmentGermanyGmbHD, sdapartner:YellowMapD, sdapartner:Metaphacts ;
+                 doap:maintainer sda:JensLehmann;
+                 #sda:relatedProject sdaproject:GeoKnow, sdaproject:SANSAStack ;
+                 #pf:endDate "2019-02-28"^^xsd:date ;
+                 #pf:startDate "2016-03-01"^^xsd:date ;
+                 #sdapublication:publication sdapublication:Publication1 ;
+                 sda:status "active" .
+
+sdaproject:OpenBudgetseu a foaf:Project, sdatech:fundedProject ;
+                 foaf:name "OpenBudgets.eu" ;
+                 rdfs:label "OpenBudgets.eu" ;
+                 ex:description "The OpenBudgets.eu project aims to provide a generic framework and concrete tools for supporting financial transparency, thus enhancing accountability within public administrations and reducing the possibility of corruption. A key challenge for OpenBudgets.eu is to provide a framework that is scalable, easy-to-use, flexible, and attractive. We will apply the project concept to three pilot scenarios targeting three different applications related to public spending: journalism, transparency initiatives and citizenship engagement. This project will involve various stakeholders, including but not limited to public administrations, citizens, NGOs, media organisations and public service companies.";
+                 ex:longdescription "The OpenBudgets.eu project aims to provide a generic framework and concrete tools for supporting financial transparency, thus enhancing accountability within public administrations and reducing the possibility of corruption. A key challenge for OpenBudgets.eu is to provide a framework that is scalable, easy-to-use, flexible, and attractive. We will apply the project concept to three pilot scenarios targeting three different applications related to public spending: journalism, transparency initiatives and citizenship engagement. This project will involve various stakeholders, including but not limited to public administrations, citizens, NGOs, media organisations and public service companies.";
+                 foaf:member sdaperson:JensLehmann ;
+                 foaf:homepage <> ;
+                 foaf:depiction <https://pbs.twimg.com/profile_images/654638053290602500/9XhCpjrM_400x400.png> ;
+                 sda:funded "Funded Project" ;
+                 sda:twitter "https://twitter.com/openbudgetseu" ;
+                 sda:source "" ;
+                 sda:download "" ;
+                 sda:publicationTag "openbudgets" ;
+                 dct:abstract "";
+                 #sdapartner:partner sdapartner:TomTomDevelopmentGermanyGmbHD, sdapartner:YellowMapD, sdapartner:Metaphacts ;
+                 doap:maintainer sda:JensLehmann;
+                 #sda:relatedProject sdaproject:GeoKnow, sdaproject:SANSAStack ;
+                 #pf:endDate "2019-02-28"^^xsd:date ;
+                 #pf:startDate "2016-03-01"^^xsd:date ;
+                 #sdapublication:publication sdapublication:Publication1 ;
+                 sda:status "active" .
+
+sdaproject:OSCOSS a foaf:Project, sdatech:fundedProject ;
+                 foaf:name "OSCOSS" ;
+                 rdfs:label "OSCOSS" ;
+                 ex:description "A shared platform for Opening Scholarly Communication in the Social Sciences.";
+                 ex:longdescription "OSCOSS is concerned with Opening Scholarly Communication in the Social Sciences.";
+                 foaf:member sdaperson:JensLehmann ;
+                 foaf:homepage <> ;
+                 foaf:depiction <> ;
+                 sda:funded "Funded Project" ;
+                 sda:twitter "" ;
+                 sda:source "" ;
+                 sda:download "" ;
+                 sda:publicationTag "oscoss" ;
+                 dct:abstract "A shared platform for Opening Scholarly Communication in the Social Sciences.";
+                 #sdapartner:partner sdapartner:TomTomDevelopmentGermanyGmbHD, sdapartner:YellowMapD, sdapartner:Metaphacts ;
+                 doap:maintainer sda:JensLehmann;
+                 #sda:relatedProject sdaproject:GeoKnow, sdaproject:SANSAStack ;
+                 #pf:endDate "2019-02-28"^^xsd:date ;
+                 #pf:startDate "2016-03-01"^^xsd:date ;
+                 #sdapublication:publication sdapublication:Publication1 ;
+                 sda:status "active" .
+
+sdaproject:SeReCo a foaf:Project, sdatech:fundedProject ;
+                 foaf:name "SeReCo" ;
+                 rdfs:label "SeReCo" ;
+                 ex:description "SeReCo (Semantics, Coordination and Reasoning) is a German-French doctoral college. Its scientific purpose of SeReCo is to explore the spectrum of technologies related to semantics, reasoning and coordination in distributed and open environments (such as the Web).";
+                 ex:longdescription "SeReCo (Semantics, Coordination and Reasoning) is a German-French doctoral college. Its scientific purpose of SeReCo is to explore the spectrum of technologies related to semantics, reasoning and coordination in distributed and open environments (such as the Web).";
+                 foaf:member sdaperson:JensLehmann ;
+                 foaf:homepage <https://sereco.univ-st-etienne.fr/> ;
+                 foaf:depiction <> ;
+                 sda:funded "Funded Project" ;
+                 sda:twitter "" ;
+                 sda:source "" ;
+                 sda:download "" ;
+                 sda:publicationTag "sereco" ;
+                 dct:abstract "";
+                 #sdapartner:partner sdapartner:TomTomDevelopmentGermanyGmbHD, sdapartner:YellowMapD, sdapartner:Metaphacts ;
+                 doap:maintainer sda:JensLehmann;
+                 #sda:relatedProject sdaproject:GeoKnow, sdaproject:SANSAStack ;
+                 #pf:endDate "2019-02-28"^^xsd:date ;
+                 #pf:startDate "2016-03-01"^^xsd:date ;
+                 #sdapublication:publication sdapublication:Publication1 ;
+                 sda:status "active" .
+
+sdaproject:SlideWiki a foaf:Project, sdatech:fundedProject ;
+                 foaf:name "SlideWiki" ;
+                 rdfs:label "SlideWiki" ;
+                 ex:description "A shared framework that supports communities to create presentations collaboratively";
+                 ex:longdescription "SlideWiki is a collaboration platform which enables communities to build, share and play online presentations. In addition to importing PowerPoint presentations, it supports authoring of interactive online slides using HTML and LateX. Slides and their containers (called Deck), are versioned thereby enabling change tracking. Users can create their own themes on top of existing themes or re-use other's themes.";
+                 foaf:member sdaperson:JensLehmann ;
+                 foaf:homepage <https://slidewiki.org/> ;
+                 foaf:depiction <https://slidewiki.org/assets/images/slideWiki-logo-linear.png> ;
+                 sda:funded "Funded Project" ;
+                 sda:twitter "" ;
+                 sda:source "" ;
+                 sda:download "https://github.com/slidewiki" ;
+                 sda:publicationTag "slidewiki" ;
+                 dct:abstract "";
+                 #sdapartner:partner sdapartner:TomTomDevelopmentGermanyGmbHD, sdapartner:YellowMapD, sdapartner:Metaphacts ;
+                 doap:maintainer sda:JensLehmann;
+                 #sda:relatedProject sdaproject:GeoKnow, sdaproject:SANSAStack ;
+                 #pf:endDate "2019-02-28"^^xsd:date ;
+                 #pf:startDate "2016-03-01"^^xsd:date ;
+                 #sdapublication:publication sdapublication:Publication1 ;
+                 sda:status "active" .
+
+sdaproject:BigDataOcean a foaf:Project, sdatech:fundedProject ;
+                 foaf:name "BDO" ;
+                 rdfs:label "Big Data Ocean" ;
+                 ex:description "Exploiting Oceans of Data for Maritime Applications";
+                 ex:longdescription "BigDataOcean aims to capitalise on existing modern technological breakthroughs in the areas of the big data driven economy, and roll out a completely new value chain of interrelated data streams coming from diverse sectors and languages and residing on cross technology innovations being delivered in different formats in order to revolutionise the way maritime-related industries work, showcasing a huge and realistic economic, societal and environmental impact that is being achieved by introducing an economy of knowledge into a traditional sector which does not operate in an orchestrated manner and is rather fragmented.";
+                 foaf:member sdaperson:JensLehmann ;
+                 foaf:homepage <http://www.bigdataocean.eu/> ;
+                 foaf:depiction <http://www.bigdataocean.eu/site/wp-content/uploads/2017/02/BIG-DATA-OCEAN_LOGO.png> ;
+                 sda:funded "Funded Project" ;
+                 sda:twitter "https://twitter.com/big_data_ocean" ;
+                 sda:source "" ;
+                 sda:download "" ;
+                 sda:publicationTag "bigdataocean" ;
+                 dct:abstract "Exploiting Oceans of Data for Maritime Applications";
+                 #sdapartner:partner sdapartner:TomTomDevelopmentGermanyGmbHD, sdapartner:YellowMapD, sdapartner:Metaphacts ;
+                 doap:maintainer sda:JensLehmann;
+                 #sda:relatedProject sdaproject:GeoKnow, sdaproject:SANSAStack ;
+                 #pf:endDate "2019-02-28"^^xsd:date ;
+                 #pf:startDate "2016-03-01"^^xsd:date ;
+                 #sdapublication:publication sdapublication:Publication1 ;
+                 sda:status "active" .
 
 ############################Open Source Projects##########################
 
