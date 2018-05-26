@@ -68,17 +68,19 @@ layout: default
         </div>
        <!-- <b>Lead by:</b> -->
         <br/>
-        <h3 style="text-align:left;color:black;margin-left:24px;">Group Leader</h3>
-        {% for leaders in groupsWithdbo %}
-          {% capture nameInDbo %}{{leaders.description}}{% endcapture %}
-            {% if name == nameInDbo  %}
-              <div class="chip chipForSmall">
-                {% assign url= leaders.leader | remove: "http://sda.tech/" %}
-                  <!-- <a href="../Person/{{url}}" alt="Person" width="96" height="96">{{group.leadername}}</a> -->
-                <img src="{{leaders.leaderimage}}" alt="Person" width="96" height="96"><a href="../{{url}}">{{leaders.leadername}}</a>
-              </div>
-            {% endif %}
-        {% endfor %}
+        <div class="groupLeaders">
+            <h3 style="text-align:left;color:black;margin-left:24px;">Group Leader</h3>
+            {% for leaders in groupsWithdbo %}
+              {% capture nameInDbo %}{{leaders.description}}{% endcapture %}
+                {% if name == nameInDbo  %}
+                  <div class="chip chipForSmall">
+                    {% assign url= leaders.leader | remove: "http://sda.tech/" %}
+                      <!-- <a href="../Person/{{url}}" alt="Person" width="96" height="96">{{group.leadername}}</a> -->
+                    <img src="{{leaders.leaderimage}}" alt="Person" width="96" height="96"><a href="../{{url}}">{{leaders.leadername}}</a>
+                  </div>
+                {% endif %}
+            {% endfor %}
+        </div>
       </div>
     </div>
     {% endfor %}
