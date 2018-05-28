@@ -5,7 +5,11 @@ layout: default
 ---
 {% capture query %} SELECT ?projects ?projectname ?image WHERE{
 <{{page.rdf}}> foaf:currentProject ?projects . ?projects rdfs:label ?projectname . ?projects foaf:depiction ?image . } {% endcapture %} {% assign resultset = page.rdf | sparql_query: query %} {% capture query %} SELECT ?person ?personname ?image WHERE{
-  <{{page.rdf}}> foaf:member ?person . ?person foaf:name ?personname . ?person foaf:depiction ?image . } {% endcapture %} {% assign resultset2 = page.rdf | sparql_query: query %}
+  <{{page.rdf}}> foaf:member ?person . ?person foaf:name ?personname . ?person foaf:depiction ?image .} {% endcapture %} {% assign resultset2 = page.rdf | sparql_query: query %}
+{% capture query %} SELECT ?leader ?leadername ?leaderimage WHERE{
+  <{{page.rdf}}> dbo:leader ?leader . ?leader foaf:name ?leadername . ?leader foaf:depiction ?leaderimage} {% endcapture %} {% assign resultset3 = page.rdf | sparql_query: query %}
+    {% capture queryfour %} SELECT ?publication ?title ?date ?publisher ?link  WHERE{<{{page.rdf}}> sda:publication ?publication . ?publication dc:title ?title
+    . ?publication dc:date ?date . ?publication dc:publisher ?publisher . ?publication foaf:homepage ?link . } {% endcapture %} {% assign resultset4 = page.rdf | sparql_query: queryfour %}
     <!--Presentation of the GROUP Items-->
     <article class="post">
       <div class="pagination">
@@ -18,6 +22,21 @@ layout: default
               <p>{{ page.rdf | rdf_property: 'dct:description'}}</p>
             </div>
             <br class="horizontal-separator" />
+            <div class="members-projects">
+              <h3>Leaders</h3>
+              <div class="membersofProject">
+                {% for result in resultset3 %} {% assign url= result.leader | remove: "http://sda.tech/" %}
+                <!-- <img src="{{result.image}}" style="width:48px;height:48px;border-radius:50%;display:block;margin:0 auto;">
+                <a href="../{{url}}"><h4>{{result.personname}}</h4></a> -->
+                <div class="chip">
+                  <img src="{{result.leaderimage}}" alt="Person" width="96" height="96">
+                  <a href="../../{{url}}">{{result.leadername}}</a>
+                </div>
+
+                {% endfor %}
+              </div>
+            </div>
+            <br class="horizontal-separator2" />
             <div class="members-projects">
               <h3>Members</h3>
               <div class="membersofProject">
@@ -45,6 +64,9 @@ layout: default
             </div>
             <br class="horizontal-separator2" />
             <h3>Publications</h3>
+            {% for result4 in resultset4 %}
+              {% include pubEntry.html link=result4.link date=result4.date publisher=result4.publisher title=result4.title  %}
+            {% endfor %}
             <br class="horizontal-separator" />
           </div>
         </div>
