@@ -2955,6 +2955,295 @@ ex:SemanticDataWebTechnologies a ex:course ;
                                ex:language "English" ;
                                ex:summer2017 "Summer Semester 2017" .
 
+#######################################
+##########Teaching Model###############
+#######################################
+
+#########Summer Term############
+
+sdateaching:SMDSE18S a sdatech:Course ;
+           rdfs:label "SMDSE" ;
+           dct:title "Seminar Model-Driven Software Engineering" ;
+           foaf:homepage <> ;
+           ex:description "The seminar is aimed at students who want to specialize in Software Engineering and Model-Driven Engineering." ;
+           dct:language "en-US" ;
+           dct:educationLevel "" ;
+           pf:endDate "2019-02-28"^^xsd:date ;
+           pf:startDate "2016-03-01"^^xsd:date ;
+           sda:maintainer sdaperson:GuenterKniesel, sdaperson:HamedShariatYazdi, sdaperson:JensLehmann ;
+           sda:semester "Summer" ;
+           sda:year 2018 ;
+           sda:id "MA-INF 3218" .
+
+sdateaching:SPA18S a sdatech:Course ;
+           rdfs:label "PA" ;
+           dct:title "Seminar Predictive Analytics" ;
+           foaf:homepage <https://basis.uni-bonn.de/qisserver/rds?state=verpublish&status=init&vmfile=no&publishid=141397&moduleCall=webInfo&publishConfFile=webInfo&publishSubDir=veranstaltung> ;
+           ex:description "The seminar is aimed at students who want to become familiar with predictive analytics in the domain of software engineering." ;
+           dct:language "en-US" ;
+           dct:educationLevel "" ;
+           pf:endDate "2019-02-28"^^xsd:date ;
+           pf:startDate "2016-03-01"^^xsd:date ;
+           sda:maintainer sdaperson:HamedShariatYazdi, sdaperson:JensLehmann ;
+           sda:semester "Summer" ;
+           sda:year 2018 ;
+           sda:id "MA-INF 3238" .
+
+sdateaching:SNLP18S a sdatech:Course ;
+           rdfs:label "SNLP" ;
+           dct:title "Seminar Natural Language Processing" ;
+           foaf:homepage <> ;
+           ex:description "" ;
+           dct:language "en-US" ;
+           dct:educationLevel "" ;
+           pf:endDate "2019-02-28"^^xsd:date ;
+           pf:startDate "2016-03-01"^^xsd:date ;
+           sda:maintainer sdaperson:MohnishDubey, sdaperson:DiegoEsteves, sdaperson:JensLehmann ;
+           sda:semester "Summer" ;
+           sda:year 2018 ;
+           sda:id "MA-INF 4221" .
+
+sdateaching:LNLP18S a sdatech:Course ;
+           rdfs:label "SNLP" ;
+           dct:title "Lab Natural Language Processing" ;
+           foaf:homepage <https://smartdataanalytics.github.io/MA-INF-4222-NLP-Lab/> ;
+           ex:description "" ;
+           dct:language "en-US" ;
+           dct:educationLevel "" ;
+           pf:endDate "2019-02-28"^^xsd:date ;
+           pf:startDate "2016-03-01"^^xsd:date ;
+           sda:maintainer sdaperson:MohnishDubey, sdaperson:DiegoEsteves, sdaperson:JensLehmann ;
+           sda:semester "Summer" ;
+           sda:year 2018 ;
+           sda:id "MA-INF 4222" .
+
+sdateaching:LDBDA18S a sdatech:Course ;
+           rdfs:label "LDBDA" ;
+           dct:title "Lab Distributed Big Data Analytics" ;
+           foaf:homepage <http://sda.cs.uni-bonn.de/teaching/dbda/> ;
+           ex:description "The goal is to provide experience and technical skills related to Big data processing tools like Flink and Spark, in addition, to make them acquainted with the functional programming style prevalent in concurrent and parallel programming for Big data." ;
+           dct:language "en-US" ;
+           dct:educationLevel "" ;
+           pf:endDate "2019-02-28"^^xsd:date ;
+           pf:startDate "2016-03-01"^^xsd:date ;
+           sda:maintainer sdaperson:HajiraJabeen, sdaperson:GezimSejdiu, sdaperson:JensLehmann ;
+           sda:semester "Summer" ;
+           sda:year 2018 ;
+           sda:id "MA-INF 4223" .
+
+sdateaching:LSDWT18S a sdatech:Course ;
+           rdfs:label "LSDWT" ;
+           dct:title "Lab Semantic Data Web Technologies" ;
+           foaf:homepage <https://basis.uni-bonn.de/qisserver/rds?state=verpublish&status=init&vmfile=no&publishid=142088&moduleCall=webInfo&publishConfFile=webInfo&publishSubDir=veranstaltung> ;
+           ex:description "" ;
+           dct:language "en-US" ;
+           dct:educationLevel "" ;
+           pf:endDate "2019-02-28"^^xsd:date ;
+           pf:startDate "2016-03-01"^^xsd:date ;
+           sda:maintainer sdaperson:IoannaLytra, sdaperson:ChristophLange, sdaperson:JensLehmann ;
+           sda:semester "Summer" ;
+           sda:year 2018 ;
+           sda:id "MA-INF 4314" .
+
+sdateaching:MSSDA18S a sdatech:Course ;
+           rdfs:label "MSSDA" ;
+           dct:title "Master Seminar Smart Data Analytics" ;
+           foaf:homepage <https://basis.uni-bonn.de/qisserver/rds?state=verpublish&status=init&vmfile=no&publishid=142311&moduleCall=webInfo&publishConfFile=webInfo&publishSubDir=veranstaltung> ;
+           ex:description "This seminar is for the students who are writing their master thesis in Smart Data Analytics (or are preparing for a thesis in this domain)." ;
+           dct:language "en-US" ;
+           dct:educationLevel "" ;
+           pf:endDate "2019-02-28"^^xsd:date ;
+           pf:startDate "2016-03-01"^^xsd:date ;
+           sda:maintainer sdaperson:SaharVahdati, sdaperson:JensLehmann ;
+           sda:semester "Summer" ;
+           sda:year 2018 ;
+           sda:id "MA-INF 0402" .
+
+sdateaching:MSSE18S a sdatech:Course ;
+           rdfs:label "MSSE" ;
+           dct:title "Master Seminar Software Engineering" ;
+           foaf:homepage <https://basis.uni-bonn.de/qisserver/rds?state=verpublish&status=init&vmfile=no&publishid=142310&moduleCall=webInfo&publishConfFile=webInfo&publishSubDir=veranstaltung> ;
+           ex:description "This seminar is for the students who are writing their master’s thesis in Software Engineering (or are preparing for a thesis in this domain)." ;
+           dct:language "en-US" ;
+           dct:educationLevel "" ;
+           pf:endDate "2019-02-28"^^xsd:date ;
+           pf:startDate "2016-03-01"^^xsd:date ;
+           sda:maintainer sdaperson:GuenterKniesel, sdaperson:JensLehmann ;
+           sda:semester "Summer" ;
+           sda:year 2018 ;
+           sda:id "MA-INF 0402" .
+
+sdateaching:BSBSWT18S a sdatech:Course ;
+           rdfs:label "BSBSWT" ;
+           dct:title "Begleitseminar Bachelorarbeit Softwaretechnologie" ;
+           foaf:homepage <https://basis.uni-bonn.de/qisserver/rds?state=verpublish&status=init&vmfile=no&moduleCall=webInfo&publishConfFile=webInfo&publishSubDir=veranstaltung&veranstaltung.veranstid=142291> ;
+           ex:description "" ;
+           dct:language "en-US" ;
+           dct:educationLevel "" ;
+           pf:endDate "2019-02-28"^^xsd:date ;
+           pf:startDate "2016-03-01"^^xsd:date ;
+           sda:maintainer sdaperson:GuenterKniesel, sdaperson:JensLehmann ;
+           sda:semester "Summer" ;
+           sda:year 2018 ;
+           sda:id "BA-INF 062" .
+
+
+########Winter Term##############
+
+sdateaching:LMDSE17W a sdatech:Course ;
+           rdfs:label "LMDSE" ;
+           dct:title "Lab Model-Driven Software Engineering" ;
+           foaf:homepage <https://sewiki.iai.uni-bonn.de/teaching/labs/mdse/2017/start> ;
+           ex:description "The lab is aimed at students who want to specialize in Software Engineering and Model-Driven Engineering." ;
+           dct:language "en-US" ;
+           dct:educationLevel "" ;
+           pf:endDate "2019-02-28"^^xsd:date ;
+           pf:startDate "2016-03-01"^^xsd:date ;
+           sda:maintainer sdaperson:GuenterKniesel, sdaperson:HamedShariatYazdi, sdaperson:JensLehmann ;
+           sda:semester "Winter" ;
+           sda:year 2017 ;
+           sda:id "MA-INF 3219" .
+
+sdateaching:SVTCS17W a sdatech:Course ;
+           rdfs:label "SVTCS" ;
+           dct:title "Seminar Verification and Testing of Complex Systems" ;
+           foaf:homepage <https://sewiki.iai.uni-bonn.de/teaching/seminars/vtcs/2017/start> ;
+           ex:description "" ;
+           dct:language "en-US" ;
+           dct:educationLevel "" ;
+           pf:endDate "2019-02-28"^^xsd:date ;
+           pf:startDate "2016-03-01"^^xsd:date ;
+           sda:maintainer sdaperson:GuenterKniesel ;
+           sda:semester "Winter" ;
+           sda:year 2017 ;
+           sda:id "MA-INF 3318" .
+
+sdateaching:SNLP17W a sdatech:Course ;
+           rdfs:label "SNLP" ;
+           dct:title "Seminar Natural Language Processing" ;
+           foaf:homepage <https://basis.uni-bonn.de/qisserver/rds?state=verpublish&status=init&vmfile=no&publishid=141397&moduleCall=webInfo&publishConfFile=webInfo&publishSubDir=veranstaltung> ;
+           ex:description "" ;
+           dct:language "en-US" ;
+           dct:educationLevel "" ;
+           pf:endDate "2019-02-28"^^xsd:date ;
+           pf:startDate "2016-03-01"^^xsd:date ;
+           sda:maintainer sdaperson:MohnishDubey, sdaperson:DiegoEsteves, sdaperson:JensLehmann ;
+           sda:semester "Winter" ;
+           sda:year 2017 ;
+           sda:id "MA-INF 4221" .
+
+sdateaching:LNLP17W a sdatech:Course ;
+           rdfs:label "LNLP" ;
+           dct:title "Lab Natural Language Processing" ;
+           foaf:homepage <https://basis.uni-bonn.de/qisserver/rds?state=verpublish&status=init&vmfile=no&publishid=141397&moduleCall=webInfo&publishConfFile=webInfo&publishSubDir=veranstaltung> ;
+           ex:description "" ;
+           dct:language "en-US" ;
+           dct:educationLevel "" ;
+           pf:endDate "2019-02-28"^^xsd:date ;
+           pf:startDate "2016-03-01"^^xsd:date ;
+           sda:maintainer sdaperson:MohnishDubey, sdaperson:DiegoEsteves, sdaperson:JensLehmann ;
+           sda:semester "Winter" ;
+           sda:year 2017 ;
+           sda:id "MA-INF 4222" .
+
+sdateaching:LDBDA17W a sdatech:Course ;
+           rdfs:label "LDBDA" ;
+           dct:title "Lab Distributed Big Data Analytics" ;
+           foaf:homepage <http://sda.cs.uni-bonn.de/teaching/dbda/> ;
+           ex:description "The goal is to provide experience and technical skills related to Big data processing tools like Flink and Spark, in addition, to make them acquainted with the functional programming style prevalent in concurrent and parallel programming for Big data." ;
+           dct:language "en-US" ;
+           dct:educationLevel "" ;
+           pf:endDate "2019-02-28"^^xsd:date ;
+           pf:startDate "2016-03-01"^^xsd:date ;
+           sda:maintainer sdaperson:HajiraJabeen, sdaperson:GezimSejdiu, sdaperson:JensLehmann ;
+           sda:semester "Winter" ;
+           sda:year 2017 ;
+           sda:id "MA-INF 4223" .
+
+sdateaching:LESDWT17W a sdatech:Course ;
+           rdfs:label "LESDWT" ;
+           dct:title "Lecture Semantic Data Web Technologies" ;
+           foaf:homepage <https://basis.uni-bonn.de/qisserver/rds?state=verpublish&status=init&vmfile=no&publishid=134907&moduleCall=webInfo&publishConfFile=webInfo&publishSubDir=veranstaltung> ;
+           ex:description "" ;
+           dct:language "en-US" ;
+           dct:educationLevel "" ;
+           pf:endDate "2019-02-28"^^xsd:date ;
+           pf:startDate "2016-03-01"^^xsd:date ;
+           sda:maintainer sdaperson:ChristophLange, sdaperson:JensLehmann ;
+           sda:semester "Winter" ;
+           sda:year 2017 ;
+           sda:id "MA-INF 4312" .
+
+sdateaching:ESDWT17W a sdatech:Course ;
+           rdfs:label "ESDWT" ;
+           dct:title "Exercises Semantic Data Web Technologies" ;
+           foaf:homepage <https://basis.uni-bonn.de/qisserver/rds?state=verpublish&status=init&vmfile=no&publishid=134908&moduleCall=webInfo&publishConfFile=webInfo&publishSubDir=veranstaltung> ;
+           ex:description "" ;
+           dct:language "en-US" ;
+           dct:educationLevel "" ;
+           pf:endDate "2019-02-28"^^xsd:date ;
+           pf:startDate "2016-03-01"^^xsd:date ;
+           sda:maintainer sdaperson:ChristophLange, sdaperson:JensLehmann ;
+           sda:semester "Winter" ;
+           sda:year 2017 ;
+           sda:id "MA-INF 4312" .
+
+sdateaching:SSDWT17W a sdatech:Course ;
+           rdfs:label "SSDWT" ;
+           dct:title "Seminar Semantic Data Web Technologies" ;
+           foaf:homepage <https://basis.uni-bonn.de/qisserver/rds?state=verpublish&status=init&vmfile=no&publishid=135455&moduleCall=webInfo&publishConfFile=webInfo&publishSubDir=veranstaltung> ;
+           ex:description "" ;
+           dct:language "en-US" ;
+           dct:educationLevel "" ;
+           pf:endDate "2019-02-28"^^xsd:date ;
+           pf:startDate "2016-03-01"^^xsd:date ;
+           sda:maintainer sdaperson:IoannaLytra, sdaperson:JensLehmann ;
+           sda:semester "Winter" ;
+           sda:year 2017 ;
+           sda:id "MA-INF 4313" .
+
+sdateaching:LEKGA17W a sdatech:Course ;
+           rdfs:label "LEKGA" ;
+           dct:title "Lecture Knowledge Graph Analysis" ;
+           foaf:homepage <https://sewiki.iai.uni-bonn.de/teaching/lectures/kga/2017/start> ;
+           ex:description "This course gives an Introduction to Knowledge Graph Analysis." ;
+           dct:language "en-US" ;
+           dct:educationLevel "" ;
+           pf:endDate "2019-02-28"^^xsd:date ;
+           pf:startDate "2016-03-01"^^xsd:date ;
+           sda:maintainer sdaperson:AsjaFischer, sdaperson:JensLehmann ;
+           sda:semester "Winter" ;
+           sda:year 2017 ;
+           sda:id "MA-INF 4316" .
+
+sdateaching:EKGA17W a sdatech:Course ;
+           rdfs:label "EKGA" ;
+           dct:title "Exercises Knowledge Graph Analysis" ;
+           foaf:homepage <https://sewiki.iai.uni-bonn.de/teaching/lectures/kga/2017/start> ;
+           ex:description "" ;
+           dct:language "en-US" ;
+           dct:educationLevel "" ;
+           pf:endDate "2019-02-28"^^xsd:date ;
+           pf:startDate "2016-03-01"^^xsd:date ;
+           sda:maintainer sdaperson:AsjaFischer, sdaperson:JensLehmann ;
+           sda:semester "Winter" ;
+           sda:year 2017 ;
+           sda:id "MA-INF 4316" .
+
+sdateaching:SKGA17W a sdatech:Course ;
+           rdfs:label "SKGA" ;
+           dct:title "Seminar Knowledge Graph Analysis" ;
+           foaf:homepage <https://basis.uni-bonn.de/qisserver/rds?state=verpublish&status=init&vmfile=no&publishid=135431&moduleCall=webInfo&publishConfFile=webInfo&publishSubDir=veranstaltung> ;
+           ex:description "" ;
+           dct:language "en-US" ;
+           dct:educationLevel "" ;
+           pf:endDate "2019-02-28"^^xsd:date ;
+           pf:startDate "2016-03-01"^^xsd:date ;
+           sda:maintainer sdaperson:AsjaFischer, sdaperson:JensLehmann ;
+           sda:semester "Winter" ;
+           sda:year 2017 ;
+           sda:id "MA-INF 4317" .
+
 
 sdatech:group a foaf:Document ;
          rdfs:label "Groups" .
@@ -3182,6 +3471,14 @@ sdatech:Group a owl:Class ;
                     rdfs:subClassOf foaf:Organization ;
                     site:classTemplate "group" ;
                     sysont:creationLabel "Groups" ;
+                    dct:issued "2008-05-14" .
+
+sdatech:Course a owl:Class ;
+                    rdfs:label "Course" ;
+                    rdfs:comment "A course being held by SDA." ;
+                    rdfs:subClassOf foaf:Organization ;
+                    site:classTemplate "course" ;
+                    sysont:creationLabel "Course" ;
                     dct:issued "2008-05-14" .
 
 ###############################################

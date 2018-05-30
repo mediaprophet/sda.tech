@@ -959,7 +959,25 @@ hr {
 
 }
 
+//Teaching
+.courseLink a
+{
+    color: #087CCD !important; 
+    padding: 0px !important;
+    background: none;
+}
 
+.courseLink a:hover, .courseLink a:hover:not(.active)
+{
+    text-decoration: none !important;
+    color: #5CBF14 !important;
+    transition: transparent !important;
+    background: none;
+}
+
+.course-list{
+  padding: 20px;
+}
 
 .status-projects {
   width: 100%;
