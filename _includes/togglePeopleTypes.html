@@ -3,7 +3,10 @@ function changeActivePersons(name) {
   clearAllTypes();
   clearAllTabs();
 
-  if (name == "{{site.data.peopleTypes[0].name}}") {
+  if (name == "{{site.data.peopleTypes[7].name}}") {
+    document.getElementById('All').style.display = 'inline-block';
+    document.getElementById('AllMembers').classList.add('active');
+  } else if (name == "{{site.data.peopleTypes[0].name}}") {
     document.getElementById('Prof').style.display = 'inline-block';
     document.getElementById('Professors').classList.add('active');
   } else if (name == "{{site.data.peopleTypes[1].name}}") {
@@ -37,6 +40,7 @@ function clearAllTypes() {
   document.getElementById('SA').style.display = 'none';
   document.getElementById('Int').style.display = 'none';
   document.getElementById('Former').style.display = 'none';
+  document.getElementById('All').style.display = 'none';
 }
 
 function clearAllTabs() {
@@ -47,5 +51,6 @@ function clearAllTabs() {
   document.getElementById('StudentAssistants').classList.remove('active');
   document.getElementById('Interns').classList.remove('active');
   document.getElementById('FormerMembers').classList.remove('active');
+  document.getElementById('AllMembers').classList.remove('active');
 }
 </script>

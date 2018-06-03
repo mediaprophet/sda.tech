@@ -47,8 +47,10 @@ facebook_username: SDAResearch
 linkedin_username: SDA
 
 #activeVars
-activePeople: Professors
+activePeople: All Members
 activeGroup: Distributed Semantic Analytics
+currentSemester: Summer
+currentYear: 2018
 leader: Prof.Dr. Jens Lehmann
 leaderHomePage: http://jens-lehmann.org/
 
