@@ -3353,6 +3353,20 @@ sdatech:people a foaf:Document ;
 
 sdatech:project a foaf:Document ;
            rdfs:label "Projects" .
+#
+sdatech:fundedprojects a foaf:Document ;
+         rdfs:label "On Going Thesis" .
+
+sdatech:opensourceprojects a foaf:Document ;
+        rdfs:label "On Going Thesis" .
+
+sdatech:incubatorprojects a foaf:Document ;
+         rdfs:label "On Going Thesis" .
+
+sdatech:archivedprojects a foaf:Document ;
+        rdfs:label "On Going Thesis" .
+
+#
 
 sdatech:publication a foaf:Document ;
                rdfs:label "Publications" .

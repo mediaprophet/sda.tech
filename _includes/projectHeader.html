@@ -1,13 +1,13 @@
 <div class="status-projects">
-  <a href="#" id="all" class="active responsiveTabItem" onclick="allProjectItems()"><i class="fa fa-list-alt margin-icon" aria-hidden="true"></i>
+  <a href="#" id="all" class="{% if include.active == 'all' %}active{% endif %} responsiveTabItem" onclick="allProjectItems()"><i class="fa fa-list-alt margin-icon" aria-hidden="true"></i>
   All Projects</a>
-  <a href="#" id="funded" class="responsiveTabItem" onclick="activeFundedProjects()"><i class="fa fa-money margin-icon" aria-hidden="true"></i>
+  <a href="#" id="funded" class="{% if include.active == 'funded' %}active{% endif %} responsiveTabItem" onclick="activeFundedProjects()"><i class="fa fa-money margin-icon" aria-hidden="true"></i>
   Funded Projects</a>
-  <a href="#" id="opensrc" class="responsiveTabItem" onclick="activeOpenSourceProjects()"><i class="fa fa-code-fork margin-icon" aria-hidden="true"></i>
+  <a href="#" id="opensrc" class="{% if include.active == 'opensrc' %}active{% endif %} responsiveTabItem" onclick="activeOpenSourceProjects()"><i class="fa fa-code-fork margin-icon" aria-hidden="true"></i>
   Open Source Projects</a>
-  <a href="#" id="incubators" class="responsiveTabItem" onclick="incubatorProjects()"><i class="fa fa-free-code-camp margin-icon" aria-hidden="true"></i>
+  <a href="#" id="incubators" class="{% if include.active == 'incubators' %}active{% endif %} responsiveTabItem" onclick="incubatorProjects()"><i class="fa fa-free-code-camp margin-icon" aria-hidden="true"></i>
   Incubator Projects</a>
-  <a href="#" id="archprojects" class="responsiveTabItem" onclick="archivedProjects()"><i class="fa fa-archive margin-icon" aria-hidden="true"></i>
+  <a href="#" id="archprojects" class="{% if include.active == 'archprojects' %}active{% endif %} responsiveTabItem" onclick="archivedProjects()"><i class="fa fa-archive margin-icon" aria-hidden="true"></i>
   Archived Projects</a>
   <br/>
   <br/>

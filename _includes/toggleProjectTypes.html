@@ -1,22 +1,5 @@
 <script>
 
-  function clearAllProjectHeaders() {
-    document.getElementById('funded').classList.add('active');
-    document.getElementById('opensrc').classList.remove('active');
-    document.getElementById('incubators').classList.remove('active');
-    document.getElementById('all').classList.remove('active');
-    document.getElementById('archprojects').classList.remove('active');
-  }
-
-  function clearAllProjectContents(){
-    document.getElementById('fundedProjects').style.display = 'none';
-    document.getElementById('openSourceProjects').style.display = 'none';
-    document.getElementById('incubatorProjects').style.display = 'none';
-    document.getElementById('allProjects').style.display = 'none';
-    document.getElementById('archProjectList').style.display = 'none';
-  }
-
-
   function activeFundedProjects() {
     document.getElementById('fundedProjects').style.display = 'block';
     document.getElementById('funded').classList.add('active');
@@ -28,6 +11,7 @@
     document.getElementById('archprojects').classList.remove('active');
     document.getElementById('allProjects').style.display = 'none';
     document.getElementById('all').classList.remove('active');
+    history.pushState(null, null, '/fundedprojects/');
 
   }
 
@@ -42,6 +26,7 @@
     document.getElementById('archprojects').classList.remove('active');
     document.getElementById('allProjects').style.display = 'none';
     document.getElementById('all').classList.remove('active');
+    history.pushState(null, null, '/opensourceprojects/');
   }
 
   function incubatorProjects() {
@@ -55,6 +40,7 @@
     document.getElementById('archprojects').classList.remove('active');
     document.getElementById('allProjects').style.display = 'none';
     document.getElementById('all').classList.remove('active');
+    history.pushState(null, null, '/incubatorprojects/');
   }
 
   function archivedProjects() {
@@ -68,6 +54,7 @@
     document.getElementById('archprojects').classList.add('active');
     document.getElementById('allProjects').style.display = 'none';
     document.getElementById('all').classList.remove('active');
+    history.pushState(null, null, '/archivedprojects/');
   }
 
   function allProjectItems() {
@@ -81,6 +68,7 @@
     document.getElementById('archprojects').classList.remove('active');
     document.getElementById('allProjects').style.display = 'block';
     document.getElementById('all').classList.add('active');
+    history.pushState(null, null, '/project/');
 
   }
 </script>
