@@ -258,7 +258,7 @@ sdaperson:IoannaLytra a foaf:Person, sdatech:seniorResearcher ;
                   foaf:name "Dr. Ioanna Lytra" ;
                   foaf:mbox <mailto:lytra@cs.uni-bonn.de> ;
                   sda:linkedin "https://www.linkedin.com/in/ioanna-lytra" ;
-                  foaf:depiction <https://media.licdn.com/dms/image/C4D03AQHI0f1CdDK-GQ/profile-displayphoto-shrink_800_800/0?e=1527033600&v=alpha&t=MAYnbJcgfGDDw3izW8ROb1sMozqzeuMx1L9nYn5Y6oc> ;
+                  foaf:depiction <http://www.clker.com/cliparts/d/L/P/X/z/i/no-image-icon-md.png> ;
                   #foaf:phone <tel:+49-341-123456789> ;
                   foaf:title "Dr. " ;
                   foaf:status "Senior Researcher" ;
@@ -276,7 +276,7 @@ sdaperson:ChristophLange a foaf:Person, sdatech:seniorResearcher ;
                   foaf:familyName "Lange" ;
                   foaf:name "Dr. Christoph Lange" ;
                   foaf:mbox <mailto:christoph.lange-bever@iais.fraunhofer.de> ;
-                  foaf:depiction <https://media.licdn.com/dms/image/C4D03AQGKn7XOr9Esog/profile-displayphoto-shrink_800_800/0?e=1527033600&v=alpha&t=ZClhrNl_pkpp81cSAcmj83MICP0veEejDxKj6OwEKlg> ;
+                  foaf:depiction <http://www.clker.com/cliparts/d/L/P/X/z/i/no-image-icon-md.png> ;
                   #foaf:phone <tel:+49-341-123456789> ;
                   foaf:title "Dr. " ;
                   foaf:status "Senior Researcher/ Head of EIS department @ IAIS" ;
@@ -314,7 +314,7 @@ sdaperson:SimonScerri a foaf:Person, sdatech:seniorResearcher ;
                   foaf:familyName "Scerri" ;
                   foaf:name "Dr. Simon Scerri" ;
                   foaf:mbox <mailto:simon.scerri@iais.fraunhofer.de> ;
-                  foaf:depiction <https://media.licdn.com/dms/image/C4E03AQFYrSvoRm3jaw/profile-displayphoto-shrink_800_800/0?e=1527033600&v=alpha&t=IydYWESG1lK05G0rsoVqHbnNAPoHTyJa3Blrw_Gec5k> ;
+                  foaf:depiction <http://www.clker.com/cliparts/d/L/P/X/z/i/no-image-icon-md.png> ;
                   #foaf:phone <tel:+49-341-123456789> ;
                   foaf:title "Dr. " ;
                   foaf:status "Senior Researcher" ;
@@ -336,7 +336,7 @@ sdaperson:GezimSejdiu a foaf:Person, sdatech:phdStudent ;
                    foaf:name "Gezim Sejdiu" ;
                    foaf:nick "Gezim" ;
                    foaf:mbox <mailto:sejdiu@cs.uni-bonn.de> ;
-                   foaf:depiction <https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/5/005/0a0/145/14cb4e4.jpg> ;
+                   foaf:depiction <http://www.clker.com/cliparts/d/L/P/X/z/i/no-image-icon-md.png> ;
                    foaf:phone <tel:+49-341-123456789> ;
                    foaf:firstName "Gezim" ;
                    foaf:title "" ;
@@ -434,7 +434,7 @@ sdaperson:DiegoEsteves a foaf:Person, sdatech:phdStudent ;
                    foaf:name "Diego Esteves" ;
                    foaf:nick "Diego" ;
                    foaf:mbox <mailto:esteves@cs.uni-bonn.de> ;
-                   foaf:depiction <https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAA1lAAAAJDExODVjNjQyLWFkOGEtNGI5OS04OTU4LThhZjU2OTMzYTk0Yw.jpg> ;
+                   foaf:depiction <http://www.clker.com/cliparts/d/L/P/X/z/i/no-image-icon-md.png> ;
                    foaf:phone <tel:+49-341-123456789> ;
                    foaf:firstName "Diego" ;
                    foaf:title "" ;
@@ -457,7 +457,7 @@ sdaperson:FathoniMusyaffa a foaf:Person, sdatech:phdStudent ;
                    foaf:name "Fathoni A. Musyaffa" ;
                    foaf:nick "Fathoni" ;
                    foaf:mbox <mailto:musyaffa(at)cs.uni-bonn.de> ;
-                   foaf:depiction <https://media-exp2.licdn.com/mpr/mpr/shrinknp_400_400/p/1/000/117/1c5/34d913c.jpg> ;
+                   foaf:depiction <http://www.clker.com/cliparts/d/L/P/X/z/i/no-image-icon-md.png> ;
                    foaf:phone <tel:+49-341-123456789> ;
                    foaf:firstName "Fathoni" ;
                    foaf:title "" ;
@@ -636,7 +636,7 @@ sdaperson:HamidZafar a foaf:Person, sdatech:phdStudent ;
                    foaf:name "Hamid Zafar" ;
                    foaf:nick "Hamid" ;
                    foaf:mbox <mailto:hzafarta@cs.uni-bonn.de> ;
-                   foaf:depiction <https://media.licdn.com/dms/image/C5603AQFruxv8nBzQXg/profile-displayphoto-shrink_800_800/0?e=1527033600&v=alpha&t=kZzbl-L4YnYpCFeOzOmIuDB9U763a1y70uiWsTOzUfo> ;
+                   foaf:depiction <http://www.clker.com/cliparts/d/L/P/X/z/i/no-image-icon-md.png> ;
                    foaf:phone "" ;
                    foaf:firstName "Hamid" ;
                    foaf:title "" ;
@@ -682,7 +682,7 @@ sdaperson:SaharVahdati a foaf:Person, sdatech:phdStudent ;
                    foaf:name "Sahar Vahdati" ;
                    foaf:nick "Sahar" ;
                    foaf:mbox <mailto:s6savahd@uni-bonn.de> ;
-                   foaf:depiction <https://media.licdn.com/dms/image/C5603AQF_3TRWcxe4ng/profile-displayphoto-shrink_800_800/0?e=1527033600&v=alpha&t=7SHt6hl2T7wBZCrRnxTCiNStF9EFoJzX3AjNER54qG0> ;
+                   foaf:depiction <http://www.clker.com/cliparts/d/L/P/X/z/i/no-image-icon-md.png> ;
                    foaf:phone "" ;
                    foaf:firstName "Sahar" ;
                    foaf:title "" ;
@@ -744,7 +744,7 @@ sdaperson:IsaiahOnandoMulang a foaf:Person, sdatech:phdStudent ;
                    foaf:name "Isaiah Onando Mulang'" ;
                    foaf:nick "Isaiah" ;
                    foaf:mbox <mailto:mulang.onando@gmail.com> ;
-                   foaf:depiction <https://media.licdn.com/dms/image/C5603AQF8UpTccQMLyg/profile-displayphoto-shrink_800_800/0?e=1527033600&v=alpha&t=YRodvU8JfxVSwCXA_5E0uqrlrBbqPawmDSAInlY39RY> ;
+                   foaf:depiction <http://www.clker.com/cliparts/d/L/P/X/z/i/no-image-icon-md.png> ;
                    foaf:phone "" ;
                    foaf:firstName "Isaiah" ;
                    foaf:title "" ;
@@ -806,7 +806,7 @@ sdaperson:MichaelGalkin a foaf:Person, sdatech:phdStudent ;
                    foaf:name "Michael Galkin" ;
                    foaf:nick "Michael" ;
                    foaf:mbox <mailto:mikhgalkin@gmail.com> ;
-                   foaf:depiction <https://media.licdn.com/dms/image/C4E03AQGKsvVhBV187Q/profile-displayphoto-shrink_800_800/0?e=1527033600&v=alpha&t=Yx1aB_m69OUSpDjO7HP6AdATnrkms602_KEXGjrYww0> ;
+                   foaf:depiction <http://www.clker.com/cliparts/d/L/P/X/z/i/no-image-icon-md.png> ;
                    foaf:phone "" ;
                    foaf:firstName "Michael" ;
                    foaf:title "" ;
@@ -847,7 +847,7 @@ sdaperson:MojtabaNayyeri a foaf:Person, sdatech:phdStudent ;
                    foaf:name "Mojtaba Nayyeri" ;
                    foaf:nick "Mojtaba" ;
                    foaf:mbox <mailto:mojtabanayyeri@gmail.com> ;
-                   foaf:depiction <https://media.licdn.com/dms/image/C4E03AQFj5EKyzFf6RA/profile-displayphoto-shrink_800_800/0?e=1526907600&v=alpha&t=pVJ_6gLv5Z2OdB1ovWCydjRAsBdQX7_KMEvy-ujhqkQ> ;
+                   foaf:depiction <http://www.clker.com/cliparts/d/L/P/X/z/i/no-image-icon-md.png> ;
                    foaf:phone "" ;
                    foaf:firstName "Mojtaba" ;
                    foaf:title "" ;
@@ -933,7 +933,7 @@ sdaperson:MohamedNadjibMami a foaf:Person, sdatech:associateReseracher ;
                    foaf:name "Mohamed Nadjib Mami" ;
                    foaf:nick "Mohamed" ;
                    foaf:mbox <mailto:mohamed.nadjib.mami@iais.fraunhofer.de> ;
-                   foaf:depiction <https://media.licdn.com/dms/image/C5603AQG-3TpJ3MJGVg/profile-displayphoto-shrink_800_800/0?e=1527033600&v=alpha&t=u8J_sXEaBG7NAKNfzUv_dIfP3dzaAoOOnwS_UexVCiE> ;
+                   foaf:depiction <http://www.clker.com/cliparts/d/L/P/X/z/i/no-image-icon-md.png> ;
                    foaf:phone "" ;
                    foaf:firstName "Mohamed" ;
                    foaf:title "" ;
@@ -1184,7 +1184,7 @@ sdaperson:PriyanshTrivedi a foaf:Person, sdatech:studentAssistant ;
                    foaf:name "Priyansh Trivedi" ;
                    foaf:nick "Priyansh" ;
                    foaf:mbox <mailto:pc.priyansh@gmail.com> ;
-                   foaf:depiction <https://media.licdn.com/dms/image/C4E03AQE7bqx0JPzQBg/profile-displayphoto-shrink_800_800/0?e=1527033600&v=alpha&t=5M_SqyJArZO6cpt9XipqTCkx8XQE1WdJv3DeYPrPqgs> ;
+                   foaf:depiction <http://www.clker.com/cliparts/d/L/P/X/z/i/no-image-icon-md.png> ;
                    foaf:phone "" ;
                    foaf:firstName "Priyansh" ;
                    foaf:title "" ;
@@ -1304,7 +1304,7 @@ sdaperson:MingQu a foaf:Person, sdatech:studentAssistant ;
                    foaf:name "Ming Qu" ;
                    foaf:nick "Ming" ;
                    foaf:mbox <mailto:ming.qu0202@gmail.com> ;
-                   foaf:depiction <https://media.licdn.com/dms/image/C5103AQHh5XnoZ-18DQ/profile-displayphoto-shrink_800_800/0?e=1527033600&v=alpha&t=l_LFDZFXYHrFl7ApWnGyEcBBBmZ6-PbMP6ACHedYGw4> ;
+                   foaf:depiction <http://www.clker.com/cliparts/d/L/P/X/z/i/no-image-icon-md.png> ;
                    foaf:phone "" ;
                    foaf:firstName "Ming" ;
                    foaf:title "" ;
@@ -1406,7 +1406,7 @@ sdaperson:KathanKashiparekh a foaf:Person, sdatech:intern ;
                    foaf:name "Kathan Kashiparek" ;
                    foaf:nick "Kathan" ;
                    foaf:mbox <mailto:kathan.kparekh@gmail.com> ;
-                   foaf:depiction <https://media.licdn.com/dms/image/C5603AQF9ObyWN5qiAw/profile-displayphoto-shrink_800_800/0?e=1527033600&v=alpha&t=wO_T1tKgGaMX61ptwkIr69GcNndfYiiomKRercTRFwE> ;
+                   foaf:depiction <http://www.clker.com/cliparts/d/L/P/X/z/i/no-image-icon-md.png> ;
                    foaf:phone "" ;
                    foaf:firstName "Kathan" ;
                    foaf:title "" ;
@@ -1426,7 +1426,7 @@ sdaperson:AnikethReddy a foaf:Person, sdatech:intern ;
                    foaf:name "Aniketh Reddy" ;
                    foaf:nick "Aniketh" ;
                    foaf:mbox <mailto:anikethjr@gmail.com> ;
-                   foaf:depiction <https://media.licdn.com/dms/image/C5603AQE11UwC64C41w/profile-displayphoto-shrink_800_800/0?e=1527033600&v=alpha&t=388QHBnqMz3A2Z2Ndeautib1TdEAUpb2eRYkvWt50nQ> ;
+                   foaf:depiction <http://www.clker.com/cliparts/d/L/P/X/z/i/no-image-icon-md.png> ;
                    foaf:phone "" ;
                    foaf:firstName "Aniketh" ;
                    foaf:title "" ;
@@ -1575,7 +1575,8 @@ sdagroup:DistributedSemanticAnalytics a aiiso:ResearchGroup, sdatech:Group ;
                                 foaf:currentProject sdaproject:DLLearner, sdaproject:BigDataEurope, sdaproject:SANSAStack ;
                                 dct:description "The research group develops scalable analytics algorithms based on Apache Spark and Apache Flink for analyzing large scale datasets by distributing the computational tasks in memory." ;
                                 sda:publication sdapublication:Publication1 ;
-                                sda:imageclass "fa fa-bar-chart" .
+                                sda:imageclass "fa fa-bar-chart" ;
+                                sda:shortcut "dsa" .
 
 ##Deep Learning
 sdagroup:DeepLearning a aiiso:ResearchGroup, sdatech:Group ;
@@ -1587,7 +1588,8 @@ sdagroup:DeepLearning a aiiso:ResearchGroup, sdatech:Group ;
                                 foaf:currentProject sdaproject:DLLearner, sdaproject:BigDataEurope ;
                                 dct:description "Deep learning models consist of multiple non-linear processing layers which allow for the hierarchical extraction of more and more abstract characteristics of the data and the discovery of the intricate structure in large data sets by building distributed representations." ;
                                 sda:publication sdapublication:Publication1 ;
-                                sda:imageclass "fa fa-globe" .
+                                sda:imageclass "fa fa-globe" ;
+                                sda:shortcut "dl" .
 
 ##Knowledge Extraction and Validation
 sdagroup:KnowledgeExtractionAndValidation a aiiso:ResearchGroup, sdatech:Group ;
@@ -1599,7 +1601,8 @@ sdagroup:KnowledgeExtractionAndValidation a aiiso:ResearchGroup, sdatech:Group ;
                                 foaf:currentProject sdaproject:SLIPO, sdaproject:BigDataEurope ;
                                 dct:description "The Knowledge Extraction and Validation group is addressing problems for knowledge extraction, representation, storage, and management that the information era has brought in various segments of today's life." ;
                                 sda:publication sdapublication:Publication1 ;
-                                sda:imageclass "fa fa-table" .
+                                sda:imageclass "fa fa-table" ;
+                                sda:shortcut "knv" .
 
 ##Semantic Data Management
 sdagroup:SemanticDataManagement a aiiso:ResearchGroup, sdatech:Group ;
@@ -1611,7 +1614,8 @@ sdagroup:SemanticDataManagement a aiiso:ResearchGroup, sdatech:Group ;
                                 foaf:currentProject sdaproject:BigDataEurope ;
                                 dct:description "The group's research focus is on knowledge and data representation, integration, and management based on semantic technologies." ;
                                 sda:publication sdapublication:Publication1 ;
-                                sda:imageclass "fa fa-sitemap" .
+                                sda:imageclass "fa fa-sitemap" ;
+                                sda:shortcut "sdm" .
 
 ##Semantic Question Answering
 sdagroup:SemanticQuestionAnswering a aiiso:ResearchGroup, sdatech:Group ;
@@ -1623,7 +1627,8 @@ sdagroup:SemanticQuestionAnswering a aiiso:ResearchGroup, sdatech:Group ;
                                 foaf:currentProject sdaproject:AskNow, sdaproject:WDAqua ;
                                 dct:description "The use of Semantic Web technologies led to an increasing number of structured data published on the Web. Despite the advances in question answering systems retrieving the desired information from structured sources is still a substantial challenge." ;
                                 sda:publication sdapublication:Publication1 ;
-                                sda:imageclass "fa fa-search" .
+                                sda:imageclass "fa fa-search" ;
+                                sda:shortcut "sqa" .
 
 ##Software Engineering for Data Science
 sdagroup:SoftwareEngineeringForDataScience a aiiso:ResearchGroup, sdatech:Group ;
@@ -1635,7 +1640,8 @@ sdagroup:SoftwareEngineeringForDataScience a aiiso:ResearchGroup, sdatech:Group 
                                 foaf:pastProject sdaproject:SHORE, sdaproject:WAVE ;
                                 dct:description """The group focuses on combining Semantic Web and Software Engineering technologies to develop novel methods, techniques, and tools that advance the way in which software is designed, synthetised and assessed.""" ;
                                 sda:publication sdapublication:Publication1 ;
-                                sda:imageclass "fa fa-cogs" .
+                                sda:imageclass "fa fa-cogs" ;
+                                sda:shortcut "seds" .
 
 ##Structured Machine Learning
 sdagroup:StructuredMachineLearning a aiiso:ResearchGroup, sdatech:Group ;
@@ -1647,7 +1653,8 @@ sdagroup:StructuredMachineLearning a aiiso:ResearchGroup, sdatech:Group ;
                                 foaf:pastProject sdaproject:SHORE, sdaproject:WAVE ;
                                 dct:description "The group focuses on combining Semantic Web and supervised Machine Learning technologies. The goal is to improve both quality and quantity of available knowledge by extracting, analysing, enriching and linking existing data. The group also provides several established open source tools, frameworks and demonstrators." ;
                                 sda:publication sdapublication:Publication1 ;
-                                sda:imageclass "fa fa-cube" .
+                                sda:imageclass "fa fa-cube" ;
+                                sda:shortcut "sml" .
 
 
 #########################################################
@@ -1670,8 +1677,8 @@ sdaproject:BigDataEurope a foaf:Project, sdatech:fundedProject ;
                  sda:source "https://github.com/big-data-europe" ;
                  sda:download "undefined" ;
                  sda:publicationTag "bde" ;
-                 dct:abstract "Big Data Europe will undertake the foundational work for enabling European companies to build innovative multilingual products and services based on semantically interoperable, large-scale, multi-lingual data assets and knowledge, available under a variety of licenses and business models";
-                 sdapartner:partner sdapartner:TomTomDevelopmentGermanyGmbHD, sdapartner:YellowMapD, sdapartner:Metaphacts ;
+                 dct:abstract "Big Data Europe will undertake the foundational work for enabling European companies to build innovative multilingual products and services based on semantically interoperable, large-scale, multi-lingual data assets and knowledge, available under a variety of licenses and business models" ;
+                 sdapartner:partner sdapartner:TomTom, sdapartner:YellowMap, sdapartner:metaphacts, sdapartner:CRES, sdapartner:cessda, sdapartner:FAO, sdapartner:FraunhoferIAIS, sdapartner:NCSR, sdapartner:OpenPHACTS, sdapartner:SemanticWebCompany, sdapartner:TenForce  ;
                  doap:maintainer sda:JensLehmann ;
                  sda:relatedProject sdaproject:GeoKnow, sdaproject:SANSAStack ;
                  pf:endDate "2019-02-28"^^xsd:date ;
@@ -1690,13 +1697,15 @@ sdaproject:QROWD a foaf:Project, sdatech:fundedProject ;
          sda:funded "Funded Project" ;
          sda:twitter "https://twitter.com/QrowdProject" ;
          foaf:homepage "http://qrowd-project.eu/" ;
+         doap:maintainer sda:JensLehmann ;
+         foaf:member sdaperson:JensLehmann, sdaperson:ClausStadler, sdaperson:PatrickWestphal, sdaperson:LorenzBuehmann, sdaperson:LuisPauloGarcia ;
          sda:source "undefined" ;
          sda:download "undefined" ;
-         sda:partners sdapartner:InfAI .
+         sda:partners sdapartner:AI4BG, sdapartner:Atos, sdapartner:ComuneDiTrento, sdapartner:TomTom, sdapartner:UniversityOfSouthampton, sdapartner:InfAI .
 
 sdaproject:WDAqua a foaf:Project, sdatech:fundedProject ;
            rdfs:label "WDAqua ITN" ;
-           foaf:member sdaperson:HarshThakkar, sdaperson:DenisLukovnikov ;
+           foaf:member sdaperson:HarshThakkar, sdaperson:DenisLukovnikov, sdaperson:IoannaLytra, sdaperson:FabrizioOrlandi, sdaperson:AshwiniJayaKumar, sdaperson:KuldeepSingh, sdaperson:DenisLukovnikov, sdaperson:ChristophLange ;
            foaf:depiction <http://wdaqua.eu/assets/images/wdaqua.png> ;
            ex:description "WDAqua (Answering Questions using Web Data) is a Marie Skłodowska-Curie Innovative Training Network (ITN)." ;
            ex:longdescription "Smart infrastructures and citizens’ participation in the digital society are increasingly data-driven. Sharing, connecting, managing, analysing and understanding data on the web will enable better services for citizens, communities and industry. However, turning web data into successful services for the public and private sector requires skilled web and data scientists as well as further research in the field. WDAqua aims to advance the field of data-driven question answering through a combination of training, research and innovation. Question answering is relevant to a diverse range of end users, and we will demonstrate this in settings including e-commerce, public sector information, publishing and smart cities." ;
@@ -1709,7 +1718,8 @@ sdaproject:WDAqua a foaf:Project, sdatech:fundedProject ;
 
 sdaproject:HOBBIT a foaf:Project, sdatech:fundedProject ;
           rdfs:label "HOBBIT" ;
-          foaf:member sdaperson:JensLehmann ;
+          doap:maintainer sda:JensLehmann ;
+          foaf:member sdaperson:JensLehmann, sdaperson:HenningPetzka ;
           foaf:depiction <https://project-hobbit.eu/wp-content/uploads/2017/11/Hobbit_Logo_2015_rgb_cropped2.png> ;
           ex:publication ex:Publication2 ;
           ex:description "Holistic Benchmarking of Big Linked Data" ;
@@ -1719,11 +1729,12 @@ sdaproject:HOBBIT a foaf:Project, sdatech:fundedProject ;
           foaf:homepage "http://project-hobbit.eu/" ;
           sda:source "https://github.com/hobbit-project" ;
           sda:download "undefined" ;
-          sda:partners sdapartner:AgroKnow .
+          sda:partners sdapartner:AgroKnow, sdapartner:AGTinternational, sdapartner:FraunhoferIAIS, sdapartner:imec, sdapartner:InfAI, sdapartner:Ontos, sdapartner:OpenLink, sdapartner:USU, sdapartner:TomTom, sdapartner:NCSR, sdapartner:FORTH .
 
 sdaproject:SLIPO a foaf:Project, sdatech:fundedProject ;
          rdfs:label "SLIPO" ;
-         foaf:member sdaperson:JensLehmann, sdaperson:AlexanderKister ;
+         doap:maintainer sda:JensLehmann ;
+         foaf:member sdaperson:JensLehmann, sdaperson:AlexanderKister, sdaperson:FabrizioOrlandi, sdaperson:DamienGraux, sdaperson:ClausStadler ;
          foaf:depiction <http://www.slipo.eu/wp-content/uploads/2017/02/Slipo_vertical_1.png> ;
          ex:description "Scalable Linking and Integration of Big POI data" ;
          ex:longdescription "SLIPO aim is to transfer the research output generated by our work in project GeoKnow, to the specific challenge of POI data, introducing validated and cost-effective innovations across their value chain." ;
@@ -1732,11 +1743,12 @@ sdaproject:SLIPO a foaf:Project, sdatech:fundedProject ;
          foaf:homepage "http://www.slipo.eu/" ;
          sda:source "https://github.com/SLIPO-EU" ;
          sda:download "undefined" ;
-         sda:partners sdapartner:InfAI .
+         sda:partners sdapartner:InfAI, sdapartner:AthenaRC , sdapartner:FraunhoferIAIS, sdapartner:GET, sdapartner:TomTom, sdapartner:WIGeoGIS .
 
 sdaproject:GEISER a foaf:Project, sdatech:fundedProject ;
          rdfs:label "GEISER" ;
-         foaf:member sdaperson:JensLehmann, sdaperson:AlexanderKister ;
+         doap:maintainer sda:JensLehmann ;
+         foaf:member sdaperson:JensLehmann, sdaperson:AlexanderKister, sdaperson:FrankNietzsche ;
          foaf:depiction <https://www.projekt-geiser.de/wp-content/uploads/2016/06/Geiser_Logo2016_rgb.png> ;
          ex:description "Benchmarking sensor data to Internet-based Geo-Services" ;
          ex:longdescription "GEISER develops an open cloud-based platform for integrating geospatial data with sensor data from cyberphysical systems based on semantic and Big Data technologies." ;
@@ -1745,7 +1757,7 @@ sdaproject:GEISER a foaf:Project, sdatech:fundedProject ;
          foaf:homepage "http://www.projekt-geiser.de/" ;
          sda:source "" ;
          sda:download "undefined" ;
-         sda:partners "" .
+         sda:partners sdapartner:metaphacts, sdapartner:TomTom, sdapartner:UniversityOfLeipzig, sdapartner:USU, sdapartner:YellowMap .
 
 # LinDA
 sdaproject:LinDA a foaf:Project, sdatech:fundedProject ;
@@ -1753,7 +1765,7 @@ sdaproject:LinDA a foaf:Project, sdatech:fundedProject ;
                  sda:hookline "Enabling Linked Data and Analytics for SMEs by renovating public sector information" ;
                  ex:description "Enabling Linked Data and Analytics for SMEs by renovating public sector information" ;
                  ex:longdescription "The LinDA project addresses one of the most significant challenges of the usage and publication of Linked Data, the renovation and conversion of existing data formats into structures that support the semantic enrichment and interlinking of data. The set of tools provided by LinDA will assist enterprises, especially SMEs which often cannot afford the development and maintenance of dedicated information analysis and management departments, in efficiently developing novel data analytical services that are linked to the available public data therefore contributing to improve their competitiveness and stimulating the emergence of innovative business models." ;
-                 foaf:member sdaperson:JensLehmann, sdaperson:FabrizioOrlandi, sdaperson:MichaelGalkin ;
+                 foaf:member sdaperson:FabrizioOrlandi, sdaperson:MichaelGalkin ;
                  foaf:homepage "http://linda-project.eu/" ;
                  foaf:depiction <http://linda-project.eu/wp-content/uploads/2014/02/linda_logo11.png> ;
                  sda:twitter "https://twitter.com/LinDa_FP7" ;
@@ -1770,7 +1782,7 @@ sdaproject:BeIoT a foaf:Project, sdatech:fundedProject ;
                  rdfs:label "Be-IoT" ;
                  ex:description "The business engine for IoT pilots: Turning the Internet of things in Europe into an economically successful and socially accepted vibrant ecosystem.";
                  ex:longdescription "The business engine for IoT pilots: Turning the Internet of things in Europe into an economically successful and socially accepted vibrant ecosystem. The vision is to build a broad and vibrant ecosystem around the pilot projects that increase the collaboration between them, generates economic impact through new innovative business models and creates trust in the internet of things by transparent information about social challenges such as privacy and security implications. The vision will be reached by focussing on following objectives: support the collaboration and knowledge exchange between pilots and other relevant EU-projects (e.g. FIWARE), build the bridge between pilots and relevant stakeholders (e.g. potential customers such as European small and medium sized enterprises (SMEs), entrepreneurs and developers, but also researchers and policy makers) and thus expand the ecosystem further, set the ground for upcoming business building activities by creating awareness and also by facilitating and fostering societal acceptance (e.g. by running a variety of innovation activities). Building on the above mentioned developments this initiative will set the ground for the development of concrete new customer-oriented businesses based on the emerging pilots. Those business models will be derived through a proven systematic user centric ideation and validation process increasing the market acceptance and success rate of these business models. The emerging new businesses shall have a substantial economic impact in Europe.";
-                 foaf:member sdaperson:JensLehmann ;
+                 foaf:member sdaperson:SteffenLohmann ;
                  foaf:homepage <https://iot-epi.eu/> ;
                  foaf:depiction <https://iot-epi.eu/wp-content/uploads/2016/09/logo-2.png> ;
                  sda:funded "Funded Project" ;
@@ -1780,7 +1792,7 @@ sdaproject:BeIoT a foaf:Project, sdatech:fundedProject ;
                  sda:publicationTag "beiot" ;
                  dct:abstract "The business engine for IoT pilots: Turning the Internet of things in Europe into an economically successful and socially accepted vibrant ecosystem.";
                  #sdapartner:partner sdapartner:TomTomDevelopmentGermanyGmbHD, sdapartner:YellowMapD, sdapartner:Metaphacts ;
-                 doap:maintainer sda:JensLehmann ;
+                 doap:maintainer sdaperson:SteffenLohmann ;
                  #sda:relatedProject sdaproject:GeoKnow, sdaproject:SANSAStack ;
                  #pf:endDate "2019-02-28"^^xsd:date ;
                  #pf:startDate "2016-03-01"^^xsd:date ;
@@ -1792,7 +1804,7 @@ sdaproject:DIACHRON a foaf:Project, sdatech:fundedProject ;
                  rdfs:label "DIACHRON" ;
                  ex:description "Preserving the Evolving Data Web: Making Open / Linked Data Diachronic";
                  ex:longdescription "Preserving the Evolving Data Web: Making Open / Linked Data Diachronic. DIACHRON intends to address and cope with certain issues arising from the evolution of the data such as: (a) Monitor the changes of LOD datasets (tracking the evolution); (b) Identify the cause of the evolution of the datasets in respect with the real world evolution of the entities the datasets describe (provenance problem); (c) Repair various data deficiencies (curation problem); (d)Temporal and spatial quality assessment of the harvested LOD datasets and determination of the datasets versions that need to be preserved (appraisal); (e) Archive multiple versions of data and cite them accordingly to make the reference of previous data feasible (archiving and citation); (f) Retrieve and query previous versions (time traveling queries) The DIACHRON solution aims not only to store previous versions for preservation in case of future need of them, but to create a live repository of the data that captures and highlights data evolution by keeping all data (current and previous) accessible, combined with a toolset that handles the full life cycle of the Data Web.";
-                 foaf:member sdaperson:JensLehmann ;
+                 foaf:member sdaperson:ChristophLange ;
                  foaf:homepage <http://www.diachron-fp7.eu/> ;
                  foaf:depiction <http://www.diachron-fp7.eu/uploads/2/1/2/0/21208652/4006116.png?239> ;
                  sda:funded "Funded Project" ;
@@ -1801,8 +1813,8 @@ sdaproject:DIACHRON a foaf:Project, sdatech:fundedProject ;
                  sda:download "" ;
                  sda:publicationTag "diachron" ;
                  dct:abstract "Preserving the Evolving Data Web: Making Open / Linked Data Diachronic";
-                 #sdapartner:partner sdapartner:TomTomDevelopmentGermanyGmbHD, sdapartner:YellowMapD, sdapartner:Metaphacts ;
-                 doap:maintainer sda:JensLehmann ;
+                 sdapartner:partner sdapartner:FORTH, sdapartner:AthenaRC;
+                 doap:maintainer sdaperson:ChristophLange ;
                  #sda:relatedProject sdaproject:GeoKnow, sdaproject:SANSAStack ;
                  #pf:endDate "2019-02-28"^^xsd:date ;
                  #pf:startDate "2016-03-01"^^xsd:date ;
@@ -1814,7 +1826,7 @@ sdaproject:EDSA a foaf:Project, sdatech:fundedProject ;
                  rdfs:label "EDSA" ;
                  ex:description "European Data Science Academy";
                  ex:longdescription "The European Data Science Academy (EDSA) will establish a virtuous learning production cycle whereby we: a) analyse the required sector specific skillsets for data analysts across the main industrial sectors in Europe; b) develop modular and adaptable data science curricula to meet these needs; and c) deliver training supported by multi-platform and multilingual learning resources based on our curricula. The curricula and learning resources will be continuously evaluated by pedagogical and data science experts during both development and deployment.";
-                 foaf:member sdaperson:JensLehmann ;
+                 foaf:member sdaperson:DiegoCollarana, sdaperson:ElisaMargarethSibarani, sdaperson:SimonScerri ;
                  foaf:homepage <http://edsa-project.eu/> ;
                  foaf:depiction <http://edsa-project.eu/edsa-data/themes/edsa/images/edsa-logo.png> ;
                  sda:funded "Funded Project" ;
@@ -1824,7 +1836,6 @@ sdaproject:EDSA a foaf:Project, sdatech:fundedProject ;
                  sda:publicationTag "edsa" ;
                  dct:abstract "European Data Science Academy";
                  #sdapartner:partner sdapartner:TomTomDevelopmentGermanyGmbHD, sdapartner:YellowMapD, sdapartner:Metaphacts ;
-                 doap:maintainer sda:JensLehmann ;
                  #sda:relatedProject sdaproject:GeoKnow, sdaproject:SANSAStack ;
                  #pf:endDate "2019-02-28"^^xsd:date ;
                  #pf:startDate "2016-03-01"^^xsd:date ;
@@ -1836,7 +1847,7 @@ sdaproject:LiDaKrA a foaf:Project, sdatech:fundedProject ;
                  rdfs:label "LiDaKrA" ;
                  ex:description "Linked-Data-basierte Kriminalanalyse (Linked Data based crime analysis)";
                  ex:longdescription "The Web not only gives rise to new forms of crime, it also enables new technology for crime investigation. Suspects leave traces on the Web, items are being sold and bought on the Web, and a wealth of public open data about organizations and places is available on the Web. LiDaKrA aims at a holistic approach to extract, network and fuse crime-relevant information from public and private sources such as: the Web in general, the Social Web (social networks, blogs or wikis), Deep Web (eCommerce databases such as ebay or Amazon Marketplace), Dark Web (informations from the Tor network), Data Web (open data such as DBpedia or GeoNames). The technical components will be implemented in an integrated platform and will be evaluated in concrete use cases with multiple stakeholders from crime investigation authorities. ";
-                 foaf:member sdaperson:JensLehmann ;
+                 foaf:member sdaperson:ChristophLange, sdaperson:DiegoCollarana ;
                  foaf:homepage <> ;
                  foaf:depiction <> ;
                  sda:funded "Funded Project" ;
@@ -1858,7 +1869,7 @@ sdaproject:LUCID a foaf:Project, sdatech:fundedProject ;
                  rdfs:label "LUCID" ;
                  ex:description "LINKED VALUE CHAIN DATA";
                  ex:longdescription "LUCID is a BMBF funded 2-year project which will change the way how partners in supply chain networks will communicate with each other. In LUCID we research and develop on Linked Data technologies in order to allow partners in supply chains to describe their work, their company and their products for other participants. This allows for building distributed networks of supply chain partners on the Web without a centralized infrastructure. LUCID is funded by the german Federal Ministry of Education and Research (BMBF) in KMU-innovativ: Informations- und Kommunikationstechnologien initiative, which part of the IKT 2020 - Forschung für Innovation funding programme.";
-                 foaf:member sdaperson:JensLehmann ;
+                 foaf:member sdaperson:IrlanGrangel, sdaperson:LavdimHalilaj, sdaperson:NiklasPetersen ;
                  foaf:homepage <https://www.lucid-project.org/> ;
                  foaf:depiction <https://www.lucid-project.org/static/img/logo-www.lucid-project.org.png> ;
                  sda:funded "Funded Project" ;
@@ -1868,7 +1879,7 @@ sdaproject:LUCID a foaf:Project, sdatech:fundedProject ;
                  sda:publicationTag "lucid" ;
                  dct:abstract "LINKED VALUE CHAIN DATA";
                  #sdapartner:partner sdapartner:TomTomDevelopmentGermanyGmbHD, sdapartner:YellowMapD, sdapartner:Metaphacts ;
-                 doap:maintainer sda:JensLehmann;
+                 doap:maintainer sda:NiklasPetersen;
                  #sda:relatedProject sdaproject:GeoKnow, sdaproject:SANSAStack ;
                  #pf:endDate "2019-02-28"^^xsd:date ;
                  #pf:startDate "2016-03-01"^^xsd:date ;
@@ -1880,7 +1891,7 @@ sdaproject:ODINE a foaf:Project, sdatech:fundedProject ;
                  rdfs:label "ODINE" ;
                  ex:description "Open Data Incubator for Europe";
                  ex:longdescription "The first Open Data Incubator for Europe. Europe is supporting the next generation of digital businesses. The Open Data Incubator for Europe (ODINE) is part of that support - it helps European citizens build sustainable businesses using open data. It will offer up to €100.000 and will set up an environment and EU-wide network, including business angels, VCs and funding agencies, to support small and medium enterprises and startups in creating commercial value from open data.";
-                 foaf:member sdaperson:JensLehmann ;
+                 foaf:member sdaperson:FabrizioOrlandi ;
                  foaf:homepage <https://opendataincubator.eu/> ;
                  foaf:depiction <https://opendataincubator.eu/files/2016/01/logo.svg> ;
                  sda:funded "Funded Project" ;
@@ -1889,8 +1900,8 @@ sdaproject:ODINE a foaf:Project, sdatech:fundedProject ;
                  sda:download "" ;
                  sda:publicationTag "odine" ;
                  dct:abstract "Open Data Incubator for Europe";
-                 #sdapartner:partner sdapartner:TomTomDevelopmentGermanyGmbHD, sdapartner:YellowMapD, sdapartner:Metaphacts ;
-                 doap:maintainer sda:JensLehmann;
+                 sdapartner:partner sdapartner:UniversityOfSouthampton ;
+                 doap:maintainer sda:FabrizioOrlandi;
                  #sda:relatedProject sdaproject:GeoKnow, sdaproject:SANSAStack ;
                  #pf:endDate "2019-02-28"^^xsd:date ;
                  #pf:startDate "2016-03-01"^^xsd:date ;
@@ -1902,7 +1913,7 @@ sdaproject:OpenAIRE2020 a foaf:Project, sdatech:fundedProject ;
                  rdfs:label "OpenAIRE2020" ;
                  ex:description "Open access infrastructure for research in Europe to manage and monitor the outcomes of European funded research.";
                  ex:longdescription "OpenAIRE2020 represents a pivotal phase in the long-term effort to implement and strengthen the impact of the Open Access policies of the European Commission, building on the achievements of the OpenAIRE projects. OpenAIRE2020 will expand and leverage its focus from (1) the agents and resources of scholarly communication to workflows and processes, (2) from publications to data, software, and other research outputs, and the links between them, and (3) strengthen the relationship of European Open Access infrastructures with other regions of the world, in particular Latin America and the U.S. Through these efforts OpenAIRE2020 will truly support and accelerate Open Science and Scholarship, of which Open Access is of fundamental importance.";
-                 foaf:member sdaperson:JensLehmann ;
+                 foaf:member sdaperson:ChristophLange, sdaperson:SaharVahdati ;
                  foaf:homepage <https://openaire.eu/> ;
                  foaf:depiction <https://www.openaire.eu/images/site_images/Logo_Vertical.png> ;
                  sda:funded "Funded Project" ;
@@ -1912,7 +1923,7 @@ sdaproject:OpenAIRE2020 a foaf:Project, sdatech:fundedProject ;
                  sda:publicationTag "openaire" ;
                  dct:abstract "Open Data Incubator for Europe";
                  #sdapartner:partner sdapartner:TomTomDevelopmentGermanyGmbHD, sdapartner:YellowMapD, sdapartner:Metaphacts ;
-                 doap:maintainer sda:JensLehmann;
+                 doap:maintainer sda:ChristophLange;
                  #sda:relatedProject sdaproject:GeoKnow, sdaproject:SANSAStack ;
                  #pf:endDate "2019-02-28"^^xsd:date ;
                  #pf:startDate "2016-03-01"^^xsd:date ;
@@ -1924,7 +1935,7 @@ sdaproject:OpenBudgetseu a foaf:Project, sdatech:fundedProject ;
                  rdfs:label "OpenBudgets.eu" ;
                  ex:description "The OpenBudgets.eu project aims to provide a generic framework and concrete tools for supporting financial transparency, thus enhancing accountability within public administrations and reducing the possibility of corruption. A key challenge for OpenBudgets.eu is to provide a framework that is scalable, easy-to-use, flexible, and attractive. We will apply the project concept to three pilot scenarios targeting three different applications related to public spending: journalism, transparency initiatives and citizenship engagement. This project will involve various stakeholders, including but not limited to public administrations, citizens, NGOs, media organisations and public service companies.";
                  ex:longdescription "The OpenBudgets.eu project aims to provide a generic framework and concrete tools for supporting financial transparency, thus enhancing accountability within public administrations and reducing the possibility of corruption. A key challenge for OpenBudgets.eu is to provide a framework that is scalable, easy-to-use, flexible, and attractive. We will apply the project concept to three pilot scenarios targeting three different applications related to public spending: journalism, transparency initiatives and citizenship engagement. This project will involve various stakeholders, including but not limited to public administrations, citizens, NGOs, media organisations and public service companies.";
-                 foaf:member sdaperson:JensLehmann ;
+                 foaf:member sdaperson:FabrizioOrlandi, sdaperson:TiansiDong, sdaperson:FathoniMusyaffa ;
                  foaf:homepage <> ;
                  foaf:depiction <https://pbs.twimg.com/profile_images/654638053290602500/9XhCpjrM_400x400.png> ;
                  sda:funded "Funded Project" ;
@@ -1934,7 +1945,7 @@ sdaproject:OpenBudgetseu a foaf:Project, sdatech:fundedProject ;
                  sda:publicationTag "openbudgets" ;
                  dct:abstract "";
                  #sdapartner:partner sdapartner:TomTomDevelopmentGermanyGmbHD, sdapartner:YellowMapD, sdapartner:Metaphacts ;
-                 doap:maintainer sda:JensLehmann;
+                 #doap:maintainer sda:JensLehmann;
                  #sda:relatedProject sdaproject:GeoKnow, sdaproject:SANSAStack ;
                  #pf:endDate "2019-02-28"^^xsd:date ;
                  #pf:startDate "2016-03-01"^^xsd:date ;
@@ -1946,7 +1957,7 @@ sdaproject:OSCOSS a foaf:Project, sdatech:fundedProject ;
                  rdfs:label "OSCOSS" ;
                  ex:description "A shared platform for Opening Scholarly Communication in the Social Sciences.";
                  ex:longdescription "OSCOSS is concerned with Opening Scholarly Communication in the Social Sciences.";
-                 foaf:member sdaperson:JensLehmann ;
+                 foaf:member sdaperson:ChristophLange, sdaperson:AfshinSadeghi, sdaperson:SaharVahdati ;
                  foaf:homepage <> ;
                  foaf:depiction <> ;
                  sda:funded "Funded Project" ;
@@ -1956,7 +1967,7 @@ sdaproject:OSCOSS a foaf:Project, sdatech:fundedProject ;
                  sda:publicationTag "oscoss" ;
                  dct:abstract "A shared platform for Opening Scholarly Communication in the Social Sciences.";
                  #sdapartner:partner sdapartner:TomTomDevelopmentGermanyGmbHD, sdapartner:YellowMapD, sdapartner:Metaphacts ;
-                 doap:maintainer sda:JensLehmann;
+                 #doap:maintainer sda:JensLehmann;
                  #sda:relatedProject sdaproject:GeoKnow, sdaproject:SANSAStack ;
                  #pf:endDate "2019-02-28"^^xsd:date ;
                  #pf:startDate "2016-03-01"^^xsd:date ;
@@ -1968,7 +1979,7 @@ sdaproject:SeReCo a foaf:Project, sdatech:fundedProject ;
                  rdfs:label "SeReCo" ;
                  ex:description "SeReCo (Semantics, Coordination and Reasoning) is a German-French doctoral college. Its scientific purpose of SeReCo is to explore the spectrum of technologies related to semantics, reasoning and coordination in distributed and open environments (such as the Web).";
                  ex:longdescription "SeReCo (Semantics, Coordination and Reasoning) is a German-French doctoral college. Its scientific purpose of SeReCo is to explore the spectrum of technologies related to semantics, reasoning and coordination in distributed and open environments (such as the Web).";
-                 foaf:member sdaperson:JensLehmann ;
+                 foaf:member sdaperson:ChristophLange ;
                  foaf:homepage <https://sereco.univ-st-etienne.fr/> ;
                  foaf:depiction <> ;
                  sda:funded "Funded Project" ;
@@ -1978,7 +1989,7 @@ sdaproject:SeReCo a foaf:Project, sdatech:fundedProject ;
                  sda:publicationTag "sereco" ;
                  dct:abstract "";
                  #sdapartner:partner sdapartner:TomTomDevelopmentGermanyGmbHD, sdapartner:YellowMapD, sdapartner:Metaphacts ;
-                 doap:maintainer sda:JensLehmann;
+                 doap:maintainer sda:ChristophLange;
                  #sda:relatedProject sdaproject:GeoKnow, sdaproject:SANSAStack ;
                  #pf:endDate "2019-02-28"^^xsd:date ;
                  #pf:startDate "2016-03-01"^^xsd:date ;
@@ -1990,7 +2001,7 @@ sdaproject:SlideWiki a foaf:Project, sdatech:fundedProject ;
                  rdfs:label "SlideWiki" ;
                  ex:description "A shared framework that supports communities to create presentations collaboratively";
                  ex:longdescription "SlideWiki is a collaboration platform which enables communities to build, share and play online presentations. In addition to importing PowerPoint presentations, it supports authoring of interactive online slides using HTML and LateX. Slides and their containers (called Deck), are versioned thereby enabling change tracking. Users can create their own themes on top of existing themes or re-use other's themes.";
-                 foaf:member sdaperson:JensLehmann ;
+                 foaf:member sdaperson:SteffenLohmann, sdaperson:SaharVahdati ;
                  foaf:homepage <https://slidewiki.org/> ;
                  foaf:depiction <https://slidewiki.org/assets/images/slideWiki-logo-linear.png> ;
                  sda:funded "Funded Project" ;
@@ -2000,7 +2011,7 @@ sdaproject:SlideWiki a foaf:Project, sdatech:fundedProject ;
                  sda:publicationTag "slidewiki" ;
                  dct:abstract "";
                  #sdapartner:partner sdapartner:TomTomDevelopmentGermanyGmbHD, sdapartner:YellowMapD, sdapartner:Metaphacts ;
-                 doap:maintainer sda:JensLehmann;
+                 #doap:maintainer sda:JensLehmann;
                  #sda:relatedProject sdaproject:GeoKnow, sdaproject:SANSAStack ;
                  #pf:endDate "2019-02-28"^^xsd:date ;
                  #pf:startDate "2016-03-01"^^xsd:date ;
@@ -2012,22 +2023,23 @@ sdaproject:BigDataOcean a foaf:Project, sdatech:fundedProject ;
                  rdfs:label "Big Data Ocean" ;
                  ex:description "Exploiting Oceans of Data for Maritime Applications";
                  ex:longdescription "BigDataOcean aims to capitalise on existing modern technological breakthroughs in the areas of the big data driven economy, and roll out a completely new value chain of interrelated data streams coming from diverse sectors and languages and residing on cross technology innovations being delivered in different formats in order to revolutionise the way maritime-related industries work, showcasing a huge and realistic economic, societal and environmental impact that is being achieved by introducing an economy of knowledge into a traditional sector which does not operate in an orchestrated manner and is rather fragmented.";
-                 foaf:member sdaperson:JensLehmann ;
+                 foaf:member sdaperson:JensLehmann, sdaperson:GezimSejdiu, sdaperson:HajiraJabeen, sdaperson:IoannaLytra, sdaperson:FabrizioOrlandi ;
                  foaf:homepage <http://www.bigdataocean.eu/> ;
                  foaf:depiction <http://www.bigdataocean.eu/site/wp-content/uploads/2017/02/BIG-DATA-OCEAN_LOGO.png> ;
                  sda:funded "Funded Project" ;
                  sda:twitter "https://twitter.com/big_data_ocean" ;
-                 sda:source "" ;
+                 sda:source "https://github.com/search?q=org%3ASmartDataAnalytics+BigDataOcean" ;
                  sda:download "" ;
                  sda:publicationTag "bigdataocean" ;
                  dct:abstract "Exploiting Oceans of Data for Maritime Applications";
-                 #sdapartner:partner sdapartner:TomTomDevelopmentGermanyGmbHD, sdapartner:YellowMapD, sdapartner:Metaphacts ;
-                 doap:maintainer sda:JensLehmann;
+                 doap:maintainer sdaperson:FabrizioOrlandi;
                  #sda:relatedProject sdaproject:GeoKnow, sdaproject:SANSAStack ;
                  #pf:endDate "2019-02-28"^^xsd:date ;
                  #pf:startDate "2016-03-01"^^xsd:date ;
                  #sdapublication:publication sdapublication:Publication1 ;
                  sda:status "active" .
+
+
 
 ############################Open Source Projects##########################
 
@@ -2054,7 +2066,7 @@ sdaproject:SANSAStack a foaf:Project, sdatech:openSourceProject ;
                  sda:hookline "Open Source Algorithms for Distributed Data Processing for Large-scale RDF Knowledge Graphs" ;
                  ex:description "Open Source Algorithms for Distributed Data Processing for Large-scale RDF Knowledge Graphs" ;
                  ex:longdescription "<b>SANSA-Stack</b>’s core is a processing data flow engine that provides data distribution, and fault tolerance for distributed computations over RDF large-scale datasets." ;
-                 foaf:member sdaperson:GezimSejidu, sdaperson:LorenzBuehmann, sdaperson:HajiraJabeen, sdaperson:AnisaRula ;
+                 foaf:member sdaperson:JensLehmann, sdaperson:GezimSejidu, sdaperson:HajiraJabeen, sdaperson:NileshChakraborty ;
                  foaf:homepage <http://sansa-stack.net> ;
                  foaf:depiction <http://sansa-stack.net/wp-content/uploads/2016/04/sansa-logo-blue.png> ;
                  sda:twitter "https://twitter.com/SANSA_Stack" ;
@@ -2075,7 +2087,7 @@ sdaproject:SMLBench a foaf:Project, sdatech:openSourceProject ;
                  sda:hookline "A Benchmark for Symbolic Supervised Machine Learning from Expressive Structured Data" ;
                  ex:description "A Benchmark for Symbolic Supervised Machine Learning from Expressive Structured Data" ;
                  ex:longdescription "The ultimate goal of SML-Bench is to foster research in machine learning from structured data as well as increase the reproducibility and comparability of algorithms in that area. This is important, since a) the preparation of machine learning tasks in that area involves a significant amount of work and b) there are hardly any cross comparisions across languages as this requires data conversion processes. " ;
-                 foaf:member sdaperson:JensLehmann, sdaperson:LorenzBuehmann, sdaperson:HajiraJabeen ;
+                 foaf:member sdaperson:JensLehmann, sdaperson:LorenzBuehmann, sdaperson:HajiraJabeen, sdaperson:PatrickWestphal, sdaperson:SimonBin ;
                  foaf:homepage <http://sml-bench.sda.tech/> ;
                  foaf:depiction <https://pbs.twimg.com/profile_images/732611105730744320/1UrgJ0Kd_400x400.jpg> ;
                  sda:twitter "https://twitter.com/smlbench" ;
@@ -2091,7 +2103,7 @@ sdaproject:SMLBench a foaf:Project, sdatech:openSourceProject ;
 sdaproject:AskNow a foaf:Project, sdatech:openSourceProject ;
                  rdfs:label "AskNow" ;
                  sda:hookline "Question Answering over RDF Knowledge Graphs" ;
-                 foaf:member sda:JensLehmann, sda:MohnishDubey ;
+                 foaf:member sda:JensLehmann, sda:MohnishDubey, sdaperson:GauravMaheshwari, sdaperson:PriyanshTrivedi ;
                  foaf:homepage <https://github.com/AskNowQA> ;
                  foaf:depiction <https://avatars2.githubusercontent.com/u/29380235?s=200&v=4> ;
                  sda:twitter "https://twitter.com/AskNowQA" ;
@@ -2121,6 +2133,7 @@ sdaproject:LITMUS a foaf:Project, sdatech:openSourceProject ;
 ex:DeFacto a foaf:Project, sdatech:openSourceProject ;
            rdfs:label "DeFacto" ;
            foaf:member sdaperson:JensLehmann, sdaperson:DiegoEsteves ;
+           doap:maintainer sda:JensLehmann ;
            foaf:depiction </assets/sdalogo.png> ;
            ex:description "Deep Fact Validation" ;
            ex:longdescription "DeFacto (Deep Fact Validation) is an algorithm for validating statements by finding confirming sources for it on the web. It takes a statement (such as “Jamaica Inn was directed by Alfred Hitchcock”) as input and then tries to find evidence for the truth of that statement by searching for information in the web." ;
@@ -2133,14 +2146,80 @@ ex:DeFacto a foaf:Project, sdatech:openSourceProject ;
 # MEX Vocabulary
 sdaproject:MEX a foaf:Project, sdatech:openSourceProject ;
                  rdfs:label "MEX Vocabulary" ;
-                 sda:hookline "A Light-Weight Interchange Format for Machine Learning Experiments" ;
+                 ex:description "A Light-Weight Interchange Format for Machine Learning Experiments" ;
+                 ex:longdescription "" ;
                  foaf:member sda:JensLehmann, sda:DiegoEsteves ;
                  foaf:homepage <http://mex.aksw.org/> ;
                  foaf:depiction "" ;
                  sda:twitter "" ;
                  sda:source "https://github.com/SmartDataAnalytics/mexproject" ;
-                 site:content "";
-                 sda:publicationTag "mex" ;
+                 doap:maintainer sda:JensLehmann ;
+                 #sdapublication:publication sdapublication:Publication1 ;
+                 sda:status "active" .
+
+###############Incubator Projects####################
+
+sdaproject:MLDSLs a foaf:Project, sdatech:incubator ;
+                 rdfs:label "ML-DSLs" ;
+                 ex:description "Domain Specific Languages for Machine Learning algorithms." ;
+                 ex:longdescription "" ;
+                 foaf:member sda:JensLehmann ;
+                 foaf:homepage <> ;
+                 foaf:depiction "" ;
+                 sda:twitter "" ;
+                 sda:source "" ;
+                 doap:maintainer sda:JensLehmann ;
+                 #sdapublication:publication sdapublication:Publication1 ;
+                 sda:status "active" .
+
+sdaproject:CogRob a foaf:Project, sdatech:incubator ;
+                 rdfs:label "Cognitive Robotics" ;
+                 ex:description "Cognitive Robotics." ;
+                 ex:longdescription "" ;
+                 foaf:member sda:JensLehmann ;
+                 foaf:homepage <> ;
+                 foaf:depiction "" ;
+                 sda:twitter "" ;
+                 sda:source "" ;
+                 doap:maintainer sda:JensLehmann ;
+                 #sdapublication:publication sdapublication:Publication1 ;
+                 sda:status "active" .
+
+sdaproject:EACCP a foaf:Project, sdatech:incubator ;
+                 rdfs:label "Experimental Analysis of Class CS Problems" ;
+                 ex:description "Experimental Analysis of Class CS Problems." ;
+                 ex:longdescription "" ;
+                 foaf:member sda:JensLehmann ;
+                 foaf:homepage <> ;
+                 foaf:depiction "" ;
+                 sda:twitter "" ;
+                 sda:source "" ;
+                 doap:maintainer sda:JensLehmann ;
+                 #sdapublication:publication sdapublication:Publication1 ;
+                 sda:status "active" .
+
+sdaproject:SAML a foaf:Project, sdatech:incubator ;
+                 rdfs:label "Smoothed Analysis ML" ;
+                 ex:description "Smoothed Analysis of Structured Machine Learning Algorithms from Knowledge Graphs." ;
+                 ex:longdescription "" ;
+                 foaf:member sda:JensLehmann ;
+                 foaf:homepage <> ;
+                 foaf:depiction "" ;
+                 sda:twitter "" ;
+                 sda:source "" ;
+                 doap:maintainer sda:JensLehmann ;
+                 #sdapublication:publication sdapublication:Publication1 ;
+                 sda:status "active" .
+
+sdaproject:TFVKG a foaf:Project, sdatech:incubator ;
+                 rdfs:label "Tensor Factorisation and Visualization for Knowledge Graphs" ;
+                 ex:description "Tensor Factorisation and Visualization for Knowledge Graphs." ;
+                 ex:longdescription "" ;
+                 foaf:member sda:JensLehmann ;
+                 foaf:homepage <> ;
+                 foaf:depiction "" ;
+                 sda:twitter "" ;
+                 sda:source "" ;
                  doap:maintainer sda:JensLehmann ;
                  #sdapublication:publication sdapublication:Publication1 ;
                  sda:status "active" .
@@ -2946,6 +3025,295 @@ ex:SemanticDataWebTechnologies a ex:course ;
                                ex:language "English" ;
                                ex:summer2017 "Summer Semester 2017" .
 
+#######################################
+##########Teaching Model###############
+#######################################
+
+#########Summer Term############
+
+sdateaching:SMDSE18S a sdatech:Course ;
+           rdfs:label "SMDSE" ;
+           dct:title "Seminar Model-Driven Software Engineering" ;
+           foaf:homepage <> ;
+           ex:description "The seminar is aimed at students who want to specialize in Software Engineering and Model-Driven Engineering." ;
+           dct:language "en-US" ;
+           dct:educationLevel "" ;
+           pf:endDate "2019-02-28"^^xsd:date ;
+           pf:startDate "2016-03-01"^^xsd:date ;
+           sda:maintainer sdaperson:GuenterKniesel, sdaperson:HamedShariatYazdi, sdaperson:JensLehmann ;
+           sda:semester "Summer" ;
+           sda:year 2018 ;
+           sda:id "MA-INF 3218" .
+
+sdateaching:SPA18S a sdatech:Course ;
+           rdfs:label "PA" ;
+           dct:title "Seminar Predictive Analytics" ;
+           foaf:homepage <https://basis.uni-bonn.de/qisserver/rds?state=verpublish&status=init&vmfile=no&publishid=141397&moduleCall=webInfo&publishConfFile=webInfo&publishSubDir=veranstaltung> ;
+           ex:description "The seminar is aimed at students who want to become familiar with predictive analytics in the domain of software engineering." ;
+           dct:language "en-US" ;
+           dct:educationLevel "" ;
+           pf:endDate "2019-02-28"^^xsd:date ;
+           pf:startDate "2016-03-01"^^xsd:date ;
+           sda:maintainer sdaperson:HamedShariatYazdi, sdaperson:JensLehmann ;
+           sda:semester "Summer" ;
+           sda:year 2018 ;
+           sda:id "MA-INF 3238" .
+
+sdateaching:SNLP18S a sdatech:Course ;
+           rdfs:label "SNLP" ;
+           dct:title "Seminar Natural Language Processing" ;
+           foaf:homepage <> ;
+           ex:description "" ;
+           dct:language "en-US" ;
+           dct:educationLevel "" ;
+           pf:endDate "2019-02-28"^^xsd:date ;
+           pf:startDate "2016-03-01"^^xsd:date ;
+           sda:maintainer sdaperson:MohnishDubey, sdaperson:DiegoEsteves, sdaperson:JensLehmann ;
+           sda:semester "Summer" ;
+           sda:year 2018 ;
+           sda:id "MA-INF 4221" .
+
+sdateaching:LNLP18S a sdatech:Course ;
+           rdfs:label "SNLP" ;
+           dct:title "Lab Natural Language Processing" ;
+           foaf:homepage <https://smartdataanalytics.github.io/MA-INF-4222-NLP-Lab/> ;
+           ex:description "" ;
+           dct:language "en-US" ;
+           dct:educationLevel "" ;
+           pf:endDate "2019-02-28"^^xsd:date ;
+           pf:startDate "2016-03-01"^^xsd:date ;
+           sda:maintainer sdaperson:MohnishDubey, sdaperson:DiegoEsteves, sdaperson:JensLehmann ;
+           sda:semester "Summer" ;
+           sda:year 2018 ;
+           sda:id "MA-INF 4222" .
+
+sdateaching:LDBDA18S a sdatech:Course ;
+           rdfs:label "LDBDA" ;
+           dct:title "Lab Distributed Big Data Analytics" ;
+           foaf:homepage <http://sda.cs.uni-bonn.de/teaching/dbda/> ;
+           ex:description "The goal is to provide experience and technical skills related to Big data processing tools like Flink and Spark, in addition, to make them acquainted with the functional programming style prevalent in concurrent and parallel programming for Big data." ;
+           dct:language "en-US" ;
+           dct:educationLevel "" ;
+           pf:endDate "2019-02-28"^^xsd:date ;
+           pf:startDate "2016-03-01"^^xsd:date ;
+           sda:maintainer sdaperson:HajiraJabeen, sdaperson:GezimSejdiu, sdaperson:JensLehmann ;
+           sda:semester "Summer" ;
+           sda:year 2018 ;
+           sda:id "MA-INF 4223" .
+
+sdateaching:LSDWT18S a sdatech:Course ;
+           rdfs:label "LSDWT" ;
+           dct:title "Lab Semantic Data Web Technologies" ;
+           foaf:homepage <https://basis.uni-bonn.de/qisserver/rds?state=verpublish&status=init&vmfile=no&publishid=142088&moduleCall=webInfo&publishConfFile=webInfo&publishSubDir=veranstaltung> ;
+           ex:description "" ;
+           dct:language "en-US" ;
+           dct:educationLevel "" ;
+           pf:endDate "2019-02-28"^^xsd:date ;
+           pf:startDate "2016-03-01"^^xsd:date ;
+           sda:maintainer sdaperson:IoannaLytra, sdaperson:ChristophLange, sdaperson:JensLehmann ;
+           sda:semester "Summer" ;
+           sda:year 2018 ;
+           sda:id "MA-INF 4314" .
+
+sdateaching:MSSDA18S a sdatech:Course ;
+           rdfs:label "MSSDA" ;
+           dct:title "Master Seminar Smart Data Analytics" ;
+           foaf:homepage <https://basis.uni-bonn.de/qisserver/rds?state=verpublish&status=init&vmfile=no&publishid=142311&moduleCall=webInfo&publishConfFile=webInfo&publishSubDir=veranstaltung> ;
+           ex:description "This seminar is for the students who are writing their master thesis in Smart Data Analytics (or are preparing for a thesis in this domain)." ;
+           dct:language "en-US" ;
+           dct:educationLevel "" ;
+           pf:endDate "2019-02-28"^^xsd:date ;
+           pf:startDate "2016-03-01"^^xsd:date ;
+           sda:maintainer sdaperson:SaharVahdati, sdaperson:JensLehmann ;
+           sda:semester "Summer" ;
+           sda:year 2018 ;
+           sda:id "MA-INF 0402" .
+
+sdateaching:MSSE18S a sdatech:Course ;
+           rdfs:label "MSSE" ;
+           dct:title "Master Seminar Software Engineering" ;
+           foaf:homepage <https://basis.uni-bonn.de/qisserver/rds?state=verpublish&status=init&vmfile=no&publishid=142310&moduleCall=webInfo&publishConfFile=webInfo&publishSubDir=veranstaltung> ;
+           ex:description "This seminar is for the students who are writing their master’s thesis in Software Engineering (or are preparing for a thesis in this domain)." ;
+           dct:language "en-US" ;
+           dct:educationLevel "" ;
+           pf:endDate "2019-02-28"^^xsd:date ;
+           pf:startDate "2016-03-01"^^xsd:date ;
+           sda:maintainer sdaperson:GuenterKniesel, sdaperson:JensLehmann ;
+           sda:semester "Summer" ;
+           sda:year 2018 ;
+           sda:id "MA-INF 0402" .
+
+sdateaching:BSBSWT18S a sdatech:Course ;
+           rdfs:label "BSBSWT" ;
+           dct:title "Begleitseminar Bachelorarbeit Softwaretechnologie" ;
+           foaf:homepage <https://basis.uni-bonn.de/qisserver/rds?state=verpublish&status=init&vmfile=no&moduleCall=webInfo&publishConfFile=webInfo&publishSubDir=veranstaltung&veranstaltung.veranstid=142291> ;
+           ex:description "" ;
+           dct:language "en-US" ;
+           dct:educationLevel "" ;
+           pf:endDate "2019-02-28"^^xsd:date ;
+           pf:startDate "2016-03-01"^^xsd:date ;
+           sda:maintainer sdaperson:GuenterKniesel, sdaperson:JensLehmann ;
+           sda:semester "Summer" ;
+           sda:year 2018 ;
+           sda:id "BA-INF 062" .
+
+
+########Winter Term##############
+
+sdateaching:LMDSE17W a sdatech:Course ;
+           rdfs:label "LMDSE" ;
+           dct:title "Lab Model-Driven Software Engineering" ;
+           foaf:homepage <https://sewiki.iai.uni-bonn.de/teaching/labs/mdse/2017/start> ;
+           ex:description "The lab is aimed at students who want to specialize in Software Engineering and Model-Driven Engineering." ;
+           dct:language "en-US" ;
+           dct:educationLevel "" ;
+           pf:endDate "2019-02-28"^^xsd:date ;
+           pf:startDate "2016-03-01"^^xsd:date ;
+           sda:maintainer sdaperson:GuenterKniesel, sdaperson:HamedShariatYazdi, sdaperson:JensLehmann ;
+           sda:semester "Winter" ;
+           sda:year 2017 ;
+           sda:id "MA-INF 3219" .
+
+sdateaching:SVTCS17W a sdatech:Course ;
+           rdfs:label "SVTCS" ;
+           dct:title "Seminar Verification and Testing of Complex Systems" ;
+           foaf:homepage <https://sewiki.iai.uni-bonn.de/teaching/seminars/vtcs/2017/start> ;
+           ex:description "" ;
+           dct:language "en-US" ;
+           dct:educationLevel "" ;
+           pf:endDate "2019-02-28"^^xsd:date ;
+           pf:startDate "2016-03-01"^^xsd:date ;
+           sda:maintainer sdaperson:GuenterKniesel ;
+           sda:semester "Winter" ;
+           sda:year 2017 ;
+           sda:id "MA-INF 3318" .
+
+sdateaching:SNLP17W a sdatech:Course ;
+           rdfs:label "SNLP" ;
+           dct:title "Seminar Natural Language Processing" ;
+           foaf:homepage <https://basis.uni-bonn.de/qisserver/rds?state=verpublish&status=init&vmfile=no&publishid=141397&moduleCall=webInfo&publishConfFile=webInfo&publishSubDir=veranstaltung> ;
+           ex:description "" ;
+           dct:language "en-US" ;
+           dct:educationLevel "" ;
+           pf:endDate "2019-02-28"^^xsd:date ;
+           pf:startDate "2016-03-01"^^xsd:date ;
+           sda:maintainer sdaperson:MohnishDubey, sdaperson:DiegoEsteves, sdaperson:JensLehmann ;
+           sda:semester "Winter" ;
+           sda:year 2017 ;
+           sda:id "MA-INF 4221" .
+
+sdateaching:LNLP17W a sdatech:Course ;
+           rdfs:label "LNLP" ;
+           dct:title "Lab Natural Language Processing" ;
+           foaf:homepage <https://basis.uni-bonn.de/qisserver/rds?state=verpublish&status=init&vmfile=no&publishid=141397&moduleCall=webInfo&publishConfFile=webInfo&publishSubDir=veranstaltung> ;
+           ex:description "" ;
+           dct:language "en-US" ;
+           dct:educationLevel "" ;
+           pf:endDate "2019-02-28"^^xsd:date ;
+           pf:startDate "2016-03-01"^^xsd:date ;
+           sda:maintainer sdaperson:MohnishDubey, sdaperson:DiegoEsteves, sdaperson:JensLehmann ;
+           sda:semester "Winter" ;
+           sda:year 2017 ;
+           sda:id "MA-INF 4222" .
+
+sdateaching:LDBDA17W a sdatech:Course ;
+           rdfs:label "LDBDA" ;
+           dct:title "Lab Distributed Big Data Analytics" ;
+           foaf:homepage <http://sda.cs.uni-bonn.de/teaching/dbda/> ;
+           ex:description "The goal is to provide experience and technical skills related to Big data processing tools like Flink and Spark, in addition, to make them acquainted with the functional programming style prevalent in concurrent and parallel programming for Big data." ;
+           dct:language "en-US" ;
+           dct:educationLevel "" ;
+           pf:endDate "2019-02-28"^^xsd:date ;
+           pf:startDate "2016-03-01"^^xsd:date ;
+           sda:maintainer sdaperson:HajiraJabeen, sdaperson:GezimSejdiu, sdaperson:JensLehmann ;
+           sda:semester "Winter" ;
+           sda:year 2017 ;
+           sda:id "MA-INF 4223" .
+
+sdateaching:LESDWT17W a sdatech:Course ;
+           rdfs:label "LESDWT" ;
+           dct:title "Lecture Semantic Data Web Technologies" ;
+           foaf:homepage <https://basis.uni-bonn.de/qisserver/rds?state=verpublish&status=init&vmfile=no&publishid=134907&moduleCall=webInfo&publishConfFile=webInfo&publishSubDir=veranstaltung> ;
+           ex:description "" ;
+           dct:language "en-US" ;
+           dct:educationLevel "" ;
+           pf:endDate "2019-02-28"^^xsd:date ;
+           pf:startDate "2016-03-01"^^xsd:date ;
+           sda:maintainer sdaperson:ChristophLange, sdaperson:JensLehmann ;
+           sda:semester "Winter" ;
+           sda:year 2017 ;
+           sda:id "MA-INF 4312" .
+
+sdateaching:ESDWT17W a sdatech:Course ;
+           rdfs:label "ESDWT" ;
+           dct:title "Exercises Semantic Data Web Technologies" ;
+           foaf:homepage <https://basis.uni-bonn.de/qisserver/rds?state=verpublish&status=init&vmfile=no&publishid=134908&moduleCall=webInfo&publishConfFile=webInfo&publishSubDir=veranstaltung> ;
+           ex:description "" ;
+           dct:language "en-US" ;
+           dct:educationLevel "" ;
+           pf:endDate "2019-02-28"^^xsd:date ;
+           pf:startDate "2016-03-01"^^xsd:date ;
+           sda:maintainer sdaperson:ChristophLange, sdaperson:JensLehmann ;
+           sda:semester "Winter" ;
+           sda:year 2017 ;
+           sda:id "MA-INF 4312" .
+
+sdateaching:SSDWT17W a sdatech:Course ;
+           rdfs:label "SSDWT" ;
+           dct:title "Seminar Semantic Data Web Technologies" ;
+           foaf:homepage <https://basis.uni-bonn.de/qisserver/rds?state=verpublish&status=init&vmfile=no&publishid=135455&moduleCall=webInfo&publishConfFile=webInfo&publishSubDir=veranstaltung> ;
+           ex:description "" ;
+           dct:language "en-US" ;
+           dct:educationLevel "" ;
+           pf:endDate "2019-02-28"^^xsd:date ;
+           pf:startDate "2016-03-01"^^xsd:date ;
+           sda:maintainer sdaperson:IoannaLytra, sdaperson:JensLehmann ;
+           sda:semester "Winter" ;
+           sda:year 2017 ;
+           sda:id "MA-INF 4313" .
+
+sdateaching:LEKGA17W a sdatech:Course ;
+           rdfs:label "LEKGA" ;
+           dct:title "Lecture Knowledge Graph Analysis" ;
+           foaf:homepage <https://sewiki.iai.uni-bonn.de/teaching/lectures/kga/2017/start> ;
+           ex:description "This course gives an Introduction to Knowledge Graph Analysis." ;
+           dct:language "en-US" ;
+           dct:educationLevel "" ;
+           pf:endDate "2019-02-28"^^xsd:date ;
+           pf:startDate "2016-03-01"^^xsd:date ;
+           sda:maintainer sdaperson:AsjaFischer, sdaperson:JensLehmann ;
+           sda:semester "Winter" ;
+           sda:year 2017 ;
+           sda:id "MA-INF 4316" .
+
+sdateaching:EKGA17W a sdatech:Course ;
+           rdfs:label "EKGA" ;
+           dct:title "Exercises Knowledge Graph Analysis" ;
+           foaf:homepage <https://sewiki.iai.uni-bonn.de/teaching/lectures/kga/2017/start> ;
+           ex:description "" ;
+           dct:language "en-US" ;
+           dct:educationLevel "" ;
+           pf:endDate "2019-02-28"^^xsd:date ;
+           pf:startDate "2016-03-01"^^xsd:date ;
+           sda:maintainer sdaperson:AsjaFischer, sdaperson:JensLehmann ;
+           sda:semester "Winter" ;
+           sda:year 2017 ;
+           sda:id "MA-INF 4316" .
+
+sdateaching:SKGA17W a sdatech:Course ;
+           rdfs:label "SKGA" ;
+           dct:title "Seminar Knowledge Graph Analysis" ;
+           foaf:homepage <https://basis.uni-bonn.de/qisserver/rds?state=verpublish&status=init&vmfile=no&publishid=135431&moduleCall=webInfo&publishConfFile=webInfo&publishSubDir=veranstaltung> ;
+           ex:description "" ;
+           dct:language "en-US" ;
+           dct:educationLevel "" ;
+           pf:endDate "2019-02-28"^^xsd:date ;
+           pf:startDate "2016-03-01"^^xsd:date ;
+           sda:maintainer sdaperson:AsjaFischer, sdaperson:JensLehmann ;
+           sda:semester "Winter" ;
+           sda:year 2017 ;
+           sda:id "MA-INF 4317" .
+
 
 sdatech:group a foaf:Document ;
          rdfs:label "Groups" .
@@ -3173,6 +3541,14 @@ sdatech:Group a owl:Class ;
                     rdfs:subClassOf foaf:Organization ;
                     site:classTemplate "group" ;
                     sysont:creationLabel "Groups" ;
+                    dct:issued "2008-05-14" .
+
+sdatech:Course a owl:Class ;
+                    rdfs:label "Course" ;
+                    rdfs:comment "A course being held by SDA." ;
+                    rdfs:subClassOf foaf:Organization ;
+                    site:classTemplate "course" ;
+                    sysont:creationLabel "Course" ;
                     dct:issued "2008-05-14" .
 
 ###############################################
