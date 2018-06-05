@@ -611,6 +611,21 @@ text-align: center;
 
 .pagination a:hover:not(.active) {background-color: #ddd;}
 
+.links-to-social a {
+    color: black;
+    float: center;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+}
+
+.links-to-social a.active {
+    background-color: #ddd;
+    color: $blue-sda-color;
+}
+
+.links-to-social a:hover:not(.active) {background-color: #ddd;}
+
 .content-people {
   background-color: #F5F5F5;
   text-align: center;
@@ -619,6 +634,12 @@ text-align: center;
   padding-right: 24px;
   width: 100%;
 }
+
+.clear-padding{
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
 .positioning-cards{
   padding-right: 43px;
   padding-left: 43px;
@@ -817,7 +838,7 @@ hr {
   margin-left: 8px;
 
   a {
-    color: $blue-sda-color;
+    color: $purple-sda-color;
     padding: 0px;
     margin: 0px;
     webkit-margin-after: 0px;
@@ -825,7 +846,7 @@ hr {
 
     &:hover {
       text-decoration: none;
-      color: $purple-sda-color;
+      color: lighten($purple-sda-color, 15%);
     }
   }
 }
@@ -962,7 +983,7 @@ hr {
 //Teaching
 .courseLink a
 {
-    color: #087CCD !important; 
+    color: #087CCD !important;
     padding: 0px !important;
     background: none;
 }
@@ -1226,7 +1247,8 @@ button::-moz-focus-inner {
 .item {
   background-color: #f5f5f5 !important;
   margin: 10px !important;
-  width: 280px !important;
+  width: 180px !important;
+  height: 150px !important;
 }
 .photothumb{
   width: 100% !important;

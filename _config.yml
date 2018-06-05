@@ -102,6 +102,15 @@ jekyll_rdf:
         "http://sda.tech/partners" : "partners.html"
         "http://sda.tech/about" : "page.html"
         "http://sda.tech/people" : "people.html"
+        #
+        "http://sda.tech/professors" : "people.html"
+        "http://sda.tech/seniorresearchers" : "people.html"
+        "http://sda.tech/phdstudents" : "people.html"
+        "http://sda.tech/associatedresearchers" : "people.html"
+        "http://sda.tech/studentassistants" : "people.html"
+        "http://sda.tech/interns" : "people.html"
+        "http://sda.tech/formermembers" : "people.html"
+        #
         "http://sda.tech/contact" : "contact.html"
         "http://sda.tech/blog" : "blog.html"
         # "http://example.org/blog" : "blog.html"
