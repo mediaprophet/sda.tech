@@ -1,11 +1,12 @@
 <br class="horizontal-separator"/>
 <div class="partner-title" style="text-align:center;">
-  <a href="../{{include.href}}"><h1>{{include.title}}</h1></a> 
+  <a href={% if include.projectItemFor == "P
+projectList"%}"../{{include.href}}"{% elsif include.projectItemFor== "project" %}"{{include.href}}"{% endif %} ><h1>{{include.title}}</h1></a>
 </div>
 <div class="partner-item">
   <br class="horizontal-separator"/>
   <div class="partner-icon">
-    <img style="padding:0px;" src="{{include.image}}" alt="{{iclude.title}}"> 
+    <img style="padding:0px;" src="{{include.image}}" alt="{{iclude.title}}">
   </div>
   <div class="partner-detail">
     <div class="partner-description">
@@ -35,5 +36,5 @@
 </div>
 <!-- NO RULE FOR LAST ELEMENT -->
 {% if include.last != 1 %}
-  <!-- <hr /> -->
+  <hr />
 {% endif %}
