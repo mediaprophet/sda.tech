@@ -14,7 +14,7 @@ toggleOnDiv: dsa
     <!-- Paginating logic for all the GROUPS -->
     {% assign count = 1 %}
     {% for result in resultset %}{% assign class = "responsiveTabItem" %}
-    {% capture shortcut %}{{result.shortcut}}{% endcapture %} {% if shortcut == "knv" %}{% assign class = "active responsiveTabItem" %}{% endif %} 
+    {% capture shortcut %}{{result.shortcut}}{% endcapture %} {% if shortcut == "dsa" %}{% assign class = "active responsiveTabItem" %}{% endif %}
     {% capture groupname %}{{result.name}}{% endcapture %}
     <a href="#" id="{{groupname | remove: " " }}" class="{{class}}" onclick="changeActiveGroups('{{groupname}}')">
           <i class="{{result.imageclass}} margin-icon"></i>
@@ -31,7 +31,7 @@ toggleOnDiv: dsa
     . ?publication dc:date ?date . ?publication dc:publisher ?publisher . ?publication foaf:homepage ?link . } {% endcapture %} {% assign resultset4 = page.rdf | sparql_query: queryfour %}
 {% capture query %} SELECT ?group ?name ?leader ?leadername ?leaderimage WHERE{
    ?group a aiiso:ResearchGroup . ?group rdfs:label ?name . ?group dbo:leader ?leader . ?leader foaf:name ?leadername . ?leader foaf:depiction ?leaderimage} {% endcapture %} {% assign resultset5 = page.rdf | sparql_query: query %}
-    {% assign visible = "none" %} {% capture shortcut %}{{result.shortcut}}{% endcapture %} {% if shortcut == "knv" %} {% assign visible = "inline-block" %}{% endif %} 
+    {% assign visible = "none" %} {% capture shortcut %}{{result.shortcut}}{% endcapture %} {% if shortcut == "dsa" %} {% assign visible = "inline-block" %}{% endif %}
     <div id="{{shortcut}}" class="content-people" style="display:{{visible}}">
       <div class="post-content">
         <div>
