@@ -73,7 +73,7 @@ sdaperson:JensLehmann a foaf:Person, sdatech:professor ;
                   schema:location <http://sda.tech/Address/SDA> ;
                   cv:aboutPerson "Prof. Dr. Jens Lehmann (http://www.jens-lehmann.org) is a full professor at the University of Bonn and Fraunhofer IAIS. He is leading the SDA group with 50 researchers. He obtained a PhD with grade summa cum laude at the University of Leipzig in 2010 including research stays at the University of Oxford and a master degree in Computer Science from Technical University of Dresden in 2006. His research interests involve Semantic Web and Artificial Intelligence. He is founder, leader or contributor of several open source projects, including SANSA, AskNow, DL-Learner, DBpedia, LinkedGeoData and ORE. He works/worked in several funded projects, e.g. GeoKnow (EU STREP, coordinator), LOD2 (EU IP, work package lead), LATC (EU STREP, lead for University of Leipzig) and SoftWiki (BmBF). Prof. Dr. Jens Lehmann authored more than 100 articles in international journals and conferences cited more than 11000 times according to Google Scholar." ;
                   sda:publication sdapublication:Publication1 ;
-                  sda:group sdagroup:SemanticQuestionAnswering, sdagroup:DistributedSemanticAnalytics, sdagroup:DeepLearning ;
+                  sda:group sdagroup:SemanticQuestionAnswering, sdagroup:DistributedSemanticAnalytics, sdagroup:SmartServices ;
                   foaf:currentProject sdaproject:BigDataEurope, sdaproject:SANSAStack, sdaproject:DLLearner, sdaproject:AskNow, sdaproject:SMLBench, sdaproject:SLIPO, sdaproject:QROWD, sdaproject:HOBBIT, sdaproject:WDAqua .
 
 ##############################Senior Researchers#########################
@@ -129,9 +129,9 @@ sdaperson:AsjaFischer a foaf:Person, sdatech:seniorResearcher ;
                   sda:linkedin "https://www.linkedin.com/in/asja-fischer-32007a94" ;
                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
                   schema:location <http://sda.tech/Address/SDA> ;
-                  cv:aboutPerson "Dr. Asja Fischer is a Senior Researcher at the University of Bonn." ;
+                  cv:aboutPerson "Dr. Asja Fischer is a Senior Researcher at the University of Bonn." .
                   #sda:publication sdapublication:Publication1 ;
-                  sda:group sdagroup:DeepLearning .
+                  #sda:group sdagroup:DeepLearning .
                   #foaf:currentProject sdaproject: .
 
 sdaperson:MariaMaleshkova a foaf:Person, sdatech:seniorResearcher ;
@@ -148,9 +148,9 @@ sdaperson:MariaMaleshkova a foaf:Person, sdatech:seniorResearcher ;
                   sda:linkedin "https://www.linkedin.com/in/maleshkova/" ;
                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
                   schema:location <http://sda.tech/Address/SDA> ;
-                  cv:aboutPerson "Dr. Maria Maleshkova is an Assistant Professor at the Computer Science Department III of the University of Bonn. Before, she was a postdoctoral researcher at the Karlsruhe Service Research Institute (KSRI) and the Institute of Applied Informatics and Formal Description Methods (AIFB) at the Karlsruhe Institute of Technology. Her research work covers the Web of Things (WoT) and semantics-based data integration topics as well as work in the area of the semantic description of Web APIs, RESTful services and their joint use with Linked Data. Prior to that, she was a Research Associate and a PhD student at the Knowledge Media Institute (KMi) at the Open University, where she worked on projects in the domain of SOA and Web Services." .
+                  cv:aboutPerson "Dr. Maria Maleshkova is an Assistant Professor at the Computer Science Department III of the University of Bonn. Before, she was a postdoctoral researcher at the Karlsruhe Service Research Institute (KSRI) and the Institute of Applied Informatics and Formal Description Methods (AIFB) at the Karlsruhe Institute of Technology. Her research work covers the Web of Things (WoT) and semantics-based data integration topics as well as work in the area of the semantic description of Web APIs, RESTful services and their joint use with Linked Data. Prior to that, she was a Research Associate and a PhD student at the Knowledge Media Institute (KMi) at the Open University, where she worked on projects in the domain of SOA and Web Services." ;
                   #sda:publication sdapublication:Publication1 ;
-                  #sda:group sdagroup:DeepLearning .
+                  sda:group sdagroup:SmartServices .
                   #foaf:currentProject sdaproject: .
 
 sdaperson:AlexanderKister a foaf:Person, sdatech:seniorResearcher ;
@@ -169,7 +169,7 @@ sdaperson:AlexanderKister a foaf:Person, sdatech:seniorResearcher ;
                   schema:location <http://sda.tech/Address/SDA> ;
                   cv:aboutPerson "Dr. Alexander Kister is a Senior Researcher at the Fraunhofer IAIS." ;
                   #sda:publication sdapublication:Publication1 ;
-                  sda:group sdagroup:DeepLearning .
+                  sda:group sdagroup:SmartServices .
                   #foaf:currentProject sdaproject: .
 
 sdaperson:HamedShariatYazdi a foaf:Person, sdatech:seniorResearcher ;
@@ -336,7 +336,7 @@ sdaperson:GezimSejdiu a foaf:Person, sdatech:phdStudent ;
                    foaf:name "Gezim Sejdiu" ;
                    foaf:nick "Gezim" ;
                    foaf:mbox <mailto:sejdiu@cs.uni-bonn.de> ;
-                   foaf:depiction <http://www.clker.com/cliparts/d/L/P/X/z/i/no-image-icon-md.png> ;
+                   foaf:depiction <https://media.licdn.com/dms/image/C4D03AQGn3hPIYPs3AA/profile-displayphoto-shrink_200_200/0?e=1533772800&v=beta&t=TaXS5XmOI_HD2ZhxnZy89Xg0e83VjxOmJPQ2twpQ3_Y> ;
                    foaf:phone <tel:+49-341-123456789> ;
                    foaf:firstName "Gezim" ;
                    foaf:title "" ;
@@ -858,7 +858,7 @@ sdaperson:MojtabaNayyeri a foaf:Person, sdatech:phdStudent ;
                    sda:github "" ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    schema:location <http://sda.tech/Address/SDA> ;
-                   sda:group sdagroup:DeepLearning ;
+                   sda:group sdagroup:SoftwareEngineeringforDataScience ;
                    cv:aboutPerson "Mojtaba Nayyeri is a PhD Student at the University of Bonn.".
 
 ##############################Associated Researchers#####################
@@ -1573,36 +1573,38 @@ sdagroup:DistributedSemanticAnalytics a aiiso:ResearchGroup, sdatech:Group ;
                                 foaf:pastProject sdaproject:SHORE, sdaproject:WAVE ;
                                 foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
                                 foaf:currentProject sdaproject:DLLearner, sdaproject:BigDataEurope, sdaproject:SANSAStack ;
+                                dct:abstract "Aims to develop scalable analytics algorithms based on Apache Spark and Apache Flink for analysing large scale RDF datasets" ;
                                 dct:description "The research group develops scalable analytics algorithms based on Apache Spark and Apache Flink for analyzing large scale datasets by distributing the computational tasks in memory." ;
                                 sda:publication sdapublication:Publication1 ;
                                 sda:imageclass "fa fa-bar-chart" ;
                                 sda:shortcut "dsa" .
 
 ##Deep Learning
-sdagroup:DeepLearning a aiiso:ResearchGroup, sdatech:Group ;
-                                rdfs:label "Deep Learning" ;
-                                foaf:member sdaperson:JensLehmann, sdaperson:AsjaFischer ;
-                                dbo:leader sdaperson:AsjaFischer ;
-                                foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
-                                foaf:pastProject sdaproject:SHORE, sdaproject:WAVE ;
-                                foaf:currentProject sdaproject:DLLearner, sdaproject:BigDataEurope ;
-                                dct:description "Deep learning models consist of multiple non-linear processing layers which allow for the hierarchical extraction of more and more abstract characteristics of the data and the discovery of the intricate structure in large data sets by building distributed representations." ;
-                                sda:publication sdapublication:Publication1 ;
-                                sda:imageclass "fa fa-globe" ;
-                                sda:shortcut "dl" .
+#sdagroup:DeepLearning a aiiso:ResearchGroup, sdatech:Group ;
+#                                rdfs:label "Deep Learning" ;
+#                                foaf:member sdaperson:JensLehmann, sdaperson:AsjaFischer ;
+#                                dbo:leader sdaperson:AsjaFischer ;
+#                                foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
+#                                foaf:pastProject sdaproject:SHORE, sdaproject:WAVE ;
+#                                foaf:currentProject sdaproject:DLLearner, sdaproject:BigDataEurope ;
+#                                dct:description "Deep learning models consist of multiple non-linear processing layers which allow for the hierarchical extraction of more and more abstract characteristics of the data and the discovery of the intricate structure in large data sets by building distributed representations." ;
+#                                dct:abstract "" ;
+#                                sda:publication sdapublication:Publication1 ;
+#                                sda:imageclass "fa fa-globe" ;
+#                                sda:shortcut "dl" .
 
 ##Knowledge Extraction and Validation
-sdagroup:KnowledgeExtractionAndValidation a aiiso:ResearchGroup, sdatech:Group ;
-                                rdfs:label "Knowledge Extraction and Validation" ;
-                                foaf:member sdaperson:JensLehmann, sdaperson:FabrizioOrlandi, sdaperson:SimonScerri ;
-                                dbo:leader sdaperson:FabrizioOrlandi, sdaperson:SimonScerri  ;
-                                foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
-                                foaf:pastProject sdaproject:SHORE, sdaproject:WAVE ;
-                                foaf:currentProject sdaproject:SLIPO, sdaproject:BigDataEurope ;
-                                dct:description "The Knowledge Extraction and Validation group is addressing problems for knowledge extraction, representation, storage, and management that the information era has brought in various segments of today's life." ;
-                                sda:publication sdapublication:Publication1 ;
-                                sda:imageclass "fa fa-table" ;
-                                sda:shortcut "knv" .
+#sdagroup:KnowledgeExtractionAndValidation a aiiso:ResearchGroup, sdatech:Group ;
+#                                rdfs:label "Knowledge Extraction and Validation" ;
+#                                foaf:member sdaperson:JensLehmann, sdaperson:FabrizioOrlandi, sdaperson:SimonScerri ;
+#                                dbo:leader sdaperson:FabrizioOrlandi, sdaperson:SimonScerri  ;
+#                                foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
+#                                foaf:pastProject sdaproject:SHORE, sdaproject:WAVE ;
+#                                foaf:currentProject sdaproject:SLIPO, sdaproject:BigDataEurope ;
+#                                dct:description "The Knowledge Extraction and Validation group is addressing problems for knowledge extraction, representation, storage, and management that the information era has brought in various segments of today's life." ;
+#                                sda:publication sdapublication:Publication1 ;
+#                                sda:imageclass "fa fa-table" ;
+#                                sda:shortcut "knv" .
 
 ##Semantic Data Management
 sdagroup:SemanticDataManagement a aiiso:ResearchGroup, sdatech:Group ;
@@ -1613,6 +1615,7 @@ sdagroup:SemanticDataManagement a aiiso:ResearchGroup, sdatech:Group ;
                                 foaf:pastProject sdaproject:SHORE, sdaproject:WAVE ;
                                 foaf:currentProject sdaproject:BigDataEurope ;
                                 dct:description "The group's research focus is on knowledge and data representation, integration, and management based on semantic technologies." ;
+                                dct:abstract "Focuses on Knowledge and data representation, integration, and management based on semantic technologies." ;
                                 sda:publication sdapublication:Publication1 ;
                                 sda:imageclass "fa fa-sitemap" ;
                                 sda:shortcut "sdm" .
@@ -1626,6 +1629,7 @@ sdagroup:SemanticQuestionAnswering a aiiso:ResearchGroup, sdatech:Group ;
                                 foaf:pastProject sdaproject:SHORE, sdaproject:WAVE ;
                                 foaf:currentProject sdaproject:AskNow, sdaproject:WDAqua ;
                                 dct:description "The use of Semantic Web technologies led to an increasing number of structured data published on the Web. Despite the advances in question answering systems retrieving the desired information from structured sources is still a substantial challenge." ;
+                                dct:abstract "Make use of Semantic Web technologies and AI for better and advanced  question answering & dialogue systems" ;
                                 sda:publication sdapublication:Publication1 ;
                                 sda:imageclass "fa fa-search" ;
                                 sda:shortcut "sqa" .
@@ -1639,6 +1643,7 @@ sdagroup:SoftwareEngineeringForDataScience a aiiso:ResearchGroup, sdatech:Group 
                                 foaf:currentProject sdaproject:SANSAStack ;
                                 foaf:pastProject sdaproject:SHORE, sdaproject:WAVE ;
                                 dct:description """The group focuses on combining Semantic Web and Software Engineering technologies to develop novel methods, techniques, and tools that advance the way in which software is designed, synthetised and assessed.""" ;
+                                dct:abstract "Researches on how data and software engineering methods can be aligned with Data Science." ;
                                 sda:publication sdapublication:Publication1 ;
                                 sda:imageclass "fa fa-cogs" ;
                                 sda:shortcut "seds" .
@@ -1652,9 +1657,24 @@ sdagroup:StructuredMachineLearning a aiiso:ResearchGroup, sdatech:Group ;
                                 foaf:currentProject sdaproject:DLLearner, sdaproject:SMLBench ;
                                 foaf:pastProject sdaproject:SHORE, sdaproject:WAVE ;
                                 dct:description "The group focuses on combining Semantic Web and supervised Machine Learning technologies. The goal is to improve both quality and quantity of available knowledge by extracting, analysing, enriching and linking existing data. The group also provides several established open source tools, frameworks and demonstrators." ;
+                                dct:abstract "Combines Semantic Web and supervised ML technologies in order to improve both quality and quantity of available knowledge." ;
                                 sda:publication sdapublication:Publication1 ;
                                 sda:imageclass "fa fa-cube" ;
                                 sda:shortcut "sml" .
+
+
+##Smart Services
+sdagroup:SmartServices a aiiso:ResearchGroup, sdatech:Group ;
+                                rdfs:label "Smart Services" ;
+                                foaf:member sdaperson:JensLehmann, sdaperson:FabrizioOrlandi, sdaperson:SimonScerri ;
+                                dbo:leader sdaperson:MariaMaleshkova, sdaperson:SimonScerri  ;
+                                foaf:pastProject sdaproject:SHORE, sdaproject:WAVE ;
+                                foaf:currentProject sdaproject:SLIPO, sdaproject:BigDataEurope ;
+                                dct:description "Semantic services and their composition, applications in IoT." ;
+                                dct:abstract "Semantic services and their composition, applications in IoT." ;
+                                sda:publication sdapublication:Publication1 ;
+                                sda:imageclass "fa fa-podcast" ;
+                                sda:shortcut "sms" .
 
 
 #########################################################
