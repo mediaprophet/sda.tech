@@ -3353,25 +3353,25 @@ sdatech:people a foaf:Document ;
           rdfs:label "People" .
 
 sdatech:professors a foaf:Document ;
-          rdfs:label "People" .
+          rdfs:label "Professors Page" .
 
 sdatech:seniorresearchers a foaf:Document ;
-          rdfs:label "People" .
+          rdfs:label "Senior Researchers Page" .
 
 sdatech:phdstudents a foaf:Document ;
-          rdfs:label "People" .
+          rdfs:label "PHD Students" .
 
 sdatech:associatedresearchers a foaf:Document ;
-          rdfs:label "People" .
+          rdfs:label "Associate Researchers Page" .
 
-sdatech:studentassistants a foaf:Document ;
-          rdfs:label "People" .
+sdatech:studentassistant a foaf:Document ;
+          rdfs:label "Student Assistants Page" .
 
 sdatech:interns a foaf:Document ;
-          rdfs:label "People" .
+          rdfs:label "Interns Page" .
 
 sdatech:formermembers a foaf:Document ;
-          rdfs:label "People" .
+          rdfs:label "Former Members Page" .
 
 ################################################################################
 
@@ -3380,16 +3380,16 @@ sdatech:project a foaf:Document ;
            rdfs:label "Projects" .
 
 sdatech:fundedprojects a foaf:Document ;
-         rdfs:label "Funded projects at Smart Data Analytics Group" .
+         rdfs:label "Funded Projects Page" .
 
 sdatech:opensourceprojects a foaf:Document ;
-        rdfs:label "Open Source projects at Smart Data Analytics Group " .
+        rdfs:label "Open Source Projects Page" .
 
 sdatech:incubatorprojects a foaf:Document ;
-         rdfs:label "Incubator projects at Smart Data Analytics Group" .
+         rdfs:label "Incubator Projects Page" .
 
 sdatech:archivedprojects a foaf:Document ;
-        rdfs:label "Archived projects at Smart Data Analytics Group" .
+        rdfs:label "Archived Projects Page" .
 ################################################################################
 
 sdatech:publication a foaf:Document ;

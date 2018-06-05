@@ -1,0 +1,19 @@
+---
+rdf_prefix_path: sda.tech.pref
+layout: default
+toggleOnDiv: Int
+toggledURLTo: /interns/
+---
+{% include togglePeopleTypes.html %}
+{% include toggleInitialPageLink.html div=page.toggleOnDiv linkto=page.toggledURLTo %}
+<div class="pagination">
+  {% include peopleHeader.html active ="Interns" %}
+</div>
+<div class="content-people">
+  {% include peopleContent.html active ="Int" %}
+</div>
+<br class="horizontal-separator" />
+<!--Initial Script  -->
+<script>
+  changeActivePersons("{{site.data.peopleTypes[5].name}}");
+</script>

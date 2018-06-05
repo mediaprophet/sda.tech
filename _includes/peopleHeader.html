@@ -1,5 +1,26 @@
-<a href="#" id="AllMembers" class="active responsiveTabItem" onclick="changeActivePersons('All Members')"><i class="{{site.data.peopleTypes[7].class}}" aria-hidden="true"></i>
+<a href="#" id="AllMembers" class="{% if include.active == 'AllMembers' %}active{% endif %} responsiveTabItem" onclick="changeActivePersons('All Members')"><i class="{{site.data.peopleTypes[7].class}}" aria-hidden="true"></i>
      {{site.data.peopleTypes[7].name}}</a>
+<a href="#" id="{{site.data.peopleTypes[0].name | remove: ' '}}" class="{% if include.active == 'Professors' %}active{% endif %} responsiveTabItem" onclick="changeActivePersons('{{site.data.peopleTypes[0].name}}')"><i class="{{site.data.peopleTypes[0].class}}" aria-hidden="true"></i>
+    {{site.data.peopleTypes[0].name}}</a>
+<a href="#" id="{{site.data.peopleTypes[1].name | remove: ' '}}" class="{% if include.active == 'SeniorResearchers' %}active{% endif %} responsiveTabItem" onclick="changeActivePersons('{{site.data.peopleTypes[1].name}}')"><i class="{{site.data.peopleTypes[1].class}}" aria-hidden="true"></i>
+    {{site.data.peopleTypes[1].name}}</a>
+<a href="#" id="{{site.data.peopleTypes[2].name | remove: ' ' }}" class="{% if include.active == 'PhDStudents' %}active{% endif %} responsiveTabItem" onclick="changeActivePersons('{{site.data.peopleTypes[2].name}}')"><i class="{{site.data.peopleTypes[2].class}}" aria-hidden="true"></i>
+    {{site.data.peopleTypes[2].name}}</a>
+<br class="breakpoint-pagination"/><br class="breakpoint-pagination"/>
+<a href="#" id="{{site.data.peopleTypes[3].name | remove: ' ' }}" class="{% if include.active == 'Associatedresearches' %}active{% endif %} responsiveTabItem" onclick="changeActivePersons('{{site.data.peopleTypes[3].name}}')"><i class="{{site.data.peopleTypes[3].class}}" aria-hidden="true"></i>
+    {{site.data.peopleTypes[3].name}}</a>
+<a href="#" id="{{site.data.peopleTypes[4].name | remove: ' ' }}" class="{% if include.active == 'StudentAssistants' %}active{% endif %} responsiveTabItem" onclick="changeActivePersons('{{site.data.peopleTypes[4].name}}')"><i class="{{site.data.peopleTypes[4].class}}" aria-hidden="true"></i>
+    {{site.data.peopleTypes[4].name}}</a>
+<a href="#" id="{{site.data.peopleTypes[5].name | remove: ' ' }}" class="{% if include.active == 'Interns' %}active{% endif %} responsiveTabItem" onclick="changeActivePersons('{{site.data.peopleTypes[5].name}}')"><i class="{{site.data.peopleTypes[5].class}}" aria-hidden="true"></i>
+    {{site.data.peopleTypes[5].name}}</a>
+<a href="#" id="{{site.data.peopleTypes[6].name | remove: ' ' }}" class="{% if include.active == 'FormerMembers' %}active{% endif %} responsiveTabItem" onclick="changeActivePersons('{{site.data.peopleTypes[6].name}}')"><i class="{{site.data.peopleTypes[6].class}}" aria-hidden="true"></i>
+    {{site.data.peopleTypes[6].name}}</a>
+<br/><br/>
+<hr class="ruleh" />
+
+<!--
+
+
 {% for people in site.data.peopleTypes %} {% assign p = people.name %}{% unless p  == "All Members" %}
   {% if p  == "Associated researches" %}
     <br class="breakpoint-pagination"/><br class="breakpoint-pagination"/>
@@ -9,4 +30,4 @@
      {{people.name}}</a> {% else %}
   <a href="#" id="{{people.name | remove: " " }}" class="responsiveTabItem" onclick="changeActivePersons('{{people.name}}')"><i class="{{people.class}}" aria-hidden="true"></i> {{people.name}}</a> {% endif%}{% endunless %} {% endfor %}
 <br/><br/>
-<hr class="ruleh" />
+<hr class="ruleh" /> -->
