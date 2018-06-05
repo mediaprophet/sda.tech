@@ -3348,25 +3348,49 @@ sdatech:blog a foaf:Document ;
 sdatech:partners a foaf:Document ;
             rdfs:label "Partners" .
 
+##########################Person Documents######################################
 sdatech:people a foaf:Document ;
           rdfs:label "People" .
 
+sdatech:professors a foaf:Document ;
+          rdfs:label "People" .
+
+sdatech:seniorresearchers a foaf:Document ;
+          rdfs:label "People" .
+
+sdatech:phdstudents a foaf:Document ;
+          rdfs:label "People" .
+
+sdatech:associatedresearchers a foaf:Document ;
+          rdfs:label "People" .
+
+sdatech:studentassistants a foaf:Document ;
+          rdfs:label "People" .
+
+sdatech:interns a foaf:Document ;
+          rdfs:label "People" .
+
+sdatech:formermembers a foaf:Document ;
+          rdfs:label "People" .
+
+################################################################################
+
+#########################Project Documents######################################
 sdatech:project a foaf:Document ;
            rdfs:label "Projects" .
-#
+
 sdatech:fundedprojects a foaf:Document ;
-         rdfs:label "On Going Thesis" .
+         rdfs:label "Funded projects at Smart Data Analytics Group" .
 
 sdatech:opensourceprojects a foaf:Document ;
-        rdfs:label "On Going Thesis" .
+        rdfs:label "Open Source projects at Smart Data Analytics Group " .
 
 sdatech:incubatorprojects a foaf:Document ;
-         rdfs:label "On Going Thesis" .
+         rdfs:label "Incubator projects at Smart Data Analytics Group" .
 
 sdatech:archivedprojects a foaf:Document ;
-        rdfs:label "On Going Thesis" .
-
-#
+        rdfs:label "Archived projects at Smart Data Analytics Group" .
+################################################################################
 
 sdatech:publication a foaf:Document ;
                rdfs:label "Publications" .
