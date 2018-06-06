@@ -286,7 +286,7 @@ sdaperson:ChristophLange a foaf:Person, sdatech:seniorResearcher ;
                   cv:aboutPerson "Dr. Christoph Lange is a Senior Researcher at the University of Bonn." ;
                   #sda:publication sdapublication:Publication1 ;
                   sda:group sdagroup:SemanticDataManagement ;
-                  foaf:currentProject sdaproject:WDAqua .
+                  foaf:currentProject sdaproject:WDAqua, sdaproject:OSCOSS.
 
 sdaperson:FabrizioOrlandi a foaf:Person, sdatech:seniorResearcher ;
                   sda:publicationsTag "orlandi" ;
@@ -693,7 +693,8 @@ sdaperson:SaharVahdati a foaf:Person, sdatech:phdStudent ;
                    sda:github "" ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    schema:location <http://sda.tech/Address/SDA> ;
-                   cv:aboutPerson "Sahar Vahdati is a PhD Student at the University of Bonn." .
+                   cv:aboutPerson "Sahar Vahdati is a PhD Student at the University of Bonn." ;
+                   foaf:currentProject sdaproject:OSCOSS .
 
 sdaperson:ElisaMargarethSibarani a foaf:Person, sdatech:phdStudent ;
                    sda:publicationsTag "Sibarani" ;
@@ -735,7 +736,7 @@ sdaperson:AfshinSadeghi a foaf:Person, sdatech:phdStudent ;
                    schema:location <http://sda.tech/Address/SDA> ;
                    cv:aboutPerson "Afshin Sadeghi is a PhD Student at the University of Bonn." ;
                    sda:group sdagroup:DistributedSemanticAnalytics ;
-                   foaf:currentProject sdaproject:SANSAStack .
+                   foaf:currentProject sdaproject:SANSAStack, sdaproject:OSCOSS .
 
 sdaperson:IsaiahOnandoMulang a foaf:Person, sdatech:phdStudent ;
                    sda:publicationsTag "mulang" ;

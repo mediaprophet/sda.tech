@@ -8,22 +8,37 @@ toggledURLTo: /project/allProjects
   <div class="pagination">
     <div class="post-content">
       <div class="main-content">
-        {% assign title= page.rdf | rdf_property: 'rdfs:label' %} {% assign image= page.rdf | rdf_property: 'foaf:depiction' %} {% assign description= page.rdf |rdf_property: 'ex:longdescription' %} {% include projectItem.html title=title image=image description=description
-        last=1 href=url projectItemFor="project" homepage=project.homepage twitter=project.twitter source=project.source download=project.download %}
+        {% assign title= page.rdf | rdf_property: 'rdfs:label' %}{% assign homepageProject= page.rdf | rdf_property: 'foaf:homepage' %}{% assign twitterProject= page.rdf | rdf_property: 'sda:twitter' %}{% assign downloadProject= page.rdf | rdf_property: 'sda:download' %}{% assign projectSource= page.rdf | rdf_property: 'sda:source' %}{% assign image= page.rdf | rdf_property: 'foaf:depiction' %} {% assign description= page.rdf |rdf_property: 'ex:longdescription' %} {% include projectItem.html title=title image=image description=description last=1 href=url projectItemFor="project" homepage=homepageProject twitter=twitterProject source=projectSource download=downloadProject %}
       </div>
       <br class="horizontal-separator" />
       <br class="horizontal-separator" />
       <div class="members-projects">
         <h3>Team</h3>
         <div class="membersofProject">
-          {% capture query %} SELECT ?person ?personname ?image WHERE{
+          <!-- {% capture query %} SELECT ?person ?personname ?image WHERE{
           <{{page.rdf}}> foaf:member ?person . ?person foaf:name ?personname . ?person foaf:depiction ?image . } {% endcapture %} {% assign team = page.rdf | sparql_query: query %} {% for person in team %} {% assign url= person.person | remove: "http://sda.tech/"
             %}
             <div class="chip">
               <img src="{{person.image}}" alt="Person" width="96" height="96">
               <a href="../../{{url}}">{{person.personname}}</a>
             </div>
-            {% endfor %}
+            {% endfor %} -->
+            <!-- Handling of projects from the person current project  -->
+              {% capture projectMainTitle %}{{title}}{% endcapture %}
+              {% capture query %} SELECT ?person ?personname ?image ?project ?projectname Where {
+                ?person a foaf:Person . OPTIONAL { ?person foaf:name ?personname } . OPTIONAL { ?person foaf:depiction ?image } .  ?person foaf:currentProject ?project . ?project  rdfs:label ?projectname .
+              } {% endcapture %} {% assign projectmembers = page.rdf | sparql_query: query %}
+              {% for person in projectmembers %}
+                {% capture projectTitle %}{{person.projectname}}{% endcapture %}
+                {% if projectMainTitle == projectTitle %}
+                  {% assign url= person.person | remove: "http://sda.tech/" %}
+                  <div class="chip">
+                    <img src="{{person.image}}" alt="Person" width="96" height="96">
+                    <a href="../../{{url}}">{{person.personname}}</a>
+                  </div>
+                {% endif %}
+              {% endfor %}
+            <!--  -->
         </div>
         <br class="horizontal-separator2" />
         <br class="horizontal-separator2" />
