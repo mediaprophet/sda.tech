@@ -74,7 +74,7 @@ sdaperson:JensLehmann a foaf:Person, sdatech:professor ;
                   cv:aboutPerson "Prof. Dr. Jens Lehmann (http://www.jens-lehmann.org) is a full professor at the University of Bonn and Fraunhofer IAIS. He is leading the SDA group with 50 researchers. He obtained a PhD with grade summa cum laude at the University of Leipzig in 2010 including research stays at the University of Oxford and a master degree in Computer Science from Technical University of Dresden in 2006. His research interests involve Semantic Web and Artificial Intelligence. He is founder, leader or contributor of several open source projects, including SANSA, AskNow, DL-Learner, DBpedia, LinkedGeoData and ORE. He works/worked in several funded projects, e.g. GeoKnow (EU STREP, coordinator), LOD2 (EU IP, work package lead), LATC (EU STREP, lead for University of Leipzig) and SoftWiki (BmBF). Prof. Dr. Jens Lehmann authored more than 100 articles in international journals and conferences cited more than 11000 times according to Google Scholar." ;
                   sda:publication sdapublication:Publication1 ;
                   sda:group sdagroup:SemanticQuestionAnswering, sdagroup:DistributedSemanticAnalytics, sdagroup:SmartServices ;
-                  foaf:currentProject sdaproject:BigDataEurope, sdaproject:SANSAStack, sdaproject:DLLearner, sdaproject:AskNow, sdaproject:SMLBench, sdaproject:SLIPO, sdaproject:QROWD, sdaproject:HOBBIT, sdaproject:WDAqua .
+                  foaf:currentProject sdaproject:BigDataEurope, sdaproject:Boost40, sdaproject:SANSAStack, sdaproject:DLLearner, sdaproject:AskNow, sdaproject:SMLBench, sdaproject:SLIPO, sdaproject:QROWD, sdaproject:HOBBIT, sdaproject:WDAqua .
 
 ##############################Senior Researchers#########################
 sdaperson:HajiraJabeen a foaf:Person, sdatech:seniorResearcher ;
@@ -150,8 +150,8 @@ sdaperson:MariaMaleshkova a foaf:Person, sdatech:seniorResearcher ;
                   schema:location <http://sda.tech/Address/SDA> ;
                   cv:aboutPerson "Dr. Maria Maleshkova is an Assistant Professor at the Computer Science Department III of the University of Bonn. Before, she was a postdoctoral researcher at the Karlsruhe Service Research Institute (KSRI) and the Institute of Applied Informatics and Formal Description Methods (AIFB) at the Karlsruhe Institute of Technology. Her research work covers the Web of Things (WoT) and semantics-based data integration topics as well as work in the area of the semantic description of Web APIs, RESTful services and their joint use with Linked Data. Prior to that, she was a Research Associate and a PhD student at the Knowledge Media Institute (KMi) at the Open University, where she worked on projects in the domain of SOA and Web Services." ;
                   #sda:publication sdapublication:Publication1 ;
-                  sda:group sdagroup:SmartServices .
-                  #foaf:currentProject sdaproject: .
+                  sda:group sdagroup:SmartServices ;
+                  foaf:currentProject sdaproject:Boost40 .
 
 sdaperson:AlexanderKister a foaf:Person, sdatech:seniorResearcher ;
                   sda:publicationsTag "kister" ;
@@ -286,7 +286,7 @@ sdaperson:ChristophLange a foaf:Person, sdatech:seniorResearcher ;
                   cv:aboutPerson "Dr. Christoph Lange is a Senior Researcher at the University of Bonn." ;
                   #sda:publication sdapublication:Publication1 ;
                   sda:group sdagroup:SemanticDataManagement ;
-                  foaf:currentProject sdaproject:WDAqua, sdaproject:OSCOSS.
+                  foaf:currentProject sdaproject:WDAqua, sdaproject:OSCOSS, sdaproject:Boost40.
 
 sdaperson:FabrizioOrlandi a foaf:Person, sdatech:seniorResearcher ;
                   sda:publicationsTag "orlandi" ;
@@ -324,7 +324,7 @@ sdaperson:SimonScerri a foaf:Person, sdatech:seniorResearcher ;
                   cv:aboutPerson "Dr. Simon Scerri is a Senior Researcher at the University of Bonn." ;
                   #sda:publication sdapublication:Publication1 ;
                   sda:group sdagroup:KnowledgeExtractionAndValidation ;
-                  foaf:currentProject sdaproject:BigDataEurope .
+                  foaf:currentProject sdaproject:BigDataEurope, sdaproject:Boost40 .
 
 ##############################PHD Students#########################
 sdaperson:GezimSejdiu a foaf:Person, sdatech:phdStudent ;
@@ -350,7 +350,7 @@ sdaperson:GezimSejdiu a foaf:Person, sdatech:phdStudent ;
                    cv:aboutPerson "Gëzim Sejdiu is a PhD Student & Research Associate at the University of Bonn. Gëzim’s research interest are in the area of Semantic Web, Big Data and Machine Learning. He is also interested in the area of distributed computing systems (Apache Spark, Apache Flink)." ;
                    #sda:publication sdapublication:Publication1 ;
                    sda:group sdagroup:DistributedSemanticAnalytics ;
-                   foaf:currentProject sdaproject:BigDataEurope, sdaproject:SANSAStack .
+                   foaf:currentProject sdaproject:BigDataEurope, sdaproject:SANSAStack, sdaproject:Boost40 .
 
 sdaperson:LorenzBuehmann a foaf:Person, sdatech:phdStudent ;
                    rdfs:seeAlso <http://aksw.org/LorenzBuehmann> ;
@@ -1573,7 +1573,7 @@ sdagroup:DistributedSemanticAnalytics a aiiso:ResearchGroup, sdatech:Group ;
                                 dbo:leader sdaperson:HajiraJabeen ;
                                 foaf:pastProject sdaproject:SHORE, sdaproject:WAVE ;
                                 foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
-                                foaf:currentProject sdaproject:DLLearner, sdaproject:BigDataEurope, sdaproject:SANSAStack ;
+                                foaf:currentProject sdaproject:DLLearner, sdaproject:BigDataEurope, sdaproject:SANSAStack, sdaproject:Boost40 ;
                                 dct:abstract "Aims to develop scalable analytics algorithms based on Apache Spark and Apache Flink for analysing large scale RDF datasets" ;
                                 dct:description "The research group develops scalable analytics algorithms based on Apache Spark and Apache Flink for analyzing large scale datasets by distributing the computational tasks in memory." ;
                                 sda:publication sdapublication:Publication1 ;
@@ -1624,7 +1624,7 @@ sdagroup:SemanticDataManagement a aiiso:ResearchGroup, sdatech:Group ;
 ##Semantic Question Answering
 sdagroup:SemanticQuestionAnswering a aiiso:ResearchGroup, sdatech:Group ;
                                 rdfs:label "Semantic Question Answering" ;
-                                foaf:member sdaperson:JensLehmann, sdaperson:MohnishDubey, sdaperson:IoannaLytra, sdaperson:HamidZafar ;
+                                foaf:member sdaperson:JensLehmann, sdaperson:MohnishDubey, sdaperson:IoannaLytra, sdaperson:HamidZafar, sdaperson:DebanjanChaudhuri ;
                                 dbo:leader sdaperson:GiulioNapolitano ;
                                 foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
                                 foaf:pastProject sdaproject:SHORE, sdaproject:WAVE ;
@@ -1670,7 +1670,7 @@ sdagroup:SmartServices a aiiso:ResearchGroup, sdatech:Group ;
                                 foaf:member sdaperson:JensLehmann, sdaperson:FabrizioOrlandi, sdaperson:SimonScerri ;
                                 dbo:leader sdaperson:MariaMaleshkova, sdaperson:SimonScerri  ;
                                 foaf:pastProject sdaproject:SHORE, sdaproject:WAVE ;
-                                foaf:currentProject sdaproject:SLIPO, sdaproject:BigDataEurope ;
+                                foaf:currentProject sdaproject:SLIPO, sdaproject:BigDataEurope, sdaproject:Boost40 ;
                                 dct:description "Semantic services and their composition, applications in IoT." ;
                                 dct:abstract "Semantic services and their composition, applications in IoT." ;
                                 sda:publication sdapublication:Publication1 ;
@@ -1704,6 +1704,28 @@ sdaproject:BigDataEurope a foaf:Project, sdatech:fundedProject ;
                  sda:relatedProject sdaproject:GeoKnow, sdaproject:SANSAStack ;
                  pf:endDate "2019-02-28"^^xsd:date ;
                  pf:startDate "2016-03-01"^^xsd:date ;
+                 sdapublication:publication sdapublication:Publication1 ;
+                 sda:status "active" .
+
+sdaproject:Boost40 a foaf:Project, sdatech:fundedProject ;
+                 foaf:name "Boost4.0" ;
+                 rdfs:label "Boost4.0" ;
+                 ex:description "Boost4.0 is the biggest European initiative in Big Data for Industry 4.0. With a 20M€ budget and leveraging 100M€ of private investment, Boost 4.0 will lead the construction of the European Industrial Data Space to improve the competitiveness of Industry 4.0 and will guide the European manufacturing industry in the introduction of Big Data in the factory, providing the industrial sector with the necessary tools to obtain the maximum benefit of Big Data.";
+                 ex:longdescription "Boost4.0 is the biggest European initiative in Big Data for Industry 4.0. With a 20M€ budget and leveraging 100M€ of private investment, Boost 4.0 will lead the construction of the European Industrial Data Space to improve the competitiveness of Industry 4.0 and will guide the European manufacturing industry in the introduction of Big Data in the factory, providing the industrial sector with the necessary tools to obtain the maximum benefit of Big Data.";
+                 foaf:member sdaperson:JensLehmann, sdaperson:ChristophLange, sdaperson:GezimSejdiu, sdaperson:MariaMaleshkova, sdaperson:SimonScerri, sdaperson:NiklasPetersen, sdaperson:IrlanGrangel, sdaperson:HarshThakkar ;
+                 foaf:homepage <http://boost40.eu/> ;
+                 foaf:depiction <http://boost40.eu/wp-content/uploads/2018/01/boost-n-6.png> ;
+                 sda:funded "Funded Project" ;
+                 sda:twitter "https://twitter.com/boost4_0" ;
+                 sda:source "" ;
+                 sda:download "undefined" ;
+                 sda:publicationTag "boost" ;
+                 dct:abstract "Boost4.0 is the biggest European initiative in Big Data for Industry 4.0. With a 20M€ budget and leveraging 100M€ of private investment, Boost 4.0 will lead the construction of the European Industrial Data Space to improve the competitiveness of Industry 4.0 and will guide the European manufacturing industry in the introduction of Big Data in the factory, providing the industrial sector with the necessary tools to obtain the maximum benefit of Big Data.";
+                 #sdapartner:partner sdapartner:YellowMap, sdapartner:metaphacts, sdapartner:CRES, sdapartner:cessda, sdapartner:FAO, sdapartner:FraunhoferIAIS, sdapartner:NCSR, sdapartner:OpenPHACTS, sdapartner:SemanticWebCompany, sdapartner:TenForce  ;
+                 doap:maintainer sda:ChristophLange ;
+                 sda:relatedProject sdaproject:BigDataEurope, sdaproject:SANSAStack ;
+                 pf:endDate "2020-12-31"^^xsd:date ;
+                 pf:startDate "2018-01-01"^^xsd:date ;
                  sdapublication:publication sdapublication:Publication1 ;
                  sda:status "active" .
 
