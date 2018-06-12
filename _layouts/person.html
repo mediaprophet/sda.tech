@@ -49,15 +49,16 @@ layout: default
         <br class="horizontal-separator2" />
         <h3>Projects</h3>
         <div class="membersofProject">
-          {% capture query %} SELECT ?project ?projectname ?image WHERE{
-          <{{page.rdf}}> foaf:currentProject ?project . ?project rdfs:label ?projectname . ?project foaf:depiction ?image . } {% endcapture %} {% assign resultset2 = page.rdf | sparql_query: query %}
+          {% capture query %} SELECT ?project ?projectname ?image ?member ?membername WHERE{
+          ?project a foaf:Project . ?project rdfs:label ?projectname . ?project foaf:depiction ?image . ?project foaf:member ?member . ?member foaf:name ?membername . } {% endcapture %} {% assign resultset2 = page.rdf | sparql_query: query %}
             <!--Displaying all the reseach interests of the person x  -->
-            {% for result in resultset2 %} {% assign url= result.project | remove: "http://sda.tech/" %}
+
+            {% for result in resultset2 %} {% capture mname %}{{result.membername }}{% endcapture %} {% if personName == mname %} {% assign url= result.project | remove: "http://sda.tech/" %}
             <div class="chip">
               <img src="{{result.image}}" alt="Project" width="96" height="96">
               <a href="../../{{url}}">{{result.projectname}}</a>
             </div>
-            {% endfor %}
+            {% endif %}{% endfor %}
         </div>
       </div>
       <br class="horizontal-separator2" />

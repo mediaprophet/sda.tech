@@ -82,27 +82,27 @@ OPTIONAL { ?Person sda:room ?room } . OPTIONAL { ?Person foaf:firstName ?fname }
   {% for result in seniorResearchersArray %} {% assign url = result.Person | remove: "http://sda.tech/" %} {% include professors.html name=result.name firstname=result.fname title=result.title urlp=url status=result.status room=result.room linkedin=result.linkedin website=result.website mailto=result.mailto
   image=result.image %}{% endfor %}
 </div>
-<div id="Phd" style="{% if include.active == 'Phd' %}display:block{% else %}display:inline-block{% endif %}" class="positioning-cards">
+<div id="Phd" style="{% if include.active == 'Phd' %}display:inline-block{% else %}display:none{% endif %}" class="positioning-cards">
   <!--Display Results for Phd Students  -->
   {% for result in phdStudentsArray %} {% assign url = result.Person | remove: "http://sda.tech/" %} {% include professors.html name=result.name firstname=result.fname title=result.title urlp=url status=result.status room=result.room linkedin=result.linkedin website=result.website mailto=result.mailto
   image=result.image %}{% endfor %}
 </div>
-<div id="AR" style="{% if include.active == 'AR' %}display:block{% else %}display:inline-block{% endif %}" class="positioning-cards">
+<div id="AR" style="{% if include.active == 'AR' %}display:inline-block{% else %}display:none{% endif %}" class="positioning-cards">
   <!--Display results for Associate Researchers  -->
   {% for result in associateResearchersArray %} {% assign url = result.Person | remove: "http://sda.tech/" %} {% include professors.html name=result.name firstname=result.fname title=result.title urlp=url status=result.status room=result.room linkedin=result.linkedin website=result.website mailto=result.mailto
   image=result.image %} {% endfor %}
 </div>
-<div id="SA" style="{% if include.active == 'SA' %}display:block{% else %}display:inline-block{% endif %}" class="positioning-cards">
+<div id="SA" style="{% if include.active == 'SA' %}display:inline-block{% else %}display:none{% endif %}" class="positioning-cards">
   <!--Display Results for Student Assistants -->
   {% for result in studentAssistantsArray %} {% assign url = result.Person | remove: "http://sda.tech/" %} {% include professors.html name=result.name firstname=result.fname title=result.title urlp=url status=result.status room=result.room linkedin=result.linkedin website=result.website mailto=result.mailto
   image=result.image %} {% endfor %}
 </div>
-<div id="Int" style="{% if include.active == 'Int' %}display:block{% else %}display:inline-block{% endif %}" class="positioning-cards">
+<div id="Int" style="{% if include.active == 'Int' %}display:inline-block{% else %}display:none{% endif %}" class="positioning-cards">
   <!--Display Results for Interness -->
   {% for result in interneesArray %} {% assign url = result.Person | remove: "http://sda.tech/" %} {% include professors.html name=result.name firstname=result.fname title=result.title urlp=url status=result.status room=result.room linkedin=result.linkedin website=result.website mailto=result.mailto
   image=result.image %} {% endfor %}
 </div>
-<div id="Former" style="{% if include.active == 'Former' %}display:block{% else %}display:inline-block{% endif %}" class="positioning-cards">
+<div id="Former" style="{% if include.active == 'Former' %}display:inline-block{% else %}display:none{% endif %}" class="positioning-cards">
   <!--Display Results for Former Students -->
   {% for result in formerMembersArray %} {% assign url = result.Person | remove: "http://sda.tech/" %} {% include professors.html name=result.name firstname=result.fname title=result.title urlp=url status=result.status room=result.room linkedin=result.linkedin website=result.website mailto=result.mailto
   image=result.image %} {% endfor %}
