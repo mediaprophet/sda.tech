@@ -56,7 +56,7 @@ sdaperson:JensLehmann a foaf:Person, sdatech:professor ;
                   rdfs:seeAlso <http://aksw.org/JensLehmann> ;
                   owl:sameAs <http://aksw.org/JensLehmann> ;
                   sda:publicationsTag "lehmann" ;
-                  sda:room "A109" ;
+                  sda:room "1.022" ;
                   foaf:familyName "Lehmann" ;
                   foaf:name "Prof. Dr. Jens Lehmann" ;
                   foaf:nick "Lehmann" ;
