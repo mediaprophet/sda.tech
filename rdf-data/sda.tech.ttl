@@ -3394,7 +3394,22 @@ sdatech:interns a foaf:Document ;
 sdatech:formermembers a foaf:Document ;
           rdfs:label "Former Members Page" .
 
-################################################################################
+#########################Teaching Documents#####################################
+sdatech:winterSemeterCourses a foaf:Document ;
+          rdfs:label "Latest Winter Semester Courses" .
+
+sdatech:summerSemesterCourses a foaf:Document ;
+           rdfs:label "Latest Summer Semester Courses" .
+
+sdatech:oldCourses a foaf:Document ;
+          rdfs:label "Archived Courses" .
+
+#########################Partner Documents######################################
+sdatech:industryPartners a foaf:Document ;
+           rdfs:label "Industry Partners" .
+
+sdatech:academicPartners a foaf:Document ;
+          rdfs:label "Academic Partners" .
 
 #########################Project Documents######################################
 sdatech:project a foaf:Document ;

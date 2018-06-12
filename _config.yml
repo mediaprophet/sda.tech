@@ -86,6 +86,7 @@ jekyll_rdf:
         "http://xmlns.com/foaf/0.1/Project" : "project.html"
         "http://sda.tech/Partner" : "partners.html"
         # "http://example.org/job" : "job.html"
+        #@Adrian -> Course Page would go here!
         # "http://example.org/teaching" : "teaching.html"
         "http://xmlns.com/foaf/0.1/Document" : "document.html"
     instance_template_mappings:
@@ -123,6 +124,13 @@ jekyll_rdf:
         "http://sda.tech/studentassistants" : "studentAssistantJob.html"
         "http://sda.tech/jobEnvoirnment" : "EnvoirnmentJob.html"
         "http://sda.tech/faqjob" : "FAQJob.html"
+        #teaching
+        "http://sda.tech/oldCourses" : "teachingOldCourse.html"
+        "http://sda.tech/winterSemeterCourses" : "teachingWinterSemester.html"
+        "http://sda.tech/summerSemesterCourses" : "teachingSummerSemester.html"
+        #partners
+        "http://sda.tech/academicPartners" : "partnersAcademic.html"
+        "http://sda.tech/industryPartners" : "partnersIndustry.html"
 
 
 

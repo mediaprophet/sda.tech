@@ -8,7 +8,7 @@
     document.getElementById('old').classList.remove('active');
     document.getElementById('guidelines').style.display = 'none';
     document.getElementById('courseguide').classList.remove('active');
-    history.pushState(null, null, '/ss/');
+    history.pushState(null, null, '/summerSemesterCourses/');
   }
 
   function activeWinterCourses() {
@@ -20,7 +20,7 @@
     document.getElementById('old').classList.remove('active');
     document.getElementById('guidelines').style.display = 'none';
     document.getElementById('courseguide').classList.remove('active');
-    history.pushState(null, null, '/ws/');
+    history.pushState(null, null, '/winterSemeterCourses/');
 
   }
 
@@ -33,7 +33,7 @@
     document.getElementById('old').classList.add('active');
     document.getElementById('guidelines').style.display = 'none';
     document.getElementById('courseguide').classList.remove('active');
-    history.pushState(null, null, '/archivedcourses/');
+    history.pushState(null, null, '/oldCourses/');
 
   }
 
@@ -46,7 +46,7 @@
     document.getElementById('old').classList.remove('active');
     document.getElementById('guidelines').style.display = 'block';
     document.getElementById('courseguide').classList.add('active');
-    history.pushState(null, null, '/courseguidelines/');
+    history.pushState(null, null, '/teaching/');
 
   }
 
