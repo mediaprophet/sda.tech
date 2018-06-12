@@ -2,20 +2,20 @@
 rdf_prefix_path: sda.tech.pref
 layout: default
 toggleOnDiv: allPartners
-toggledURLTo: /partner/allpartners
+toggledURLTo: /partners/
 ---
 {% include togglePartnerTypes.html %}
 {% include toggleInitialPageLink.html div=page.toggleOnDiv linkto=page.toggledURLTo %}
 <!-- Presenting the PARTNERS -->
 <article class="post">
   <div class="pagination">
-    {% include partnerHeader.html %}
+    {% include partnerHeader.html active="all"%}
   </div>
     <!-- FOR GETTING ASSOCIATED PROJECTS -->
     {% capture query %} SELECT ?partners ?project ?partnername ?name ?image  WHERE{ ?partners a sdatech:Partner . ?partners foaf:currentProject ?project . OPTIONAL { ?partners foaf:name ?partnername } . ?project rdfs:label ?name  . OPTIONAL { ?project foaf:logo ?image } }
     {% endcapture %} {% assign partnersWithProjects = page.rdf | sparql_query: query %} {% assign length2 = partners | size %}
     <div class="partner-items content-people">
-      {% include partnerContent.html %}
+      {% include partnerContent.html active="all"%}
     </div>
     <br class="horizontal-separator2" />
 </article>

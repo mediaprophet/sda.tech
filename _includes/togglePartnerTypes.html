@@ -6,6 +6,7 @@
     document.getElementById('industryPar').classList.remove('active');
     document.getElementById('academicPartners').style.display = 'none';
     document.getElementById('academicPar').classList.remove('active');
+    history.pushState(null, null, '/partners/');
   }
 
   function industryPartners() {
@@ -15,6 +16,7 @@
     document.getElementById('industryPar').classList.add('active');
     document.getElementById('academicPartners').style.display = 'none';
     document.getElementById('academicPar').classList.remove('active');
+    history.pushState(null, null, '/industryPartners/');
   }
 
   function academicPartners() {
@@ -24,5 +26,6 @@
     document.getElementById('industryPar').classList.remove('active');
     document.getElementById('academicPartners').style.display = 'block';
     document.getElementById('academicPar').classList.add('active');
+    history.pushState(null, null, '/academicPartners/');
   }
 </script>
