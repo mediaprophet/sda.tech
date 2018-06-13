@@ -350,7 +350,7 @@ sdaperson:GezimSejdiu a foaf:Person, sdatech:phdStudent ;
                    cv:aboutPerson "Gëzim Sejdiu is a PhD Student & Research Associate at the University of Bonn. Gëzim’s research interest are in the area of Semantic Web, Big Data and Machine Learning. He is also interested in the area of distributed computing systems (Apache Spark, Apache Flink)." ;
                    #sda:publication sdapublication:Publication1 ;
                    sda:group sdagroup:DistributedSemanticAnalytics ;
-                   foaf:currentProject sdaproject:BigDataEurope, sdaproject:SANSAStack, sdaproject:Boost40 .
+                   foaf:currentProject sdaproject:BigDataOcean, sdaproject:BigDataEurope, sdaproject:SANSAStack, sdaproject:Boost40 .
 
 sdaperson:LorenzBuehmann a foaf:Person, sdatech:phdStudent ;
                    rdfs:seeAlso <http://aksw.org/LorenzBuehmann> ;
