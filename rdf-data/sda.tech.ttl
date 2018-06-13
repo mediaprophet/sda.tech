@@ -42,7 +42,9 @@
 
 <> a owl:Ontology, void:Dataset ;
    rdfs:label "beta.sda.tech Smart Data Analytics Research Group" ;
+   #sda:twitter "https://twitter.com/SDA_Research" ;
    foaf:homepage <http://sda.tech/> .
+
 
 
 <http://sda.tech/> a foaf:Document .
@@ -2655,7 +2657,7 @@ sdapartner:TenForce a foaf:Organization, sdatech:industryPartner, sdatech:Partne
                               dct:abstract "TenForce is a Belgian Software Company known for its pragmatic solutions, built with innovative technology. Experts in Scrum from the early stages on A European thought-leader in Semantic Technology An international company – towards partners, employees & customers. " .
 
 sdapartner:TomTom a foaf:Organization, sdatech:industryPartner, sdatech:Partner ;
-                              foaf:homepage <https://www.tomtom.com/en_us/> ;
+                              #foaf:homepage <https://www.tomtom.com/en_us/> ;
                               foaf:mbox <mailto:tomtom.pr@tomtom.com> ;
                               rdfs:label "TomTom Development Germany GmbH" ;
                               foaf:phone <tel:+31-20-7575000> ;
