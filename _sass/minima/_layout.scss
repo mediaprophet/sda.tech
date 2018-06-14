@@ -1172,6 +1172,35 @@ button::-moz-focus-inner {
   }
 }
 
+// tooltip basic - later to be animated
+.tooltip {
+    // position: relative;
+    // display: inline-block;
+    // border-bottom: 1px dotted black;
+}
+
+.tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 12px 0;
+    font-size: 12px;
+    float: left;
+    top:44px;
+    left:-90px;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 100000;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
 //
 
 // Media Querries
