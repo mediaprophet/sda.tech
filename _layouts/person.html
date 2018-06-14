@@ -10,10 +10,15 @@ layout: default
       <h4 class="dynamicChange" style="text-align:center;">{{ page.rdf | rdf_property: 'foaf:status' }}</h4>
       <br/>
       <div class="links-to-social" style="text-align:center;">
-          <a href="{{ page.rdf | rdf_property: 'sda:twitter' }}" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i> </a>
-          <a href="{{ page.rdf | rdf_property: 'sda:website' }}" target="_blank"><i class="fa fa-globe" aria-hidden="true"></i> </a>
-          <a href="{{ page.rdf | rdf_property: 'sda:facebook' }}" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i> </a>
-          <a href="{{ page.rdf | rdf_property: 'sda:linkedin' }}" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i> </a>
+          {% capture boolTwitter | strip  %}{{ page.rdf | rdf_property: 'sda:twitter' }}{% endcapture %}
+          {% capture boolWebsite | strip %}{{ page.rdf | rdf_property: 'sda:website' }}{% endcapture %}
+          {% capture boolFacebook | strip %}{{ page.rdf | rdf_property: 'sda:facebook' }}{% endcapture %}
+          {% capture boolLinkedin | strip %}{{  page.rdf | rdf_property: 'sda:linkedin' }}{% endcapture %}
+          <!-- Presenting Social Media Icons if Exists links -->
+          {% if boolTwitter != NULL  %}<a href="{{ page.rdf | rdf_property: 'sda:twitter' }}" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i> </a>{% endif %}
+          {% if boolWebsite != NULL  %}<a href="{{ page.rdf | rdf_property: 'sda:website' }}" target="_blank"><i class="fa fa-globe" aria-hidden="true"></i> </a>{% endif %}
+          {% if boolFacebook != NULL  %}<a href="{{ page.rdf | rdf_property: 'sda:facebook' }}" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i> </a>{% endif %}
+          {% if boolLinkedin != NULL  %}<a href="{{ page.rdf | rdf_property: 'sda:linkedin' }}" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i> </a>{% endif %}
       </div>
       <br class="horizontal-separator2" />
       <div style="text-align:center;">
@@ -49,16 +54,28 @@ layout: default
         <br class="horizontal-separator2" />
         <h3>Projects</h3>
         <div class="membersofProject">
-          {% capture query %} SELECT ?project ?projectname ?image ?member ?membername WHERE{
-          ?project a foaf:Project . ?project rdfs:label ?projectname . ?project foaf:depiction ?image . ?project foaf:member ?member . ?member foaf:name ?membername . } {% endcapture %} {% assign resultset2 = page.rdf | sparql_query: query %}
+          <!-- Person to Project Relationship Direct -->
+            {% capture query %} SELECT ?person ?project ?projectname ?image WHERE {
+              <{{page.rdf}}> foaf:currentProject ?project . ?project rdfs:label ?projectname . ?project foaf:depiction ?image .
+            }{% endcapture %} {% assign projectList = page.rdf | sparql_query: query %}
+            {% for projects in projectList %}
+              {% assign url= projects.project | remove: "http://sda.tech/" %}
+              <div class="chip">
+                <img src="{{projects.image}}" alt="Project" width="96" height="96">
+                <a href="../../{{url}}">{{projects.projectname}}</a>
+              </div>
+            {% endfor %}
+          <!--  -->
+          <!-- {% capture query %} SELECT ?project ?projectname ?image ?member ?membername WHERE{
+          ?project a foaf:Project . ?project rdfs:label ?projectname . ?project foaf:depiction ?image . ?project foaf:member ?member . ?member foaf:name ?membername . } {% endcapture %} {% assign resultset2 = page.rdf | sparql_query: query %} -->
             <!--Displaying all the reseach interests of the person x  -->
-
+<!--
             {% for result in resultset2 %} {% capture mname %}{{result.membername }}{% endcapture %} {% if personName == mname %} {% assign url= result.project | remove: "http://sda.tech/" %}
             <div class="chip">
               <img src="{{result.image}}" alt="Project" width="96" height="96">
               <a href="../../{{url}}">{{result.projectname}}</a>
             </div>
-            {% endif %}{% endfor %}
+            {% endif %}{% endfor %} -->
         </div>
       </div>
       <br class="horizontal-separator2" />

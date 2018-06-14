@@ -23,8 +23,9 @@ group :jekyll_plugins do
    gem "jekyll-rdf"
    gem "jekyll-twitter-plugin"
    gem "jekyll-email-protect"
-   gem 'jekyll-email-protect'
-#   gem 'jekyll-Turtle2BiB', '0.1.0', :path => '/home/masmat/Documents/jekyll-Turtle2BiB'
+   gem 'jekyll-redirect-from'
+   #gem 'jekyll-email-protect'
+   #gem 'jekyll-Turtle2BiB', '0.1.0', :path => '/home/masmat/Documents/jekyll-Turtle2BiB'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
