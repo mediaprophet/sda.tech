@@ -1,5 +1,7 @@
 <div class="pagination">
   <div class="job-types">
+    <a href="#" id="oJobs" class="{% if include.active == 'openJobs' %}active{% endif %} responsiveTabItem" onclick="openJobs()"><i class="fa fa-list-alt margin-icon" aria-hidden="true"></i>
+    Open Jobs</a>
     <a href="#" id="akad" class="{% if include.active == 'akadRat' %}active{% endif %} responsiveTabItem" onclick="akademischeJob()"><i class="fa fa-pencil-square-o margin-icon" aria-hidden="true"></i>
     {{site.data.jobTypes[0].name}}</a>
     <a href="#" id="postdoctoral" class="{% if include.active == 'postDoc' %}active{% endif %} responsiveTabItem" onclick="postdoctoralJob()"><i class="fa fa-user-circle-o margin-icon" aria-hidden="true"></i>

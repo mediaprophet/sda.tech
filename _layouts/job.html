@@ -1,0 +1,10 @@
+---
+rdf_prefix_path: sda.tech.pref
+layout: default
+---
+
+<article class="post">
+    {{ page.rdf | rdf_property: 'dct:title'}}<br>
+    {{ page.rdf | rdf_property: 'ex:description'}}
+    <br class="horizontal-separator" />
+</article>
