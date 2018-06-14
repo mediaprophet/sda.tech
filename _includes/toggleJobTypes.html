@@ -1,5 +1,28 @@
 <script>
+
+  function openJobs() {
+    document.getElementById('open').style.display = 'block';
+    document.getElementById('oJobs').classList.add('active');
+    document.getElementById('akRat').style.display = 'none';
+    document.getElementById('akad').classList.remove('active');
+    document.getElementById('posDoc').style.display = 'none';
+    document.getElementById('postdoctoral').classList.remove('active');
+    document.getElementById('phJob').style.display = 'none';
+    document.getElementById('phdpos').classList.remove('active');
+    document.getElementById('saJob').style.display = 'none';
+    document.getElementById('studentassistants').classList.remove('active');
+    document.getElementById('jobEnv').style.display = 'none';
+    document.getElementById('envoirnmentjob').classList.remove('active');
+    document.getElementById('jobFaq').style.display = 'none';
+    document.getElementById('faqjob').classList.remove('active');
+    history.pushState(null, null, '/job/');
+
+  }
+
+
   function akademischeJob() {
+    document.getElementById('open').style.display = 'none';
+    document.getElementById('oJobs').classList.remove('active');
     document.getElementById('akRat').style.display = 'block';
     document.getElementById('akad').classList.add('active');
     document.getElementById('posDoc').style.display = 'none';
@@ -17,6 +40,8 @@
   }
 
   function postdoctoralJob() {
+    document.getElementById('open').style.display = 'none';
+    document.getElementById('oJobs').classList.remove('active');
     document.getElementById('akRat').style.display = 'none';
     document.getElementById('akad').classList.remove('active');
     document.getElementById('posDoc').style.display = 'block';
@@ -34,6 +59,8 @@
   }
 
   function phdJobs() {
+    document.getElementById('open').style.display = 'none';
+    document.getElementById('oJobs').classList.remove('active');
     document.getElementById('akRat').style.display = 'none';
     document.getElementById('akad').classList.remove('active');
     document.getElementById('posDoc').style.display = 'none';
@@ -51,6 +78,8 @@
   }
 
   function studentAssistantsJob() {
+    document.getElementById('open').style.display = 'none';
+    document.getElementById('oJobs').classList.remove('active');
     document.getElementById('akRat').style.display = 'none';
     document.getElementById('akad').classList.remove('active');
     document.getElementById('posDoc').style.display = 'none';
@@ -68,6 +97,8 @@
   }
 
   function jobFaq() {
+    document.getElementById('open').style.display = 'none';
+    document.getElementById('oJobs').classList.remove('active');
     document.getElementById('akRat').style.display = 'none';
     document.getElementById('akad').classList.remove('active');
     document.getElementById('posDoc').style.display = 'none';
@@ -85,6 +116,8 @@
   }
 
   function jobEnvoirnment() {
+    document.getElementById('open').style.display = 'none';
+    document.getElementById('oJobs').classList.remove('active');
     document.getElementById('akRat').style.display = 'none';
     document.getElementById('akad').classList.remove('active');
     document.getElementById('posDoc').style.display = 'none';

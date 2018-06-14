@@ -19,8 +19,8 @@
 @prefix sdapeople: <http://sda.tech/People/> .
 @prefix sdaproject: <http://sda.tech/Project/> .
 @prefix sdathesis: <http://sda.tech/Thesis/> .
-@prefix sdateaching: <http://sda.tech/Teaching/> .
-@prefix sdajob: <http://sda.tech/Jobs/> .
+@prefix sdateaching: <http://sda.tech/Course/> .
+@prefix sdajob: <http://sda.tech/Job/> .
 @prefix sdacontact: <http://sda.tech/Contact/> .
 @prefix aiiso: <http://purl.org/vocab/aiiso/schema#> .
 @prefix dct: <http://purl.org/dc/terms/> .
@@ -3022,7 +3022,7 @@ ex:Mainnav a ex:navigation ;
            rdf:_3 sdatech:group ;
            rdf:_4 sdatech:project ;
            rdf:_5 sdatech:publication ;
-           rdf:_6 sdatech:job ;
+           rdf:_6 sdatech:jobs ;
            rdf:_7 sdatech:teaching ;
            rdf:_8 sdatech:thesis ;
            rdf:_9 sdatech:partners .
@@ -3368,11 +3368,35 @@ sdateaching:SKGA17W a sdatech:Course ;
            sda:year 2017 ;
            sda:id "MA-INF 4317" .
 
+##########################################
+###################Jobs###################
+##########################################
+
+sdajob:website a sdatech:Job ;
+           rdfs:label "Test Entry" ;
+           dct:title "Test Entry" ;
+           ex:description "Test Entry Desc" ; .
+
+sdajob:website2 a sdatech:Job ;
+           rdfs:label "Test Entry" ;
+           dct:title "Test Entry" ;
+           ex:description "Test Entry Desc" ; .
+
+sdajob:website3 a sdatech:Job ;
+           rdfs:label "Test Entry" ;
+           dct:title "Test Entry" ;
+           ex:description "Test Entry Desc" ; .
+
+sdajob:website4 a sdatech:Job;
+           rdfs:label "Test Entry" ;
+           dct:title "Test Entry" ;
+           ex:description "Test Entry Desc" ; .
+
 
 sdatech:group a foaf:Document ;
          rdfs:label "Groups" .
 
-sdatech:job a foaf:Document ;
+sdatech:jobs a foaf:Document ;
        rdfs:label "Jobs" .
 
 sdatech:akademischeJob a foaf:Document ;
@@ -3533,6 +3557,14 @@ foaf:Person sysont:instanceNamingScheme "label" ;
             a owl:Class ;
             rdfs:label "Person" .
 
+sdatech:jobOffer a owl:Class ;
+            rdfs:label "JobOffer" ;
+            rdfs:comment "Jobs offered by SDA." ;
+            rdfs:subClassOf foaf:Organization ;
+            site:classTemplate "joboffer" ;
+            sysont:creationLabel "JobOffer" ;
+            dct:issued "2008-05-14" .
+
 foaf:Document sysont:instanceNamingScheme "label" ;
               a owl:Class ;
               rdfs:label "Document" .
@@ -3656,6 +3688,14 @@ sdatech:Course a owl:Class ;
                     rdfs:subClassOf foaf:Organization ;
                     site:classTemplate "course" ;
                     sysont:creationLabel "Course" ;
+                    dct:issued "2008-05-14" .
+
+sdatech:Job a owl:Class ;
+                    rdfs:label "Job" ;
+                    rdfs:comment "A job offered by SDA." ;
+                    rdfs:subClassOf foaf:Organization ;
+                    site:classTemplate "job" ;
+                    sysont:creationLabel "Job" ;
                     dct:issued "2008-05-14" .
 
 ###############################################

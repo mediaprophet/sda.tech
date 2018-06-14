@@ -1,4 +1,15 @@
 <div class="job-contents content-people">
+  <div class="jobDescription" id="open" style="{% if include.active == 'openJobs' %}display:block{% else %}display:none{% endif %}">
+    {% capture query %} SELECT ?jobs ?title ?desc WHERE{
+?jobs a sdatech:Job . ?jobs dct:title ?title . ?jobs ex:description ?desc . } {% endcapture %} {% assign resultset = page.rdf | sparql_query: query %}
+{% for result in resultset %}
+<h2 style="text-align:center;">{{result.title}}</h2>
+<br class="horizontal-separator" />
+<div class="shortDescJob">
+  <p>{{result.desc}}</p>
+</div>
+{% endfor %}
+  </div>
   <div class="jobDescription" id="akRat" style="{% if include.active == 'akadRat' %}display:block{% else %}display:none{% endif %}">
     {% include jobType0.html %}
   </div>

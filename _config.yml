@@ -75,6 +75,8 @@ jekyll_rdf:
                 UNION { ?resourceUri a <http://example.org/publication> . }
                 UNION { ?resourceUri a <http://sda.tech/Group> . }
                 UNION { ?resourceUri a <http://sda.tech/Partner> . }
+                UNION { ?resourceUri a <http://sda.tech/Course> . }
+                UNION { ?resourceUri a <http://sda.tech/Job> . }
                 UNION { ?resourceUri a <http://xmlns.com/foaf/0.1/Project> . }
                 UNION { ?resourceUri a <http://xmlns.com/foaf/0.1/Person> . }
                 UNION { ?resourceUri a <http://xmlns.com/foaf/0.1/Document> . }
@@ -85,15 +87,14 @@ jekyll_rdf:
         "http://sda.tech/Group" : "group.html"
         "http://xmlns.com/foaf/0.1/Project" : "project.html"
         "http://sda.tech/Partner" : "partners.html"
-        # "http://example.org/job" : "job.html"
-        #@Adrian -> Course Page would go here!
-        # "http://example.org/teaching" : "teaching.html"
+        "http://sda.tech/Job" : "job.html"
+        "http://sda.tech/Course" : "teaching.html"
         "http://xmlns.com/foaf/0.1/Document" : "document.html"
     instance_template_mappings:
         "http://sda.tech/" : "home.html"
         "http://sda.tech/group" : "groupmain.html"
         "http://sda.tech/publication" : "publicationmain.html"
-        "http://sda.tech/job" : "jobmain.html"
+        "http://sda.tech/jobs" : "jobmain.html"
         "http://sda.tech/teaching" : "teachingmain.html"
         "http://sda.tech/project" : "projectmain.html"
         "http://sda.tech/fundedprojects" : "projectFunded.html"
