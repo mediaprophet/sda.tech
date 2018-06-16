@@ -1627,7 +1627,7 @@ sdagroup:SemanticDataManagement a aiiso:ResearchGroup, sdatech:Group ;
 sdagroup:SemanticQuestionAnswering a aiiso:ResearchGroup, sdatech:Group ;
                                 rdfs:label "Semantic Question Answering" ;
                                 foaf:member sdaperson:JensLehmann, sdaperson:MohnishDubey, sdaperson:IoannaLytra, sdaperson:HamidZafar, sdaperson:DebanjanChaudhuri ;
-                                dbo:leader sdaperson:GiulioNapolitano ;
+                                dbo:leader sdaperson:GiulioNapolitano, sdaperson:IoannaLytra ;
                                 foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
                                 foaf:pastProject sdaproject:SHORE, sdaproject:WAVE ;
                                 foaf:currentProject sdaproject:AskNow, sdaproject:WDAqua ;
