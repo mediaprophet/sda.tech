@@ -36,7 +36,18 @@ toggledURLTo: /project/allProjects
         <h3>Partners</h3>
         <div class="partnersOfProject links">
           {% capture query %} SELECT ?partner ?partnername ?image ?partnersite WHERE{
-          <{{page.rdf}}> sda:partners ?partner . ?partner rdfs:label ?partnername . ?partner foaf:depiction ?image . OPTIONAL{ ?partner foaf:homepage ?partnersite } . } {% endcapture %} {% assign partners = page.rdf | sparql_query: query %} {% for partner in partners %} {% assign url= partner.partner | remove: "http://sda.tech/"
+          <{{page.rdf}}> sda:partners ?partner . ?partner rdfs:label ?partnername . ?partner foaf:depiction ?image . OPTIONAL{ ?partner foaf:homepage ?partnersite } . } {% endcapture %} {% assign partners = page.rdf | sparql_query: query %}
+          <!--  -->
+          {% capture partnerNameArray %}
+            {% for partner in partners %}
+              {{partner.partnername}},
+            {% endfor %}
+          {% endcapture %}
+          {% assign array = partnerNameArray | split: ',' %}
+
+          {% assign sortedArray = array | sort %}
+          <h1>ABC TEST</h1>
+          {% for partner in partners %} {% assign url= partner.partner | remove: "http://sda.tech/"
             %}
             <div class="chip">
               <img src="{{partner.image}}" alt="Person" width="96" height="96">
