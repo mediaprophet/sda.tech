@@ -3,8 +3,105 @@ rdf_prefix_path: sda.tech.pref
 layout: default
 ---
 
+{% capture query %} SELECT ?akadJob ?title ?desc ?req ?offer ?expect ?exp WHERE{
+?akadJob a foaf:Document . ?akadJob rdfs:label ?title . ?akadJob ex:description ?desc . ?akadJob sda:requirements ?req . ?akadJob sda:expected ?expect . ?akadJob sda:experience ?exp . ?akadJob sda:offer ?offer .} {% endcapture %} {% assign akadset = page.rdf | sparql_query: query %}
+
+{% capture job %}{{page.rdf | rdf_property: 'rdfs:label'}}{% endcapture %}
+{% for result in akadset %}{% capture akadtitle %}{{result.title}}{% endcapture %}{% if akadtitle == job %}{% capture externDesc %}{{result.desc}}{% endcapture %}{% capture externReq %}{{result.req}}{% endcapture %}{% capture externExp %}{{result.exp}}{% endcapture %}{% capture externExpect %}{{result.expect}}{% endcapture %}{% capture externOffer %}{{result.offer}}{% endcapture %}{% endif %}{% endfor %}
+
+{% capture descOffer %}{{ page.rdf | rdf_property: 'ex:description'}}{% endcapture %}
+{% capture reqOffer %}{{ page.rdf | rdf_property: 'sda:requirements'}}{% endcapture %}
+{% capture expOffer %}{{ page.rdf | rdf_property: 'sda:experience'}}{% endcapture %}
+{% capture expectOffer %}{{ page.rdf | rdf_property: 'sda:expected'}}{% endcapture %}
+{% capture offerOffer %}{{ page.rdf | rdf_property: 'sda:offer'}}{% endcapture %}
+
+{% assign req = "" %}{% assign exp = "" %}{% assign expect = "" %}{% assign offer = "" %}
+
+{% if reqOffer == "undefined" %} 
+    {% capture pointlist %}{{externReq}}{% endcapture %}{% assign req = externReq %}
+{% else %}
+    {% capture pointlist %}{{page.rdf | rdf_property: 'sda:requirements'}}{% endcapture %}
+{% endif %} {% assign points1 = pointlist | split: ' | ' %}
+{% if expOffer == "undefined" %} 
+    {% capture pointlist %}{{externExp}}{% endcapture %}{% assign exp = externExp %}
+{% else %}
+    {% capture pointlist %}{{page.rdf | rdf_property: 'sda:experience'}}{% endcapture %}
+{% endif %} {% assign points2 = pointlist | split: ' | ' %}
+{% if expectOffer == "undefined" %} 
+    {% capture pointlist %}{{externExpect}}{% endcapture %}{% assign expect = externExpect %}
+{% else %}
+    {% capture pointlist %}{{page.rdf | rdf_property: 'sda:expected'}}{% endcapture %}
+{% endif %} {% assign points3 = pointlist | split: ' | ' %}
+{% if offerOffer == "undefined" %} 
+    {% capture pointlist %}{{externOffer}}{% endcapture %}{% assign offer = externOffer %}
+{% else %}
+    {% capture pointlist %}{{page.rdf | rdf_property: 'sda:offer'}}{% endcapture %}
+{% endif %} {% assign points4 = pointlist | split: ' | ' %}
+
 <article class="post">
-    {{ page.rdf | rdf_property: 'dct:title'}}<br>
-    {{ page.rdf | rdf_property: 'ex:description'}}
+  <div class="job-contents content-people">
+    <div class="jobDescription"style="display:block">
+    <h2 style="text-align:center;">{{ page.rdf | rdf_property: 'dct:title'}}</h2>
     <br class="horizontal-separator" />
+    <div class="shortDescJob">
+      <p>{% if descOffer == "undefined" %}{{externDesc}}{% else %}{{descOffer}}{% endif %}</p>
+    </div>
+    {% unless req == "none" %}
+    <br class="horizontal-separator" />
+    <div class="requirementsJob">
+      <h3>Requirements</h3>
+      <ul class="reuirementsList">
+        {% for point in points1 %}
+            <li>{{point}}</li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endunless %}
+    {% unless exp == "none" %}
+    <br class="horizontal-separator" />
+    <div class="experienceJob">
+      <h3>Experience/Interest in “one of” (not necessarily more) the following areas:</h3>
+      <ul>
+        {% for point in points2 %}
+            <li>{{point}}</li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endunless %}
+    {% unless expect == "none" %}
+    <br class="horizontal-separator" />
+    <div class="expectJob">
+      <h3>We Expect:</h3>
+      <ul>
+        {% for point in points3 %}
+            <li>{{point}}</li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endunless %}
+    {% unless offer == "none" %}
+    <br class="horizontal-separator" />
+    <div class="offerJob">
+      <h3>We offer:</h3>
+      <ul>
+        {% for point in points4 %}
+            <li>{{point}}</li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endunless %}
+    <br class="horitzontal-separator" />
+    <div class="applicationProcess">
+      <p>To apply, please send a mail to <a class="jobRef" href="mailto:SDA-applications@lists.iai.uni-bonn.de"  target="_top">SDA Applications</a> including a CV, a master certificate, a motivation letter including a short overview of previous research activities, two letters of recommendation and a writing sample (e.g. prior publication or master thesis excerpt). Applications are possible until all positions have been filled. Please do not send mails larger than 10MB.</p>
+    </div>
+    <br class="horizontal-separator">
+    <div class="equalJobOpp">
+      <h3>The University of Bonn is an equal opportunities employer.</h3>
+      <ul>
+        <li><a class="jobRef" href="https://en.wikipedia.org/wiki/University_of_Bonn#Ranking" target="_blank">https://en.wikipedia.org/wiki/University_of_Bonn#Ranking</a></li>
+        <li><a class="jobRef" href="{{site.fraunhoferHomePage}}" target="_blank">{{site.fraunhoferHomePage}}</a></li>
+      </ul>
+    </div>
+  </div>
+  </div>
 </article>
