@@ -38,7 +38,7 @@ toggledURLTo: /project/allProjects
           {% capture query %} SELECT ?partner ?partnername ?image ?partnersite WHERE{
           <{{page.rdf}}> sda:partners ?partner . ?partner rdfs:label ?partnername . ?partner foaf:depiction ?image . OPTIONAL{ ?partner foaf:homepage ?partnersite } . } {% endcapture %} {% assign partners = page.rdf | sparql_query: query %}
           <!--  -->
-          {% capture partnerNameArray %}
+          <!-- {% capture partnerNameArray %}
             {% for partner in partners %}
               {{partner.partnername}},
             {% endfor %}
@@ -46,7 +46,7 @@ toggledURLTo: /project/allProjects
           {% assign array = partnerNameArray | split: ',' %}
 
           {% assign sortedArray = array | sort %}
-          <h1>ABC TEST</h1>
+          <h1>ABC TEST</h1> -->
           {% for partner in partners %} {% assign url= partner.partner | remove: "http://sda.tech/"
             %}
             <div class="chip">
