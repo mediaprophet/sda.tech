@@ -646,7 +646,7 @@ sdaperson:HamidZafar a foaf:Person, sdatech:phdStudent ;
                    sda:linkedin "https://www.linkedin.com/in/hamid-zafar-138a0a46/" ;
                    sda:website "" ;
                    sda:twitter "" ;
-                   sda:github "" ;
+                   sda:github "https://github.com/hamidzafar" ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    schema:location <http://sda.tech/Address/SDA> ;
                    cv:aboutPerson "Hamid Zafar is a PhD Student at the University of Bonn." ;
