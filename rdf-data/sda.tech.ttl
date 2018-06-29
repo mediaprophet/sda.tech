@@ -645,7 +645,7 @@ sdaperson:HamidZafar a foaf:Person, sdatech:phdStudent ;
                    foaf:status "PhD Student" ;
                    sda:linkedin "https://www.linkedin.com/in/hamid-zafar-138a0a46/" ;
                    sda:website "" ;
-                   sda:twitter "" ;
+                   sda:twitter "https://twitter.com/HamidZafart" ;
                    sda:github "https://github.com/hamidzafar" ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    schema:location <http://sda.tech/Address/SDA> ;
