@@ -50,7 +50,7 @@
                       {% if page.rdf.iri == result2.resource.iri %}
                         {% capture urlNav %}{{page.url}}{% endcapture %}
                         {% capture navlabel%}{{result2.label}}{% endcapture %}
-                          <a class="page-link" href="{{ urlNav | remove:"index.html" }}">
+                          <a class="page-link" href="{{ urlNav | remove:"index.html" }}" id="{{result2.label}}">
                             {{ result2.label }}
                           </a>
                       {% endif %}

@@ -1,0 +1,42 @@
+{% assign count = 0 %}
+{% capture query %}
+# select all main Navigation position properties for counting
+SELECT ?position WHERE{
+    sdatech:BlogPostNavigation ?positionProp ?resource .
+    ?positionProp a rdfs:ContainerMembershipProperty .
+    ?positionProp rdfs:label ?position .
+}
+{% endcapture %}
+{% assign resultset = page.rdf | sparql_query: query %}
+{% for result in resultset %}
+
+{% assign count = count | plus : 1 %}
+  {% capture query2 %}
+  # select menu entry for current count
+  SELECT ?resource ?label ?color WHERE{
+      sdatech:BlogPostNavigation ?positionProp ?resource .
+      ?positionProp a rdfs:ContainerMembershipProperty .
+      ?positionProp rdfs:label "{{count}}" .
+      ?resource a foaf:Document .
+      ?resource rdfs:label ?label .
+      ?resource sda:legendColor ?color .
+  }
+  {% endcapture %}
+  {% assign resultset2 = page.rdf | sparql_query: query2 %}
+
+    {% for result2 in resultset2 %}
+        {% for page in site.pages %}
+            {% if page.rdf.iri == result2.resource.iri %}
+              {% capture urlNav %}{{page.url}}{% endcapture %}
+              {% capture navlabel%}{{result2.label}}{% endcapture %}
+                <a href="{{ urlNav | remove:"index.html" }}" class="{% if include.active == navlabel %}active{% endif %} responsiveTabItem" onclick="#"><i class="{% if navlabel == 'All Blog Posts' %}fa fa-rss margin-icon{% else %}fa fa-square margin-icon{% endif %}" style="color:{{result2.color}};" aria-hidden="true"></i>
+                {{result2.label}}
+                </a>
+            {% endif %}
+        {% endfor %}
+    {% endfor %}
+{% endfor%}
+
+<br/>
+<br/>
+<hr />

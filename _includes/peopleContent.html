@@ -23,49 +23,49 @@ OPTIONAL { ?Person sda:room ?room } . OPTIONAL { ?Person foaf:firstName ?fname }
 <div id="All" style="{% if include.active == 'All' %}display:inline-block{% else %}display:none{% endif %}" class="positioning-cards">
 <!-- Displaying Results for Professors -->
 <!-- <h2>Professors</h2> -->
-<div style="display:inline-block">
+<!-- <div style="display:inline-block"> -->
   {% for result in professorsArray %} {% assign url = result.Person | remove: "http://sda.tech/" %} {% include professors.html name=result.name firstname=result.fname title=result.title urlp=url status=result.status room=result.room linkedin=result.linkedin website=result.website mailto=result.mailto
   image=result.image %} {% endfor %}
-<!-- </div>
-<br class="horizontal-separator2" /> -->
-<!-- Displaying Results for Senior Researchers  -->
-<!-- <h2>Senior Researchers</h2> -->
-<!-- <div style="display:inline-block"> -->
-  {% for result in seniorResearchersArray %} {% assign url = result.Person | remove: "http://sda.tech/" %} {% include professors.html name=result.name firstname=result.fname title=result.title urlp=url status=result.status room=result.room linkedin=result.linkedin website=result.website mailto=result.mailto
-  image=result.image %}{% endfor %}
 <!-- </div> -->
 <!-- <br class="horizontal-separator2" /> -->
+<!-- Displaying Results for Senior Researchers  -->
+<!-- <h2>Senior Researchers</h2>
+<div style="display:inline-block"> -->
+  {% for result in seniorResearchersArray %} {% assign url = result.Person | remove: "http://sda.tech/" %} {% include professors.html name=result.name firstname=result.fname title=result.title urlp=url status=result.status room=result.room linkedin=result.linkedin website=result.website mailto=result.mailto
+  image=result.image %}{% endfor %}
+<!-- </div>
+<br class="horizontal-separator2" /> -->
 <!--Display Results for Phd Students  -->
-<!-- <h2>Phd Students</h2> -->
-<!-- <div style="display:inline-block"> -->
+<!-- <h2>Phd Students</h2>
+<div style="display:inline-block"> -->
   {% for result in phdStudentsArray %} {% assign url = result.Person | remove: "http://sda.tech/" %} {% include professors.html name=result.name firstname=result.fname title=result.title urlp=url status=result.status room=result.room linkedin=result.linkedin website=result.website mailto=result.mailto
   image=result.image %}{% endfor %}
 <!-- </div>
 <br class="horizontal-separator2" /> -->
 <!--Display results for Associate Researchers  -->
-<!-- <h2>Associate Researchers</h2> -->
-<!-- <div style="display:inline-block"> -->
+<!-- <h2>Associate Researchers</h2>
+<div style="display:inline-block"> -->
   {% for result in associateResearchersArray %} {% assign url = result.Person | remove: "http://sda.tech/" %} {% include professors.html name=result.name firstname=result.fname title=result.title urlp=url status=result.status room=result.room linkedin=result.linkedin website=result.website mailto=result.mailto
   image=result.image %} {% endfor %}
 <!-- </div>
 <br class="horizontal-separator2" /> -->
 <!--Display Results for Student Assistants -->
-<!-- <h2>Student Assistants</h2> -->
-<!-- <div style="display:inline-block"> -->
+<!-- <h2>Student Assistants</h2>
+<div style="display:inline-block"> -->
   {% for result in studentAssistantsArray %} {% assign url = result.Person | remove: "http://sda.tech/" %} {% include professors.html name=result.name firstname=result.fname title=result.title urlp=url status=result.status room=result.room linkedin=result.linkedin website=result.website mailto=result.mailto
   image=result.image %} {% endfor %}
 <!-- </div>
 <br class="horizontal-separator2" /> -->
 <!--Display Results for Interness -->
-<!-- <h2>Interns</h2> -->
-<!-- <div style="display:inline-block"> -->
+<!-- <h2>Interns</h2>
+<div style="display:inline-block"> -->
   {% for result in interneesArray %} {% assign url = result.Person | remove: "http://sda.tech/" %} {% include professors.html name=result.name firstname=result.fname title=result.title urlp=url status=result.status room=result.room linkedin=result.linkedin website=result.website mailto=result.mailto
   image=result.image %} {% endfor %}
 <!-- </div>
 <br class="horizontal-separator2" /> -->
 <!--Display Results for Former Students -->
-<!-- <h2>Former Members</h2> -->
-<!-- <div style="display:inline-block"> -->
+<!-- <h2>Former Members</h2>
+<div style="display:inline-block"> -->
   {% for result in formerMembersArray %} {% assign url = result.Person | remove: "http://sda.tech/" %} {% include professors.html name=result.name firstname=result.fname title=result.title urlp=url status=result.status room=result.room linkedin=result.linkedin website=result.website mailto=result.mailto
   image=result.image %} {% endfor %}
 <!-- </div> -->

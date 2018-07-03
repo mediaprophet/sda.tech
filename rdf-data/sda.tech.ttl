@@ -20,6 +20,7 @@
 @prefix sdaproject: <http://sda.tech/Project/> .
 @prefix sdathesis: <http://sda.tech/Thesis/> .
 @prefix sdateaching: <http://sda.tech/Course/> .
+@prefix sdablog: <http://sda.tech/Blog/> .
 @prefix sdajob: <http://sda.tech/Job/> .
 @prefix sdacontact: <http://sda.tech/Contact/> .
 @prefix aiiso: <http://purl.org/vocab/aiiso/schema#> .
@@ -34,6 +35,7 @@
 @prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
 @prefix biboDegree: <http://purl.org/ontology/bibo/degree/> .
 @prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix sioc: <http://rdfs.org/sioc/ns#> .
 
 
 #######################################
@@ -278,7 +280,7 @@ sdaperson:ChristophLange a foaf:Person, sdatech:seniorResearcher ;
                   foaf:familyName "Lange" ;
                   foaf:name "Dr. Christoph Lange" ;
                   foaf:mbox <mailto:christoph.lange-bever@iais.fraunhofer.de> ;
-                  foaf:depiction <http://www.clker.com/cliparts/d/L/P/X/z/i/no-image-icon-md.png> ;
+                  foaf:depiction <http://sda.cs.uni-bonn.de/wp-content/uploads/2017/07/Christoph.jpg> ;
                   #foaf:phone <tel:+49-341-123456789> ;
                   foaf:title "Dr. " ;
                   foaf:status "Senior Researcher/ Head of EIS department @ IAIS" ;
@@ -3016,6 +3018,8 @@ ex:MEXVocabulary a ex:project ;
                  ex:partners ex:agroknow ;
                  ex:opensource "Open Source" .
 
+################Primary and Secondary Navigations###############################
+
 ex:Mainnav a ex:navigation ;
            rdf:_1 sdatech:about ;
            rdf:_2 sdatech:people ;
@@ -3025,8 +3029,17 @@ ex:Mainnav a ex:navigation ;
            rdf:_6 sdatech:jobs ;
            rdf:_7 sdatech:teaching ;
            rdf:_8 sdatech:thesis ;
-           rdf:_9 sdatech:partners .
+           rdf:_9 sdatech:partners ;
+           rdf:_10 sdatech:blog .
 
+sdatech:BlogPostNavigation a ex:navigation ;
+         rdf:_1 sdatech:allposts ;
+         rdf:_2 sdatech:papernotifications ;
+         rdf:_3 sdatech:invitedtalks ;
+         rdf:_4 sdatech:projectannouncements ;
+         rdf:_5 sdatech:generalposts .
+
+################################################################################
 
 ex:Publication1 a ex:publication ;
                 rdfs:label "business opportunities" ;
@@ -3070,14 +3083,6 @@ sdapublication:Publication5 a bibo:Article ;
                 foaf:homepage "http://mex.aksw.org/" ;
                 foaf:Organization "FhG" ;
                 dc:author sdaperson:RajKapoor .
-
-ex:SemanticDataWebTechnologies a ex:course ;
-                               rdfs:label "Semantic Data Web Technologies" ;
-                               foaf:Person ex:OliverOctopus, ex:AlfredEel ;
-                               ex:description "The Web accompanies the transition from an industrial to an information society and provides the infrastructure for a new quality of information handling regarding acquisition as well as provisioning " ;
-                               ex:homepage "http://mex.aksw.org/" ;
-                               ex:language "English" ;
-                               ex:summer2017 "Summer Semester 2017" .
 
 #######################################
 ##########Teaching Model###############
@@ -3375,7 +3380,7 @@ sdateaching:SKGA17W a sdatech:Course ;
 sdajob:AkademischerRatAustralianEnvironment a sdatech:Job ;
            rdfs:label "AkademischerRat" ;
            dct:title "Akademischer Rat in Australian Environment Research" ;
-           ex:description "undefined" ; 
+           ex:description "undefined" ;
            sda:requirements "undefined" ;
            sda:experience "undefined" ;
            sda:expected "undefined" ;
@@ -3386,7 +3391,7 @@ sdajob:AkademischerRatAustralianEnvironment a sdatech:Job ;
 sdajob:PhdAustralianEnvironment a sdatech:Job ;
            rdfs:label "Phd" ;
            dct:title "Phd in Australian Environment Research" ;
-           ex:description "undefined" ; 
+           ex:description "undefined" ;
            sda:requirements "undefined" ;
            sda:experience "undefined" ;
            sda:expected "undefined" ;
@@ -3397,7 +3402,7 @@ sdajob:PhdAustralianEnvironment a sdatech:Job ;
 sdajob:SeniorResearcherAustralianEnvironment a sdatech:Job ;
            rdfs:label "SeniorResearcher" ;
            dct:title "Senior Researcher in Australian Environment Research" ;
-           ex:description "undefined" ; 
+           ex:description "undefined" ;
            sda:requirements "undefined" ;
            sda:experience "undefined" ;
            sda:expected "undefined" ;
@@ -3408,7 +3413,7 @@ sdajob:SeniorResearcherAustralianEnvironment a sdatech:Job ;
 sdajob:StudentAssistantAustralianEnvironment a sdatech:Job ;
            rdfs:label "StudentAssistant" ;
            dct:title "Student Assistant in Australian Environment Research" ;
-           ex:description "undefined" ; 
+           ex:description "undefined" ;
            sda:requirements "undefined" ;
            sda:experience "undefined" ;
            sda:expected "undefined" ;
@@ -3426,7 +3431,7 @@ sdatech:jobs a foaf:Document ;
 sdatech:akademischeJob a foaf:Document ;
        rdfs:label "AkademischerRat" ;
        dct:title "Akademische/r Rat/Rätin" ;
-       ex:description "We are looking for a senior researcher (Akademischer Rat on payment scale 100% A13 [1], comparable to Assistant Professor) for 3 years with possible extensions." ; 
+       ex:description "We are looking for a senior researcher (Akademischer Rat on payment scale 100% A13 [1], comparable to Assistant Professor) for 3 years with possible extensions." ;
        sda:requirements "A completed PhD and Master degree in a relevant field (Computer Science or related) | Proficiency in spoken and written English" ;
        sda:experience "Machine Learning, Deep Learning, Data Mining, Statistics, Mathematics, Big Data | Semantic Technologies and Linked Data, Knowledge Representation, Theoretical Computer Science | Geospatial data modeling and analysis | Natural language processing, in particular Question Answering" ;
        sda:expected "An outstanding track record in publishing at top level conferences and journals | Experience in acquiring and running research and industry projects | Responsibility for courses at the Computer Science Institute for 3 hours per week (4 SWS) | Co-supervision of PhD, Master- and Bachelor thesis | Experience in software development and project management | Interest in transferring research results into practice" ;
@@ -3439,7 +3444,7 @@ sdatech:akademischeJob a foaf:Document ;
 sdatech:postdocjob a foaf:Document ;
        rdfs:label "SeniorResearcher" ;
        dct:title "Postdoctoral/Senior Researcher" ;
-       ex:description "We are looking for a Postdoctoral Researchers (German - Wissenschaftliche(r) Mitarbeiter(in)) at the Computer Science Institute at the University of Bonn." ; 
+       ex:description "We are looking for a Postdoctoral Researchers (German - Wissenschaftliche(r) Mitarbeiter(in)) at the Computer Science Institute at the University of Bonn." ;
        sda:requirements "A completed PhD and Master degree in a relevant field (Computer Science or related) | Proficiency in spoken and written English" ;
        sda:experience "Machine Learning, Deep Learning, Data Mining, Statistics, Mathematics, Big Data | Semantic Technologies and Linked Data, Knowledge Representation, Theoretical Computer Science | Geospatial data modeling and analysis | Natural language processing, in particular Question Answering" ;
        sda:expected "Keen interest in top level conference and journal publications | Co-supervision of PhD, Master- and Bachelor thesis | Interest in acquiring and running research and industry projects | Experience in software development and project management | Interest in transferring research results into practice and commercializing them" ;
@@ -3452,7 +3457,7 @@ sdatech:postdocjob a foaf:Document ;
 sdatech:researchAssociateandPhd a foaf:Document ;
        rdfs:label "Phd" ;
        dct:title "Research Associate/PhD Student" ;
-       ex:description "We are looking for a Research Associate (Wissenschaftliche(r) Mitarbeiter(in)) at the Computer Science Institute at the University of Bonn." ; 
+       ex:description "We are looking for a Research Associate (Wissenschaftliche(r) Mitarbeiter(in)) at the Computer Science Institute at the University of Bonn." ;
        sda:requirements "A Master degree in a relevant field (Computer Science or related) | Proficiency in spoken and written English" ;
        sda:experience "Machine Learning, Deep Learning, Data Mining, Statistics, Mathematics, Big Data | Semantic Technologies and Linked Data, Knowledge Representation, Theoretical Computer Science | Geospatial data modeling and analysis | Natural language processing, in particular Question Answering" ;
        sda:expected "Keen interest in top level conference and journal publications | Co-supervision of PhD, Master- and Bachelor thesis | Experience in software development and project management | Interest in transferring research results into practice and commercializing them" ;
@@ -3460,12 +3465,12 @@ sdatech:researchAssociateandPhd a foaf:Document ;
        sda:apply "To apply, please send a mail to SDA Applications including a CV, a master certificate, a motivation letter including a short overview of previous research activities, two letters of recommendation and a writing sample (e.g. prior publication or master thesis excerpt). Applications are possible until all positions have been filled. Please do not send mails larger than 10MB." ;
        foaf:mbox <SDA-applications@lists.iai.uni-bonn.de> ;
        sda:duration "3 years, starting on 01.01.1970, extension possible" ;
-       sda:payment "100% A13[1]" .        
+       sda:payment "100% A13[1]" .
 
 sdatech:studentassistants a foaf:Document ;
        rdfs:label "StudentAssistant" ;
        dct:title "Student Assistant" ;
-       ex:description "We are looking for student assistants at the Computer Science Institute at the University of Bonn" ; 
+       ex:description "We are looking for student assistants at the Computer Science Institute at the University of Bonn" ;
        sda:requirements "Proficiency in spoken and written English" ;
        sda:experience "Machine Learning, Deep Learning, Data Mining, Statistics, Mathematics, Big Data | Semantic Technologies and Linked Data, Knowledge Representation, Theoretical Computer Science | Geospatial data modeling and analysis | Natural language processing, in particular Question Answering" ;
        sda:expected "none" ;
@@ -3473,7 +3478,37 @@ sdatech:studentassistants a foaf:Document ;
        sda:apply "To apply, please send a mail to SDA Applications including a CV, a master certificate, a motivation letter including a short overview of previous research activities, two letters of recommendation and a writing sample (e.g. prior publication or master thesis excerpt). Applications are possible until all positions have been filled. Please do not send mails larger than 10MB." ;
        foaf:mbox <SDA-applications@lists.iai.uni-bonn.de> ;
        sda:duration "3 years, starting on 01.01.1970, extension possible" ;
-       sda:payment "100% A13[1]" .   
+       sda:payment "100% A13[1]" .
+
+##########################################
+###################Blog Posts#############
+##########################################
+sdablog:demo-paper-accepted-at-SIGIR-2018	 a sioc:Post ;
+    dct:title " Demo Paper accepted at SIGIR 2018" ;
+    sioc:topic " Demo Paper accepted at SIGIR 2018" ;
+    dct:creator sdaperson:HajiraJabeen ;
+    foaf:maker sdaperson:HajiraJabeen ;
+    sioc:has_creator sdaperson:HajiraJabeen ;
+    dct:created "2017-06"^^xsd:gYearMonth ;
+    dct:language "en-US" ;
+    foaf:depiction <https://www.vu.nl/en/Images/VUlogo_Wit_RGB_mettekst_tcm270-835563.svg> ;
+    dct:abstract """SPARQL queries search for specified patterns in RDF data using triple patterns as building blocks. Although many different solutions for efficient querying have been proposed in the past. We want to explore the novel tensor based RDF representations and use them for fast and scalable Querying on large scale cluster. We will use a computational in-memory framework for distributed SPARQL query answering,based on the notion of degree of freedom of a triple. This algorithm relies on a general model of RDF graph based on the firstprinciples of linear algebra, in particular ontensorial calculus.""" ;
+    sioc:content """The content of the blog post""" .
+
+sdablog:papers-accepted-at-ICWE-2018	a sioc:Post ;
+    dct:title "Papers accepted at ICWE 2018" ;
+    sioc:topic "Papers accepted at ICWE 2018" ;
+    dct:creator sdaperson:HajiraJabeen ;
+    foaf:maker sdaperson:HajiraJabeen ;
+    sioc:has_creator sdaperson:HajiraJabeen ;
+    dct:created "2017-06"^^xsd:gYearMonth ;
+    dct:language "en-US" ;
+    foaf:depiction <http://sda.cs.uni-bonn.de/wp-content/uploads/2018/04/ICWE_logo.png> ;
+    dct:abstract """We are very pleased to announce that our group got 2 papers accepted for presentation at the ICWE 2018 : The 18th International Conference on Web Engineering, which will be held on CÁCERES, SPAIN. 5 – 8 JUNE, 2018.""" ;
+    sioc:content """The ICWE is the prime yearly international conference on the different aspects of designing, building, maintaining and using Web applications. The theme for the year 2018 — the 18th edition of the event — is Enhancing the Web with Advanced Engineering.""" .
+
+
+################################################################################
 
 sdatech:jobEnvoirnment a foaf:Document ;
        rdfs:label "Job Envoirnment" .
@@ -3489,6 +3524,29 @@ sdatech:blog a foaf:Document ;
 
 sdatech:partners a foaf:Document ;
             rdfs:label "Partners" .
+
+##########################Blog Documents######################################
+sdatech:allposts a foaf:Document ;
+            rdfs:label "All Blog Posts" ;
+            sda:legendColor "#20bf6b" .
+
+sdatech:papernotifications a foaf:Document ;
+            rdfs:label "Paper Notifications" ;
+            sda:legendColor "#3867d6" .
+
+
+sdatech:invitedtalks a foaf:Document ;
+            rdfs:label "Invited Talks" ;
+            sda:legendColor "#8854d0" .
+
+sdatech:projectannouncements a foaf:Document ;
+            rdfs:label "Project Announcements" ;
+            sda:legendColor "#fa8231" .
+
+
+sdatech:generalposts a foaf:Document ;
+            rdfs:label "General Posts" ;
+            sda:legendColor "#eb3b5a" .
 
 ##########################Person Documents######################################
 sdatech:people a foaf:Document ;
@@ -3605,6 +3663,9 @@ rdf:_8 a rdfs:ContainerMembershipProperty ;
 
 rdf:_9 a rdfs:ContainerMembershipProperty ;
        rdfs:label "9" .
+
+rdf:_10 a rdfs:ContainerMembershipProperty ;
+      rdfs:label "10" .
 
 ###############################################
 ####################SDA Classes################
