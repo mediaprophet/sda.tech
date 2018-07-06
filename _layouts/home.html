@@ -76,7 +76,7 @@ layout: default
                   <div class="chip chipForSmall">
                     {% assign url= leaders.leader | remove: "http://sda.tech/" %}
                       <!-- <a href="../Person/{{url}}" alt="Person" width="96" height="96">{{group.leadername}}</a> -->
-                    <img src="{{leaders.leaderimage}}" alt="Person" width="96" height="96"><a href="../{{url}}">{{leaders.leadername}}</a>
+                    <img class="img-circle-small" src="{{leaders.leaderimage}}" alt="Person" width="96" height="96"><a href="../{{url}}">{{leaders.leadername}}</a>
                   </div>
                 {% endif %}
             {% endfor %}

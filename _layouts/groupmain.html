@@ -47,7 +47,7 @@ toggleOnDiv: dsa
               <div class="membersofProject">
                 {% for result5 in resultset5 %} {% capture groupname %}{{result5.name}}{% endcapture %} {% if groupname == name %} {% assign url= result5.leader | remove: "http://sda.tech/" %}
                 <div class="chip">
-                  <img src="{{result5.leaderimage}}" alt="Person" width="96" height="96">
+                  <img class="img-circle-small" src="{{result5.leaderimage}}" alt="Person" width="96" height="96">
                   <a href="../../{{url}}">{{result5.leadername}}</a>
                 </div>
                 {% endif %} {% endfor %}
@@ -57,7 +57,7 @@ toggleOnDiv: dsa
             <div class="membersofProject">
               {% for result3 in resultset3 %} {% capture groupname %}{{result3.name}}{% endcapture %} {% if groupname == name %} {% assign url= result3.person | remove: "http://sda.tech/" %}
               <div class="chip">
-                <img src="{{result3.image}}" alt="Person" width="96" height="96">
+                <img class="img-circle-small" src="{{result3.image}}" alt="Person" width="96" height="96">
                 <a href="../../{{url}}">{{result3.nameperson}}</a>
               </div>
               {% endif %} {% endfor %}
@@ -68,7 +68,7 @@ toggleOnDiv: dsa
             <div class="partnersOfProject">
               {% for result2 in resultset2 %} {% capture groupname %}{{result2.name}}{% endcapture %} {% if groupname == name %} {% assign url= result2.project | remove: "http://sda.tech/" %}
               <div class="chip">
-                <img src="{{result2.image}}" alt="Person" width="96" height="96">
+                <img class="img-circle-small" src="{{result2.image}}" alt="Person" width="96" height="96">
                 <a href="../../{{url}}">{{result2.nameproject}}</a>
               </div>
               {% endif %} {% endfor %}

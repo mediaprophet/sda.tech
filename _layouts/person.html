@@ -21,7 +21,7 @@ layout: default
           {% if boolWebsite and boolWebsite != "" and boolWebsite != nil %}<a href="{{ page.rdf | rdf_property: 'sda:website' }}" target="_blank"><i class="fa fa-globe" aria-hidden="true"></i></a>{% endif %}
           {% if boolFacebook and boolFacebook != "" and boolFacebook != nil  %}<a href="{{ page.rdf | rdf_property: 'sda:facebook' }}" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i> </a>{% endif %}
           {% if boolLinkedin and boolLinkedin != "" and boolLinkedin != nil  %}<a href="{{ page.rdf | rdf_property: 'sda:linkedin' }}" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i> </a>{% endif %}
-          {% if boolResearchGate and boolResearchGate != "" and boolResearchGate != nil  %}<a href="{{ page.rdf | rdf_property: 'sda:researchgate' }}" target="_blank"><i style="font-weight:900" class="fa fa-researchgate" aria-hidden="true"></i> </a>{% endif %}
+          {% if boolResearchGate and boolResearchGate != "" and boolResearchGate != nil  %}<a href="{{ page.rdf | rdf_property: 'sda:researchgate' }}" target="_blank"><i style="font-weight:900" class="fa fa-researchgate" aria-hidden="true">RG</i></a>{% endif %}
           {% if boolGoogleScholar and boolGoogleScholar != "" and boolGoogleScholar != nil  %}<a href="{{ page.rdf | rdf_property: 'sda:googlescholar' }}" target="_blank"><i class="fa fa-google" aria-hidden="true"></i> </a>{% endif %}
       </div>
       <br class="horizontal-separator2" />
@@ -31,6 +31,8 @@ layout: default
         </div>
       </div>
       <br class="horizontal-separator2" />
+      <h4>Research Interests</h4>
+
       <br class="horizontal-separator2" />
       <div class="description-project">
         <p>{{page.rdf | rdf_property: 'cv:aboutPerson'}}</p>
@@ -65,7 +67,7 @@ layout: default
             {% for projects in projectList %}
               {% assign url= projects.project | remove: "http://sda.tech/" %}
               <div class="chip">
-                <img src="{{projects.image}}" alt="Project" width="96" height="96">
+                <img class="img-circle-small" src="{{projects.image}}" alt="Project" width="96" height="96">
                 <a href="../../{{url}}">{{projects.projectname}}</a>
               </div>
             {% endfor %}
@@ -96,7 +98,7 @@ layout: default
       <br class="horizontal-separator2" />
       <h3>Teaching</h3>
         <!-- Displaying all the courses of the PERSON  -->
-        {% capture querytwo %} SELECT ?course ?short ?desc ?coursename ?id ?semester ?year ?maintainer ?name WHERE{ ?course a sdatech:Course . ?course rdfs:label ?short . ?course dct:title ?coursename . ?course ex:description ?desc . ?course sda:id ?id . ?course sda:maintainer ?maintainer . ?maintainer foaf:name ?name . ?course sda:semester ?semester . ?course sda:year ?year . } {% endcapture %} {% assign resultset3 = page.rdf | sparql_query: querytwo %}
+        {% capture querytwo %} SELECT ?course ?short ?desc ?coursename ?id ?semester ?year ?maintainer ?name WHERE{ ?course a sdatech:Course . ?course rdfs:label ?short . ?course dct:title ?coursename . ?course ex:description ?desc . ?course sda:id ?id . ?course sda:maintainer ?maintainer . ?maintainer foaf:name ?name . ?course sda:semester ?semester . ?course sda:year ?year . } order by asc(str(?id)) {% endcapture %} {% assign resultset3 = page.rdf | sparql_query: querytwo %}
         {% assign currentYear = 2018 %}
         {% assign currentSemester = "Summer" %}
 

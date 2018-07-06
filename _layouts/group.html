@@ -29,7 +29,7 @@ layout: default
                 <!-- <img src="{{result.image}}" style="width:48px;height:48px;border-radius:50%;display:block;margin:0 auto;">
                 <a href="../{{url}}"><h4>{{result.personname}}</h4></a> -->
                 <div class="chip">
-                  <img src="{{result.leaderimage}}" alt="Person" width="96" height="96">
+                  <img class="img-circle-small" src="{{result.leaderimage}}" alt="Person" width="96" height="96">
                   <a href="../../{{url}}">{{result.leadername}}</a>
                 </div>
 
@@ -44,7 +44,7 @@ layout: default
                 <!-- <img src="{{result.image}}" style="width:48px;height:48px;border-radius:50%;display:block;margin:0 auto;">
                 <a href="../{{url}}"><h4>{{result.personname}}</h4></a> -->
                 <div class="chip">
-                  <img src="{{result.image}}" alt="Person" width="96" height="96">
+                  <img class="img-circle-small" src="{{result.image}}" alt="Person" width="96" height="96">
                   <a href="../../{{url}}">{{result.personname}}</a>
                 </div>
 
@@ -56,7 +56,7 @@ layout: default
               <div class="partnersOfProject">
                 {% for result in resultset %} {% assign url= result.projects | remove: "http://sda.tech/" %}
                 <div class="chip">
-                  <img src="{{result.image}}" alt="Person" width="96" height="96">
+                  <img class="img-circle-small" src="{{result.image}}" alt="Person" width="96" height="96">
                   <a href="../../{{url}}">{{result.projectname}}</a>
                 </div>
                 {% endfor %}
