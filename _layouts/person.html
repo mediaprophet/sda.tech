@@ -14,11 +14,15 @@ layout: default
           {% capture boolWebsite | strip %}{{ page.rdf | rdf_property: 'sda:website' }}{% endcapture %}
           {% capture boolFacebook | strip %}{{ page.rdf | rdf_property: 'sda:facebook' }}{% endcapture %}
           {% capture boolLinkedin | strip %}{{  page.rdf | rdf_property: 'sda:linkedin' }}{% endcapture %}
+          {% capture boolResearchGate | strip %}{{  page.rdf | rdf_property: 'sda:researchgate' }}{% endcapture %}
+          {% capture boolGoogleScholar | strip %}{{  page.rdf | rdf_property: 'sda:googlescholar' }}{% endcapture %}
           <!-- Presenting Social Media Icons if Exists links -->
-          {% if boolTwitter != NULL  %}<a href="{{ page.rdf | rdf_property: 'sda:twitter' }}" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i> </a>{% endif %}
-          {% if boolWebsite != NULL  %}<a href="{{ page.rdf | rdf_property: 'sda:website' }}" target="_blank"><i class="fa fa-globe" aria-hidden="true"></i> </a>{% endif %}
-          {% if boolFacebook != NULL  %}<a href="{{ page.rdf | rdf_property: 'sda:facebook' }}" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i> </a>{% endif %}
-          {% if boolLinkedin != NULL  %}<a href="{{ page.rdf | rdf_property: 'sda:linkedin' }}" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i> </a>{% endif %}
+          {% if boolTwitter and boolTwitter != "" and boolTwitter != nil  %}<a href="{{ page.rdf | rdf_property: 'sda:twitter' }}" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i> </a>{% endif %}
+          {% if boolWebsite and boolWebsite != "" and boolWebsite != nil %}<a href="{{ page.rdf | rdf_property: 'sda:website' }}" target="_blank"><i class="fa fa-globe" aria-hidden="true"></i></a>{% endif %}
+          {% if boolFacebook and boolFacebook != "" and boolFacebook != nil  %}<a href="{{ page.rdf | rdf_property: 'sda:facebook' }}" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i> </a>{% endif %}
+          {% if boolLinkedin and boolLinkedin != "" and boolLinkedin != nil  %}<a href="{{ page.rdf | rdf_property: 'sda:linkedin' }}" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i> </a>{% endif %}
+          {% if boolResearchGate and boolResearchGate != "" and boolResearchGate != nil  %}<a href="{{ page.rdf | rdf_property: 'sda:researchgate' }}" target="_blank"><i style="font-weight:900" class="fa fa-researchgate" aria-hidden="true"></i> </a>{% endif %}
+          {% if boolGoogleScholar and boolGoogleScholar != "" and boolGoogleScholar != nil  %}<a href="{{ page.rdf | rdf_property: 'sda:googlescholar' }}" target="_blank"><i class="fa fa-google" aria-hidden="true"></i> </a>{% endif %}
       </div>
       <br class="horizontal-separator2" />
       <div style="text-align:center;">
