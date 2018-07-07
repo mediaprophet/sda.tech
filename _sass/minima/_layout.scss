@@ -622,10 +622,22 @@ text-align: center;
 
 .pagination a.active {
     background-color: #ddd;
-    // color: white;
 }
 
 .pagination a:hover:not(.active) {background-color: #ddd;}
+
+.post-content a {
+    color: #087CCD;
+    padding: 0px;
+    float: center;
+    text-decoration: none;
+}
+
+.post-content a.active {
+    background: none;
+}
+
+.post-content a:hover:not(.active) {background: none;}
 
 .links-to-social a {
     color: black;
