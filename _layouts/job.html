@@ -38,6 +38,11 @@ layout: default
     {% capture pointlist %}{{page.rdf | rdf_property: 'sda:offer'}}{% endcapture %}
 {% endif %} {% assign points4 = pointlist | split: ' | ' %}
 
+{% capture title %} {{ page.rdf | rdf_property: 'dct:title' }} {% endcapture %}
+{% assign title = title | strip %}
+
+<script> setTitle('{{title}}', '{{site.title | escape}}'); </script>
+
 <article class="post">
   <div class="job-contents content-people">
     <div class="jobDescription"style="display:block">

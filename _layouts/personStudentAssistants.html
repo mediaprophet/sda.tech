@@ -4,6 +4,9 @@ layout: default
 toggleOnDiv: StudentAssistants
 toggledURLTo: /studentassistant/
 ---
+
+<script> setTitle('Student Assistants', '{{site.title | escape}}'); </script>
+
 {% include togglePeopleTypes.html %}
 {% include toggleInitialPageLink.html div=page.toggleOnDiv linkto=page.toggledURLTo %}
 <div class="pagination">

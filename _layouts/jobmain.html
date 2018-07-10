@@ -4,6 +4,9 @@ layout: default
 toggleOnDiv: openJobs
 toggledURLTo: /jobs/
 ---
+
+<script> setTitle('Jobs', '{{site.title | escape}}'); </script>
+
 {%include toggleJobTypes.html%}
 {% include toggleInitialPageLink.html div=page.toggleOnDiv linkto=page.toggledURLTo %}
 <article class="post">

@@ -4,6 +4,9 @@ layout: default
 toggleOnDiv: allThesis
 toggledURLTo: /bachelorthesis
 ---
+
+<script> setTitle('Theses', '{{site.title | escape}}'); </script>
+
 {% include toggleThesisTypes.html %}
 {% include toggleBachelorThesis.html %}
 {% include toggleMasterThesis.html %}

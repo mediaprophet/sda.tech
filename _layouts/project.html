@@ -4,6 +4,10 @@ layout: default
 toggledURL: project
 toggledURLTo: /project/allProjects
 ---
+
+{% capture title %} {{ page.rdf | rdf_property: 'rdfs:label' }} {% endcapture %}
+<script> setTitle('{{title}}', '{{site.title | escape}}'); </script>
+
 <div class="post">
   <div class="pagination">
     <div class="post-content">

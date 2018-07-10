@@ -10,6 +10,12 @@ layout: default
   <{{page.rdf}}> dbo:leader ?leader . ?leader foaf:name ?leadername . ?leader foaf:depiction ?leaderimage} {% endcapture %} {% assign resultset3 = page.rdf | sparql_query: query %}
     {% capture queryfour %} SELECT ?publication ?title ?date ?publisher ?link  WHERE{<{{page.rdf}}> sda:publication ?publication . ?publication dc:title ?title
     . ?publication dc:date ?date . ?publication dc:publisher ?publisher . ?publication foaf:homepage ?link . } {% endcapture %} {% assign resultset4 = page.rdf | sparql_query: queryfour %}
+
+{% capture title %} {{ page.rdf | rdf_property: 'rdfs:label' }} {% endcapture %}
+{% assign title = title | strip %}
+
+<script> setTitle('{{title}}', '{{site.title | escape}}'); </script>
+
     <!--Presentation of the GROUP Items-->
     <article class="post">
       <div class="pagination">

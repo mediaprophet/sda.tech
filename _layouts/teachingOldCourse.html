@@ -4,6 +4,9 @@ layout: default
 toggleOnDiv: guidelines
 toggledURLTo: /oldCourses/
 ---
+
+<script> setTitle('Archived Courses', '{{site.title | escape}}'); </script>
+
 {% include toggleCourseTypes.html %}
 {% include toggleInitialPageLink.html div=page.toggleOnDiv linkto=page.toggledURLTo %}
 <article class="post">

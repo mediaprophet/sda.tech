@@ -2,13 +2,18 @@
 rdf_prefix_path: sda.tech.pref
 layout: default
 ---
+{% capture title %} {{ page.rdf | rdf_property: 'foaf:title' }} {{ page.rdf | rdf_property: 'foaf:firstName' }} {{ page.rdf | rdf_property: 'foaf:familyName' }} {% endcapture %}
+{% assign title = title | strip %}
+
+<script> setTitle('{{title}}', '{{site.title | escape}}'); </script>
+
 <article class="post">
   <div class="pagination">
     <div class="post-content">
       <br class="horizontal-separator" />
       <div style="text-align:center;"><img class="img-circle-small" style="width: 250px; height: 250px;" src="{{ page.rdf | rdf_property: 'foaf:depiction'}}"></img> 
           <div style="display:inline-block; vertical-align: middle;">
-                 <h2> {{ page.rdf | rdf_property: 'foaf:title' }} {{ page.rdf | rdf_property: 'foaf:firstName' }} {{ page.rdf | rdf_property: 'foaf:familyName' }}</h2>
+                 <h2> {{title}} </h2>
           <h4 class="dynamicChange" style="text-align:center;">{{ page.rdf | rdf_property: 'foaf:status' }}</h4>
           <br/>
           <div class="links-to-social" style="text-align:center;">

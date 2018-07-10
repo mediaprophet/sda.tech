@@ -4,6 +4,9 @@ layout: default
 toggledURLTo: /opensourceprojects/
 toggleOnDiv: openSourceProjects
 ---
+
+<script> setTitle('Open Source Projects', '{{site.title | escape}}'); </script>
+
 {% include toggleProjectTypes.html %}
 {% include toggleInitialPageLink.html div=page.toggleOnDiv linkto=page.toggledURLTo %}
 <div class="pagination">

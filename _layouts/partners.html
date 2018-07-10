@@ -4,6 +4,9 @@ layout: default
 toggleOnDiv: allPartners
 toggledURLTo: /partners/
 ---
+
+<script> setTitle('Partners', '{{site.title | escape}}'); </script>
+
 {% include togglePartnerTypes.html %}
 {% include toggleInitialPageLink.html div=page.toggleOnDiv linkto=page.toggledURLTo %}
 <!-- Presenting the PARTNERS -->
