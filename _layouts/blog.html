@@ -16,7 +16,8 @@ layout: default
   <div class="partner-items content-people" style="display:block;">
     <div class="grid-main">
       <div class="grid">
-        
+        {% include blogItem.html category="invitedtalks" date="2009/09/09" photothumb="http://sda.cs.uni-bonn.de/wp-content/uploads/2018/02/image1.png" title="Semantic Web Applications" abstract="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aen" editor="rohan"%}
+        {% include blogItem.html category="invitedtalks" date="2009/09/09" photothumb="http://sda.cs.uni-bonn.de/wp-content/uploads/2018/02/image1.png" title="Semantic Web Applications" abstract="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aen" editor="rohan"%}
         {% for post in site.posts %}
           <div class="item blog">
             <div class="content">
@@ -160,7 +161,6 @@ layout: default
           </div>
         </div>
       </div>
-      {% include blogItem.html category="invitedtalks" date="2009/09/09" photothumb="http://sda.cs.uni-bonn.de/wp-content/uploads/2018/02/image1.png" title="Semantic Web Applications" abstract="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis fringilla laoreet. Mauris mattis enim ut felis consectetur, vitae lacinia enim auctor. Aen" editor="rohan"%}
     </div>
     </div>
   </div>
