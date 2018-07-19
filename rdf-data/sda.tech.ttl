@@ -3361,9 +3361,9 @@ sdateaching:SeminarKnowledgeGraphAnalysisWinter2017 a sdatech:Course ;
 ###################Jobs###################
 ##########################################
 
-sdajob:AkademischerRatAustralianEnvironment a sdatech:Job ;
+sdajob:AkademischerRat a sdatech:Job ;
            rdfs:label "AkademischerRat" ;
-           dct:title "Akademischer Rat in Australian Environment Research" ;
+           dct:title "Akademischer Rat / Akademische Rätin" ;
            ex:description "undefined" ; 
            sda:requirements "undefined" ;
            sda:experience "undefined" ;
@@ -3372,9 +3372,9 @@ sdajob:AkademischerRatAustralianEnvironment a sdatech:Job ;
            sda:apply "undefined" ;
            foaf:mbox <undefined> .
 
-sdajob:PhdAustralianEnvironment a sdatech:Job ;
+sdajob:PhDStudent a sdatech:Job ;
            rdfs:label "Phd" ;
-           dct:title "Phd in Australian Environment Research" ;
+           dct:title "Research Associate / PhD Student Positions" ;
            ex:description "undefined" ; 
            sda:requirements "undefined" ;
            sda:experience "undefined" ;
@@ -3383,9 +3383,9 @@ sdajob:PhdAustralianEnvironment a sdatech:Job ;
            sda:apply "undefined" ;
            foaf:mbox <undefined> .
 
-sdajob:SeniorResearcherAustralianEnvironment a sdatech:Job ;
+sdajob:SeniorResearcher a sdatech:Job ;
            rdfs:label "SeniorResearcher" ;
-           dct:title "Senior Researcher in Australian Environment Research" ;
+           dct:title "Postdoctoral / Senior Researcher Positions" ;
            ex:description "undefined" ; 
            sda:requirements "undefined" ;
            sda:experience "undefined" ;
@@ -3394,9 +3394,9 @@ sdajob:SeniorResearcherAustralianEnvironment a sdatech:Job ;
            sda:apply "undefined" ;
            foaf:mbox <undefined> .
 
-sdajob:StudentAssistantAustralianEnvironment a sdatech:Job ;
+sdajob:StudentAssistant a sdatech:Job ;
            rdfs:label "StudentAssistant" ;
-           dct:title "Student Assistant in Australian Environment Research" ;
+           dct:title "Student Assistants" ;
            ex:description "undefined" ; 
            sda:requirements "undefined" ;
            sda:experience "undefined" ;
