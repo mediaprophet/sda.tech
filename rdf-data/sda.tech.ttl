@@ -1654,11 +1654,10 @@ sdagroup:SoftwareEngineeringForDataScience a aiiso:ResearchGroup, sdatech:Group 
 ##Knowledge Graph
 sdagroup:KnowledgeGraph a aiiso:ResearchGroup, sdatech:Group ;
                                 rdfs:label "Knowledge Graph" ;
-                                foaf:member sdaperson:JensLehmann, sdaperson:HamedShariatYazdi, sdaperson:LuisPauloGarcia, ;
+                                foaf:member sdaperson:JensLehmann, sdaperson:HamedShariatYazdi, sdaperson:LuisPauloGarcia ;
                                 dbo:leader sdaperson:GuenterKniesel, sdaperson:HamedShariatYazdi ;
                                 foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
                                 foaf:currentProject sdaproject:SANSAStack ;
-                                foaf:pastProject ;
                                 dct:description """The group focuses on research over knowledge graph, machine learning and artificial intelligence.""" ;
                                 dct:abstract "The group focuses on research over knowledge graph, machine learning and artificial intelligence." ;
                                 sda:publication sdapublication:Publication1 ;
