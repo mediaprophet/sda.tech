@@ -338,7 +338,7 @@ sdaperson:GezimSejdiu a foaf:Person, sdatech:phdStudent ;
                    foaf:name "Gezim Sejdiu" ;
                    foaf:nick "Gezim" ;
                    foaf:mbox <mailto:sejdiu@cs.uni-bonn.de> ;
-                   foaf:depiction <https://media.licdn.com/dms/image/C4D03AQGn3hPIYPs3AA/profile-displayphoto-shrink_200_200/0?e=1533772800&v=beta&t=TaXS5XmOI_HD2ZhxnZy89Xg0e83VjxOmJPQ2twpQ3_Y> ;
+                   foaf:depiction <https://avatars3.githubusercontent.com/u/5259296?s=400&u=2923073a71257798968eb57c860c45d4e7a18d72&v=4> ;
                    foaf:phone <tel:+49-341-123456789> ;
                    foaf:firstName "Gezim" ;
                    foaf:title "" ;
@@ -3084,6 +3084,7 @@ sdapublication:Publication5 a bibo:Article ;
                 foaf:homepage "http://mex.aksw.org/" ;
                 foaf:Organization "FhG" ;
                 dc:author sdaperson:RajKapoor .
+
 
 ex:SemanticDataWebTechnologies a ex:course ;
                                rdfs:label "Semantic Data Web Technologies" ;
