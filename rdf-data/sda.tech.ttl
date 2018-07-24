@@ -1287,7 +1287,7 @@ sdaperson:DebayanBanerjee a foaf:Person, sdatech:studentAssistant ;
                    foaf:name "Debayan Banerjee" ;
                    foaf:nick "Debayan" ;
                    foaf:mbox <mailto:debayan@uni-bonn.de> ;
-                   foaf:depiction <https://media.licdn.com/dms/image/C5103AQFQ9hiprLLgOQ/profile-displayphoto-shrink_800_800/0?e=1528711200&v=beta&t=SHDykzy-20PJtFKosE2BgpBmC3O_K2nkN9lfe8q18TA> ;
+                   foaf:depiction <https://media.licdn.com/dms/image/C5103AQFQ9hiprLLgOQ/profile-displayphoto-shrink_800_800/0?e=1538006400&v=beta&t=B-xjJ7mzJVmJ0KGEuMtxtLs2nYUPn2jKoHcIAcmyBik> ;
                    foaf:phone "" ;
                    foaf:firstName "Debayan" ;
                    foaf:title "" ;
@@ -2937,16 +2937,6 @@ sdathesis:reflecting-on-the-user-experience-challenges-of-ceur-make-gui-and-harn
     sda:thesisLevel "MS,BS" ;
     dct:abstract """CEUR Make GUI is a graphical user interface supporting the workflow of publishing open access proceedings of scientific workshops via CEUR-WS.org, one of the largest open access repositories. For more details on the topic please go through the publications mentioned below. In this thesis we aim to work on producing a collaborative workspace for editing workshop proceedings and enhancing the user experience of the software. Based on the development of collaborative workspace we would also like to address the user experience and collaborative and cooperative workspace challenges through a structured protocol.Email:Muhammad.rohan.ali.asmat@iais.fraunhofer.de <a href="https://github.com/ceurws/ceur-make-ui">Current Repository</a> . <a href="http://eis-bonn.github.io/Theses/2016/Rohan_Asmat/thesis.pdf">Thesis</a> . <a href="http://sda.cs.uni-bonn.de/wp-content/uploads/2018/Publications/camera_ready_ceur.pdf">Publication</a> . <a href="https://github.com/ceurws/ceur-make-ui/projects/3">Task Board</a>""" .
 
-sdathesis:rdf-compression-techniques a dct:BibliographicResource, bibo:Thesis, sdatech:openThesis, sdatech:masterThesis ;
-    dct:title "RDF compression techniques" ;
-    dct:creator sdaperson:DamienGraux ;
-    foaf:maker sdaperson:DamienGraux ;
-    dct:issued "2017-06"^^xsd:gYearMonth ;
-    dct:language "en-US" ;
-    bibo:degree biboDegree:phd ;
-    sda:thesisLevel "MS" ;
-    dct:abstract """As a starting point, realizing a fresh state-of-the-art of compression techniques for RDF could be made. These techniques can mainly be divided into two families: the ones that compress as much as possible datasets in order to make transfers easier (see e.g. the study of Fernández et al.) and the ones which still allow data to be queried (see e.g. the HDT structure). Secondly, a reflexion on a new compression model may be thought about and then realized/implemented successfully -obviously, a already have some suggestion which could help the student 😉 like for instance try to compress the RDF graphs according to patterns which could be used in parallel of SPARQL query shapes.""" .
-
 sdathesis:provide-tools-for-latex-leveraging-semantic-web-standards a dct:BibliographicResource, bibo:Thesis, sdatech:openThesis, sdatech:masterThesis ;
     dct:title "Provide tools for LaTeX leveraging semantic web standards" ;
     dct:creator sdaperson:DamienGraux ;
@@ -3000,6 +2990,16 @@ sdathesis:recommendation-system-for-RDF-partitioners a dct:BibliographicResource
     bibo:degree biboDegree:phd ;
     sda:thesisLevel "MS,BS" ;
     dct:abstract """In order to store and query big RDF datasets efficiently in distributed environments, different partitioning techniques need to be implemented. Several techniques have been proposed for splitting Big RDF Data, ranging from vertical, hash, graph to semantic-based partitioners. However, the selection of the “best partitioner” depends highly on the structure of the dataset and the query efficiency and effectiveness are coupled to the query engine used. The goal of this thesis will be to develop a recommender system that will suggest the “best partitioner” based on the structure of the data and specific requirements.""" .
+
+sdathesis:rdf-compression-techniques a dct:BibliographicResource, bibo:Thesis, sdatech:ongoingThesis, sdatech:masterThesis ;
+    dct:title "RDF compression techniques" ;
+    dct:creator sdaperson:DamienGraux ;
+    foaf:maker sdaperson:DamienGraux ;
+    dct:issued "2017-06"^^xsd:gYearMonth ;
+    dct:language "en-US" ;
+    bibo:degree biboDegree:phd ;
+    sda:thesisLevel "MS" ;
+    dct:abstract """As a starting point, realizing a fresh state-of-the-art of compression techniques for RDF could be made. These techniques can mainly be divided into two families: the ones that compress as much as possible datasets in order to make transfers easier (see e.g. the study of Fernández et al.) and the ones which still allow data to be queried (see e.g. the HDT structure). Secondly, a reflexion on a new compression model may be thought about and then realized/implemented successfully -obviously, a already have some suggestion which could help the student 😉 like for instance try to compress the RDF graphs according to patterns which could be used in parallel of SPARQL query shapes.""" .
 
 ###############################################################
 
