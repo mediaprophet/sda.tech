@@ -1658,12 +1658,8 @@ sdagroup:KnowledgeGraph a aiiso:ResearchGroup, sdatech:Group ;
                                 dbo:leader sdaperson:GuenterKniesel, sdaperson:HamedShariatYazdi ;
                                 foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
                                 foaf:currentProject sdaproject:SANSAStack ;
-<<<<<<< HEAD
                                 #foaf:pastProject ;
-                                dct:description "The group focuses on research over knowledge graph, machine learning and artificial intelligence." ;
-=======
                                 dct:description """The group focuses on research over knowledge graph, machine learning and artificial intelligence.""" ;
->>>>>>> c4bcc4929aa83dd2a02de855095a9a084f595f21
                                 dct:abstract "The group focuses on research over knowledge graph, machine learning and artificial intelligence." ;
                                 sda:publication sdapublication:Publication1 ;
                                 sda:imageclass "fa fa-cogs" ;
@@ -3469,7 +3465,7 @@ sdatech:studentassistants a foaf:Document ;
        sda:duration "3 years, starting on 01.01.1970, extension possible" ;
        sda:payment "100% A13[1]" .
 
-sdatech:jobEnvoirnment a foaf:Document ;
+sdatech:jobEnvironment a foaf:Document ;
        rdfs:label "Job Envoirnment" .
 
 sdatech:faqjob a foaf:Document ;

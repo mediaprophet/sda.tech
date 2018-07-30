@@ -122,7 +122,7 @@ jekyll_rdf:
         "http://sda.tech/postdocjob" : "postdocJob.html"
         "http://sda.tech/researchAssociateandPhd" : "researchAssocJob.html"
         "http://sda.tech/studentassistants" : "studentAssistantJob.html"
-        "http://sda.tech/jobEnvoirnment" : "EnvoirnmentJob.html"
+        "http://sda.tech/jobEnvironment" : "EnvoirnmentJob.html"
         "http://sda.tech/faqjob" : "FAQJob.html"
         #teaching
         "http://sda.tech/oldCourses" : "teachingOldCourse.html"
