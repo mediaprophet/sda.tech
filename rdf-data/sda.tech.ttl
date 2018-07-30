@@ -1654,12 +1654,12 @@ sdagroup:SoftwareEngineeringForDataScience a aiiso:ResearchGroup, sdatech:Group 
 ##Knowledge Graph
 sdagroup:KnowledgeGraph a aiiso:ResearchGroup, sdatech:Group ;
                                 rdfs:label "Knowledge Graph" ;
-                                foaf:member sdaperson:JensLehmann, sdaperson:HamedShariatYazdi, sdaperson:LuisPauloGarcia, ;
+                                foaf:member sdaperson:JensLehmann, sdaperson:HamedShariatYazdi, sdaperson:LuisPauloGarcia ;
                                 dbo:leader sdaperson:GuenterKniesel, sdaperson:HamedShariatYazdi ;
                                 foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
                                 foaf:currentProject sdaproject:SANSAStack ;
-                                foaf:pastProject ;
-                                dct:description """The group focuses on research over knowledge graph, machine learning and artificial intelligence.""" ;
+                                #foaf:pastProject ;
+                                dct:description "The group focuses on research over knowledge graph, machine learning and artificial intelligence." ;
                                 dct:abstract "The group focuses on research over knowledge graph, machine learning and artificial intelligence." ;
                                 sda:publication sdapublication:Publication1 ;
                                 sda:imageclass "fa fa-cogs" ;
@@ -2279,19 +2279,19 @@ sdaproject:SAML a foaf:Project, sdatech:incubator ;
                  #sdapublication:publication sdapublication:Publication1 ;
                  sda:status "active" .
 
-sdaproject:TFVKG a foaf:Project, sdatech:incubator ;
-                 rdfs:label "Tensor Factorisation and Visualization for Knowledge Graphs" ;
-                 ex:description "Tensor Factorisation and Visualization for Knowledge Graphs." ;
-                 ex:longdescription "" ;
-                 foaf:member sda:JensLehmann ;
-                 foaf:homepage "undefined" ;
-                 foaf:depiction "" ;
-                 sda:twitter "undefined" ;
-                 sda:source "undefined" ;
-                 sda:download "undefined" ;
-                 doap:maintainer sda:JensLehmann ;
-                 #sdapublication:publication sdapublication:Publication1 ;
-                 sda:status "active" .
+#sdaproject:TFVKG a foaf:Project, sdatech:incubator ;
+#                 rdfs:label "Tensor Factorisation and Visualization for Knowledge Graphs" ;
+#                 ex:description "Tensor Factorisation and Visualization for Knowledge Graphs." ;
+#                 ex:longdescription "" ;
+#                 foaf:member sda:JensLehmann ;
+#                 foaf:homepage "undefined" ;
+#                 foaf:depiction "" ;
+#                 sda:twitter "undefined" ;
+#                 sda:source "undefined" ;
+#                 sda:download "undefined" ;
+#                 doap:maintainer sda:JensLehmann ;
+#                 #sdapublication:publication sdapublication:Publication1 ;
+#                 sda:status "active" .
 
 
 #######################################
@@ -3364,7 +3364,7 @@ sdateaching:SeminarKnowledgeGraphAnalysisWinter2017 a sdatech:Course ;
 sdajob:AkademischerRatAustralianEnvironment a sdatech:Job ;
            rdfs:label "AkademischerRat" ;
            dct:title "Akademischer Rat in Australian Environment Research" ;
-           ex:description "undefined" ; 
+           ex:description "undefined" ;
            sda:requirements "undefined" ;
            sda:experience "undefined" ;
            sda:expected "undefined" ;
@@ -3375,7 +3375,7 @@ sdajob:AkademischerRatAustralianEnvironment a sdatech:Job ;
 sdajob:PhdAustralianEnvironment a sdatech:Job ;
            rdfs:label "Phd" ;
            dct:title "Phd in Australian Environment Research" ;
-           ex:description "undefined" ; 
+           ex:description "undefined" ;
            sda:requirements "undefined" ;
            sda:experience "undefined" ;
            sda:expected "undefined" ;
@@ -3386,7 +3386,7 @@ sdajob:PhdAustralianEnvironment a sdatech:Job ;
 sdajob:SeniorResearcherAustralianEnvironment a sdatech:Job ;
            rdfs:label "SeniorResearcher" ;
            dct:title "Senior Researcher in Australian Environment Research" ;
-           ex:description "undefined" ; 
+           ex:description "undefined" ;
            sda:requirements "undefined" ;
            sda:experience "undefined" ;
            sda:expected "undefined" ;
@@ -3397,7 +3397,7 @@ sdajob:SeniorResearcherAustralianEnvironment a sdatech:Job ;
 sdajob:StudentAssistantAustralianEnvironment a sdatech:Job ;
            rdfs:label "StudentAssistant" ;
            dct:title "Student Assistant in Australian Environment Research" ;
-           ex:description "undefined" ; 
+           ex:description "undefined" ;
            sda:requirements "undefined" ;
            sda:experience "undefined" ;
            sda:expected "undefined" ;
@@ -3415,7 +3415,7 @@ sdatech:jobs a foaf:Document ;
 sdatech:akademischeJob a foaf:Document ;
        rdfs:label "AkademischerRat" ;
        dct:title "Akademische/r Rat/Rätin" ;
-       ex:description "We are looking for a senior researcher (Akademischer Rat on payment scale 100% A13 [1], comparable to Assistant Professor) for 3 years with possible extensions." ; 
+       ex:description "We are looking for a senior researcher (Akademischer Rat on payment scale 100% A13 [1], comparable to Assistant Professor) for 3 years with possible extensions." ;
        sda:requirements "A completed PhD and Master degree in a relevant field (Computer Science or related) | Proficiency in spoken and written English" ;
        sda:experience "Machine Learning, Deep Learning, Data Mining, Statistics, Mathematics, Big Data | Semantic Technologies and Linked Data, Knowledge Representation, Theoretical Computer Science | Geospatial data modeling and analysis | Natural language processing, in particular Question Answering" ;
        sda:expected "An outstanding track record in publishing at top level conferences and journals | Experience in acquiring and running research and industry projects | Responsibility for courses at the Computer Science Institute for 3 hours per week (4 SWS) | Co-supervision of PhD, Master- and Bachelor thesis | Experience in software development and project management | Interest in transferring research results into practice" ;
@@ -3428,7 +3428,7 @@ sdatech:akademischeJob a foaf:Document ;
 sdatech:postdocjob a foaf:Document ;
        rdfs:label "SeniorResearcher" ;
        dct:title "Postdoctoral/Senior Researcher" ;
-       ex:description "We are looking for a Postdoctoral Researchers (German - Wissenschaftliche(r) Mitarbeiter(in)) at the Computer Science Institute at the University of Bonn." ; 
+       ex:description "We are looking for a Postdoctoral Researchers (German - Wissenschaftliche(r) Mitarbeiter(in)) at the Computer Science Institute at the University of Bonn." ;
        sda:requirements "A completed PhD and Master degree in a relevant field (Computer Science or related) | Proficiency in spoken and written English" ;
        sda:experience "Machine Learning, Deep Learning, Data Mining, Statistics, Mathematics, Big Data | Semantic Technologies and Linked Data, Knowledge Representation, Theoretical Computer Science | Geospatial data modeling and analysis | Natural language processing, in particular Question Answering" ;
        sda:expected "Keen interest in top level conference and journal publications | Co-supervision of PhD, Master- and Bachelor thesis | Interest in acquiring and running research and industry projects | Experience in software development and project management | Interest in transferring research results into practice and commercializing them" ;
@@ -3441,7 +3441,7 @@ sdatech:postdocjob a foaf:Document ;
 sdatech:researchAssociateandPhd a foaf:Document ;
        rdfs:label "Phd" ;
        dct:title "Research Associate/PhD Student" ;
-       ex:description "We are looking for a Research Associate (Wissenschaftliche(r) Mitarbeiter(in)) at the Computer Science Institute at the University of Bonn." ; 
+       ex:description "We are looking for a Research Associate (Wissenschaftliche(r) Mitarbeiter(in)) at the Computer Science Institute at the University of Bonn." ;
        sda:requirements "A Master degree in a relevant field (Computer Science or related) | Proficiency in spoken and written English" ;
        sda:experience "Machine Learning, Deep Learning, Data Mining, Statistics, Mathematics, Big Data | Semantic Technologies and Linked Data, Knowledge Representation, Theoretical Computer Science | Geospatial data modeling and analysis | Natural language processing, in particular Question Answering" ;
        sda:expected "Keen interest in top level conference and journal publications | Co-supervision of PhD, Master- and Bachelor thesis | Experience in software development and project management | Interest in transferring research results into practice and commercializing them" ;
@@ -3449,12 +3449,12 @@ sdatech:researchAssociateandPhd a foaf:Document ;
        sda:apply "To apply, please send a mail to SDA Applications including a CV, a master certificate, a motivation letter including a short overview of previous research activities, two letters of recommendation and a writing sample (e.g. prior publication or master thesis excerpt). Applications are possible until all positions have been filled. Please do not send mails larger than 10MB." ;
        foaf:mbox <SDA-applications@lists.iai.uni-bonn.de> ;
        sda:duration "3 years, starting on 01.01.1970, extension possible" ;
-       sda:payment "100% A13[1]" .        
+       sda:payment "100% A13[1]" .
 
 sdatech:studentassistants a foaf:Document ;
        rdfs:label "StudentAssistant" ;
        dct:title "Student Assistant" ;
-       ex:description "We are looking for student assistants at the Computer Science Institute at the University of Bonn" ; 
+       ex:description "We are looking for student assistants at the Computer Science Institute at the University of Bonn" ;
        sda:requirements "Proficiency in spoken and written English" ;
        sda:experience "Machine Learning, Deep Learning, Data Mining, Statistics, Mathematics, Big Data | Semantic Technologies and Linked Data, Knowledge Representation, Theoretical Computer Science | Geospatial data modeling and analysis | Natural language processing, in particular Question Answering" ;
        sda:expected "none" ;
@@ -3462,7 +3462,7 @@ sdatech:studentassistants a foaf:Document ;
        sda:apply "To apply, please send a mail to SDA Applications including a CV, a master certificate, a motivation letter including a short overview of previous research activities, two letters of recommendation and a writing sample (e.g. prior publication or master thesis excerpt). Applications are possible until all positions have been filled. Please do not send mails larger than 10MB." ;
        foaf:mbox <SDA-applications@lists.iai.uni-bonn.de> ;
        sda:duration "3 years, starting on 01.01.1970, extension possible" ;
-       sda:payment "100% A13[1]" .   
+       sda:payment "100% A13[1]" .
 
 sdatech:jobEnvoirnment a foaf:Document ;
        rdfs:label "Job Envoirnment" .
@@ -3750,6 +3750,7 @@ sdatech:Job a owl:Class ;
                     site:classTemplate "job" ;
                     sysont:creationLabel "Job" ;
                     dct:issued "2008-05-14" .
+
 
 ###############################################
 ####################SDA Data Properties########
