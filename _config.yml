@@ -113,7 +113,6 @@ jekyll_rdf:
         "http://sda.tech/interns" : "personInterns.html"
         "http://sda.tech/formermembers" : "personFormerMembers.html"
         "http://sda.tech/contact" : "contact.html"
-        "http://sda.tech/blog" : "blog.html"
         # "http://example.org/blog" : "blog.html"
         "http://sda.tech/thesis" : "thesis.html"
         "http://sda.tech/bachelorthesis" : "bachelorthesis.html"
@@ -133,7 +132,12 @@ jekyll_rdf:
         #partners
         "http://sda.tech/academicPartners" : "partnersAcademic.html"
         "http://sda.tech/industryPartners" : "partnersIndustry.html"
-
+        #blog
+        "http://sda.tech/blog" : "blog.html"
+        "http://sda.tech/blog/papernotifications" : "blogPaperNotifications.html"
+        "http://sda.tech/blog/invitedtalks" : "blogInvitedTalks.html"
+        "http://sda.tech/blog/projectannouncements" : "blogProjectAnnouncements.html"
+        "http://sda.tech/blog/generalposts" : "blogGeneralPosts.html"
 
 
 

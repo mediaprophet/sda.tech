@@ -29,8 +29,12 @@ SELECT ?position WHERE{
             {% if page.rdf.iri == result2.resource.iri %}
               {% capture urlNav %}{{page.url}}{% endcapture %}
               {% capture navlabel%}{{result2.label}}{% endcapture %}
-                <a href="{{ urlNav | remove:"index.html" }}" class="{% if include.active == navlabel %}active{% endif %} responsiveTabItem" onclick="#"><i class="{% if navlabel == 'All Blog Posts' %}fa fa-rss margin-icon{% else %}fa fa-square margin-icon{% endif %}" style="color:{{result2.color}};" aria-hidden="true"></i>
-                {{result2.label}}
+                <a href="{{ urlNav | remove:"index.html" }}" class="{% if include.active == navlabel %}active{% endif %} responsiveTabItem" onclick="#"><i class="{% if navlabel == 'Blog' %}fa fa-rss margin-icon{% else %}fa fa-square margin-icon{% endif %}" style="color:{{result2.color}};" aria-hidden="true"></i>
+                  {% if navlabel == "Blog" %}
+                     All {{result2.label}} Posts
+                    {% else %}
+                     {{result2.label}}
+                  {% endif %}
                 </a>
             {% endif %}
         {% endfor %}

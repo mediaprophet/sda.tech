@@ -20,7 +20,7 @@
 @prefix sdaproject: <http://sda.tech/Project/> .
 @prefix sdathesis: <http://sda.tech/Thesis/> .
 @prefix sdateaching: <http://sda.tech/Course/> .
-@prefix sdablog: <http://sda.tech/Blog/> .
+@prefix sdablog: <http://sda.tech/blog/> .
 @prefix sdajob: <http://sda.tech/Job/> .
 @prefix sdacontact: <http://sda.tech/Contact/> .
 @prefix aiiso: <http://purl.org/vocab/aiiso/schema#> .
@@ -3033,11 +3033,11 @@ sdatech:Mainnav a sdatech:Navigation ;
            rdf:_10 sdatech:blog .
 
 sdatech:BlogPostNavigation a sdatech:SecondaryNavigation ;
-         rdf:_1 sdatech:allposts ;
-         rdf:_2 sdatech:papernotifications ;
-         rdf:_3 sdatech:invitedtalks ;
-         rdf:_4 sdatech:projectannouncements ;
-         rdf:_5 sdatech:generalposts .
+         rdf:_1 sdatech:blog ;
+         rdf:_2 sdablog:papernotifications ;
+         rdf:_3 sdablog:invitedtalks ;
+         rdf:_4 sdablog:projectannouncements ;
+         rdf:_5 sdablog:generalposts .
 
 ################################################################################
 
@@ -3519,32 +3519,32 @@ sdatech:faqjob a foaf:Document ;
 sdatech:contact a foaf:Document ;
       rdfs:label "Contact" .
 
-sdatech:blog a foaf:Document ;
-      rdfs:label "Blog" .
+#sdatech:blog a foaf:Document ;
+  #    rdfs:label "Blog" .
 
 sdatech:partners a foaf:Document ;
             rdfs:label "Partners" .
 
 ##########################Blog Documents######################################
-sdatech:allposts a foaf:Document ;
-            rdfs:label "All Blog Posts" ;
+sdatech:blog a foaf:Document ;
+            rdfs:label "Blog" ;
             sda:legendColor "#20bf6b" .
 
-sdatech:papernotifications a foaf:Document ;
+sdablog:papernotifications a foaf:Document ;
             rdfs:label "Paper Notifications" ;
             sda:legendColor "#3867d6" .
 
 
-sdatech:invitedtalks a foaf:Document ;
+sdablog:invitedtalks a foaf:Document ;
             rdfs:label "Invited Talks" ;
             sda:legendColor "#8854d0" .
 
-sdatech:projectannouncements a foaf:Document ;
+sdablog:projectannouncements a foaf:Document ;
             rdfs:label "Project Announcements" ;
             sda:legendColor "#fa8231" .
 
 
-sdatech:generalposts a foaf:Document ;
+sdablog:generalposts a foaf:Document ;
             rdfs:label "General Posts" ;
             sda:legendColor "#eb3b5a" .
 
@@ -3827,6 +3827,37 @@ sdatech:Job a owl:Class ;
                     rdfs:subClassOf foaf:Organization ;
                     site:classTemplate "job" ;
                     sysont:creationLabel "Job" ;
+                    dct:issued "2008-05-14" .
+
+sdatech:Blog a owl:Class ;
+                    rdfs:label "Blog" ;
+                    rdfs:comment "All the blog posts of the SDA Research Group" ;
+                    site:classTemplate "Blog" ;
+                    sysont:creationLabel "Blog" ;
+                    dct:issued "2008-05-14" .
+
+sdatech:PaperNotification a owl:Class ;
+                    rdfs:label "Paper Notificatiations" ;
+                    rdfs:comment "All the blog posts that notify information realated to the paper contribution of the SDA Group." ;
+                    rdfs:subClassOf sdatech:Blog ;
+                    site:classTemplate "PaperNotifications" ;
+                    sysont:creationLabel "Paper Notifications" ;
+                    dct:issued "2008-05-14" .
+
+sdatech:InvitedTalks a owl:Class ;
+                    rdfs:label "Invited Talks" ;
+                    rdfs:comment "All the blog posts that notify information realated to the invited talks at the SDA Group." ;
+                    rdfs:subClassOf sdatech:Blog ;
+                    site:classTemplate "InvitedTalks" ;
+                    sysont:creationLabel "Invited Talks" ;
+                    dct:issued "2008-05-14" .
+
+sdatech:ProjectAnnouncements a owl:Class ;
+                    rdfs:label "Project Announcements" ;
+                    rdfs:comment "All the blog posts that notify information realated to the project announcements at the SDA Group." ;
+                    rdfs:subClassOf sdatech:Blog ;
+                    site:classTemplate "ProjectAnnouncements" ;
+                    sysont:creationLabel "Project Announcements" ;
                     dct:issued "2008-05-14" .
 
 ###############################################
