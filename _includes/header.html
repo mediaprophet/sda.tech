@@ -24,7 +24,7 @@
           {% capture query %}
           # select all main Navigation position properties for counting
           SELECT ?position WHERE{
-              ex:Mainnav ?positionProp ?resource .
+              sdatech:Mainnav ?positionProp ?resource .
               ?positionProp a rdfs:ContainerMembershipProperty .
               ?positionProp rdfs:label ?position .
           }
@@ -36,7 +36,7 @@
             {% capture query2 %}
             # select menu entry for current count
             SELECT ?resource ?label WHERE{
-                ex:Mainnav ?positionProp ?resource .
+                sdatech:Mainnav ?positionProp ?resource .
                 ?positionProp a rdfs:ContainerMembershipProperty .
                 ?positionProp rdfs:label "{{count}}" .
                 ?resource a foaf:Document .

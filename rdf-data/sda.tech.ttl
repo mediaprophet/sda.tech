@@ -3020,7 +3020,7 @@ ex:MEXVocabulary a ex:project ;
 
 ################Primary and Secondary Navigations###############################
 
-ex:Mainnav a ex:navigation ;
+sdatech:Mainnav a sdatech:Navigation ;
            rdf:_1 sdatech:about ;
            rdf:_2 sdatech:people ;
            rdf:_3 sdatech:group ;
@@ -3032,7 +3032,7 @@ ex:Mainnav a ex:navigation ;
            rdf:_9 sdatech:partners ;
            rdf:_10 sdatech:blog .
 
-sdatech:BlogPostNavigation a ex:navigation ;
+sdatech:BlogPostNavigation a sdatech:SecondaryNavigation ;
          rdf:_1 sdatech:allposts ;
          rdf:_2 sdatech:papernotifications ;
          rdf:_3 sdatech:invitedtalks ;
@@ -3673,6 +3673,12 @@ rdf:_10 a rdfs:ContainerMembershipProperty ;
 
 foaf:Project a owl:Class ;
              rdfs:label "Project"  .
+
+sdatech:Navigation a owl:Class ;
+            rdfs:label "Primary Navigation"  .
+
+sdatech:SecondaryNavigation a owl:Class ;
+            rdfs:label "Secondary Navigation"  .
 
 foaf:Organization sysont:creationLabel "Partner" ;
                   a owl:Class ;
