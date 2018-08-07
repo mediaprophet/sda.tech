@@ -1,15 +1,11 @@
 ---
 rdf_prefix_path: sda.tech.pref
 layout: default
-toggleOnDiv: guidelines
-toggledURLTo: /oldCourses/
 ---
-{% include toggleCourseTypes.html %}
-{% include toggleInitialPageLink.html div=page.toggleOnDiv linkto=page.toggledURLTo %}
 <article class="post">
   <div class="pagination">
     <!-- Teaching Header -->
-    {% include teachingHeader.html active="old" %}
+    {% include teachingHeader.html active="Archived Courses" %}
     <!-- Teaching Content -->
     {% include teachingContent.html active="old" %}
   </div>

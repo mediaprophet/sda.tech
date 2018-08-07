@@ -3630,13 +3630,24 @@ sdatech:formermembers a foaf:Document ;
           rdfs:label "Former Members Page" .
 
 #########################Teaching Documents#####################################
-sdatech:winterSemeterCourses a foaf:Document ;
+sdatech:teaching a foaf:Document ;
+            sda:miniIcon "fa fa-pencil margin-icon" ;
+            rdfs:label "Teaching" .
+
+sdateaching:generalguidelines a foaf:Document ;
+          sda:miniIcon "fa fa-th-list margin-icon" ;
+          rdfs:label "General Course Guidelines" .
+
+sdateaching:wintersemeter a foaf:Document ;
+          sda:miniIcon "fa fa-cloud margin-icon" ;
           rdfs:label "Latest Winter Semester Courses" .
 
-sdatech:summerSemesterCourses a foaf:Document ;
+sdateaching:summersummester a foaf:Document ;
+           sda:miniIcon "fa fa-fire margin-icon" ;
            rdfs:label "Latest Summer Semester Courses" .
 
-sdatech:oldCourses a foaf:Document ;
+sdateaching:oldcourses a foaf:Document ;
+          sda:miniIcon "fa fa-archive margin-icon" ;
           rdfs:label "Archived Courses" .
 
 #########################Partner Documents######################################
@@ -3668,8 +3679,7 @@ sdatech:archivedprojects a foaf:Document ;
 sdatech:publication a foaf:Document ;
                rdfs:label "Publications" .
 
-sdatech:teaching a foaf:Document ;
-            rdfs:label "Teaching" .
+
 
 sdatech:thesis a foaf:Document ;
           rdfs:label "Thesis" ;

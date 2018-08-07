@@ -1,14 +1,48 @@
-<div class="course-section">
-  <a href="#" id="courseguide" class="{% if include.active == 'courseguide' %}active{% endif %} responsiveTabItem" onclick="activeGeneralGuide()"><i class="fa fa-th-list margin-icon" aria-hidden="true"></i>
-  General Guidelines</a>
-  <a href="#" id="winter" class="{% if include.active == 'winter' %}active{% endif %} responsiveTabItem" onclick="activeWinterCourses()"><i class="fa fa-cloud margin-icon" aria-hidden="true"></i>
-  Winter Semester 2017/18</a>
-  <a href="#" id="summer" class="{% if include.active == 'summer' %}active{% endif %} responsiveTabItem" onclick="activeSummerCourses()"><i class="fa fa-fire margin-icon" aria-hidden="true"></i>
-  Summer Semester 2018</a>
-  <a href="#" id="old" class="{% if include.active == 'old' %}active{% endif %} responsiveTabItem" onclick="allOldCourses()"><i class="fa fa-archive margin-icon" aria-hidden="true"></i>
-  Old Courses</a>
+{% assign count = 0 %}
+{% capture query %}
+# select all main Navigation position properties for counting
+SELECT ?position WHERE{
+    sdatech:TeachingNavigation ?positionProp ?resource .
+    ?positionProp a rdfs:ContainerMembershipProperty .
+    ?positionProp rdfs:label ?position .
+}
+{% endcapture %}
+{% assign resultset = page.rdf | sparql_query: query %}
+{% for result in resultset %}
+
+{% assign count = count | plus : 1 %}
+  {% capture query2 %}
+  # select menu entry for current count
+  SELECT ?resource ?label ?icon WHERE{
+      sdatech:TeachingNavigation ?positionProp ?resource .
+      ?positionProp a rdfs:ContainerMembershipProperty .
+      ?positionProp rdfs:label "{{count}}" .
+      ?resource a foaf:Document .
+      ?resource rdfs:label ?label .
+      ?resource sda:miniIcon ?icon .
+  }
+  {% endcapture %}
+  {% assign resultset2 = page.rdf | sparql_query: query2 %}
+
+    {% for result2 in resultset2 %}
+        {% for page in site.pages %}
+            {% if page.rdf.iri == result2.resource.iri %}
+              {% capture urlNav %}{{page.url}}{% endcapture %}
+              {% capture navlabel%}{{result2.label}}{% endcapture %}
+              {% capture icon%}{{result2.icon}}{% endcapture %}
+                <a href="{{ urlNav | remove:"index.html" }}" class="{% if include.active == navlabel %}active{% endif %} responsiveTabItem" onclick="#"><i class="{{icon}}"  aria-hidden="true"></i>
+                  {% if navlabel == "Blog" %}
+                     All {{result2.label}} Posts
+                    {% else %}
+                     {{result2.label}}
+                  {% endif %}
+                </a>
+            {% endif %}
+        {% endfor %}
+    {% endfor %}
+{% endfor%}
+
   <br/>
   <br/>
   <hr/>
   <br class="horizontal-separator2" />
-</div>

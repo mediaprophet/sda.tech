@@ -96,7 +96,6 @@ jekyll_rdf:
         "http://sda.tech/group" : "groupmain.html"
         "http://sda.tech/publication" : "publicationmain.html"
         "http://sda.tech/jobs" : "jobmain.html"
-        "http://sda.tech/teaching" : "teachingmain.html"
         "http://sda.tech/project" : "projectmain.html"
         "http://sda.tech/fundedprojects" : "projectFunded.html"
         "http://sda.tech/opensourceprojects" : "projectOpenSource.html"
@@ -126,9 +125,11 @@ jekyll_rdf:
         "http://sda.tech/jobEnvoirnment" : "EnvoirnmentJob.html"
         "http://sda.tech/faqjob" : "FAQJob.html"
         #teaching
-        "http://sda.tech/oldCourses" : "teachingOldCourse.html"
-        "http://sda.tech/winterSemeterCourses" : "teachingWinterSemester.html"
-        "http://sda.tech/summerSemesterCourses" : "teachingSummerSemester.html"
+        "http://sda.tech/teaching" : "teachingmain.html"
+        "http://sda.tech/Course/generalguidelines" : "teachingCourseGuidelines.html"
+        "http://sda.tech/Course/oldcourses" : "teachingOldCourse.html"
+        "http://sda.tech/Course/wintersemeter" : "teachingWinterSemester.html"
+        "http://sda.tech/Course/summersummester" : "teachingSummerSemester.html"
         #partners
         "http://sda.tech/Partner/academicpartners" : "partnersAcademic.html"
         "http://sda.tech/Partner/industrypartners" : "partnersIndustry.html"

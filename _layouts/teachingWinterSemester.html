@@ -1,15 +1,11 @@
 ---
 rdf_prefix_path: sda.tech.pref
 layout: default
-toggleOnDiv: guidelines
-toggledURLTo: /winterSemeterCourses/
 ---
-{% include toggleCourseTypes.html %}
-{% include toggleInitialPageLink.html div=page.toggleOnDiv linkto=page.toggledURLTo %}
 <article class="post">
   <div class="pagination">
     <!-- Teaching Header -->
-    {% include teachingHeader.html active="winter" %}
+    {% include teachingHeader.html active="Latest Winter Semester Courses" %}
     <!-- Teaching Content -->
     {% include teachingContent.html active="winter" %}
   </div>
