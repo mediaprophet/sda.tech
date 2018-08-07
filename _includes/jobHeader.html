@@ -1,19 +1,47 @@
 <div class="pagination">
   <div class="job-types">
-    <a href="#" id="oJobs" class="{% if include.active == 'openJobs' %}active{% endif %} responsiveTabItem" onclick="openJobs()"><i class="fa fa-list-alt margin-icon" aria-hidden="true"></i>
-    Open Jobs</a>
-    <a href="#" id="akad" class="{% if include.active == 'akadRat' %}active{% endif %} responsiveTabItem" onclick="akademischeJob()"><i class="fa fa-pencil-square-o margin-icon" aria-hidden="true"></i>
-    {{site.data.jobTypes[0].name}}</a>
-    <a href="#" id="postdoctoral" class="{% if include.active == 'postDoc' %}active{% endif %} responsiveTabItem" onclick="postdoctoralJob()"><i class="fa fa-user-circle-o margin-icon" aria-hidden="true"></i>
-    {{site.data.jobTypes[1].name}}</a><br class="breakpoint-pagination"/><br class="breakpoint-pagination"/>
-    <a href="#" id="phdpos" class="{% if include.active == 'researchAss' %}active{% endif %} responsiveTabItem" onclick="phdJobs()"><i class="fa fa-graduation-cap margin-icon" aria-hidden="true"></i>
-    {{site.data.jobTypes[2].name}}</a>
-    <a href="#" id="studentassistants" class="{% if include.active == 'studentAss' %}active{% endif %} responsiveTabItem" onclick="studentAssistantsJob()"><i class="fa fa-user margin-icon" aria-hidden="true"></i>
-    {{site.data.jobTypes[3].name}}</a>
-    <a href="#" id="envoirnmentjob" class="{% if include.active == 'envJob' %}active{% endif %} responsiveTabItem" onclick="jobEnvoirnment()"><i class="fa fa-building margin-icon" aria-hidden="true"></i>
-    {{site.data.jobTypes[4].name}}</a>
-    <a href="#" id="faqjob" class="{% if include.active == 'faqJob' %}active{% endif %} responsiveTabItem" onclick="jobFaq()"><i class="fa fa-question-circle margin-icon" aria-hidden="true"></i>
-    {{site.data.jobTypes[5].name}}</a>
+    {% assign count = 0 %}
+    {% capture query %}
+    # select all main Navigation position properties for counting
+    SELECT ?position WHERE{
+        sdatech:JobsNavigation ?positionProp ?resource .
+        ?positionProp a rdfs:ContainerMembershipProperty .
+        ?positionProp rdfs:label ?position .
+    }
+    {% endcapture %}
+    {% assign resultset = page.rdf | sparql_query: query %}
+    {% for result in resultset %}
+
+    {% assign count = count | plus : 1 %}
+      {% capture query2 %}
+      # select menu entry for current count
+      SELECT ?resource ?label ?icon WHERE{
+          sdatech:JobsNavigation ?positionProp ?resource .
+          ?positionProp a rdfs:ContainerMembershipProperty .
+          ?positionProp rdfs:label "{{count}}" .
+          ?resource a foaf:Document .
+          ?resource rdfs:label ?label .
+          ?resource sda:miniIcon ?icon .
+      }
+      {% endcapture %}
+      {% assign resultset2 = page.rdf | sparql_query: query2 %}
+        {% for result2 in resultset2 %}
+            {% for page in site.pages %}
+                {% if page.rdf.iri == result2.resource.iri %}
+                  {% capture urlNav %}{{page.url}}{% endcapture %}
+                  {% capture navlabel%}{{result2.label}}{% endcapture %}
+                  {% capture icon%}{{result2.icon}}{% endcapture %}
+                    <a href="{{ urlNav | remove:"index.html" }}" class="{% if include.active == navlabel %}active{% endif %} responsiveTabItem" onclick="#"><i class="{{icon}}"  aria-hidden="true"></i>
+                      {% if navlabel == "Blog" %}
+                         All {{result2.label}} Posts
+                        {% else %}
+                         {{result2.label}}
+                      {% endif %}
+                    </a>
+                {% endif %}
+            {% endfor %}
+        {% endfor %}
+    {% endfor%}
     <br/>
     <br/>
     <hr/>

@@ -3026,7 +3026,7 @@ sdatech:Mainnav a sdatech:Navigation ;
            rdf:_3 sdatech:group ;
            rdf:_4 sdatech:project ;
            rdf:_5 sdatech:publication ;
-           rdf:_6 sdatech:jobs ;
+           rdf:_6 sdatech:job ;
            rdf:_7 sdatech:teaching ;
            rdf:_8 sdatech:thesis ;
            rdf:_9 sdatech:partners ;
@@ -3477,14 +3477,31 @@ sdajob:StudentAssistantAustralianEnvironment a sdatech:Job ;
            foaf:mbox <undefined> .
 
 
+###########################################################################
+
 sdatech:group a foaf:Document ;
          rdfs:label "Groups" .
 
-sdatech:jobs a foaf:Document ;
+###########################################################################
+##################################Job Document#############################
+###########################################################################
+
+
+sdatech:job a foaf:Document ;
+       sda:miniIcon "fa fa-list-alt margin-icon" ;
        rdfs:label "Jobs" .
 
-sdatech:akademischeJob a foaf:Document ;
-       rdfs:label "AkademischerRat" ;
+sdajob:environment a foaf:Document ;
+      sda:miniIcon "fa fa-list-alt margin-icon" ;
+      rdfs:label "Job Envoirnment" .
+
+sdajob:frequentlyaskedquestions a foaf:Document ;
+     sda:miniIcon "fa fa-question-circle margin-icon" ;
+     rdfs:label "Job FAQ" .
+
+sdajob:akadimischerrat a foaf:Document ;
+       rdfs:label "Akademischer Rat" ;
+       sda:miniIcon "fa fa-pencil-square-o margin-icon" ;
        dct:title "Akademische/r Rat/Rätin" ;
        ex:description "We are looking for a senior researcher (Akademischer Rat on payment scale 100% A13 [1], comparable to Assistant Professor) for 3 years with possible extensions." ;
        sda:requirements "A completed PhD and Master degree in a relevant field (Computer Science or related) | Proficiency in spoken and written English" ;
@@ -3496,8 +3513,9 @@ sdatech:akademischeJob a foaf:Document ;
        sda:duration "3 years, starting on 01.01.1970, extension possible" ;
        sda:payment "100% A13[1]" .
 
-sdatech:postdocjob a foaf:Document ;
-       rdfs:label "SeniorResearcher" ;
+sdajob:postdoctoral a foaf:Document ;
+       rdfs:label "Senior Researcher" ;
+       sda:miniIcon "fa fa-user-circle-o margin-icon" ;
        dct:title "Postdoctoral/Senior Researcher" ;
        ex:description "We are looking for a Postdoctoral Researchers (German - Wissenschaftliche(r) Mitarbeiter(in)) at the Computer Science Institute at the University of Bonn." ;
        sda:requirements "A completed PhD and Master degree in a relevant field (Computer Science or related) | Proficiency in spoken and written English" ;
@@ -3509,8 +3527,9 @@ sdatech:postdocjob a foaf:Document ;
        sda:duration "3 years, starting on 01.01.1970, extension possible" ;
        sda:payment "100% A13[1]" .
 
-sdatech:researchAssociateandPhd a foaf:Document ;
+sdajob:phdposition a foaf:Document ;
        rdfs:label "Phd" ;
+       sda:miniIcon "fa fa-graduation-cap margin-icon" ;
        dct:title "Research Associate/PhD Student" ;
        ex:description "We are looking for a Research Associate (Wissenschaftliche(r) Mitarbeiter(in)) at the Computer Science Institute at the University of Bonn." ;
        sda:requirements "A Master degree in a relevant field (Computer Science or related) | Proficiency in spoken and written English" ;
@@ -3522,8 +3541,9 @@ sdatech:researchAssociateandPhd a foaf:Document ;
        sda:duration "3 years, starting on 01.01.1970, extension possible" ;
        sda:payment "100% A13[1]" .
 
-sdatech:studentassistants a foaf:Document ;
-       rdfs:label "StudentAssistant" ;
+sdajob:studentassistant a foaf:Document ;
+       rdfs:label "Student Assistant" ;
+       sda:miniIcon "fa fa-user margin-icon" ;
        dct:title "Student Assistant" ;
        ex:description "We are looking for student assistants at the Computer Science Institute at the University of Bonn" ;
        sda:requirements "Proficiency in spoken and written English" ;
@@ -3565,17 +3585,8 @@ sdablog:papers-accepted-at-ICWE-2018	a sioc:Post ;
 
 ################################################################################
 
-sdatech:jobEnvoirnment a foaf:Document ;
-       rdfs:label "Job Envoirnment" .
-
-sdatech:faqjob a foaf:Document ;
-      rdfs:label "Job FAQ" .
-
 sdatech:contact a foaf:Document ;
       rdfs:label "Contact" .
-
-#sdatech:blog a foaf:Document ;
-  #    rdfs:label "Blog" .
 
 sdatech:partners a foaf:Document ;
             sda:miniIcon "fa fa-list-alt margin-icon";

@@ -4,10 +4,11 @@ layout: default
 toggleOnDiv: openJobs
 toggledURLTo: /jobs/
 ---
+
 {%include toggleJobTypes.html%}
 {% include toggleInitialPageLink.html div=page.toggleOnDiv linkto=page.toggledURLTo %}
 <article class="post">
-  {%include jobHeader.html active="openJobs"%}
+  {%include jobHeader.html active="Jobs"%}
   {%include jobContent.html active="openJobs"%}
     <br class="horizontal-separator" />
 </article>
