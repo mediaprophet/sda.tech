@@ -130,8 +130,8 @@ jekyll_rdf:
         "http://sda.tech/winterSemeterCourses" : "teachingWinterSemester.html"
         "http://sda.tech/summerSemesterCourses" : "teachingSummerSemester.html"
         #partners
-        "http://sda.tech/academicPartners" : "partnersAcademic.html"
-        "http://sda.tech/industryPartners" : "partnersIndustry.html"
+        "http://sda.tech/Partner/academicpartners" : "partnersAcademic.html"
+        "http://sda.tech/Partner/industrypartners" : "partnersIndustry.html"
         #blog
         "http://sda.tech/blog" : "blog.html"
         "http://sda.tech/blog/papernotifications" : "blogPaperNotifications.html"

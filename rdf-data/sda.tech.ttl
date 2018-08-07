@@ -3039,6 +3039,61 @@ sdatech:BlogPostNavigation a sdatech:SecondaryNavigation ;
          rdf:_4 sdablog:projectannouncements ;
          rdf:_5 sdablog:generalposts .
 
+sdatech:PartnersNavigation a sdatech:SecondaryNavigation ;
+        rdf:_1 sdatech:partners ;
+        rdf:_2 sdapartner:industrypartners ;
+        rdf:_3 sdapartner:academicpartners .
+
+sdatech:ThesisNavigation a sdatech:SecondaryNavigation ;
+        rdf:_1 sdatech:thesis ;
+        rdf:_2 sdathesis:bachelorthesis ;
+        rdf:_3 sdathesis:masterthesis ;
+        rdf:_4 sdathesis:ongoingthesis ;
+        rdf:_5 sdathesis:frequentlyaskedquestions .
+
+sdatech:TeachingNavigation a sdatech:SecondaryNavigation ;
+        rdf:_1 sdatech:teaching ;
+        rdf:_2 sdateaching:generalguidelines ;
+        rdf:_3 sdateaching:wintersemeter ;
+        rdf:_4 sdateaching:summersummester ;
+        rdf:_5 sdateaching:oldcourses .
+
+sdatech:JobsNavigation a sdatech:SecondaryNavigation ;
+        rdf:_1 sdatech:job ;
+        rdf:_2 sdajob:akadimischerrat ;
+        rdf:_3 sdajob:postdoctoral ;
+        rdf:_4 sdajob:phdposition ;
+        rdf:_5 sdajob:studentassistant ;
+        rdf:_6 sdajob:environment ;
+        rdf:_7 sdajob:frequentlyaskedquestions .
+
+sdatech:ProjectNavigation a sdatech:SecondaryNavigation ;
+        rdf:_1 sdatech:project ;
+        rdf:_2 sdaproject:fundedprojects ;
+        rdf:_3 sdaproject:opensourceprojects ;
+        rdf:_4 sdaproject:incubatorprojects ;
+        rdf:_5 sdaproject:archivedprojects .
+
+sdatech:GroupNavigation a sdatech:SecondaryNavigation ;
+        rdf:_1 sdatech:group ;
+        rdf:_2 sdagroup:distributemsemanticanalytics ;
+        rdf:_3 sdagroup:smartservices ;
+        rdf:_4 sdagroup:semanticquestionanswering ;
+        rdf:_5 sdagroup:structuredmachinelearning ;
+        rdf:_6 sdagroup:semanticdatamanagement ;
+        rdf:_7 sdagroup:softwareengineeringfordatascience .
+
+sdatech:PeopleNavigation a sdatech:SecondaryNavigation ;
+        rdf:_1 sdatech:people ;
+        rdf:_2 sdapeople:professors ;
+        rdf:_3 sdapeople:seniorresearchers ;
+        rdf:_4 sdapeople:phdstudents ;
+        rdf:_5 sdapeople:associatedresearchers ;
+        rdf:_6 sdapeople:studentassistants ;
+        rdf:_7 sdapeople:interns ;
+        rdf:_8 sdapeople:formermembers .
+
+
 ################################################################################
 
 ex:Publication1 a ex:publication ;
@@ -3523,6 +3578,7 @@ sdatech:contact a foaf:Document ;
   #    rdfs:label "Blog" .
 
 sdatech:partners a foaf:Document ;
+            sda:miniIcon "fa fa-list-alt margin-icon";
             rdfs:label "Partners" .
 
 ##########################Blog Documents######################################
@@ -3584,10 +3640,12 @@ sdatech:oldCourses a foaf:Document ;
           rdfs:label "Archived Courses" .
 
 #########################Partner Documents######################################
-sdatech:industryPartners a foaf:Document ;
+sdapartner:industrypartners a foaf:Document ;
+           sda:miniIcon "fa fa-industry margin-icon" ;
            rdfs:label "Industry Partners" .
 
-sdatech:academicPartners a foaf:Document ;
+sdapartner:academicpartners a foaf:Document ;
+          sda:miniIcon "fa fa-graduation-cap margin-icon" ;
           rdfs:label "Academic Partners" .
 
 #########################Project Documents######################################
