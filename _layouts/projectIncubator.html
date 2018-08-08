@@ -1,13 +1,9 @@
 ---
 rdf_prefix_path: sda.tech.pref
 layout: default
-toggledURLTo: /incubatorprojects/
-toggleOnDiv: incubatorProjects
 ---
-{% include toggleProjectTypes.html %}
-{% include toggleInitialPageLink.html div=page.toggleOnDiv linkto=page.toggledURLTo %}
 <div class="pagination">
-  {% include projectHeader.html active="incubators" %}
+  {% include projectHeader.html active="Incubator Projects" %}
 </div>
 <div class="projects content-people clear-padding">
   {% include projectContent.html active="incubatorProjects"%}

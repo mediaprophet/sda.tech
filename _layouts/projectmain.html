@@ -1,13 +1,10 @@
 ---
 rdf_prefix_path: sda.tech.pref
 layout: default
-toggledURLTo: /project/
-toggleOnDiv: allProjects
 ---
-{% include toggleProjectTypes.html %}
-{% include toggleInitialPageLink.html div=page.toggleOnDiv linkto=page.toggledURLTo %}
+
 <div class="pagination">
-  {% include projectHeader.html active="all" %}
+  {% include projectHeader.html active="Projects" %}
 </div>
 <div class="projects content-people clear-padding">
   {% include projectContent.html active="allProjects" %}

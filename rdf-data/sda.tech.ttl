@@ -3492,7 +3492,7 @@ sdatech:job a foaf:Document ;
        rdfs:label "Jobs" .
 
 sdajob:environment a foaf:Document ;
-      sda:miniIcon "fa fa-list-alt margin-icon" ;
+      sda:miniIcon "fa fa-building margin-icon" ;
       rdfs:label "Job Envoirnment" .
 
 sdajob:frequentlyaskedquestions a foaf:Document ;
@@ -3671,20 +3671,28 @@ sdapartner:academicpartners a foaf:Document ;
           rdfs:label "Academic Partners" .
 
 #########################Project Documents######################################
+
 sdatech:project a foaf:Document ;
+           sda:miniIcon "fa fa-list-alt margin-icon" ;
            rdfs:label "Projects" .
 
-sdatech:fundedprojects a foaf:Document ;
-         rdfs:label "Funded Projects Page" .
+sdaproject:fundedprojects a foaf:Document ;
+         sda:miniIcon "fa fa-money margin-icon" ;
+         rdfs:label "Funded Projects" .
 
-sdatech:opensourceprojects a foaf:Document ;
-        rdfs:label "Open Source Projects Page" .
+sdaproject:opensourceprojects a foaf:Document ;
+        sda:miniIcon "fa fa-code-fork margin-icon" ;
+        rdfs:label "Open Source Projects" .
 
-sdatech:incubatorprojects a foaf:Document ;
-         rdfs:label "Incubator Projects Page" .
+sdaproject:incubatorprojects a foaf:Document ;
+         sda:miniIcon "fa fa-free-code-camp margin-icon" ;
+         rdfs:label "Incubator Projects" .
 
-sdatech:archivedprojects a foaf:Document ;
-        rdfs:label "Archived Projects Page" .
+sdaproject:archivedprojects a foaf:Document ;
+        sda:miniIcon "fa fa-archive margin-icon" ;
+        rdfs:label "Archived Projects" .
+
+
 ################################################################################
 
 sdatech:publication a foaf:Document ;
