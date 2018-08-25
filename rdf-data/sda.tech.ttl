@@ -216,19 +216,20 @@ sdaperson:LuisPauloGarcia a foaf:Person, sdatech:seniorResearcher ;
 
 sdaperson:GiulioNapolitano a foaf:Person, sdatech:seniorResearcher ;
                   sda:publicationsTag "napolitano" ;
-                  sda:room "C-306" ;
+                  sda:room "B3-236 at IAIS" ;
                   foaf:firstName "Giulio" ;
                   foaf:familyName "Napolitano" ;
                   foaf:name "Dr. Giulio Napolitano" ;
-                  foaf:mbox <mailto:shariat@cs.uni-bonn.de> ;
+                  foaf:mbox <mailto:giulio.napolitano@iais.fraunhofer.de> ;
                   foaf:depiction <https://scholar.google.com/citations?view_op=view_photo&user=H0pe9pgAAAAJ&citpid=2> ;
                   foaf:phone <tel:+49-341-123456789> ;
                   foaf:title "Dr. " ;
                   foaf:status "Senior Researcher" ;
-                  #sda:linkedin "" ;
+                  sda:linkedin "https://www.linkedin.com/in/giulio-napolitano-8a550210/" ;
+                  sda:twitter "https://twitter.com/giulionapo" ;
                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
                   schema:location <http://sda.tech/Address/SDA> ;
-                  cv:aboutPerson "Dr. Giulio Napolitano is a Senior Researcher at the Fraunhofer IAIS." ;
+                  cv:aboutPerson "Giulio is a senior researcher and tem leader at Fraunhofer IAIS and UniBonn SDA. Prior to joining Fraunhofer, he was a senior scientist at Bonn University Clinic (Institut für Medizinische Biometrie, Informatik und Epidemiologie. Before he moved to Bonn, he was a researcher and senior IM&T Officer at the Centre for Public Health, Queen’s University Belfast. Previously, he had been working for Siemens Medical Solutions in Rome. His current interests include semantic technologies, question answering, natural language processing and analysis and machine learning. More broadly, his research interests span from philosophy of science and epistemology to mathematical modelling for medicine, medical informatics and epidemiology. Among other things, he studied Philosophy, Physics and Astrophysics, Bioinformatics and Applied Mathematics." ;
                   #sda:publication sdapublication:Publication1 ;
                   sda:group sdagroup:SemanticQuestionAnswering ;
                   foaf:currentProject sdaproject:AskNow, sdaproject:HOBBIT .
