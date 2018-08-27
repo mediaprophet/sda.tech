@@ -229,7 +229,7 @@ sdaperson:GiulioNapolitano a foaf:Person, sdatech:seniorResearcher ;
                   sda:twitter "https://twitter.com/giulionapo" ;
                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
                   schema:location <http://sda.tech/Address/SDA> ;
-                  cv:aboutPerson "Giulio is a senior researcher and tem leader at Fraunhofer IAIS and UniBonn SDA. Prior to joining Fraunhofer, he was a senior scientist at Bonn University Clinic (Institut für Medizinische Biometrie, Informatik und Epidemiologie. Before he moved to Bonn, he was a researcher and senior IM&T Officer at the Centre for Public Health, Queen’s University Belfast. Previously, he had been working for Siemens Medical Solutions in Rome. His current interests include semantic technologies, question answering, natural language processing and analysis and machine learning. More broadly, his research interests span from philosophy of science and epistemology to mathematical modelling for medicine, medical informatics and epidemiology. Among other things, he studied Philosophy, Physics and Astrophysics, Bioinformatics and Applied Mathematics." ;
+                  cv:aboutPerson "Giulio is a senior researcher and team leader at Fraunhofer IAIS and UniBonn SDA. Prior to joining Fraunhofer, he was a senior scientist at Bonn University Clinic (Institut für Medizinische Biometrie, Informatik und Epidemiologie. Before he moved to Bonn, he was a researcher and senior IM&T Officer at the Centre for Public Health, Queen’s University Belfast. Previously, he had been working for Siemens Medical Solutions in Rome. His current interests include semantic technologies, question answering, natural language processing and analysis and machine learning. More broadly, his research interests span from philosophy of science and epistemology to mathematical modelling for medicine, medical informatics and epidemiology. Among other things, he studied Philosophy, Physics and Astrophysics, Bioinformatics and Applied Mathematics." ;
                   #sda:publication sdapublication:Publication1 ;
                   sda:group sdagroup:SemanticQuestionAnswering ;
                   foaf:currentProject sdaproject:AskNow, sdaproject:HOBBIT .
@@ -1630,7 +1630,7 @@ sdagroup:SemanticDataManagement a aiiso:ResearchGroup, sdatech:Group ;
 ##Semantic Question Answering
 sdagroup:SemanticQuestionAnswering a aiiso:ResearchGroup, sdatech:Group ;
                                 rdfs:label "Semantic Question Answering" ;
-                                foaf:member sdaperson:JensLehmann, sdaperson:MohnishDubey, sdaperson:IoannaLytra, sdaperson:HamidZafar, sdaperson:DebanjanChaudhuri ;
+                                foaf:member sdaperson:JensLehmann, sdaperson:MohnishDubey, sdaperson:IoannaLytra, sdaperson:HamidZafar, sdaperson:DebanjanChaudhuri, sdaperson:GiulioNapolitano ;
                                 dbo:leader sdaperson:GiulioNapolitano, sdaperson:IoannaLytra ;
                                 foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
                                 foaf:pastProject sdaproject:SHORE, sdaproject:WAVE ;
