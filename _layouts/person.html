@@ -11,12 +11,12 @@ layout: default
   <div class="pagination">
     <div class="post-content">
       <br class="horizontal-separator" />
-      <div style="text-align:center;"><img class="img-circle-small" style="width: 250px; height: 250px;" src="{{ page.rdf | rdf_property: 'foaf:depiction'}}"></img> 
+      <div style="text-align:center;"><img class="img-circle-small" style="width: 250px; height: 250px;" src="{{ page.rdf | rdf_property: 'foaf:depiction'}}"></img>
           <div style="display:inline-block; vertical-align: middle;">
-                 <h2> {{title}} </h2>
-          <h4 class="dynamicChange" style="text-align:center;">{{ page.rdf | rdf_property: 'foaf:status' }}</h4>
+                 <h2 style="text-align:left;"> {{title}} </h2>
+          <h4 class="dynamicChange" style="text-align:left;">{{ page.rdf | rdf_property: 'foaf:status' }}</h4>
           <br/>
-          <div class="links-to-social" style="text-align:center;">
+          <div class="links-to-social" style="text-align:left;">
               {% capture boolTwitter | strip  %}{{ page.rdf | rdf_property: 'sda:twitter' }}{% endcapture %}
               {% capture boolWebsite | strip %}{{ page.rdf | rdf_property: 'sda:website' }}{% endcapture %}
               {% capture boolFacebook | strip %}{{ page.rdf | rdf_property: 'sda:facebook' }}{% endcapture %}
@@ -31,16 +31,12 @@ layout: default
               {% if boolResearchGate and boolResearchGate != "" and boolResearchGate != nil  %}<a href="{{ page.rdf | rdf_property: 'sda:researchgate' }}" target="_blank"><i style="font-weight:900" class="fa fa-researchgate" aria-hidden="true">RG</i></a>{% endif %}
               {% if boolGoogleScholar and boolGoogleScholar != "" and boolGoogleScholar != nil  %}<a href="{{ page.rdf | rdf_property: 'sda:googlescholar' }}" target="_blank"><i class="fa fa-google" aria-hidden="true"></i> </a>{% endif %}
         </div>
-      </div></div>
-      <br class="horizontal-separator2" />
-      <div style="text-align:center;">
-        <div class="membersofProject" >
-          <p><span style="padding-right:8px;"><i class="fa fa-home" aria-hidden="true"></i> Room Number: {{page.rdf | rdf_property: 'sda:room'}}</span>&nbsp; . &nbsp;<span style="padding-right:8px;"> <i class="fa fa-phone" aria-hidden="true"></i> {{page.rdf | rdf_property: 'foaf:phone'}} </span>&nbsp; . &nbsp;<span style="padding-right:8px;"> <i class="fa fa-envelope" aria-hidden="true"></i> <a style="padding-right:2px; padding-left:2px; color: black;" href="mailto:{{page.rdf | rdf_property: 'foaf:mbox' |remove: 'mailto:' | encode_email}}">{{page.rdf | rdf_property: 'foaf:mbox' |remove: 'mailto:'}} </a></span></p>
+          <p style="margin-top:0.6cm;text-align:left;">{{page.rdf | rdf_property: 'sda:room'}} <br/> {{page.rdf | rdf_property: 'sda:address'}} <br/>  {{page.rdf | rdf_property: 'foaf:phone'}}  <br/> <a style="padding-right:2px; padding-left:2px; color: black;" href="mailto:{{page.rdf | rdf_property: 'foaf:mbox' |remove: 'mailto:' | encode_email}}">{{page.rdf | rdf_property: 'foaf:mbox' |remove: 'mailto:'}} </a></p>
         </div>
-      </div>
+        <hr width="60%" style="margin-left: 20%;margin-right: 20%;">
+  </div>
       <br class="horizontal-separator2" />
       <h3>Short CV</h3>
-      <br class="horizontal-separator2" />
       <div class="description-project">
         <p>{{page.rdf | rdf_property: 'cv:aboutPerson'}}</p>
       </div>
