@@ -180,28 +180,6 @@ sdaperson:HamedShariatYazdi a foaf:Person, sdatech:seniorResearcher ;
                   sda:group sdagroup:SoftwareEngineeringForDataScience .
                   #foaf:currentProject sdaproject: .
 
-sdaperson:LuisPauloGarcia a foaf:Person, sdatech:seniorResearcher ;
-                  rdfs:seeAlso <http://aksw.org/LuisGarcia> ;
-                  owl:sameAs <http://aksw.org/LuisGarcia> ;
-                  sda:publicationsTag "garcia" ;
-                  sda:room "Room A108, Fraunhofer IAIS" ;
-                  sda:address "Schloss Birlinghoven, 53757 Sankt Augustin" ;
-                  foaf:firstName "Luís" ;
-                  foaf:familyName "Paulo Garcia" ;
-                  foaf:name "Dr. Luís Paulo Garcia" ;
-                  foaf:mbox <mailto:shariat@cs.uni-bonn.de> ;
-                  foaf:depiction <http://ldap.aksw.org/pic/sn/Faina%20Garcia> ;
-                  foaf:phone <Tel:+49-341-123456789> ;
-                  foaf:title "Dr. " ;
-                  foaf:status "Senior Researcher" ;
-                  #sda:linkedin "" ;
-                  ov:businessCard <http://aksw.org/vCard/Bonn> ;
-                  schema:location <http://sda.tech/Address/SDA> ;
-                  cv:aboutPerson "Dr. Luís Paulo Garcia is a Senior Researcher at the University of Leipzig." ;
-                  #sda:publication sdapublication:Publication1 ;
-                  sda:group sdagroup:SoftwareEngineeringForDataScience .
-                  #foaf:currentProject sdaproject: .
-
 sdaperson:GiulioNapolitano a foaf:Person, sdatech:seniorResearcher ;
                   sda:publicationsTag "napolitano" ;
                   sda:room "Room B3-236, Fraunhofer IAIS" ;
@@ -281,26 +259,6 @@ sdaperson:ChristophLange a foaf:Person, sdatech:seniorResearcher ;
                   #sda:publication sdapublication:Publication1 ;
                   sda:group sdagroup:SemanticDataManagement ;
                   foaf:currentProject sdaproject:WDAqua, sdaproject:OSCOSS, sdaproject:Boost40.
-
-sdaperson:FabrizioOrlandi a foaf:Person, sdatech:seniorResearcher ;
-                  sda:publicationsTag "orlandi" ;
-                  sda:room "Room C-326, Fraunhofer IAIS" ;
-                  sda:address "Schloss Birlinghoven, 53757 Sankt Augustin" ;
-                  foaf:firstName "Fabrizio" ;
-                  foaf:familyName "Orlandi" ;
-                  foaf:name "Dr. Fabrizio Orlandi" ;
-                  foaf:mbox <mailto:fabrizio.orlandi@iais.fraunhofer.de> ;
-                  foaf:depiction <https://media.licdn.com/dms/image/C5603AQHc_LUVniMW7g/profile-displayphoto-shrink_800_800/0?e=1538006400&v=beta&t=w5NBDi0M7GCpIGRUJYuxnZCWOP6MkoGs9jLdBTiLJuE> ;
-                  #foaf:phone <Tel:+49-341-123456789> ;
-                  foaf:title "Dr. " ;
-                  foaf:status "Senior Researcher" ;
-                  sda:linkedin "https://www.linkedin.com/in/fabriziorlandi/" ;
-                  ov:businessCard <http://aksw.org/vCard/Bonn> ;
-                  schema:location <http://sda.tech/Address/SDA> ;
-                  cv:aboutPerson "Dr. Fabrizio Orlandi is a Senior Researcher at the University of Bonn." ;
-                  #sda:publication sdapublication:Publication1 ;
-                  sda:group sdagroup:KnowledgeExtractionAndValidation ;
-                  foaf:currentProject sdaproject:SLIPO, sdaproject:LinDA .
 
 sdaperson:SimonScerri a foaf:Person, sdatech:seniorResearcher ;
                   sda:publicationsTag "scerri" ;
@@ -1620,6 +1578,48 @@ sdaperson:VinayModi a foaf:Person, sdatech:formerMember ;
                    schema:location <http://sda.tech/Address/SDA> ;
                    cv:aboutPerson "" .
 
+sdaperson:FabrizioOrlandi a foaf:Person, sdatech:formerMember ;
+                  sda:publicationsTag "orlandi" ;
+                  sda:room "Room C-326, Fraunhofer IAIS" ;
+                  sda:address "Schloss Birlinghoven, 53757 Sankt Augustin" ;
+                  foaf:firstName "Fabrizio" ;
+                  foaf:familyName "Orlandi" ;
+                  foaf:name "Dr. Fabrizio Orlandi" ;
+                  foaf:mbox <mailto:fabrizio.orlandi@iais.fraunhofer.de> ;
+                  foaf:depiction <https://media.licdn.com/dms/image/C5603AQHc_LUVniMW7g/profile-displayphoto-shrink_800_800/0?e=1538006400&v=beta&t=w5NBDi0M7GCpIGRUJYuxnZCWOP6MkoGs9jLdBTiLJuE> ;
+                  #foaf:phone <Tel:+49-341-123456789> ;
+                  foaf:title "Dr. " ;
+                  foaf:status "Senior Researcher" ;
+                  sda:linkedin "https://www.linkedin.com/in/fabriziorlandi/" ;
+                  ov:businessCard <http://aksw.org/vCard/Bonn> ;
+                  schema:location <http://sda.tech/Address/SDA> ;
+                  cv:aboutPerson "Dr. Fabrizio Orlandi is a Senior Researcher at the University of Bonn." .
+                  #sda:publication sdapublication:Publication1 ;
+                  #sda:group sdagroup:KnowledgeExtractionAndValidation ;
+                  #foaf:currentProject sdaproject:SLIPO, sdaproject:LinDA .
+
+sdaperson:LuisPauloGarcia a foaf:Person, sdatech:formerMember ;
+                  rdfs:seeAlso <http://aksw.org/LuisGarcia> ;
+                  owl:sameAs <http://aksw.org/LuisGarcia> ;
+                  sda:publicationsTag "garcia" ;
+                  sda:room "Room A108, Fraunhofer IAIS" ;
+                  sda:address "Schloss Birlinghoven, 53757 Sankt Augustin" ;
+                  foaf:firstName "Luís" ;
+                  foaf:familyName "Paulo Garcia" ;
+                  foaf:name "Dr. Luís Paulo Garcia" ;
+                  foaf:mbox <mailto:shariat@cs.uni-bonn.de> ;
+                  foaf:depiction <http://ldap.aksw.org/pic/sn/Faina%20Garcia> ;
+                  foaf:phone <Tel:+49-341-123456789> ;
+                  foaf:title "Dr. " ;
+                  foaf:status "Senior Researcher" ;
+                  #sda:linkedin "" ;
+                  ov:businessCard <http://aksw.org/vCard/Bonn> ;
+                  schema:location <http://sda.tech/Address/SDA> ;
+                  cv:aboutPerson "Dr. Luís Paulo Garcia is a Senior Researcher at the University of Leipzig." .
+                  #sda:publication sdapublication:Publication1 ;
+                  #sda:group sdagroup:SoftwareEngineeringForDataScience .
+                  #foaf:currentProject sdaproject: .
+
 #######################################
 ##########Group Model##################
 #######################################
@@ -1696,7 +1696,7 @@ sdagroup:SemanticQuestionAnswering a aiiso:ResearchGroup, sdatech:Group ;
 ##Software Engineering for Data Science
 sdagroup:SoftwareEngineeringForDataScience a aiiso:ResearchGroup, sdatech:Group ;
                                 rdfs:label "Software Engineering for Data Science" ;
-                                foaf:member sdaperson:JensLehmann, sdaperson:GuenterKniesel, sdaperson:HamedShariatYazdi, sdaperson:LuisPauloGarcia ;
+                                foaf:member sdaperson:JensLehmann, sdaperson:GuenterKniesel, sdaperson:HamedShariatYazdi ;
                                 dbo:leader sdaperson:GuenterKniesel, sdaperson:HamedShariatYazdi ;
                                 foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
                                 foaf:currentProject sdaproject:SANSAStack ;
@@ -1710,7 +1710,7 @@ sdagroup:SoftwareEngineeringForDataScience a aiiso:ResearchGroup, sdatech:Group 
 ##Knowledge Graph
 sdagroup:KnowledgeGraph a aiiso:ResearchGroup, sdatech:Group ;
                                 rdfs:label "Knowledge Graph" ;
-                                foaf:member sdaperson:JensLehmann, sdaperson:HamedShariatYazdi, sdaperson:LuisPauloGarcia ;
+                                foaf:member sdaperson:JensLehmann, sdaperson:HamedShariatYazdi ;
                                 dbo:leader sdaperson:GuenterKniesel, sdaperson:HamedShariatYazdi ;
                                 foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
                                 foaf:currentProject sdaproject:SANSAStack ;
@@ -1740,7 +1740,7 @@ sdagroup:StructuredMachineLearning a aiiso:ResearchGroup, sdatech:Group ;
 ##Smart Services
 sdagroup:SmartServices a aiiso:ResearchGroup, sdatech:Group ;
                                 rdfs:label "Smart Services" ;
-                                foaf:member sdaperson:JensLehmann, sdaperson:FabrizioOrlandi, sdaperson:SimonScerri ;
+                                foaf:member sdaperson:JensLehmann, sdaperson:SimonScerri ;
                                 dbo:leader sdaperson:MariaMaleshkova, sdaperson:SimonScerri  ;
                                 foaf:pastProject sdaproject:SHORE, sdaproject:WAVE ;
                                 foaf:currentProject sdaproject:SLIPO, sdaproject:BigDataEurope, sdaproject:Boost40 ;
