@@ -120,26 +120,6 @@ sdaperson:GuenterKniesel a foaf:Person, sdatech:seniorResearcher ;
                   #sda:publication sdapublication:Publication1 ;
                   sda:group sdagroup:SoftwareEngineeringforDataScience .
 
-sdaperson:AsjaFischer a foaf:Person, sdatech:seniorResearcher ;
-                  sda:publicationsTag "fischer" ;
-                  sda:room "Room 1.065" ;
-                  sda:address "Endenicher Allee 19a, 53115 Bonn" ;
-                  foaf:firstName "Asja" ;
-                  foaf:familyName "Fischer" ;
-                  foaf:name "Dr. Asja Fischer" ;
-                  foaf:mbox <mailto:asja.fischer@gmail.com> ;
-                  foaf:depiction <https://media.licdn.com/dms/image/C4E03AQGT__IVsAnjMw/profile-displayphoto-shrink_800_800/0?e=1538006400&v=beta&t=xyQU6tT6pNdgUdFe_O77zdmKj9PfoS4q9FDEcdECq-I> ;
-                  foaf:phone <Tel:+49-341-123456789> ;
-                  foaf:title "Dr. " ;
-                  foaf:status "Senior Researcher" ;
-                  sda:linkedin "https://www.linkedin.com/in/asja-fischer-32007a94" ;
-                  ov:businessCard <http://aksw.org/vCard/Bonn> ;
-                  schema:location <http://sda.tech/Address/SDA> ;
-                  cv:aboutPerson "Dr. Asja Fischer is a Senior Researcher at the University of Bonn." .
-                  #sda:publication sdapublication:Publication1 ;
-                  #sda:group sdagroup:DeepLearning .
-                  #foaf:currentProject sdaproject: .
-
 sdaperson:MariaMaleshkova a foaf:Person, sdatech:seniorResearcher ;
                   sda:publicationsTag "maleshkova" ;
                   sda:room "Room 1.065" ;
@@ -949,6 +929,26 @@ sdaperson:DamienGraux a foaf:Person, sdatech:associateReseracher ;
                   cv:aboutPerson "Dr. Damien Graux is a Senior Researcher at the Fraunhofer IAIS." ;
                   sda:group sdagroup:SemanticDataManagement, sdagroup:DistributedSemanticAnalytics ;
                   foaf:currentProject sdaproject:SANSAStack .
+
+sdaperson:AsjaFischer a foaf:Person, sdatech:associateReseracher ;
+                  sda:publicationsTag "fischer" ;
+                  sda:room "Room 1.065" ;
+                  sda:address "Endenicher Allee 19a, 53115 Bonn" ;
+                  foaf:firstName "Asja" ;
+                  foaf:familyName "Fischer" ;
+                  foaf:name "Dr. Asja Fischer" ;
+                  foaf:mbox <mailto:asja.fischer@gmail.com> ;
+                  foaf:depiction <https://media.licdn.com/dms/image/C4E03AQGT__IVsAnjMw/profile-displayphoto-shrink_800_800/0?e=1538006400&v=beta&t=xyQU6tT6pNdgUdFe_O77zdmKj9PfoS4q9FDEcdECq-I> ;
+                  foaf:phone <Tel:+49-341-123456789> ;
+                  foaf:title "Dr. " ;
+                  foaf:status "Senior Researcher" ;
+                  sda:linkedin "https://www.linkedin.com/in/asja-fischer-32007a94" ;
+                  ov:businessCard <http://aksw.org/vCard/Bonn> ;
+                  schema:location <http://sda.tech/Address/SDA> ;
+                  cv:aboutPerson "Dr. Asja Fischer is a Assistant Professor at the Computer Science Department III of the University of Bonn. Before, she was a post-doctoral researcher at the Montreal Institute for Machine Learning (MILA). Between 2010 and end of 2014, Asja was employed both at the Institute for Neural Computation at the Ruhr-University Bochum and the Department of Computer Science at the University of Copenhagen working on her PhD in Machine Learning, which she defended in Copenhagen in 2014. Before, she studied Biology. Bioinformatics, Mathematics and Cognitive Science at the Ruhr-University Bochum, the Universidade de Lisboa and the University of Osnabrück." .
+                  #sda:publication sdapublication:Publication1 ;
+                  #sda:group sdagroup:DeepLearning .
+                  #foaf:currentProject sdaproject: .
 
 
 sdaperson:NiklasPetersen a foaf:Person, sdatech:associateReseracher ;
