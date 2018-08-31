@@ -88,17 +88,6 @@ layout: default
         </div>
       </div>
       <br class="horizontal-separator2" />
-      <h3>Publications</h3>
-      <div class="links">
-        <!-- Displaying all the publications of the PERSON  -->
-       {% capture query %} SELECT ?publication ?title ?date ?publisher ?link  WHERE{
-       <{{page.rdf}}> sda:publication ?publication . ?publication dc:title ?title . ?publication dc:date ?date . ?publication dc:publisher ?publisher . ?publication foaf:homepage ?link . } {% endcapture %} {% assign resultset2 = page.rdf | sparql_query: query %}
-        {% for result4 in resultset2 %}
-        {% include pubEntry.html link=result4.link date=result4.date publisher=result4.publisher title=result4.title  %}
-        {% endfor %}
-        <br class="horizontal-separator" />
-      </div>
-      <br class="horizontal-separator2" />
       <h3>Teaching</h3>
         <!-- Displaying all the courses of the PERSON  -->
         {% capture querytwo %} SELECT ?course ?short ?desc ?coursename ?id ?semester ?year ?maintainer ?name WHERE{ ?course a sdatech:Course . ?course rdfs:label ?short . ?course dct:title ?coursename . ?course ex:description ?desc . ?course sda:id ?id . ?course sda:maintainer ?maintainer . ?maintainer foaf:name ?name . ?course sda:semester ?semester . ?course sda:year ?year . } order by asc(str(?id)) {% endcapture %} {% assign resultset3 = page.rdf | sparql_query: querytwo %}
@@ -111,6 +100,17 @@ layout: default
         <li style="text-align: left;"><a href="{{result5.page}}">{{result5.coursename}}</a> - {{result5.id}}<br> <i>{{result5.desc}}</i><br>
         </li>
       </ul>
+    </div>
+    <br class="horizontal-separator2" />
+    <h3>Publications</h3>
+    <div class="links">
+      <!-- Displaying all the publications of the PERSON  -->
+     {% capture query %} SELECT ?publication ?title ?date ?publisher ?link  WHERE{
+     <{{page.rdf}}> sda:publication ?publication . ?publication dc:title ?title . ?publication dc:date ?date . ?publication dc:publisher ?publisher . ?publication foaf:homepage ?link . } {% endcapture %} {% assign resultset2 = page.rdf | sparql_query: query %}
+      {% for result4 in resultset2 %}
+      {% include pubEntry.html link=result4.link date=result4.date publisher=result4.publisher title=result4.title  %}
+      {% endfor %}
+      <br class="horizontal-separator" />
     </div>
      {% endif %}{% endif %}{% endif %}{% endfor %}
         <br class="horizontal-separator" />
