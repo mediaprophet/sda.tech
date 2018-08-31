@@ -76,7 +76,7 @@ sdaperson:JensLehmann a foaf:Person, sdatech:professor ;
                   schema:location <http://sda.tech/Address/SDA> ;
                   cv:aboutPerson "Prof. Dr. Jens Lehmann (<a href='http://jens-lehmann.org/'>http://www.jens-lehmann.org</a>) is a full professor at the University of Bonn and Fraunhofer IAIS. He is leading the SDA group with 50 researchers. He obtained a PhD with grade summa cum laude at the University of Leipzig in 2010 including research stays at the University of Oxford and a master degree in Computer Science from Technical University of Dresden in 2006. His research interests involve Semantic Web and Artificial Intelligence. He is founder, leader or contributor of several open source projects, including SANSA, AskNow, DL-Learner, DBpedia, LinkedGeoData and ORE. He works/worked in several funded projects, e.g. GeoKnow (EU STREP, coordinator), LOD2 (EU IP, work package lead), LATC (EU STREP, lead for University of Leipzig) and SoftWiki (BmBF). Prof. Dr. Jens Lehmann authored more than 100 articles in international journals and conferences cited more than 11000 times according to Google Scholar." ;
                   sda:publication sdapublication:Publication1 ;
-                  sda:group sdagroup:SemanticQuestionAnswering, sdagroup:DistributedSemanticAnalytics, sdagroup:SmartServices ;
+                  sda:group sdagroup:SemanticQuestionAnswering, sdagroup:DistributedSemanticAnalytics, sdagroup:SmartServices, sdagroup:KnowledgeGraph ;
                   foaf:currentProject sdaproject:BigDataEurope, sdaproject:Boost40, sdaproject:SANSAStack, sdaproject:DLLearner, sdaproject:AskNow, sdaproject:SMLBench, sdaproject:SLIPO, sdaproject:QROWD, sdaproject:HOBBIT, sdaproject:WDAqua .
 
 ##############################Senior Researchers#########################
@@ -177,7 +177,7 @@ sdaperson:HamedShariatYazdi a foaf:Person, sdatech:seniorResearcher ;
                   schema:location <http://sda.tech/Address/SDA> ;
                   cv:aboutPerson "Dr. Hamed Shariat Yazdi is a Senior Researcher at the University of Bonn." ;
                   #sda:publication sdapublication:Publication1 ;
-                  sda:group sdagroup:SoftwareEngineeringForDataScience .
+                  sda:group sdagroup:KnowledgeGraph .
                   #foaf:currentProject sdaproject: .
 
 sdaperson:GiulioNapolitano a foaf:Person, sdatech:seniorResearcher ;
@@ -709,7 +709,7 @@ sdaperson:AfshinSadeghi a foaf:Person, sdatech:phdStudent ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    schema:location <http://sda.tech/Address/SDA> ;
                    cv:aboutPerson "Afshin Sadeghi is a PhD Student at the University of Bonn." ;
-                   sda:group sdagroup:DistributedSemanticAnalytics ;
+                   sda:group sdagroup:KnowledgeGraph ;
                    foaf:currentProject sdaproject:SANSAStack, sdaproject:OSCOSS .
 
 sdaperson:IsaiahOnandoMulang a foaf:Person, sdatech:phdStudent ;
@@ -731,6 +731,7 @@ sdaperson:IsaiahOnandoMulang a foaf:Person, sdatech:phdStudent ;
                    sda:github "" ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    schema:location <http://sda.tech/Address/SDA> ;
+                   sda:group sdagroup:KnowledgeGraph ;
                    cv:aboutPerson "Isaiah Onando Mulang' is a PhD Student at the University of Bonn." .
 
 sdaperson:DenisLukovnikov a foaf:Person, sdatech:phdStudent ;
@@ -840,7 +841,7 @@ sdaperson:MojtabaNayyeri a foaf:Person, sdatech:phdStudent ;
                    sda:github "" ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    schema:location <http://sda.tech/Address/SDA> ;
-                   sda:group sdagroup:SoftwareEngineeringforDataScience ;
+                   sda:group sdagroup:KnowledgeGraph ;
                    cv:aboutPerson "Mojtaba Nayyeri is a PhD Student at the University of Bonn.".
 
 ##############################Associated Researchers#####################
@@ -1170,6 +1171,7 @@ sdaperson:NileshChakraborty a foaf:Person, sdatech:studentAssistant ;
                    sda:github "https://github.com/nilesh-c" ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    schema:location <http://sda.tech/Address/SDA> ;
+                   sda:group sdagroup:KnowledgeGraph ;
                    cv:aboutPerson "Nilesh Chakraborty is a Graduate Research Assistant at the Computer Science Department III of the University of Bonn." .
 
 sdaperson:GauravMaheshwari a foaf:Person, sdatech:studentAssistant ;
@@ -1191,6 +1193,7 @@ sdaperson:GauravMaheshwari a foaf:Person, sdatech:studentAssistant ;
                    sda:github "" ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    schema:location <http://sda.tech/Address/SDA> ;
+                   sda:group sdagroup:SemanticQuestionAnswering ;
                    cv:aboutPerson "Gaurav Maheshwari is a Student Assistant at the Computer Science Department III of the University of Bonn." .
 
 sdaperson:PriyanshTrivedi a foaf:Person, sdatech:studentAssistant ;
@@ -1212,6 +1215,7 @@ sdaperson:PriyanshTrivedi a foaf:Person, sdatech:studentAssistant ;
                    sda:github "" ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    schema:location <http://sda.tech/Address/SDA> ;
+                   sda:group sdagroup:SemanticQuestionAnswering ;
                    cv:aboutPerson "Priyansh Trivedi is a Student Assistant at the Computer Science Department III of the University of Bonn." .
 
 sdaperson:JeanHernandez a foaf:Person, sdatech:studentAssistant ;
@@ -1312,6 +1316,7 @@ sdaperson:DebayanBanerjee a foaf:Person, sdatech:studentAssistant ;
                    sda:github "" ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    schema:location <http://sda.tech/Address/SDA> ;
+                   sda:group sdagroup:SemanticQuestionAnswering ;
                    cv:aboutPerson "Debayan Banerjee is a Student Assistant at the Computer Science Department III of the University of Bonn." .
 
 sdaperson:MingQu a foaf:Person, sdatech:studentAssistant ;
@@ -1392,6 +1397,7 @@ sdaperson:MehdiAli a foaf:Person, sdatech:studentAssistant ;
                    sda:github "" ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    schema:location <http://sda.tech/Address/SDA> ;
+                   sda:group sdagroup:KnowledgeGraph ;
                    cv:aboutPerson "Mehdi Ali is a Student Assistant at the Computer Science Department III of the University of Bonn." .
 
 sdaperson:AdrianBajraktari a foaf:Person, sdatech:studentAssistant ;
@@ -1629,7 +1635,6 @@ sdagroup:DistributedSemanticAnalytics a aiiso:ResearchGroup, sdatech:Group ;
                                 rdfs:label "Distributed Semantic Analytics" ;
                                 foaf:member sdaperson:JensLehmann, sdaperson:GezimSejdiu, sdaperson:HajiraJabeen, sdaperson:HarshThakkar, sdaperson:AnisaRula ;
                                 dbo:leader sdaperson:HajiraJabeen ;
-                                foaf:pastProject sdaproject:SHORE, sdaproject:WAVE ;
                                 foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
                                 foaf:currentProject sdaproject:DLLearner, sdaproject:BigDataEurope, sdaproject:SANSAStack, sdaproject:Boost40 ;
                                 dct:abstract "Aims to develop scalable analytics algorithms based on Apache Spark and Apache Flink for analysing large scale RDF datasets" ;
@@ -1671,7 +1676,6 @@ sdagroup:SemanticDataManagement a aiiso:ResearchGroup, sdatech:Group ;
                                 foaf:member sdaperson:JensLehmann, sdaperson:ChristophLange ;
                                 dbo:leader sdaperson:ChristophLange, sdaperson:SteffenLohmann ;
                                 foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
-                                foaf:pastProject sdaproject:SHORE, sdaproject:WAVE ;
                                 foaf:currentProject sdaproject:BigDataEurope ;
                                 dct:description "The group's research focus is on knowledge and data representation, integration, and management based on semantic technologies." ;
                                 dct:abstract "Focuses on Knowledge and data representation, integration, and management based on semantic technologies." ;
@@ -1685,7 +1689,6 @@ sdagroup:SemanticQuestionAnswering a aiiso:ResearchGroup, sdatech:Group ;
                                 foaf:member sdaperson:JensLehmann, sdaperson:MohnishDubey, sdaperson:IoannaLytra, sdaperson:HamidZafar, sdaperson:DebanjanChaudhuri, sdaperson:GiulioNapolitano ;
                                 dbo:leader sdaperson:GiulioNapolitano, sdaperson:IoannaLytra ;
                                 foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
-                                foaf:pastProject sdaproject:SHORE, sdaproject:WAVE ;
                                 foaf:currentProject sdaproject:AskNow, sdaproject:WDAqua ;
                                 dct:description "The use of Semantic Web technologies led to an increasing number of structured data published on the Web. Despite the advances in question answering systems retrieving the desired information from structured sources is still a substantial challenge." ;
                                 dct:abstract "Make use of Semantic Web technologies and AI for better and advanced  question answering & dialogue systems" ;
@@ -1696,11 +1699,10 @@ sdagroup:SemanticQuestionAnswering a aiiso:ResearchGroup, sdatech:Group ;
 ##Software Engineering for Data Science
 sdagroup:SoftwareEngineeringForDataScience a aiiso:ResearchGroup, sdatech:Group ;
                                 rdfs:label "Software Engineering for Data Science" ;
-                                foaf:member sdaperson:JensLehmann, sdaperson:GuenterKniesel, sdaperson:HamedShariatYazdi ;
-                                dbo:leader sdaperson:GuenterKniesel, sdaperson:HamedShariatYazdi ;
+                                foaf:member sdaperson:JensLehmann, sdaperson:GuenterKniesel ;
+                                dbo:leader sdaperson:GuenterKniesel ;
                                 foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
                                 foaf:currentProject sdaproject:SANSAStack ;
-                                foaf:pastProject sdaproject:SHORE, sdaproject:WAVE ;
                                 dct:description """The group focuses on combining Semantic Web and Software Engineering technologies to develop novel methods, techniques, and tools that advance the way in which software is designed, synthetised and assessed.""" ;
                                 dct:abstract "Researches on how data and software engineering methods can be aligned with Data Science." ;
                                 sda:publication sdapublication:Publication1 ;
@@ -1710,8 +1712,8 @@ sdagroup:SoftwareEngineeringForDataScience a aiiso:ResearchGroup, sdatech:Group 
 ##Knowledge Graph
 sdagroup:KnowledgeGraph a aiiso:ResearchGroup, sdatech:Group ;
                                 rdfs:label "Knowledge Graph" ;
-                                foaf:member sdaperson:JensLehmann, sdaperson:HamedShariatYazdi ;
-                                dbo:leader sdaperson:GuenterKniesel, sdaperson:HamedShariatYazdi ;
+                                foaf:member sdaperson:JensLehmann, sdaperson:HamedShariatYazdi, sdaperson:AfshinSadeghi, sdaperson:MojtabaNayyeri, sdaperson:MehdiAli ;
+                                dbo:leader sdaperson:HamedShariatYazdi ;
                                 foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
                                 foaf:currentProject sdaproject:SANSAStack ;
                                 #foaf:pastProject ;
@@ -1729,7 +1731,6 @@ sdagroup:StructuredMachineLearning a aiiso:ResearchGroup, sdatech:Group ;
                                 dbo:leader sdaperson:JensLehmann ;
                                 foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
                                 foaf:currentProject sdaproject:DLLearner, sdaproject:SMLBench ;
-                                foaf:pastProject sdaproject:SHORE, sdaproject:WAVE ;
                                 dct:description "The group focuses on combining Semantic Web and supervised Machine Learning technologies. The goal is to improve both quality and quantity of available knowledge by extracting, analysing, enriching and linking existing data. The group also provides several established open source tools, frameworks and demonstrators." ;
                                 dct:abstract "Combines Semantic Web and supervised ML technologies in order to improve both quality and quantity of available knowledge." ;
                                 sda:publication sdapublication:Publication1 ;
@@ -1742,7 +1743,6 @@ sdagroup:SmartServices a aiiso:ResearchGroup, sdatech:Group ;
                                 rdfs:label "Smart Services" ;
                                 foaf:member sdaperson:JensLehmann, sdaperson:SimonScerri ;
                                 dbo:leader sdaperson:MariaMaleshkova, sdaperson:SimonScerri  ;
-                                foaf:pastProject sdaproject:SHORE, sdaproject:WAVE ;
                                 foaf:currentProject sdaproject:SLIPO, sdaproject:BigDataEurope, sdaproject:Boost40 ;
                                 dct:description "Semantic services and their composition, applications in IoT." ;
                                 dct:abstract "Semantic services and their composition, applications in IoT." ;
