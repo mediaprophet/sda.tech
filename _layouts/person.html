@@ -31,10 +31,18 @@ layout: default
               {% if boolResearchGate and boolResearchGate != "" and boolResearchGate != nil  %}<a href="{{ page.rdf | rdf_property: 'sda:researchgate' }}" target="_blank"><i style="font-weight:900" class="fa fa-researchgate" aria-hidden="true">RG</i></a>{% endif %}
               {% if boolGoogleScholar and boolGoogleScholar != "" and boolGoogleScholar != nil  %}<a href="{{ page.rdf | rdf_property: 'sda:googlescholar' }}" target="_blank"><i class="fa fa-google" aria-hidden="true"></i> </a>{% endif %}
         </div>
-          <p style="margin-top:0.6cm;text-align:left;">{{page.rdf | rdf_property: 'sda:room'}} <br/> {{page.rdf | rdf_property: 'sda:address'}} <br/>  {{page.rdf | rdf_property: 'foaf:phone'}}  <br/> <a style="padding-right:2px; padding-left:2px; color: black;" href="mailto:{{page.rdf | rdf_property: 'foaf:mbox' |remove: 'mailto:' | encode_email}}">{{page.rdf | rdf_property: 'foaf:mbox' |remove: 'mailto:'}} </a></p>
+        <p style="margin-top:0.6cm;text-align:left;">{{page.rdf | rdf_property: 'sda:room'}} <br/>
+        {% capture location %}{{ page.rdf | rdf_property: 'schema:location' }}{% endcapture %}
+        {% capture query %} SELECT ?postaladdress ?streetAddress ?postalCode ?addressLocality WHERE { <{{location}}> a ?postaladdress .  <{{location}}> schema:streetAddress ?streetAddress . <{{location}}> schema:postalCode ?postalCode . <{{location}}> schema:addressLocality ?addressLocality .}  {% endcapture %}{% assign paddress = page.rdf | sparql_query: query %}
+        {% for group in paddress %}
+          {{group.streetAddress}}, {{group.postalCode}} {{group.addressLocality}}
+        {% endfor %}
+        <br/> {{page.rdf | rdf_property: 'foaf:phone'}}  <br/> <a style="padding-right:2px; padding-left:2px; color: black;" href="mailto:{{page.rdf | rdf_property: 'foaf:mbox' |remove: 'mailto:' | encode_email}}">{{page.rdf | rdf_property: 'foaf:mbox' |remove: 'mailto:'}} </a></p>
         </div>
         <hr width="60%" style="margin-left: 20%;margin-right: 20%;">
-  </div>
+      </div>
+
+  <br class="horizontal-separator2" />
       <br class="horizontal-separator2" />
       <h3>Short CV</h3>
       <div class="description-project">
@@ -88,17 +96,6 @@ layout: default
         </div>
       </div>
       <br class="horizontal-separator2" />
-      <h3>Publications</h3>
-      <div class="links">
-        <!-- Displaying all the publications of the PERSON  -->
-       {% capture query %} SELECT ?publication ?title ?date ?publisher ?link  WHERE{
-       <{{page.rdf}}> sda:publication ?publication . ?publication dc:title ?title . ?publication dc:date ?date . ?publication dc:publisher ?publisher . ?publication foaf:homepage ?link . } {% endcapture %} {% assign resultset2 = page.rdf | sparql_query: query %}
-        {% for result4 in resultset2 %}
-        {% include pubEntry.html link=result4.link date=result4.date publisher=result4.publisher title=result4.title  %}
-        {% endfor %}
-        <br class="horizontal-separator" />
-      </div>
-      <br class="horizontal-separator2" />
       <h3>Teaching</h3>
         <!-- Displaying all the courses of the PERSON  -->
         {% capture querytwo %} SELECT ?course ?short ?desc ?coursename ?id ?semester ?year ?maintainer ?name WHERE{ ?course a sdatech:Course . ?course rdfs:label ?short . ?course dct:title ?coursename . ?course ex:description ?desc . ?course sda:id ?id . ?course sda:maintainer ?maintainer . ?maintainer foaf:name ?name . ?course sda:semester ?semester . ?course sda:year ?year . } order by asc(str(?id)) {% endcapture %} {% assign resultset3 = page.rdf | sparql_query: querytwo %}
@@ -111,6 +108,17 @@ layout: default
         <li style="text-align: left;"><a href="{{result5.page}}">{{result5.coursename}}</a> - {{result5.id}}<br> <i>{{result5.desc}}</i><br>
         </li>
       </ul>
+    </div>
+    <br class="horizontal-separator2" />
+    <h3>Publications</h3>
+    <div class="links">
+      <!-- Displaying all the publications of the PERSON  -->
+     {% capture query %} SELECT ?publication ?title ?date ?publisher ?link  WHERE{
+     <{{page.rdf}}> sda:publication ?publication . ?publication dc:title ?title . ?publication dc:date ?date . ?publication dc:publisher ?publisher . ?publication foaf:homepage ?link . } {% endcapture %} {% assign resultset2 = page.rdf | sparql_query: query %}
+      {% for result4 in resultset2 %}
+      {% include pubEntry.html link=result4.link date=result4.date publisher=result4.publisher title=result4.title  %}
+      {% endfor %}
+      <br class="horizontal-separator" />
     </div>
      {% endif %}{% endif %}{% endif %}{% endfor %}
         <br class="horizontal-separator" />
