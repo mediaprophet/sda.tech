@@ -72,7 +72,7 @@ sdaperson:JensLehmann a foaf:Person, sdatech:professor ;
                   sda:website "http://jens-lehmann.org/" ;
                   sda:twitter "https://twitter.com/JLehmann82" ;
                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
-                  schema:location <http://sda.tech/Address/SDA> ;
+                  schema:location <http://sda.tech/Address/SDA>, <http://sda.tech/Address/IAIS>, <http://sda.tech/Address/InfAI> ;
                   cv:aboutPerson "Prof. Dr. Jens Lehmann (<a href='http://jens-lehmann.org/'>http://www.jens-lehmann.org</a>) is a full professor at the University of Bonn and Fraunhofer IAIS. He is leading the SDA group with 50 researchers. He obtained a PhD with grade summa cum laude at the University of Leipzig in 2010 including research stays at the University of Oxford and a master degree in Computer Science from Technical University of Dresden in 2006. His research interests involve Semantic Web and Artificial Intelligence. He is founder, leader or contributor of several open source projects, including SANSA, AskNow, DL-Learner, DBpedia, LinkedGeoData and ORE. He works/worked in several funded projects, e.g. GeoKnow (EU STREP, coordinator), LOD2 (EU IP, work package lead), LATC (EU STREP, lead for University of Leipzig) and SoftWiki (BmBF). Prof. Dr. Jens Lehmann authored more than 100 articles in international journals and conferences cited more than 11000 times according to Google Scholar." ;
                   sda:publication sdapublication:Publication1 ;
                   sda:group sdagroup:SemanticQuestionAnswering, sdagroup:DistributedSemanticAnalytics, sdagroup:SmartServices, sdagroup:KnowledgeGraph ;
@@ -3847,14 +3847,14 @@ sda:thesisLevel a owl:DatatypeProperty;
                                 geo:long "7.0943671"^^xsd:float ;
                                 geo:geometry "POINT(7.0943671 50.7519185)" .
 
-<http://aksw.org/Address/InfAI> a schema:PostalAddress ;
+<http://sda.tech/Address/InfAI> a schema:PostalAddress ;
                                   rdfs:label "Leipzig University, Ritterstraße 26, 04109 Leipzig" ;
                                   schema:addressCountry "Germany" ;
                                   schema:addressLocality "Leipzig" ;
                                   schema:postalCode "04109" ;
                                   schema:streetAddress "Ritterstraße 26" .
 
-<http://aksw.org/Address/IAIS> a schema:PostalAddress ;
+<http://sda.tech/Address/IAIS> a schema:PostalAddress ;
                                  rdfs:label "Fraunhofer IAIS, Schloss Birlinghoven, 53757 Sankt Augustin, Germany" ;
                                  schema:addressCountry "Germany" ;
                                  schema:addressLocality "Sankt Augustin" ;
