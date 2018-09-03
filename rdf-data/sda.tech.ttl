@@ -2965,6 +2965,46 @@ sdathesis:rdf-2-resume a dct:BibliographicResource, bibo:Thesis, sdatech:openThe
     sda:thesisLevel "BS" ;
     dct:abstract """Basically, this subject would offer the student the possibility of entering in the SemanticWeb world while creating a fancy and useful tool. In a nutshell, RDF2Résumé would imply (1) to design a résumé ontology; (2) to be provide a simple tool (a simple piece of software such as a script) able to generate -let’s say- LaTeX code from an RDF file compliant with the aforementioned ontology; (3) in parallel to propose several final résumé templates; (4) and finally to realize a basic user-interface; (+) to give the possibility of automatically changing languages.""" .
 
+sdathesis:distributed-anomaly-detection-in-rdf a dct:BibliographicResource, bibo:Thesis, sdatech:openThesis, sdatech:masterThesis ;
+    dct:title "Distributed Anomaly Detection in RDF" ;
+    dct:creator sdaperson:HajiraJabeen ;
+    foaf:maker sdaperson:HajiraJabeen ;
+    dct:issued "2018-08"^^xsd:gYearMonth ;
+    dct:language "en-US" ;
+    bibo:degree biboDegree:phd ;
+    sda:thesisLevel "MS" ;
+    dct:abstract """Detecting anomalies in data is a vital task, with numerous high-impact applications in areas such as security, finance, health care, and law enforcement. While numerous  techniques  have  been  developed  in  past  years  for  spotting  outliers  and anomalies in unstructured collections of multi-dimensional points, with graph data becoming ubiquitous, techniques for structured graph data have been of focus recently. As objects in graphs have long-range correlations, a suite of novel technology has been developed for anomaly detection in graph data.""" .
+
+sdathesis:rdf-data-clustering a dct:BibliographicResource, bibo:Thesis, sdatech:openThesis, sdatech:masterThesis ;
+    dct:title "RDF Data Clustering" ;
+    dct:creator sdaperson:HajiraJabeen ;
+    foaf:maker sdaperson:HajiraJabeen ;
+    dct:issued "2018-09"^^xsd:gYearMonth ;
+    dct:language "en-US" ;
+    bibo:degree biboDegree:phd ;
+    sda:thesisLevel "MS" ;
+    dct:abstract """Clustering of heterogenous data contained in a Knowledgegraph""" .
+
+sdathesis:rdf-data-anonymization a dct:BibliographicResource, bibo:Thesis, sdatech:openThesis, sdatech:masterThesis ;
+    dct:title "RDF data anonymization" ;
+    dct:creator sdaperson:HajiraJabeen ;
+    foaf:maker sdaperson:HajiraJabeen ;
+    dct:issued "2018-09"^^xsd:gYearMonth ;
+    dct:language "en-US" ;
+    bibo:degree biboDegree:phd ;
+    sda:thesisLevel "MS" ;
+    dct:abstract """Anonymization of knowledge graphs data for security purposes""" .
+
+sdathesis:rdf-data-ruleminingrdf-data-anonymization a dct:BibliographicResource, bibo:Thesis, sdatech:openThesis, sdatech:masterThesis ;
+    dct:title "RDF data rulemining" ;
+    dct:creator sdaperson:HajiraJabeen ;
+    foaf:maker sdaperson:HajiraJabeen ;
+    dct:issued "2018-09"^^xsd:gYearMonth ;
+    dct:language "en-US" ;
+    bibo:degree biboDegree:phd ;
+    sda:thesisLevel "MS" ;
+    dct:abstract """Mining rules from RDF data for knowledge base completion""" .
+
 
 ########################onGoingThesis########################
 sdathesis:big-data-quality-assessment  a dct:BibliographicResource, bibo:Thesis, sdatech:ongoingThesis, sdatech:masterThesis ;
