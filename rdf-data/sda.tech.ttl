@@ -2904,6 +2904,64 @@ sdathesis:rdf-data-ruleminingrdf-data-anonymization a dct:BibliographicResource,
     sda:thesisLevel "MS" ;
     dct:abstract """Mining rules from RDF data for knowledge base completion""" .
 
+sdathesis:a-block-chain-forecast-model a dct:BibliographicResource, bibo:Thesis, sdatech:openThesis, sdatech:masterThesis ;
+    dct:title "A block-chain forecast model: Extracting & analyzing user most used smart-contract features to predict block-chain future" ;
+    dct:creator sdaperson:DamienGraux ;
+    foaf:maker sdaperson:DamienGraux ;
+    dct:issued "2018-09"^^xsd:gYearMonth ;
+    dct:language "en-US" ;
+    bibo:degree biboDegree:phd ;
+    sda:thesisLevel "MS" ;
+    dct:abstract """In the recent past years, the block-chain concept [https://en.wikipedia.org/wiki/Blockchain] has become a key technology to record transactions between two parties while providing several properties. Up on the general block-chain architecture, some distributed computing platform have emerged such as the Ethereum [https://en.wikipedia.org/wiki/Ethereum] which gives the opportunity of building and deploying smart contracts [https://en.wikipedia.org/wiki/Smart_contract]: automatic actions that can be triggered by specific events in the chain.By construction, block-chain-related technologies are open-source and publicly available which allows one user to check for instance the complete history of the chain or some specific events. Moreover, the structure of the chain itself can also be represented as a large knowledge graph.The goal of this study is to crawl the Ethereum block-chain smart-contracts history -leveraging the knowledge graph introduced above- in order to compute statistics and then try to predict the future of the chain. To do so, several steps have to be done:
+                1. being able to retrieve information inside the large RDF graph representing the chain using the SPARQL query language;
+                2. understanding the way smart-contracts are scripted;
+                3. deploying ML algorithm on these data excerpts;
+                4. drawing conclusions""" .
+
+sdathesis:semantic-integration-approach-for-big-data a dct:BibliographicResource, bibo:Thesis, sdatech:openThesis, sdatech:masterThesis ;
+    dct:title "Semantic Integration Approach for Big Data" ;
+    dct:creator sdaperson:DiegoCollarana ;
+    foaf:maker sdaperson:DiegoCollarana ;
+    dct:issued "2018-09"^^xsd:gYearMonth ;
+    dct:language "en-US" ;
+    bibo:degree biboDegree:phd ;
+    sda:thesisLevel "MS" ;
+    dct:abstract """Current Big Data platforms do not provide a semantic integration mechanism, especially in the context of integrating semantically equivalent entities that not share an ID.
+In the context of this thesis, the student will evaluate and make the necessary extensions to the MINTE integration framework in a Big Data scenario.""" .
+
+sdathesis:semantic-similarity-metric-for-big-data a dct:BibliographicResource, bibo:Thesis, sdatech:openThesis, sdatech:masterThesis ;
+    dct:title "Semantic Similarity Metric for Big Data" ;
+    dct:creator sdaperson:DiegoCollarana ;
+    foaf:maker sdaperson:DiegoCollarana ;
+    dct:issued "2018-09"^^xsd:gYearMonth ;
+    dct:language "en-US" ;
+    bibo:degree biboDegree:phd ;
+    sda:thesisLevel "MS" ;
+    dct:abstract """Identifying when two entities, coming from different data sources, are the same is a key step in the data analysis process.
+The goal of this thesis topic is to evaluate the performance of the semantic similarity metrics we have develop in a Big Data scenario.
+So we will build a framework/operators of the semantic similarity functions and evaluate.""" .
+
+sdathesis:embeddings-for-rdf-molecules a dct:BibliographicResource, bibo:Thesis, sdatech:openThesis, sdatech:masterThesis ;
+    dct:title "Embedding’s for RDF Molecules" ;
+    dct:creator sdaperson:DiegoCollarana ;
+    foaf:maker sdaperson:DiegoCollarana ;
+    dct:issued "2018-09"^^xsd:gYearMonth ;
+    dct:language "en-US" ;
+    bibo:degree biboDegree:phd ;
+    sda:thesisLevel "MS" ;
+    dct:abstract """The use of embeddings in the NLP community is already a common practice. Currently there are the same efforts in the Knowledge Graphs community.
+Several approaches such as TransE, RDF2Vec, etc… propose models to create embeddings out of the RDF molecules.
+The goal of this thesis is to extend the similarity metric MateTee with the state-of-the-art-approaches to create embedding from Knowledge Graph Entities.""" .
+
+sdathesis:rdf-molecules-browser a dct:BibliographicResource, bibo:Thesis, sdatech:openThesis, sdatech:masterThesis ;
+    dct:title "RDF Molecules Browser" ;
+    dct:creator sdaperson:DiegoCollarana ;
+    foaf:maker sdaperson:DiegoCollarana ;
+    dct:issued "2018-09"^^xsd:gYearMonth ;
+    dct:language "en-US" ;
+    bibo:degree biboDegree:phd ;
+    sda:thesisLevel "MS" ;
+    dct:abstract """Forster serendipitous discoveries by browsing RDF molecules of data, specially focus on the facets/filters to promote knowledge discovery not intended initially.""" .
 
 ########################onGoingThesis########################
 sdathesis:big-data-quality-assessment  a dct:BibliographicResource, bibo:Thesis, sdatech:ongoingThesis, sdatech:masterThesis ;
