@@ -44,7 +44,7 @@ layout: default
             {% endfor %}
         {% endfor %}
 
-        <br/> {{page.rdf | rdf_property: 'foaf:phone'}}  <br/> <a style="padding-right:2px; padding-left:2px; color: black;" href="mailto:{{page.rdf | rdf_property: 'foaf:mbox' |remove: 'mailto:' | encode_email}}">{{page.rdf | rdf_property: 'foaf:mbox' |remove: 'mailto:'}} </a></p>
+        </p><p style="text-align:left;font-size:80%;"> {{page.rdf | rdf_property: 'foaf:phone'}}  <br/> <a style="padding-right:2px; padding-left:2px; color: black;" href="mailto:{{page.rdf | rdf_property: 'foaf:mbox' |remove: 'mailto:' | encode_email}}">{{page.rdf | rdf_property: 'foaf:mbox' |remove: 'mailto:'}} </a></p>
         </div>
         <hr width="60%" style="margin-left: 20%;margin-right: 20%;">
       </div>
