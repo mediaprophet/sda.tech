@@ -30,7 +30,11 @@ SELECT ?position WHERE{
               {% capture navlabel%}{{result2.label}}{% endcapture %}
               {% capture icon%}{{result2.icon}}{% endcapture %}
                 <a href="{{ urlNav | remove:"index.html" }}" class="{% if include.active == navlabel %}active{% endif %} responsiveTabItem" onclick="#"><i class="{{icon}}"  aria-hidden="true"></i>
-                     {{result2.label}}
+                  {% if navlabel == "People"%}
+                    All Members
+                  {% else %}
+                    {{result2.label}}
+                  {% endif %} 
                 </a>
                 {% if navlabel == "PhD Students"%}
                   <br class="breakpoint-pagination"/><br class="breakpoint-pagination" />

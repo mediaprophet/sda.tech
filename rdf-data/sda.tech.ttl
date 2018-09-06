@@ -3624,7 +3624,7 @@ sdablog:generalposts a foaf:Document ;
 ##########################Person Documents######################################
 sdatech:people a foaf:Document ;
           sda:miniIcon "fa fa-list-alt margin-icon";
-          rdfs:label "All Members" .
+          rdfs:label "People" .
 
 sdapeople:professors a foaf:Document ;
           sda:miniIcon "fa fa-pencil-square-o margin-icon";
