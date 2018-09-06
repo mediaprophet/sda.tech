@@ -3623,28 +3623,36 @@ sdablog:generalposts a foaf:Document ;
 
 ##########################Person Documents######################################
 sdatech:people a foaf:Document ;
-          rdfs:label "People" .
+          sda:miniIcon "fa fa-list-alt margin-icon";
+          rdfs:label "All Members" .
 
-sdatech:professors a foaf:Document ;
-          rdfs:label "Professors Page" .
+sdapeople:professors a foaf:Document ;
+          sda:miniIcon "fa fa-pencil-square-o margin-icon";
+          rdfs:label "Professors" .
 
-sdatech:seniorresearchers a foaf:Document ;
-          rdfs:label "Senior Researchers Page" .
+sdapeople:seniorresearchers a foaf:Document ;
+          sda:miniIcon "fa fa-user-circle-o margin-icon";
+          rdfs:label "Senior Researchers" .
 
-sdatech:phdstudents a foaf:Document ;
-          rdfs:label "PHD Students" .
+sdapeople:phdstudents a foaf:Document ;
+          sda:miniIcon "fa fa-graduation-cap margin-icon";
+          rdfs:label "PhD Students" .
 
-sdatech:associatedresearchers a foaf:Document ;
-          rdfs:label "Associate Researchers Page" .
+sdapeople:associatedresearchers a foaf:Document ;
+          sda:miniIcon "fa fa-user margin-icon";
+          rdfs:label "Associate Researchers" .
 
-sdatech:studentassistant a foaf:Document ;
-          rdfs:label "Student Assistants Page" .
+sdapeople:studentassistants a foaf:Document ;
+          sda:miniIcon "fa fa-users margin-icon";
+          rdfs:label "Student Assistants" .
 
-sdatech:interns a foaf:Document ;
-          rdfs:label "Interns Page" .
+sdapeople:interns a foaf:Document ;
+          sda:miniIcon "fa fa-user-plus margin-icon";
+          rdfs:label "Interns" .
 
-sdatech:formermembers a foaf:Document ;
-          rdfs:label "Former Members Page" .
+sdapeople:formermembers a foaf:Document ;
+          sda:miniIcon "fa fa-address-card margin-icon";
+          rdfs:label "Former Members" .
 
 #########################Teaching Documents#####################################
 sdatech:teaching a foaf:Document ;

@@ -4,8 +4,8 @@ layout: default
 toggleOnDiv: Prof
 toggledURLTo: /professors/
 ---
-{% include togglePeopleTypes.html %}
-{% include toggleInitialPageLink.html div=page.toggleOnDiv linkto=page.toggledURLTo %}
+<!-- {% include togglePeopleTypes.html %}
+{% include toggleInitialPageLink.html div=page.toggleOnDiv linkto=page.toggledURLTo %} -->
 <div class="pagination">
   {% include peopleHeader.html active ="Professors" %}
 </div>
@@ -14,6 +14,6 @@ toggledURLTo: /professors/
 </div>
 <br class="horizontal-separator" />
 <!--Initial Script  -->
-<script>
+<!-- <script>
   changeActivePersons("{{site.data.peopleTypes[0].name}}");
-</script>
+</script> -->

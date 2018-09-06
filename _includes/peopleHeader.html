@@ -1,4 +1,49 @@
-<a href="#" id="AllMembers" class="{% if include.active == 'AllMembers' %}active{% endif %} responsiveTabItem" onclick="changeActivePersons('All Members')"><i class="{{site.data.peopleTypes[7].class}}" aria-hidden="true"></i>
+{% assign count = 0 %}
+{% capture query %}
+# select all main Navigation position properties for counting
+SELECT ?position WHERE{
+    sdatech:PeopleNavigation ?positionProp ?resource .
+    ?positionProp a rdfs:ContainerMembershipProperty .
+    ?positionProp rdfs:label ?position .
+}
+{% endcapture %}
+{% assign resultset = page.rdf | sparql_query: query %}
+{% for result in resultset %}
+
+{% assign count = count | plus : 1 %}
+  {% capture query2 %}
+  # select menu entry for current count
+  SELECT ?resource ?label ?icon WHERE{
+      sdatech:PeopleNavigation ?positionProp ?resource .
+      ?positionProp a rdfs:ContainerMembershipProperty .
+      ?positionProp rdfs:label "{{count}}" .
+      ?resource a foaf:Document .
+      ?resource rdfs:label ?label .
+      optional{ ?resource sda:miniIcon ?icon } .
+  }
+  {% endcapture %}
+  {% assign resultset2 = page.rdf | sparql_query: query2 %}
+    {% for result2 in resultset2 %}
+        {% for page in site.pages %}
+            {% if page.rdf.iri == result2.resource.iri %}
+              {% capture urlNav %}{{page.url}}{% endcapture %}
+              {% capture navlabel%}{{result2.label}}{% endcapture %}
+              {% capture icon%}{{result2.icon}}{% endcapture %}
+                <a href="{{ urlNav | remove:"index.html" }}" class="{% if include.active == navlabel %}active{% endif %} responsiveTabItem" onclick="#"><i class="{{icon}}"  aria-hidden="true"></i>
+                     {{result2.label}}
+                </a>
+                {% if navlabel == "PhD Students"%}
+                  <br class="breakpoint-pagination"/><br class="breakpoint-pagination" />
+                {% endif %}
+            {% endif %}
+        {% endfor %}
+    {% endfor %}
+{% endfor%}
+
+
+
+
+<!-- <a href="#" id="AllMembers" class="{% if include.active == 'AllMembers' %}active{% endif %} responsiveTabItem" onclick="changeActivePersons('All Members')"><i class="{{site.data.peopleTypes[7].class}}" aria-hidden="true"></i>
      {{site.data.peopleTypes[7].name}}</a>
 <a href="#" id="{{site.data.peopleTypes[0].name | remove: ' '}}" class="{% if include.active == 'Professors' %}active{% endif %} responsiveTabItem" onclick="changeActivePersons('{{site.data.peopleTypes[0].name}}')"><i class="{{site.data.peopleTypes[0].class}}" aria-hidden="true"></i>
     {{site.data.peopleTypes[0].name}}</a>
@@ -14,20 +59,6 @@
 <a href="#" id="{{site.data.peopleTypes[5].name | remove: ' ' }}" class="{% if include.active == 'Interns' %}active{% endif %} responsiveTabItem" onclick="changeActivePersons('{{site.data.peopleTypes[5].name}}')"><i class="{{site.data.peopleTypes[5].class}}" aria-hidden="true"></i>
     {{site.data.peopleTypes[5].name}}</a>
 <a href="#" id="{{site.data.peopleTypes[6].name | remove: ' ' }}" class="{% if include.active == 'FormerMembers' %}active{% endif %} responsiveTabItem" onclick="changeActivePersons('{{site.data.peopleTypes[6].name}}')"><i class="{{site.data.peopleTypes[6].class}}" aria-hidden="true"></i>
-    {{site.data.peopleTypes[6].name}}</a>
+    {{site.data.peopleTypes[6].name}}</a> -->
 <br/><br/>
 <hr class="ruleh" />
-
-<!--
-
-
-{% for people in site.data.peopleTypes %} {% assign p = people.name %}{% unless p  == "All Members" %}
-  {% if p  == "Associated researches" %}
-    <br class="breakpoint-pagination"/><br class="breakpoint-pagination"/>
-  {% endif %}
-  {% if site.activePeople == p %}
-  <a href="#" id="{{people.name | remove: " " }}" class="active responsiveTabItem" onclick="changeActivePersons('{{people.name}}')"><i class="{{people.class}}" aria-hidden="true"></i>
-     {{people.name}}</a> {% else %}
-  <a href="#" id="{{people.name | remove: " " }}" class="responsiveTabItem" onclick="changeActivePersons('{{people.name}}')"><i class="{{people.class}}" aria-hidden="true"></i> {{people.name}}</a> {% endif%}{% endunless %} {% endfor %}
-<br/><br/>
-<hr class="ruleh" /> -->

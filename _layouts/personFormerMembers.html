@@ -4,15 +4,15 @@ layout: default
 toggleOnDiv: Former
 toggledURLTo: /formermembers/
 ---
-{% include togglePeopleTypes.html %}
-{% include toggleInitialPageLink.html div=page.toggleOnDiv linkto=page.toggledURLTo %}
+<!-- {% include togglePeopleTypes.html %}
+{% include toggleInitialPageLink.html div=page.toggleOnDiv linkto=page.toggledURLTo %} -->
 <div class="pagination">
-  {% include peopleHeader.html active ="FormerMembers" %}
+  {% include peopleHeader.html active ="Former Members" %}
 </div>
 <div class="content-people">
   {% include peopleContent.html active ="Former" %}
 </div>
 <br class="horizontal-separator" />
-<script>
+<!-- <script>
   changeActivePersons("{{site.data.peopleTypes[6].name}}");
-</script>
+</script> -->
