@@ -74,7 +74,7 @@ sdaperson:JensLehmann a foaf:Person, sdatech:professor ;
                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
                   cv:aboutPerson "Prof. Dr. Jens Lehmann (<a href='http://jens-lehmann.org/'>http://www.jens-lehmann.org</a>) is a full professor at the University of Bonn and Fraunhofer IAIS. He is leading the SDA group with 50 researchers. He obtained a PhD with grade summa cum laude at the University of Leipzig in 2010 including research stays at the University of Oxford and a master degree in Computer Science from Technical University of Dresden in 2006. His research interests involve Semantic Web and Artificial Intelligence. He is founder, leader or contributor of several open source projects, including SANSA, AskNow, DL-Learner, DBpedia, LinkedGeoData and ORE. He works/worked in several funded projects, e.g. GeoKnow (EU STREP, coordinator), LOD2 (EU IP, work package lead), LATC (EU STREP, lead for University of Leipzig) and SoftWiki (BmBF). Prof. Dr. Jens Lehmann authored more than 100 articles in international journals and conferences cited more than 11000 times according to Google Scholar." ;
                   sda:publication sdapublication:Publication1 ;
-                  sda:group sdagroup:SemanticQuestionAnswering, sdagroup:DistributedSemanticAnalytics, sdagroup:SmartServices, sdagroup:KnowledgeGraph ;
+                  sda:group sdagroup:SemanticQuestionAnswering, sdagroup:DistributedSemanticAnalytics, sdagroup:SmartServices, sdagroup:KnowledgeGraph, sdagroup:SemanticDataManagement, sdagroup:SoftwareEngineeringForDataScience,sdagroup:StructuredMachineLearning ;
                   foaf:currentProject sdaproject:BigDataEurope, sdaproject:Boost40, sdaproject:SANSAStack, sdaproject:DLLearner, sdaproject:AskNow, sdaproject:SMLBench, sdaproject:SLIPO, sdaproject:QROWD, sdaproject:HOBBIT, sdaproject:WDAqua, sdaproject:GEISER, sdaproject:BigDataOcean, ex:DeFacto, sdaproject:MEX, sdaproject:MLDSLs, sdaproject:CogRob, sdaproject:EACCP, sdaproject:SAML .
 
 ##############################Senior Researchers#########################
@@ -95,7 +95,7 @@ sdaperson:HajiraJabeen a foaf:Person, sdatech:seniorResearcher ;
                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
                   cv:aboutPerson "Dr. Hajira Jabeen is a Senior Researcher at the University of Bonn." ;
                   #sda:publication sdapublication:Publication1 ;
-                  sda:group sdagroup:DistributedSemanticAnalytics ;
+                  sda:group sdagroup:DistributedSemanticAnalytics, sdagroup:StructuredMachineLearning ;
                   foaf:currentProject sdaproject:BigDataEurope, sdaproject:SANSAStack, sdaproject:SMLBench, sdaproject:DLLearner,sdaproject:BigDataOcean .
 
 sdaperson:GuenterKniesel a foaf:Person, sdatech:seniorResearcher ;
@@ -255,7 +255,7 @@ sdaperson:SimonScerri a foaf:Person, sdatech:seniorResearcher ;
                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
                   cv:aboutPerson "Dr. Simon Scerri is a Senior Researcher at the University of Bonn." ;
                   #sda:publication sdapublication:Publication1 ;
-                  sda:group sdagroup:KnowledgeExtractionAndValidation ;
+                  sda:group sdagroup:SmartServices ;
                   foaf:currentProject sdaproject:BigDataEurope, sdaproject:Boost40, sdaproject:EDSA .
 
 ##############################PHD Students#########################
@@ -373,7 +373,7 @@ sdaperson:DiegoEsteves a foaf:Person, sdatech:phdStudent ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    cv:aboutPerson "Diego Esteves is a PhD Student & Research Associate at the University of Bonn. Esteves’ research interest are in the area of Natural Language Processing, Machine Learning and Semantic Web." ;
                    #sda:publication sdapublication:Publication1 ;
-                   sda:group sdagroup:KnowledgeExtractionAndValidation ;
+                   #sda:group sdagroup:KnowledgeExtractionAndValidation ;
                    foaf:currentProject sdaproject:DeFacto, sdaproject:HORUS, sdaproject:MEX, sdaproject:LiDaKrA, ex:DeFacto .
 
 sdaperson:FathoniMusyaffa a foaf:Person, sdatech:phdStudent ;
@@ -413,7 +413,7 @@ sdaperson:MousaviNajmeh a foaf:Person, sdatech:phdStudent ;
                    sda:github "https://github.com/Najmeh-M" ;
                    cv:aboutPerson "Najmeh Mousavi Nejad is a PhD student in the Smart Data Analytics group at University of Bonn. She received her master's degree in Artificial Intelligence in 2011 in Iran, following which she accumulated research experience supported by publications as well as working experience in industry. Since 2015, she is the recipient of a DAAD scholarship (German Academic Exchange Service) for PhD studies in Germany and continues to conduct research (also received a nomination for Best Research and Innovation Paper award in an international conference). Her research interests are semantic web, text mining and analysis, information extraction & retrieval and Natural language processing." ;
                    #sda:publication sdapublication:Publication1 ;
-                   sda:group sdagroup:KnowledgeExtractionAndValidation .
+                   #sda:group sdagroup:KnowledgeExtractionAndValidation .
 
 sdaperson:DebanjanChaudhuri a foaf:Person, sdatech:phdStudent ;
                    sda:publicationsTag "chaudhuri" ;
@@ -746,7 +746,6 @@ sdaperson:HebaIbrahim a foaf:Person, sdatech:phdStudent ;
                    sda:twitter "https://twitter.com/HebaAIbrahim1" ;
                    sda:github "" ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
-                   sda:group sdagroup:DistributedSemanticAnalytics ;
                    cv:aboutPerson "Heba Mohamed is a PhD candidate in the Smart Data Analytics (SDA) research group at the University of Bonn. She received her master’s degree in Computer Science in 2012 from the Alexandria University, Egypt. Her research interests include Semantic Web, Big Data and Machine Learning.";
                    sda:group sdagroup:DistributedSemanticAnalytics ;
                    foaf:currentProject sdaproject:BigDataEurope.
@@ -893,7 +892,7 @@ sdaperson:LavdimHalilaj a foaf:Person, sdatech:associateReseracher ;
                    sda:github "" ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    cv:aboutPerson "Lavdim Halilaj is a Researcher at the Fraunhofer IAIS." ;
-                   sda:group sdagroup:KnowledgeExtractionAndValidation ;
+                   #sda:group sdagroup:KnowledgeExtractionAndValidation ;
                    foaf:currentProject sdaproject:LUCID .
 
 sdaperson:IrlanGrangel a foaf:Person, sdatech:associateReseracher ;
@@ -913,7 +912,7 @@ sdaperson:IrlanGrangel a foaf:Person, sdatech:associateReseracher ;
                    sda:github "" ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    cv:aboutPerson "Irlan Grangel-Gonzales is a Researcher at the Fraunhofer IAIS." ;
-                   sda:group sdagroup:KnowledgeExtractionAndValidation ;
+                   #sda:group sdagroup:KnowledgeExtractionAndValidation ;
                    foaf:currentProject sdaproject:Boost40, sdaproject:LUCID .
 
 sdaperson:DiegoCollarana a foaf:Person, sdatech:associateReseracher ;
@@ -933,7 +932,7 @@ sdaperson:DiegoCollarana a foaf:Person, sdatech:associateReseracher ;
                    sda:github "" ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    cv:aboutPerson "Diego Collarana is a Researcher at the Fraunhofer IAIS." ;
-                   sda:group sdagroup:KnowledgeExtractionAndValidation ;
+                   #sda:group sdagroup:KnowledgeExtractionAndValidation ;
                    foaf:currentProject sdaproject:EDSA .
 
 sdaperson:KuldeepSingh a foaf:Person, sdatech:associateReseracher ;
@@ -1498,7 +1497,6 @@ sdaperson:LuisPauloGarcia a foaf:Person, sdatech:formerMember ;
 ##Distributed Semantic Analytics
 sdagroup:DistributedSemanticAnalytics a aiiso:ResearchGroup, sdatech:Group ;
                                 rdfs:label "Distributed Semantic Analytics" ;
-                                foaf:member sdaperson:JensLehmann, sdaperson:GezimSejdiu, sdaperson:HajiraJabeen, sdaperson:HarshThakkar, sdaperson:AnisaRula ;
                                 dbo:leader sdaperson:HajiraJabeen ;
                                 foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
                                 foaf:currentProject sdaproject:DLLearner, sdaproject:BigDataEurope, sdaproject:SANSAStack, sdaproject:Boost40 ;
@@ -1538,7 +1536,6 @@ sdagroup:DistributedSemanticAnalytics a aiiso:ResearchGroup, sdatech:Group ;
 ##Semantic Data Management
 sdagroup:SemanticDataManagement a aiiso:ResearchGroup, sdatech:Group ;
                                 rdfs:label "Semantic Data Management" ;
-                                foaf:member sdaperson:JensLehmann, sdaperson:ChristophLange ;
                                 dbo:leader sdaperson:ChristophLange, sdaperson:SteffenLohmann ;
                                 foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
                                 foaf:currentProject sdaproject:BigDataEurope ;
@@ -1551,7 +1548,6 @@ sdagroup:SemanticDataManagement a aiiso:ResearchGroup, sdatech:Group ;
 ##Semantic Question Answering
 sdagroup:SemanticQuestionAnswering a aiiso:ResearchGroup, sdatech:Group ;
                                 rdfs:label "Semantic Question Answering" ;
-                                foaf:member sdaperson:JensLehmann, sdaperson:MohnishDubey, sdaperson:IoannaLytra, sdaperson:HamidZafar, sdaperson:DebanjanChaudhuri, sdaperson:GiulioNapolitano ;
                                 dbo:leader sdaperson:GiulioNapolitano, sdaperson:IoannaLytra ;
                                 foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
                                 foaf:currentProject sdaproject:AskNow, sdaproject:WDAqua ;
@@ -1564,7 +1560,6 @@ sdagroup:SemanticQuestionAnswering a aiiso:ResearchGroup, sdatech:Group ;
 ##Software Engineering for Data Science
 sdagroup:SoftwareEngineeringForDataScience a aiiso:ResearchGroup, sdatech:Group ;
                                 rdfs:label "Software Engineering for Data Science" ;
-                                foaf:member sdaperson:JensLehmann, sdaperson:GuenterKniesel ;
                                 dbo:leader sdaperson:GuenterKniesel ;
                                 foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
                                 foaf:currentProject sdaproject:SANSAStack ;
@@ -1577,7 +1572,6 @@ sdagroup:SoftwareEngineeringForDataScience a aiiso:ResearchGroup, sdatech:Group 
 ##Knowledge Graph
 sdagroup:KnowledgeGraph a aiiso:ResearchGroup, sdatech:Group ;
                                 rdfs:label "Knowledge Graph" ;
-                                foaf:member sdaperson:JensLehmann, sdaperson:HamedShariatYazdi, sdaperson:AfshinSadeghi, sdaperson:MojtabaNayyeri, sdaperson:MehdiAli ;
                                 dbo:leader sdaperson:HamedShariatYazdi ;
                                 foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
                                 foaf:currentProject sdaproject:SANSAStack ;
@@ -1592,7 +1586,6 @@ sdagroup:KnowledgeGraph a aiiso:ResearchGroup, sdatech:Group ;
 ##Structured Machine Learning
 sdagroup:StructuredMachineLearning a aiiso:ResearchGroup, sdatech:Group ;
                                 rdfs:label "Structured Machine Learning" ;
-                                foaf:member sdaperson:JensLehmann, sdaperson:LorenzBuehmann, sdaperson:HajiraJabeen ;
                                 dbo:leader sdaperson:JensLehmann ;
                                 foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
                                 foaf:currentProject sdaproject:DLLearner, sdaproject:SMLBench ;
@@ -1606,7 +1599,6 @@ sdagroup:StructuredMachineLearning a aiiso:ResearchGroup, sdatech:Group ;
 ##Smart Services
 sdagroup:SmartServices a aiiso:ResearchGroup, sdatech:Group ;
                                 rdfs:label "Smart Services" ;
-                                foaf:member sdaperson:JensLehmann, sdaperson:SimonScerri ;
                                 dbo:leader sdaperson:MariaMaleshkova, sdaperson:SimonScerri  ;
                                 foaf:currentProject sdaproject:SLIPO, sdaproject:BigDataEurope, sdaproject:Boost40 ;
                                 dct:description "Semantic services and their composition, applications in IoT." ;

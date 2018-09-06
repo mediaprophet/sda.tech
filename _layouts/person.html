@@ -58,19 +58,15 @@ layout: default
       <div class="members-projects links">
         <h3>Research Groups</h3>
         <div class="partnersOfProject">
+          <!-- Dieplaying the groups of particular members  -->
           {% capture personName %}{{ page.rdf | rdf_property: 'foaf:name' }}{% endcapture %}
-          {% capture query %} SELECT ?group ?groupName ?groupImage ?member ?memberName WHERE { ?group a aiiso:ResearchGroup . ?group rdfs:label ?groupName . ?group sda:imageclass ?groupImage . ?group foaf:member ?member . ?member foaf:name ?memberName . }  {% endcapture %}{% assign groups = page.rdf | sparql_query: query %}
-          <!-- Dieplaying the groups of particular members -->
-          {% for group in groups %}
-            {% capture groupMemeberName %}{{group.memberName}}{% endcapture %}
+          {% capture query %} SELECT ?person ?group ?groupName ?groupImage WHERE { ?person foaf:name "{{personName}}" . ?person sda:group ?group . ?group a aiiso:ResearchGroup . ?group rdfs:label ?groupName . ?group sda:imageclass ?groupImage .}{% endcapture %} {% assign groupList = page.rdf | sparql_query: query %}
+          {% for group in groupList %}
             {% assign url= group.group | remove: "http://sda.tech/" %}
-            {% if personName == groupMemeberName %}
-              <div class="chip">
-                <!-- <i class="{{result.img}}" width="96" height="96"></i> -->
-                <i class="{{group.groupImage}} margin-icon"></i>
-                <a href="../../{{url}}">{{group.groupName}}</a>
-              </div>
-            {% endif %}
+            <div class="chip">
+              <i class="{{group.groupImage}} margin-icon"></i>
+              <a href="../../{{url}}">{{group.groupName}}</a>
+            </div>
           {% endfor %}
         </div>
 

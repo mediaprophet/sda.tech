@@ -4,8 +4,10 @@ layout: default
 toggledURLTo: /Group/DistributedSemanticAnalytics/
 toggleOnDiv: dsa
 ---
+{% capture title %} {{ page.rdf | rdf_property: 'rdfs:label' }} {% endcapture %}
+{% assign title = title | strip %}
 
-<script> setTitle('Groups', '{{site.title | escape}}'); </script>
+<script> setTitle('{{title}}', '{{site.title | escape}}'); </script>
 
 <article class="post">
   {% include toggleInitialPageLink.html div=page.toggleOnDiv linkto=page.toggledURLTo %}
@@ -58,13 +60,22 @@ toggleOnDiv: dsa
             </div>
             <h3>Group Members</h3>
             <div class="membersofProject">
-              {% for result3 in resultset3 %} {% capture groupname %}{{result3.name}}{% endcapture %} {% if groupname == name %} {% assign url= result3.person | remove: "http://sda.tech/" %}
-              <div class="chip">
-                <img class="img-circle-small" src="{{result3.image}}" alt="Person" width="96" height="96">
-                <a href="../../{{url}}">{{result3.nameperson}}</a>
-              </div>
-              {% endif %} {% endfor %}
+              {% capture groupMainTitle %}{{result.name}}{% endcapture %}
+              {% capture query %} SELECT ?person ?personname ?image ?group ?groupname Where {
+                ?person a foaf:Person . OPTIONAL { ?person foaf:name ?personname } . OPTIONAL { ?person foaf:depiction ?image } .  ?person sda:group ?group . ?group  rdfs:label ?groupname .
+              } {% endcapture %} {% assign groupmembers = page.rdf | sparql_query: query %}
+              {% for person in groupmembers %}
+                {% capture groupTitle %}{{person.groupname}}{% endcapture %}
+                {% if groupMainTitle == groupTitle %}
+                  {% assign url= person.person | remove: "http://sda.tech/" %}
+                  <div class="chip">
+                    <img  class="img-circle-small" src="{{person.image}}" alt="Person" width="96" height="96">
+                    <a href="../../{{url}}">{{person.personname}}</a>
+                  </div>
+                {% endif %}
+              {% endfor %}
             </div>
+
             <br class="horizontal-separator" />
             <br class="horizontal-separator" />
             <h3>Projects</h3>

@@ -46,14 +46,19 @@ layout: default
             <div class="members-projects">
               <h3>Members</h3>
               <div class="membersofProject">
-                {% for result in resultset2 %} {% assign url= result.person | remove: "http://sda.tech/" %}
-                <!-- <img src="{{result.image}}" style="width:48px;height:48px;border-radius:50%;display:block;margin:0 auto;">
-                <a href="../{{url}}"><h4>{{result.personname}}</h4></a> -->
-                <div class="chip">
-                  <img class="img-circle-small" src="{{result.image}}" alt="Person" width="96" height="96">
-                  <a href="../../{{url}}">{{result.personname}}</a>
-                </div>
-
+                {% capture groupMainTitle %}{{title}}{% endcapture %}
+                {% capture query %} SELECT ?person ?personname ?image ?group ?groupname Where {
+                  ?person a foaf:Person . OPTIONAL { ?person foaf:name ?personname } . OPTIONAL { ?person foaf:depiction ?image } .  ?person sda:group ?group . ?group  rdfs:label ?groupname .
+                } {% endcapture %} {% assign groupmembers = page.rdf | sparql_query: query %}
+                {% for person in groupmembers %}
+                  {% capture groupTitle %}{{person.groupname}}{% endcapture %}
+                  {% if groupMainTitle == groupTitle %}
+                    {% assign url= person.person | remove: "http://sda.tech/" %}
+                    <div class="chip">
+                      <img  class="img-circle-small" src="{{person.image}}" alt="Person" width="96" height="96">
+                      <a href="../../{{url}}">{{person.personname}}</a>
+                    </div>
+                  {% endif %}
                 {% endfor %}
               </div>
               <br class="horizontal-separator2" />
