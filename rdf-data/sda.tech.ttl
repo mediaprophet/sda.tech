@@ -75,7 +75,7 @@ sdaperson:JensLehmann a foaf:Person, sdatech:professor ;
                   cv:aboutPerson "Prof. Dr. Jens Lehmann (<a href='http://jens-lehmann.org/'>http://www.jens-lehmann.org</a>) is a full professor at the University of Bonn and Fraunhofer IAIS. He is leading the SDA group with 50 researchers. He obtained a PhD with grade summa cum laude at the University of Leipzig in 2010 including research stays at the University of Oxford and a master degree in Computer Science from Technical University of Dresden in 2006. His research interests involve Semantic Web and Artificial Intelligence. He is founder, leader or contributor of several open source projects, including SANSA, AskNow, DL-Learner, DBpedia, LinkedGeoData and ORE. He works/worked in several funded projects, e.g. GeoKnow (EU STREP, coordinator), LOD2 (EU IP, work package lead), LATC (EU STREP, lead for University of Leipzig) and SoftWiki (BmBF). Prof. Dr. Jens Lehmann authored more than 100 articles in international journals and conferences cited more than 11000 times according to Google Scholar." ;
                   sda:publication sdapublication:Publication1 ;
                   sda:group sdagroup:SemanticQuestionAnswering, sdagroup:DistributedSemanticAnalytics, sdagroup:SmartServices, sdagroup:KnowledgeGraph ;
-                  foaf:currentProject sdaproject:BigDataEurope, sdaproject:Boost40, sdaproject:SANSAStack, sdaproject:DLLearner, sdaproject:AskNow, sdaproject:SMLBench, sdaproject:SLIPO, sdaproject:QROWD, sdaproject:HOBBIT, sdaproject:WDAqua .
+                  foaf:currentProject sdaproject:BigDataEurope, sdaproject:Boost40, sdaproject:SANSAStack, sdaproject:DLLearner, sdaproject:AskNow, sdaproject:SMLBench, sdaproject:SLIPO, sdaproject:QROWD, sdaproject:HOBBIT, sdaproject:WDAqua, sdaproject:GEISER, sdaproject:BigDataOcean, ex:DeFacto, sdaproject:MEX, sdaproject:MLDSLs, sdaproject:CogRob, sdaproject:EACCP, sdaproject:SAML .
 
 ##############################Senior Researchers#########################
 sdaperson:HajiraJabeen a foaf:Person, sdatech:seniorResearcher ;
@@ -96,7 +96,7 @@ sdaperson:HajiraJabeen a foaf:Person, sdatech:seniorResearcher ;
                   cv:aboutPerson "Dr. Hajira Jabeen is a Senior Researcher at the University of Bonn." ;
                   #sda:publication sdapublication:Publication1 ;
                   sda:group sdagroup:DistributedSemanticAnalytics ;
-                  foaf:currentProject sdaproject:BigDataEurope, sdaproject:SANSAStack, sdaproject:SMLBench, sdaproject:DLLearner .
+                  foaf:currentProject sdaproject:BigDataEurope, sdaproject:SANSAStack, sdaproject:SMLBench, sdaproject:DLLearner,sdaproject:BigDataOcean .
 
 sdaperson:GuenterKniesel a foaf:Person, sdatech:seniorResearcher ;
                   sda:publicationsTag "kniesel" ;
@@ -147,8 +147,8 @@ sdaperson:AlexanderKister a foaf:Person, sdatech:seniorResearcher ;
                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
                   cv:aboutPerson "Dr. Alexander Kister is a Senior Researcher at the Fraunhofer IAIS." ;
                   #sda:publication sdapublication:Publication1 ;
-                  sda:group sdagroup:SmartServices .
-                  #foaf:currentProject sdaproject: .
+                  sda:group sdagroup:SmartServices ;
+                  foaf:currentProject sdaproject:SLIPO, sdaproject:GEISER .
 
 sdaperson:HamedShariatYazdi a foaf:Person, sdatech:seniorResearcher ;
                   sda:publicationsTag "yazdi" ;
@@ -220,7 +220,7 @@ sdaperson:IoannaLytra a foaf:Person, sdatech:seniorResearcher ;
                   cv:aboutPerson "Dr. Ioanna Lytra is a senior researcher at the Smart Data Analytics research group, University of Bonn. She has completed her PhD thesis on Software Architecture at the University of Vienna. Before that, she worked as a software engineer in the telecommunications area. She received my Diploma in Electrical and Computer Engineering with specialization in Computer Networks and Telecommunications from the National Technical University of Athens in 2006." ;
                   #sda:publication sdapublication:Publication1 ;
                   sda:group sdagroup:SemanticQuestionAnswering ;
-                  foaf:currentProject sdaproject:AskNow, sdaproject:WDAqua .
+                  foaf:currentProject sdaproject:AskNow, sdaproject:WDAqua, sdaproject:BigDataOcean .
 
 sdaperson:ChristophLange a foaf:Person, sdatech:seniorResearcher ;
                   sda:publicationsTag "lange" ;
@@ -238,7 +238,7 @@ sdaperson:ChristophLange a foaf:Person, sdatech:seniorResearcher ;
                   cv:aboutPerson "<a href='http://langec.wordpress.com/about/'>Christoph Lange</a> is the head of the <a href='https://www.iais.fraunhofer.de/de/institut/abteilungen/enterprise-information-systems.html'>Enterprise Information Systems (EIS) department</a> at the Fraunhofer Institute for Intelligent Analysis and Information Systems IAIS and a senior researcher leading the <a href='http://sda.cs.uni-bonn.de/research-topic/semantic-data-management/'>Semantic Data Management group</a> within the <a href='http://sda.iai.uni-bonn.de/'>Smart Data Analytics (SDA) research group</a> at the University of Bonn, Germany.  He has been working with both institutions since 2013.  In 2011, he received a Ph.D. from Jacobs University Bremen, Germany, for <em><a href='http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.696.6350&rep=rep1&type=pdf'>enabling collaboration on semiformal mathematical knowledge by semantic web integration</a></em>.  His research is broadly concerned with representing expressive knowledge in complex domains in a formal but scalable way using linked (open) data, which enables and facilitates machine support with retrieval, analysis, quality assessment, publishing, collaborative authoring, etc.; results have been published in high-profile international journals and conferences (h-index 20 according to <a href='https://scholar.google.de/citations?user=Yr0WcFwAAAAJ&amp;hl=en'>Google Scholar</a>).  Application domains range from research infrastructures to information integration within enterprises and across enterprise boundaries.  The latter has been subject of contractual R&amp;D for leading German enterprises in the automotive and other sectors.  On semantic web and intelligent computer mathematics topics, Christoph Lange has organised numerous conferences, challenges, trainings and workshops, co-supervised 10 PhD students, taught lectures and coordinated lab and seminar classes, served as an expert for several international funding bodies and contributed to international OMG and W3C standards." ;
                   #sda:publication sdapublication:Publication1 ;
                   sda:group sdagroup:SemanticDataManagement ;
-                  foaf:currentProject sdaproject:WDAqua, sdaproject:OSCOSS, sdaproject:Boost40.
+                  foaf:currentProject sdaproject:WDAqua, sdaproject:OSCOSS, sdaproject:Boost40, sdaproject:DIACHRON, sdaproject:LiDaKrA, sdaproject:OpenAIRE2020, sdaproject:SeReCo .
 
 sdaperson:SimonScerri a foaf:Person, sdatech:seniorResearcher ;
                   sda:publicationsTag "scerri" ;
@@ -256,7 +256,7 @@ sdaperson:SimonScerri a foaf:Person, sdatech:seniorResearcher ;
                   cv:aboutPerson "Dr. Simon Scerri is a Senior Researcher at the University of Bonn." ;
                   #sda:publication sdapublication:Publication1 ;
                   sda:group sdagroup:KnowledgeExtractionAndValidation ;
-                  foaf:currentProject sdaproject:BigDataEurope, sdaproject:Boost40 .
+                  foaf:currentProject sdaproject:BigDataEurope, sdaproject:Boost40, sdaproject:EDSA .
 
 ##############################PHD Students#########################
 sdaperson:GezimSejdiu a foaf:Person, sdatech:phdStudent ;
@@ -350,7 +350,7 @@ sdaperson:HarshThakkar a foaf:Person, sdatech:phdStudent ;
                    cv:aboutPerson "Mr. Harsh V. Thakkar is currently pursuing Doctoral studies at the University of Bonn under the supervision of Prof. Dr. Jens Lehmann and Prof. Dr. Sören Auer. His research areas are not limited to Graph Data Management, Formal Query Translation, Benchmarking and Linked Open Data Quality. Currently, he works as Marie-Curie Early Stage Researcher (ESR) in the EU funded project WDAqua ITN. " ;
                    #sda:publication sdapublication:Publication1 ;
                    sda:group sdagroup:DistributedSemanticAnalytics ;
-                   foaf:currentProject sdaproject:WDAqua, sdaproject:LITMUS .
+                   foaf:currentProject sdaproject:WDAqua, sdaproject:LITMUS, sdaproject:Boost40 .
 
 sdaperson:DiegoEsteves a foaf:Person, sdatech:phdStudent ;
                    rdfs:seeAlso <http://aksw.org/DiegoEsteves> ;
@@ -374,7 +374,7 @@ sdaperson:DiegoEsteves a foaf:Person, sdatech:phdStudent ;
                    cv:aboutPerson "Diego Esteves is a PhD Student & Research Associate at the University of Bonn. Esteves’ research interest are in the area of Natural Language Processing, Machine Learning and Semantic Web." ;
                    #sda:publication sdapublication:Publication1 ;
                    sda:group sdagroup:KnowledgeExtractionAndValidation ;
-                   foaf:currentProject sdaproject:DeFacto, sdaproject:HORUS, sdaproject:MEX .
+                   foaf:currentProject sdaproject:DeFacto, sdaproject:HORUS, sdaproject:MEX, sdaproject:LiDaKrA, ex:DeFacto .
 
 sdaperson:FathoniMusyaffa a foaf:Person, sdatech:phdStudent ;
                    sda:publicationsTag "musyaffa" ;
@@ -394,7 +394,8 @@ sdaperson:FathoniMusyaffa a foaf:Person, sdatech:phdStudent ;
                    sda:group sdagroup:SmartServices ;
                    cv:aboutPerson "Fathoni Musyaffa is a PhD Student & Research Associate at the University of Bonn. Fathoni's research interest are in the area of Semantic Web, Linked and Open Data especially in the domain of budget and spending from public administrations. He is also interested in the area of data interlinking and natural language processing." ;
                    #sda:publication sdapublication:Publication1 ;
-                   sda:group sdagroup:DistributedSemanticAnalytics .
+                   sda:group sdagroup:DistributedSemanticAnalytics ;
+                   foaf:currentProject sdaproject:OpenBudgetseu.
 
 sdaperson:MousaviNajmeh a foaf:Person, sdatech:phdStudent ;
                    sda:publicationsTag "mousavi" ;
@@ -498,7 +499,7 @@ sdaperson:ClausStadler a foaf:Person, sdatech:phdStudent ;
                    ov:businessCard <http://aksw.org/vCard/Hainstrasse> ;
                    cv:aboutPerson "Claus Stadler is a PhD Student at the University of Leipzig." ;
                    sda:group sdagroup:StructuredMachineLearning ;
-                   foaf:currentProject sdaproject:DLLearner, sdaproject:SANSAStack .
+                   foaf:currentProject sdaproject:DLLearner, sdaproject:SANSAStack, sdaproject:QROWD, sdaproject:SLIPO .
 
 sdaperson:KonradHoeffner a foaf:Person, sdatech:phdStudent ;
                    rdfs:seeAlso <http://aksw.org/KonradHoeffner> ;
@@ -606,7 +607,7 @@ sdaperson:SaharVahdati a foaf:Person, sdatech:phdStudent ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    cv:aboutPerson "Sahar Vahdati is a research associate and a PhD candidate in the Smart Data Analytics (SDA) research group at the University of Bonn. She also partly collaborate in teaching activities of Intelligent Database group. She received her master’s degree in Computer Science in 2013 from the University of Bonn. Her research interests include linked data, big data, data integration and management, scholarly communication, and semantic publishing." ;
                    sda:group sdagroup:SemanticDataManagement ;
-                   foaf:currentProject sdaproject:OSCOSS .
+                   foaf:currentProject sdaproject:OSCOSS, sdaproject:OpenAIRE2020, sdaproject:SlideWiki .
 
 sdaperson:ElisaMargarethSibarani a foaf:Person, sdatech:phdStudent ;
                    sda:publicationsTag "Sibarani" ;
@@ -625,7 +626,8 @@ sdaperson:ElisaMargarethSibarani a foaf:Person, sdatech:phdStudent ;
                    sda:twitter "" ;
                    sda:github "" ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
-                   cv:aboutPerson "Elisa Margareth Sibarani is a PhD Student at the University of Bonn." .
+                   cv:aboutPerson "Elisa Margareth Sibarani is a PhD Student at the University of Bonn." ;
+                   foaf:currentProject sdaproject:EDSA .
 
 sdaperson:AfshinSadeghi a foaf:Person, sdatech:phdStudent ;
                    sda:publicationsTag "sadeghi" ;
@@ -724,7 +726,8 @@ sdaperson:MichaelGalkin a foaf:Person, sdatech:phdStudent ;
                    sda:twitter "" ;
                    sda:github "" ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
-                   cv:aboutPerson "Michael Galkin is a PhD Student at the University of Bonn." .
+                   cv:aboutPerson "Michael Galkin is a PhD Student at the University of Bonn." ;
+                   foaf:currentProject sdaproject:LinDA.
 
 sdaperson:HebaIbrahim a foaf:Person, sdatech:phdStudent ;
                    sda:publicationsTag "ibrahim" ;
@@ -787,7 +790,8 @@ sdaperson:SteffenLohmann a foaf:Person, sdatech:associateReseracher ;
                   sda:github "" ;
                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
                   cv:aboutPerson "Dr. Steffen Lohmann is a researcher and deputy head of the Enterprise Information Systems (EIS) department at the Fraunhofer Institute for Intelligent Analysis and Information Systems (IAIS), and associated member of the Smart Data Analytics (SDA) research group of the University of Bonn. My research is devoted to all exciting topics related to Semantic Technologies, Knowledge Engineering, Interactive Systems, Information Visualization, and the Web. At Fraunhofer IAIS, I am leading the business unit on Enterprise Information Integration concerned with research and development in areas such as Industry 4.0, Internet of Things, Semantic Interoperability, and Data Integration." ;
-                  sda:group sdagroup:SemanticDataManagement .
+                  sda:group sdagroup:SemanticDataManagement ;
+                  foaf:currentProject sdaproject:BeIoT, sdaproject:SlideWiki.
 
 sdaperson:DamienGraux a foaf:Person, sdatech:associateReseracher ;
                   sda:publicationsTag "graux" ;
@@ -807,7 +811,7 @@ sdaperson:DamienGraux a foaf:Person, sdatech:associateReseracher ;
                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
                   cv:aboutPerson "Dr. Damien Graux is a Senior Researcher at the Fraunhofer IAIS." ;
                   sda:group sdagroup:SemanticDataManagement, sdagroup:DistributedSemanticAnalytics ;
-                  foaf:currentProject sdaproject:SANSAStack .
+                  foaf:currentProject sdaproject:SANSAStack, sdaproject:SLIPO .
 
 sdaperson:AsjaFischer a foaf:Person, sdatech:associateReseracher ;
                   sda:publicationsTag "fischer" ;
@@ -847,7 +851,8 @@ sdaperson:NiklasPetersen a foaf:Person, sdatech:associateReseracher ;
                    sda:github "" ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    cv:aboutPerson "Niklas Petersen is a Researcher at the Fraunhofer IAIS." ;
-                   sda:group sdagroup:SemanticDataManagement .
+                   sda:group sdagroup:SemanticDataManagement ;
+                   foaf:currentProject sdaproject:Boost40, sdaproject:LUCID .
 
 sdaperson:MohamedNadjibMami a foaf:Person, sdatech:associateReseracher ;
                    sda:publicationsTag "mami" ;
@@ -888,7 +893,8 @@ sdaperson:LavdimHalilaj a foaf:Person, sdatech:associateReseracher ;
                    sda:github "" ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    cv:aboutPerson "Lavdim Halilaj is a Researcher at the Fraunhofer IAIS." ;
-                   sda:group sdagroup:KnowledgeExtractionAndValidation .
+                   sda:group sdagroup:KnowledgeExtractionAndValidation ;
+                   foaf:currentProject sdaproject:LUCID .
 
 sdaperson:IrlanGrangel a foaf:Person, sdatech:associateReseracher ;
                    sda:publicationsTag "grangel" ;
@@ -907,7 +913,8 @@ sdaperson:IrlanGrangel a foaf:Person, sdatech:associateReseracher ;
                    sda:github "" ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    cv:aboutPerson "Irlan Grangel-Gonzales is a Researcher at the Fraunhofer IAIS." ;
-                   sda:group sdagroup:KnowledgeExtractionAndValidation .
+                   sda:group sdagroup:KnowledgeExtractionAndValidation ;
+                   foaf:currentProject sdaproject:Boost40, sdaproject:LUCID .
 
 sdaperson:DiegoCollarana a foaf:Person, sdatech:associateReseracher ;
                    sda:publicationsTag "collarana" ;
@@ -926,7 +933,8 @@ sdaperson:DiegoCollarana a foaf:Person, sdatech:associateReseracher ;
                    sda:github "" ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    cv:aboutPerson "Diego Collarana is a Researcher at the Fraunhofer IAIS." ;
-                   sda:group sdagroup:KnowledgeExtractionAndValidation .
+                   sda:group sdagroup:KnowledgeExtractionAndValidation ;
+                   foaf:currentProject sdaproject:EDSA .
 
 sdaperson:KuldeepSingh a foaf:Person, sdatech:associateReseracher ;
                    sda:publicationsTag "singh" ;
@@ -983,7 +991,8 @@ sdaperson:AshwiniJayaKumar a foaf:Person, sdatech:associateReseracher ;
                    sda:twitter "" ;
                    sda:github "" ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
-                   cv:aboutPerson "Ashwini Jaya Kumar is a Researcher at the Fraunhofer IAIS." .
+                   cv:aboutPerson "Ashwini Jaya Kumar is a Researcher at the Fraunhofer IAIS." ;
+                   foaf:currentProject sdaproject:WDAqua .
 
 sdaperson:MiretteElias a foaf:Person, sdatech:associateReseracher ;
                    sda:publicationsTag "elias" ;
@@ -1062,7 +1071,8 @@ sdaperson:NileshChakraborty a foaf:Person, sdatech:studentAssistant ;
                    sda:github "https://github.com/nilesh-c" ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    sda:group sdagroup:KnowledgeGraph ;
-                   cv:aboutPerson "Nilesh Chakraborty is a Graduate Research Assistant at the Computer Science Department III of the University of Bonn." .
+                   cv:aboutPerson "Nilesh Chakraborty is a Graduate Research Assistant at the Computer Science Department III of the University of Bonn." ;
+                   foaf:currentProject sdaproject:SANSAStack .
 
 sdaperson:GauravMaheshwari a foaf:Person, sdatech:studentAssistant ;
                    sda:publicationsTag "maheshwari" ;
@@ -1082,7 +1092,8 @@ sdaperson:GauravMaheshwari a foaf:Person, sdatech:studentAssistant ;
                    sda:github "" ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    sda:group sdagroup:SemanticQuestionAnswering ;
-                   cv:aboutPerson "Gaurav Maheshwari is a Student Assistant at the Computer Science Department III of the University of Bonn." .
+                   cv:aboutPerson "Gaurav Maheshwari is a Student Assistant at the Computer Science Department III of the University of Bonn." ;
+                   foaf:currentProject sdaproject:AskNow .
 
 sdaperson:PriyanshTrivedi a foaf:Person, sdatech:studentAssistant ;
                    sda:publicationsTag "trivedi" ;
@@ -1102,7 +1113,8 @@ sdaperson:PriyanshTrivedi a foaf:Person, sdatech:studentAssistant ;
                    sda:github "" ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    sda:group sdagroup:SemanticQuestionAnswering ;
-                   cv:aboutPerson "Priyansh Trivedi is a Student Assistant at the Computer Science Department III of the University of Bonn." .
+                   cv:aboutPerson "Priyansh Trivedi is a Student Assistant at the Computer Science Department III of the University of Bonn." ;
+                   foaf:currentProject sdaproject:AskNow .
 
 sdaperson:JeanHernandez a foaf:Person, sdatech:studentAssistant ;
                    sda:publicationsTag "hernandez" ;
@@ -1346,7 +1358,8 @@ sdaperson:FrankNietzsche a foaf:Person, sdatech:formerMember ;
                    sda:twitter "" ;
                    sda:github "" ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
-                   cv:aboutPerson "" .
+                   cv:aboutPerson "" ;
+                   foaf:currentProject sdaproject:GEISER .
 
 sdaperson:BastianHaarmann a foaf:Person, sdatech:formerMember ;
                    sda:publicationsTag "haarmann" ;
@@ -1382,7 +1395,8 @@ sdaperson:HenningPetzka a foaf:Person, sdatech:formerMember ;
                    sda:twitter "" ;
                    sda:github "" ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
-                   cv:aboutPerson "" .
+                   cv:aboutPerson "" ;
+                   foaf:currentProject sdaproject:HOBBIT .
 
 sdaperson:MohamedSherif a foaf:Person, sdatech:formerMember ;
                    sda:publicationsTag "sherif" ;
@@ -1418,7 +1432,8 @@ sdaperson:TiansiDong a foaf:Person, sdatech:formerMember ;
                    sda:twitter "" ;
                    sda:github "" ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
-                   cv:aboutPerson "" .
+                   cv:aboutPerson "" ;
+                   foaf:currentProject sdaproject:OpenBudgetseu .
 
 sdaperson:VinayModi a foaf:Person, sdatech:formerMember ;
                    sda:publicationsTag "modi" ;
@@ -1451,10 +1466,10 @@ sdaperson:FabrizioOrlandi a foaf:Person, sdatech:formerMember ;
                   foaf:status "Senior Researcher" ;
                   sda:linkedin "https://www.linkedin.com/in/fabriziorlandi/" ;
                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
-                  cv:aboutPerson "Dr. Fabrizio Orlandi is a Senior Researcher at the University of Bonn." .
+                  cv:aboutPerson "Dr. Fabrizio Orlandi is a Senior Researcher at the University of Bonn." ;
                   #sda:publication sdapublication:Publication1 ;
                   #sda:group sdagroup:KnowledgeExtractionAndValidation ;
-                  #foaf:currentProject sdaproject:SLIPO, sdaproject:LinDA .
+                  foaf:currentProject sdaproject:SLIPO, sdaproject:LinDA, sdaproject:WDAqua, sdaproject:ODINE, sdaproject:OpenBudgetseu, sdaproject:BigDataOcean .
 
 sdaperson:LuisPauloGarcia a foaf:Person, sdatech:formerMember ;
                   rdfs:seeAlso <http://aksw.org/LuisGarcia> ;
@@ -1471,10 +1486,10 @@ sdaperson:LuisPauloGarcia a foaf:Person, sdatech:formerMember ;
                   foaf:status "Senior Researcher" ;
                   #sda:linkedin "" ;
                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
-                  cv:aboutPerson "Dr. Luís Paulo Garcia is a Senior Researcher at the University of Leipzig." .
+                  cv:aboutPerson "Dr. Luís Paulo Garcia is a Senior Researcher at the University of Leipzig." ;
                   #sda:publication sdapublication:Publication1 ;
                   #sda:group sdagroup:SoftwareEngineeringForDataScience .
-                  #foaf:currentProject sdaproject: .
+                  foaf:currentProject sdaproject:QROWD .
 
 #######################################
 ##########Group Model##################
@@ -1613,7 +1628,6 @@ sdaproject:BigDataEurope a foaf:Project, sdatech:fundedProject ;
                  rdfs:label "Big Data Europe" ;
                  ex:description "Big Data Europe will undertake the foundational work for enabling European companies to build innovative multilingual products and services based on semantically interoperable, large-scale, multi-lingual data assets and knowledge, available under a variety of licenses and business models";
                  ex:longdescription "Big Data Europe will undertake the foundational work for enabling European companies to build innovative multilingual products and services based on semantically interoperable, large-scale, multi-lingual data assets and knowledge, available under a variety of licenses and business models";
-                 foaf:member sdaperson:JensLehmann, sdaperson:GezimSejdiu, sdaperson:HajiraJabeen ;
                  foaf:homepage <http://www.big-data-europe.eu/> ;
                  foaf:depiction <https://www.big-data-europe.eu/wp-content/uploads/logo-BigDataEurope.png> ;
                  sda:funded "Funded Project" ;
@@ -1635,7 +1649,6 @@ sdaproject:Boost40 a foaf:Project, sdatech:fundedProject ;
                  rdfs:label "Boost4.0" ;
                  ex:description "Boost4.0 is the biggest European initiative in Big Data for Industry 4.0. With a 20M€ budget and leveraging 100M€ of private investment, Boost 4.0 will lead the construction of the European Industrial Data Space to improve the competitiveness of Industry 4.0 and will guide the European manufacturing industry in the introduction of Big Data in the factory, providing the industrial sector with the necessary tools to obtain the maximum benefit of Big Data.";
                  ex:longdescription "Boost4.0 is the biggest European initiative in Big Data for Industry 4.0. With a 20M€ budget and leveraging 100M€ of private investment, Boost 4.0 will lead the construction of the European Industrial Data Space to improve the competitiveness of Industry 4.0 and will guide the European manufacturing industry in the introduction of Big Data in the factory, providing the industrial sector with the necessary tools to obtain the maximum benefit of Big Data.";
-                 foaf:member sdaperson:JensLehmann, sdaperson:ChristophLange, sdaperson:GezimSejdiu, sdaperson:MariaMaleshkova, sdaperson:SimonScerri, sdaperson:NiklasPetersen, sdaperson:IrlanGrangel, sdaperson:HarshThakkar ;
                  foaf:homepage <http://boost40.eu/> ;
                  foaf:depiction <http://boost40.eu/wp-content/uploads/2018/01/boost-n-6.png> ;
                  sda:funded "Funded Project" ;
@@ -1664,14 +1677,12 @@ sdaproject:QROWD a foaf:Project, sdatech:fundedProject ;
          sda:twitter "https://twitter.com/QrowdProject" ;
          foaf:homepage "http://qrowd-project.eu/" ;
          doap:maintainer sda:JensLehmann ;
-         foaf:member sdaperson:JensLehmann, sdaperson:ClausStadler, sdaperson:PatrickWestphal, sdaperson:LorenzBuehmann, sdaperson:LuisPauloGarcia ;
          sda:source "undefined" ;
          sda:download "undefined" ;
          sda:partners sdapartner:AI4BG, sdapartner:Atos, sdapartner:ComuneDiTrento, sdapartner:TomTom, sdapartner:UniversityOfSouthampton, sdapartner:InfAI .
 
 sdaproject:WDAqua a foaf:Project, sdatech:fundedProject ;
            rdfs:label "WDAqua ITN" ;
-           foaf:member sdaperson:HarshThakkar, sdaperson:DenisLukovnikov, sdaperson:IoannaLytra, sdaperson:FabrizioOrlandi, sdaperson:AshwiniJayaKumar, sdaperson:KuldeepSingh, sdaperson:DenisLukovnikov, sdaperson:ChristophLange ;
            foaf:depiction <http://wdaqua.eu/assets/images/wdaqua.png> ;
            ex:description "WDAqua (Answering Questions using Web Data) is a Marie Skłodowska-Curie Innovative Training Network (ITN)." ;
            ex:longdescription "Smart infrastructures and citizens’ participation in the digital society are increasingly data-driven. Sharing, connecting, managing, analysing and understanding data on the web will enable better services for citizens, communities and industry. However, turning web data into successful services for the public and private sector requires skilled web and data scientists as well as further research in the field. WDAqua aims to advance the field of data-driven question answering through a combination of training, research and innovation. Question answering is relevant to a diverse range of end users, and we will demonstrate this in settings including e-commerce, public sector information, publishing and smart cities." ;
@@ -1685,7 +1696,6 @@ sdaproject:WDAqua a foaf:Project, sdatech:fundedProject ;
 sdaproject:HOBBIT a foaf:Project, sdatech:fundedProject ;
           rdfs:label "HOBBIT" ;
           doap:maintainer sda:JensLehmann ;
-          foaf:member sdaperson:JensLehmann, sdaperson:HenningPetzka ;
           foaf:depiction <https://project-hobbit.eu/wp-content/uploads/2017/11/Hobbit_Logo_2015_rgb_cropped2.png> ;
           ex:publication ex:Publication2 ;
           ex:description "Holistic Benchmarking of Big Linked Data" ;
@@ -1700,7 +1710,6 @@ sdaproject:HOBBIT a foaf:Project, sdatech:fundedProject ;
 sdaproject:SLIPO a foaf:Project, sdatech:fundedProject ;
          rdfs:label "SLIPO" ;
          doap:maintainer sda:JensLehmann ;
-         foaf:member sdaperson:JensLehmann, sdaperson:AlexanderKister, sdaperson:FabrizioOrlandi, sdaperson:DamienGraux, sdaperson:ClausStadler ;
          foaf:depiction <http://www.slipo.eu/wp-content/uploads/2017/02/Slipo_vertical_1.png> ;
          ex:description "Scalable Linking and Integration of Big POI data" ;
          ex:longdescription "SLIPO aim is to transfer the research output generated by our work in project GeoKnow, to the specific challenge of POI data, introducing validated and cost-effective innovations across their value chain." ;
@@ -1714,7 +1723,6 @@ sdaproject:SLIPO a foaf:Project, sdatech:fundedProject ;
 sdaproject:GEISER a foaf:Project, sdatech:fundedProject ;
          rdfs:label "GEISER" ;
          doap:maintainer sda:JensLehmann ;
-         foaf:member sdaperson:JensLehmann, sdaperson:AlexanderKister, sdaperson:FrankNietzsche ;
          foaf:depiction <https://www.projekt-geiser.de/wp-content/uploads/2016/06/Geiser_Logo2016_rgb.png> ;
          ex:description "Benchmarking sensor data to Internet-based Geo-Services" ;
          ex:longdescription "GEISER develops an open cloud-based platform for integrating geospatial data with sensor data from cyberphysical systems based on semantic and Big Data technologies." ;
@@ -1731,7 +1739,6 @@ sdaproject:LinDA a foaf:Project, sdatech:fundedProject ;
                  sda:hookline "Enabling Linked Data and Analytics for SMEs by renovating public sector information" ;
                  ex:description "Enabling Linked Data and Analytics for SMEs by renovating public sector information" ;
                  ex:longdescription "The LinDA project addresses one of the most significant challenges of the usage and publication of Linked Data, the renovation and conversion of existing data formats into structures that support the semantic enrichment and interlinking of data. The set of tools provided by LinDA will assist enterprises, especially SMEs which often cannot afford the development and maintenance of dedicated information analysis and management departments, in efficiently developing novel data analytical services that are linked to the available public data therefore contributing to improve their competitiveness and stimulating the emergence of innovative business models." ;
-                 foaf:member sdaperson:FabrizioOrlandi, sdaperson:MichaelGalkin ;
                  foaf:homepage "http://linda-project.eu/" ;
                  foaf:depiction <http://linda-project.eu/wp-content/uploads/2014/02/linda_logo11.png> ;
                  sda:twitter "https://twitter.com/LinDa_FP7" ;
@@ -1749,7 +1756,6 @@ sdaproject:BeIoT a foaf:Project, sdatech:fundedProject ;
                  rdfs:label "Be-IoT" ;
                  ex:description "The business engine for IoT pilots: Turning the Internet of things in Europe into an economically successful and socially accepted vibrant ecosystem.";
                  ex:longdescription "The business engine for IoT pilots: Turning the Internet of things in Europe into an economically successful and socially accepted vibrant ecosystem. The vision is to build a broad and vibrant ecosystem around the pilot projects that increase the collaboration between them, generates economic impact through new innovative business models and creates trust in the internet of things by transparent information about social challenges such as privacy and security implications. The vision will be reached by focussing on following objectives: support the collaboration and knowledge exchange between pilots and other relevant EU-projects (e.g. FIWARE), build the bridge between pilots and relevant stakeholders (e.g. potential customers such as European small and medium sized enterprises (SMEs), entrepreneurs and developers, but also researchers and policy makers) and thus expand the ecosystem further, set the ground for upcoming business building activities by creating awareness and also by facilitating and fostering societal acceptance (e.g. by running a variety of innovation activities). Building on the above mentioned developments this initiative will set the ground for the development of concrete new customer-oriented businesses based on the emerging pilots. Those business models will be derived through a proven systematic user centric ideation and validation process increasing the market acceptance and success rate of these business models. The emerging new businesses shall have a substantial economic impact in Europe.";
-                 foaf:member sdaperson:SteffenLohmann ;
                  foaf:homepage <https://iot-epi.eu/> ;
                  foaf:depiction <https://iot-epi.eu/wp-content/uploads/2016/09/logo-2.png> ;
                  sda:funded "Funded Project" ;
@@ -1771,7 +1777,6 @@ sdaproject:DIACHRON a foaf:Project, sdatech:fundedProject ;
                  rdfs:label "DIACHRON" ;
                  ex:description "Preserving the Evolving Data Web: Making Open / Linked Data Diachronic";
                  ex:longdescription "Preserving the Evolving Data Web: Making Open / Linked Data Diachronic. DIACHRON intends to address and cope with certain issues arising from the evolution of the data such as: (a) Monitor the changes of LOD datasets (tracking the evolution); (b) Identify the cause of the evolution of the datasets in respect with the real world evolution of the entities the datasets describe (provenance problem); (c) Repair various data deficiencies (curation problem); (d)Temporal and spatial quality assessment of the harvested LOD datasets and determination of the datasets versions that need to be preserved (appraisal); (e) Archive multiple versions of data and cite them accordingly to make the reference of previous data feasible (archiving and citation); (f) Retrieve and query previous versions (time traveling queries) The DIACHRON solution aims not only to store previous versions for preservation in case of future need of them, but to create a live repository of the data that captures and highlights data evolution by keeping all data (current and previous) accessible, combined with a toolset that handles the full life cycle of the Data Web.";
-                 foaf:member sdaperson:ChristophLange ;
                  foaf:homepage <http://www.diachron-fp7.eu/> ;
                  foaf:depiction <http://www.diachron-fp7.eu/uploads/2/1/2/0/21208652/4006116.png?239> ;
                  sda:funded "Funded Project" ;
@@ -1793,7 +1798,6 @@ sdaproject:EDSA a foaf:Project, sdatech:fundedProject ;
                  rdfs:label "EDSA" ;
                  ex:description "European Data Science Academy";
                  ex:longdescription "The European Data Science Academy (EDSA) will establish a virtuous learning production cycle whereby we: a) analyse the required sector specific skillsets for data analysts across the main industrial sectors in Europe; b) develop modular and adaptable data science curricula to meet these needs; and c) deliver training supported by multi-platform and multilingual learning resources based on our curricula. The curricula and learning resources will be continuously evaluated by pedagogical and data science experts during both development and deployment.";
-                 foaf:member sdaperson:DiegoCollarana, sdaperson:ElisaMargarethSibarani, sdaperson:SimonScerri ;
                  foaf:homepage <http://edsa-project.eu/> ;
                  foaf:depiction <http://edsa-project.eu/edsa-data/themes/edsa/images/edsa-logo.png> ;
                  sda:funded "Funded Project" ;
@@ -1814,7 +1818,6 @@ sdaproject:LiDaKrA a foaf:Project, sdatech:fundedProject ;
                  rdfs:label "LiDaKrA" ;
                  ex:description "Linked-Data-basierte Kriminalanalyse (Linked Data based crime analysis)";
                  ex:longdescription "The Web not only gives rise to new forms of crime, it also enables new technology for crime investigation. Suspects leave traces on the Web, items are being sold and bought on the Web, and a wealth of public open data about organizations and places is available on the Web. LiDaKrA aims at a holistic approach to extract, network and fuse crime-relevant information from public and private sources such as: the Web in general, the Social Web (social networks, blogs or wikis), Deep Web (eCommerce databases such as ebay or Amazon Marketplace), Dark Web (informations from the Tor network), Data Web (open data such as DBpedia or GeoNames). The technical components will be implemented in an integrated platform and will be evaluated in concrete use cases with multiple stakeholders from crime investigation authorities. ";
-                 foaf:member sdaperson:ChristophLange, sdaperson:DiegoCollarana ;
                  foaf:homepage "undefined" ;
                  foaf:depiction <> ;
                  sda:funded "Funded Project" ;
@@ -1836,7 +1839,6 @@ sdaproject:LUCID a foaf:Project, sdatech:fundedProject ;
                  rdfs:label "LUCID" ;
                  ex:description "LINKED VALUE CHAIN DATA";
                  ex:longdescription "LUCID is a BMBF funded 2-year project which will change the way how partners in supply chain networks will communicate with each other. In LUCID we research and develop on Linked Data technologies in order to allow partners in supply chains to describe their work, their company and their products for other participants. This allows for building distributed networks of supply chain partners on the Web without a centralized infrastructure. LUCID is funded by the german Federal Ministry of Education and Research (BMBF) in KMU-innovativ: Informations- und Kommunikationstechnologien initiative, which part of the IKT 2020 - Forschung für Innovation funding programme.";
-                 foaf:member sdaperson:IrlanGrangel, sdaperson:LavdimHalilaj, sdaperson:NiklasPetersen ;
                  foaf:homepage <https://www.lucid-project.org/> ;
                  foaf:depiction <https://www.lucid-project.org/static/img/logo-www.lucid-project.org.png> ;
                  sda:funded "Funded Project" ;
@@ -1858,7 +1860,6 @@ sdaproject:ODINE a foaf:Project, sdatech:fundedProject ;
                  rdfs:label "ODINE" ;
                  ex:description "Open Data Incubator for Europe";
                  ex:longdescription "The first Open Data Incubator for Europe. Europe is supporting the next generation of digital businesses. The Open Data Incubator for Europe (ODINE) is part of that support - it helps European citizens build sustainable businesses using open data. It will offer up to €100.000 and will set up an environment and EU-wide network, including business angels, VCs and funding agencies, to support small and medium enterprises and startups in creating commercial value from open data.";
-                 foaf:member sdaperson:FabrizioOrlandi ;
                  foaf:homepage <https://opendataincubator.eu/> ;
                  foaf:depiction <https://opendataincubator.eu/files/2016/01/logo.svg> ;
                  sda:funded "Funded Project" ;
@@ -1880,7 +1881,6 @@ sdaproject:OpenAIRE2020 a foaf:Project, sdatech:fundedProject ;
                  rdfs:label "OpenAIRE2020" ;
                  ex:description "Open access infrastructure for research in Europe to manage and monitor the outcomes of European funded research.";
                  ex:longdescription "OpenAIRE2020 represents a pivotal phase in the long-term effort to implement and strengthen the impact of the Open Access policies of the European Commission, building on the achievements of the OpenAIRE projects. OpenAIRE2020 will expand and leverage its focus from (1) the agents and resources of scholarly communication to workflows and processes, (2) from publications to data, software, and other research outputs, and the links between them, and (3) strengthen the relationship of European Open Access infrastructures with other regions of the world, in particular Latin America and the U.S. Through these efforts OpenAIRE2020 will truly support and accelerate Open Science and Scholarship, of which Open Access is of fundamental importance.";
-                 foaf:member sdaperson:ChristophLange, sdaperson:SaharVahdati ;
                  foaf:homepage <https://openaire.eu/> ;
                  foaf:depiction <https://www.openaire.eu/images/site_images/Logo_Vertical.png> ;
                  sda:funded "Funded Project" ;
@@ -1902,7 +1902,6 @@ sdaproject:OpenBudgetseu a foaf:Project, sdatech:fundedProject ;
                  rdfs:label "OpenBudgets.eu" ;
                  ex:description "The OpenBudgets.eu project aims to provide a generic framework and concrete tools for supporting financial transparency, thus enhancing accountability within public administrations and reducing the possibility of corruption. A key challenge for OpenBudgets.eu is to provide a framework that is scalable, easy-to-use, flexible, and attractive. We will apply the project concept to three pilot scenarios targeting three different applications related to public spending: journalism, transparency initiatives and citizenship engagement. This project will involve various stakeholders, including but not limited to public administrations, citizens, NGOs, media organisations and public service companies.";
                  ex:longdescription "The OpenBudgets.eu project aims to provide a generic framework and concrete tools for supporting financial transparency, thus enhancing accountability within public administrations and reducing the possibility of corruption. A key challenge for OpenBudgets.eu is to provide a framework that is scalable, easy-to-use, flexible, and attractive. We will apply the project concept to three pilot scenarios targeting three different applications related to public spending: journalism, transparency initiatives and citizenship engagement. This project will involve various stakeholders, including but not limited to public administrations, citizens, NGOs, media organisations and public service companies.";
-                 foaf:member sdaperson:FabrizioOrlandi, sdaperson:TiansiDong, sdaperson:FathoniMusyaffa ;
                  foaf:homepage "undefined" ;
                  foaf:depiction <https://pbs.twimg.com/profile_images/654638053290602500/9XhCpjrM_400x400.png> ;
                  sda:funded "Funded Project" ;
@@ -1924,7 +1923,6 @@ sdaproject:OSCOSS a foaf:Project, sdatech:fundedProject ;
                  rdfs:label "OSCOSS" ;
                  ex:description "A shared platform for Opening Scholarly Communication in the Social Sciences.";
                  ex:longdescription "OSCOSS is concerned with Opening Scholarly Communication in the Social Sciences.";
-                 foaf:member sdaperson:ChristophLange, sdaperson:AfshinSadeghi, sdaperson:SaharVahdati ;
                  foaf:homepage "undefined" ;
                  foaf:depiction <> ;
                  sda:funded "Funded Project" ;
@@ -1946,7 +1944,6 @@ sdaproject:SeReCo a foaf:Project, sdatech:fundedProject ;
                  rdfs:label "SeReCo" ;
                  ex:description "SeReCo (Semantics, Coordination and Reasoning) is a German-French doctoral college. Its scientific purpose of SeReCo is to explore the spectrum of technologies related to semantics, reasoning and coordination in distributed and open environments (such as the Web).";
                  ex:longdescription "SeReCo (Semantics, Coordination and Reasoning) is a German-French doctoral college. Its scientific purpose of SeReCo is to explore the spectrum of technologies related to semantics, reasoning and coordination in distributed and open environments (such as the Web).";
-                 foaf:member sdaperson:ChristophLange ;
                  foaf:homepage <https://sereco.univ-st-etienne.fr/> ;
                  foaf:depiction <> ;
                  sda:funded "Funded Project" ;
@@ -1968,7 +1965,6 @@ sdaproject:SlideWiki a foaf:Project, sdatech:fundedProject ;
                  rdfs:label "SlideWiki" ;
                  ex:description "A shared framework that supports communities to create presentations collaboratively";
                  ex:longdescription "SlideWiki is a collaboration platform which enables communities to build, share and play online presentations. In addition to importing PowerPoint presentations, it supports authoring of interactive online slides using HTML and LateX. Slides and their containers (called Deck), are versioned thereby enabling change tracking. Users can create their own themes on top of existing themes or re-use other's themes.";
-                 foaf:member sdaperson:SteffenLohmann, sdaperson:SaharVahdati ;
                  foaf:homepage <https://slidewiki.org/> ;
                  foaf:depiction <https://slidewiki.org/assets/images/slideWiki-logo-linear.png> ;
                  sda:funded "Funded Project" ;
@@ -1990,7 +1986,6 @@ sdaproject:BigDataOcean a foaf:Project, sdatech:fundedProject ;
                  rdfs:label "Big Data Ocean" ;
                  ex:description "Exploiting Oceans of Data for Maritime Applications";
                  ex:longdescription "BigDataOcean aims to capitalise on existing modern technological breakthroughs in the areas of the big data driven economy, and roll out a completely new value chain of interrelated data streams coming from diverse sectors and languages and residing on cross technology innovations being delivered in different formats in order to revolutionise the way maritime-related industries work, showcasing a huge and realistic economic, societal and environmental impact that is being achieved by introducing an economy of knowledge into a traditional sector which does not operate in an orchestrated manner and is rather fragmented.";
-                 foaf:member sdaperson:JensLehmann, sdaperson:GezimSejdiu, sdaperson:HajiraJabeen, sdaperson:IoannaLytra, sdaperson:FabrizioOrlandi ;
                  foaf:homepage <http://www.bigdataocean.eu/> ;
                  foaf:depiction <http://www.bigdataocean.eu/site/wp-content/uploads/2017/02/BIG-DATA-OCEAN_LOGO.png> ;
                  sda:funded "Funded Project" ;
@@ -2016,7 +2011,6 @@ sdaproject:DLLearner a foaf:Project, sdatech:openSourceProject ;
                  sda:hookline "A framework for Machine Learning in Semantic Knowledge Graphs." ;
                  ex:description "A framework for Machine Learning in Semantic Knowledge Graphs." ;
                  ex:longdescription "DL-Learner is a framework for supervised Machine Learning in OWL, RDF and Description Logics. The framework contains several algorithms for supervised machine learning using structured data as background knowledge, can use various RDF and OWL formats as input, can connect to most popular OWL reasoners and is easily and flexibly configurable. It extends the ideas of Inductive Logic Programming and Relational Learning to the Semantic Web in order to allow to analyse data in knowledge bases or help in constructing knowledge bases from data." ;
-                 foaf:member sdaperson:JensLehmann, sdaperson:LorenzBuehmann, sdaperson:PatrickWestphal, sdaperson:SimonBin;
                  foaf:homepage <http://www.dl-learner.org> ;
                  foaf:depiction <http://dl-learner.org/Images/dllearner.gif> ;
                  sda:twitter "undefined" ;
@@ -2033,7 +2027,6 @@ sdaproject:SANSAStack a foaf:Project, sdatech:openSourceProject ;
                  sda:hookline "Open Source Algorithms for Distributed Data Processing for Large-scale RDF Knowledge Graphs" ;
                  ex:description "Open Source Algorithms for Distributed Data Processing for Large-scale RDF Knowledge Graphs" ;
                  ex:longdescription "<b>SANSA-Stack</b>’s core is a processing data flow engine that provides data distribution, and fault tolerance for distributed computations over RDF large-scale datasets." ;
-                 foaf:member sdaperson:JensLehmann, sdaperson:GezimSejidu, sdaperson:HajiraJabeen, sdaperson:NileshChakraborty ;
                  foaf:homepage <http://sansa-stack.net> ;
                  foaf:depiction <http://sansa-stack.net/wp-content/uploads/2016/04/sansa-logo-blue.png> ;
                  sda:twitter "https://twitter.com/SANSA_Stack" ;
@@ -2054,7 +2047,6 @@ sdaproject:SMLBench a foaf:Project, sdatech:openSourceProject ;
                  sda:hookline "A Benchmark for Symbolic Supervised Machine Learning from Expressive Structured Data" ;
                  ex:description "A Benchmark for Symbolic Supervised Machine Learning from Expressive Structured Data" ;
                  ex:longdescription "The ultimate goal of SML-Bench is to foster research in machine learning from structured data as well as increase the reproducibility and comparability of algorithms in that area. This is important, since a) the preparation of machine learning tasks in that area involves a significant amount of work and b) there are hardly any cross comparisions across languages as this requires data conversion processes. " ;
-                 foaf:member sdaperson:JensLehmann, sdaperson:LorenzBuehmann, sdaperson:HajiraJabeen, sdaperson:PatrickWestphal, sdaperson:SimonBin ;
                  foaf:homepage <http://sml-bench.sda.tech/> ;
                  foaf:depiction <https://pbs.twimg.com/profile_images/732611105730744320/1UrgJ0Kd_400x400.jpg> ;
                  sda:twitter "https://twitter.com/smlbench" ;
@@ -2071,7 +2063,6 @@ sdaproject:SMLBench a foaf:Project, sdatech:openSourceProject ;
 sdaproject:AskNow a foaf:Project, sdatech:openSourceProject ;
                  rdfs:label "AskNow" ;
                  sda:hookline "Question Answering over RDF Knowledge Graphs" ;
-                 foaf:member sda:JensLehmann, sda:MohnishDubey, sdaperson:GauravMaheshwari, sdaperson:PriyanshTrivedi ;
                  sda:source "https://github.com/AskNowQA" ;
                  sda:download "undefined" ;
                  foaf:depiction <https://avatars2.githubusercontent.com/u/29380235?s=200&v=4> ;
@@ -2087,7 +2078,6 @@ sdaproject:AskNow a foaf:Project, sdatech:openSourceProject ;
 # LITMUS
 sdaproject:LITMUS a foaf:Project, sdatech:openSourceProject ;
            rdfs:label "LITMUS Benchmark Suite" ;
-           foaf:member sdaperson:HarshThakkar ;
            foaf:depiction <https://github.com/LITMUS-Benchmark-Suite/litmus-benchmark-suite.github.io/blob/master/images/litmus_logo.png> ;
            ex:description "An Open, Extensible Benchmarking Suite for Cross Domain RDF Data Management Systems" ;
            ex:longdescription "LITMUS Benchmark Suite, is an open extensible framework for benchmarking a plethora of cross-domain DMSs. Apart from automating the tedious process of benchmarking, it also offers: (i) An efficient way for replicating existing benchmarks (e.g., BSBM, WAT-DIV). (ii) A wide set of performance evaluation measures/indicators tailored specifically for needs and, (iii) Present a custom visualization via custom charts, graphs and tabular data of the benchmark results for a faster insight." ;
@@ -2101,7 +2091,6 @@ sdaproject:LITMUS a foaf:Project, sdatech:openSourceProject ;
 # DeFacto
 ex:DeFacto a foaf:Project, sdatech:openSourceProject ;
            rdfs:label "DeFacto" ;
-           foaf:member sdaperson:JensLehmann, sdaperson:DiegoEsteves ;
            doap:maintainer sda:JensLehmann ;
            foaf:depiction </assets/sdalogo.png> ;
            ex:description "Deep Fact Validation" ;
@@ -2117,7 +2106,6 @@ sdaproject:MEX a foaf:Project, sdatech:openSourceProject ;
                  rdfs:label "MEX Vocabulary" ;
                  ex:description "A Light-Weight Interchange Format for Machine Learning Experiments" ;
                  ex:longdescription "" ;
-                 foaf:member sda:JensLehmann, sda:DiegoEsteves ;
                  foaf:homepage <http://mex.aksw.org/> ;
                  foaf:depiction "" ;
                  sda:twitter "undefined" ;
@@ -2133,7 +2121,6 @@ sdaproject:MLDSLs a foaf:Project, sdatech:incubator ;
                  rdfs:label "ML-DSLs" ;
                  ex:description "Domain Specific Languages for Machine Learning algorithms." ;
                  ex:longdescription "" ;
-                 foaf:member sda:JensLehmann ;
                  foaf:homepage "undefined" ;
                  foaf:depiction "" ;
                  sda:twitter "undefined" ;
@@ -2147,7 +2134,6 @@ sdaproject:CogRob a foaf:Project, sdatech:incubator ;
                  rdfs:label "Cognitive Robotics" ;
                  ex:description "Cognitive Robotics." ;
                  ex:longdescription "" ;
-                 foaf:member sda:JensLehmann ;
                  foaf:homepage "undefined" ;
                  foaf:depiction "" ;
                  sda:twitter "undefined" ;
@@ -2161,7 +2147,6 @@ sdaproject:EACCP a foaf:Project, sdatech:incubator ;
                  rdfs:label "Experimental Analysis of Class CS Problems" ;
                  ex:description "Experimental Analysis of Class CS Problems." ;
                  ex:longdescription "" ;
-                 foaf:member sda:JensLehmann ;
                  foaf:homepage "undefined" ;
                  foaf:depiction "" ;
                  sda:twitter "undefined" ;
@@ -2175,7 +2160,6 @@ sdaproject:SAML a foaf:Project, sdatech:incubator ;
                  rdfs:label "Smoothed Analysis ML" ;
                  ex:description "Smoothed Analysis of Structured Machine Learning Algorithms from Knowledge Graphs." ;
                  ex:longdescription "" ;
-                 foaf:member sda:JensLehmann ;
                  foaf:homepage "undefined" ;
                  foaf:depiction "" ;
                  sda:twitter "undefined" ;
