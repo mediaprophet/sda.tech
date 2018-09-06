@@ -54,13 +54,15 @@ layout: default
         <p>{{page.rdf | rdf_property: 'cv:aboutPerson'}}</p>
       </div>
 
-      <br class="horizontal-separator" />
       <div class="members-projects links">
-        <h3>Research Groups</h3>
         <div class="partnersOfProject">
           <!-- Dieplaying the groups of particular members  -->
           {% capture personName %}{{ page.rdf | rdf_property: 'foaf:name' }}{% endcapture %}
           {% capture query %} SELECT ?person ?group ?groupName ?groupImage WHERE { ?person foaf:name "{{personName}}" . ?person sda:group ?group . ?group a aiiso:ResearchGroup . ?group rdfs:label ?groupName . ?group sda:imageclass ?groupImage .}{% endcapture %} {% assign groupList = page.rdf | sparql_query: query %}
+          {% if groupList.size != 0 %}
+            <br class="horizontal-separator" />
+            <h3>Research Groups</h3>
+          {% endif %}
           {% for group in groupList %}
             {% assign url= group.group | remove: "http://sda.tech/" %}
             <div class="chip">
@@ -70,13 +72,15 @@ layout: default
           {% endfor %}
         </div>
 
-        <br class="horizontal-separator2" />
-        <h3>Projects</h3>
+        <br class="horizontal-separator" />
         <div class="membersofProject">
           <!-- Person to Project Relationship Direct -->
           {% capture query %} SELECT ?person ?project ?projectname ?image WHERE {
           <{{page.rdf}}> foaf:currentProject ?project . ?project rdfs:label ?projectname . ?project foaf:depiction ?image .
           }{% endcapture %} {% assign projectList = page.rdf | sparql_query: query %}
+          {% if projectList.size != 0 %}
+            <br><h3>Projects</h3>
+          {% endif %}
           {% for projects in projectList %}
             {% assign url= projects.project | remove: "http://sda.tech/" %}
             <div class="chip">
@@ -98,13 +102,17 @@ layout: default
           </div>
         </div>
 
-        <br class="horizontal-separator2" />
-        <h3>Teaching</h3>
+        {% assign sectionheading = 'no' %}
         <!-- Displaying all the courses of the PERSON  -->
         {% capture querytwo %} SELECT ?course ?short ?desc ?coursename ?id ?semester ?year ?maintainer ?name WHERE{ ?course a sdatech:Course . ?course rdfs:label ?short . ?course dct:title ?coursename . ?course ex:description ?desc . ?course sda:id ?id . ?course sda:maintainer ?maintainer . ?maintainer foaf:name ?name . ?course sda:semester ?semester . ?course sda:year ?year . } order by asc(str(?id)) {% endcapture %} {% assign resultset3 = page.rdf | sparql_query: querytwo %}
         {% assign currentYear = 2018 %}
         {% assign currentSemester = "Summer" %}
         {% for result5 in resultset3 %} {% capture year %}{{result5.year}}{% endcapture %}{% assign year = year | plus: 0 %}{% capture maintainername %}{{result5.name}}{% endcapture %}{% capture semester %}{{result5.semester}}{% endcapture %}{% if maintainername == personName %}{% if year == currentYear %}{% if semester == currentSemester %}
+          {% if sectionheading ==  'no' %}
+            {% assign sectionheading = 'yes' %}
+            <br class="horizontal-separator2" />
+            <h3>Teaching</h3>
+          {% endif %}
           <div style="padding: 0px;" class="courseLink course-list">
             <ul>
               <li style="text-align: left;"><a href="{{result5.page}}">{{result5.coursename}}</a> - {{result5.id}}<br> <i>{{result5.desc}}</i><br></li>
@@ -112,11 +120,13 @@ layout: default
           </div>
         {% endif %}{% endif %}{% endif %}{% endfor %}
 
-        <br class="horizontal-separator2" />
-        <h3>Thesis Topics</h3>
         <!-- Displaying all the Thesis Topics of the PERSON  -->
         {% capture personName %}{{ page.rdf | rdf_property: 'foaf:name' }}{% endcapture %}
         {% capture query %} SELECT ?thesis ?title ?creator ?name ?thesislevel WHERE{ ?thesis a sdatech:openThesis . ?thesis dct:title ?title . ?thesis sda:thesisLevel ?thesislevel . ?thesis dct:creator ?creator . ?creator foaf:name "{{personName}}" . } {% endcapture %} {% assign thesistopics = page.rdf | sparql_query: query %}
+        {% if thesistopics.size != 0 %}
+          <br class="horizontal-separator2" />
+          <h3>Thesis Topics</h3>
+        {% endif %}
         {% for topic in thesistopics %}
           <div class="links">
             <ul>
@@ -125,12 +135,14 @@ layout: default
           </div>
         {% endfor %}
 
-        <br class="horizontal-separator2" />
-        <h3>Publications</h3>
         <div class="links">
           <!-- Displaying all the publications of the PERSON  -->
           {% capture query %} SELECT ?publication ?title ?date ?publisher ?link  WHERE{
           <{{page.rdf}}> sda:publication ?publication . ?publication dc:title ?title . ?publication dc:date ?date . ?publication dc:publisher ?publisher . ?publication foaf:homepage ?link . } {% endcapture %} {% assign resultset2 = page.rdf | sparql_query: query %}
+          {% if resultset2.size != 0 %}
+            <br class="horizontal-separator2" />
+            <h3>Publications</h3>
+          {% endif %}
           {% for result4 in resultset2 %}
             {% include pubEntry.html link=result4.link date=result4.date publisher=result4.publisher title=result4.title  %}
           {% endfor %}

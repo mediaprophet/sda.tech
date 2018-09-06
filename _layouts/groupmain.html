@@ -4,10 +4,8 @@ layout: default
 toggledURLTo: /Group/DistributedSemanticAnalytics/
 toggleOnDiv: dsa
 ---
-{% capture title %} {{ page.rdf | rdf_property: 'rdfs:label' }} {% endcapture %}
-{% assign title = title | strip %}
 
-<script> setTitle('{{title}}', '{{site.title | escape}}'); </script>
+<script> setTitle('Groups', '{{site.title | escape}}'); </script>
 
 <article class="post">
   {% include toggleInitialPageLink.html div=page.toggleOnDiv linkto=page.toggledURLTo %}
