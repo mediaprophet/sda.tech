@@ -3494,6 +3494,7 @@ sdatech:group a foaf:Document ;
 
 sdatech:job a foaf:Document ;
        sda:miniIcon "fa fa-list-alt margin-icon" ;
+       sda:miniIcon "fa fa-pencil-square-o margin-icon" ;
        rdfs:label "Jobs" .
 
 sdajob:environment a foaf:Document ;
@@ -3707,22 +3708,27 @@ sdatech:publication a foaf:Document ;
 
 sdatech:thesis a foaf:Document ;
           rdfs:label "Thesis" ;
+          sda:miniIcon "fa fa-pencil-square-o margin-icon" ;
           ex:group ex:DistributedSemanticAnalytics, ex:SemanticQuestionAnswering, ex:StructuredMachineLearning, ex:DeepLearning, ex:SoftwareEngineeringforDataScience ;
           ex:description "The Smart Data Analytics group is always looking for good students to write theses. The topics can be in one of the following broad areas" ;
           ex:longdescription "Please note that the list below is only a small sample of possible topics and ideas. Please contact us to discuss further, to find new topics, or to suggest a topic of your own." .
 
-sdatech:bachelorthesis a foaf:Document ;
+sdathesis:bachelorthesis a foaf:Document ;
+          sda:miniIcon "fa fa-users margin-icon" ;
           rdfs:label "Bachelor Thesis" .
 
-sdatech:faqthesis a foaf:Document ;
+sdathesis:frequentlyaskedquestions a foaf:Document ;
+          sda:miniIcon "fa fa-question-circle" ;
           rdfs:label "FAQ Thesis" .
 
 
-sdatech:masterthesis a foaf:Document ;
+sdathesis:masterthesis a foaf:Document ;
+          sda:miniIcon "fa fa-user margin-icon" ;
           rdfs:label "Master Thesis" .
 
 
-sdatech:ongoingthesis a foaf:Document ;
+sdathesis:ongoingthesis a foaf:Document ;
+          sda:miniIcon "fa fa-folder-open margin-icon" ;
           rdfs:label "On Going Thesis" .
 
 ###############################################

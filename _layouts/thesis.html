@@ -4,10 +4,8 @@ layout: default
 toggleOnDiv: allThesis
 toggledURLTo: /bachelorthesis
 ---
-{% include toggleThesisTypes.html %}
 {% include toggleBachelorThesis.html %}
 {% include toggleMasterThesis.html %}
-{% include toggleInitialPageLink.html div=page.toggleOnDiv linkto=page.toggledURLTo %}
 
 <!--Querry to GET all the Contact Persons of the Thesis   -->
 {% capture query %} SELECT  ?thesis ?thesisTitle ?person ?personName ?personImage WHERE{
@@ -15,8 +13,8 @@ toggledURLTo: /bachelorthesis
   <!-- Presentation of thesis Items  -->
   <article class="post">
     <!--Thesis Header  -->
-    {% include thesisHeader.html active="bachelor" %}
+    {% include thesisHeader.html active="Thesis" %}
     <!--Thesis Contetnt Types  -->
-    {% include thesisContent.html active="bachelor" %}
+    {% include thesisContent.html active="Thesis" %}
         <br class="horizontal-separator2" />
   </article>

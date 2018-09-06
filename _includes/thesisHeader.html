@@ -1,13 +1,51 @@
 <div class="pagination">
   <div class="status-thesis">
-    <a href="#" id="all" class="{% if include.active == 'bachelor' %}active{% endif %} responsiveTabItem" onclick="allThesisItems()"><i class="fa fa-users margin-icon" aria-hidden="true"></i>
+    {% assign count = 0 %}
+    {% capture query %}
+    # select all main Navigation position properties for counting
+    SELECT ?position WHERE{
+        sdatech:ThesisNavigation ?positionProp ?resource .
+        ?positionProp a rdfs:ContainerMembershipProperty .
+        ?positionProp rdfs:label ?position .
+    }
+    {% endcapture %}
+    {% assign resultset = page.rdf | sparql_query: query %}
+    {% for result in resultset %}
+
+    {% assign count = count | plus : 1 %}
+      {% capture query2 %}
+      # select menu entry for current count
+      SELECT ?resource ?label ?icon WHERE{
+          sdatech:ThesisNavigation ?positionProp ?resource .
+          ?positionProp a rdfs:ContainerMembershipProperty .
+          ?positionProp rdfs:label "{{count}}" .
+          ?resource a foaf:Document .
+          ?resource rdfs:label ?label .
+          optional{ ?resource sda:miniIcon ?icon } .
+      }
+      {% endcapture %}
+      {% assign resultset2 = page.rdf | sparql_query: query2 %}
+        {% for result2 in resultset2 %}
+            {% for page in site.pages %}
+                {% if page.rdf.iri == result2.resource.iri %}
+                  {% capture urlNav %}{{page.url}}{% endcapture %}
+                  {% capture navlabel%}{{result2.label}}{% endcapture %}
+                  {% capture icon%}{{result2.icon}}{% endcapture %}
+                    <a href="{{ urlNav | remove:"index.html" }}" class="{% if include.active == navlabel %}active{% endif %} responsiveTabItem" onclick="#"><i class="{{icon}}"  aria-hidden="true"></i>
+                         {{result2.label}}
+                    </a>
+                {% endif %}
+            {% endfor %}
+        {% endfor %}
+    {% endfor%}
+    <!-- <a href="#" id="all" class="{% if include.active == 'bachelor' %}active{% endif %} responsiveTabItem" onclick="allThesisItems()"><i class="fa fa-users margin-icon" aria-hidden="true"></i>
       Bachelor Theses</a>
     <a href="#" id="start" class="{% if include.active == 'master' %}active{% endif %} responsiveTabItem" onclick="activeOpenThesis()"><i class="fa fa-user margin-icon" aria-hidden="true"></i>
       Master Theses</a>
     <a href="#" id="end" class="{% if include.active == 'ongoing' %}active{% endif %} responsiveTabItem" onclick="activeFinishedThesis()"><i class="fa fa-folder-open margin-icon" aria-hidden="true"></i>
       On Going Theses</a>
     <a href="#" id="faqThesis" class="{% if include.active == 'faq' %}active{% endif %} responsiveTabItem" onclick="faqThesisToggle()"><i class="fa fa-question-circle" aria-hidden="true"></i>
-      FAQ</a>
+      FAQ</a> -->
     <br/>
     <br/>
     <hr/>
