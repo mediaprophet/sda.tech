@@ -1050,7 +1050,7 @@ sdaperson:JuliusKaufmann a foaf:Person, sdatech:studentAssistant ;
                    sda:twitter "" ;
                    sda:github "" ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
-                   cv:aboutPerson "" .
+                   cv:aboutPerson "Julius Kaufmann is a Student Assistant at the Computer Science Department III of the University of Bonn." .
 
 sdaperson:NileshChakraborty a foaf:Person, sdatech:studentAssistant ;
                    sda:publicationsTag "chakraborty" ;
