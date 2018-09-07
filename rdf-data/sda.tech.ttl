@@ -373,7 +373,7 @@ sdaperson:DiegoEsteves a foaf:Person, sdatech:phdStudent ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    cv:aboutPerson "Diego Esteves is a PhD Student & Research Associate at the University of Bonn. Esteves’ research interest are in the area of Natural Language Processing, Machine Learning and Semantic Web." ;
                    #sda:publication sdapublication:Publication1 ;
-                   #sda:group sdagroup:KnowledgeExtractionAndValidation ;
+                   sda:group sdagroup:SemanticDataManagement ;
                    foaf:currentProject sdaproject:DeFacto, sdaproject:HORUS, sdaproject:MEX, sdaproject:LiDaKrA, ex:DeFacto .
 
 sdaperson:FathoniMusyaffa a foaf:Person, sdatech:phdStudent ;
@@ -413,7 +413,7 @@ sdaperson:MousaviNajmeh a foaf:Person, sdatech:phdStudent ;
                    sda:github "https://github.com/Najmeh-M" ;
                    cv:aboutPerson "Najmeh Mousavi Nejad is a PhD student in the Smart Data Analytics group at University of Bonn. She received her master's degree in Artificial Intelligence in 2011 in Iran, following which she accumulated research experience supported by publications as well as working experience in industry. Since 2015, she is the recipient of a DAAD scholarship (German Academic Exchange Service) for PhD studies in Germany and continues to conduct research (also received a nomination for Best Research and Innovation Paper award in an international conference). Her research interests are semantic web, text mining and analysis, information extraction & retrieval and Natural language processing." ;
                    #sda:publication sdapublication:Publication1 ;
-                   #sda:group sdagroup:KnowledgeExtractionAndValidation .
+                   sda:group sdagroup:SemanticDataManagement .
 
 sdaperson:DebanjanChaudhuri a foaf:Person, sdatech:phdStudent ;
                    sda:publicationsTag "chaudhuri" ;
@@ -892,7 +892,7 @@ sdaperson:LavdimHalilaj a foaf:Person, sdatech:associateReseracher ;
                    sda:github "" ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    cv:aboutPerson "Lavdim Halilaj is a Researcher at the Fraunhofer IAIS." ;
-                   #sda:group sdagroup:KnowledgeExtractionAndValidation ;
+                   sda:group sdagroup:SemanticDataManagement ;
                    foaf:currentProject sdaproject:LUCID .
 
 sdaperson:IrlanGrangel a foaf:Person, sdatech:associateReseracher ;
@@ -912,7 +912,7 @@ sdaperson:IrlanGrangel a foaf:Person, sdatech:associateReseracher ;
                    sda:github "" ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    cv:aboutPerson "Irlan Grangel-Gonzales is a Researcher at the Fraunhofer IAIS." ;
-                   #sda:group sdagroup:KnowledgeExtractionAndValidation ;
+                   sda:group sdagroup:SemanticDataManagement ;
                    foaf:currentProject sdaproject:Boost40, sdaproject:LUCID .
 
 sdaperson:DiegoCollarana a foaf:Person, sdatech:associateReseracher ;
@@ -932,7 +932,7 @@ sdaperson:DiegoCollarana a foaf:Person, sdatech:associateReseracher ;
                    sda:github "" ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    cv:aboutPerson "Diego Collarana is a Researcher at the Fraunhofer IAIS." ;
-                   #sda:group sdagroup:KnowledgeExtractionAndValidation ;
+                   sda:group sdagroup:SemanticDataManagement ;
                    foaf:currentProject sdaproject:EDSA .
 
 sdaperson:KuldeepSingh a foaf:Person, sdatech:associateReseracher ;
@@ -1029,6 +1029,28 @@ sdaperson:VitalisWiens a foaf:Person, sdatech:associateReseracher ;
                    sda:github "" ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    cv:aboutPerson "Vitalis Wiens is a Researcher at the Fraunhofer IAIS." .
+
+sdaperson:SebastianBader a foaf:Person, sdatech:associateReseracher ;
+                   sda:publicationsTag "bader" ;
+                   ex:address sda:RoomC4a009 ;
+                   foaf:familyName "Bader" ;
+                   foaf:name "Sebastian Bader" ;
+                   foaf:nick "Sebastian" ;
+                   foaf:mbox <mailto:sebastian.bader@iais.fraunhofer.de> ;
+                   foaf:depiction <https://media.licdn.com/dms/image/C5103AQHjlwfhFHHTRQ/profile-displayphoto-shrink_800_800/0?e=1541635200&v=beta&t=tFgTvO2_o-FQt8r2-Qqw_zF3iTxvYy-g2R3EG1oNsD0> ;
+                   foaf:phone "" ;
+                   foaf:firstName "Sebastian" ;
+                   foaf:title "" ;
+                   foaf:status "Researcher" ;
+                   sda:linkedin "https://www.linkedin.com/in/sebastianrbader/" ;
+                   sda:website "" ;
+                   sda:twitter "" ;
+                   sda:github "https://github.com/sebbader" ;
+                   sda:dblp "http://dblp.org/pers/hd/b/Bader:Sebastian_R=" ;
+                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
+                   foaf:currentProject sdaproject:Boost40 ;
+                   sda:group sdagroup:SmartServices ;
+                   cv:aboutPerson "Sebastian Bader is a PhD Student & Research Associate at the University of Bonn and Fraunhofer IAIS. His research targets interoperability platforms powered by Semantic Web Technologies, Smart Services and the digital transformation of manufacturing facilities towards IoT-based systems." .
 
 
 ##############################Student Assistants#########################
@@ -1319,7 +1341,7 @@ sdaperson:KathanKashiparekh a foaf:Person, sdatech:intern ;
                    sda:twitter "" ;
                    sda:github "" ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
-                   cv:aboutPerson "" .
+                   cv:aboutPerson "Kathan Kashiparekh is a Student Intern at the Computer Science Department III of the University of Bonn." .
 
 sdaperson:AnikethReddy a foaf:Person, sdatech:intern ;
                    sda:publicationsTag "reddy" ;
@@ -1337,7 +1359,7 @@ sdaperson:AnikethReddy a foaf:Person, sdatech:intern ;
                    sda:twitter "" ;
                    sda:github "" ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
-                   cv:aboutPerson "" .
+                   cv:aboutPerson "Aniketh Reddy is a Student Intern at the Computer Science Department III of the University of Bonn." .
 
 ##############################Former Members#############################
 
@@ -1357,7 +1379,7 @@ sdaperson:FrankNietzsche a foaf:Person, sdatech:formerMember ;
                    sda:twitter "" ;
                    sda:github "" ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
-                   cv:aboutPerson "" ;
+                   cv:aboutPerson "Frank Nietzsche is a PhD Student at the Computer Science Department III of the University of Bonn." ;
                    foaf:currentProject sdaproject:GEISER .
 
 sdaperson:BastianHaarmann a foaf:Person, sdatech:formerMember ;
@@ -1376,7 +1398,7 @@ sdaperson:BastianHaarmann a foaf:Person, sdatech:formerMember ;
                    sda:twitter "" ;
                    sda:github "" ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
-                   cv:aboutPerson "" .
+                   cv:aboutPerson "Bastian Haarmann is a Senior Researcher at the Computer Science Department III of the University of Bonn." .
 
 sdaperson:HenningPetzka a foaf:Person, sdatech:formerMember ;
                    sda:publicationsTag "petzka" ;
@@ -1394,7 +1416,7 @@ sdaperson:HenningPetzka a foaf:Person, sdatech:formerMember ;
                    sda:twitter "" ;
                    sda:github "" ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
-                   cv:aboutPerson "" ;
+                   cv:aboutPerson "Henning Petzka is a Senior Researcher at the Computer Science Department III of the University of Bonn." ;
                    foaf:currentProject sdaproject:HOBBIT .
 
 sdaperson:MohamedSherif a foaf:Person, sdatech:formerMember ;
@@ -1413,7 +1435,7 @@ sdaperson:MohamedSherif a foaf:Person, sdatech:formerMember ;
                    sda:twitter "" ;
                    sda:github "" ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
-                   cv:aboutPerson "" .
+                   cv:aboutPerson "Mohamed Sherif is a Senior Researcher at the Computer Science Department III of the University of Bonn." .
 
 sdaperson:TiansiDong a foaf:Person, sdatech:formerMember ;
                    sda:publicationsTag "dong" ;
@@ -1431,7 +1453,7 @@ sdaperson:TiansiDong a foaf:Person, sdatech:formerMember ;
                    sda:twitter "" ;
                    sda:github "" ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
-                   cv:aboutPerson "" ;
+                   cv:aboutPerson "Tiansi Dong is a Senior Researcher at the Computer Science Department III of the University of Bonn." ;
                    foaf:currentProject sdaproject:OpenBudgetseu .
 
 sdaperson:VinayModi a foaf:Person, sdatech:formerMember ;
@@ -1450,7 +1472,7 @@ sdaperson:VinayModi a foaf:Person, sdatech:formerMember ;
                    sda:twitter "" ;
                    sda:github "" ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
-                   cv:aboutPerson "" .
+                   cv:aboutPerson "Vinay Modi is a Researcher at the Computer Science Department III of the University of Bonn." .
 
 sdaperson:FabrizioOrlandi a foaf:Person, sdatech:formerMember ;
                   sda:publicationsTag "orlandi" ;
@@ -3524,6 +3546,10 @@ sda:RoomC326 a sda:Room ;
               schema:location <http://sda.tech/Address/IAIS> ;
               ex:name "Room C-326" .
 
+sda:RoomC4a009 a sda:Room ;
+              schema:location <http://sda.tech/Address/IAIS> ;
+              ex:name "C4a-009" .
+
 sda:RoomB3226 a sda:Room ;
               schema:location <http://sda.tech/Address/IAIS> ;
               ex:name "Room B3-226" .
@@ -3826,6 +3852,9 @@ sda:twitter a owl:DatatypeProperty ;
 
 sda:github a owl:DatatypeProperty ;
           rdfs:label "GitHub" .
+
+sda:dblp a owl:DatatypeProperty ;
+          rdfs:label "DBLP" .
 
 sda:website a owl:DatatypeProperty ;
           rdfs:label "Personal Website" .
