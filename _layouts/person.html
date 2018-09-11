@@ -120,6 +120,23 @@ layout: default
           </div>
         {% endif %}{% endif %}{% endif %}{% endfor %}
 
+        {% capture querytwo %} SELECT ?course ?short ?desc ?coursename ?id ?semester ?year ?maintainer ?name WHERE{ ?course a sdatech:ExtraCourse . ?course rdfs:label ?short . ?course dct:title ?coursename . ?course ex:description ?desc . ?course sda:id ?id . ?course sda:maintainer ?maintainer . ?maintainer foaf:name ?name . ?course sda:semester ?semester . ?course sda:year ?year . } order by asc(str(?id)) {% endcapture %} {% assign resultset3 = page.rdf | sparql_query: querytwo %}
+        {% assign currentYear = 2018 %}
+        {% assign currentSemester = "Summer" %}
+        {% for result5 in resultset3 %} {% capture year %}{{result5.year}}{% endcapture %}{% assign year = year | plus: 0 %}{% capture maintainername %}{{result5.name}}{% endcapture %}{% capture semester %}{{result5.semester}}{% endcapture %}{% if maintainername == personName %}{% if year == currentYear %}{% if semester == currentSemester %}
+          {% if sectionheading ==  'no' %}
+            {% assign sectionheading = 'yes' %}
+            <br class="horizontal-separator2" />
+            <h3>Teaching</h3>
+          {% endif %}
+          <div style="padding: 0px;" class="courseLink course-list">
+            <ul>
+              <li style="text-align: left;"><a href="{{result5.page}}">{{result5.coursename}}</a> - {{result5.id}}<br> <i>{{result5.desc}}</i><br></li>
+            </ul>
+          </div>
+        {% endif %}{% endif %}{% endif %}{% endfor %}
+
+
         <!-- Displaying all the Thesis Topics of the PERSON  -->
         {% capture personName %}{{ page.rdf | rdf_property: 'foaf:name' }}{% endcapture %}
         {% capture query %} SELECT ?thesis ?title ?creator ?name ?thesislevel WHERE{ ?thesis a sdatech:openThesis . ?thesis dct:title ?title . ?thesis sda:thesisLevel ?thesislevel . ?thesis dct:creator ?creator . ?creator foaf:name "{{personName}}" . } {% endcapture %} {% assign thesistopics = page.rdf | sparql_query: query %}

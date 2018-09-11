@@ -3232,6 +3232,20 @@ sdateaching:BegleitseminarBachelorarbeitSoftwaretechnologieSummer2018 a sdatech:
            sda:year 2018 ;
            sda:id "BA-INF 062" .
 
+sdateaching:TemporalInformationSystemsSummer2018 a sdatech:ExtraCourse ;
+            rdfs:label "TIS" ;
+            dct:title "Temporal Information Systems" ;
+            foaf:homepage <https://pages.iai.uni-bonn.de/manthey_rainer/TIS2017/> ;
+            ex:description "" ;
+            dct:language "en-US" ;
+            dct:educationLevel "" ;
+            pf:endDate "2018-04-11"^^xsd:date ;
+            pf:startDate "2018-07-18"^^xsd:date ;
+            sda:maintainer sdaperson:SaharVahdati ;
+            sda:semester "Summer" ;
+            sda:year 2018 ;
+            sda:id "MA-INF 3302" .
+
 
 ########Winter Term##############
 
@@ -3362,6 +3376,20 @@ sdateaching:SeminarKnowledgeGraphAnalysisWinter2017 a sdatech:Course ;
            sda:semester "Winter" ;
            sda:year 2017 ;
            sda:id "MA-INF 4317" .
+
+sdateaching:IntelligentInformationSystemsSummer2018 a sdatech:ExtraCourse ;
+            rdfs:label "IIS" ;
+            dct:title "Intelligent Information Systems" ;
+            foaf:homepage <https://pages.iai.uni-bonn.de/manthey_rainer/IIS_1718/> ;
+            ex:description "" ;
+            dct:language "en-US" ;
+            dct:educationLevel "" ;
+            pf:endDate "2018-10-10"^^xsd:date ;
+            pf:startDate "2019-01-30"^^xsd:date ;
+            sda:maintainer sdaperson:SaharVahdati ;
+            sda:semester "Summer" ;
+            sda:year 2018 ;
+            sda:id "MA-INF 3203" .
 
 ##########################################
 ###################Jobs###################
@@ -3836,6 +3864,13 @@ sdatech:Course a owl:Class ;
                     site:classTemplate "course" ;
                     sysont:creationLabel "Course" ;
                     dct:issued "2008-05-14" .
+
+sdatech:ExtraCourse a owl:Class ;
+                 rdfs:label "Course" ;
+                 rdfs:comment "A course being taught by a member of SDA group but not belongs to SDA." ;
+                 rdfs:subClassOf foaf:Organization ;
+                 site:classTemplate "course" ;
+                 sysont:creationLabel "Course" .
 
 sdatech:Job a owl:Class ;
                     rdfs:label "Job" ;
