@@ -1055,6 +1055,26 @@ sdaperson:SebastianBader a foaf:Person, sdatech:associateReseracher ;
                    sda:group sdagroup:SmartServices ;
                    cv:aboutPerson "Sebastian Bader is a PhD Student & Research Associate at the University of Bonn and Fraunhofer IAIS. His research targets interoperability platforms powered by Semantic Web Technologies, Smart Services and the digital transformation of manufacturing facilities towards IoT-based systems." .
 
+sdaperson:RostislavNedelchev a foaf:Person, sdatech:associateReseracher ;
+                   sda:publicationsTag "nedelchev" ;
+                   ex:address sda:RoomB3236 ;
+                   foaf:familyName "Nedelchev" ;
+                   foaf:name "Rostislav Nedelchev" ;
+                   foaf:nick "Rostislav" ;
+                   foaf:mbox <mailto:rostislav.nedelchev@iais.fraunhofer.de> ;
+                   foaf:depiction <https://media.licdn.com/dms/image/C4E03AQHom9H1txHVfg/profile-displayphoto-shrink_800_800/0?e=1542240000&v=beta&t=2D4YbKLds_FlmK06kbCYqzgUwyCV4wgpOvIIMhoNTVY> ;
+                   foaf:phone "" ;
+                   foaf:firstName "Rostislav" ;
+                   foaf:title "" ;
+                   foaf:status "Researcher" ;
+                   sda:linkedin "https://www.linkedin.com/in/rostislav91nedelchev/" ;
+                   sda:website "" ;
+                   sda:twitter "" ;
+                   sda:github "" ;
+                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
+                   foaf:currentProject sdaproject:AskNow ;
+                   sda:group sdagroup:SemanticQuestionAnswering ;
+                   cv:aboutPerson "Rostislav Nedelchev is a PhD Student at the University of Bonn and a Research Engineer at Fraunhofer IAIS. Rostislav's research interests are in Natural Language Processing, Machine Learning and Data Science." .
 
 ##############################Student Assistants#########################
 
