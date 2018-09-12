@@ -1,9 +1,14 @@
 ---
 rdf_prefix_path: sda.tech.pref
+navigationdiv: About
 ---
 <!DOCTYPE html>
 <html xmlns:xlink="http://www.w3.org/1999/xlink" lang="{{ page.lang | default: site.lang | default: " en " }}">
 {% include head.html %}
+<script>
+deactivateHeader();
+activateHeader('{{page.navigationdiv}}');
+</script>
 <body>
   {% include rootHead.html %}
   {% include header.html %}

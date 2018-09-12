@@ -1,3 +1,21 @@
+<script type="text/javascript">
+  function activateHeader(div) {
+    document.getElementById(div).style.color = "#5CBF14";
+  }
+
+  function deactivateHeader() {
+    document.getElementById("About").style.color = "#087CCD";
+    document.getElementById("People").style.color = "#087CCD"
+    document.getElementById("Groups").style.color = "#087CCD"
+    document.getElementById("Projects").style.color = "#087CCD"
+    document.getElementById("Publications").style.color = "#087CCD"
+    document.getElementById("Jobs").style.color = "#087CCD"
+    document.getElementById("Teaching").style.color = "#087CCD"
+    document.getElementById("Thesis").style.color = "#087CCD"
+    document.getElementById("Partners").style.color = "#087CCD"
+
+  }
+</script>
 <header class="site-header" role="banner">
   <div class="wrapper">
     {% assign default_paths = site.pages | map: "path" %}
@@ -50,7 +68,7 @@
                       {% if page.rdf.iri == result2.resource.iri %}
                         {% capture urlNav %}{{page.url}}{% endcapture %}
                         {% capture navlabel%}{{result2.label}}{% endcapture %}
-                          <a class="page-link" href="{{ urlNav | remove:"index.html" }}">
+                          <a class="page-link" id="{{result2.label}}" href="{{ urlNav | remove:"index.html" }}">
                             {{ result2.label }}
                           </a>
                       {% endif %}

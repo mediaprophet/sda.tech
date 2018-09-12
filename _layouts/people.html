@@ -3,12 +3,16 @@ rdf_prefix_path: sda.tech.pref
 layout: default
 toggleOnDiv: All
 toggledURLTo: /people/
+navigationdiv: People
 ---
 
-<script> setTitle('People', '{{site.title | escape}}'); </script>
+<script>
+setTitle('People', '{{site.title | escape}}');
+deactivateHeader();
+activateHeader('{{page.navigationdiv}}');
+</script>
 
 {% include togglePeopleTypes.html %}
-{% include toggleInitialPageLink.html div=page.toggleOnDiv linkto=page.toggledURLTo %}
 <div class="pagination">
   {% include peopleHeader.html active ="AllMembers" %}
 </div>

@@ -3,10 +3,15 @@ rdf_prefix_path: sda.tech.pref
 layout: default
 toggledURL: project
 toggledURLTo: /project/allProjects
+navigationdiv: Projects
 ---
 
 {% capture title %} {{ page.rdf | rdf_property: 'rdfs:label' }} {% endcapture %}
-<script> setTitle('{{title}}', '{{site.title | escape}}'); </script>
+<script>
+setTitle('{{title}}', '{{site.title | escape}}');
+deactivateHeader();
+activateHeader('{{page.navigationdiv}}');
+</script>
 
 <div class="post">
   <div class="pagination">

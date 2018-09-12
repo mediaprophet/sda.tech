@@ -1,9 +1,14 @@
 ---
 rdf_prefix_path: sda.tech.pref
 layout: default
+navigationdiv: Publications
 ---
 
-<script> setTitle('Publications', '{{site.title | escape}}'); </script>
+<script>
+setTitle('Publications', '{{site.title | escape}}');
+deactivateHeader();
+activateHeader('{{page.navigationdiv}}');
+</script>
 
 <div class="pagination">
   <table id="pubTable" class="display"></table>

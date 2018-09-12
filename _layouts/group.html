@@ -2,6 +2,7 @@
 rdf_prefix_path: sda.tech.pref
 layout: default
 <!-- permalink: mypageurl.html -->
+navigationdiv: Groups
 ---
 {% capture query %} SELECT ?projects ?projectname ?image WHERE{
 <{{page.rdf}}> foaf:currentProject ?projects . ?projects rdfs:label ?projectname . ?projects foaf:depiction ?image . } {% endcapture %} {% assign resultset = page.rdf | sparql_query: query %} {% capture query %} SELECT ?person ?personname ?image WHERE{
@@ -14,7 +15,11 @@ layout: default
 {% capture title %} {{ page.rdf | rdf_property: 'rdfs:label' }} {% endcapture %}
 {% assign title = title | strip %}
 
-<script> setTitle('{{title}}', '{{site.title | escape}}'); </script>
+<script>
+setTitle('{{title}}', '{{site.title | escape}}');
+deactivateHeader();
+activateHeader('{{page.navigationdiv}}');
+</script>
 
     <!--Presentation of the GROUP Items-->
     <article class="post">

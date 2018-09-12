@@ -3,9 +3,14 @@ rdf_prefix_path: sda.tech.pref
 layout: default
 toggleOnDiv: allPartners
 toggledURLTo: /partners/
+navigationdiv: Partners
 ---
 
-<script> setTitle('Partners', '{{site.title | escape}}'); </script>
+<script>
+setTitle('Partners', '{{site.title | escape}}');
+deactivateHeader();
+activateHeader('{{page.navigationdiv}}');
+</script>
 
 {% include togglePartnerTypes.html %}
 {% include toggleInitialPageLink.html div=page.toggleOnDiv linkto=page.toggledURLTo %}

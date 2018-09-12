@@ -3,9 +3,14 @@ rdf_prefix_path: sda.tech.pref
 layout: default
 toggleOnDiv: guidelines
 toggledURLTo: /teaching/
+navigationdiv: Teaching
 ---
 
-<script> setTitle('Courses', '{{site.title | escape}}'); </script>
+<script>
+setTitle('Courses', '{{site.title | escape}}');
+deactivateHeader();
+activateHeader('{{page.navigationdiv}}');
+</script>
 
 {% include toggleCourseTypes.html %}
 {% include toggleInitialPageLink.html div=page.toggleOnDiv linkto=page.toggledURLTo %}
