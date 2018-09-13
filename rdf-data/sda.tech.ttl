@@ -2240,6 +2240,7 @@ sdapartner:AgroKnow a foaf:Organization, sdatech:industryPartner, sdatech:Partne
                               foaf:mbox <mailto:info@agroknow.com> ;
                               rdfs:label "THE INDUsTRY LEADER 2.0" ;
                               foaf:phone <Tel:+30-210-6897905> ;
+                              foaf:depiction <http://blog.agroknow.com/wp-content/uploads/2015/12/AGKN_LOGO.jpg> ;
                               schema:location <http://www.agroknow.com/agroknow/contact> ;
                               dct:abstract "Agro-Know is a fast growing SME specialized inagro-biodiversity knowledge management with a clearresearch focus on knowledge-intensive technologyinnovation for agriculture, food and biodiversity. " .
 
@@ -2344,7 +2345,8 @@ sdapartner:cessda a foaf:Organization, sdatech:academicPartner, sdatech:Partner 
                               foaf:mbox <mailto:cessda@cessda.eu> ;
                               rdfs:label "Consortium of European Social Science Data Archives" ;
                               foaf:phone <Tel:+47-55-583648> ;
-                              schema:location <https://www.cessda.eu/Contact> ;
+                              foaf:depiction <https://atos.net/wp-content/themes/atos/images/atos-logo-menu-bar.png> ;
+                              schema:location <https://seriss.eu/wp-content/uploads/2017/07/cessdaeric.png> ;
                               dct:abstract "CESSDA provides large scale, integrated and sustainable data services to the social sciences. It brings together social science data archives across Europe, with the aim of promoting the results of social science research and supporting national and international research and cooperation. " .
 
 sdapartner:ComuneDiTrento a foaf:Organization, sdatech:industryPartner, sdatech:Partner ;
@@ -2398,7 +2400,7 @@ sdapartner:ERCIM a foaf:Organization, sdatech:academicPartner, sdatech:Partner ;
                               foaf:mbox <mailto:contact@ercim.eu> ;
                               rdfs:label "European Research Consortium for Informatics and Mathematics" ;
                               foaf:phone <Tel:+30-210-6603300> ;
-                              foaf:depiction: <https://www.ercim.eu/images/logo-alt.png> ;
+                              foaf:depiction: <https://www.fnr.lu/wp-content/uploads/2016/04/ercim-300x202.png> ;
                               schema:location <https://www.ercim.eu/contact> ;
                               dct:abstract "ERCIM - the European Research Consortium for Informatics and Mathematics - aims to foster collaborative work within the European research community and to increase co-operation with European industry. Leading European research institutes are members of ERCIM. " .
 
@@ -2427,8 +2429,8 @@ sdapartner:FORTH a foaf:Organization, sdatech:academicPartner, sdatech:Partner ;
                               foaf:mbox <mailto:central@admin.forth.gr> ;
                               rdfs:label "Foundation for Research and Technology Hellas" ;
                               foaf:phone <Tel:+30-2810-3915002> ;
-                              foaf:depiction <https://www.forth.gr/_gfx/bg_index_logo_en.png> ;
-                              schema:location <http://www.forth.gr/index_main.php?c=81&l=e> ;
+                              foaf:depiction <https://ecscrm2016.org/wp-content/uploads/FORTH.png> ;
+                              schema:location <https://www.ics.forth.gr/isl/X-Search/files/images/forth.jpg> ;
                               dct:abstract "The Foundation for Research and Technology-Hellas (FORTH), established in 1983, is one of the largest research centers in Greece with well organized facilities, highly qualified personnel and a reputation as a top-level research foundation worldwide. FORTH reports to the General Secretariat for Research and Technology of the Hellenic Ministry of Education, Research and Religious Affairs. The Foundation, with headquarters in Heraklion, includes six Research Institutes in different parts of the country. " .
 
 sdapartner:FraunhoferIAIS a foaf:Organization, sdatech:academicPartner, sdatech:Partner ;
@@ -2499,7 +2501,7 @@ sdapartner:inmark a foaf:Organization, sdatech:industryPartner, sdatech:Partner 
 sdapartner:KDNuggets a foaf:Organization, sdatech:industryPartner, sdatech:Partner ;
                               foaf:homepage <https://www.kdnuggets.com/> ;
                               foaf:mbox <mailto:editor1@kdnuggets.com> ;
-                              foaf:depiction <https://www.kdnuggets.com/> ;
+                              foaf:depiction <https://chiefdataanalyticsofficersydney.com/wp-content/uploads/sites/172/2017/11/Kdnuggets-Logo-300x117.jpg> ;
                               rdfs:label "KDNuggets - Machine Learning, Data Science, Data Mining, Big Data, Analytics, AI" ;
                               dct:abstract "Business Analytics, Data Mining, and Data Science News, Jobs, Consulting, Software, Data, Courses, Education, and more. " .
 
@@ -2590,6 +2592,7 @@ sdapartner:TenForce a foaf:Organization, sdatech:industryPartner, sdatech:Partne
                               foaf:mbox <mailto:info@tenforce.com> ;
                               rdfs:label "TenForce" ;
                               foaf:phone <Tel:+32-473-740942> ;
+                              foaf:depiction <https://wms.cs.kuleuven.be/cs/studeren/master-computerwetenschappen/stages/stagevoorstellen/logos/2018-logo-tenforce.png/image> ;
                               schema:location <https://www.tenforce.com/contact/> ;
                               dct:abstract "TenForce is a Belgian Software Company known for its pragmatic solutions, built with innovative technology. Experts in Scrum from the early stages on A European thought-leader in Semantic Technology An international company – towards partners, employees & customers. " .
 
@@ -2627,7 +2630,7 @@ sdapartner:UniversityOfTrento a foaf:Organization, sdatech:academicPartner, sdat
                               foaf:mbox <mailto:ateneo@unitn.it> ;
                               rdfs:label "University Degli Studi di Trento" ;
                               foaf:phone <Tel:+39-0461-281111> ;
-                              foaf:depiction <http://static-cdn.unitn.it/sites/www.unitn.it/themes/unitn_theme/images/logo_unitn_en.png> ;
+                              foaf:depiction <https://static-cdn.unitn.it/fileswww/images/2067/logounitnfootereng.png> ;
                               schema:location <https://www.unitn.it/en/ateneo/933/contact-the-university-of-trento> ;
                               dct:abstract "Established in 1962, the University of Trento is nowadays recognized as a leading academic institution in Italy and Europe for its quality of research and international outreach, particularly in ICT, economics and sociology. " .
 
