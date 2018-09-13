@@ -2106,7 +2106,7 @@ sdaproject:AskNow a foaf:Project, sdatech:openSourceProject ;
                  sda:download "undefined" ;
                  foaf:depiction <https://avatars2.githubusercontent.com/u/29380235?s=200&v=4> ;
                  sda:twitter "https://twitter.com/AskNowQA" ;
-                 foaf:homepage "http://sansa-stack.net" ;
+                 foaf:homepage "http://asknow.sda.tech/" ;
                  sda:source "https://github.com/AskNowQA" ;
                  site:content "";
                  sda:publicationTag "asknow" ;
