@@ -2558,7 +2558,7 @@ sdapartner:OpenPHACTS a foaf:Organization, sdatech:industryPartner, sdatech:Part
 
 sdapartner:OpenLink a foaf:Organization, sdatech:industryPartner, sdatech:Partner ;
                               foaf:homepage <https://www.openlinksw.com/> ;
-                              foaf:depiction <https://www.openlinksw.com/skin/images/oplogostd160.png>
+                              foaf:depiction <https://www.openlinksw.com/skin/images/oplogostd160.png> ;
                               rdfs:label "Open Link Software" ;
                               foaf:phone <Tel:+44-20-86817701> ;
                               schema:location <https://www.openlinksw.com/contact/> ;
@@ -2566,7 +2566,7 @@ sdapartner:OpenLink a foaf:Organization, sdatech:industryPartner, sdatech:Partne
 
 sdapartner:SemanticWebCompany a foaf:Organization, sdatech:industryPartner, sdatech:Partner ;
                               foaf:homepage <https://semantic-web.com/> ;
-                              foaf:depiction <https://semantic-web.com/wp-content/themes/SWC/library/images/swc-logo.svg> 
+                              foaf:depiction <https://semantic-web.com/wp-content/themes/SWC/library/images/swc-logo.svg> ;
                               foaf:currentProject sdaproject:SEMAGROW,
                               sdaproject:DALICC,
                               sdaproject:SYMBIOPTIMA,
