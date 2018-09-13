@@ -34,8 +34,8 @@ OPTIONAL {?Person foaf:firstName ?fname } . OPTIONAL { ?Person foaf:title ?title
   image=result.image %} {% endfor %}
   {% for result in interneesArray %} {% assign url = result.Person | remove: "http://sda.tech/" %} {% include professors.html name=result.name firstname=result.fname title=result.title urlp=url status=result.status room=result.room linkedin=result.linkedin website=result.website mailto=result.mailto
   image=result.image %} {% endfor %}
-  {% for result in formerMembersArray %} {% assign url = result.Person | remove: "http://sda.tech/" %} {% include professors.html name=result.name firstname=result.fname title=result.title urlp=url status=result.status room=result.room linkedin=result.linkedin website=result.website mailto=result.mailto
-  image=result.image %} {% endfor %}
+  <!-- {% for result in formerMembersArray %} {% assign url = result.Person | remove: "http://sda.tech/" %} {% include professors.html name=result.name firstname=result.fname title=result.title urlp=url status=result.status room=result.room linkedin=result.linkedin website=result.website mailto=result.mailto
+  image=result.image %} {% endfor %} -->
 </div>
 <div id="Prof" style="{% if include.active == 'Prof' %}display:inline-block{% else %}display:none{% endif %}" class="positioning-cards">
   <!-- Displaying Results for Professors -->
