@@ -2100,6 +2100,8 @@ sdaproject:SMLBench a foaf:Project, sdatech:openSourceProject ;
 sdaproject:AskNow a foaf:Project, sdatech:openSourceProject ;
                  rdfs:label "AskNow" ;
                  sda:hookline "Question Answering over RDF Knowledge Graphs" ;
+                 ex:description "Question Answering over RDF Knowledge Graphs" ;
+                 ex:longdescription "The underlying idea of the project is to convert a natural language expression to a SPARQL query, which can then retrieve the answer of a question from a given triple store." ;
                  sda:source "https://github.com/AskNowQA" ;
                  sda:download "undefined" ;
                  foaf:depiction <https://avatars2.githubusercontent.com/u/29380235?s=200&v=4> ;
