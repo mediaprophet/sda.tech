@@ -2314,6 +2314,7 @@ sdapartner:AthenaRC a foaf:Organization, sdatech:academicPartner, sdatech:Partne
                               rdfs:label "Information Management Systems Institute Athena" ;
                               foaf:phone <Tel:+30-210-6875403> ;
                               schema:location <http://www.imsi.athenarc.gr/en/contact> ;
+                              foaf:depiction <https://www.athena-innovation.gr/sites/default/files/screen_shot_2017-07-30_at_10.22.02_pm_0.png> ;
                               dct:abstract "The mission of IMSI is to conduct research, develop innovative applications and products, and provide services in the areas of data management and large scale information systems. " .
 
 sdapartner:Atos a foaf:Organization, sdatech:industryPartner, sdatech:Partner ;
@@ -2381,7 +2382,7 @@ sdapartner:CRES a foaf:Organization, sdatech:academicPartner, sdatech:Partner ;
                               foaf:mbox <mailto:cres@cres.gr> ;
                               rdfs:label "Center for renewable Energy Sources & Saving" ;
                               foaf:phone <Tel:+30-210-6603300> ;
-                              foaf:depiction <http://www.cres.gr/cres/images/demo/cres-logo.png> ;
+                              foaf:depiction <http://www.cres.gr/energyhubforall/images/Partners/CRES.png> ;
                               schema:location <http://www.cres.gr/cres/images/demo/map_cres_uk.jpg> .
                               #dct:abstract "CESSDA provides large scale, integrated and sustainable data services to the social sciences. It brings together social science data archives across Europe, with the aim of promoting the results of social science research and supporting national and international research and cooperation. " .
 
@@ -2415,7 +2416,7 @@ sdapartner:FAO a foaf:Organization, sdatech:industryPartner, sdatech:Partner ;
                               foaf:mbox <mailto:FAO-HQ@fao.org> ;
                               rdfs:label "Food and Agriculture Organization of the United Nations" ;
                               foaf:phone <Tel:+39-06-57051> ;
-                              foaf:depiction <http://www.fao.org/fileadmin/templates/faoboot/css/img/fao-logo-white.svg> ;
+                              foaf:depiction <http://www.fao.org/fileadmin/templates/faoweb/images/FAO-logo.png> ;
                               schema:location <http://www.fao.org/about/who-we-are/worldwide-offices/en/> ;
                               dct:abstract "The Food and Agriculture Organization (FAO) is specialized agency of the United Nations that leads international efforts to defeat hunger. Their goal is to achieve food security for all and make sure that people have regular access to enough high-quality food to lead active, healthy lives. With over 194 member states, FAO works in over 130 countries worldwide. " .
 
@@ -2430,20 +2431,8 @@ sdapartner:FORTH a foaf:Organization, sdatech:academicPartner, sdatech:Partner ;
 
 sdapartner:FraunhoferIAIS a foaf:Organization, sdatech:academicPartner, sdatech:Partner ;
                               foaf:homepage <https://www.iais.fraunhofer.de/> ;
-                              foaf:currentProject sdaproject:AskNow,
-                              sdaproject:VoCol,
-                              sdaproject:FuhSen ;
-                              foaf:mbox <mailto:info@iais.fraunhofer.de> ;
-                              rdfs:label "Fraunhofer Institute for Intelligent Analysis nad Information Systems IAIS" ;
-                              foaf:phone <Tel:+49-2241-143000> ;
-                              schema:location <https://www.iais.fraunhofer.de/en/footer/contact.html> ;
-                              dct:abstract "Fraunhofer IAIS is a leading scientific institute specializing in applied research into intelligent data and knowledge analysis. 250 data scientists and IT experts support companies and organizations putting intelligent information management into practice. " .
-
-sdapartner:FraunhoferIAIS a foaf:Organization, sdatech:academicPartner, sdatech:Partner ;
-                              foaf:homepage <https://www.iais.fraunhofer.de/> ;
-                              foaf:currentProject sdaproject:AskNow,
-                              sdaproject:VoCol,
-                              sdaproject:FuhSen ;
+                              foaf:depiction <https://www.iais.fraunhofer.de/content/dam/iais/iais.svg> ;
+                              foaf:currentProject sdaproject:AskNow, sdaproject:SANSA_Stack, sdaproject:BigDataEurope, sdaproject:Boost40, sdaproject:VoCol, sdaproject:FuhSen ;
                               foaf:mbox <mailto:info@iais.fraunhofer.de> ;
                               rdfs:label "Fraunhofer Institute for Intelligent Analysis nad Information Systems IAIS" ;
                               foaf:phone <Tel:+49-2241-143000> ;
@@ -2452,6 +2441,7 @@ sdapartner:FraunhoferIAIS a foaf:Organization, sdatech:academicPartner, sdatech:
 
 sdapartner:GET a foaf:Organization, sdatech:industryPartner, sdatech:Partner ;
                               foaf:homepage <http://www.getmap.eu/en/> ;
+                              foaf:depiction <http://www.getmap.eu/wp-content/uploads/2016/03/GET-Logo-s.png> ;
                               foaf:currentProject <http://sda.tech/Project/BusinessIntelligence&AnalyticsApplication> ;
                               foaf:mbox <mailto:contact@getmap.gr> ;
                               rdfs:label "Geospital Enabling Technologies" ;
@@ -2544,6 +2534,7 @@ sdapartner:NCSR a foaf:Organization, sdatech:academicPartner, sdatech:Partner ;
 
 sdapartner:Ontos a foaf:Organization, sdatech:industryPartner, sdatech:Partner ;
                               foaf:homepage <http://ontos.com/> ;
+                              foaf:depiction <http://ontos.com/wp-content/uploads/2016/02/Ontos_logo1_big.png> ;
                               foaf:currentProject sdaproject:LEDS,
                               sdaproject:SAKE,
                               sdaproject:GeoKnow ;
@@ -2567,13 +2558,15 @@ sdapartner:OpenPHACTS a foaf:Organization, sdatech:industryPartner, sdatech:Part
 
 sdapartner:OpenLink a foaf:Organization, sdatech:industryPartner, sdatech:Partner ;
                               foaf:homepage <https://www.openlinksw.com/> ;
-                              rdfs:label "Open Link Software - Making Technology Work for You" ;
+                              foaf:depiction <https://www.openlinksw.com/skin/images/oplogostd160.png>
+                              rdfs:label "Open Link Software" ;
                               foaf:phone <Tel:+44-20-86817701> ;
                               schema:location <https://www.openlinksw.com/contact/> ;
                               dct:abstract "OpenLink Software is an acclaimed technology innovator and leading vendor of industry standards compliant data access, integration, and management technology. " .
 
 sdapartner:SemanticWebCompany a foaf:Organization, sdatech:industryPartner, sdatech:Partner ;
                               foaf:homepage <https://semantic-web.com/> ;
+                              foaf:depiction <https://semantic-web.com/wp-content/themes/SWC/library/images/swc-logo.svg> 
                               foaf:currentProject sdaproject:SEMAGROW,
                               sdaproject:DALICC,
                               sdaproject:SYMBIOPTIMA,
@@ -2585,7 +2578,7 @@ sdapartner:SemanticWebCompany a foaf:Organization, sdatech:industryPartner, sdat
                               sdaproject:PROPEL,
                               sdaproject:ADEQUATe ;
                               foaf:mbox <mailto:office@semantic-web.com> ;
-                              rdfs:label "Semantic Web Company - Linking Data to Knowledge" ;
+                              rdfs:label "Semantic Web Company" ;
                               foaf:phone <Tel:+43-1-4021235> ;
                               schema:location <https://semantic-web.com/contact/> ;
                               dct:abstract "Semantic Web Company (SWC) is a technology provider headquartered in Vienna (Austria). SWC supports organizations from all industrial sectors worldwide to improve their information management. Our core product has outstanding capabilities to extract meaning from big data by making use of linked data technologies. " .
@@ -2620,6 +2613,7 @@ sdapartner:UniversityOfLeipzig a foaf:Organization, sdatech:academicPartner, sda
 
 sdapartner:UniversityOfSouthampton a foaf:Organization, sdatech:academicPartner, sdatech:Partner ;
                               foaf:homepage <https://www.southampton.ac.uk/> ;
+                              foaf:depiction <https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/University_of_Southampton_Logo.svg/200px-University_of_Southampton_Logo.svg.png> ;
                               foaf:mbox <mailto:international@southampton.ac.uk> ;
                               rdfs:label "University of Southampton" ;
                               foaf:phone <Tel:+44-23-80595000> ;
