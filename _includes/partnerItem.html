@@ -3,16 +3,9 @@
   <a href="{{include.href}}" target="_blank"> <h1>{{include.title}}</h1></a>
 </div>
 <div class="partner-item">
-  <br class="horizontal-separator"/>
-  <div class="partner-icon">
-    <img style="padding:0px;" src="{{include.image}}" alt="{{iclude.title}}">
-  </div>
-  <div class="partner-detail">
-    <div class="partner-description">
-      {{include.description}}
-    </div>
-  </div>
-  <div class="partnerProjects post-content">
+  <div style="vertical-align: middle;float: left;width: 25%;"> <img style="width: 200px;" src="{{include.image}}" alt="{{iclude.title}}"> </div>
+  <div style="display:inline-block; vertical-align: middle;float: left;width: 75%;">
+    {{include.description}}<br>
     We are partner in the following project(s) with {{include.name}}:
     {% for partners in include.projectList %}
       {% capture partnerNameinArray %}{{partners.partnername}}{% endcapture%}
