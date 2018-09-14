@@ -45,7 +45,7 @@ activateHeader('{{page.navigationdiv}}');
         <h3>Partners</h3>
         <div class="partnersOfProject links">
           {% capture query %} SELECT ?partner ?partnername ?image ?partnersite WHERE{
-          <{{page.rdf}}> sda:partners ?partner . ?partner rdfs:label ?partnername . ?partner foaf:depiction ?image . OPTIONAL{ ?partner foaf:homepage ?partnersite } . } {% endcapture %} {% assign partners = page.rdf | sparql_query: query %}
+          ?partner a sdatech:Partner . ?partner foaf:currentProject <{{page.rdf}}> . ?partner rdfs:label ?partnername . ?partner foaf:depiction ?image . OPTIONAL{ ?partner foaf:homepage ?partnersite } . } {% endcapture %} {% assign partners = page.rdf | sparql_query: query %}
           <!--  -->
           <!-- {% capture partnerNameArray %}
             {% for partner in partners %}

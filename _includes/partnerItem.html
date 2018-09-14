@@ -7,16 +7,19 @@
   <div style="display:inline-block; vertical-align: middle;float: left;width: 75%;">
     {{include.description}}<br>
     We are partner in the following project(s) with {{include.name}}:
-    {% for partners in include.projectList %}
-      {% capture partnerNameinArray %}{{partners.partnername}}{% endcapture%}
-      {% if partnerNameinArray == include.name %}
-        {% assign url= partners.project | remove: "http://sda.tech/" %}
+    <br><br class="horizontal-separator" />
+    <div class="membersofProject">
+      {% capture query %} SELECT ?partner ?project ?projectname ?image WHERE {
+        <{{include.partnerId}}> foaf:currentProject ?project . ?project rdfs:label ?projectname . ?project foaf:depiction ?image .
+      }{% endcapture %} {% assign projectList = page.rdf | sparql_query: query %}
+      {% for projects in projectList %}
+        {% assign url= projects.project | remove: "http://sda.tech/" %}
         <div class="chip">
-          <img src="{{partners.image}}" alt="Project" width="96" height="96">
-          <a href="../{{url}}">{{partners.name}}</a>
+          <img class="img-circle-small" src="{{projects.image}}" alt="Project" width="96" height="96">
+          <a href="../../{{url}}">{{projects.projectname}}</a>
         </div>
-      {% endif %}
-    {% endfor %}
+      {% endfor %}
+    </div>
   </div>
   <br class="horizontal-separator"/>
 </div>
