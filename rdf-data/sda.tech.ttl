@@ -2238,7 +2238,7 @@ sdapartner:AgroKnow a foaf:Organization, sdatech:industryPartner, sdatech:Partne
                               sdaproject:Organic.Lingua,
                               sdaproject:SemaGrow ;
                               foaf:mbox <mailto:info@agroknow.com> ;
-                              rdfs:label "THE INDUsTRY LEADER 2.0" ;
+                              rdfs:label "Agroknow" ;
                               foaf:phone <Tel:+30-210-6897905> ;
                               foaf:depiction <http://blog.agroknow.com/wp-content/uploads/2015/12/AGKN_LOGO.jpg> ;
                               schema:location <http://www.agroknow.com/agroknow/contact> ;
@@ -2266,7 +2266,7 @@ sdapartner:AI4BG a foaf:Organization, sdatech:industryPartner, sdatech:Partner ;
                               sdaproject:SAKE,
                               sdaproject:LiDaKrA ;
                               foaf:mbox <mailto:info@ai4bd.com> ;
-                              rdfs:label "Artificial Intelligence for Big Data" ;
+                              rdfs:label "AI4BD GmbH" ;
                               foaf:phone <Tel:+49-341-2155910> ;
                               foaf:depiction <http://ai4bd.com/wp-content/uploads/2016/09/final-logo-ai4bd.png> ;
                               schema:location <http://ai4bd.com/?page_id=10> ;
@@ -2314,7 +2314,7 @@ sdapartner:AthenaRC a foaf:Organization, sdatech:academicPartner, sdatech:Partne
                               sdaproject:MICRORNA,
                               sdaproject:EHRI ;
                               foaf:mbox <mailto:contact@imis.athena-innovation.gr> ;
-                              rdfs:label "Information Management Systems Institute Athena" ;
+                              rdfs:label "Athena RC" ;
                               foaf:phone <Tel:+30-210-6875403> ;
                               schema:location <http://www.imsi.athenarc.gr/en/contact> ;
                               foaf:depiction <https://www.athena-innovation.gr/sites/default/files/screen_shot_2017-07-30_at_10.22.02_pm_0.png> ;
@@ -2343,7 +2343,7 @@ sdapartner:cessda a foaf:Organization, sdatech:academicPartner, sdatech:Partner 
                               sdaproject:DwB,
                               sdaproject:CESSDAPPP ;
                               foaf:mbox <mailto:cessda@cessda.eu> ;
-                              rdfs:label "Consortium of European Social Science Data Archives" ;
+                              rdfs:label "CESSDA " ;
                               foaf:phone <Tel:+47-55-583648> ;
                               foaf:depiction <https://seriss.eu/wp-content/uploads/2017/07/cessdaeric.png> ;
                               schema:location <https://www.cessda.eu/Contact> ;
@@ -2384,11 +2384,11 @@ sdapartner:CRES a foaf:Organization, sdatech:academicPartner, sdatech:Partner ;
                               sdaproject:ElectricVehicle,
                               sdaproject:CESSDAPPP ;
                               foaf:mbox <mailto:cres@cres.gr> ;
-                              rdfs:label "Center for renewable Energy Sources & Saving" ;
+                              rdfs:label "CRES" ;
                               foaf:phone <Tel:+30-210-6603300> ;
                               foaf:depiction <http://www.cres.gr/energyhubforall/images/Partners/CRES.png> ;
-                              schema:location <http://www.cres.gr/cres/images/demo/map_cres_uk.jpg> .
-                              #dct:abstract "CESSDA provides large scale, integrated and sustainable data services to the social sciences. It brings together social science data archives across Europe, with the aim of promoting the results of social science research and supporting national and international research and cooperation. " .
+                              schema:location <http://www.cres.gr/cres/images/demo/map_cres_uk.jpg> ;
+                              dct:abstract "The Centre for Renewable Energy Sources and Saving (CRES) is the Greek national entity for the promotion of renewable energy sources, rational use of energy and energy conservation." .
 
 sdapartner:ERCIM a foaf:Organization, sdatech:academicPartner, sdatech:Partner ;
                               foaf:homepage <https://www.ercim.eu/> ;
@@ -2398,9 +2398,9 @@ sdapartner:ERCIM a foaf:Organization, sdatech:academicPartner, sdatech:Partner ;
                               sdaproject:Special,
                               sdaproject:Vre4eic ;
                               foaf:mbox <mailto:contact@ercim.eu> ;
-                              rdfs:label "European Research Consortium for Informatics and Mathematics" ;
+                              rdfs:label "ERCIM / W3C" ;
                               foaf:phone <Tel:+30-210-6603300> ;
-                              foaf:depiction: <https://www.fnr.lu/wp-content/uploads/2016/04/ercim-300x202.png> ;
+                              foaf:depiction <https://www.ercim.eu/images/logo-alt.png> ;
                               schema:location <https://www.ercim.eu/contact> ;
                               dct:abstract "ERCIM - the European Research Consortium for Informatics and Mathematics - aims to foster collaborative work within the European research community and to increase co-operation with European industry. Leading European research institutes are members of ERCIM. " .
 
@@ -2408,7 +2408,7 @@ sdapartner:SatCen a foaf:Organization, sdatech:industryPartner, sdatech:Partner 
                               foaf:homepage <https://www.satcen.europa.eu/> ;
                               foaf:currentProject sdaproject:BigDataEurope;
                               foaf:mbox <mailto:WEU.RATU@SATCEN.EUROPA.EU> ;
-                              rdfs:label "European Union Satellite Centre" ;
+                              rdfs:label "EU SatCen" ;
                               foaf:phone <Tel:+32-2-230-5787> ;
                               foaf:depiction <https://www.satcen.europa.eu/assets/img/logo_top_3.png> ;
                               schema:location <https://www.satcen.europa.eu/contact> ;
@@ -2418,7 +2418,7 @@ sdapartner:FAO a foaf:Organization, sdatech:industryPartner, sdatech:Partner ;
                               foaf:homepage <http://www.fao.org/home/en/> ;
                               foaf:currentProject sdaproject:DigitalServicesinAfrica;
                               foaf:mbox <mailto:FAO-HQ@fao.org> ;
-                              rdfs:label "Food and Agriculture Organization of the United Nations" ;
+                              rdfs:label "FAO" ;
                               foaf:phone <Tel:+39-06-57051> ;
                               foaf:depiction <http://www.fao.org/fileadmin/templates/faoweb/images/FAO-logo.png> ;
                               schema:location <http://www.fao.org/about/who-we-are/worldwide-offices/en/> ;
@@ -2427,7 +2427,7 @@ sdapartner:FAO a foaf:Organization, sdatech:industryPartner, sdatech:Partner ;
 sdapartner:FORTH a foaf:Organization, sdatech:academicPartner, sdatech:Partner ;
                               foaf:homepage <https://www.forth.gr/> ;
                               foaf:mbox <mailto:central@admin.forth.gr> ;
-                              rdfs:label "Foundation for Research and Technology Hellas" ;
+                              rdfs:label "FORTH" ;
                               foaf:phone <Tel:+30-2810-3915002> ;
                               foaf:depiction <https://ecscrm2016.org/wp-content/uploads/FORTH.png> ;
                               schema:location <http://www.forth.gr/index_main.php?c=81&l=e> ;
@@ -2438,7 +2438,7 @@ sdapartner:FraunhoferIAIS a foaf:Organization, sdatech:academicPartner, sdatech:
                               foaf:depiction <https://www.iais.fraunhofer.de/content/dam/iais/iais.svg> ;
                               foaf:currentProject sdaproject:AskNow, sdaproject:SANSA_Stack, sdaproject:BigDataEurope, sdaproject:Boost40, sdaproject:VoCol, sdaproject:FuhSen ;
                               foaf:mbox <mailto:info@iais.fraunhofer.de> ;
-                              rdfs:label "Fraunhofer Institute for Intelligent Analysis nad Information Systems IAIS" ;
+                              rdfs:label "Fraunhofer IAIS" ;
                               foaf:phone <Tel:+49-2241-143000> ;
                               schema:location <https://www.iais.fraunhofer.de/en/footer/contact.html> ;
                               dct:abstract "Fraunhofer IAIS is a leading scientific institute specializing in applied research into intelligent data and knowledge analysis. 250 data scientists and IT experts support companies and organizations putting intelligent information management into practice. " .
@@ -2448,7 +2448,7 @@ sdapartner:GET a foaf:Organization, sdatech:industryPartner, sdatech:Partner ;
                               foaf:depiction <http://www.getmap.eu/wp-content/uploads/2016/03/GET-Logo-s.png> ;
                               foaf:currentProject <http://sda.tech/Project/BusinessIntelligence&AnalyticsApplication> ;
                               foaf:mbox <mailto:contact@getmap.gr> ;
-                              rdfs:label "Geospital Enabling Technologies" ;
+                              rdfs:label "GET" ;
                               foaf:phone <Tel:+30-210-6664192> ;
                               schema:location <http://www.getmap.eu/en/contact/> ;
                               dct:abstract "GET is a high-tech SME, with solutions covering the entire lifecycle of geospatial data. " .
@@ -2469,7 +2469,7 @@ sdapartner:imec a foaf:Organization, sdatech:industryPartner, sdatech:Partner ; 
                               sdaproject:LEAPS,
                               sdaproject:PRO-FLOW;
                               foaf:mbox <mailto:info@imec.be> ;
-                              rdfs:label "Interuniversity MicroElectronics Center" ;
+                              rdfs:label "IMEC" ;
                               foaf:phone <Tel:+32-16-281211> ;
                               foaf:depiction <https://www.imec-int.com/assets/img/imec-logo.svg> ;
                               schema:location <https://www.imec-int.com/en/connect-with-us> ;
@@ -2484,7 +2484,7 @@ sdapartner:InfAI a foaf:Organization, sdatech:academicPartner, sdatech:Partner ;
                               sdaproject:DBPedia;
                               foaf:depiction <https://infai.org/wp-content/uploads/2017/08/InfAI-Logo.png> ;
                               foaf:mbox <mailto:info@infai.org> ;
-                              rdfs:label "Institute for Applied Computer Science" ;
+                              rdfs:label "InfAI" ;
                               foaf:phone <Tel:+49-341-2290370> ;
                               schema:location <https://infai.org/das-institut/kontakt/> ;
                               dct:abstract "The Institute for Applied Informatics (InfAI) e. V. is an institute founded in 2006 as a non-profit association, which pursues the promotion of science and research in the fields of computer science and business informatics." .
@@ -2492,7 +2492,7 @@ sdapartner:InfAI a foaf:Organization, sdatech:academicPartner, sdatech:Partner ;
 sdapartner:inmark a foaf:Organization, sdatech:industryPartner, sdatech:Partner ;
                               foaf:homepage <http://www.grupoinmark.com/en/> ;
                               foaf:mbox <mailto:info@grupoinmark.com> ;
-                              rdfs:label "Consulting services, information and business development" ;
+                              rdfs:label "INMARK" ;
                               foaf:phone <Tel:+34-91-4480203> ;
                               foaf:depiction <http://www.grupoinmark.com/en/wp-content/uploads/2017/04/inmark-logo40a-e1491308242105.png> ;
                               schema:location <http://www.grupoinmark.com/en/index.php/about-inmark/> ;
@@ -2502,7 +2502,7 @@ sdapartner:KDNuggets a foaf:Organization, sdatech:industryPartner, sdatech:Partn
                               foaf:homepage <https://www.kdnuggets.com/> ;
                               foaf:mbox <mailto:editor1@kdnuggets.com> ;
                               foaf:depiction <https://chiefdataanalyticsofficersydney.com/wp-content/uploads/sites/172/2017/11/Kdnuggets-Logo-300x117.jpg> ;
-                              rdfs:label "KDNuggets - Machine Learning, Data Science, Data Mining, Big Data, Analytics, AI" ;
+                              rdfs:label "KDNuggets" ;
                               dct:abstract "Business Analytics, Data Mining, and Data Science News, Jobs, Consulting, Software, Data, Courses, Education, and more. " .
 
 sdapartner:metaphacts a foaf:Organization, sdatech:industryPartner, sdatech:Partner ;
@@ -2511,7 +2511,7 @@ sdapartner:metaphacts a foaf:Organization, sdatech:industryPartner, sdatech:Part
                               sdaproject:DIESEL,
                               sdaproject:RESEARCHSPACE ;
                               foaf:mbox <mailto:info@metaphacts.com> ;
-                              rdfs:label "Metaphacts Software Development" ;
+                              rdfs:label "metaphacts GmbH" ;
                               foaf:depiction <http://www.metaphacts.com/images/logo_farbe.png> ;
                               foaf:phone <Tel:+49-6227-6989965> ;
                               schema:location <http://www.metaphacts.com/> ;
@@ -2530,9 +2530,9 @@ sdapartner:NCSR a foaf:Organization, sdatech:academicPartner, sdatech:Partner ;
                               foaf:currentProject sdaproject:BigMedilytics,
                               sdaproject:HOBBIT,
                               sdaproject:YDS;
-                              rdfs:label "National VCentre for Scientific Research Demokritis - Institute of Informatics and Telecommunications" ;
+                              rdfs:label "NCSR" ;
                               foaf:phone <Tel:+30-210-6503153> ;
-                              foaf:depiction <https://www.iit.demokritos.gr/resources/images/logo_iit_long.png> ;
+                              foaf:depiction <http://www.bioasq.org/sites/default/files/ncsr_logo.gif> ;
                               schema:location <https://www.iit.demokritos.gr/contact> ;
                               dct:abstract "The Institute of Informatics and Telecommunications (IIT) focuses on research and development in the areas of Telecommunications, Networks, Web Technologies and Intelligent Systems. The main strategic objective of IIT is to excel in research and innovation required for the development of the knowledge society. " .
 
@@ -2543,7 +2543,7 @@ sdapartner:Ontos a foaf:Organization, sdatech:industryPartner, sdatech:Partner ;
                               sdaproject:SAKE,
                               sdaproject:GeoKnow ;
                               foaf:mbox <mailto:martin.voigt@ontos.com> ;
-                              rdfs:label "Ontos GmbH" ;
+                              rdfs:label "Ontos AG" ;
                               foaf:phone <Tel:+49-341-2155910> ;
                               foaf:depiction: <http://ontos.com/wp-content/uploads/2016/02/Ontos_logo1_big.png> ;
                               schema:location <http://ontos.com/contact/> ;
@@ -2554,7 +2554,7 @@ sdapartner:OpenPHACTS a foaf:Organization, sdatech:industryPartner, sdatech:Part
                               foaf:currentProject sdaproject:BigDataEurope,
                               sdaproject:EU-ToxRisk ;
                               foaf:mbox <mailto:info@openphactsfoundation.org> ;
-                              rdfs:label "The Open PHACTS Foundation" ;
+                              rdfs:label "Open PHACTS" ;
                               foaf:phone <Tel:+44-1223-432344> ;
                               foaf:depiction <https://www.openphacts.org/2/images/OP_logo_300dpi.jpg> ;
                               schema:location <http://www.openphactsfoundation.org/contact/> ;
@@ -2563,7 +2563,7 @@ sdapartner:OpenPHACTS a foaf:Organization, sdatech:industryPartner, sdatech:Part
 sdapartner:OpenLink a foaf:Organization, sdatech:industryPartner, sdatech:Partner ;
                               foaf:homepage <https://www.openlinksw.com/> ;
                               foaf:depiction <https://www.openlinksw.com/skin/images/oplogostd160.png> ;
-                              rdfs:label "Open Link Software" ;
+                              rdfs:label "OpenLink Software" ;
                               foaf:phone <Tel:+44-20-86817701> ;
                               schema:location <https://www.openlinksw.com/contact/> ;
                               dct:abstract "OpenLink Software is an acclaimed technology innovator and leading vendor of industry standards compliant data access, integration, and management technology. " .
@@ -2647,7 +2647,7 @@ sdapartner:USU a foaf:Organization, sdatech:industryPartner, sdatech:Partner ;
 sdapartner:VUAmsterdam a foaf:Organization, sdatech:academicPartner, sdatech:Partner ;
                               foaf:homepage <https://www.vu.nl/en/> ;
                               foaf:mbox <mailto:fh@dienst.vu.nl> ;
-                              rdfs:label "Vrije Universiteit Amsterdam" ;
+                              rdfs:label "VU University Amsterdam" ;
                               foaf:phone <Tel:+31-20-5985777> ;
                               foaf:depiction <https://www.vu.nl/en/Images/VUlogo_Wit_RGB_mettekst_tcm270-835563.svg> ;
                               schema:location <https://www.vu.nl/en/about-vu-amsterdam/contact-info-and-route/route-description/index.aspx> ;
