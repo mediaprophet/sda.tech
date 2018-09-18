@@ -10,9 +10,29 @@ layout: default
   <{{page.rdf}}> dbo:leader ?leader . ?leader foaf:name ?leadername . ?leader foaf:depiction ?leaderimage} {% endcapture %} {% assign resultset3 = page.rdf | sparql_query: query %}
     {% capture queryfour %} SELECT ?publication ?title ?date ?publisher ?link  WHERE{<{{page.rdf}}> sda:publication ?publication . ?publication dc:title ?title
     . ?publication dc:date ?date . ?publication dc:publisher ?publisher . ?publication foaf:homepage ?link . } {% endcapture %} {% assign resultset4 = page.rdf | sparql_query: queryfour %}
-    <!--Presentation of the GROUP Items-->
+<!--Presentation of the GROUP Items-->
     <article class="post">
       <div class="pagination">
+        {% capture label %}{{ page.rdf | rdf_property: 'rdfs:label'}}{% endcapture %}
+        <!--QUERY to GET all the GROUP Items  -->
+        {% capture query %} SELECT ?group ?name ?desc ?imageclass ?shortcut WHERE{ ?group a aiiso:ResearchGroup . ?group rdfs:label ?name . ?group dct:description ?desc . ?group sda:imageclass ?imageclass . ?group sda:shortcut ?shortcut . }
+        {% endcapture %} {% assign resultset = page.rdf | sparql_query: query %}
+        <!--LABEL -->
+        {% capture label %}{{ page.rdf | rdf_property: 'sda:shortcut'}}{% endcapture %}
+        <!-- Paginating logic for all the GROUPS -->
+        {% assign count = 1 %}
+        {% for result in resultset %}{% assign class = "responsiveTabItem" %}
+        {% capture shortcut %}{{result.shortcut}}{% endcapture %} {% if shortcut == label %}{% assign class = "active responsiveTabItem" %}{% endif %}
+        {% capture groupname %}{{result.name}}{% endcapture %}
+        {% assign url = result.group | remove: "http://sda.tech/" | remove: "Group" %}
+        <a href="../{{url}}" id="{{groupname | remove: " " }}" class="{{class}}">
+              <i class="{{result.imageclass}} margin-icon"></i>
+             {{groupname}}</a>{% assign count = count | plus:1 %} {% if count == 4 %}
+        <br class="breakpoint-pagination"/><br class="breakpoint-pagination"/> {% endif %} {% endfor %}
+        <br/>
+        <br/>
+        <hr class="ruleh" /></div>
+      <div class="content-people">
         <div class="post-content">
           <div class="container groupLink">
             <br class="horizontal-separator" />
@@ -41,13 +61,10 @@ layout: default
               <h3>Members</h3>
               <div class="membersofProject">
                 {% for result in resultset2 %} {% assign url= result.person | remove: "http://sda.tech/" %}
-                <!-- <img src="{{result.image}}" style="width:48px;height:48px;border-radius:50%;display:block;margin:0 auto;">
-                <a href="../{{url}}"><h4>{{result.personname}}</h4></a> -->
                 <div class="chip">
                   <img src="{{result.image}}" alt="Person" width="96" height="96">
                   <a href="../../{{url}}">{{result.personname}}</a>
                 </div>
-
                 {% endfor %}
               </div>
               <br class="horizontal-separator2" />

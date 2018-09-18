@@ -1,13 +1,8 @@
-{% if include.footpaging == "true" %}
-  <hr class="ruleh" />
-  <br/><br/>
-{% endif %}
-
 {% assign count = 0 %}
 {% capture query %}
 # select all main Navigation position properties for counting
 SELECT ?position WHERE{
-    sdatech:PeopleNavigation ?positionProp ?resource .
+    sdatech:PublicationNavigation ?positionProp ?resource .
     ?positionProp a rdfs:ContainerMembershipProperty .
     ?positionProp rdfs:label ?position .
 }
@@ -19,7 +14,7 @@ SELECT ?position WHERE{
   {% capture query2 %}
   # select menu entry for current count
   SELECT ?resource ?label ?icon WHERE{
-      sdatech:PeopleNavigation ?positionProp ?resource .
+      sdatech:PublicationNavigation ?positionProp ?resource .
       ?positionProp a rdfs:ContainerMembershipProperty .
       ?positionProp rdfs:label "{{count}}" .
       ?resource a foaf:Document .
@@ -35,21 +30,16 @@ SELECT ?position WHERE{
               {% capture navlabel%}{{result2.label}}{% endcapture %}
               {% capture icon%}{{result2.icon}}{% endcapture %}
                 <a href="{{ urlNav | remove:"index.html" }}" class="{% if include.active == navlabel %}active{% endif %} responsiveTabItem" onclick="#"><i class="{{icon}}"  aria-hidden="true"></i>
-                  {% if navlabel == "People"%}
-                    All Members
-                  {% else %}
-                    {{result2.label}}
-                  {% endif %}
+                    {% if navlabel == "Publications" %}
+                      All {{result2.label}}
+                    {% else %}
+                      {{result2.label}}
+                    {% endif %}
                 </a>
-                {% if navlabel == "PhD Students"%}
-                  <br class="breakpoint-pagination"/><br class="breakpoint-pagination" />
-                {% endif %}
             {% endif %}
         {% endfor %}
     {% endfor %}
 {% endfor%}
 
-{% if include.footpaging != "true" %}
 <br/><br/>
 <hr class="ruleh" />
-{% endif %}

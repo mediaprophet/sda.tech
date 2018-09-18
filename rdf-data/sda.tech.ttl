@@ -13,7 +13,7 @@
 @prefix sda: <http://beta.sda.tech/schema/> .
 @prefix sdatech: <http://sda.tech/> .
 @prefix sdaperson: <http://sda.tech/Person/> .
-@prefix sdapublication: <http://beta.sda.tech/Publications/> .
+@prefix sdapublication: <http://sda.tech/Publications/> .
 @prefix sdagroup: <http://sda.tech/Group/> .
 @prefix sdapartner: <http://sda.tech/Partner/> .
 @prefix sdapeople: <http://sda.tech/People/> .
@@ -1585,6 +1585,7 @@ sdagroup:DistributedSemanticAnalytics a aiiso:ResearchGroup, sdatech:Group ;
                                 dct:description "The research group develops scalable analytics algorithms based on Apache Spark and Apache Flink for analyzing large scale datasets by distributing the computational tasks in memory." ;
                                 sda:publication sdapublication:Publication1 ;
                                 sda:imageclass "fa fa-bar-chart" ;
+                                sda:miniIcon "fa fa-bar-chart margin-icon" ;
                                 sda:shortcut "dsa" .
 
 ##Deep Learning
@@ -1626,6 +1627,7 @@ sdagroup:SemanticDataManagement a aiiso:ResearchGroup, sdatech:Group ;
                                 dct:abstract "Focuses on Knowledge and data representation, integration, and management based on semantic technologies." ;
                                 sda:publication sdapublication:Publication1 ;
                                 sda:imageclass "fa fa-sitemap" ;
+                                sda:miniIcon "fa fa-sitemap margin-icon" ;
                                 sda:shortcut "sdm" .
 
 ##Semantic Question Answering
@@ -1640,6 +1642,7 @@ sdagroup:SemanticQuestionAnswering a aiiso:ResearchGroup, sdatech:Group ;
                                 dct:abstract "Make use of Semantic Web technologies and AI for better and advanced  question answering & dialogue systems" ;
                                 sda:publication sdapublication:Publication1 ;
                                 sda:imageclass "fa fa-search" ;
+                                sda:miniIcon "fa fa-cogs margin-icon" ;
                                 sda:shortcut "sqa" .
 
 ##Software Engineering for Data Science
@@ -1654,6 +1657,7 @@ sdagroup:SoftwareEngineeringForDataScience a aiiso:ResearchGroup, sdatech:Group 
                                 dct:abstract "Researches on how data and software engineering methods can be aligned with Data Science." ;
                                 sda:publication sdapublication:Publication1 ;
                                 sda:imageclass "fa fa-cogs" ;
+                                sda:miniIcon "fa fa-cogs margin-icon" ;
                                 sda:shortcut "seds" .
 
 ##Structured Machine Learning
@@ -1664,10 +1668,11 @@ sdagroup:StructuredMachineLearning a aiiso:ResearchGroup, sdatech:Group ;
                                 foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
                                 foaf:currentProject sdaproject:DLLearner, sdaproject:SMLBench ;
                                 foaf:pastProject sdaproject:SHORE, sdaproject:WAVE ;
-                                dct:description "The group focuses on combining Semantic Web and supervised Machine Learning technologies. The goal is to improve both quality and quantity of available knowledge by extracting, analysing, enriching and linking existing data. The group also provides several established open source tools, frameworks and demonstrators." ;
+                                dct:description "The groufp focuses on combining Semantic Web and supervised Machine Learning technologies. The goal is to improve both quality and quantity of available knowledge by extracting, analysing, enriching and linking existing data. The group also provides several established open source tools, frameworks and demonstrators." ;
                                 dct:abstract "Combines Semantic Web and supervised ML technologies in order to improve both quality and quantity of available knowledge." ;
                                 sda:publication sdapublication:Publication1 ;
                                 sda:imageclass "fa fa-cube" ;
+                                sda:miniIcon "fa fa-cube margin-icon" ;
                                 sda:shortcut "sml" .
 
 
@@ -1682,6 +1687,7 @@ sdagroup:SmartServices a aiiso:ResearchGroup, sdatech:Group ;
                                 dct:abstract "Semantic services and their composition, applications in IoT." ;
                                 sda:publication sdapublication:Publication1 ;
                                 sda:imageclass "fa fa-podcast" ;
+                                sda:miniIcon "fa fa-podcast margin-icon" ;
                                 sda:shortcut "sms" .
 
 
@@ -1765,6 +1771,7 @@ sdaproject:WDAqua a foaf:Project, sdatech:fundedProject ;
            sda:download "undefined" ;
            sda:group sdagroup:SemanticQuestionAnswering ;
            sda:opensource "Open Source" ;
+           sda:miniIcon "fa fa-search margin-icon" ;
            sda:status "active" .
 
 sdaproject:HOBBIT a foaf:Project, sdatech:fundedProject ;
@@ -3098,6 +3105,14 @@ sdatech:PeopleNavigation a sdatech:SecondaryNavigation ;
         rdf:_7 sdapeople:interns ;
         rdf:_8 sdapeople:formermembers .
 
+sdatech:PublicationNavigation a sdatech:SecondaryNavigation ;
+        rdf:_1 sdatech:publication ;
+        rdf:_2 sdapublication:Conference ;
+        rdf:_3 sdapublication:Journal ;
+        rdf:_4 sdapublication:ConferenceProceedings ;
+        rdf:_5 sdapublication:Book ;
+        rdf:_6 sdapublication:TechnicalReport ;
+        rdf:_7 sdapublication:Thesis .
 
 ################################################################################
 
@@ -3438,7 +3453,7 @@ sdateaching:SKGA17W a sdatech:Course ;
 ##########################################
 
 sdajob:AkademischerRatAustralianEnvironment a sdatech:Job ;
-           rdfs:label "AkademischerRat" ;
+           rdfs:label "Akademischer Rat" ;
            dct:title "Akademischer Rat in Australian Environment Research" ;
            ex:description "undefined" ;
            sda:requirements "undefined" ;
@@ -3471,7 +3486,7 @@ sdajob:SeniorResearcherAustralianEnvironment a sdatech:Job ;
            foaf:mbox <undefined> .
 
 sdajob:StudentAssistantAustralianEnvironment a sdatech:Job ;
-           rdfs:label "StudentAssistant" ;
+           rdfs:label "Student Assistant" ;
            dct:title "Student Assistant in Australian Environment Research" ;
            ex:description "undefined" ;
            sda:requirements "undefined" ;
@@ -3493,7 +3508,6 @@ sdatech:group a foaf:Document ;
 
 
 sdatech:job a foaf:Document ;
-       sda:miniIcon "fa fa-list-alt margin-icon" ;
        sda:miniIcon "fa fa-pencil-square-o margin-icon" ;
        rdfs:label "Jobs" .
 
@@ -3710,9 +3724,34 @@ sdaproject:archivedprojects a foaf:Document ;
 ################################################################################
 
 sdatech:publication a foaf:Document ;
+              sda:miniIcon "fa fa-list margin-icon" ;
                rdfs:label "Publications" .
 
+sdapublication:Conference a foaf:Document ;
+               sda:miniIcon "fa fa-users margin-icon" ;
+               rdfs:label "Conference" .
 
+sdapublication:Journal a foaf:Document ;
+              sda:miniIcon "fa fa-file-pdf-o margin-icon" ;
+              rdfs:label "Journal" .
+
+sdapublication:ConferenceProceedings a foaf:Document ;
+              sda:miniIcon "fa fa-window-maximize margin-icon" ;
+              rdfs:label "Conference Proceedings" .
+
+sdapublication:Book a foaf:Document ;
+              sda:miniIcon "fa fa-book margin-icon" ;
+              rdfs:label "Book" .
+
+sdapublication:TechnicalReport a foaf:Document ;
+              sda:miniIcon "fa fa-file-o margin-icon" ;
+              rdfs:label "Technical Report" .
+
+sdapublication:Thesis a foaf:Document ;
+              sda:miniIcon "fa fa-graduation-cap margin-icon" ;
+              rdfs:label "Thesis" .
+
+################################################################################
 
 sdatech:thesis a foaf:Document ;
           rdfs:label "Thesis" ;

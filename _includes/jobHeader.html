@@ -32,11 +32,7 @@
                   {% capture navlabel%}{{result2.label}}{% endcapture %}
                   {% capture icon%}{{result2.icon}}{% endcapture %}
                     <a href="{{ urlNav | remove:"index.html" }}" class="{% if include.active == navlabel %}active{% endif %} responsiveTabItem" onclick="#"><i class="{{icon}}"  aria-hidden="true"></i>
-                      {% if navlabel == "Blog" %}
-                         All {{result2.label}} Posts
-                        {% else %}
                          {{result2.label}}
-                      {% endif %}
                     </a>
                 {% endif %}
             {% endfor %}

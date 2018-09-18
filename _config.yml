@@ -94,7 +94,6 @@ jekyll_rdf:
     instance_template_mappings:
         "http://sda.tech/" : "home.html"
         "http://sda.tech/group" : "groupmain.html"
-        "http://sda.tech/publication" : "publicationmain.html"
         "http://sda.tech/partners" : "partners.html"
         "http://sda.tech/about" : "page.html"
         #People
@@ -143,7 +142,14 @@ jekyll_rdf:
         "http://sda.tech/blog/invitedtalks" : "blogInvitedTalks.html"
         "http://sda.tech/blog/projectannouncements" : "blogProjectAnnouncements.html"
         "http://sda.tech/blog/generalposts" : "blogGeneralPosts.html"
-
+        #publications
+        "http://sda.tech/publication" : "publicationmain.html"
+        "http://sda.tech/Publications/Conference" : "publicationconference.html"
+        "http://sda.tech/Publications/Journal" : "publicationjournal.html"
+        "http://sda.tech/Publications/ConferenceProceedings" : "publicationproceedings.html"
+        "http://sda.tech/Publications/Book" : "publicationsbook.html"
+        "http://sda.tech/Publications/TechnicalReport" : "publicationsreport.html"
+        "http://sda.tech/Publications/Thesis" : "publicationsthesis.html"
 
 
 # Exclude from processing.

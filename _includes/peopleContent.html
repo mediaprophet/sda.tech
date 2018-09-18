@@ -75,6 +75,7 @@ OPTIONAL { ?Person sda:room ?room } . OPTIONAL { ?Person foaf:firstName ?fname }
 <div>
   {% for result in professorsArray %} {% assign url = result.Person | remove: "http://sda.tech/" %} {% include professors.html name=result.name firstname=result.fname title=result.title urlp=url status=result.status room=result.room linkedin=result.linkedin website=result.website mailto=result.mailto
   image=result.image %} {% endfor %}
+  <h1>{{url}}</h1>
 </div>
 </div>
 <div id="SeniorResch" style="{% if include.active == 'SeniorResch' %}display:inline-block{% else %}display:none{% endif %}" class="positioning-cards">

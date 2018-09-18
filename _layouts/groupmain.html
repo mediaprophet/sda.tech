@@ -4,9 +4,10 @@ layout: default
 toggledURLTo: /Group/DistributedSemanticAnalytics/
 toggleOnDiv: dsa
 ---
+
 <article class="post">
-  {% include toggleInitialPageLink.html div=page.toggleOnDiv linkto=page.toggledURLTo %}
-  {% include toggleGroupTypes.html %}
+<!--  {% include toggleInitialPageLink.html div=page.toggleOnDiv linkto=page.toggledURLTo %} -->
+<!--  {% include toggleGroupTypes.html %}-->
   <div class="pagination">
     <!--QUERY to GET all the GROUP Items  -->
     {% capture query %} SELECT ?group ?name ?desc ?imageclass ?shortcut WHERE{ ?group a aiiso:ResearchGroup . ?group rdfs:label ?name . ?group dct:description ?desc . ?group sda:imageclass ?imageclass . ?group sda:shortcut ?shortcut . } {% endcapture %} {% assign resultset = page.rdf | sparql_query: query
@@ -16,23 +17,25 @@ toggleOnDiv: dsa
     {% for result in resultset %}{% assign class = "responsiveTabItem" %}
     {% capture shortcut %}{{result.shortcut}}{% endcapture %} {% if shortcut == "dsa" %}{% assign class = "active responsiveTabItem" %}{% endif %}
     {% capture groupname %}{{result.name}}{% endcapture %}
-    <a href="#" id="{{groupname | remove: " " }}" class="{{class}}" onclick="changeActiveGroups('{{groupname}}')">
+    {% assign url = result.group | remove: "http://sda.tech/"  %}
+    <a href="../{{url}}" id="{{groupname | remove: " " }}" class="{{class}}" >
           <i class="{{result.imageclass}} margin-icon"></i>
          {{groupname}}</a>{% assign count = count | plus:1 %} {% if count == 4 %}
     <br class="breakpoint-pagination"/><br class="breakpoint-pagination"/> {% endif %} {% endfor %}
     <br/>
     <br/>
     <hr class="ruleh" /></div>
-    {% for result in resultset %} {% capture name %}{{result.name}}{% endcapture %}
-    {% capture querytwo %} SELECT ?group ?project ?name ?nameproject ?image WHERE{ ?group a aiiso:ResearchGroup . ?group rdfs:label ?name . ?group foaf:currentProject ?project . ?project rdfs:label ?nameproject . ?project foaf:depiction ?image . } {% endcapture %} {% assign
-    resultset2 = page.rdf | sparql_query: querytwo %} {% capture querythree %} SELECT ?group ?project ?name ?person ?nameperson ?image WHERE{ ?group a aiiso:ResearchGroup . ?group rdfs:label ?name . ?group foaf:member ?person . ?person foaf:name ?nameperson
-    . ?person foaf:depiction ?image . } {% endcapture %} {% assign resultset3 = page.rdf | sparql_query: querythree %}
-    {% capture queryfour %} SELECT ?group ?name ?publication ?title ?date ?publisher ?link  WHERE{ ?group a aiiso:ResearchGroup . ?group rdfs:label ?name . ?group sda:publication ?publication . ?publication dc:title ?title
-    . ?publication dc:date ?date . ?publication dc:publisher ?publisher . ?publication foaf:homepage ?link . } {% endcapture %} {% assign resultset4 = page.rdf | sparql_query: queryfour %}
+{% for result in resultset %} {% capture name %}{{result.name}}{% endcapture %}
+{% capture querytwo %} SELECT ?group ?project ?name ?nameproject ?image WHERE{ ?group a aiiso:ResearchGroup . ?group rdfs:label ?name . ?group foaf:currentProject ?project . ?project rdfs:label ?nameproject . ?project foaf:depiction ?image . } {%
+endcapture %} {% assign
+resultset2 = page.rdf | sparql_query: querytwo %} {% capture querythree %} SELECT ?group ?project ?name ?person ?nameperson ?image WHERE{ ?group a aiiso:ResearchGroup . ?group rdfs:label ?name . ?group foaf:member ?person . ?person foaf:name
+?nameperson
+. ?person foaf:depiction ?image . } {% endcapture %} {% assign resultset3 = page.rdf | sparql_query: querythree %}
+{% capture queryfour %} SELECT ?group ?name ?publication ?title ?date ?publisher ?link WHERE{ ?group a aiiso:ResearchGroup . ?group rdfs:label ?name . ?group sda:publication ?publication . ?publication dc:title ?title
+. ?publication dc:date ?date . ?publication dc:publisher ?publisher . ?publication foaf:homepage ?link . } {% endcapture %} {% assign resultset4 = page.rdf | sparql_query: queryfour %}
 {% capture query %} SELECT ?group ?name ?leader ?leadername ?leaderimage WHERE{
-   ?group a aiiso:ResearchGroup . ?group rdfs:label ?name . ?group dbo:leader ?leader . ?leader foaf:name ?leadername . ?leader foaf:depiction ?leaderimage} {% endcapture %} {% assign resultset5 = page.rdf | sparql_query: query %}
-    {% assign visible = "none" %} {% capture shortcut %}{{result.shortcut}}{% endcapture %} {% if shortcut == "dsa" %} {% assign visible = "inline-block" %}{% endif %}
-    <div id="{{shortcut}}" class="content-people" style="display:{{visible}}">
+?group a aiiso:ResearchGroup . ?group rdfs:label ?name . ?group dbo:leader ?leader . ?leader foaf:name ?leadername . ?leader foaf:depiction ?leaderimage} {% endcapture %} {% assign resultset5 = page.rdf | sparql_query: query %}
+{% assign visible = "none" %} {% capture shortcut %}{{result.shortcut}}{% endcapture %} {% if shortcut == "dsa" %} {% assign visible = "inline-block" %}{% endif %}  <div id="{{shortcut}}" class="content-people" style="display:{{visible}}">
       <div class="post-content">
         <div>
           <div class="container">
