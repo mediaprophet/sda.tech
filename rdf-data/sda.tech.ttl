@@ -2984,6 +2984,26 @@ sdathesis:rdf-molecules-browser a dct:BibliographicResource, bibo:Thesis, sdatec
     sda:thesisLevel "MS" ;
     dct:abstract """Forster serendipitous discoveries by browsing RDF molecules of data, specially focus on the facets/filters to promote knowledge discovery not intended initially.""" .
 
+sdathesis:multimodal-representation-of-product-data a dct:BibliographicResource, bibo:Thesis, sdatech:openThesis, sdatech:masterThesis ;
+    dct:title "Multimodal Representation of Product Data" ;
+    dct:creator sdaperson:AnisaRula ;
+    foaf:maker sdaperson:AnisaRula ;
+    dct:issued "2018-09"^^xsd:gYearMonth ;
+    dct:language "en-US" ;
+    bibo:degree biboDegree:phd ;
+    sda:thesisLevel "MS" ;
+    dct:abstract """Knowledge graph embedding represents entities as vectors in a common vector space. Their multimodal representation learning is carried out by a neural network using structural, numerical and string information. In particular, the LiteralE approach [1] merges entity embeddings with their literal information using a learnable, parametrized function, such as a simple linear or nonlinear transformation, or a multilayer neural network. The objective of this work is to extend the LiteralE algorithm to augment multimodal representation of an entity with string information. <br> [1]. <a href = 'https://arxiv.org/abs/1802.00934'>https://arxiv.org/abs/1802.00934</a>""".
+
+sdathesis:product-matching-through-embedding-representation a dct:BibliographicResource, bibo:Thesis, sdatech:openThesis, sdatech:masterThesis ;
+    dct:title "Product matching through Embedding Representation" ;
+    dct:creator sdaperson:AnisaRula ;
+    foaf:maker sdaperson:AnisaRula ;
+    dct:issued "2018-09"^^xsd:gYearMonth ;
+    dct:language "en-US" ;
+    bibo:degree biboDegree:phd ;
+    sda:thesisLevel "MS" ;
+    dct:abstract """A central problem in the context of the Web of Data, as well as in data integration in general is to identify entities in different datasets that describe the same real-world object. The LiteralE approach [1] will be used to represent the entities from two datasets in a vector space. The aim of the project is to implement a neural network to learn a similarity function between entities. <br>[1]. <a href ='https://arxiv.org/abs/1802.00934'>https://arxiv.org/abs/1802.00934</a>""" .
+
 ########################onGoingThesis########################
 sdathesis:big-data-quality-assessment  a dct:BibliographicResource, bibo:Thesis, sdatech:ongoingThesis, sdatech:masterThesis ;
     dct:title "Big Data quality Assessment" ;
