@@ -599,7 +599,7 @@ sdaperson:SaharVahdati a foaf:Person, sdatech:phdStudent ;
                    foaf:nick "Sahar" ;
                    foaf:mbox <mailto:vahdati@cs.uni-bonn.de> ;
                    foaf:depiction <https://goo.gl/2fK2D9> ;
-                   foaf:phone <Tel:0228/73-4533> ; ;
+                   foaf:phone <Tel:0228/73-4533> ;
                    foaf:firstName "Sahar" ;
                    foaf:title "" ;
                    foaf:status "PhD Student" ;
@@ -3061,20 +3061,7 @@ ex:InformationRetrieval a ex:course ;
                         ex:homepage "http://mex.aksw.org/" ;
                         ex:language "English" ;
                         ex:winter2017 "Summer Semester 2017" .
-
-
-ex:MEXVocabulary a ex:project ;
-                 rdfs:label "MEX Vocabulary" ;
-                 foaf:Person ex:OliverOctopus, ex:AlfredEel ;
-                 foaf:depiction </assets/sdalogo.png> ;
-                 ex:description "A Light-Weight Interchange Format for Machine Learning Experiments" ;
-                 ex:longdescription "MEX Vocabulary: A Light-Weight Interchange Format for Machine Learning Experiments" ;
-                 ex:twitter "undefined" ;
-                 ex:homepage "http://mex.aksw.org/" ;
-                 ex:source "https://github.com/METArchive/mex-vocabulary" ;
-                 ex:download "undefined" ;
-                 ex:partners ex:agroknow ;
-                 ex:opensource "Open Source" .
+                        
 
 ex:Mainnav a ex:navigation ;
            rdf:_1 sdatech:about ;
