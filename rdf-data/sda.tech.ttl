@@ -599,7 +599,7 @@ sdaperson:SaharVahdati a foaf:Person, sdatech:phdStudent ;
                    foaf:nick "Sahar" ;
                    foaf:mbox <mailto:vahdati@cs.uni-bonn.de> ;
                    foaf:depiction <https://goo.gl/2fK2D9> ;
-                   foaf:phone <Tel:0228/73-4533> ; ;
+                   foaf:phone <Tel:0228/73-4533> ;
                    foaf:firstName "Sahar" ;
                    foaf:title "" ;
                    foaf:status "PhD Student" ;
