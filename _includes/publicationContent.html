@@ -1,0 +1,130 @@
+<!--  Query to GET Article Publications -->
+{% capture query %} SELECT ?publication ?title ?publisher ?var ?date ?url ?full WHERE{
+  ?publication a bibo:Article .
+  ?publication dct:title ?title .
+  OPTIONAL { ?publication dct:date ?date } .
+  OPTIONAL { ?publication dct:hasFormat ?url } .
+  ?publication dct:isPartOf ?publisher .
+  OPTIONAL{ ?publisher  bibo:shortTitle ?var } .
+  OPTIONAL{ ?publisher  dct:title ?full } .
+
+}
+ORDER BY (?date)
+{% endcapture %}
+{% assign article = page.rdf | sparql_query: query %}
+
+<!-- QUERY to GET Thesis Publications -->
+{% capture query %} SELECT ?publication ?title ?publisher ?var ?date ?url ?full WHERE{
+  ?publication a bibo:Thesis .
+  ?publication dct:title ?title .
+  OPTIONAL { ?publication dct:issued ?date } .
+  OPTIONAL { ?publication foaf:homepage ?url } .
+}
+ORDER BY (?date)
+{% endcapture %}
+{% assign thesis = page.rdf | sparql_query: query %}
+
+<!-- {% capture query %} SELECT ?publication ?title ?author ?authorname  WHERE{
+  ?publication a bibo:Article .
+  ?publication dct:title ?title .
+  ?publication dc:author ?author .
+  ?author foaf:name ?authorname .
+}
+{% endcapture %}
+{% assign query2 = page.rdf | sparql_query: query %} -->
+
+<!--QUERY to GET ALL the Book Types  -->
+
+<!--QUERY to GET ALL the Thesis Types  -->
+
+<!--QUERY to GET ALL the Journal Types  -->
+
+<!--QUERY to GET ALL the Article Types  -->
+
+
+
+<!-- PRESENTATION OF THE PUBLICATIONS -->
+{% assign count = 0 %}
+{% capture query %}
+# select all main Navigation position properties for counting
+SELECT ?position WHERE{
+    sdatech:PublicationNavigation ?positionProp ?resource .
+    ?positionProp a rdfs:ContainerMembershipProperty .
+    ?positionProp rdfs:label ?position .
+}
+{% endcapture %}
+{% assign resultset = page.rdf | sparql_query: query %}
+{% for result in resultset %}
+
+{% assign count = count | plus : 1 %}
+  {% capture query2 %}
+  # select menu entry for current count
+  SELECT ?resource ?label ?icon WHERE{
+      sdatech:PublicationNavigation ?positionProp ?resource .
+      ?positionProp a rdfs:ContainerMembershipProperty .
+      ?positionProp rdfs:label "{{count}}" .
+      ?resource a foaf:Document .
+      ?resource rdfs:label ?label .
+  }
+  {% endcapture %}
+  {% assign resultset2 = page.rdf | sparql_query: query2 %}
+    {% for result2 in resultset2 %}
+        {% for page in site.pages %}
+            {% if page.rdf.iri == result2.resource.iri %}
+              {% capture urlNav %}{{page.url}}{% endcapture %}
+              {% capture navlabel%}{{result2.label}}{% endcapture %}
+              {% capture icon%}{{result2.icon}}{% endcapture %}
+                <div id="present{{navlabel}}" style="{% if include.active == navlabel %}display:inline-block{% else %}display:none{% endif %}" class="positioning-cards">
+                  <!-- Present all {{navlabel}}  -->
+                  <table class="flat-table flat-table-1">
+                    <thead>
+                      <th>Year</th>
+                      <th>Publications</th>
+                    </thead>
+                    <tbody>
+                      {% if navlabel == "Conference" %}
+                        {% for art in article %}
+                          {% capture year %}{{art.date | slice: 0, 4}}{% endcapture %}
+                          {% capture title %}{{art.title}}{% endcapture %}
+                          {% capture query %} SELECT ?publication ?title ?author ?authorname  WHERE{
+                            ?publication a bibo:Article .
+                            ?publication dct:title ?title .
+                            ?publication dc:author ?author .
+                            ?author foaf:name ?authorname .
+                            FILTER ( ?title = '{{art.title}}' )
+                          }
+                          {% endcapture %}
+                          {% assign query2 = page.rdf | sparql_query: query %}
+                          {% include publicationRow.html year=year title=art.title authors=query2 wherePublished=art.var url=art.url fulltitle=art.full %}
+                        {% endfor %}
+                      {% elsif  navlabel == "Book" %}
+
+                      {% elsif  navlabel == "Thesis" %}
+                          {% for thes in thesis %}
+                            {% capture year %}{{thes.date | slice: 0, 4}}{% endcapture %}
+                            {% capture title %}{{thes.title}}{% endcapture %}
+                            {% capture query %} SELECT ?publication ?title ?author ?authorname  WHERE{
+                              ?publication a bibo:Thesis .
+                              ?publication a sdatech:published .
+                              ?publication dct:title ?title .
+                              ?publication dc:author ?author .
+                              ?author foaf:name ?authorname .
+                              FILTER ( ?title = '{{thes.title}}' )
+                            }
+                            {% endcapture %}
+                            {% assign query2 = page.rdf | sparql_query: query %}
+
+                            {% include publicationRow.html year=year title=thes.title authors=query2  url=thes.url  %}
+                          {% endfor %}
+                      {% elsif  navlabel == "Journal" %}
+
+                      {% elsif  navlabel == "Report" %}
+
+                      {% endif %}
+                    </tbody>
+                  </table>
+                </div>
+            {% endif %}
+        {% endfor %}
+    {% endfor %}
+{% endfor%}

@@ -87,6 +87,31 @@ layout: default
         {% for result4 in resultset2 %}
         {% include pubEntry.html link=result4.link date=result4.date publisher=result4.publisher title=result4.title  %}
         {% endfor %}
+        <!-- collapsing exüeriment -->
+        <!-- <button class="collapsible">Open Section 1</button>
+        <div class="content">
+          <table class="flat-table flat-table-1">
+            <thead>
+              <th>Year</th>
+              <th>Publications</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>dadadas</td>
+                <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <button class="collapsible">Open Section 2</button>
+        <div class="content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <button class="collapsible">Open Section 3</button>
+        <div class="content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div> -->
+        <!-- EXPERIMENT COLLAPSABLE -->
         <br class="horizontal-separator" />
       </div>
       <br class="horizontal-separator2" />
@@ -110,3 +135,20 @@ layout: default
   </div>
 </article>
 <br class="horizontal-separator" />
+
+<script type="text/javascript">
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("activec");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+}
+</script>

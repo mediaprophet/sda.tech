@@ -3001,6 +3001,18 @@ sdathesis:recommendation-system-for-RDF-partitioners a dct:BibliographicResource
     sda:thesisLevel "MS,BS" ;
     dct:abstract """In order to store and query big RDF datasets efficiently in distributed environments, different partitioning techniques need to be implemented. Several techniques have been proposed for splitting Big RDF Data, ranging from vertical, hash, graph to semantic-based partitioners. However, the selection of the “best partitioner” depends highly on the structure of the dataset and the query efficiency and effectiveness are coupled to the query engine used. The goal of this thesis will be to develop a recommender system that will suggest the “best partitioner” based on the structure of the data and specific requirements.""" .
 
+sdathesis:example-thesis a dct:BibliographicResource, bibo:Thesis, sdatech:ongoingThesis, sdatech:masterThesis, sdatech:published ;
+    dct:title "Example Thesis" ;
+    dct:creator sdaperson:GezimSejdiu, sdaperson:IoannaLytra ;
+    foaf:maker sdaperson:GezimSejdiu, sdaperson:IoannaLytra ;
+    dc:author sdaperson:JensLehmann, sdaperson:GezimSejdiu;
+    dct:issued "2017-06"^^xsd:gYearMonth ;
+    dct:language "en-US" ;
+    bibo:degree biboDegree:phd ;
+    sda:thesisLevel "MS,BS" ;
+    dct:abstract """In order to store and query big RDF datasets efficiently in distributed environments, different partitioning techniques need to be implemented. Several techniques have been proposed for splitting Big RDF Data, ranging from vertical, hash, graph to semantic-based partitioners. However, the selection of the “best partitioner” depends highly on the structure of the dataset and the query efficiency and effectiveness are coupled to the query engine used. The goal of this thesis will be to develop a recommender system that will suggest the “best partitioner” based on the structure of the data and specific requirements.""" .
+
+
 ###############################################################
 
 ######################Archived Thesis###########################
@@ -3154,10 +3166,63 @@ sdapublication:Publication5 a bibo:Article ;
                 dc:title "Global perspectives for Demand Driven Values" ;
                 dc:date "2000" ;
                 bibo:pages "23-27" ;
-                dc:publisher "IEEE" ;
+                dc:publisher "International Semantic Web Conference" ;
                 foaf:homepage "http://mex.aksw.org/" ;
                 foaf:Organization "FhG" ;
                 dc:author sdaperson:RajKapoor .
+
+######################################################################################
+
+sdapublication:iermilov-2017-sansa-iswc-demo a dct:BibliographicResource, bibo:Article ;
+    dct:title "The Tale of Sansa Spark" ;
+    dct:creator sdaperson:gezimsejdiu ;
+    foaf:maker sdaperson:gezimsejdiu ;
+    dc:author sdaperson:JensLehmann, sdaperson:GezimSejdiu;
+    dct:issued "2017-06"^^xsd:gYearMonth ;
+    dct:isPartOf <iswc2017> ;
+    dct:language "en-US" ;
+    dct:date "2009-09-01" ;
+    bibo:volume "42" ;
+    bibo:issue "4" ;
+    bibo:pageStart "200" ;
+    bibo:pageEnd "300" ;
+    dct:publisher <https://springer.com/> ;
+    dct:hasFormat <https://svn.aksw.org/papers/2017/ICWE_DecentralizedEvolution/public.pdf> ;
+    dct:identifier <https://dx.doi.org/10.1007/978-3-319-60131-1_2> ;
+    dct:abstract """The World Wide Web and the Semantic Web are designed as a network of distributed services and datasets.
+        In this network and its genesis, collaboration played and still plays a crucial role.
+        But currently we only have central collaboration solutions for RDF data, such as SPARQL endpoints and wiki systems, while decentralized solutions can enable applications for many more use-cases.
+        Inspired by a successful distributed source code management methodology in software engineering a framework to support distributed evolution is proposed.
+        The system is based on Git and provides distributed collaboration on RDF graphs.
+        This paper covers the formal expression of the evolution and consolidation of distributed datasets, the synchronization, as well as other supporting operations.""" .
+
+sdapublication:iermilov-2017-sansa-iswc a dct:BibliographicResource, bibo:Article ;
+    dct:title "The Tale of Spark" ;
+    dct:creator sdaperson:gezimsejdiu ;
+    foaf:maker sdaperson:gezimsejdiu ;
+    dc:author sdaperson:JensLehmann, sdaperson:GezimSejdiu;
+    dct:issued "2017-06"^^xsd:gYearMonth ;
+    dct:isPartOf <iswc2017> ;
+    dct:language "en-US" ;
+    dct:date "2010-09-01" ;
+    bibo:volume "42" ;
+    bibo:issue "4" ;
+    bibo:pageStart "200" ;
+    bibo:pageEnd "300" ;
+    dct:publisher <https://springer.com/> ;
+    dct:hasFormat <https://svn.aksw.org/papers/2017/ICWE_DecentralizedEvolution/public.pdf> ;
+    dct:identifier <https://dx.doi.org/10.1007/978-3-319-60131-1_2> ;
+    dct:abstract """The World Wide Web and the Semantic Web are designed as a network of distributed services and datasets.
+        In this network and its genesis, collaboration played and still plays a crucial role.
+        But currently we only have central collaboration solutions for RDF data, such as SPARQL endpoints and wiki systems, while decentralized solutions can enable applications for many more use-cases.
+        Inspired by a successful distributed source code management methodology in software engineering a framework to support distributed evolution is proposed.
+        The system is based on Git and provides distributed collaboration on RDF graphs.
+        This paper covers the formal expression of the evolution and consolidation of distributed datasets, the synchronization, as well as other supporting operations.""" .
+
+
+sdatech:iswc2017 a bibo:Journal ;
+  dct:title "International Semantic Web Conference, Poster & Demos"@en ;
+  bibo:shortTitle "ISWC 2017"@en .
 
 #######################################
 ##########Teaching Model###############
@@ -3902,6 +3967,13 @@ sdatech:openThesis a owl:Class ;
                   rdfs:subClassOf bibo:Thesis, dct:BibliographicResource ;
                   site:classTemplate "thesis" ;
                   sysont:creationLabel "Thesis" .
+
+sdatech:published a owl:Class ;
+    rdfs:label "Publication" ;
+    rdfs:subClassOf bibo:Thesis, bibo:Article,  dct:BibliographicResource ;
+    site:classTemplate "pulished" ;
+    sysont:creationLabel "Published" .
+
 
 sdatech:phdStudent a rdfs:Class ;
               rdfs:comment "People who are pursuing Phd with SDA Group."^^sysont:Markdown ;

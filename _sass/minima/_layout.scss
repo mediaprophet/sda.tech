@@ -651,6 +651,25 @@ text-align: center;
   width: 100%;
 }
 
+.publink
+{
+  color:  $blue-sda-color !important;
+
+  &:hover {
+    text-decoration: none;
+    color: $purple-sda-color !important;
+  }
+}
+
+.pubauthorlink{
+  color:  #616161 !important;
+
+  &:hover {
+    text-decoration: none;
+    color: #000 !important;
+  }
+}
+
 .clear-padding{
   padding-left: 0px !important;
   padding-right: 0px !important;
