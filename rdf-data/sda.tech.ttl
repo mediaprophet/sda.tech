@@ -58,7 +58,7 @@ sdaperson:JensLehmann a foaf:Person, sdatech:professor ;
                   rdfs:seeAlso <http://aksw.org/JensLehmann> ;
                   owl:sameAs <http://aksw.org/JensLehmann> ;
                   sda:publicationsTag "lehmann" ;
-                  ex:address sda:Room22, sda:Roomc1, sda:Roomp631 ;
+                  ex:address sda:Room22, sda:Roomc1227, sda:Roomp631 ;
                   foaf:familyName "Lehmann" ;
                   foaf:name "Prof. Dr. Jens Lehmann" ;
                   foaf:nick "Lehmann" ;
@@ -117,7 +117,7 @@ sdaperson:GuenterKniesel a foaf:Person, sdatech:seniorResearcher ;
 
 sdaperson:MariaMaleshkova a foaf:Person, sdatech:seniorResearcher ;
                   sda:publicationsTag "maleshkova" ;
-                  ex:address sda:Room65 ;
+                  ex:address sda:Room65-1 ;
                   foaf:firstName "Maria" ;
                   foaf:familyName "Maleshkova" ;
                   foaf:name "Dr. Maria Maleshkova" ;
@@ -135,7 +135,7 @@ sdaperson:MariaMaleshkova a foaf:Person, sdatech:seniorResearcher ;
 
 sdaperson:AlexanderKister a foaf:Person, sdatech:seniorResearcher ;
                   sda:publicationsTag "kister" ;
-                  ex:address sda:Roomc1 ;
+                  ex:address sda:Roomc1227-1 ;
                   foaf:firstName "Alexander" ;
                   foaf:familyName "Kister" ;
                   foaf:name "Dr. Alexander Kister" ;
@@ -311,7 +311,7 @@ sdaperson:MohnishDubey a foaf:Person, sdatech:phdStudent ;
                    rdfs:seeAlso <http://aksw.org/MohnishDubey> ;
                    owl:sameAs <http://aksw.org/MohnishDubey> ;
                    sda:publicationsTag "dubey" ;
-                   ex:address sda:Room51 ;
+                   ex:address sda:Room51-1 ;
                    foaf:familyName "Dubey" ;
                    foaf:name "Mohnish Dubey" ;
                    foaf:nick "Mohnish" ;
@@ -817,7 +817,7 @@ sdaperson:DamienGraux a foaf:Person, sdatech:associateReseracher ;
 
 sdaperson:AsjaFischer a foaf:Person, sdatech:associateReseracher ;
                   sda:publicationsTag "fischer" ;
-                  ex:address sda:Room65 ;
+                  ex:address sda:Room65-2 ;
                   sda:address "Endenicher Allee 19a, 53115 Bonn" ;
                   foaf:firstName "Asja" ;
                   foaf:familyName "Fischer" ;
@@ -837,7 +837,7 @@ sdaperson:AsjaFischer a foaf:Person, sdatech:associateReseracher ;
 
 sdaperson:NiklasPetersen a foaf:Person, sdatech:associateReseracher ;
                    sda:publicationsTag "petersen" ;
-                   ex:address sda:RoomB3236 ;
+                   ex:address sda:RoomB3236-1 ;
                    foaf:familyName "Petersen" ;
                    foaf:name "Niklas Petersen" ;
                    foaf:nick "Niklas" ;
@@ -879,7 +879,7 @@ sdaperson:MohamedNadjibMami a foaf:Person, sdatech:associateReseracher ;
 
 sdaperson:LavdimHalilaj a foaf:Person, sdatech:associateReseracher ;
                    sda:publicationsTag "halilaj" ;
-                   ex:address sda:RoomB3236 ;
+                   ex:address sda:RoomB3236-1 ;
                    foaf:familyName "Halilaj" ;
                    foaf:name "Lavdim Halilaj" ;
                    foaf:nick "Lavdim" ;
@@ -1016,7 +1016,7 @@ sdaperson:MiretteElias a foaf:Person, sdatech:associateReseracher ;
 
 sdaperson:VitalisWiens a foaf:Person, sdatech:associateReseracher ;
                    sda:publicationsTag "wiens" ;
-                   ex:address sda:RoomB3236 ;
+                   ex:address sda:RoomB3236-1 ;
                    foaf:familyName "Wiens" ;
                    foaf:name "Vitalis Wiens" ;
                    foaf:nick "Vitalis" ;
@@ -1057,7 +1057,7 @@ sdaperson:SebastianBader a foaf:Person, sdatech:associateReseracher ;
 
 sdaperson:RostislavNedelchev a foaf:Person, sdatech:associateReseracher ;
                    sda:publicationsTag "nedelchev" ;
-                   ex:address sda:RoomB3236 ;
+                   ex:address sda:RoomB3236-1 ;
                    foaf:familyName "Nedelchev" ;
                    foaf:name "Rostislav Nedelchev" ;
                    foaf:nick "Rostislav" ;
@@ -1099,7 +1099,7 @@ sdaperson:JuliusKaufmann a foaf:Person, sdatech:studentAssistant ;
 
 sdaperson:NileshChakraborty a foaf:Person, sdatech:studentAssistant ;
                    sda:publicationsTag "chakraborty" ;
-                  ex:address sda:Room52 ;
+                   ex:address sda:Room52-1 ;
                    foaf:familyName "Chakraborty" ;
                    foaf:name "Nilesh Chakraborty" ;
                    foaf:nick "Nilesh" ;
@@ -1120,7 +1120,7 @@ sdaperson:NileshChakraborty a foaf:Person, sdatech:studentAssistant ;
 
 sdaperson:GauravMaheshwari a foaf:Person, sdatech:studentAssistant ;
                    sda:publicationsTag "maheshwari" ;
-                   ex:address sda:Room64 ;
+                   ex:address sda:Room64-1 ;
                    foaf:familyName "Maheshwari" ;
                    foaf:name "Gaurav Maheshwari" ;
                    foaf:nick "Gaurav" ;
@@ -1141,7 +1141,7 @@ sdaperson:GauravMaheshwari a foaf:Person, sdatech:studentAssistant ;
 
 sdaperson:PriyanshTrivedi a foaf:Person, sdatech:studentAssistant ;
                    sda:publicationsTag "trivedi" ;
-                   ex:address sda:Room64 ;
+                   ex:address sda:Room64-1 ;
                    foaf:familyName "Trivedi" ;
                    foaf:name "Priyansh Trivedi" ;
                    foaf:nick "Priyansh" ;
@@ -1311,7 +1311,7 @@ sdaperson:PiyushChawla a foaf:Person, sdatech:studentAssistant ;
 
 sdaperson:MehdiAli a foaf:Person, sdatech:studentAssistant ;
                    sda:publicationsTag "ali" ;
-                   ex:address sda:Room51 ;
+                   ex:address sda:Room51-2 ;
                    foaf:familyName "Ali" ;
                    foaf:name "Mehdi Ali" ;
                    foaf:nick "Mehdi" ;
@@ -3559,50 +3559,97 @@ sdatech:partners a foaf:Document ;
 
 sda:Room22 a sda:Room ;
            schema:location <http://sda.tech/Address/SDA> ;
+           ex:affiliation "Full Professor" ;
            ex:name "Room 1.022" .
 
-sda:Roomc1 a sda:Room ;
-           schema:location <http://sda.tech/Address/IAIS> ;
-           ex:name "Room C1-227" .
+sda:Roomc1227 a sda:Room ;
+              schema:location <http://sda.tech/Address/IAIS> ;
+              ex:affiliation "Lead Scientist" ;
+              ex:name "Room C1-227" .
+
+sda:Roomc1227-1 a sda:Room ;
+                schema:location <http://sda.tech/Address/IAIS> ;
+                ex:affiliation "Senior Researcher" ;
+                ex:name "Room C1-227" .
 
 sda:Roomp631 a sda:Room ;
            schema:location <http://sda.tech/Address/InfAI> ;
+           ex:affiliation "Leader of the SDA Competence Center" ;
            ex:name "Room P631" .
 
 sda:Room66 a sda:Room ;
             schema:location <http://sda.tech/Address/SDA> ;
+            ex:affiliation "Senior Researcher" ;
             ex:name "Room 1.066" .
 
 sda:Room65 a sda:Room ;
             schema:location <http://sda.tech/Address/SDA> ;
+            ex:affiliation "Senior lecturer" ;
             ex:name "Room 1.065" .
+
+sda:Room65-1 a sda:Room ;
+            schema:location <http://sda.tech/Address/SDA> ;
+            ex:affiliation "Assistant Professor (Akademische Rätin)" ;
+            ex:name "Room 1.065" .
+
+sda:Room65-2 a sda:Room ;
+              schema:location <http://sda.tech/Address/SDA> ;
+              ex:affiliation "Senior Researcher" ;
+              ex:name "Room 1.065" .
 
 sda:Room51 a sda:Room ;
             schema:location <http://sda.tech/Address/SDA> ;
+            ex:affiliation "Senior Researcher" ;
             ex:name "Room 1.051" .
+
+sda:Room51-1 a sda:Room ;
+           schema:location <http://sda.tech/Address/SDA> ;
+           ex:affiliation "PhD Student" ;
+           ex:name "Room 1.051" .
+
+sda:Room51-2 a sda:Room ;
+           schema:location <http://sda.tech/Address/SDA> ;
+           ex:affiliation "Student Assistant" ;
+           ex:name "Room 1.051" .
 
 sda:Room38 a sda:Room ;
            schema:location <http://sda.tech/Address/SDA> ;
+           ex:affiliation "Senior Researcher" ;
            ex:name "Room 1.038" .
 
 sda:Room52 a sda:Room ;
            schema:location <http://sda.tech/Address/SDA> ;
+           ex:affiliation "PhD Student" ;
+           ex:name "Room 1.052" .
+
+sda:Room52-1 a sda:Room ;
+           schema:location <http://sda.tech/Address/SDA> ;
+           ex:affiliation "Student Assistant" ;
            ex:name "Room 1.052" .
 
 sda:Room55 a sda:Room ;
            schema:location <http://sda.tech/Address/SDA> ;
+           ex:affiliation "Student Assistant" ;
            ex:name "Room 1.055" .
 
 sda:Room64 a sda:Room ;
            schema:location <http://sda.tech/Address/SDA> ;
+           ex:affiliation "PhD Student" ;
            ex:name "Room 1.064" .
+
+sda:Room64-1 a sda:Room ;
+            schema:location <http://sda.tech/Address/SDA> ;
+            ex:affiliation "Student Assistant" ;
+            ex:name "Room 1.064" .
 
 sda:Room68 a sda:Room ;
            schema:location <http://sda.tech/Address/SDA> ;
+           ex:affiliation "PhD Student" ;
            ex:name "Room 1.068" .
 
 sda:Room126 a sda:Room ;
             schema:location <http://sda.tech/Address/SDA> ;
+            ex:affiliation "PhD Student" ;
             ex:name "Room 1.126" .
 
 sda:RoomA108 a sda:Room ;
@@ -3611,7 +3658,13 @@ sda:RoomA108 a sda:Room ;
 
 sda:RoomB3236 a sda:Room ;
              schema:location <http://sda.tech/Address/IAIS> ;
+             ex:affiliation "Senior Researcher" ;
              ex:name "Room B3-236" .
+
+sda:RoomB3236-1 a sda:Room ;
+              schema:location <http://sda.tech/Address/IAIS> ;
+              ex:affiliation "Researcher" ;
+              ex:name "Room B3-236" .
 
 sda:RoomC326 a sda:Room ;
               schema:location <http://sda.tech/Address/IAIS> ;
@@ -3619,14 +3672,17 @@ sda:RoomC326 a sda:Room ;
 
 sda:RoomC4a009 a sda:Room ;
               schema:location <http://sda.tech/Address/IAIS> ;
+              ex:affiliation "Researcher" ;
               ex:name "C4a-009" .
 
 sda:RoomB3226 a sda:Room ;
               schema:location <http://sda.tech/Address/IAIS> ;
+              ex:affiliation "Senior Researcher" ;
               ex:name "Room B3-226" .
 
 sda:RoomB3206 a sda:Room ;
               schema:location <http://sda.tech/Address/IAIS> ;
+              ex:affiliation "Researcher" ;
               ex:name "Room B3-206" .
 
 sda:RoomB3210 a sda:Room ;
@@ -3635,6 +3691,7 @@ sda:RoomB3210 a sda:Room ;
 
 sda:RoomB3216 a sda:Room ;
               schema:location <http://sda.tech/Address/IAIS> ;
+              ex:affiliation "Head of EIS department" ;
               ex:name "Room B3-216" .
 
 sda:Roomp905 a sda:Room ;
@@ -3966,6 +4023,7 @@ sda:thesisLevel a owl:DatatypeProperty;
                                 schema:postalCode "53117" ;
                                 schema:streetAddress "Endenicher Allee 19a" ;
                                 schema:institute "Smart Data Analytics, University of Bonn" ;
+                                sda:website "http://sda.tech/" ;
                                 sysont:range "19a" ;
                                 geo:lat "50.7519185"^^xsd:float ;
                                 geo:long "7.0943671"^^xsd:float ;
@@ -3977,7 +4035,8 @@ sda:thesisLevel a owl:DatatypeProperty;
                                   schema:addressLocality "Leipzig" ;
                                   schema:postalCode "04109" ;
                                   schema:streetAddress "Goerdelerring 9" ;
-                                  schema:institute "Institute for Applied Informatics, University of Leipzig" .
+                                  schema:institute "Institute for Applied Informatics, University of Leipzig" ;
+                                  sda:website "https://infai.org/" .
 
 <http://sda.tech/Address/IAIS> a schema:PostalAddress ;
                                  rdfs:label "Fraunhofer IAIS, Schloss Birlinghoven, 53757 Sankt Augustin, Germany" ;
@@ -3985,4 +4044,5 @@ sda:thesisLevel a owl:DatatypeProperty;
                                  schema:addressLocality "Sankt Augustin" ;
                                  schema:postalCode "53757" ;
                                  schema:streetAddress "Schloss Birlinghoven" ;
-                                 schema:institute "Fraunhofer IAIS" .
+                                 schema:institute "Fraunhofer IAIS" ;
+                                 sda:website "https://www.iais.fraunhofer.de/" .

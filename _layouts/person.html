@@ -18,9 +18,26 @@ activateHeader('{{page.navigationdiv}}');
       <br class="horizontal-separator" />
       <div style="text-align:center;"><img class="img-circle-small" style="width: 250px; height: 250px;" src="{{ page.rdf | rdf_property: 'foaf:depiction'}}"></img>
           <div style="display:inline-block; vertical-align: middle;">
-                 <h3 style="text-align:left;"> {{title}} </h3>
-          <h4 class="dynamicChange" style="text-align:left;">{{ page.rdf | rdf_property: 'foaf:status' }}</h4>
-          <div class="links-to-social" style="text-align:left;">
+            <h3 style="text-align:left;"> {{title}} </h3>
+            {% capture pName %}{{ page.rdf | rdf_property: 'foaf:name' }}{% endcapture %}
+            {% capture query %} SELECT ?l ?loc WHERE { ?l ex:address ?loc . ?l foaf:name "{{pName}}" .}  {% endcapture %}{% assign locations = page.rdf | sparql_query: query %}
+            {% if locations.size == 0 %}
+              <h4 class="dynamicChange" style="text-align:left;">{{ page.rdf | rdf_property: 'foaf:status' }}</h4>
+            {% endif %}
+            {% for location in locations  %}
+              {% capture query %} SELECT ?roomname ?affiliation ?fullAddress WHERE { <{{location.loc}}> a sda:Room .  <{{location.loc}}> ex:name ?roomname .  <{{location.loc}}> ex:affiliation ?affiliation . <{{location.loc}}> schema:location ?fullAddress .}  {% endcapture %}{% assign fulladdresses = page.rdf | sparql_query: query %}
+              {% for fladdress in fulladdresses %}
+                <p style="margin-top:0.3cm;text-align:left;font-size:80%;"><strong>{{fladdress.affiliation}}</strong><br/>
+                  {% capture query %} SELECT ?streetAddress ?postalCode ?addressLocality ?institute ?institutewebsite WHERE { <{{fladdress.fullAddress}}> a schema:PostalAddress .  <{{fladdress.fullAddress}}> schema:streetAddress ?streetAddress . <{{fladdress.fullAddress}}> schema:postalCode ?postalCode . <{{fladdress.fullAddress}}> schema:addressLocality ?addressLocality . <{{fladdress.fullAddress}}> schema:institute ?institute . <{{fladdress.fullAddress}}> sda:website ?institutewebsite .}  {% endcapture %}{% assign paddresses = page.rdf | sparql_query: query %}
+                  {% for paddress in paddresses %}
+                    <a href="{{paddress.institutewebsite}}">{{paddress.institute}}</a><br/>
+                    {{fladdress.roomname}}<br/>
+                    {{paddress.streetAddress}}, {{paddress.postalCode}} {{paddress.addressLocality}}<br/>
+                  {% endfor %}
+              {% endfor %}
+            {% endfor %}</p>
+
+            <div class="links-to-social" style="text-align:left;">
               {% capture boolTwitter | strip  %}{{ page.rdf | rdf_property: 'sda:twitter' }}{% endcapture %}
               {% capture boolWebsite | strip %}{{ page.rdf | rdf_property: 'sda:website' }}{% endcapture %}
               {% capture boolFacebook | strip %}{{ page.rdf | rdf_property: 'sda:facebook' }}{% endcapture %}
@@ -34,23 +51,11 @@ activateHeader('{{page.navigationdiv}}');
               {% if boolLinkedin and boolLinkedin != "" and boolLinkedin != nil  %}<a href="{{ page.rdf | rdf_property: 'sda:linkedin' }}" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i> </a>{% endif %}
               {% if boolResearchGate and boolResearchGate != "" and boolResearchGate != nil  %}<a href="{{ page.rdf | rdf_property: 'sda:researchgate' }}" target="_blank"><i style="font-weight:900" class="fa fa-researchgate" aria-hidden="true">RG</i></a>{% endif %}
               {% if boolGoogleScholar and boolGoogleScholar != "" and boolGoogleScholar != nil  %}<a href="{{ page.rdf | rdf_property: 'sda:googlescholar' }}" target="_blank"><i class="fa fa-google" aria-hidden="true"></i> </a>{% endif %}
-        </div>
-        {% capture pName %}{{ page.rdf | rdf_property: 'foaf:name' }}{% endcapture %}
-        {% capture query %} SELECT ?l ?loc WHERE { ?l ex:address ?loc . ?l foaf:name "{{pName}}" .}  {% endcapture %}{% assign locations = page.rdf | sparql_query: query %}
-        {% for location in locations  %}
-            {% capture query %} SELECT ?roomname ?fullAddress WHERE { <{{location.loc}}> a sda:Room .  <{{location.loc}}> ex:name ?roomname . <{{location.loc}}> schema:location ?fullAddress .}  {% endcapture %}{% assign fulladdresses = page.rdf | sparql_query: query %}
-            {% for fladdress in fulladdresses %}
-              <p style="margin-top:0.3cm;text-align:left;font-size:80%;">{{fladdress.roomname}} <br/>
-              {% capture query %} SELECT ?streetAddress ?postalCode ?addressLocality ?institute WHERE { <{{fladdress.fullAddress}}> a schema:PostalAddress .  <{{fladdress.fullAddress}}> schema:streetAddress ?streetAddress . <{{fladdress.fullAddress}}> schema:postalCode ?postalCode . <{{fladdress.fullAddress}}> schema:addressLocality ?addressLocality . <{{fladdress.fullAddress}}> schema:institute ?institute .}  {% endcapture %}{% assign paddresses = page.rdf | sparql_query: query %}
-              {% for paddress in paddresses %}
-                {{paddress.streetAddress}}, {{paddress.postalCode}} {{paddress.addressLocality}}<br/>
-                {{paddress.institute}}<br/>
-              {% endfor %}
-            {% endfor %}
-        {% endfor %}
-        </p><p style="text-align:left;font-size:80%;"> {{page.rdf | rdf_property: 'foaf:phone'}}  <br/> <a style="padding-right:2px; padding-left:2px; color: black;" href="mailto:{{page.rdf | rdf_property: 'foaf:mbox' |remove: 'mailto:' | encode_email}}">{{page.rdf | rdf_property: 'foaf:mbox' |remove: 'mailto:'}} </a></p>
-        </div>
-        <hr width="60%" style="margin-left: 20%;margin-right: 20%;">
+            </div><br/>
+
+            <p style="text-align:left;font-size:80%;"> {{page.rdf | rdf_property: 'foaf:phone'}}  <br/> <a style="padding-right:2px; padding-left:2px; color: black;" href="mailto:{{page.rdf | rdf_property: 'foaf:mbox' |remove: 'mailto:' | encode_email}}">{{page.rdf | rdf_property: 'foaf:mbox' |remove: 'mailto:'}} </a></p>
+            </div>
+            <hr width="60%" style="margin-left: 20%;margin-right: 20%;">
       </div>
 
       <br class="horizontal-separator2" />
