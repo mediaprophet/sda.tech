@@ -125,7 +125,11 @@ activateHeader('{{page.navigationdiv}}');
           {% endif %}
           <div style="padding: 0px;" class="courseLink course-list">
             <ul>
-              <li style="text-align: left;"><a href="{{result5.page}}">{{result5.coursename}}</a> - {{result5.id}}<br> <i>{{result5.desc}}</i><br></li>
+              <li style="text-align: left;"><a href="{{result5.page}}">{{result5.coursename}}</a> - {{result5.id}}
+                {% if result5.desc != '' %}
+                  <br>{{result5.desc}}
+                {% endif %}
+              </li>
             </ul>
           </div>
         {% endif %}{% endif %}{% endif %}{% endfor %}
@@ -141,7 +145,11 @@ activateHeader('{{page.navigationdiv}}');
           {% endif %}
           <div style="padding: 0px;" class="courseLink course-list">
             <ul>
-              <li style="text-align: left;"><a href="{{result5.page}}">{{result5.coursename}}</a> - {{result5.id}}<br> <i>{{result5.desc}}</i><br></li>
+              <li style="text-align: left;"><a href="{{result5.page}}">{{result5.coursename}}</a> - {{result5.id}}
+                {% if result5.desc != '' %}
+                  <br>{{result5.desc}}
+                {% endif %}
+              </li>
             </ul>
           </div>
         {% endif %}{% endif %}{% endif %}{% endfor %}
