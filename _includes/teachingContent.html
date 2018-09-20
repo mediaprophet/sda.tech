@@ -1,4 +1,4 @@
-{% capture query %} SELECT ?course ?short ?name ?desc ?id ?page ?semester ?year WHERE{ ?course a sdatech:Course . ?course rdfs:label ?short . ?course dct:title ?name . ?course ex:description ?desc . ?course sda:id ?id . ?course foaf:homepage ?page . ?course sda:semester ?semester . ?course sda:year ?year . } {% endcapture %} {% assign resultset = page.rdf | sparql_query: query%}
+{% capture query %} SELECT ?course ?short ?name ?desc ?id ?page ?semester ?year WHERE{ ?course a sdatech:Course . ?course rdfs:label ?short . ?course dct:title ?name . ?course ex:description ?desc . ?course sda:id ?id . ?course foaf:homepage ?page . ?course sda:semester ?semester . ?course sda:year ?year . } order by asc(str(?id)) {% endcapture %} {% assign resultset = page.rdf | sparql_query: query%}
     {% capture querytwo %} SELECT ?course ?short ?id ?semester ?year ?maintainer ?name WHERE{ ?course a sdatech:Course . ?course rdfs:label ?short . ?course sda:id ?id . ?course sda:maintainer ?maintainer . ?maintainer foaf:name ?name . ?course sda:semester ?semester . ?course sda:year ?year . } {% endcapture %} {% assign resultset2 = page.rdf | sparql_query: querytwo %}
 {% assign currentYear = 2018 %}
 {% assign currentSemester = "Summer" %}
@@ -8,10 +8,10 @@
   </div>
 
   <div id="winterCourses" style="{% if include.active == 'winter' %}display:block{% else %}display:none{% endif %}">
-    {% for result in resultset %} {% capture short %}{{result.short}}{% endcapture %}{% capture id %}{{result.id}}{% endcapture %}{% capture year %}{{result.year}}{% endcapture %}{% assign year = year | plus: 0 %}{% capture semester %}{{result.semester}}{% endcapture %}{% if currentSemester == "Summer" %}{% assign year = year | plus: 1 %}{% endif %}{% if year == currentYear %}{% if semester == "Winter" %}
+    {% for result in resultset %} {% assign url = result.course | remove: "http://sda.tech/" %}{% capture short %}{{result.short}}{% endcapture %}{% capture id %}{{result.id}}{% endcapture %}{% capture year %}{{result.year}}{% endcapture %}{% assign year = year | plus: 0 %}{% capture semester %}{{result.semester}}{% endcapture %}{% if currentSemester == "Summer" %}{% assign year = year | plus: 1 %}{% endif %}{% if year == currentYear %}{% if semester == "Winter" %}
     <div  class="courseLink course-list">
       <ul>
-        <li style="text-align: left;"><a href="{{result.page}}">{{result.name}}</a> - {{result.id}}<br> <i>{{result.desc}}</i><br>
+        <li style="text-align: left;"><a href="/{{url}}/">{{result.name}}</a> - {{result.id}}<br> <i>{{result.desc}}</i><br>
         {% assign counter = 0 %}
         {% for result2 in resultset2 %} {% capture short2 %}{{result2.short}}{% endcapture %}{% capture semester2 %}{{result2.semester}}{% endcapture %}{% capture year2 %}{{result2.year}}{% endcapture %}{% assign year2 = year2 | plus: 0 %}{% if currentSemester == "Summer" %}{% assign year2 = year2 | plus: 1 %}{% endif %}{% capture id2 %}{{result2.id}}{% endcapture %} {% if id2 == id %}{% if short2 == short %}{% if semester == semester2 %}{% if year == year2 %} {% assign url= result2.maintainer | remove: "http://sda.tech/" %}{% if counter != 0 %}, {% endif %}{% assign counter = counter | plus:1 %}<a href="../../{{url}}">{{result2.name}}</a>
         {% endif %}{% endif %}{% endif %}{% endif %}{% endfor %}
@@ -21,10 +21,10 @@
      {% endif %} {% endif %}{% endfor %}
   </div>
   <div id="summerCourses" style="{% if include.active == 'summer' %}display:block{% else %}display:none{% endif %}">
-    {% for result in resultset %} {% capture short %}{{result.short}}{% endcapture %}{% capture id %}{{result.id}}{% endcapture %}{% capture year %}{{result.year}}{% endcapture %}{% assign year = year | plus: 0 %}{% capture semester %}{{result.semester}}{% endcapture %}{% if year == currentYear %}{% if semester == "Summer" %}
+    {% for result in resultset %} {% assign url = result.course | remove: "http://sda.tech/" %}{% capture short %}{{result.short}}{% endcapture %}{% capture id %}{{result.id}}{% endcapture %}{% capture year %}{{result.year}}{% endcapture %}{% assign year = year | plus: 0 %}{% capture semester %}{{result.semester}}{% endcapture %}{% if year == currentYear %}{% if semester == "Summer" %}
     <div  class="courseLink course-list">
       <ul>
-        <li style="text-align: left;"><a href="{{result.page}}">{{result.name}}</a> - {{result.id}}<br> <i>{{result.desc}}</i><br>
+        <li style="text-align: left;"><a href="/{{url}}/">{{result.name}}</a> - {{result.id}}<br> <i>{{result.desc}}</i><br>
         {% assign counter = 0 %}
         {% for result2 in resultset2 %} {% capture short2 %}{{result2.short}}{% endcapture %}{% capture semester2 %}{{result2.semester}}{% endcapture %}{% capture year2 %}{{result2.year}}{% endcapture %}{% assign year2 = year2 | plus: 0 %}{% capture id2 %}{{result2.id}}{% endcapture %} {% if id2 == id %}{% if short2 == short %}{% if semester2 == semester %}{% if year2 == year %}{% assign url= result2.maintainer | remove: "http://sda.tech/" %}{% if counter != 0 %}, {% endif %}{% assign counter = counter | plus:1 %}<a href="../../{{url}}">{{result2.name}}</a>
         {% endif %}{% endif %}{% endif %}{% endif %}{% endfor %}

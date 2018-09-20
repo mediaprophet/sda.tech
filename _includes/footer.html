@@ -29,7 +29,7 @@
               Fax: {{ site.fax  escape }}
             </li>
             {% if site.email %}
-            <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+            <li><a href="mailto:{{ site.email |remove: 'mailto:' | encode_email }}">{{ site.email }}</a></li>
             {% endif %}
         </ul>
       </div>

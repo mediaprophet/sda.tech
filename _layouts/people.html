@@ -1,7 +1,15 @@
 ---
 rdf_prefix_path: sda.tech.pref
 layout: default
+navigationdiv: People
 ---
+
+<script>
+setTitle('People', '{{site.title | escape}}');
+deactivateHeader();
+activateHeader('{{page.navigationdiv}}');
+</script>
+
 <div class="pagination">
   {% include peopleHeader.html active ="People" %}
 </div>

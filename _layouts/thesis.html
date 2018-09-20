@@ -3,7 +3,14 @@ rdf_prefix_path: sda.tech.pref
 layout: default
 toggleOnDiv: allThesis
 toggledURLTo: /bachelorthesis
+navigationdiv: Thesis
 ---
+<script>
+setTitle('Theses', '{{site.title | escape}}');
+deactivateHeader();
+activateHeader('{{page.navigationdiv}}');
+</script>
+
 {% include toggleBachelorThesis.html %}
 {% include toggleMasterThesis.html %}
 

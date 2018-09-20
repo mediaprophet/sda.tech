@@ -18,3 +18,4 @@ PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
 PREFIX biboDegree: <http://purl.org/ontology/bibo/degree/>
 PREFIX dbo: <http://dbpedia.org/ontology/>
 PREFIX sioc: <http://rdfs.org/sioc/ns#>
+PREFIX schema: <http://schema.org/>

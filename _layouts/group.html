@@ -2,6 +2,7 @@
 rdf_prefix_path: sda.tech.pref
 layout: default
 <!-- permalink: mypageurl.html -->
+navigationdiv: Groups
 ---
 {% capture query %} SELECT ?projects ?projectname ?image WHERE{
 <{{page.rdf}}> foaf:currentProject ?projects . ?projects rdfs:label ?projectname . ?projects foaf:depiction ?image . } {% endcapture %} {% assign resultset = page.rdf | sparql_query: query %} {% capture query %} SELECT ?person ?personname ?image WHERE{
@@ -10,7 +11,17 @@ layout: default
   <{{page.rdf}}> dbo:leader ?leader . ?leader foaf:name ?leadername . ?leader foaf:depiction ?leaderimage} {% endcapture %} {% assign resultset3 = page.rdf | sparql_query: query %}
     {% capture queryfour %} SELECT ?publication ?title ?date ?publisher ?link  WHERE{<{{page.rdf}}> sda:publication ?publication . ?publication dc:title ?title
     . ?publication dc:date ?date . ?publication dc:publisher ?publisher . ?publication foaf:homepage ?link . } {% endcapture %} {% assign resultset4 = page.rdf | sparql_query: queryfour %}
-<!--Presentation of the GROUP Items-->
+
+{% capture title %} {{ page.rdf | rdf_property: 'rdfs:label' }} {% endcapture %}
+{% assign title = title | strip %}
+
+<script>
+setTitle('{{title}}', '{{site.title | escape}}');
+deactivateHeader();
+activateHeader('{{page.navigationdiv}}');
+</script>
+
+    <!--Presentation of the GROUP Items-->
     <article class="post">
       <div class="pagination">
         {% capture label %}{{ page.rdf | rdf_property: 'rdfs:label'}}{% endcapture %}
@@ -49,7 +60,7 @@ layout: default
                 <!-- <img src="{{result.image}}" style="width:48px;height:48px;border-radius:50%;display:block;margin:0 auto;">
                 <a href="../{{url}}"><h4>{{result.personname}}</h4></a> -->
                 <div class="chip">
-                  <img src="{{result.leaderimage}}" alt="Person" width="96" height="96">
+                  <img class="img-circle-small" src="{{result.leaderimage}}" alt="Person" width="96" height="96">
                   <a href="../../{{url}}">{{result.leadername}}</a>
                 </div>
 
@@ -60,11 +71,19 @@ layout: default
             <div class="members-projects">
               <h3>Members</h3>
               <div class="membersofProject">
-                {% for result in resultset2 %} {% assign url= result.person | remove: "http://sda.tech/" %}
-                <div class="chip">
-                  <img src="{{result.image}}" alt="Person" width="96" height="96">
-                  <a href="../../{{url}}">{{result.personname}}</a>
-                </div>
+                {% capture groupMainTitle %}{{title}}{% endcapture %}
+                {% capture query %} SELECT ?person ?personname ?image ?group ?groupname Where {
+                  ?person a foaf:Person . OPTIONAL { ?person foaf:name ?personname } . OPTIONAL { ?person foaf:depiction ?image } .  ?person sda:group ?group . ?group  rdfs:label ?groupname .
+                } {% endcapture %} {% assign groupmembers = page.rdf | sparql_query: query %}
+                {% for person in groupmembers %}
+                  {% capture groupTitle %}{{person.groupname}}{% endcapture %}
+                  {% if groupMainTitle == groupTitle %}
+                    {% assign url= person.person | remove: "http://sda.tech/" %}
+                    <div class="chip">
+                      <img  class="img-circle-small" src="{{person.image}}" alt="Person" width="96" height="96">
+                      <a href="../../{{url}}">{{person.personname}}</a>
+                    </div>
+                  {% endif %}
                 {% endfor %}
               </div>
               <br class="horizontal-separator2" />
@@ -73,7 +92,7 @@ layout: default
               <div class="partnersOfProject">
                 {% for result in resultset %} {% assign url= result.projects | remove: "http://sda.tech/" %}
                 <div class="chip">
-                  <img src="{{result.image}}" alt="Person" width="96" height="96">
+                  <img class="img-circle-small" src="{{result.image}}" alt="Person" width="96" height="96">
                   <a href="../../{{url}}">{{result.projectname}}</a>
                 </div>
                 {% endfor %}

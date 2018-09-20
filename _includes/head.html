@@ -3,7 +3,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+  <title id="title">{% if page.titlex %}{{ page.titlex | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
   <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
 
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
@@ -15,6 +15,7 @@
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
   <link rel="stylesheet" href="{{ "/assets/font-awesome/css/font-awesome.min.css" | relative_url }}">
+  <link rel="icon" href="{{ "/assets/sdafavicon.png" | relative_url }}" sizes="32x32">
 
 
   <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
@@ -22,6 +23,26 @@
   <script type="text/javascript" src="/assets/d3.v4.js"></script>
   <script type="text/javascript" src="/assets/cards.js"></script>
   <script type="text/javascript" src="/assets/bib-list-min.js"></script>
+  <script type="text/javascript" src="/assets/setTitle.js"></script>
+  <script type="text/javascript">
+    function activateHeader(div) {
+      document.getElementById(div).style.color = "#5CBF14";
+    }
+
+    function deactivateHeader() {
+      document.getElementById("About").style.color = "#087CCD";
+      document.getElementById("People").style.color = "#087CCD"
+      document.getElementById("Groups").style.color = "#087CCD"
+      document.getElementById("Projects").style.color = "#087CCD"
+      document.getElementById("Publications").style.color = "#087CCD"
+      document.getElementById("Jobs").style.color = "#087CCD"
+      document.getElementById("Teaching").style.color = "#087CCD"
+      document.getElementById("Thesis").style.color = "#087CCD"
+      document.getElementById("Partners").style.color = "#087CCD"
+      document.getElementById("Blog").style.color = "#087CCD"
+
+    }
+  </script>
   {% if jekyll.environment == 'production' and site.google_analytics %}
   {% include google-analytics.html %}
   {% endif %}

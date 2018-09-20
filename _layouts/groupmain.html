@@ -3,7 +3,14 @@ rdf_prefix_path: sda.tech.pref
 layout: default
 toggledURLTo: /Group/DistributedSemanticAnalytics/
 toggleOnDiv: dsa
+navigationdiv: Groups
 ---
+
+<script>
+setTitle('Groups', '{{site.title | escape}}');
+deactivateHeader();
+activateHeader('{{page.navigationdiv}}');
+</script>
 
 <article class="post">
 <!--  {% include toggleInitialPageLink.html div=page.toggleOnDiv linkto=page.toggledURLTo %} -->
@@ -50,7 +57,7 @@ resultset2 = page.rdf | sparql_query: querytwo %} {% capture querythree %} SELEC
               <div class="membersofProject">
                 {% for result5 in resultset5 %} {% capture groupname %}{{result5.name}}{% endcapture %} {% if groupname == name %} {% assign url= result5.leader | remove: "http://sda.tech/" %}
                 <div class="chip">
-                  <img src="{{result5.leaderimage}}" alt="Person" width="96" height="96">
+                  <img class="img-circle-small" src="{{result5.leaderimage}}" alt="Person" width="96" height="96">
                   <a href="../../{{url}}">{{result5.leadername}}</a>
                 </div>
                 {% endif %} {% endfor %}
@@ -58,20 +65,29 @@ resultset2 = page.rdf | sparql_query: querytwo %} {% capture querythree %} SELEC
             </div>
             <h3>Group Members</h3>
             <div class="membersofProject">
-              {% for result3 in resultset3 %} {% capture groupname %}{{result3.name}}{% endcapture %} {% if groupname == name %} {% assign url= result3.person | remove: "http://sda.tech/" %}
-              <div class="chip">
-                <img src="{{result3.image}}" alt="Person" width="96" height="96">
-                <a href="../../{{url}}">{{result3.nameperson}}</a>
-              </div>
-              {% endif %} {% endfor %}
+              {% capture groupMainTitle %}{{result.name}}{% endcapture %}
+              {% capture query %} SELECT ?person ?personname ?image ?group ?groupname Where {
+                ?person a foaf:Person . OPTIONAL { ?person foaf:name ?personname } . OPTIONAL { ?person foaf:depiction ?image } .  ?person sda:group ?group . ?group  rdfs:label ?groupname .
+              } {% endcapture %} {% assign groupmembers = page.rdf | sparql_query: query %}
+              {% for person in groupmembers %}
+                {% capture groupTitle %}{{person.groupname}}{% endcapture %}
+                {% if groupMainTitle == groupTitle %}
+                  {% assign url= person.person | remove: "http://sda.tech/" %}
+                  <div class="chip">
+                    <img  class="img-circle-small" src="{{person.image}}" alt="Person" width="96" height="96">
+                    <a href="../../{{url}}">{{person.personname}}</a>
+                  </div>
+                {% endif %}
+              {% endfor %}
             </div>
+
             <br class="horizontal-separator" />
             <br class="horizontal-separator" />
             <h3>Projects</h3>
             <div class="partnersOfProject">
               {% for result2 in resultset2 %} {% capture groupname %}{{result2.name}}{% endcapture %} {% if groupname == name %} {% assign url= result2.project | remove: "http://sda.tech/" %}
               <div class="chip">
-                <img src="{{result2.image}}" alt="Person" width="96" height="96">
+                <img class="img-circle-small" src="{{result2.image}}" alt="Person" width="96" height="96">
                 <a href="../../{{url}}">{{result2.nameproject}}</a>
               </div>
               {% endif %} {% endfor %}

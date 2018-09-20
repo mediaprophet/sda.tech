@@ -1,9 +1,14 @@
 ---
 rdf_prefix_path: sda.tech.pref
 layout: default
+navigationdiv: Partners
 ---
-{% include togglePartnerTypes.html %}
-{% include toggleInitialPageLink.html div=page.toggleOnDiv linkto=page.toggledURLTo %}
+<script>
+setTitle('Industry Partners', '{{site.title | escape}}');
+deactivateHeader();
+activateHeader('{{page.navigationdiv}}');
+</script>
+
 <!-- Presenting the PARTNERS -->
 <article class="post">
   <div class="pagination">

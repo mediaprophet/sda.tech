@@ -1,7 +1,14 @@
 ---
 rdf_prefix_path: sda.tech.pref
 layout: default
+navigationdiv: Projects
 ---
+
+<script>
+setTitle('Projects', '{{site.title | escape}}');
+deactivateHeader();
+activateHeader('{{page.navigationdiv}}');
+</script>
 
 <div class="pagination">
   {% include projectHeader.html active="Projects" %}

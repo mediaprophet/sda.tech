@@ -1,7 +1,14 @@
 ---
 rdf_prefix_path: sda.tech.pref
 layout: default
+navigationdiv: Teaching
 ---
+
+<script>
+setTitle('Courses', '{{site.title | escape}}');
+deactivateHeader();
+activateHeader('{{page.navigationdiv}}');
+</script>
 
 <article class="post">
   <div class="pagination">

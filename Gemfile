@@ -28,6 +28,8 @@ group :jekyll_plugins do
    #gem 'jekyll-Turtle2BiB', '0.1.0', :path => '/home/masmat/Documents/jekyll-Turtle2BiB'
 end
 
+#gem 'nokogiri', '>= 1.8'
+
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 

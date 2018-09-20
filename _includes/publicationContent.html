@@ -16,6 +16,7 @@ ORDER BY (?date)
 <!-- QUERY to GET Thesis Publications -->
 {% capture query %} SELECT ?publication ?title ?publisher ?var ?date ?url ?full WHERE{
   ?publication a bibo:Thesis .
+  ?publication a sdatech:published .
   ?publication dct:title ?title .
   OPTIONAL { ?publication dct:issued ?date } .
   OPTIONAL { ?publication foaf:homepage ?url } .
@@ -105,7 +106,6 @@ SELECT ?position WHERE{
                             {% capture title %}{{thes.title}}{% endcapture %}
                             {% capture query %} SELECT ?publication ?title ?author ?authorname  WHERE{
                               ?publication a bibo:Thesis .
-                              ?publication a sdatech:published .
                               ?publication dct:title ?title .
                               ?publication dc:author ?author .
                               ?author foaf:name ?authorname .

@@ -1,6 +1,7 @@
 ---
 rdf_prefix_path: sda.tech.pref
 layout: default
+navigationdiv: Jobs
 ---
 
 {% capture query %} SELECT ?akadJob ?title ?desc ?req ?offer ?expect ?exp WHERE{
@@ -17,26 +18,35 @@ layout: default
 
 {% assign req = "" %}{% assign exp = "" %}{% assign expect = "" %}{% assign offer = "" %}
 
-{% if reqOffer == "undefined" %} 
+{% if reqOffer == "undefined" %}
     {% capture pointlist %}{{externReq}}{% endcapture %}{% assign req = externReq %}
 {% else %}
     {% capture pointlist %}{{page.rdf | rdf_property: 'sda:requirements'}}{% endcapture %}
 {% endif %} {% assign points1 = pointlist | split: ' | ' %}
-{% if expOffer == "undefined" %} 
+{% if expOffer == "undefined" %}
     {% capture pointlist %}{{externExp}}{% endcapture %}{% assign exp = externExp %}
 {% else %}
     {% capture pointlist %}{{page.rdf | rdf_property: 'sda:experience'}}{% endcapture %}
 {% endif %} {% assign points2 = pointlist | split: ' | ' %}
-{% if expectOffer == "undefined" %} 
+{% if expectOffer == "undefined" %}
     {% capture pointlist %}{{externExpect}}{% endcapture %}{% assign expect = externExpect %}
 {% else %}
     {% capture pointlist %}{{page.rdf | rdf_property: 'sda:expected'}}{% endcapture %}
 {% endif %} {% assign points3 = pointlist | split: ' | ' %}
-{% if offerOffer == "undefined" %} 
+{% if offerOffer == "undefined" %}
     {% capture pointlist %}{{externOffer}}{% endcapture %}{% assign offer = externOffer %}
 {% else %}
     {% capture pointlist %}{{page.rdf | rdf_property: 'sda:offer'}}{% endcapture %}
 {% endif %} {% assign points4 = pointlist | split: ' | ' %}
+
+{% capture title %} {{ page.rdf | rdf_property: 'dct:title' }} {% endcapture %}
+{% assign title = title | strip %}
+
+<script>
+setTitle('{{title}}', '{{site.title | escape}}');
+deactivateHeader();
+activateHeader('{{page.navigationdiv}}');
+</script>
 
 <article class="post">
   <div class="job-contents content-people">
