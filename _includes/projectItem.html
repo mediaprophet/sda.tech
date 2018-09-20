@@ -4,17 +4,12 @@
 projectList"%}"../{{include.href}}"{% elsif include.projectItemFor== "project" %}"{{include.href}}"{% endif %} ><h1>{{include.title}}</h1></a>
 </div>
 <div class="partner-item">
-  <br class="horizontal-separator"/>
-  <div class="partner-icon">
-    <img style="padding:0px;" src="{{include.image}}" alt="{{iclude.title}}">
+  <div class="image">
+    <img style="width: 200px;" src="{{include.image}}" alt="{{iclude.title}}">
   </div>
-  <div class="partner-detail">
-    <div class="partner-description">
-      {{include.description}}
-    </div>
-  </div>
-  <br class="horizontal-separator" />
-  <div class="links-to-social" style="text-align:left;">
+  <div class="description">
+    {{include.description}}<br/>
+    <br class="horizontal-separator" />
     {% capture count %}{{include.twitter}}{% endcapture %}
     {% if count != 'undefined' %}
       <a href="{{include.twitter}}" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a>

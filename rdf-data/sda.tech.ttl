@@ -60,7 +60,7 @@ sdaperson:JensLehmann a foaf:Person, sdatech:professor ;
                   rdfs:seeAlso <http://aksw.org/JensLehmann> ;
                   owl:sameAs <http://aksw.org/JensLehmann> ;
                   sda:publicationsTag "lehmann" ;
-                  ex:address sda:Room22, sda:Roomc1, sda:Roomp631 ;
+                  ex:address sda:Room22, sda:Roomc1227, sda:Roomp631 ;
                   foaf:familyName "Lehmann" ;
                   foaf:name "Prof. Dr. Jens Lehmann" ;
                   foaf:nick "Lehmann" ;
@@ -119,7 +119,7 @@ sdaperson:GuenterKniesel a foaf:Person, sdatech:seniorResearcher ;
 
 sdaperson:MariaMaleshkova a foaf:Person, sdatech:seniorResearcher ;
                   sda:publicationsTag "maleshkova" ;
-                  ex:address sda:Room65 ;
+                  ex:address sda:Room65-1 ;
                   foaf:firstName "Maria" ;
                   foaf:familyName "Maleshkova" ;
                   foaf:name "Dr. Maria Maleshkova" ;
@@ -137,7 +137,7 @@ sdaperson:MariaMaleshkova a foaf:Person, sdatech:seniorResearcher ;
 
 sdaperson:AlexanderKister a foaf:Person, sdatech:seniorResearcher ;
                   sda:publicationsTag "kister" ;
-                  ex:address sda:Roomc1 ;
+                  ex:address sda:Roomc1227-1 ;
                   foaf:firstName "Alexander" ;
                   foaf:familyName "Kister" ;
                   foaf:name "Dr. Alexander Kister" ;
@@ -313,7 +313,7 @@ sdaperson:MohnishDubey a foaf:Person, sdatech:phdStudent ;
                    rdfs:seeAlso <http://aksw.org/MohnishDubey> ;
                    owl:sameAs <http://aksw.org/MohnishDubey> ;
                    sda:publicationsTag "dubey" ;
-                   ex:address sda:Room51 ;
+                   ex:address sda:Room51-1 ;
                    foaf:familyName "Dubey" ;
                    foaf:name "Mohnish Dubey" ;
                    foaf:nick "Mohnish" ;
@@ -601,7 +601,7 @@ sdaperson:SaharVahdati a foaf:Person, sdatech:phdStudent ;
                    foaf:nick "Sahar" ;
                    foaf:mbox <mailto:vahdati@cs.uni-bonn.de> ;
                    foaf:depiction <https://goo.gl/2fK2D9> ;
-                   foaf:phone <Tel:0228/73-4533> ; ;
+                   foaf:phone <Tel:0228/73-4533> ;
                    foaf:firstName "Sahar" ;
                    foaf:title "" ;
                    foaf:status "PhD Student" ;
@@ -819,7 +819,7 @@ sdaperson:DamienGraux a foaf:Person, sdatech:associateReseracher ;
 
 sdaperson:AsjaFischer a foaf:Person, sdatech:associateReseracher ;
                   sda:publicationsTag "fischer" ;
-                  ex:address sda:Room65 ;
+                  ex:address sda:Room65-2 ;
                   sda:address "Endenicher Allee 19a, 53115 Bonn" ;
                   foaf:firstName "Asja" ;
                   foaf:familyName "Fischer" ;
@@ -839,7 +839,7 @@ sdaperson:AsjaFischer a foaf:Person, sdatech:associateReseracher ;
 
 sdaperson:NiklasPetersen a foaf:Person, sdatech:associateReseracher ;
                    sda:publicationsTag "petersen" ;
-                   ex:address sda:RoomB3236 ;
+                   ex:address sda:RoomB3236-1 ;
                    foaf:familyName "Petersen" ;
                    foaf:name "Niklas Petersen" ;
                    foaf:nick "Niklas" ;
@@ -881,7 +881,7 @@ sdaperson:MohamedNadjibMami a foaf:Person, sdatech:associateReseracher ;
 
 sdaperson:LavdimHalilaj a foaf:Person, sdatech:associateReseracher ;
                    sda:publicationsTag "halilaj" ;
-                   ex:address sda:RoomB3236 ;
+                   ex:address sda:RoomB3236-1 ;
                    foaf:familyName "Halilaj" ;
                    foaf:name "Lavdim Halilaj" ;
                    foaf:nick "Lavdim" ;
@@ -1018,7 +1018,7 @@ sdaperson:MiretteElias a foaf:Person, sdatech:associateReseracher ;
 
 sdaperson:VitalisWiens a foaf:Person, sdatech:associateReseracher ;
                    sda:publicationsTag "wiens" ;
-                   ex:address sda:RoomB3236 ;
+                   ex:address sda:RoomB3236-1 ;
                    foaf:familyName "Wiens" ;
                    foaf:name "Vitalis Wiens" ;
                    foaf:nick "Vitalis" ;
@@ -1059,7 +1059,7 @@ sdaperson:SebastianBader a foaf:Person, sdatech:associateReseracher ;
 
 sdaperson:RostislavNedelchev a foaf:Person, sdatech:associateReseracher ;
                    sda:publicationsTag "nedelchev" ;
-                   ex:address sda:RoomB3236 ;
+                   ex:address sda:RoomB3236-1 ;
                    foaf:familyName "Nedelchev" ;
                    foaf:name "Rostislav Nedelchev" ;
                    foaf:nick "Rostislav" ;
@@ -1101,7 +1101,7 @@ sdaperson:JuliusKaufmann a foaf:Person, sdatech:studentAssistant ;
 
 sdaperson:NileshChakraborty a foaf:Person, sdatech:studentAssistant ;
                    sda:publicationsTag "chakraborty" ;
-                  ex:address sda:Room52 ;
+                   ex:address sda:Room52-1 ;
                    foaf:familyName "Chakraborty" ;
                    foaf:name "Nilesh Chakraborty" ;
                    foaf:nick "Nilesh" ;
@@ -1122,7 +1122,7 @@ sdaperson:NileshChakraborty a foaf:Person, sdatech:studentAssistant ;
 
 sdaperson:GauravMaheshwari a foaf:Person, sdatech:studentAssistant ;
                    sda:publicationsTag "maheshwari" ;
-                   ex:address sda:Room64 ;
+                   ex:address sda:Room64-1 ;
                    foaf:familyName "Maheshwari" ;
                    foaf:name "Gaurav Maheshwari" ;
                    foaf:nick "Gaurav" ;
@@ -1143,7 +1143,7 @@ sdaperson:GauravMaheshwari a foaf:Person, sdatech:studentAssistant ;
 
 sdaperson:PriyanshTrivedi a foaf:Person, sdatech:studentAssistant ;
                    sda:publicationsTag "trivedi" ;
-                   ex:address sda:Room64 ;
+                   ex:address sda:Room64-1 ;
                    foaf:familyName "Trivedi" ;
                    foaf:name "Priyansh Trivedi" ;
                    foaf:nick "Priyansh" ;
@@ -1313,7 +1313,7 @@ sdaperson:PiyushChawla a foaf:Person, sdatech:studentAssistant ;
 
 sdaperson:MehdiAli a foaf:Person, sdatech:studentAssistant ;
                    sda:publicationsTag "ali" ;
-                   ex:address sda:Room51 ;
+                   ex:address sda:Room51-2 ;
                    foaf:familyName "Ali" ;
                    foaf:name "Mehdi Ali" ;
                    foaf:nick "Mehdi" ;
@@ -1817,7 +1817,7 @@ sdaproject:DIACHRON a foaf:Project, sdatech:fundedProject ;
                  ex:description "Preserving the Evolving Data Web: Making Open / Linked Data Diachronic";
                  ex:longdescription "Preserving the Evolving Data Web: Making Open / Linked Data Diachronic. DIACHRON intends to address and cope with certain issues arising from the evolution of the data such as: (a) Monitor the changes of LOD datasets (tracking the evolution); (b) Identify the cause of the evolution of the datasets in respect with the real world evolution of the entities the datasets describe (provenance problem); (c) Repair various data deficiencies (curation problem); (d)Temporal and spatial quality assessment of the harvested LOD datasets and determination of the datasets versions that need to be preserved (appraisal); (e) Archive multiple versions of data and cite them accordingly to make the reference of previous data feasible (archiving and citation); (f) Retrieve and query previous versions (time traveling queries) The DIACHRON solution aims not only to store previous versions for preservation in case of future need of them, but to create a live repository of the data that captures and highlights data evolution by keeping all data (current and previous) accessible, combined with a toolset that handles the full life cycle of the Data Web.";
                  foaf:homepage <http://www.diachron-fp7.eu/> ;
-                 foaf:depiction <http://www.diachron-fp7.eu/uploads/2/1/2/0/21208652/4006116.png?239> ;
+                 foaf:depiction <http://sda.cs.uni-bonn.de/wp-content/uploads/2017/10/Smart-Data-Analytics.png> ;
                  sda:funded "Funded Project" ;
                  sda:twitter "https://twitter.com/DIACHRON_FP7" ;
                  sda:source "undefined" ;
@@ -1856,7 +1856,7 @@ sdaproject:LiDaKrA a foaf:Project, sdatech:fundedProject ;
                  ex:description "Linked-Data-basierte Kriminalanalyse (Linked Data based crime analysis)";
                  ex:longdescription "The Web not only gives rise to new forms of crime, it also enables new technology for crime investigation. Suspects leave traces on the Web, items are being sold and bought on the Web, and a wealth of public open data about organizations and places is available on the Web. LiDaKrA aims at a holistic approach to extract, network and fuse crime-relevant information from public and private sources such as: the Web in general, the Social Web (social networks, blogs or wikis), Deep Web (eCommerce databases such as ebay or Amazon Marketplace), Dark Web (informations from the Tor network), Data Web (open data such as DBpedia or GeoNames). The technical components will be implemented in an integrated platform and will be evaluated in concrete use cases with multiple stakeholders from crime investigation authorities. ";
                  foaf:homepage "undefined" ;
-                 foaf:depiction <> ;
+                 foaf:depiction <http://sda.cs.uni-bonn.de/wp-content/uploads/2017/10/Smart-Data-Analytics.png> ;
                  sda:funded "Funded Project" ;
                  sda:twitter "undefined" ;
                  sda:source "undefined" ;
@@ -1896,7 +1896,7 @@ sdaproject:ODINE a foaf:Project, sdatech:fundedProject ;
                  ex:description "Open Data Incubator for Europe";
                  ex:longdescription "The first Open Data Incubator for Europe. Europe is supporting the next generation of digital businesses. The Open Data Incubator for Europe (ODINE) is part of that support - it helps European citizens build sustainable businesses using open data. It will offer up to €100.000 and will set up an environment and EU-wide network, including business angels, VCs and funding agencies, to support small and medium enterprises and startups in creating commercial value from open data.";
                  foaf:homepage <https://opendataincubator.eu/> ;
-                 foaf:depiction <https://opendataincubator.eu/files/2016/01/logo.svg> ;
+                 foaf:depiction <https://pbs.twimg.com/profile_images/586256386193018882/jGW_66Al_400x400.png> ;
                  sda:funded "Funded Project" ;
                  sda:twitter "https://twitter.com/ODincubator" ;
                  sda:source "undefined" ;
@@ -1956,7 +1956,7 @@ sdaproject:OSCOSS a foaf:Project, sdatech:fundedProject ;
                  ex:description "A shared platform for Opening Scholarly Communication in the Social Sciences.";
                  ex:longdescription "OSCOSS is concerned with Opening Scholarly Communication in the Social Sciences.";
                  foaf:homepage "undefined" ;
-                 foaf:depiction <> ;
+                 foaf:depiction <http://sda.cs.uni-bonn.de/wp-content/uploads/2017/10/Smart-Data-Analytics.png> ;
                  sda:funded "Funded Project" ;
                  sda:twitter "undefined" ;
                  sda:source "undefined" ;
@@ -1976,7 +1976,7 @@ sdaproject:SeReCo a foaf:Project, sdatech:fundedProject ;
                  ex:description "SeReCo (Semantics, Coordination and Reasoning) is a German-French doctoral college. Its scientific purpose of SeReCo is to explore the spectrum of technologies related to semantics, reasoning and coordination in distributed and open environments (such as the Web).";
                  ex:longdescription "SeReCo (Semantics, Coordination and Reasoning) is a German-French doctoral college. Its scientific purpose of SeReCo is to explore the spectrum of technologies related to semantics, reasoning and coordination in distributed and open environments (such as the Web).";
                  foaf:homepage <https://sereco.univ-st-etienne.fr/> ;
-                 foaf:depiction <> ;
+                 foaf:depiction <http://sda.cs.uni-bonn.de/wp-content/uploads/2017/10/Smart-Data-Analytics.png> ;
                  sda:funded "Funded Project" ;
                  sda:twitter "undefined" ;
                  sda:source "undefined" ;
@@ -2109,7 +2109,7 @@ sdaproject:AskNow a foaf:Project, sdatech:openSourceProject ;
 # LITMUS
 sdaproject:LITMUS a foaf:Project, sdatech:openSourceProject ;
            rdfs:label "LITMUS Benchmark Suite" ;
-           foaf:depiction <https://github.com/LITMUS-Benchmark-Suite/litmus-benchmark-suite.github.io/blob/master/images/litmus_logo.png> ;
+           foaf:depiction <https://raw.githubusercontent.com/LITMUS-Benchmark-Suite/litmus-benchmark-suite.github.io/master/images/litmus_logo.png> ;
            ex:description "An Open, Extensible Benchmarking Suite for Cross Domain RDF Data Management Systems" ;
            ex:longdescription "LITMUS Benchmark Suite, is an open extensible framework for benchmarking a plethora of cross-domain DMSs. Apart from automating the tedious process of benchmarking, it also offers: (i) An efficient way for replicating existing benchmarks (e.g., BSBM, WAT-DIV). (ii) A wide set of performance evaluation measures/indicators tailored specifically for needs and, (iii) Present a custom visualization via custom charts, graphs and tabular data of the benchmark results for a faster insight." ;
            sda:twitter "undefined" ;
@@ -2123,7 +2123,7 @@ sdaproject:LITMUS a foaf:Project, sdatech:openSourceProject ;
 ex:DeFacto a foaf:Project, sdatech:openSourceProject ;
            rdfs:label "DeFacto" ;
            doap:maintainer sda:JensLehmann ;
-           foaf:depiction </assets/sdalogo.png> ;
+           foaf:depiction <https://avatars3.githubusercontent.com/u/42012598?s=200&v=4> ;
            ex:description "Deep Fact Validation" ;
            ex:longdescription "DeFacto (Deep Fact Validation) is an algorithm for validating statements by finding confirming sources for it on the web. It takes a statement (such as “Jamaica Inn was directed by Alfred Hitchcock”) as input and then tries to find evidence for the truth of that statement by searching for information in the web." ;
            sda:twitter "undefined" ;
@@ -2135,10 +2135,10 @@ ex:DeFacto a foaf:Project, sdatech:openSourceProject ;
 # MEX Vocabulary
 sdaproject:MEX a foaf:Project, sdatech:openSourceProject ;
                  rdfs:label "MEX Vocabulary" ;
+                 foaf:depiction <http://sda.cs.uni-bonn.de/wp-content/uploads/2017/10/Smart-Data-Analytics.png> ;
                  ex:description "A Light-Weight Interchange Format for Machine Learning Experiments" ;
                  ex:longdescription "" ;
                  foaf:homepage <http://mex.aksw.org/> ;
-                 foaf:depiction "" ;
                  sda:twitter "undefined" ;
                  sda:source "https://github.com/SmartDataAnalytics/mexproject" ;
                  sda:download "undefined" ;
@@ -2150,10 +2150,10 @@ sdaproject:MEX a foaf:Project, sdatech:openSourceProject ;
 
 sdaproject:MLDSLs a foaf:Project, sdatech:incubator ;
                  rdfs:label "ML-DSLs" ;
+                 foaf:depiction <http://sda.cs.uni-bonn.de/wp-content/uploads/2017/10/Smart-Data-Analytics.png> ;
                  ex:description "Domain Specific Languages for Machine Learning algorithms." ;
                  ex:longdescription "" ;
                  foaf:homepage "undefined" ;
-                 foaf:depiction "" ;
                  sda:twitter "undefined" ;
                  sda:source "undefined" ;
                  sda:download "undefined" ;
@@ -2163,10 +2163,10 @@ sdaproject:MLDSLs a foaf:Project, sdatech:incubator ;
 
 sdaproject:CogRob a foaf:Project, sdatech:incubator ;
                  rdfs:label "Cognitive Robotics" ;
+                 foaf:depiction <http://sda.cs.uni-bonn.de/wp-content/uploads/2017/10/Smart-Data-Analytics.png> ;
                  ex:description "Cognitive Robotics." ;
                  ex:longdescription "" ;
                  foaf:homepage "undefined" ;
-                 foaf:depiction "" ;
                  sda:twitter "undefined" ;
                  sda:source "undefined" ;
                  sda:download "undefined" ;
@@ -2176,10 +2176,10 @@ sdaproject:CogRob a foaf:Project, sdatech:incubator ;
 
 sdaproject:EACCP a foaf:Project, sdatech:incubator ;
                  rdfs:label "Experimental Analysis of Class CS Problems" ;
+                 foaf:depiction <http://sda.cs.uni-bonn.de/wp-content/uploads/2017/10/Smart-Data-Analytics.png> ;
                  ex:description "Experimental Analysis of Class CS Problems." ;
                  ex:longdescription "" ;
                  foaf:homepage "undefined" ;
-                 foaf:depiction "" ;
                  sda:twitter "undefined" ;
                  sda:source "undefined" ;
                  sda:download "undefined" ;
@@ -2189,10 +2189,10 @@ sdaproject:EACCP a foaf:Project, sdatech:incubator ;
 
 sdaproject:SAML a foaf:Project, sdatech:incubator ;
                  rdfs:label "Smoothed Analysis ML" ;
+                 foaf:depiction <http://sda.cs.uni-bonn.de/wp-content/uploads/2017/10/Smart-Data-Analytics.png> ;
                  ex:description "Smoothed Analysis of Structured Machine Learning Algorithms from Knowledge Graphs." ;
                  ex:longdescription "" ;
                  foaf:homepage "undefined" ;
-                 foaf:depiction "" ;
                  sda:twitter "undefined" ;
                  sda:source "undefined" ;
                  sda:download "undefined" ;
@@ -3082,20 +3082,7 @@ ex:InformationRetrieval a ex:course ;
                         ex:homepage "http://mex.aksw.org/" ;
                         ex:language "English" ;
                         ex:winter2017 "Summer Semester 2017" .
-
-
-ex:MEXVocabulary a ex:project ;
-                 rdfs:label "MEX Vocabulary" ;
-                 foaf:Person ex:OliverOctopus, ex:AlfredEel ;
-                 foaf:depiction </assets/sdalogo.png> ;
-                 ex:description "A Light-Weight Interchange Format for Machine Learning Experiments" ;
-                 ex:longdescription "MEX Vocabulary: A Light-Weight Interchange Format for Machine Learning Experiments" ;
-                 ex:twitter "undefined" ;
-                 ex:homepage "http://mex.aksw.org/" ;
-                 ex:source "https://github.com/METArchive/mex-vocabulary" ;
-                 ex:download "undefined" ;
-                 ex:partners ex:agroknow ;
-                 ex:opensource "Open Source" .
+                        
 
 ################Primary and Secondary Navigations###############################
 
@@ -3765,50 +3752,97 @@ sdablog:generalposts a foaf:Document ;
 
 sda:Room22 a sda:Room ;
            schema:location <http://sda.tech/Address/SDA> ;
+           ex:affiliation "Full Professor" ;
            ex:name "Room 1.022" .
 
-sda:Roomc1 a sda:Room ;
-           schema:location <http://sda.tech/Address/IAIS> ;
-           ex:name "Room C1-227" .
+sda:Roomc1227 a sda:Room ;
+              schema:location <http://sda.tech/Address/IAIS> ;
+              ex:affiliation "Lead Scientist" ;
+              ex:name "Room C1-227" .
+
+sda:Roomc1227-1 a sda:Room ;
+                schema:location <http://sda.tech/Address/IAIS> ;
+                ex:affiliation "Senior Researcher" ;
+                ex:name "Room C1-227" .
 
 sda:Roomp631 a sda:Room ;
            schema:location <http://sda.tech/Address/InfAI> ;
+           ex:affiliation "Leader of the SDA Competence Center" ;
            ex:name "Room P631" .
 
 sda:Room66 a sda:Room ;
             schema:location <http://sda.tech/Address/SDA> ;
+            ex:affiliation "Senior Researcher" ;
             ex:name "Room 1.066" .
 
 sda:Room65 a sda:Room ;
             schema:location <http://sda.tech/Address/SDA> ;
+            ex:affiliation "Senior lecturer" ;
             ex:name "Room 1.065" .
+
+sda:Room65-1 a sda:Room ;
+            schema:location <http://sda.tech/Address/SDA> ;
+            ex:affiliation "Assistant Professor (Akademische Rätin)" ;
+            ex:name "Room 1.065" .
+
+sda:Room65-2 a sda:Room ;
+              schema:location <http://sda.tech/Address/SDA> ;
+              ex:affiliation "Senior Researcher" ;
+              ex:name "Room 1.065" .
 
 sda:Room51 a sda:Room ;
             schema:location <http://sda.tech/Address/SDA> ;
+            ex:affiliation "Senior Researcher" ;
             ex:name "Room 1.051" .
+
+sda:Room51-1 a sda:Room ;
+           schema:location <http://sda.tech/Address/SDA> ;
+           ex:affiliation "PhD Student" ;
+           ex:name "Room 1.051" .
+
+sda:Room51-2 a sda:Room ;
+           schema:location <http://sda.tech/Address/SDA> ;
+           ex:affiliation "Student Assistant" ;
+           ex:name "Room 1.051" .
 
 sda:Room38 a sda:Room ;
            schema:location <http://sda.tech/Address/SDA> ;
+           ex:affiliation "Senior Researcher" ;
            ex:name "Room 1.038" .
 
 sda:Room52 a sda:Room ;
            schema:location <http://sda.tech/Address/SDA> ;
+           ex:affiliation "PhD Student" ;
+           ex:name "Room 1.052" .
+
+sda:Room52-1 a sda:Room ;
+           schema:location <http://sda.tech/Address/SDA> ;
+           ex:affiliation "Student Assistant" ;
            ex:name "Room 1.052" .
 
 sda:Room55 a sda:Room ;
            schema:location <http://sda.tech/Address/SDA> ;
+           ex:affiliation "Student Assistant" ;
            ex:name "Room 1.055" .
 
 sda:Room64 a sda:Room ;
            schema:location <http://sda.tech/Address/SDA> ;
+           ex:affiliation "PhD Student" ;
            ex:name "Room 1.064" .
+
+sda:Room64-1 a sda:Room ;
+            schema:location <http://sda.tech/Address/SDA> ;
+            ex:affiliation "Student Assistant" ;
+            ex:name "Room 1.064" .
 
 sda:Room68 a sda:Room ;
            schema:location <http://sda.tech/Address/SDA> ;
+           ex:affiliation "PhD Student" ;
            ex:name "Room 1.068" .
 
 sda:Room126 a sda:Room ;
             schema:location <http://sda.tech/Address/SDA> ;
+            ex:affiliation "PhD Student" ;
             ex:name "Room 1.126" .
 
 sda:RoomA108 a sda:Room ;
@@ -3817,7 +3851,13 @@ sda:RoomA108 a sda:Room ;
 
 sda:RoomB3236 a sda:Room ;
              schema:location <http://sda.tech/Address/IAIS> ;
+             ex:affiliation "Senior Researcher" ;
              ex:name "Room B3-236" .
+
+sda:RoomB3236-1 a sda:Room ;
+              schema:location <http://sda.tech/Address/IAIS> ;
+              ex:affiliation "Researcher" ;
+              ex:name "Room B3-236" .
 
 sda:RoomC326 a sda:Room ;
               schema:location <http://sda.tech/Address/IAIS> ;
@@ -3825,14 +3865,17 @@ sda:RoomC326 a sda:Room ;
 
 sda:RoomC4a009 a sda:Room ;
               schema:location <http://sda.tech/Address/IAIS> ;
+              ex:affiliation "Researcher" ;
               ex:name "C4a-009" .
 
 sda:RoomB3226 a sda:Room ;
               schema:location <http://sda.tech/Address/IAIS> ;
+              ex:affiliation "Senior Researcher" ;
               ex:name "Room B3-226" .
 
 sda:RoomB3206 a sda:Room ;
               schema:location <http://sda.tech/Address/IAIS> ;
+              ex:affiliation "Researcher" ;
               ex:name "Room B3-206" .
 
 sda:RoomB3210 a sda:Room ;
@@ -3841,6 +3884,7 @@ sda:RoomB3210 a sda:Room ;
 
 sda:RoomB3216 a sda:Room ;
               schema:location <http://sda.tech/Address/IAIS> ;
+              ex:affiliation "Head of EIS department" ;
               ex:name "Room B3-216" .
 
 sda:Roomp905 a sda:Room ;
@@ -4277,6 +4321,7 @@ sda:thesisLevel a owl:DatatypeProperty;
                                 schema:postalCode "53117" ;
                                 schema:streetAddress "Endenicher Allee 19a" ;
                                 schema:institute "Smart Data Analytics, University of Bonn" ;
+                                sda:website "http://sda.tech/" ;
                                 sysont:range "19a" ;
                                 geo:lat "50.7519185"^^xsd:float ;
                                 geo:long "7.0943671"^^xsd:float ;
@@ -4288,7 +4333,8 @@ sda:thesisLevel a owl:DatatypeProperty;
                                   schema:addressLocality "Leipzig" ;
                                   schema:postalCode "04109" ;
                                   schema:streetAddress "Goerdelerring 9" ;
-                                  schema:institute "Institute for Applied Informatics, University of Leipzig" .
+                                  schema:institute "Institute for Applied Informatics, University of Leipzig" ;
+                                  sda:website "https://infai.org/" .
 
 <http://sda.tech/Address/IAIS> a schema:PostalAddress ;
                                  rdfs:label "Fraunhofer IAIS, Schloss Birlinghoven, 53757 Sankt Augustin, Germany" ;
@@ -4296,4 +4342,5 @@ sda:thesisLevel a owl:DatatypeProperty;
                                  schema:addressLocality "Sankt Augustin" ;
                                  schema:postalCode "53757" ;
                                  schema:streetAddress "Schloss Birlinghoven" ;
-                                 schema:institute "Fraunhofer IAIS" .
+                                 schema:institute "Fraunhofer IAIS" ;
+                                 sda:website "https://www.iais.fraunhofer.de/" .

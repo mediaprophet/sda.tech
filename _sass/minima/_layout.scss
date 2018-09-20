@@ -863,6 +863,20 @@ hr {
 
 
 // Partner Specifics
+
+.image {
+    vertical-align: middle;
+    float: left;
+    width: 25%;
+}
+
+.description {
+    display:inline-block;
+    vertical-align: middle;
+    float: left;
+    width: 75%;
+}
+
 .partner-item {
   width: 90%;
   margin-left: 32px;
