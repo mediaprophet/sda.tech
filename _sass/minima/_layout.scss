@@ -1388,3 +1388,43 @@ button::-moz-focus-inner {
   -o-transition: none !important;
   transition: none !important ;
 }
+
+profilebutton{
+  display: inline-block;
+  background:#4c78a4;
+  color:#fff;
+  position:relative;
+  font-weight: normal;
+  line-height: 1.538;
+  border: 0.5px solid white;
+  padding: 5px;
+  border-radius: 2px 5px;
+  margin: .250em .250em 0 0;
+  cursor:pointer;
+  transition:700ms ease all;
+  outline:none;
+}
+profilebutton:hover{
+  background:#fff;
+  color:#4c78a4;
+}
+profilebutton:before,profilebutton:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #4c78a4;
+  transition:400ms ease all;
+}
+profilebutton:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+profilebutton:hover:before,profilebutton:hover:after{
+  width:100%;
+  transition:700ms ease all;
+}

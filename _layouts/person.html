@@ -38,19 +38,15 @@ activateHeader('{{page.navigationdiv}}');
             {% endfor %}</p>
 
             <div class="links-to-social" style="text-align:left;">
-              {% capture boolTwitter | strip  %}{{ page.rdf | rdf_property: 'sda:twitter' }}{% endcapture %}
-              {% capture boolWebsite | strip %}{{ page.rdf | rdf_property: 'sda:website' }}{% endcapture %}
-              {% capture boolFacebook | strip %}{{ page.rdf | rdf_property: 'sda:facebook' }}{% endcapture %}
-              {% capture boolLinkedin | strip %}{{  page.rdf | rdf_property: 'sda:linkedin' }}{% endcapture %}
-              {% capture boolResearchGate | strip %}{{  page.rdf | rdf_property: 'sda:researchgate' }}{% endcapture %}
-              {% capture boolGoogleScholar | strip %}{{  page.rdf | rdf_property: 'sda:googlescholar' }}{% endcapture %}
-              <!-- Presenting Social Media Icons if Exists links -->
-              {% if boolTwitter and boolTwitter != "" and boolTwitter != nil  %}<a href="{{ page.rdf | rdf_property: 'sda:twitter' }}" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i> </a>{% endif %}
-              {% if boolWebsite and boolWebsite != "" and boolWebsite != nil %}<a href="{{ page.rdf | rdf_property: 'sda:website' }}" target="_blank"><i class="fa fa-globe" aria-hidden="true"></i></a>{% endif %}
-              {% if boolFacebook and boolFacebook != "" and boolFacebook != nil  %}<a href="{{ page.rdf | rdf_property: 'sda:facebook' }}" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i> </a>{% endif %}
-              {% if boolLinkedin and boolLinkedin != "" and boolLinkedin != nil  %}<a href="{{ page.rdf | rdf_property: 'sda:linkedin' }}" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i> </a>{% endif %}
-              {% if boolResearchGate and boolResearchGate != "" and boolResearchGate != nil  %}<a href="{{ page.rdf | rdf_property: 'sda:researchgate' }}" target="_blank"><i style="font-weight:900" class="fa fa-researchgate" aria-hidden="true">RG</i></a>{% endif %}
-              {% if boolGoogleScholar and boolGoogleScholar != "" and boolGoogleScholar != nil  %}<a href="{{ page.rdf | rdf_property: 'sda:googlescholar' }}" target="_blank"><i class="fa fa-google" aria-hidden="true"></i> </a>{% endif %}
+              {% capture query %} SELECT ?person ?profilepage WHERE { ?person sda:profilepage ?profilepage . ?person foaf:name "{{pName}}" .}  {% endcapture %}{% assign profiles = page.rdf | sparql_query: query %}
+
+              {% for profile in profiles  %}
+                {% capture query %} SELECT ?buttonname WHERE { <{{profile.profilepage}}> a schema:ProfilePage .  <{{profile.profilepage}}> ex:buttonLabel ?buttonname .}  {% endcapture %}{% assign profiledetails = page.rdf | sparql_query: query %}
+                {% for pdetail in profiledetails  %}
+                  <profilebutton onclick="location.href='{{profile.profilepage}}' " type="button">{{pdetail.buttonname}}</profilebutton>
+                {% endfor %}
+              {% endfor %}
+
             </div><br/>
 
             <p style="text-align:left;font-size:80%;"> {{page.rdf | rdf_property: 'foaf:phone'}}  <br/> <a style="padding-right:2px; padding-left:2px; color: black;" href="mailto:{{page.rdf | rdf_property: 'foaf:mbox' |remove: 'mailto:' | encode_email}}">{{page.rdf | rdf_property: 'foaf:mbox' |remove: 'mailto:'}} </a></p>
