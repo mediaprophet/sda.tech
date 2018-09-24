@@ -218,19 +218,19 @@ activateHeader('{{page.navigationdiv}}');
           <hr width="100%" >
           {% endif %}
           <br>
-          <div class="membersofProject" style="text-align:center;">
+          <div style="text-align:center;">
             {% capture query %} SELECT ?person ?profilepage WHERE { ?person sda:profilepage ?profilepage . ?person foaf:name "{{pName}}" .}  {% endcapture %}{% assign profiles = page.rdf | sparql_query: query %}
             {% for profile in profiles  %}
               {% capture query %} SELECT ?buttonname WHERE { <{{profile.profilepage}}> a schema:ProfilePage .  <{{profile.profilepage}}> ex:buttonLabel ?buttonname .}  {% endcapture %}{% assign profiledetails = page.rdf | sparql_query: query %}
               {% for pdetail in profiledetails  %}
                 {% capture buttonname %}{{pdetail.buttonname | downcase  }}{% endcapture %}
-                {% if buttonname == "twitter"  %}<a href="{{profile.profilepage}}" style="margin-right:4px !important;" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i> </a>{% endif %}
-                {% if buttonname == "homepage" %}<a href="{{profile.profilepage}}" style="margin-right:4px !important;" target="_blank"><i class="fa fa-globe" aria-hidden="true"></i></a>{% endif %}
-                {% if buttonname == "facebook"  %}<a href="{{profile.profilepage}}" style="margin-right:4px !important;" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i> </a>{% endif %}
-                {% if buttonname == "linkedin"  %}<a href="{{profile.profilepage}}" style="margin-right:4px !important;" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i> </a>{% endif %}
-                {% if buttonname == "researchgate"  %}<a href="{{profile.profilepage}}" style="margin-right:4px !important;" target="_blank"><i style="font-weight:900" class="fa fa-researchgate" aria-hidden="true">RG</i></a>{% endif %}
-                {% if buttonname == "googlescholar"  %}<a href="{{profile.profilepage}}" style="margin-right:4px !important;" target="_blank"><i class="fa fa-google" aria-hidden="true"></i> </a>{% endif %}
-                {% if buttonname == "github"  %}<a href="{{profile.profilepage}}" style="margin-right:4px !important;" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> </a>{% endif %}
+                {% if buttonname == "twitter"  %}<a href="{{profile.profilepage}}" style="margin-right:6px !important;" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i> </a>{% endif %}
+                {% if buttonname == "homepage" %}<a href="{{profile.profilepage}}" style="margin-right:6px !important;" target="_blank"><i class="fa fa-globe" aria-hidden="true"></i></a>{% endif %}
+                {% if buttonname == "facebook"  %}<a href="{{profile.profilepage}}" style="margin-right:6px !important;" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i> </a>{% endif %}
+                {% if buttonname == "linkedin"  %}<a href="{{profile.profilepage}}" style="margin-right:6px !important;" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i> </a>{% endif %}
+                {% if buttonname == "researchgate"  %}<a href="{{profile.profilepage}}" style="margin-right:6px !important;" target="_blank"><i style="font-weight:900" class="fa fa-researchgate" aria-hidden="true">RG</i></a>{% endif %}
+                {% if buttonname == "googlescholar"  %}<a href="{{profile.profilepage}}" style="margin-right:6px !important;" target="_blank"><i class="fa fa-google" aria-hidden="true"></i> </a>{% endif %}
+                {% if buttonname == "github"  %}<a href="{{profile.profilepage}}" style="margin-right:6px !important;" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> </a>{% endif %}
               {% endfor %}
             {% endfor %}
           </div>
