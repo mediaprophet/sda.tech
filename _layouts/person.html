@@ -218,7 +218,7 @@ activateHeader('{{page.navigationdiv}}');
           <hr width="100%" >
           {% endif %}
           <br>
-          <div style="text-align:center;">
+          <div class="membersofProject" style="text-align:center;">
             {% capture query %} SELECT ?person ?profilepage WHERE { ?person sda:profilepage ?profilepage . ?person foaf:name "{{pName}}" .}  {% endcapture %}{% assign profiles = page.rdf | sparql_query: query %}
             {% for profile in profiles  %}
               {% capture query %} SELECT ?buttonname WHERE { <{{profile.profilepage}}> a schema:ProfilePage .  <{{profile.profilepage}}> ex:buttonLabel ?buttonname .}  {% endcapture %}{% assign profiledetails = page.rdf | sparql_query: query %}
