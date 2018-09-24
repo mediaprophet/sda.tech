@@ -36,8 +36,14 @@ activateHeader('{{page.navigationdiv}}');
                   {% endfor %}
               {% endfor %}
             {% endfor %}</p>
-            <hr>
             <div class="links-to-social" style="text-align:left;">
+              {% capture query %} SELECT ?person ?profilepage WHERE { ?person sda:profilepage ?profilepage . ?person foaf:name "{{pName}}" .}  {% endcapture %}{% assign profiles = page.rdf | sparql_query: query %}
+              {% for profile in profiles  %}
+                {% capture query %} SELECT ?buttonname WHERE { <{{profile.profilepage}}> a schema:ProfilePage .  <{{profile.profilepage}}> ex:buttonLabel ?buttonname .}  {% endcapture %}{% assign profiledetails = page.rdf | sparql_query: query %}
+                {% for pdetail in profiledetails  %}
+                  <profilebutton onclick="location.href='{{profile.profilepage}}' " type="button">{{pdetail.buttonname}}</profilebutton>
+                {% endfor %}
+              {% endfor %}
               {% capture boolTwitter | strip  %}{{ page.rdf | rdf_property: 'sda:twitter' }}{% endcapture %}
               {% capture boolWebsite | strip %}{{ page.rdf | rdf_property: 'sda:website' }}{% endcapture %}
               {% capture boolFacebook | strip %}{{ page.rdf | rdf_property: 'sda:facebook' }}{% endcapture %}
@@ -70,8 +76,8 @@ activateHeader('{{page.navigationdiv}}');
         <br class="horizontal-separator">
         <br class="horizontal-separator">
         <hr width="100%" >
+<!--  here-->
       </div>
-      <!-- <br class="horizontal-separator2" /> -->
       {% capture shortCV %}{{page.rdf | rdf_property: 'cv:aboutPerson'}}{% endcapture %}
       {% if shortCV.size != 0 %}
         <div style="background-color:#EEEEEE;"  >
@@ -102,7 +108,6 @@ activateHeader('{{page.navigationdiv}}');
         </div>
         <hr width="100%" >
         {% endif %}
-
         <!-- Person to Project Relationship Direct -->
         {% capture query %} SELECT ?person ?project ?projectname ?image WHERE {
         <{{page.rdf}}> foaf:currentProject ?project . ?project rdfs:label ?projectname . ?project foaf:depiction ?image .
@@ -128,13 +133,6 @@ activateHeader('{{page.navigationdiv}}');
         {% capture querytwo %} SELECT ?course ?short ?desc ?coursename ?id ?semester ?year ?maintainer ?name WHERE{ ?course a sdatech:Course . ?course rdfs:label ?short . ?course dct:title ?coursename . ?course ex:description ?desc . ?course sda:id ?id . ?course sda:maintainer ?maintainer . ?maintainer foaf:name ?name . ?course sda:semester ?semester . ?course sda:year ?year . } order by asc(str(?id)) {% endcapture %} {% assign resultset3 = page.rdf | sparql_query: querytwo %}
 
         {% capture querythree %} SELECT ?course ?short ?desc ?coursename ?id ?semester ?year ?maintainer ?name WHERE{ ?course a sdatech:Course . ?course rdfs:label ?short . ?course dct:title ?coursename . ?course ex:description ?desc . ?course sda:id ?id . ?course sda:maintainer ?maintainer . ?maintainer foaf:name name . ?course sda:semester semester . ?course sda:year year . FILTER regex(str(?year), "2018") } {% endcapture %} {% assign yearSemester = page.rdf | sparql_query: querytwo %}
-<!--
-        {% for result in yearSemester %}
-          <p>{{result.name}} <br></p>
-          <p>{{result.year}} <br></p>
-          <p>{{result.semester}} <br></p>
-        {% endfor %} -->
-
         {% assign booleanyear = false %}
         {% assign booleansemester = false %}
         {% assign boolname = false %}
@@ -219,18 +217,26 @@ activateHeader('{{page.navigationdiv}}');
           </div>
           <hr width="100%" >
           {% endif %}
-
+          <br>
+          <div style="text-align:center;">
+            {% capture query %} SELECT ?person ?profilepage WHERE { ?person sda:profilepage ?profilepage . ?person foaf:name "{{pName}}" .}  {% endcapture %}{% assign profiles = page.rdf | sparql_query: query %}
+            {% for profile in profiles  %}
+              {% capture query %} SELECT ?buttonname WHERE { <{{profile.profilepage}}> a schema:ProfilePage .  <{{profile.profilepage}}> ex:buttonLabel ?buttonname .}  {% endcapture %}{% assign profiledetails = page.rdf | sparql_query: query %}
+              {% for pdetail in profiledetails  %}
+                {% capture buttonname %}{{pdetail.buttonname | downcase  }}{% endcapture %}
+                {% if buttonname == "twitter"  %}<a href="{{profile.profilepage}}" style="margin-right:4px !important;" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i> </a>{% endif %}
+                {% if buttonname == "homepage" %}<a href="{{profile.profilepage}}" style="margin-right:4px !important;" target="_blank"><i class="fa fa-globe" aria-hidden="true"></i></a>{% endif %}
+                {% if buttonname == "facebook"  %}<a href="{{profile.profilepage}}" style="margin-right:4px !important;" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i> </a>{% endif %}
+                {% if buttonname == "linkedin"  %}<a href="{{profile.profilepage}}" style="margin-right:4px !important;" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i> </a>{% endif %}
+                {% if buttonname == "researchgate"  %}<a href="{{profile.profilepage}}" style="margin-right:4px !important;" target="_blank"><i style="font-weight:900" class="fa fa-researchgate" aria-hidden="true">RG</i></a>{% endif %}
+                {% if buttonname == "googlescholar"  %}<a href="{{profile.profilepage}}" style="margin-right:4px !important;" target="_blank"><i class="fa fa-google" aria-hidden="true"></i> </a>{% endif %}
+                {% if buttonname == "github"  %}<a href="{{profile.profilepage}}" style="margin-right:4px !important;" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> </a>{% endif %}
+              {% endfor %}
+            {% endfor %}
+          </div>
         </div>
-        <br class="horizontal-separator">
+        <!-- <br class="horizontal-separator"> -->
       </div>
-      <!-- <h6 style="text-align:right;">{{title}}</h6> -->
-      {% if boolTwitter and boolTwitter != "" and boolTwitter != nil  %}<a href="{{ page.rdf | rdf_property: 'sda:twitter' }}" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i> </a>{% endif %}
-      {% if boolWebsite and boolWebsite != "" and boolWebsite != nil %}<a href="{{ page.rdf | rdf_property: 'sda:website' }}" target="_blank"><i class="fa fa-globe" aria-hidden="true"></i></a>{% endif %}
-      {% if boolFacebook and boolFacebook != "" and boolFacebook != nil  %}<a href="{{ page.rdf | rdf_property: 'sda:facebook' }}" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i> </a>{% endif %}
-      {% if boolLinkedin and boolLinkedin != "" and boolLinkedin != nil  %}<a href="{{ page.rdf | rdf_property: 'sda:linkedin' }}" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i> </a>{% endif %}
-      {% if boolResearchGate and boolResearchGate != "" and boolResearchGate != nil  %}<a href="{{ page.rdf | rdf_property: 'sda:researchgate' }}" target="_blank"><i style="font-weight:900" class="fa fa-researchgate" aria-hidden="true">RG</i></a>{% endif %}
-      {% if boolGoogleScholar and boolGoogleScholar != "" and boolGoogleScholar != nil  %}<a href="{{ page.rdf | rdf_property: 'sda:googlescholar' }}" target="_blank"><i class="fa fa-google" aria-hidden="true"></i> </a>{% endif %}
-
       </div>
       </div>
 </article>
