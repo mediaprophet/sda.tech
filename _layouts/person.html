@@ -44,10 +44,13 @@ activateHeader('{{page.navigationdiv}}');
                   <profilebutton onclick="location.href='{{profile.profilepage}}' " type="button">{{pdetail.buttonname}}</profilebutton>
                 {% endfor %}
               {% endfor %}
+<<<<<<< HEAD
           </div>
+=======
+            </div>
+>>>>>>> 06b43450215b9411ce819be794cd8522a19f54db
         </p><p style="text-align:left;font-size:80%;"> {{page.rdf | rdf_property: 'foaf:phone'}}  <br/> <a style="padding-right:2px; padding-left:2px; color: black;" href="mailto:{{page.rdf | rdf_property: 'foaf:mbox' |remove: 'mailto:' | encode_email}}">{{page.rdf | rdf_property: 'foaf:mbox' |remove: 'mailto:'}} </a></p>
         </div>
-        <br class="horizontal-separator">
         <br class="horizontal-separator">
         <hr width="100%" >
       </div>

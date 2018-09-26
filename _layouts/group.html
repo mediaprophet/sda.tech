@@ -5,7 +5,7 @@ layout: default
 navigationdiv: Groups
 ---
 {% capture query %} SELECT ?projects ?projectname ?image WHERE{
-<{{page.rdf}}> foaf:currentProject ?projects . ?projects rdfs:label ?projectname . ?projects foaf:depiction ?image . } {% endcapture %} {% assign resultset = page.rdf | sparql_query: query %} {% capture query %} SELECT ?person ?personname ?image WHERE{
+<{{page.rdf}}> foaf:currentProject ?projects . ?projects rdfs:label ?projectname . ?projects foaf:depiction ?image . } {% endcapture %} {% assign resultset1 = page.rdf | sparql_query: query %} {% capture query %} SELECT ?person ?personname ?image WHERE{
   <{{page.rdf}}> foaf:member ?person . ?person foaf:name ?personname . ?person foaf:depiction ?image .} {% endcapture %} {% assign resultset2 = page.rdf | sparql_query: query %}
 {% capture query %} SELECT ?leader ?leadername ?leaderimage WHERE{
   <{{page.rdf}}> dbo:leader ?leader . ?leader foaf:name ?leadername . ?leader foaf:depiction ?leaderimage} {% endcapture %} {% assign resultset3 = page.rdf | sparql_query: query %}
@@ -60,7 +60,7 @@ activateHeader('{{page.navigationdiv}}');
                 <!-- <img src="{{result.image}}" style="width:48px;height:48px;border-radius:50%;display:block;margin:0 auto;">
                 <a href="../{{url}}"><h4>{{result.personname}}</h4></a> -->
                 <div class="chip">
-                  <img class="img-circle-small" src="{{result.leaderimage}}" alt="Person" width="96" height="96">
+                  <img class="img-circle-small" src="{{result.leaderimage}}" width="96" height="96">
                   <a href="../../{{url}}">{{result.leadername}}</a>
                 </div>
 
@@ -80,7 +80,7 @@ activateHeader('{{page.navigationdiv}}');
                   {% if groupMainTitle == groupTitle %}
                     {% assign url= person.person | remove: "http://sda.tech/" %}
                     <div class="chip">
-                      <img  class="img-circle-small" src="{{person.image}}" alt="Person" width="96" height="96">
+                      <img  class="img-circle-small" src="{{person.image}}" width="96" height="96">
                       <a href="../../{{url}}">{{person.personname}}</a>
                     </div>
                   {% endif %}
@@ -90,9 +90,9 @@ activateHeader('{{page.navigationdiv}}');
               <br class="horizontal-separator2" />
               <h3>Projects</h3>
               <div class="partnersOfProject">
-                {% for result in resultset %} {% assign url= result.projects | remove: "http://sda.tech/" %}
+                {% for result in resultset1 %} {% assign url= result.projects | remove: "http://sda.tech/" %}
                 <div class="chip">
-                  <img class="img-circle-small" src="{{result.image}}" alt="Person" width="96" height="96">
+                  <img class="img-circle-small" src="{{result.image}}" width="96" height="96">
                   <a href="../../{{url}}">{{result.projectname}}</a>
                 </div>
                 {% endfor %}

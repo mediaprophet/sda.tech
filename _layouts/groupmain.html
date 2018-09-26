@@ -57,7 +57,7 @@ resultset2 = page.rdf | sparql_query: querytwo %} {% capture querythree %} SELEC
               <div class="membersofProject">
                 {% for result5 in resultset5 %} {% capture groupname %}{{result5.name}}{% endcapture %} {% if groupname == name %} {% assign url= result5.leader | remove: "http://sda.tech/" %}
                 <div class="chip">
-                  <img class="img-circle-small" src="{{result5.leaderimage}}" alt="Person" width="96" height="96">
+                  <img class="img-circle-small" src="{{result5.leaderimage}}" width="96" height="96">
                   <a href="../../{{url}}">{{result5.leadername}}</a>
                 </div>
                 {% endif %} {% endfor %}
@@ -74,7 +74,7 @@ resultset2 = page.rdf | sparql_query: querytwo %} {% capture querythree %} SELEC
                 {% if groupMainTitle == groupTitle %}
                   {% assign url= person.person | remove: "http://sda.tech/" %}
                   <div class="chip">
-                    <img  class="img-circle-small" src="{{person.image}}" alt="Person" width="96" height="96">
+                    <img  class="img-circle-small" src="{{person.image}}"  width="96" height="96">
                     <a href="../../{{url}}">{{person.personname}}</a>
                   </div>
                 {% endif %}
@@ -87,7 +87,7 @@ resultset2 = page.rdf | sparql_query: querytwo %} {% capture querythree %} SELEC
             <div class="partnersOfProject">
               {% for result2 in resultset2 %} {% capture groupname %}{{result2.name}}{% endcapture %} {% if groupname == name %} {% assign url= result2.project | remove: "http://sda.tech/" %}
               <div class="chip">
-                <img class="img-circle-small" src="{{result2.image}}" alt="Person" width="96" height="96">
+                <img class="img-circle-small" src="{{result2.image}}" width="96" height="96">
                 <a href="../../{{url}}">{{result2.nameproject}}</a>
               </div>
               {% endif %} {% endfor %}
