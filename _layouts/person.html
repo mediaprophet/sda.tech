@@ -44,44 +44,19 @@ activateHeader('{{page.navigationdiv}}');
                   <profilebutton onclick="location.href='{{profile.profilepage}}' " type="button">{{pdetail.buttonname}}</profilebutton>
                 {% endfor %}
               {% endfor %}
-              {% capture boolTwitter | strip  %}{{ page.rdf | rdf_property: 'sda:twitter' }}{% endcapture %}
-              {% capture boolWebsite | strip %}{{ page.rdf | rdf_property: 'sda:website' }}{% endcapture %}
-              {% capture boolFacebook | strip %}{{ page.rdf | rdf_property: 'sda:facebook' }}{% endcapture %}
-              {% capture boolLinkedin | strip %}{{  page.rdf | rdf_property: 'sda:linkedin' }}{% endcapture %}
-              {% capture boolResearchGate | strip %}{{  page.rdf | rdf_property: 'sda:researchgate' }}{% endcapture %}
-              {% capture boolGoogleScholar | strip %}{{  page.rdf | rdf_property: 'sda:googlescholar' }}{% endcapture %}
-              <!-- Presenting Social Media Icons if Exists links -->
-              <!-- {% if boolTwitter and boolTwitter != "" and boolTwitter != nil  %}<a href="{{ page.rdf | rdf_property: 'sda:twitter' }}" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i> </a>{% endif %}
-              {% if boolWebsite and boolWebsite != "" and boolWebsite != nil %}<a href="{{ page.rdf | rdf_property: 'sda:website' }}" target="_blank"><i class="fa fa-globe" aria-hidden="true"></i></a>{% endif %}
-              {% if boolFacebook and boolFacebook != "" and boolFacebook != nil  %}<a href="{{ page.rdf | rdf_property: 'sda:facebook' }}" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i> </a>{% endif %}
-              {% if boolLinkedin and boolLinkedin != "" and boolLinkedin != nil  %}<a href="{{ page.rdf | rdf_property: 'sda:linkedin' }}" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i> </a>{% endif %}
-              {% if boolResearchGate and boolResearchGate != "" and boolResearchGate != nil  %}<a href="{{ page.rdf | rdf_property: 'sda:researchgate' }}" target="_blank"><i style="font-weight:900" class="fa fa-researchgate" aria-hidden="true">RG</i></a>{% endif %}
-              {% if boolGoogleScholar and boolGoogleScholar != "" and boolGoogleScholar != nil  %}<a href="{{ page.rdf | rdf_property: 'sda:googlescholar' }}" target="_blank"><i class="fa fa-google" aria-hidden="true"></i> </a>{% endif %} -->
           </div>
-        {% capture pName %}{{ page.rdf | rdf_property: 'foaf:name' }}{% endcapture %}
-        {% capture query %} SELECT ?l ?loc WHERE { ?l ex:address ?loc . ?l foaf:name "{{pName}}" .}  {% endcapture %}{% assign locations = page.rdf | sparql_query: query %}
-        {% for location in locations  %}
-            {% capture query %} SELECT ?roomname ?fullAddress WHERE { <{{location.loc}}> a sda:Room .  <{{location.loc}}> ex:name ?roomname . <{{location.loc}}> schema:location ?fullAddress .}  {% endcapture %}{% assign fulladdresses = page.rdf | sparql_query: query %}
-            {% for fladdress in fulladdresses %}
-              <p style="margin-top:0.3cm;text-align:left;font-size:80%;">{{fladdress.roomname}} <br/>
-              {% capture query %} SELECT ?streetAddress ?postalCode ?addressLocality ?institute WHERE { <{{fladdress.fullAddress}}> a schema:PostalAddress .  <{{fladdress.fullAddress}}> schema:streetAddress ?streetAddress . <{{fladdress.fullAddress}}> schema:postalCode ?postalCode . <{{fladdress.fullAddress}}> schema:addressLocality ?addressLocality . <{{fladdress.fullAddress}}> schema:institute ?institute .}  {% endcapture %}{% assign paddresses = page.rdf | sparql_query: query %}
-              {% for paddress in paddresses %}
-                {{paddress.streetAddress}}, {{paddress.postalCode}} {{paddress.addressLocality}}<br/>
-                {{paddress.institute}}<br/>
-              {% endfor %}
-            {% endfor %}
-        {% endfor %}
         </p><p style="text-align:left;font-size:80%;"> {{page.rdf | rdf_property: 'foaf:phone'}}  <br/> <a style="padding-right:2px; padding-left:2px; color: black;" href="mailto:{{page.rdf | rdf_property: 'foaf:mbox' |remove: 'mailto:' | encode_email}}">{{page.rdf | rdf_property: 'foaf:mbox' |remove: 'mailto:'}} </a></p>
         </div>
         <br class="horizontal-separator">
         <br class="horizontal-separator">
         <hr width="100%" >
-<!--  here-->
       </div>
       {% capture shortCV %}{{page.rdf | rdf_property: 'cv:aboutPerson'}}{% endcapture %}
       {% if shortCV.size != 0 %}
-        <div style="background-color:#EEEEEE;"  >
+        <div width="100%" style="background-color:#EEEEEE; border-bottom: 1px solid #E0E0E0;" class="">
           <h3 style="padding-left:48px !important; padding-top:16px !important;">Short CV</h3>
+        </div>
+        <div>
           <div class="description-project"  style="padding:48px !important; padding-top:0px; ">
             <p>{{shortCV}}</p>
           </div>
@@ -89,14 +64,16 @@ activateHeader('{{page.navigationdiv}}');
       <hr width="100%" >
       {% endif %}
 
-      <!-- Dieplaying the groups of particular members  -->
+      <!-- Displaying the groups of particular members  -->
       {% capture personName %}{{ page.rdf | rdf_property: 'foaf:name' }}{% endcapture %}
       {% capture query %} SELECT ?person ?group ?groupName ?groupImage WHERE { ?person foaf:name "{{personName}}" . ?person sda:group ?group . ?group a aiiso:ResearchGroup . ?group rdfs:label ?groupName . ?group sda:imageclass ?groupImage .}{% endcapture %} {% assign groupList = page.rdf | sparql_query: query %}
       {% if groupList.size != 0 %}
-      <div class="members-projects links">
-        <div class="partnersOfProject" style="padding-bottom:48px;">
-            <h3 style="padding-left:48px !important; padding-top:16px !important; padding-bottom:16px !important ">Research Groups</h3>
-          <div class="rgroupsSection" style="padding:48px !important; padding-top:0px; padding-bottom: 16px;">
+      <div class="members-projects links" min-width="100%">
+        <div class="membersofProject" style="padding-bottom:48px; display:block !important;" min-width="100%">
+          <div min-width="100%" style="background-color:#EEEEEE; border-bottom: 1px solid #E0E0E0;" class="">
+            <h3 style="padding-left:48px !important; padding-top:16px !important;">Research Groups</h3>
+          </div>
+          <div class="rgroupsSection" style="padding:48px">
             {% for group in groupList %}
               {% assign url= group.group | remove: "http://sda.tech/" %}
               <div class="chip">
@@ -106,6 +83,7 @@ activateHeader('{{page.navigationdiv}}');
             {% endfor %}
           </div>
         </div>
+        </div>
         <hr width="100%" >
         {% endif %}
         <!-- Person to Project Relationship Direct -->
@@ -113,9 +91,11 @@ activateHeader('{{page.navigationdiv}}');
         <{{page.rdf}}> foaf:currentProject ?project . ?project rdfs:label ?projectname . ?project foaf:depiction ?image .
         }{% endcapture %} {% assign projectList = page.rdf | sparql_query: query %}
         {% if projectList.size != 0 %}
-        <div style="background-color: #EEEEEE;" style="padding:48px;">
-          <div class="membersofProject" style="padding-bottom:48px;">
-              <h3 style="padding-left:48px !important; padding-top:16px !important; padding-bottom:16px !important ">Projects</h3>
+        <div  class="members-projects links">
+          <div class="membersofProject" style="padding-bottom:48px;" min-width="100%">
+            <div min-width="100%" style="background-color:#EEEEEE; border-bottom: 1px solid #E0E0E0;" class="">
+              <h3 style="padding-left:48px !important; padding-top:16px !important; ">Projects</h3>
+            </div>
             <div class="rgroups" style="padding:48px !important; padding-top:0px; ">
               {% for projects in projectList %}
                 {% assign url= projects.project | remove: "http://sda.tech/" %}
@@ -155,22 +135,32 @@ activateHeader('{{page.navigationdiv}}');
 
         {% if resultset3.size != 0 and boolname == true and booleanyear == true and booleansemester == true  %}
           <div   width="100%">
-            <div class="membersofProject" style="padding-bottom:48px;">
-              <br class="horizontal-separator2" />
-              <h3 style="padding-left:48px !important; padding-top:16px !important; padding-bottom:16px !important ">Teaching</h3>
-              <div style="padding:48px !important; margin-left:0px; margin-right:0px;">
-              {% assign currentYear = 2018 %}
-               {% assign currentSemester = "Summer" %}
-               {% for result5 in resultset3 %} {% capture year %}{{result5.year}}{% endcapture %}{% assign year = year | plus: 0 %}{% capture maintainername %}{{result5.name}}{% endcapture %}{% capture semester %}{{result5.semester}}{% endcapture %}{% if maintainername == personName %}{% if year == currentYear %}{% if semester == currentSemester %}
-                 {% if sectionheading ==  'no' %}
-                   {% assign sectionheading = 'yes' %}
-              {% endif %}
-              <div style="padding: 0px;" class="courseLink course-list">
-                <ul>
-                  <li style="text-align: left;"><a href="{{result5.page}}">{{result5.coursename}}</a> - {{result5.id}}<br> <i>{{result5.desc}}</i><br></li>
-                </ul>
+            <div class="membersofProject"  min-width:"100%">
+              <div min-width="100%" style="background-color:#EEEEEE; border-bottom: 1px solid #E0E0E0;" class="">
+                <h3 style="padding-left:48px !important; padding-top:16px !important;  ">Teaching</h3>
               </div>
-              {% endif %}{% endif %}{% endif %}{% endfor %}
+              <div style="padding:48px !important; margin-left:0px; margin-right:0px;">
+                <table class="flat-table flat-table-1" style="margin:0px !important">
+                  <thead>
+                    <th>Course Code</th>
+                    <th>Course Name</th>
+                    <th>Short Description</th>
+                  </thead>
+                  <tbody>
+                      {% assign currentYear = 2018 %}
+                       {% assign currentSemester = "Summer" %}
+                       {% for result5 in resultset3 %} {% capture year %}{{result5.year}}{% endcapture %}{% assign year = year | plus: 0 %}{% capture maintainername %}{{result5.name}}{% endcapture %}{% capture semester %}{{result5.semester}}{% endcapture %}{% if maintainername == personName %}{% if year == currentYear %}{% if semester == currentSemester %}
+                         {% if sectionheading ==  'no' %}
+                           {% assign sectionheading = 'yes' %}
+                      {% endif %}
+                      <tr>
+                        <td>{{result5.id}}</td>
+                        <td><a href="{{result5.page}}">{{result5.coursename}}</a></td>
+                        <td>{{result5.desc}}</td>
+                      </tr>
+                      {% endif %}{% endif %}{% endif %}{% endfor %}
+                  </tbody>
+                </table>
               </div>
             </div>
           </div>
@@ -181,9 +171,11 @@ activateHeader('{{page.navigationdiv}}');
          {% capture personName %}{{ page.rdf | rdf_property: 'foaf:name' }}{% endcapture %}
          {% capture query %} SELECT ?thesis ?title ?creator ?name ?thesislevel WHERE{ ?thesis a sdatech:openThesis . ?thesis dct:title ?title . ?thesis sda:thesisLevel ?thesislevel . ?thesis dct:creator ?creator . ?creator foaf:name "{{personName}}" . } {% endcapture %} {% assign thesistopics = page.rdf | sparql_query: query %}
          {% if thesistopics.size != 0 %}
-         <div  class="" style="background-color:#EEEEEE"  width="100%">
-           <div class="partnersOfProject">
-               <h3 style="padding-left:48px !important; padding-top:16px !important; padding-bottom:16px !important ">Thesis Topics</h3>
+         <div  class=""  min-width="100%">
+           <div class="partnersOfProject" min-width="100%">
+             <div min-width="100%" style="background-color:#EEEEEE; border-bottom: 1px solid #E0E0E0;" class="">
+               <h3 style="padding-left:48px !important; padding-top:16px !important; ">Thesis Topics</h3>
+             </div>
              <div class="rthesistopics" style="padding:48px !important; margin-left:0px; margin-right:0px;" >
                {% for topic in thesistopics %}
                  <div class="links">
@@ -203,7 +195,20 @@ activateHeader('{{page.navigationdiv}}');
          {% if resultset2.size != 0 %}
           <div class="" style="background-color:#F5F5F5;" width="100%">
             <div class="partnersOfProject">
-              <div class="links">
+                <button class="collapsible">Open Section 1</button>
+                <div class="content">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <button class="collapsible">Open Section 2</button>
+                <div class="content">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <button class="collapsible">Open Section 3</button>
+                <div class="content">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+
+              <!-- <div class="links">
                 <h3 style="padding-left:48px !important; padding-top:16px !important; padding-bottom:16px !important ">Publications</h3>
                 <div  style="padding:48px !important; margin-left:0px; margin-right:0px;">
                 {% for result4 in resultset2 %}
@@ -212,13 +217,19 @@ activateHeader('{{page.navigationdiv}}');
                 <br class="horizontal-separator2" />
                 <br class="horizontal-separator" />
                 </div>
-              </div>
+              </div> -->
             </div>
           </div>
           <hr width="100%" >
           {% endif %}
           <br>
           <div style="text-align:center;">
+            {% capture boolTwitter | strip  %}{{ page.rdf | rdf_property: 'sda:twitter' }}{% endcapture %}
+            {% capture boolWebsite | strip %}{{ page.rdf | rdf_property: 'sda:website' }}{% endcapture %}
+            {% capture boolFacebook | strip %}{{ page.rdf | rdf_property: 'sda:facebook' }}{% endcapture %}
+            {% capture boolLinkedin | strip %}{{  page.rdf | rdf_property: 'sda:linkedin' }}{% endcapture %}
+            {% capture boolResearchGate | strip %}{{  page.rdf | rdf_property: 'sda:researchgate' }}{% endcapture %}
+            {% capture boolGoogleScholar | strip %}{{  page.rdf | rdf_property: 'sda:googlescholar' }}{% endcapture %}
             {% capture query %} SELECT ?person ?profilepage WHERE { ?person sda:profilepage ?profilepage . ?person foaf:name "{{pName}}" .}  {% endcapture %}{% assign profiles = page.rdf | sparql_query: query %}
             {% for profile in profiles  %}
               {% capture query %} SELECT ?buttonname WHERE { <{{profile.profilepage}}> a schema:ProfilePage .  <{{profile.profilepage}}> ex:buttonLabel ?buttonname .}  {% endcapture %}{% assign profiledetails = page.rdf | sparql_query: query %}
@@ -234,7 +245,7 @@ activateHeader('{{page.navigationdiv}}');
               {% endfor %}
             {% endfor %}
           </div>
-        </div>
+        <!-- </div> -->
         <!-- <br class="horizontal-separator"> -->
       </div>
       </div>
