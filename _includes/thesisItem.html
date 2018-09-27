@@ -19,7 +19,7 @@
         {% assign url= person.person | remove: "http://sda.tech/" %}
         <div class="chip">
           <img class="img-circle-small" src="{{person.personImage}}" alt="Person" width="96" height="96">
-          <a href="../{{url}}">{{person.personName}}</a>
+          <a href="../../{{url}}">{{person.personName}}</a>
         </div>
       {% endif %}
     {% endfor %}

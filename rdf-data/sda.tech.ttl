@@ -2927,10 +2927,10 @@ sdatech:ThesisNavigation a sdatech:SecondaryNavigation ;
 
 sdatech:TeachingNavigation a sdatech:SecondaryNavigation ;
         rdf:_1 sdatech:teaching ;
-        rdf:_2 sdateaching:generalguidelines ;
-        rdf:_3 sdateaching:wintersemeter ;
-        rdf:_4 sdateaching:summersummester ;
-        rdf:_5 sdateaching:oldcourses .
+        #rdf:_2 sdateaching:generalguidelines ;
+        rdf:_2 sdateaching:wintersemeter ;
+        rdf:_3 sdateaching:summersummester ;
+        rdf:_4 sdateaching:oldcourses .
 
 sdatech:JobsNavigation a sdatech:SecondaryNavigation ;
         rdf:_1 sdatech:job ;
@@ -4080,7 +4080,7 @@ sdateaching:summersummester a foaf:Document ;
 
 sdateaching:oldcourses a foaf:Document ;
           sda:miniIcon "fa fa-archive margin-icon" ;
-          rdfs:label "Archived Courses" .
+          rdfs:label "Earlier Semesters" .
 
 #########################Partner Documents######################################
 sdapartner:industrypartners a foaf:Document ;
