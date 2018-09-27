@@ -11,7 +11,8 @@
     {% for result in resultset %} {% assign url = result.course | remove: "http://sda.tech/" %}{% capture short %}{{result.short}}{% endcapture %}{% capture id %}{{result.id}}{% endcapture %}{% capture year %}{{result.year}}{% endcapture %}{% assign year = year | plus: 0 %}{% capture semester %}{{result.semester}}{% endcapture %}{% if currentSemester == "Summer" %}{% assign year = year | plus: 1 %}{% endif %}{% if year == currentYear %}{% if semester == "Winter" %}
     <div  class="courseLink course-list">
       <ul>
-        <li style="text-align: left;"><a href="/{{url}}/">{{result.name}}</a> - {{result.id}}<br> <i>{{result.desc}}</i><br>
+        {% assign content = result.desc | strip_newlines %}
+        <li style="text-align: left;"><a href="/{{url}}/">{{result.name}}</a> - {{result.id}} {% if content != "" %}<br><i>{{result.desc}}</i>{% endif %}<br>
         {% assign counter = 0 %}
         {% for result2 in resultset2 %} {% capture short2 %}{{result2.short}}{% endcapture %}{% capture semester2 %}{{result2.semester}}{% endcapture %}{% capture year2 %}{{result2.year}}{% endcapture %}{% assign year2 = year2 | plus: 0 %}{% if currentSemester == "Summer" %}{% assign year2 = year2 | plus: 1 %}{% endif %}{% capture id2 %}{{result2.id}}{% endcapture %} {% if id2 == id %}{% if short2 == short %}{% if semester == semester2 %}{% if year == year2 %} {% assign url= result2.maintainer | remove: "http://sda.tech/" %}{% if counter != 0 %}, {% endif %}{% assign counter = counter | plus:1 %}<a href="../../{{url}}">{{result2.name}}</a>
         {% endif %}{% endif %}{% endif %}{% endif %}{% endfor %}
@@ -24,7 +25,8 @@
     {% for result in resultset %} {% assign url = result.course | remove: "http://sda.tech/" %}{% capture short %}{{result.short}}{% endcapture %}{% capture id %}{{result.id}}{% endcapture %}{% capture year %}{{result.year}}{% endcapture %}{% assign year = year | plus: 0 %}{% capture semester %}{{result.semester}}{% endcapture %}{% if year == currentYear %}{% if semester == "Summer" %}
     <div  class="courseLink course-list">
       <ul>
-        <li style="text-align: left;"><a href="/{{url}}/">{{result.name}}</a> - {{result.id}}<br> <i>{{result.desc}}</i><br>
+        {% assign content = result.desc | strip_newlines %}
+        <li style="text-align: left;"><a href="/{{url}}/">{{result.name}}</a> - {{result.id}} {% if content != "" %}<br><i>{{result.desc}}</i>{% endif %}<br>
         {% assign counter = 0 %}
         {% for result2 in resultset2 %} {% capture short2 %}{{result2.short}}{% endcapture %}{% capture semester2 %}{{result2.semester}}{% endcapture %}{% capture year2 %}{{result2.year}}{% endcapture %}{% assign year2 = year2 | plus: 0 %}{% capture id2 %}{{result2.id}}{% endcapture %} {% if id2 == id %}{% if short2 == short %}{% if semester2 == semester %}{% if year2 == year %}{% assign url= result2.maintainer | remove: "http://sda.tech/" %}{% if counter != 0 %}, {% endif %}{% assign counter = counter | plus:1 %}<a href="../../{{url}}">{{result2.name}}</a>
         {% endif %}{% endif %}{% endif %}{% endif %}{% endfor %}

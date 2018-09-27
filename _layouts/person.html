@@ -137,10 +137,14 @@ activateHeader('{{page.navigationdiv}}');
                {% for result5 in resultset3 %} {% capture year %}{{result5.year}}{% endcapture %}{% assign year = year | plus: 0 %}{% capture maintainername %}{{result5.name}}{% endcapture %}{% capture semester %}{{result5.semester}}{% endcapture %}{% if maintainername == personName %}{% if year == currentYear %}{% if semester == currentSemester %}
                  {% if sectionheading ==  'no' %}
                    {% assign sectionheading = 'yes' %}
-              {% endif %}
+                 {% endif %}
               <div style="padding: 0px;" class="courseLink course-list">
                 <ul>
-                  <li style="text-align: left;"><a href="{{result5.page}}">{{result5.coursename}}</a> - {{result5.id}}<br> <i>{{result5.desc}}</i><br></li>
+                  {% assign content = result5.desc | strip_newlines %}
+                  <li style="text-align: left;"><a href="{{result5.page}}">{{result5.coursename}}</a> - {{result5.id}}
+                  {% if content != "" %}
+                    <br> <i>{{result5.desc}}</i><br></li>
+                  {% endif %}
                 </ul>
               </div>
               {% endif %}{% endif %}{% endif %}{% endfor %}

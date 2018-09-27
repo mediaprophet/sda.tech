@@ -3566,7 +3566,7 @@ sdablog:a-BETTER-project-for-exploiting-big-data-in-earth-observation a sdablog:
 
 ###################general posts#############
 
-sdablog:SOLIDE-at-the-BMBF-Innovation-Forum “Civil Security” 2018 a sdablog:generalposts ;
+sdablog:SOLIDE-at-the-BMBF-Innovation-Forum-Civil-Security-2018 a sdablog:generalposts ;
         dct:title """SOLIDE at the BMBF Innovation Forum “Civil Security” 2018""" ;
         sioc:topic """SOLIDE at the BMBF Innovation Forum “Civil Security” 2018""" ;
         dct:creator sdaperson:GezimSejdiu ;
