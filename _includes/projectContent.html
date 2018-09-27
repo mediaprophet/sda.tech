@@ -32,12 +32,12 @@ projectList" title=open.title image=open.image
 <div id="incubatorProjects" style="{% if include.active == 'incubatorProjects' %}display:block{% else %}display:none{% endif %}">
   <!-- QUERRY to GET the FundedProjects -->
   {% capture query %} SELECT ?project ?title ?description ?longdescription ?image ?homepage ?twitter ?source ?download WHERE{ ?project a foaf:Project . ?project a sdatech:incubator . ?project rdfs:label ?title . ?project ex:description ?description
-  . optional {?project foaf:depiction ?image } optional { ?project foaf:homepage ?homepage } optional {?project sda:twitter ?twitter } optional {?project ex:source ?source } optional { ?project ex:download ?download } } {% endcapture %} {% assign incubators
+  . optional {?project foaf:depiction ?image }. optional { ?project foaf:homepage ?homepage }. optional {?project sda:twitter ?twitter }. optional {?project ex:source ?source }. optional { ?project ex:download ?download } } {% endcapture %} {% assign incubators
   = page.rdf | sparql_query: query %} {% assign incubatorsCount = incubators | size %} {% assign iterator = 1 %} {% assign lastItem = 0 %}
   <!-- Presentation of the Open Source Projects  -->
   {% for incubator in incubators %} {% if iterator == incubatorsCount %} {% assign lastItem = 1 %} {% else %} {% assign lastItem = 0 %} {% endif %} {% assign url= incubator.project | remove: "http://sda.tech/" %} {% include projectItem.html projectItemFor="P
 projectList" title=incubator.title
-  image=incubator.image description=incubator.longdescription last=lastItem href=url homepage=incubator.homepage twitter=incubator.twitter source=incubator.source download=incubator.download url=url %} {% assign iterator = iterator | plus:1 %} {%
+  image=incubator.image description=incubator.description last=lastItem href=url homepage=incubator.homepage twitter=incubator.twitter source=incubator.source download=incubator.download url=url %} {% assign iterator = iterator | plus:1 %} {%
   endfor %}
 </div>
 <div id="archProjectList" style="{% if include.active == 'archProjectList' %}display:block{% else %}display:none{% endif %}">
