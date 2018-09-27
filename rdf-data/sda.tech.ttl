@@ -274,7 +274,7 @@ sdaperson:GezimSejdiu a foaf:Person, sdatech:phdStudent ;
                    foaf:status "PhD Student" ;
                    sda:profilepage <https://www.linkedin.com/in/g%C3%ABzim-sejdiu-08b1761b/>, <https://gezimsejdiu.github.io/>, <https://twitter.com/Gezim_Sejdiu>, <https://github.com/GezimSejdiu> ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
-                   cv:aboutPerson "Gëzim Sejdiu is a PhD Student & Research Associate at the University of Bonn. Gëzim’s research interest are in the area of Semantic Web, Big Data and Machine Learning. He is also interested in the area of distributed computing systems (Apache Spark, Apache Flink)." ;
+                   cv:aboutPerson "Gëzim Sejdiu is a PhD Student & Research Associate at the University of Bonn. Gëzim’s research interest are in the area of Semantic Web, Big Data and Machine Learning. He is also interested in the area of distributed computing systems (Apache Spark, Apache Flink).";
                    #sda:publication sdapublication:Publication1 ;
                    sda:group sdagroup:DistributedSemanticAnalytics ;
                    foaf:currentProject sdaproject:BigDataOcean, sdaproject:BigDataEurope, sdaproject:SANSAStack, sdaproject:Boost40 .
@@ -3495,7 +3495,7 @@ sdajob:studentassistant a foaf:Document ;
 ##########################################
 ###################Blog Posts#############
 ##########################################
-sdablog:demo-paper-accepted-at-SIGIR-2018	 a sioc:Post ;
+sdablog:demo-paper-accepted-at-SIGIR-2018	 a sioc:Post;
     dct:title " Demo Paper accepted at SIGIR 2018" ;
     sioc:topic " Demo Paper accepted at SIGIR 2018" ;
     dct:creator sdaperson:HajiraJabeen ;
@@ -3519,10 +3519,69 @@ sdablog:papers-accepted-at-ICWE-2018	a sioc:Post ;
     dct:abstract """We are very pleased to announce that our group got 2 papers accepted for presentation at the ICWE 2018 : The 18th International Conference on Web Engineering, which will be held on CÁCERES, SPAIN. 5 – 8 JUNE, 2018.""" ;
     sioc:content """The ICWE is the prime yearly international conference on the different aspects of designing, building, maintaining and using Web applications. The theme for the year 2018 — the 18th edition of the event — is Enhancing the Web with Advanced Engineering.""" .
 
-    sdatech:jobEnvironment a foaf:Document ;
-           rdfs:label "Job Envoirnment" .
+###################Paper Notifications#############
+
+sdablog:papers-accepted-at-CoNLL-2018 a sdablog:papernotifications ;
+    dct:title "Paper accepted at CoNLL 2018" ;
+    sioc:topic "Paper accepted at CoNLL 2018" ;
+    dct:creator sdaperson:GezimSejdiu ;
+    foaf:maker sdaperson:GezimSejdiu ;
+    dct:created "2018-09"^^xsd:gYearMonth ;
+    dct:language "en-US" ;
+    foaf:depiction <http://sda.cs.uni-bonn.de/wp-content/uploads/2018/09/CoNLL2018.png> ;
+    dct:abstract """We are very pleased to announce that our group got one paper accepted for presentation at <a href="http://www.conll.org/2018">The SIGNLL Conference on Computational Natural Language Learning (CoNLL 2018)</a> conference. CoNLL is a top-tier conference, yearly organized by SIGNLL (ACL’s Special Interest Group on Natural Language Learning). This year, CoNLL will be colocated with <a href="http://emnlp2018.org/">EMNLP 2018</a> and will be held on October 31 – November 1, 2018, Brussels, Belgium.""" ;
+    sioc:content """We are very pleased to announce that our group got one paper accepted for presentation at <a href="http://www.conll.org/2018">The SIGNLL Conference on Computational Natural Language Learning (CoNLL 2018)</a> conference. CoNLL is a top-tier conference, yearly organized by SIGNLL (ACL’s Special Interest Group on Natural Language Learning). This year, CoNLL will be colocated with <a href="http://emnlp2018.org/">EMNLP 2018</a> and will be held on October 31 – November 1, 2018, Brussels, Belgium. <br><br>
+    The aim of the CoNLL conference is to bring researchers and practitioners from both academia and industry, in the areas of deep learning, natural language processing, and learning. It is among the top-10 Natural language processing and Computational linguistics conferences. <br><br>
+    Here is the accepted paper with its abstract: <br><br>
+    “<a href="https://arxiv.org/pdf/1809.03194.pdf">Improving Response Selection in Multi-turn Dialogue Systems</a> by Incorporating Domain Knowledge” by Debanjan Chaudhuri, Agustinus Kristiadi, Jens Lehmann and Asja Fischer.<br><br>
+    <blockquote>Abstract : Building systems that can communicate with humans is a core problem in Artificial Intelligence. This work proposes a novel neural network architecture for response selection in an end-to-end multi-turn conversational dialogue setting. The architecture applies context level attention and incorporates additional external knowledge provided by descriptions of domain-specific words. It uses a bi-directional Gated Recurrent Unit (GRU) for encoding context and responses and learns to attend over the context words given the latent response representation and vice versa. In addition, it incorporates external domain specific information using another GRU for encoding the domain keyword descriptions. This allows better representation of domain-specific keywords in responses and hence improves the overall performance. Experimental results show that our model outperforms all other state-of-the-art methods for response selection in multi-turn conversations.</blockquote><br>
+    <strong>Acknowledgement</strong><br>This research was supported by the KDDS project at <a href="https://www.iais.fraunhofer.de/">Fraunhofer</a>.<br><br><hr>Looking forward to seeing you at The <a href="http://www.conll.org/2018">CoNLL 2018</a>.""" .
+
+###################Invited talks#############
+
+sdablog:invited-talk-by-anastasiadimou a sdablog:invitedtalks ;
+        dct:title "Invited talk by Dr. Anastasia Dimou" ;
+        sioc:topic "High Quality Linked Data Generation from Heterogeneous data" ;
+        dct:creator sdaperson:GezimSejdiu ;
+        foaf:maker sdaperson:GezimSejdiu ;
+        dct:created "2018-09"^^xsd:gYearMonth ;
+        dct:language "en-US" ;
+        foaf:depiction <http://sda.cs.uni-bonn.de/wp-content/uploads/2018/04/natadimou.jpeg> ;
+        dct:abstract """On Wednesday, 21st  of March <a href="https://scholar.google.com/citations?user=FT80VEAAAAAJ&hl=en">Anastasia Dimou</a> from the <a href="http://idlab.technology/">Internet Technology & Data Science Lab</a> visited SDA and gave a talk entitled “High Quality Linked Data Generation from Heterogeneous data” """ ;
+        sioc:content """On Wednesday, 21st  of March <a href="https://scholar.google.com/citations?user=FT80VEAAAAAJ&hl=en">Anastasia Dimou</a> from the <a href="http://idlab.technology/">Internet Technology & Data Science Lab</a> visited SDA and gave a talk entitled “High Quality Linked Data Generation from Heterogeneous data”<br><br>Anastasia Dimou is a Post-Doc Researcher at the <a href="http://idlab.technology/">Internet Technology & Data Science Lab</a> at <a href="https://www.ugent.be/">Gent University</a>, Belgium. Anastasia joined the IDLab research group in February 2013. Her research expertise lies in the area of the Semantic Web, Linked Data Generation and Publication, Data Quality and Integration, Knowledge Representation and Management. She has broad experience on Semantic Wikis and Classification.  As part of her research, she investigated a uniform language for describing the mapping rules for generating high-quality Linked Data from multiple heterogeneous data formats and access interfaces and she also conducted research on Linked Data generation and publishing workflows. Her research activities led to the development of the <a href="http://rml.io/">RML tool chain</a> (RMLProcessor, RMLEditor, RMLValidator, and RMLWorkbench). Anastasia has been involved in different national and l research projects and publications.<br><br><a href="http://jens-lehmann.org/">Prof. Jens Lehmann</a> invited the speaker to the bi-weekly “SDA colloquium presentations”. The goal of her visit was to exchange experience and ideas on RML tools specialized for data quality and on the fly mapping, including heterogeneous dataset mapping into LOD. Apart from presenting various use cases where RML tools were used, she introduced a declarative RML serialization which models the mapping rules using the well-known yaml language. Anastasia shared with our group future research problems and challenges related to this research area.<br><br>In her talk, she introduced a full workflow aka the RML tool chain which models components of an RML mapping lifecycle. She discussed its application to the structure of heterogeneous data sources. Anastasia Dimou mentioned that adding support for data quality during the mapping shall allow users to efficiently explore a structured search space to enable the future violations not only map the range of the known domain but also help to discover new knowledge from the existing knowledge base worth mapping.<br><br>During the visit, SDA core research topics and main research projects were presented in a (successful!) attempt to find an intersection on the future collaborations with Anastasia and her research group.<br><br>As an outcome of this visit, we expect to strengthen our research collaboration networks with the  Internet Technology & Data Science Lab at UGent, mainly on combining semantic knowledge for exploratory and mapping tools and apply those techniques for a very large-scale KG using our distributed analytics framework <a href="http://sansa-stack.net/"">SANSA</a> and <a href="https://wiki.dbpedia.org/">DBpedia</a>.""" .
+
+###################project announcements#############
+
+sdablog:a-BETTER-project-for-exploiting-big-data-in-earth-observation a sdablog:projectannouncements ;
+        dct:title "A BETTER project for exploiting Big Data in Earth Observation" ;
+        sioc:topic "A BETTER project for exploiting Big Data in Earth Observation" ;
+        dct:creator sdaperson:GezimSejdiu ;
+        foaf:maker sdaperson:GezimSejdiu ;
+        dct:created "2018-09"^^xsd:gYearMonth ;
+        dct:language "en-US" ;
+        foaf:depiction <http://sda.cs.uni-bonn.de/wp-content/uploads/2018/07/Data-Pipeline-Development-cycle.png> ;
+        dct:abstract """The <a href="http://sansa-stack.net/">SANSA Stack</a> is one of the earmarked big data analytics components to be employed in the BETTER data pipelines.<br><br>Big-data Earth observation Technology and Tools Enhancing Research and development is an EU-H2020 research and innovation project started in November 2017 to the end of October 2020.""" ;
+        sioc:content """The <a href="http://sansa-stack.net/">SANSA Stack</a> is one of the earmarked big data analytics components to be employed in the BETTER data pipelines.<br><br>Big-data Earth observation Technology and Tools Enhancing Research and development is an EU-H2020 research and innovation project started in November 2017 to the end of October 2020.<br><br>The project’s main objective is to implement Big Data solutions (denominated as Data Pipelines) based on the usage of large volumes and heterogeneous Earth Observation datasets. This should help addressing key Societal Challenges, so the users can focus on the analysis of the extraction of the potential knowledge within the data and not on the processing of the data itself.<br><br>To achieve that, BETTER is improving the way Big Data service developers interact with end-users. After defining the challenges, the promoters validate the pipelines requirements and co-design the solution with a dedicated development team in a workshop. During the implementation, promoters can continuously test and validate the pipelines. Later, the implemented pipelines will be used by the public in the scope of Hackathons, enabling the use of specific solutions in other areas and the collection of additional user feedback. <a href="www.ec-better.eu">www.ec-better.eu</a><br><br>
+        <a href="https://ec-better.us17.list-manage.com/subscribe?u=73fe09a73ff0d648f37153b54&id=e24c46621f">SUBSCRIBE HERE</a> for major project updates.""" .
+
+###################general posts#############
+
+sdablog:SOLIDE-at-the-BMBF-Innovation-Forum “Civil Security” 2018 a sdablog:generalposts ;
+        dct:title """SOLIDE at the BMBF Innovation Forum “Civil Security” 2018""" ;
+        sioc:topic """SOLIDE at the BMBF Innovation Forum “Civil Security” 2018""" ;
+        dct:creator sdaperson:GezimSejdiu ;
+        foaf:maker sdaperson:GezimSejdiu ;
+        dct:created "2018-09"^^xsd:gYearMonth ;
+        dct:language "en-US" ;
+        foaf:depiction <http://sda.cs.uni-bonn.de/wp-content/uploads/2018/07/CafeMoskau_Nacht.jpg> ;
+        dct:abstract """SDA as part of SOLIDE project participated at the invitation of the Federal Ministry of Education and Research, <a href="https://www.sifo.de/de/bmbf-innovationsforum-zivile-sicherheit-2018-2290.html">the BMBF Innovation Forum “Civil Security” 2018</a> took place on 19 and 20 June 2018. The two-day conference on the framework program “Research for Civil Security” was held in the Café Moskau conference center in Berlin.""" ;
+        sioc:content """SDA as part of SOLIDE project participated at the invitation of the Federal Ministry of Education and Research, <a href="https://www.sifo.de/de/bmbf-innovationsforum-zivile-sicherheit-2018-2290.html">the BMBF Innovation Forum “Civil Security” 2018</a> took place on 19 and 20 June 2018. The two-day conference on the framework program “Research for Civil Security” was held in the Café Moskau conference center in Berlin.<br><br>SOLIDE, as one of the funded project from BMBF has been presented during the event  in the context of the session “Mission Support – Better Situation Management through Intelligent Information Acquisition”<br><br>The SOLIDE project aims to examine a new approach for efficient access to operational data using the command mission management software TecBos Command. The focus here is on the fact that information can be accessed in a natural language dialogue. For this purpose, we do research into subject-specific algorithms for filtering relevant knowledge as well as suitable data integration procedures to make the available data usable and retrievable via dialogues.<br><br><a href="http://solide-projekt.de/">SOLIDE</a> is a joint project of PRO DV (Dortmund), Aristech GmbH (Heidelberg) together with the research group Smart Data Analytics (SDA) of the University of Bonn and the Data Science Chair (DICE) of the University of Paderborn.<br><br>SDA contribute to the project by providing a cut edge dialog system for providing information support in emergency situations.""" .
+
 
 ################################################################################
+
+sdatech:jobEnvironment a foaf:Document ;
+       rdfs:label "Job Envoirnment" .
 
 sdatech:contact a foaf:Document ;
       rdfs:label "Contact" .
@@ -3530,7 +3589,6 @@ sdatech:contact a foaf:Document ;
 sdatech:partners a foaf:Document ;
             sda:miniIcon "fa fa-list-alt margin-icon";
             rdfs:label "Partners" .
-
 
 sdatech:blog a foaf:Document ;
             rdfs:label "Blog" ;
