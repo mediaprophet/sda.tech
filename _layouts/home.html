@@ -12,7 +12,7 @@ activateHeader('{{page.navigationdiv}}');
 <div class="home">
   <!-- Main informative content -->
   <br class="horizontal-separator" />
-  <article class="post ">
+  <!--<article class="post ">-->
     <!--  maininfo-->
     <header class="post-header">
       <h1 class="post-title">{{ site.title | escape }}</h1>
@@ -21,7 +21,7 @@ activateHeader('{{page.navigationdiv}}');
     <br class="horizontal-separator" />
     <!-- Query to Get the department leaders ?Person dbo:leader ?leader . -->
     {% capture query %} SELECT ?Person ?name ?leader WHERE{ ?Person a foaf:Person . ?Person foaf:name ?name .  } {% endcapture %} {% assign resultset = page.rdf | sparql_query: query %}
-    <div class="post-content ">
+    <div class="post-content">
       The
       <b>{{site.titleWithAcronym}}</b> research group, led by <a href="{{site.leaderHomePage}}">{{site.leader}}</a>
       <!-- Logic for presenting a leader or multiple leaders -->
@@ -46,11 +46,11 @@ activateHeader('{{page.navigationdiv}}');
     <!-- <div class="post-content quote-alignment">
       <q>Our researchers and developers are working continoulsy on emerging technolgies and research as shown above.</q>
     </div> -->
-  </article>
+  <!-- </article> -->
   <br class="horizontal-separator" />
   <br class="horizontal-separator" />
   <!-- Icon representation of Group and the Activities -->
-  <article class="post backgroundMain">
+  <!-- <article class="post backgroundMain"> -->
     <!-- class to be added back if like old style content-container-separation -->
     <!--Query to GET all the groupnames and metaInformation  -->
     {% capture query %} SELECT ?group ?description ?imageclass ?longdescription WHERE{ ?group a aiiso:ResearchGroup . ?group rdfs:label ?description . ?group dct:abstract ?longdescription.  ?group sda:imageclass ?imageclass . } {% endcapture %} {% assign groups = page.rdf | sparql_query: query %}
@@ -61,7 +61,7 @@ activateHeader('{{page.navigationdiv}}');
     </header>
     <br class="horizontal-separator" /> {% for group in groups %} {% assign url= group.group | remove: "http://sda.tech/" %} {% capture imageClass %}{{group.imageclass}}{% endcapture %} {% capture name %}{{group.description}}{% endcapture %} {% capture longdescription %}{{group.longdescription}}{% endcapture %}  {% capture leader %}{{group.leadername}}{% endcapture %} {% assign
     image=imageClass | append:' fa-3x' %}
-    <div class="groupCard">
+    <div width="100%"><div class="groupCard">
       <div class="groupImage">
         <div>
           <a href="../{{url}}"><i class="{{image}}"></i></a>
@@ -83,7 +83,7 @@ activateHeader('{{page.navigationdiv}}');
                   <div class="chip chipForSmall">
                     {% assign url= leaders.leader | remove: "http://sda.tech/" %}
                       <!-- <a href="../Person/{{url}}" alt="Person" width="96" height="96">{{group.leadername}}</a> -->
-                    <img class="img-circle-small" src="{{leaders.leaderimage}}" alt="Person" width="96" height="96"><a href="../{{url}}">{{leaders.leadername}}</a>
+                    <img class="img-circle-small" src="{{leaders.leaderimage}}" width="96" height="96"><a href="../{{url}}">{{leaders.leadername}}</a>
                   </div>
                 {% endif %}
             {% endfor %}
@@ -91,11 +91,12 @@ activateHeader('{{page.navigationdiv}}');
       </div>
     </div>
     {% endfor %}
-  </article>
+  </div> <br>
+  <!-- </article> -->
   <br class="horizontal-separator" />
   <br class="horizontal-separator" />
   <!--Blog posts excerpt: List of lates three or four blog posts  -->
-  <article class="post backgroundMain ">
+  <!-- <article class="post backgroundMain "> -->
     <!-- blogAndTweetPosts -->
     <header class="post-header">
       <h2 class="post-title">Keep Connected with Our Posts</h2>
@@ -129,7 +130,7 @@ activateHeader('{{page.navigationdiv}}');
         </div>
       </div>
     </div>
-  </article>
+  <!-- </article> -->
   <br class="horizontal-separator" />
   <br class="horizontal-separator" />
   <!-- <article class="post backgroundMain ">
