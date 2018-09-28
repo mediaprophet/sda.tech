@@ -357,7 +357,7 @@ text-align: center;
 
 .groupCard {
   background-color: #FFFFFF;
-  width: 13.90%;
+  width: 166px;
   min-height: 800px;
   margin-bottom: 48px;
   margin-left: 2px;
@@ -1512,4 +1512,11 @@ blockquote {
 .sectionheading {
   padding-left:48px !important;
   padding-top:16px !important;
+}
+
+.warp{
+    display: inline-block;
+    width: 1218px;
+    max-width: 100%;
+    box-sizing: border-box;/*for padding values*/
 }

@@ -49,6 +49,7 @@ activateHeader('{{page.navigationdiv}}');
   <!-- </article> -->
   <br class="horizontal-separator" />
   <br class="horizontal-separator" />
+  <div class="warp">
   <!-- Icon representation of Group and the Activities -->
   <!-- <article class="post backgroundMain"> -->
     <!-- class to be added back if like old style content-container-separation -->
@@ -61,7 +62,7 @@ activateHeader('{{page.navigationdiv}}');
     </header>
     <br class="horizontal-separator" /> {% for group in groups %} {% assign url= group.group | remove: "http://sda.tech/" %} {% capture imageClass %}{{group.imageclass}}{% endcapture %} {% capture name %}{{group.description}}{% endcapture %} {% capture longdescription %}{{group.longdescription}}{% endcapture %}  {% capture leader %}{{group.leadername}}{% endcapture %} {% assign
     image=imageClass | append:' fa-3x' %}
-    <div width="100%"><div class="groupCard">
+    <div class="groupCard">
       <div class="groupImage">
         <div>
           <a href="../{{url}}"><i class="{{image}}"></i></a>
@@ -91,7 +92,7 @@ activateHeader('{{page.navigationdiv}}');
       </div>
     </div>
     {% endfor %}
-  </div> <br>
+  </div><br>
   <!-- </article> -->
   <br class="horizontal-separator" />
   <br class="horizontal-separator" />
