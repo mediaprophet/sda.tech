@@ -44,14 +44,10 @@ activateHeader('{{page.navigationdiv}}');
                   <profilebutton onclick="location.href='{{profile.profilepage}}' " type="button">{{pdetail.buttonname}}</profilebutton>
                 {% endfor %}
               {% endfor %}
-<<<<<<< HEAD
-          </div>
-=======
             </div>
->>>>>>> 06b43450215b9411ce819be794cd8522a19f54db
         </p><p style="text-align:left;font-size:80%;"> {{page.rdf | rdf_property: 'foaf:phone'}}  <br/> <a style="padding-right:2px; padding-left:2px; color: black;" href="mailto:{{page.rdf | rdf_property: 'foaf:mbox' |remove: 'mailto:' | encode_email}}">{{page.rdf | rdf_property: 'foaf:mbox' |remove: 'mailto:'}} </a></p>
         </div>
-        <br class="horizontal-separator">
+        <br class="horizontal-separator"><br class="horizontal-separator">
         <hr width="100%" >
       </div>
       {% capture shortCV %}{{page.rdf | rdf_property: 'cv:aboutPerson'}}{% endcapture %}
@@ -72,7 +68,7 @@ activateHeader('{{page.navigationdiv}}');
       {% capture query %} SELECT ?person ?group ?groupName ?groupImage WHERE { ?person foaf:name "{{personName}}" . ?person sda:group ?group . ?group a aiiso:ResearchGroup . ?group rdfs:label ?groupName . ?group sda:imageclass ?groupImage .}{% endcapture %} {% assign groupList = page.rdf | sparql_query: query %}
       {% if groupList.size != 0 %}
       <div class="members-projects links" min-width="100%">
-        <div class="membersofProject" style="padding-bottom:48px; display:block !important;" min-width="100%">
+        <div class="membersofProject" min-width="100%" style="padding-bottom:48px; " min-width="100%">
           <div min-width="100%" style="background-color:#EEEEEE; border-bottom: 1px solid #E0E0E0;" class="">
             <h3 style="padding-left:48px !important; padding-top:16px !important;">Research Groups</h3>
           </div>
@@ -95,7 +91,7 @@ activateHeader('{{page.navigationdiv}}');
         }{% endcapture %} {% assign projectList = page.rdf | sparql_query: query %}
         {% if projectList.size != 0 %}
         <div  class="members-projects links">
-          <div class="membersofProject" style="padding-bottom:48px;" min-width="100%">
+          <div min-width="100%" class="membersofProject" style="padding-bottom:48px; " min-width="100%">
             <div min-width="100%" style="background-color:#EEEEEE; border-bottom: 1px solid #E0E0E0;" class="">
               <h3 style="padding-left:48px !important; padding-top:16px !important; ">Projects</h3>
             </div>
@@ -142,7 +138,7 @@ activateHeader('{{page.navigationdiv}}');
               <div min-width="100%" style="background-color:#EEEEEE; border-bottom: 1px solid #E0E0E0;" class="">
                 <h3 style="padding-left:48px !important; padding-top:16px !important;  ">Teaching</h3>
               </div>
-              <div style="padding:48px !important; margin-left:0px; margin-right:0px;">
+              <div style="padding:48px !important; margin-left:0px; margin-right:0px;" min-width="100%">
                 <table class="flat-table flat-table-1" style="margin:0px !important">
                   <thead>
                     <th>Course Code</th>
@@ -175,8 +171,8 @@ activateHeader('{{page.navigationdiv}}');
          {% capture query %} SELECT ?thesis ?title ?creator ?name ?thesislevel WHERE{ ?thesis a sdatech:openThesis . ?thesis dct:title ?title . ?thesis sda:thesisLevel ?thesislevel . ?thesis dct:creator ?creator . ?creator foaf:name "{{personName}}" . } {% endcapture %} {% assign thesistopics = page.rdf | sparql_query: query %}
          {% if thesistopics.size != 0 %}
          <div  class=""  min-width="100%">
-           <div class="partnersOfProject" min-width="100%">
-             <div min-width="100%" style="background-color:#EEEEEE; border-bottom: 1px solid #E0E0E0;" class="">
+           <div class="partnersOfProject" style="display:block !important;" min-width="100%">
+             <div min-width="100%" style="background-color:#EEEEEE;  border-bottom: 1px solid #E0E0E0;" class="">
                <h3 style="padding-left:48px !important; padding-top:16px !important; ">Thesis Topics</h3>
              </div>
              <div class="rthesistopics" style="padding:48px !important; margin-left:0px; margin-right:0px;" >
@@ -196,17 +192,20 @@ activateHeader('{{page.navigationdiv}}');
          {% capture query %} SELECT ?publication ?title ?date ?publisher ?link  WHERE{
          <{{page.rdf}}> sda:publication ?publication . ?publication dc:title ?title . ?publication dc:date ?date . ?publication dc:publisher ?publisher . ?publication foaf:homepage ?link . } {% endcapture %} {% assign resultset2 = page.rdf | sparql_query: query %}
          {% if resultset2.size != 0 %}
-          <div class="" style="background-color:#F5F5F5;" width="100%">
-            <div class="partnersOfProject">
-                <button class="collapsible">Open Section 1</button>
+          <div class=""  width="100%">
+            <div class="partnersOfProject" style="display:block !important;" min-width="100%">
+              <div min-width="100%" style="background-color:#EEEEEE;  border-bottom: 1px solid #E0E0E0;" class="">
+                <h3 style="padding-left:48px !important; padding-top:16px !important; ">Publications</h3>
+              </div>
+                <button class="collapsible">Conference Paper</button>
                 <div class="content">
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>
-                <button class="collapsible">Open Section 2</button>
+                <button class="collapsible">Proceeding</button>
                 <div class="content">
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>
-                <button class="collapsible">Open Section 3</button>
+                <button class="collapsible">Journal</button>
                 <div class="content">
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>
