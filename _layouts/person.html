@@ -59,8 +59,8 @@ activateHeader('{{page.navigationdiv}}');
           <div class="description-project"  style="padding:48px !important; padding-top:0px; ">
             <p>{{shortCV}}</p>
           </div>
-      </div>
-      <hr width="100%" >
+        </div>
+        <hr width="100%" >
       {% endif %}
 
       <!-- Displaying the groups of particular members  -->
@@ -68,10 +68,10 @@ activateHeader('{{page.navigationdiv}}');
       {% capture query %} SELECT ?person ?group ?groupName ?groupImage WHERE { ?person foaf:name "{{personName}}" . ?person sda:group ?group . ?group a aiiso:ResearchGroup . ?group rdfs:label ?groupName . ?group sda:imageclass ?groupImage .}{% endcapture %} {% assign groupList = page.rdf | sparql_query: query %}
       {% if groupList.size != 0 %}
       <div class="members-projects links" min-width="100%">
+        <div min-width="100%" style="background-color:#EEEEEE; border-bottom: 1px solid #E0E0E0;" class="">
+          <h3 style="padding-left:48px !important; padding-top:16px !important;">Research Groups</h3>
+        </div>
         <div class="membersofProject" min-width="100%" style="padding-bottom:48px; " min-width="100%">
-          <div min-width="100%" style="background-color:#EEEEEE; border-bottom: 1px solid #E0E0E0;" class="">
-            <h3 style="padding-left:48px !important; padding-top:16px !important;">Research Groups</h3>
-          </div>
           <div class="rgroupsSection" style="padding:48px">
             {% for group in groupList %}
               {% assign url= group.group | remove: "http://sda.tech/" %}
@@ -91,10 +91,10 @@ activateHeader('{{page.navigationdiv}}');
         }{% endcapture %} {% assign projectList = page.rdf | sparql_query: query %}
         {% if projectList.size != 0 %}
         <div  class="members-projects links">
+          <div min-width="100%" style="background-color:#EEEEEE; border-bottom: 1px solid #E0E0E0;" class="">
+            <h3 style="padding-left:48px !important; padding-top:16px !important; ">Projects</h3>
+          </div>
           <div min-width="100%" class="membersofProject" style="padding-bottom:48px; " min-width="100%">
-            <div min-width="100%" style="background-color:#EEEEEE; border-bottom: 1px solid #E0E0E0;" class="">
-              <h3 style="padding-left:48px !important; padding-top:16px !important; ">Projects</h3>
-            </div>
             <div class="rgroups" style="padding:48px !important; padding-top:0px; ">
               {% for projects in projectList %}
                 {% assign url= projects.project | remove: "http://sda.tech/" %}
@@ -104,10 +104,10 @@ activateHeader('{{page.navigationdiv}}');
                 </div>
               {% endfor %}
             </div>
-            </div>
-         </div>
+          </div></div>
          <hr width="100%" >
          {% endif %}
+
          <!-- Displaying all the courses of the PERSON  -->
         {% capture querytwo %} SELECT ?course ?short ?desc ?coursename ?id ?semester ?year ?maintainer ?name WHERE{ ?course a sdatech:Course . ?course rdfs:label ?short . ?course dct:title ?coursename . ?course ex:description ?desc . ?course sda:id ?id . ?course sda:maintainer ?maintainer . ?maintainer foaf:name ?name . ?course sda:semester ?semester . ?course sda:year ?year . } order by asc(str(?id)) {% endcapture %} {% assign resultset3 = page.rdf | sparql_query: querytwo %}
 
@@ -134,10 +134,11 @@ activateHeader('{{page.navigationdiv}}');
 
         {% if resultset3.size != 0 and boolname == true and booleanyear == true and booleansemester == true  %}
           <div   width="100%">
+            <div min-width="100%" style="background-color:#EEEEEE; border-bottom: 1px solid #E0E0E0;" class="">
+              <h3 style="padding-left:48px !important; padding-top:16px !important;  ">Teaching</h3>
+            </div>
             <div class="membersofProject"  min-width:"100%">
-              <div min-width="100%" style="background-color:#EEEEEE; border-bottom: 1px solid #E0E0E0;" class="">
-                <h3 style="padding-left:48px !important; padding-top:16px !important;  ">Teaching</h3>
-              </div>
+
               <div style="padding:48px !important; margin-left:0px; margin-right:0px;" min-width="100%">
                 <table class="flat-table flat-table-1" style="margin:0px !important">
                   <thead>
@@ -153,9 +154,12 @@ activateHeader('{{page.navigationdiv}}');
                            {% assign sectionheading = 'yes' %}
                       {% endif %}
                       <tr>
+                        {% assign content = result5.desc | strip_newlines %}
                         <td>{{result5.id}}</td>
                         <td><a href="{{result5.page}}">{{result5.coursename}}</a></td>
-                        <td>{{result5.desc}}</td>
+                        {% if content != "" %}
+                          <td>{{result5.desc | lstrip }}</td>
+                        {% endif %}
                       </tr>
                       {% endif %}{% endif %}{% endif %}{% endfor %}
                   </tbody>
@@ -188,6 +192,7 @@ activateHeader('{{page.navigationdiv}}');
          </div>
          <hr width="100%" >
          {% endif %}
+
          <!-- Displaying all the publications of the PERSON  -->
          {% capture query %} SELECT ?publication ?title ?date ?publisher ?link  WHERE{
          <{{page.rdf}}> sda:publication ?publication . ?publication dc:title ?title . ?publication dc:date ?date . ?publication dc:publisher ?publisher . ?publication foaf:homepage ?link . } {% endcapture %} {% assign resultset2 = page.rdf | sparql_query: query %}
@@ -222,7 +227,7 @@ activateHeader('{{page.navigationdiv}}');
               </div> -->
             </div>
           </div>
-          <hr width="100%" >
+          <!--<hr width="100%" > -->
           {% endif %}
           <br>
           <div style="text-align:center;">
@@ -252,8 +257,8 @@ activateHeader('{{page.navigationdiv}}');
       </div>
       </div>
       </div>
+      </div>
 </article>
-<br class="horizontal-separator" />
 
 <script type="text/javascript">
 var coll = document.getElementsByClassName("collapsible");
