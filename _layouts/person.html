@@ -13,7 +13,7 @@ activateHeader('{{page.navigationdiv}}');
 </script>
 
 <article class="post">
-  <div class="pagination">
+  <div class="pagination" style="background-color:white; border:1px solid #E0E0E0;">
     <div class="post-content" style="padding:0px !important; margin-left:0px; margin-right:0px;">
       <br class="horizontal-separator" />
       <div style="text-align:center;"><img class="img-circle-small" style="width: 250px; height: 250px; border-radius: 0%; " src="{{ page.rdf | rdf_property: 'foaf:depiction'}}"></img>
@@ -48,7 +48,7 @@ activateHeader('{{page.navigationdiv}}');
         </p><p style="text-align:left;font-size:80%;"> {{page.rdf | rdf_property: 'foaf:phone'}}  <br/> <a style="padding-right:2px; padding-left:2px; color: black;" href="mailto:{{page.rdf | rdf_property: 'foaf:mbox' |remove: 'mailto:' | encode_email}}">{{page.rdf | rdf_property: 'foaf:mbox' |remove: 'mailto:'}} </a></p>
         </div>
         <br class="horizontal-separator"><br class="horizontal-separator">
-        <hr width="100%" >
+        <!-- <hr width="100%" > -->
       </div>
       {% capture shortCV %}{{page.rdf | rdf_property: 'cv:aboutPerson'}}{% endcapture %}
       {% if shortCV.size != 0 %}
@@ -60,7 +60,7 @@ activateHeader('{{page.navigationdiv}}');
             <p>{{shortCV}}</p>
           </div>
         </div>
-        <hr width="100%" >
+        <!-- <hr width="100%" > -->
       {% endif %}
 
       <!-- Displaying the groups of particular members  -->
@@ -83,7 +83,7 @@ activateHeader('{{page.navigationdiv}}');
           </div>
         </div>
         </div>
-        <hr width="100%" >
+        <!-- <hr width="100%" > -->
         {% endif %}
         <!-- Person to Project Relationship Direct -->
         {% capture query %} SELECT ?person ?project ?projectname ?image WHERE {
@@ -105,7 +105,7 @@ activateHeader('{{page.navigationdiv}}');
               {% endfor %}
             </div>
           </div></div>
-         <hr width="100%" >
+         <!-- <hr width="100%" > -->
          {% endif %}
 
          <!-- Displaying all the courses of the PERSON  -->
@@ -167,7 +167,7 @@ activateHeader('{{page.navigationdiv}}');
               </div>
             </div>
           </div>
-          <hr width="100%" >
+          <!-- <hr width="100%" > -->
         {% endif %}
 
          <!-- Displaying all the Thesis Topics of the PERSON  -->
@@ -190,7 +190,7 @@ activateHeader('{{page.navigationdiv}}');
              </div>
            </div>
          </div>
-         <hr width="100%" >
+         <!-- <hr width="100%" > -->
          {% endif %}
 
          <!-- Displaying all the publications of the PERSON  -->
