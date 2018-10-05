@@ -1505,7 +1505,7 @@ blockquote {
 
 .sectioncontent {
   min-width: 100%;
-  padding: 48px;
+  padding: 20px;
   display: inline-block;
 }
 
@@ -1513,7 +1513,7 @@ blockquote {
   min-width: 100%;
   // background-color:#EEEEEE;
   // border-bottom: 1px solid #E0E0E0;
-  padding-left:48px;
+  //padding-left:48px;
   padding-top:16px;
 }
 
@@ -1522,9 +1522,15 @@ blockquote {
   border: 1px solid #E0E0E0 !important;
 }
 
-.warp{
-    display: inline-block;
-    width: 1218px;
-    max-width: 100%;
-    box-sizing: border-box;/*for padding values*/
+.headline {
+    background-color: #fff;
+    position: relative;
+    margin: -15px 0 0 20px;
+    float: left;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.headlinehr {
+  width:18%;
+  background-color: #000000;
 }
