@@ -52,13 +52,11 @@ activateHeader('{{page.navigationdiv}}');
       </div>
       {% capture shortCV %}{{page.rdf | rdf_property: 'cv:aboutPerson'}}{% endcapture %}
       {% if shortCV.size != 0 %}
-        <div width="100%" style="background-color:#EEEEEE; border-bottom: 1px solid #E0E0E0;" class="">
-          <h3 style="padding-left:48px !important; padding-top:16px !important;">Short CV</h3>
+        <div class="sectionheading">
+          <h3>Short CV</h3>
         </div>
-        <div>
-          <div class="description-project"  style="padding:48px !important; padding-top:0px; ">
-            <p>{{shortCV}}</p>
-          </div>
+        <div class="sectioncontent">
+          <p>{{shortCV}}</p>
         </div>
         <!-- <hr width="100%" > -->
       {% endif %}
@@ -68,34 +66,43 @@ activateHeader('{{page.navigationdiv}}');
       {% capture query %} SELECT ?person ?group ?groupName ?groupImage WHERE { ?person foaf:name "{{personName}}" . ?person sda:group ?group . ?group a aiiso:ResearchGroup . ?group rdfs:label ?groupName . ?group sda:imageclass ?groupImage .}{% endcapture %} {% assign groupList = page.rdf | sparql_query: query %}
       {% if groupList.size != 0 %}
       <div class="members-projects links" min-width="100%">
-        <div min-width="100%" style="background-color:#EEEEEE; border-bottom: 1px solid #E0E0E0;" class="">
-          <h3 style="padding-left:48px !important; padding-top:16px !important;">Research Groups</h3>
+        <div class="sectionheading">
+          <h3>Research Groups</h3>
         </div>
-        <div class="membersofProject" min-width="100%" style="padding-bottom:48px; " min-width="100%">
-          <div class="rgroupsSection" style="padding:48px">
-            {% for group in groupList %}
-              {% assign url= group.group | remove: "http://sda.tech/" %}
-              <div class="chip">
-                <i class="{{group.groupImage}} margin-icon"></i>
-                <a href="../../{{url}}">{{group.groupName}}</a>
-              </div>
-            {% endfor %}
+        <div class="sectioncontent">
+          <div class="membersofProject">
+            <div class="rgroupsSection">
+              {% for group in groupList %}
+                {% assign url= group.group | remove: "http://sda.tech/" %}
+                <div class="chip">
+                  <i class="{{group.groupImage}} margin-icon"></i>
+                  <a href="../../{{url}}">{{group.groupName}}</a>
+                </div>
+              {% endfor %}
+            </div>
           </div>
         </div>
+<<<<<<< HEAD
         </div>
         <!-- <hr width="100%" > -->
         {% endif %}
+=======
+      </div>
+      <hr width="100%" >
+      {% endif %}
+
+>>>>>>> 91d69a132cb8fcd1e4699fbda81777d295d6d471
         <!-- Person to Project Relationship Direct -->
         {% capture query %} SELECT ?person ?project ?projectname ?image WHERE {
         <{{page.rdf}}> foaf:currentProject ?project . ?project rdfs:label ?projectname . ?project foaf:depiction ?image .
         }{% endcapture %} {% assign projectList = page.rdf | sparql_query: query %}
         {% if projectList.size != 0 %}
         <div  class="members-projects links">
-          <div min-width="100%" style="background-color:#EEEEEE; border-bottom: 1px solid #E0E0E0;" class="">
-            <h3 style="padding-left:48px !important; padding-top:16px !important; ">Projects</h3>
+          <div class="sectionheading">
+            <h3>Projects</h3>
           </div>
-          <div min-width="100%" class="membersofProject" style="padding-bottom:48px; " min-width="100%">
-            <div class="rgroups" style="padding:48px !important; padding-top:0px; ">
+          <div class="sectioncontent"><div class="membersofProject">
+            <div class="rgroups">
               {% for projects in projectList %}
                 {% assign url= projects.project | remove: "http://sda.tech/" %}
                 <div class="chip">
@@ -104,8 +111,14 @@ activateHeader('{{page.navigationdiv}}');
                 </div>
               {% endfor %}
             </div>
+<<<<<<< HEAD
           </div></div>
          <!-- <hr width="100%" > -->
+=======
+          </div>
+        </div></div>
+         <hr width="100%" >
+>>>>>>> 91d69a132cb8fcd1e4699fbda81777d295d6d471
          {% endif %}
 
          <!-- Displaying all the courses of the PERSON  -->
@@ -134,12 +147,12 @@ activateHeader('{{page.navigationdiv}}');
 
         {% if resultset3.size != 0 and boolname == true and booleanyear == true and booleansemester == true  %}
           <div   width="100%">
-            <div min-width="100%" style="background-color:#EEEEEE; border-bottom: 1px solid #E0E0E0;" class="">
-              <h3 style="padding-left:48px !important; padding-top:16px !important;  ">Teaching</h3>
+            <div class="sectionheading">
+              <h3>Teaching</h3>
             </div>
             <div class="membersofProject"  min-width:"100%">
 
-              <div style="padding:48px !important; margin-left:0px; margin-right:0px;" min-width="100%">
+              <div class="sectioncontent">
                 <table class="flat-table flat-table-1" style="margin:0px !important">
                   <thead>
                     <th>Course Code</th>
@@ -174,12 +187,11 @@ activateHeader('{{page.navigationdiv}}');
          {% capture personName %}{{ page.rdf | rdf_property: 'foaf:name' }}{% endcapture %}
          {% capture query %} SELECT ?thesis ?title ?creator ?name ?thesislevel WHERE{ ?thesis a sdatech:openThesis . ?thesis dct:title ?title . ?thesis sda:thesisLevel ?thesislevel . ?thesis dct:creator ?creator . ?creator foaf:name "{{personName}}" . } {% endcapture %} {% assign thesistopics = page.rdf | sparql_query: query %}
          {% if thesistopics.size != 0 %}
-         <div  class=""  min-width="100%">
            <div class="partnersOfProject" style="display:block !important;" min-width="100%">
-             <div min-width="100%" style="background-color:#EEEEEE;  border-bottom: 1px solid #E0E0E0;" class="">
-               <h3 style="padding-left:48px !important; padding-top:16px !important; ">Thesis Topics</h3>
+             <div class="sectionheading">
+               <h3>Thesis Topics</h3>
              </div>
-             <div class="rthesistopics" style="padding:48px !important; margin-left:0px; margin-right:0px;" >
+             <div class="sectioncontent"><div class="rthesistopics">
                {% for topic in thesistopics %}
                  <div class="links">
                    <ul>
@@ -187,10 +199,14 @@ activateHeader('{{page.navigationdiv}}');
                    </ul>
                  </div>
                {% endfor %}
-             </div>
+             </div></div>
            </div>
+<<<<<<< HEAD
          </div>
          <!-- <hr width="100%" > -->
+=======
+         <hr width="100%" >
+>>>>>>> 91d69a132cb8fcd1e4699fbda81777d295d6d471
          {% endif %}
 
          <!-- Displaying all the publications of the PERSON  -->
@@ -199,9 +215,10 @@ activateHeader('{{page.navigationdiv}}');
          {% if resultset2.size != 0 %}
           <div class=""  width="100%">
             <div class="partnersOfProject" style="display:block !important;" min-width="100%">
-              <div min-width="100%" style="background-color:#EEEEEE;  border-bottom: 1px solid #E0E0E0;" class="">
-                <h3 style="padding-left:48px !important; padding-top:16px !important; ">Publications</h3>
+              <div class="sectionheading">
+                <h3>Publications</h3>
               </div>
+              <div class="sectioncontent">
                 <button class="collapsible">Conference Paper</button>
                 <div class="content">
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -214,6 +231,7 @@ activateHeader('{{page.navigationdiv}}');
                 <div class="content">
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>
+              </div>
 
               <!-- <div class="links">
                 <h3 style="padding-left:48px !important; padding-top:16px !important; padding-bottom:16px !important ">Publications</h3>
