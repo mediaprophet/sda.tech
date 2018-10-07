@@ -1,9 +1,15 @@
 ---
 rdf_prefix_path: sda.tech.pref
 layout: default
+navigationdiv: Projects
+
 ---
 
-<script> setTitle('Incubator Projects', '{{site.title | escape}}'); </script>
+<script>
+setTitle('Incubator Projects', '{{site.title | escape}}');
+deactivateHeader();
+activateHeader('{{page.navigationdiv}}');
+</script>
 
 <div class="borderAll">
   <div class="pagination">
