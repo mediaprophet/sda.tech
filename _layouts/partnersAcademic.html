@@ -10,16 +10,18 @@ deactivateHeader();
 activateHeader('{{page.navigationdiv}}');
 </script>
 
-<!-- Presenting the PARTNERS -->
-<article class="post">
-  <div class="pagination">
-    {% include partnerHeader.html active="Academic Partners"%}
-  </div>
-    <!-- FOR GETTING ASSOCIATED PROJECTS -->
-    {% capture query %} SELECT ?partners ?project ?partnername ?name ?image  WHERE{ ?partners a sdatech:Partner . ?partners foaf:currentProject ?project . OPTIONAL { ?partners foaf:name ?partnername } . ?project rdfs:label ?name  . OPTIONAL { ?project foaf:logo ?image } }
-    {% endcapture %} {% assign partnersWithProjects = page.rdf | sparql_query: query %} {% assign length2 = partners | size %}
-    <div class="partner-items content-people">
-      {% include partnerContent.html active="academic"%}
+<div class="borderAll">
+  <!-- Presenting the PARTNERS -->
+  <article class="post">
+    <div class="pagination">
+      {% include partnerHeader.html active="Academic Partners"%}
     </div>
-    <br class="horizontal-separator2" />
-</article>
+      <!-- FOR GETTING ASSOCIATED PROJECTS -->
+      {% capture query %} SELECT ?partners ?project ?partnername ?name ?image  WHERE{ ?partners a sdatech:Partner . ?partners foaf:currentProject ?project . OPTIONAL { ?partners foaf:name ?partnername } . ?project rdfs:label ?name  . OPTIONAL { ?project foaf:logo ?image } }
+      {% endcapture %} {% assign partnersWithProjects = page.rdf | sparql_query: query %} {% assign length2 = partners | size %}
+      <div class="partner-items content-people">
+        {% include partnerContent.html active="academic"%}
+      </div>
+      <br class="horizontal-separator2" />
+  </article>  
+</div>
