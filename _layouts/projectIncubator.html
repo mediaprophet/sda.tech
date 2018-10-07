@@ -5,9 +5,11 @@ layout: default
 
 <script> setTitle('Incubator Projects', '{{site.title | escape}}'); </script>
 
-<div class="pagination">
-  {% include projectHeader.html active="Incubator Projects" %}
-</div>
-<div class="projects content-people clear-padding">
-  {% include projectContent.html active="incubatorProjects"%}
+<div class="borderAll">
+  <div class="pagination">
+    {% include projectHeader.html active="Incubator Projects" %}
+  </div>
+  <div class="projects content-people clear-padding">
+    {% include projectContent.html active="incubatorProjects"%}
+  </div>
 </div>

@@ -4,10 +4,12 @@ layout: default
 ---
 <script> setTitle('Professors', '{{site.title | escape}}'); </script>
 
-<div class="pagination">
-  {% include peopleHeader.html active ="Professors" %}
+<div class="borderAll" >
+  <div class="pagination">
+    {% include peopleHeader.html active ="Professors" %}
+  </div>
+  <div class="content-people">
+    {% include peopleContent.html active ="Prof" %}
+  </div>
+  <br class="horizontal-separator" />
 </div>
-<div class="content-people">
-  {% include peopleContent.html active ="Prof" %}
-</div>
-<br class="horizontal-separator" />

@@ -2,10 +2,13 @@
 rdf_prefix_path: sda.tech.pref
 layout: default
 ---
-<div class="pagination">
-  {% include publicationHeader.html active="Conference Proceedings" %}
+
+<div class="borderAll">
+  <div class="pagination">
+    {% include publicationHeader.html active="Conference Proceedings" %}
+  </div>
+  <div class="content-people">
+    {% include publicationContent.html active ="Conference Proceedings" %}
+  </div>
+  <br class="horizontal-separator" />
 </div>
-<div class="content-people">
-  {% include publicationContent.html active ="Conference Proceedings" %}
-</div>
-<br class="horizontal-separator" />

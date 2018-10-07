@@ -14,8 +14,10 @@ activateHeader('{{page.navigationdiv}}');
 
 {%include toggleJobTypes.html%}
 {% include toggleInitialPageLink.html div=page.toggleOnDiv linkto=page.toggledURLTo %}
-<article class="post">
-  {%include jobHeader.html active="Jobs"%}
-  {%include jobContent.html active="openJobs"%}
-    <br class="horizontal-separator" />
-</article>
+<div class="borderAll">
+  <article class="post">
+    {%include jobHeader.html active="Jobs"%}
+    {%include jobContent.html active="openJobs"%}
+      <br class="horizontal-separator" />
+  </article>
+</div>

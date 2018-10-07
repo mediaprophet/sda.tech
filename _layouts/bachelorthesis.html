@@ -13,6 +13,7 @@ layout: default
 {% capture query %} SELECT  ?thesis ?thesisTitle ?person ?personName ?personImage WHERE{
  ?thesis a dct:BibliographicResource . ?thesis a bibo:Thesis . ?thesis dct:title ?thesisTitle . ?thesis dct:creator ?person . ?person foaf:name ?personName . ?person foaf:depiction ?personImage . } {% endcapture %} {% assign personsInThesis = page.rdf | sparql_query: query %}
   <!-- Presentation of thesis Items  -->
+<div class="borderAll">
   <article class="post">
     <!--Thesis Header  -->
     {% include thesisHeader.html active="Bachelor Thesis" %}
@@ -20,3 +21,4 @@ layout: default
     {% include thesisContent.html active="bachelor" %}
         <br class="horizontal-separator2" />
   </article>
+</div>

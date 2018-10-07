@@ -48,70 +48,72 @@ deactivateHeader();
 activateHeader('{{page.navigationdiv}}');
 </script>
 
-<article class="post">
-  <div class="job-contents content-people">
-    <div class="jobDescription"style="display:block">
-    <h2 style="text-align:center;">{{ page.rdf | rdf_property: 'dct:title'}}</h2>
-    <br class="horizontal-separator" />
-    <div class="shortDescJob">
-      <p>{% if descOffer == "undefined" %}{{externDesc}}{% else %}{{descOffer}}{% endif %}</p>
+<div class="borderAll">
+  <article class="post">
+    <div class="job-contents content-people">
+      <div class="jobDescription"style="display:block">
+      <h2 style="text-align:center;">{{ page.rdf | rdf_property: 'dct:title'}}</h2>
+      <br class="horizontal-separator" />
+      <div class="shortDescJob">
+        <p>{% if descOffer == "undefined" %}{{externDesc}}{% else %}{{descOffer}}{% endif %}</p>
+      </div>
+      {% unless req == "none" %}
+      <br class="horizontal-separator" />
+      <div class="requirementsJob">
+        <h3>Requirements</h3>
+        <ul class="reuirementsList">
+          {% for point in points1 %}
+              <li>{{point}}</li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% endunless %}
+      {% unless exp == "none" %}
+      <br class="horizontal-separator" />
+      <div class="experienceJob">
+        <h3>Experience/Interest in “one of” (not necessarily more) the following areas:</h3>
+        <ul>
+          {% for point in points2 %}
+              <li>{{point}}</li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% endunless %}
+      {% unless expect == "none" %}
+      <br class="horizontal-separator" />
+      <div class="expectJob">
+        <h3>We Expect:</h3>
+        <ul>
+          {% for point in points3 %}
+              <li>{{point}}</li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% endunless %}
+      {% unless offer == "none" %}
+      <br class="horizontal-separator" />
+      <div class="offerJob">
+        <h3>We offer:</h3>
+        <ul>
+          {% for point in points4 %}
+              <li>{{point}}</li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% endunless %}
+      <br class="horitzontal-separator" />
+      <div class="applicationProcess">
+        <p>To apply, please send a mail to <a class="jobRef" href="mailto:SDA-applications@lists.iai.uni-bonn.de"  target="_top">SDA Applications</a> including a CV, a master certificate, a motivation letter including a short overview of previous research activities, two letters of recommendation and a writing sample (e.g. prior publication or master thesis excerpt). Applications are possible until all positions have been filled. Please do not send mails larger than 10MB.</p>
+      </div>
+      <br class="horizontal-separator">
+      <div class="equalJobOpp">
+        <h3>The University of Bonn is an equal opportunities employer.</h3>
+        <ul>
+          <li><a class="jobRef" href="https://en.wikipedia.org/wiki/University_of_Bonn#Ranking" target="_blank">https://en.wikipedia.org/wiki/University_of_Bonn#Ranking</a></li>
+          <li><a class="jobRef" href="{{site.fraunhoferHomePage}}" target="_blank">{{site.fraunhoferHomePage}}</a></li>
+        </ul>
+      </div>
     </div>
-    {% unless req == "none" %}
-    <br class="horizontal-separator" />
-    <div class="requirementsJob">
-      <h3>Requirements</h3>
-      <ul class="reuirementsList">
-        {% for point in points1 %}
-            <li>{{point}}</li>
-        {% endfor %}
-      </ul>
     </div>
-    {% endunless %}
-    {% unless exp == "none" %}
-    <br class="horizontal-separator" />
-    <div class="experienceJob">
-      <h3>Experience/Interest in “one of” (not necessarily more) the following areas:</h3>
-      <ul>
-        {% for point in points2 %}
-            <li>{{point}}</li>
-        {% endfor %}
-      </ul>
-    </div>
-    {% endunless %}
-    {% unless expect == "none" %}
-    <br class="horizontal-separator" />
-    <div class="expectJob">
-      <h3>We Expect:</h3>
-      <ul>
-        {% for point in points3 %}
-            <li>{{point}}</li>
-        {% endfor %}
-      </ul>
-    </div>
-    {% endunless %}
-    {% unless offer == "none" %}
-    <br class="horizontal-separator" />
-    <div class="offerJob">
-      <h3>We offer:</h3>
-      <ul>
-        {% for point in points4 %}
-            <li>{{point}}</li>
-        {% endfor %}
-      </ul>
-    </div>
-    {% endunless %}
-    <br class="horitzontal-separator" />
-    <div class="applicationProcess">
-      <p>To apply, please send a mail to <a class="jobRef" href="mailto:SDA-applications@lists.iai.uni-bonn.de"  target="_top">SDA Applications</a> including a CV, a master certificate, a motivation letter including a short overview of previous research activities, two letters of recommendation and a writing sample (e.g. prior publication or master thesis excerpt). Applications are possible until all positions have been filled. Please do not send mails larger than 10MB.</p>
-    </div>
-    <br class="horizontal-separator">
-    <div class="equalJobOpp">
-      <h3>The University of Bonn is an equal opportunities employer.</h3>
-      <ul>
-        <li><a class="jobRef" href="https://en.wikipedia.org/wiki/University_of_Bonn#Ranking" target="_blank">https://en.wikipedia.org/wiki/University_of_Bonn#Ranking</a></li>
-        <li><a class="jobRef" href="{{site.fraunhoferHomePage}}" target="_blank">{{site.fraunhoferHomePage}}</a></li>
-      </ul>
-    </div>
-  </div>
-  </div>
-</article>
+  </article>
+</div>

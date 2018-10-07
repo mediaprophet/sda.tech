@@ -10,9 +10,11 @@ deactivateHeader();
 activateHeader('{{page.navigationdiv}}');
 </script>
 
-<div class="pagination">
-  {% include projectHeader.html active="Projects" %}
-</div>
-<div class="projects content-people clear-padding">
-  {% include projectContent.html active="allProjects" %}
+<div class="borderAll">
+  <div class="pagination">
+    {% include projectHeader.html active="Projects" %}
+  </div>
+  <div class="projects content-people clear-padding">
+    {% include projectContent.html active="allProjects" %}
+  </div>
 </div>

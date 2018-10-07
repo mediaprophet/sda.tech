@@ -10,13 +10,12 @@ deactivateHeader();
 activateHeader('{{page.navigationdiv}}');
 </script>
 
-<div class="pagination">
-  {% include peopleHeader.html active ="People" %}
+<div class="borderAll" >
+  <div class="pagination">
+    {% include peopleHeader.html active ="People" %}
+  </div>
+  <div class="content-people">
+    {% include peopleContent.html active ="All" %}
+  </div>
+  <br class="horizontal-separator" />
 </div>
-<div class="content-people">
-  {% include peopleContent.html active ="All" %}
-</div>
-<div class="pagination">
-  {% include peopleHeader.html active ="People" footpaging="true"%}
-</div>
-<br class="horizontal-separator" />

@@ -21,90 +21,94 @@ deactivateHeader();
 activateHeader('{{page.navigationdiv}}');
 </script>
 
-    <!--Presentation of the GROUP Items-->
-    <article class="post">
-      <div class="pagination">
-        {% capture label %}{{ page.rdf | rdf_property: 'rdfs:label'}}{% endcapture %}
-        <!--QUERY to GET all the GROUP Items  -->
-        {% capture query %} SELECT ?group ?name ?desc ?imageclass ?shortcut WHERE{ ?group a aiiso:ResearchGroup . ?group rdfs:label ?name . ?group dct:description ?desc . ?group sda:imageclass ?imageclass . ?group sda:shortcut ?shortcut . }
-        {% endcapture %} {% assign resultset = page.rdf | sparql_query: query %}
-        <!--LABEL -->
-        {% capture label %}{{ page.rdf | rdf_property: 'sda:shortcut'}}{% endcapture %}
-        <!-- Paginating logic for all the GROUPS -->
-        {% assign count = 1 %}
-        {% for result in resultset %}{% assign class = "responsiveTabItem" %}
-        {% capture shortcut %}{{result.shortcut}}{% endcapture %} {% if shortcut == label %}{% assign class = "active responsiveTabItem" %}{% endif %}
-        {% capture groupname %}{{result.name}}{% endcapture %}
-        {% assign url = result.group | remove: "http://sda.tech/" | remove: "Group" %}
-        <a href="../{{url}}" id="{{groupname | remove: " " }}" class="{{class}}">
-              <i class="{{result.imageclass}} margin-icon"></i>
-             {{groupname}}</a>{% assign count = count | plus:1 %} {% if count == 4 %}
-        <br class="breakpoint-pagination"/><br class="breakpoint-pagination"/> {% endif %} {% endfor %}
-        <br/>
-        <br/>
-        <hr class="ruleh" /></div>
-      <div class="content-people">
-        <div class="post-content">
-          <div class="container groupLink">
-            <br class="horizontal-separator" />
-            <h2 style="text-align:center;"><i class="{{ page.rdf | rdf_property: 'sda:imageclass'}}"></i> {{ page.rdf | rdf_property: 'rdfs:label'}}</h2>
-            <br class="horizontal-separator2" />
-            <div class="description-project">
-              <p>{{ page.rdf | rdf_property: 'dct:description'}}</p>
-            </div>
-            <br class="horizontal-separator" />
-            <div class="members-projects">
-              <h3>Leaders</h3>
-              <div class="membersofProject">
-                {% for result in resultset3 %} {% assign url= result.leader | remove: "http://sda.tech/" %}
-                <!-- <img src="{{result.image}}" style="width:48px;height:48px;border-radius:50%;display:block;margin:0 auto;">
-                <a href="../{{url}}"><h4>{{result.personname}}</h4></a> -->
-                <div class="chip">
-                  <img class="img-circle-small" src="{{result.leaderimage}}" width="96" height="96">
-                  <a href="../../{{url}}">{{result.leadername}}</a>
-                </div>
+<div class="borderAll">
+  <div class="groupAll">
+      <!--Presentation of the GROUP Items-->
+      <article class="post">
+        <div class="pagination">
+          {% capture label %}{{ page.rdf | rdf_property: 'rdfs:label'}}{% endcapture %}
+          <!--QUERY to GET all the GROUP Items  -->
+          {% capture query %} SELECT ?group ?name ?desc ?imageclass ?shortcut WHERE{ ?group a aiiso:ResearchGroup . ?group rdfs:label ?name . ?group dct:description ?desc . ?group sda:imageclass ?imageclass . ?group sda:shortcut ?shortcut . }
+          {% endcapture %} {% assign resultset = page.rdf | sparql_query: query %}
+          <!--LABEL -->
+          {% capture label %}{{ page.rdf | rdf_property: 'sda:shortcut'}}{% endcapture %}
+          <!-- Paginating logic for all the GROUPS -->
+          {% assign count = 1 %}
+          {% for result in resultset %}{% assign class = "responsiveTabItem" %}
+          {% capture shortcut %}{{result.shortcut}}{% endcapture %} {% if shortcut == label %}{% assign class = "active responsiveTabItem" %}{% endif %}
+          {% capture groupname %}{{result.name}}{% endcapture %}
+          {% assign url = result.group | remove: "http://sda.tech/" | remove: "Group" %}
+          <a href="../{{url}}" id="{{groupname | remove: " " }}" class="{{class}}">
+                <i class="{{result.imageclass}} margin-icon"></i>
+               {{groupname}}</a>{% assign count = count | plus:1 %} {% if count == 4 %}
+          <br class="breakpoint-pagination"/><br class="breakpoint-pagination"/> {% endif %} {% endfor %}
+          <br/>
+          <br/>
+          <hr class="ruleh" /></div>
+        <div class="content-people">
+          <div class="post-content">
+            <div class="container groupLink">
+              <br class="horizontal-separator" />
+              <h2 style="text-align:center;"><i class="{{ page.rdf | rdf_property: 'sda:imageclass'}}"></i> {{ page.rdf | rdf_property: 'rdfs:label'}}</h2>
+              <br class="horizontal-separator2" />
+              <div class="description-project">
+                <p>{{ page.rdf | rdf_property: 'dct:description'}}</p>
+              </div>
+              <br class="horizontal-separator" />
+              <div class="members-projects">
+                <h3>Leaders</h3>
+                <div class="membersofProject">
+                  {% for result in resultset3 %} {% assign url= result.leader | remove: "http://sda.tech/" %}
+                  <!-- <img src="{{result.image}}" style="width:48px;height:48px;border-radius:50%;display:block;margin:0 auto;">
+                  <a href="../{{url}}"><h4>{{result.personname}}</h4></a> -->
+                  <div class="chip">
+                    <img class="img-circle-small" src="{{result.leaderimage}}" width="96" height="96">
+                    <a href="../../{{url}}">{{result.leadername}}</a>
+                  </div>
 
-                {% endfor %}
-              </div>
-            </div>
-            <br class="horizontal-separator2" />
-            <div class="members-projects">
-              <h3>Members</h3>
-              <div class="membersofProject">
-                {% capture groupMainTitle %}{{title}}{% endcapture %}
-                {% capture query %} SELECT ?person ?personname ?image ?group ?groupname Where {
-                  ?person a foaf:Person . OPTIONAL { ?person foaf:name ?personname } . OPTIONAL { ?person foaf:depiction ?image } .  ?person sda:group ?group . ?group  rdfs:label ?groupname .
-                } {% endcapture %} {% assign groupmembers = page.rdf | sparql_query: query %}
-                {% for person in groupmembers %}
-                  {% capture groupTitle %}{{person.groupname}}{% endcapture %}
-                  {% if groupMainTitle == groupTitle %}
-                    {% assign url= person.person | remove: "http://sda.tech/" %}
-                    <div class="chip">
-                      <img  class="img-circle-small" src="{{person.image}}" width="96" height="96">
-                      <a href="../../{{url}}">{{person.personname}}</a>
-                    </div>
-                  {% endif %}
-                {% endfor %}
-              </div>
-              <br class="horizontal-separator2" />
-              <br class="horizontal-separator2" />
-              <h3>Projects</h3>
-              <div class="partnersOfProject">
-                {% for result in resultset1 %} {% assign url= result.projects | remove: "http://sda.tech/" %}
-                <div class="chip">
-                  <img class="img-circle-small" src="{{result.image}}" width="96" height="96">
-                  <a href="../../{{url}}">{{result.projectname}}</a>
+                  {% endfor %}
                 </div>
-                {% endfor %}
               </div>
+              <br class="horizontal-separator2" />
+              <div class="members-projects">
+                <h3>Members</h3>
+                <div class="membersofProject">
+                  {% capture groupMainTitle %}{{title}}{% endcapture %}
+                  {% capture query %} SELECT ?person ?personname ?image ?group ?groupname Where {
+                    ?person a foaf:Person . OPTIONAL { ?person foaf:name ?personname } . OPTIONAL { ?person foaf:depiction ?image } .  ?person sda:group ?group . ?group  rdfs:label ?groupname .
+                  } {% endcapture %} {% assign groupmembers = page.rdf | sparql_query: query %}
+                  {% for person in groupmembers %}
+                    {% capture groupTitle %}{{person.groupname}}{% endcapture %}
+                    {% if groupMainTitle == groupTitle %}
+                      {% assign url= person.person | remove: "http://sda.tech/" %}
+                      <div class="chip">
+                        <img  class="img-circle-small" src="{{person.image}}" width="96" height="96">
+                        <a href="../../{{url}}">{{person.personname}}</a>
+                      </div>
+                    {% endif %}
+                  {% endfor %}
+                </div>
+                <br class="horizontal-separator2" />
+                <br class="horizontal-separator2" />
+                <h3>Projects</h3>
+                <div class="partnersOfProject">
+                  {% for result in resultset1 %} {% assign url= result.projects | remove: "http://sda.tech/" %}
+                  <div class="chip">
+                    <img class="img-circle-small" src="{{result.image}}" width="96" height="96">
+                    <a href="../../{{url}}">{{result.projectname}}</a>
+                  </div>
+                  {% endfor %}
+                </div>
+              </div>
+              <br class="horizontal-separator2" />
+              <h3>Publications</h3>
+              {% for result4 in resultset4 %}
+                {% include pubEntry.html link=result4.link date=result4.date publisher=result4.publisher title=result4.title  %}
+              {% endfor %}
+              <br class="horizontal-separator" />
             </div>
-            <br class="horizontal-separator2" />
-            <h3>Publications</h3>
-            {% for result4 in resultset4 %}
-              {% include pubEntry.html link=result4.link date=result4.date publisher=result4.publisher title=result4.title  %}
-            {% endfor %}
-            <br class="horizontal-separator" />
           </div>
         </div>
-      </div>
-</article>
+    </article>
+  </div>  
+</div>

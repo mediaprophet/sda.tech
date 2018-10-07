@@ -5,10 +5,12 @@ layout: default
 
 <script> setTitle('Interns', '{{site.title | escape}}'); </script>
 
-<div class="pagination">
-  {% include peopleHeader.html active ="Interns" %}
+<div class="borderAll">
+  <div class="pagination">
+    {% include peopleHeader.html active ="Interns" %}
+  </div>
+  <div class="content-people">
+    {% include peopleContent.html active ="Int" %}
+  </div>
+  <br class="horizontal-separator" />
 </div>
-<div class="content-people">
-  {% include peopleContent.html active ="Int" %}
-</div>
-<br class="horizontal-separator" />

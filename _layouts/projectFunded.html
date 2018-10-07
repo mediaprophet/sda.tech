@@ -5,9 +5,11 @@ layout: default
 
 <script> setTitle('Funded Projects', '{{site.title | escape}}'); </script>
 
-<div class="pagination">
-  {% include projectHeader.html active="Funded Projects"%}
-</div>
-<div class="projects content-people clear-padding">
-  {% include projectContent.html active="fundedProjects"%}
+<div class="borderAll">
+  <div class="pagination">
+    {% include projectHeader.html active="Funded Projects"%}
+  </div>
+  <div class="projects content-people clear-padding">
+    {% include projectContent.html active="fundedProjects"%}
+  </div>
 </div>

@@ -5,12 +5,13 @@ layout: default
 
 <script> setTitle('Summer Semester Courses', '{{site.title | escape}}'); </script>
 
-
-<article class="post">
-  <div class="pagination">
-    <!-- Teaching Header -->
-    {% include teachingHeader.html active="Latest Summer Semester Courses" %}
-    <!-- Teaching Content -->
-    {% include teachingContent.html active="summer" %}
-  </div>
-</article>
+<div class="borderAll">
+  <article class="post">
+    <div class="pagination">
+      <!-- Teaching Header -->
+      {% include teachingHeader.html active="Latest Summer Semester Courses" %}
+      <!-- Teaching Content -->
+      {% include teachingContent.html active="summer" %}
+    </div>
+  </article>
+</div>
