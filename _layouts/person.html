@@ -13,7 +13,7 @@ activateHeader('{{page.navigationdiv}}');
 </script>
 
 <article class="post">
-  <div class="pagination" style="background-color:white; border:1px solid #E0E0E0;">
+  <div class="pagination" style="background-color:white; border:0px solid #E0E0E0;">
     <div class="post-content" style="padding:0px !important; margin-left:0px; margin-right:0px;">
       <br class="horizontal-separator" />
       <div style="text-align:center;"><img class="img-circle-small" style="width: 250px; height: 250px; border-radius: 0%; " src="{{ page.rdf | rdf_property: 'foaf:depiction'}}"></img>
@@ -52,9 +52,8 @@ activateHeader('{{page.navigationdiv}}');
       </div>
       {% capture shortCV %}{{page.rdf | rdf_property: 'cv:aboutPerson'}}{% endcapture %}
       {% if shortCV.size != 0 %}
-        <div class="sectionheading">
-          <h3>Short CV</h3>
-        </div>
+      <hr class="headlinehr" />
+      <div class="headline"><h4>Short CV</h4></div>
         <div class="sectioncontent">
           <p>{{shortCV}}</p>
         </div>
@@ -65,10 +64,12 @@ activateHeader('{{page.navigationdiv}}');
       {% capture personName %}{{ page.rdf | rdf_property: 'foaf:name' }}{% endcapture %}
       {% capture query %} SELECT ?person ?group ?groupName ?groupImage WHERE { ?person foaf:name "{{personName}}" . ?person sda:group ?group . ?group a aiiso:ResearchGroup . ?group rdfs:label ?groupName . ?group sda:imageclass ?groupImage .}{% endcapture %} {% assign groupList = page.rdf | sparql_query: query %}
       {% if groupList.size != 0 %}
-      <div class="members-projects links" min-width="100%">
-        <div class="sectionheading">
-          <h3>Research Groups</h3>
-        </div>
+      <hr class="headlinehr" />
+      <div class="headline"><h4>Research Groups</h4></div>
+      <div class="members-projects links" min-width="100%;">
+        <!--<div class="sectionheading">
+          <h4>Research Groups</h4>
+        </div>-->
         <div class="sectioncontent">
           <div class="membersofProject">
             <div class="rgroupsSection">
@@ -90,10 +91,12 @@ activateHeader('{{page.navigationdiv}}');
         <{{page.rdf}}> foaf:currentProject ?project . ?project rdfs:label ?projectname . ?project foaf:depiction ?image .
         }{% endcapture %} {% assign projectList = page.rdf | sparql_query: query %}
         {% if projectList.size != 0 %}
+        <hr class="headlinehr" />
+        <div class="headline"><h4>Projects</h4></div>
         <div  class="members-projects links">
-          <div class="sectionheading">
+          <!--<div class="sectionheading">
             <h3>Projects</h3>
-          </div>
+          </div>-->
           <div class="sectioncontent"><div class="membersofProject">
             <div class="rgroups">
               {% for projects in projectList %}
@@ -133,10 +136,12 @@ activateHeader('{{page.navigationdiv}}');
         {% endfor %}
 
         {% if resultset3.size != 0 and boolname == true and booleanyear == true and booleansemester == true  %}
-          <div   width="100%">
-            <div class="sectionheading">
+        <hr class="headlinehr" />
+        <div class="headline"><h4>Teaching</h4></div>
+          <div width="100%">
+            <!--<div class="sectionheading">
               <h3>Teaching</h3>
-            </div>
+            </div>-->
             <div class="membersofProject"  min-width:"100%">
 
               <div class="sectioncontent">
@@ -174,10 +179,9 @@ activateHeader('{{page.navigationdiv}}');
          {% capture personName %}{{ page.rdf | rdf_property: 'foaf:name' }}{% endcapture %}
          {% capture query %} SELECT ?thesis ?title ?creator ?name ?thesislevel WHERE{ ?thesis a sdatech:openThesis . ?thesis dct:title ?title . ?thesis sda:thesisLevel ?thesislevel . ?thesis dct:creator ?creator . ?creator foaf:name "{{personName}}" . } {% endcapture %} {% assign thesistopics = page.rdf | sparql_query: query %}
          {% if thesistopics.size != 0 %}
+         <hr class="headlinehr" />
+           <div class="headline"><h4>Thesis Topics</h4></div>
            <div class="partnersOfProject" style="display:block !important;" min-width="100%">
-             <div class="sectionheading">
-               <h3>Thesis Topics</h3>
-             </div>
              <div class="sectioncontent"><div class="rthesistopics">
                {% for topic in thesistopics %}
                  <div class="links">
@@ -196,11 +200,10 @@ activateHeader('{{page.navigationdiv}}');
          {% capture query %} SELECT ?publication ?title ?date ?publisher ?link  WHERE{
          <{{page.rdf}}> sda:publication ?publication . ?publication dc:title ?title . ?publication dc:date ?date . ?publication dc:publisher ?publisher . ?publication foaf:homepage ?link . } {% endcapture %} {% assign resultset2 = page.rdf | sparql_query: query %}
          {% if resultset2.size != 0 %}
+         <hr class="headlinehr" />
+         <div class="headline"><h4>Publications</h4></div>
           <div class=""  width="100%">
             <div class="partnersOfProject" style="display:block !important;" min-width="100%">
-              <div class="sectionheading">
-                <h3>Publications</h3>
-              </div>
               <div class="sectioncontent">
                 <button class="collapsible">Conference Paper</button>
                 <div class="content">
