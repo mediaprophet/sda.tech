@@ -14,8 +14,8 @@ activateHeader('{{page.navigationdiv}}');
 
 <div class="borderAll">
   <article class="post">
-    <div class="pagination" style="background-color:white; border:0px solid #E0E0E0;">
-      <div class="post-content" style="padding:0px !important; margin-left:0px; margin-right:0px;">
+    <div class="pagination">
+      <div class="post-content">
         <br class="horizontal-separator" />
         <div style="text-align:center;"><img class="img-circle-small" style="width: 250px; height: 250px; border-radius: 0%; " src="{{ page.rdf | rdf_property: 'foaf:depiction'}}"></img>
             <div style="display:inline-block; vertical-align: middle;">
@@ -53,25 +53,18 @@ activateHeader('{{page.navigationdiv}}');
         </div>
         {% capture shortCV %}{{page.rdf | rdf_property: 'cv:aboutPerson'}}{% endcapture %}
         {% if shortCV.size != 0 %}
-        <!-- <hr class="" /> -->
-        <div class=""><h4>Short CV</h4></div>
-          <div class="sectioncontent">
-            <p>{{shortCV}}</p>
-          </div>
-          <!-- <hr width="100%" > -->
+          <br class="horizontal-separator2" />
+          <h4>Short CV</h4>
+          <p>{{shortCV}}</p>
         {% endif %}
 
         <!-- Displaying the groups of particular members  -->
         {% capture personName %}{{ page.rdf | rdf_property: 'foaf:name' }}{% endcapture %}
         {% capture query %} SELECT ?person ?group ?groupName ?groupImage WHERE { ?person foaf:name "{{personName}}" . ?person sda:group ?group . ?group a aiiso:ResearchGroup . ?group rdfs:label ?groupName . ?group sda:imageclass ?groupImage .}{% endcapture %} {% assign groupList = page.rdf | sparql_query: query %}
         {% if groupList.size != 0 %}
-        <!-- <hr class="" /> -->
-        <div class=""><h4>Research Groups</h4></div>
-        <div class="members-projects links" min-width="100%;">
-          <!--<div class="sectionheading">
-            <h4>Research Groups</h4>
-          </div>-->
-          <div class="sectioncontent">
+          <br class="horizontal-separator2" />
+          <h4>Research Groups</h4>
+          <div class="members-projects links" min-width="100%;">
             <div class="membersofProject">
               <div class="rgroupsSection">
                 {% for group in groupList %}
@@ -82,7 +75,6 @@ activateHeader('{{page.navigationdiv}}');
                   </div>
                 {% endfor %}
               </div>
-            </div>
           </div>
           </div>
           <!-- <hr width="100%" > -->
@@ -92,13 +84,10 @@ activateHeader('{{page.navigationdiv}}');
           <{{page.rdf}}> foaf:currentProject ?project . ?project rdfs:label ?projectname . ?project foaf:depiction ?image .
           }{% endcapture %} {% assign projectList = page.rdf | sparql_query: query %}
           {% if projectList.size != 0 %}
-          <!-- <hr class="" /> -->
-          <div class=""><h4>Projects</h4></div>
+          <br class="horizontal-separator2" />
+          <h4>Projects</h4>
           <div  class="members-projects links">
-            <!--<div class="sectionheading">
-              <h3>Projects</h3>
-            </div>-->
-            <div class="sectioncontent"><div class="membersofProject">
+            <div class="membersofProject">
               <div class="rgroups">
                 {% for projects in projectList %}
                   {% assign url= projects.project | remove: "http://sda.tech/" %}
@@ -108,7 +97,7 @@ activateHeader('{{page.navigationdiv}}');
                   </div>
                 {% endfor %}
               </div>
-            </div></div>
+            </div>
            <!-- <hr width="100%" > -->
            {% endif %}
 
@@ -137,15 +126,10 @@ activateHeader('{{page.navigationdiv}}');
           {% endfor %}
 
           {% if resultset3.size != 0 and boolname == true and booleanyear == true and booleansemester == true  %}
-          <!-- <hr class="" /> -->
-          <div class=""><h4>Teaching</h4></div>
-            <div width="100%">
-              <!--<div class="sectionheading">
-                <h3>Teaching</h3>
-              </div>-->
+          <br class="horizontal-separator" />
+          <br class="horizontal-separator2" />
+          <h4>Teaching</h4>
               <div class="membersofProject"  min-width:"100%">
-
-                <div class="sectioncontent">
                   <table class="flat-table flat-table-1" style="margin:0px !important">
                     <thead>
                       <th>Course Code</th>
@@ -170,7 +154,6 @@ activateHeader('{{page.navigationdiv}}');
                         {% endif %}{% endif %}{% endif %}{% endfor %}
                     </tbody>
                   </table>
-                </div>
               </div>
             </div>
             <!-- <hr width="100%" > -->
@@ -180,10 +163,10 @@ activateHeader('{{page.navigationdiv}}');
            {% capture personName %}{{ page.rdf | rdf_property: 'foaf:name' }}{% endcapture %}
            {% capture query %} SELECT ?thesis ?title ?creator ?name ?thesislevel WHERE{ ?thesis a sdatech:openThesis . ?thesis dct:title ?title . ?thesis sda:thesisLevel ?thesislevel . ?thesis dct:creator ?creator . ?creator foaf:name "{{personName}}" . } {% endcapture %} {% assign thesistopics = page.rdf | sparql_query: query %}
            {% if thesistopics.size != 0 %}
-           <!-- <hr class="" /> -->
-             <div class=""><h4>Thesis Topics</h4></div>
+           <br class="horizontal-separator2" />
+           <h4>Thesis Topics</h4>
              <div class="partnersOfProject" style="display:block !important;" min-width="100%">
-               <div class="sectioncontent"><div class="rthesistopics">
+               <div class="rthesistopics">
                  {% for topic in thesistopics %}
                    <div class="links">
                      <ul>
@@ -191,9 +174,8 @@ activateHeader('{{page.navigationdiv}}');
                      </ul>
                    </div>
                  {% endfor %}
-               </div></div>
+               </div>
              </div>
-           </div>
            <!-- <hr width="100%" > -->
            {% endif %}
 
@@ -202,10 +184,10 @@ activateHeader('{{page.navigationdiv}}');
            <{{page.rdf}}> sda:publication ?publication . ?publication dc:title ?title . ?publication dc:date ?date . ?publication dc:publisher ?publisher . ?publication foaf:homepage ?link . } {% endcapture %} {% assign resultset2 = page.rdf | sparql_query: query %}
            {% if resultset2.size != 0 %}
            <!-- <hr class="" /> -->
-           <div class=""><h4>Publications</h4></div>
+           <br class="horizontal-separator2" />
+           <h4>Publications</h4>
             <div class=""  width="100%">
               <div class="partnersOfProject" style="display:block !important;" min-width="100%">
-                <div class="sectioncontent">
                   <button class="collapsible">Conference Paper</button>
                   <div class="content">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -218,7 +200,6 @@ activateHeader('{{page.navigationdiv}}');
                   <div class="content">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                   </div>
-                </div>
 
                 <!-- <div class="links">
                   <h3 style="padding-left:48px !important; padding-top:16px !important; padding-bottom:16px !important ">Publications</h3>

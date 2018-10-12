@@ -56,7 +56,7 @@ activateHeader('{{page.navigationdiv}}');
               </div>
               <br class="horizontal-separator" />
               <div class="members-projects">
-                <h3>Leaders</h3>
+                <h4>Leaders</h4>
                 <div class="membersofProject">
                   {% for result in resultset3 %} {% assign url= result.leader | remove: "http://sda.tech/" %}
                   <!-- <img src="{{result.image}}" style="width:48px;height:48px;border-radius:50%;display:block;margin:0 auto;">
@@ -70,8 +70,7 @@ activateHeader('{{page.navigationdiv}}');
                 </div>
               </div>
               <br class="horizontal-separator2" />
-              <div class="members-projects">
-                <h3>Members</h3>
+                <h4>Members</h4>
                 <div class="membersofProject">
                   {% capture groupMainTitle %}{{title}}{% endcapture %}
                   {% capture query %} SELECT ?person ?personname ?image ?group ?groupname Where {
@@ -88,9 +87,9 @@ activateHeader('{{page.navigationdiv}}');
                     {% endif %}
                   {% endfor %}
                 </div>
+                <br class="horizontal-separator" />
                 <br class="horizontal-separator2" />
-                <br class="horizontal-separator2" />
-                <h3>Projects</h3>
+                <h4>Projects</h4>
                 <div class="partnersOfProject">
                   {% for result in resultset1 %} {% assign url= result.projects | remove: "http://sda.tech/" %}
                   <div class="chip">
@@ -99,9 +98,9 @@ activateHeader('{{page.navigationdiv}}');
                   </div>
                   {% endfor %}
                 </div>
-              </div>
               <br class="horizontal-separator2" />
-              <h3>Publications</h3>
+              <br class="horizontal-separator" />
+              <h4>Publications</h4>
               {% for result4 in resultset4 %}
                 {% include pubEntry.html link=result4.link date=result4.date publisher=result4.publisher title=result4.title  %}
               {% endfor %}
@@ -110,5 +109,5 @@ activateHeader('{{page.navigationdiv}}');
           </div>
         </div>
     </article>
-  </div>  
+  </div>
 </div>

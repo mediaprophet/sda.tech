@@ -54,7 +54,7 @@ activateHeader('{{page.navigationdiv}}');
               <br class="horizontal-separator" />
               <br class="horizontal-separator" />
               <div class="members-projects">
-                <h3>Leaders</h3>
+                <h4>Leaders</h4>
                 <div class="membersofProject">
                   {% for result5 in resultset5 %} {% capture groupname %}{{result5.name}}{% endcapture %} {% if groupname == name %} {% assign url= result5.leader | remove: "http://sda.tech/" %}
                   <div class="chip">
@@ -64,7 +64,8 @@ activateHeader('{{page.navigationdiv}}');
                   {% endif %} {% endfor %}
                 </div>
               </div>
-              <h3>Group Members</h3>
+              <br class="horizontal-separator2" />
+              <h4>Group Members</h4>
               <div class="membersofProject">
                 {% capture groupMainTitle %}{{result.name}}{% endcapture %}
                 {% capture query %} SELECT ?person ?personname ?image ?group ?groupname Where {
@@ -83,8 +84,8 @@ activateHeader('{{page.navigationdiv}}');
               </div>
 
               <br class="horizontal-separator" />
-              <br class="horizontal-separator" />
-              <h3>Projects</h3>
+              <br class="horizontal-separator2" />
+              <h4>Projects</h4>
               <div class="partnersOfProject">
                 {% for result2 in resultset2 %} {% capture groupname %}{{result2.name}}{% endcapture %} {% if groupname == name %} {% assign url= result2.project | remove: "http://sda.tech/" %}
                 <div class="chip">
@@ -93,9 +94,10 @@ activateHeader('{{page.navigationdiv}}');
                 </div>
                 {% endif %} {% endfor %}
               </div>
+
               <br class="horizontal-separator" />
-              <br class="horizontal-separator" />
-              <h3>Publications </h3>
+              <br class="horizontal-separator2" />
+              <h4>Publications </h4>
               {% for result4 in resultset4 %} {% capture groupname %}{{result4.name}}{% endcapture %} {% if groupname == name %}
                 {% include pubEntry.html link=result4.link date=result4.date publisher=result4.publisher title=result4.title  %}
               {% endif %} {% endfor %}

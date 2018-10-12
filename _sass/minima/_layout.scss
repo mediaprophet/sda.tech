@@ -1507,7 +1507,7 @@ blockquote {
 
 .sectioncontent {
   min-width: 100%;
-  padding: 20px;
+  padding: 48px;
   display: inline-block;
 }
 
@@ -1526,14 +1526,16 @@ blockquote {
 
 .headline {
     background-color: #fff;
-    position: relative;
+    //margin-top: -15px;
+    //margin-left: 30px;
+    //position: relative;
     margin: -15px 0 0 20px;
-    float: left;
-    padding-left: 5px;
-    padding-right: 5px;
+    //float: left;
+    //padding-left: 5px;
+    //padding-right: 5px;
 }
 .headlinehr {
-  width:18%;
+  width:100%;
   background-color: #000000;
 }
 
