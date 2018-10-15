@@ -8,8 +8,10 @@ navigationdiv: Jobs
   deactivateHeader();
   activateHeader('{{page.navigationdiv}}');
 </script>
-<article class="post">
-  {%include jobHeader.html active="Senior Researcher"%}
-  {%include jobContent.html active="postDoc"%}
-    <br class="horizontal-separator" />
-</article>
+<div class="borderAll">
+  <article class="post">
+    {%include jobHeader.html active="Senior Researcher"%}
+    {%include jobContent.html active="postDoc"%}
+      <br class="horizontal-separator" />
+  </article>
+</div>
