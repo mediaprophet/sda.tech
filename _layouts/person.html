@@ -146,7 +146,7 @@ activateHeader('{{page.navigationdiv}}');
                         <tr>
                           {% assign content = result5.desc | strip_newlines %}
                           <td>{{result5.id}}</td>
-                          <td><a href="{{result5.homepage}}">{{result5.coursename}}</a></td>
+                          <td><a href="{{result5.homepage}}" target="_blank">{{result5.coursename}}</a></td>
                           {% if content != "" %}
                             <td>{{result5.desc | lstrip }}</td>
                           {% endif %}
