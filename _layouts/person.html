@@ -102,9 +102,9 @@ activateHeader('{{page.navigationdiv}}');
            {% endif %}
 
            <!-- Displaying all the courses of the PERSON  -->
-          {% capture querytwo %} SELECT ?course ?short ?desc ?coursename ?id ?semester ?year ?maintainer ?name WHERE{ ?course a sdatech:Course . ?course rdfs:label ?short . ?course dct:title ?coursename . ?course ex:description ?desc . ?course sda:id ?id . ?course sda:maintainer ?maintainer . ?maintainer foaf:name ?name . ?course sda:semester ?semester . ?course sda:year ?year . } order by asc(str(?id)) {% endcapture %} {% assign resultset3 = page.rdf | sparql_query: querytwo %}
+          {% capture querytwo %} SELECT ?course ?short ?desc ?coursename ?id ?semester ?year ?maintainer ?name ?homepage WHERE{ ?course a sdatech:Course . ?course rdfs:label ?short . ?course dct:title ?coursename . ?course ex:description ?desc . ?course sda:id ?id . ?course sda:maintainer ?maintainer . ?maintainer foaf:name ?name . ?course sda:semester ?semester . ?course sda:year ?year . ?course foaf:homepage ?homepage . } order by asc(str(?id)) {% endcapture %} {% assign resultset3 = page.rdf | sparql_query: querytwo %}
 
-          {% capture querythree %} SELECT ?course ?short ?desc ?coursename ?id ?semester ?year ?maintainer ?name WHERE{ ?course a sdatech:Course . ?course rdfs:label ?short . ?course dct:title ?coursename . ?course ex:description ?desc . ?course sda:id ?id . ?course sda:maintainer ?maintainer . ?maintainer foaf:name name . ?course sda:semester semester . ?course sda:year year . FILTER regex(str(?year), "2018") } {% endcapture %} {% assign yearSemester = page.rdf | sparql_query: querytwo %}
+          {% capture querythree %} SELECT ?course ?short ?desc ?coursename ?id ?semester ?year ?maintainer ?name ?homepage WHERE{ ?course a sdatech:Course . ?course rdfs:label ?short . ?course dct:title ?coursename . ?course ex:description ?desc . ?course sda:id ?id . ?course sda:maintainer ?maintainer . ?maintainer foaf:name name . ?course sda:semester semester . ?course sda:year year . ?course foaf:homepage ?homepage . FILTER regex(str(?year), "2018") } {% endcapture %} {% assign yearSemester = page.rdf | sparql_query: querytwo %}
           {% assign booleanyear = false %}
           {% assign booleansemester = false %}
           {% assign boolname = false %}
@@ -146,7 +146,7 @@ activateHeader('{{page.navigationdiv}}');
                         <tr>
                           {% assign content = result5.desc | strip_newlines %}
                           <td>{{result5.id}}</td>
-                          <td><a href="{{result5.page}}">{{result5.coursename}}</a></td>
+                          <td><a href="{{result5.homepage}}">{{result5.coursename}}</a></td>
                           {% if content != "" %}
                             <td>{{result5.desc | lstrip }}</td>
                           {% endif %}

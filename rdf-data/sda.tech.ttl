@@ -3122,6 +3122,20 @@ sdateaching:SeminarNaturalLanguageProcessingSummer2018 a sdatech:Course ;
            sda:year 2018 ;
            sda:id "MA-INF 4221" .
 
+sdateaching:SeminarSemanticDataWebTechnologies2018 a sdatech:Course ;
+          rdfs:label "SSDWT" ;
+          dct:title "Seminar Semantic Data Web Technologies" ;
+          foaf:homepage <https://basis.uni-bonn.de/qisserver/rds?state=verpublish&status=init&vmfile=no&publishid=150595&moduleCall=webInfo&publishConfFile=webInfo&publishSubDir=veranstaltung> ;
+          ex:description "Understand how to read and evaluate academic papers in Computer Science. Understand new research results presented in original scientific publications in the domain of Semantic Data Web Technologies. Evaluate and analyze results and shortcomings of scientific work. Evaluate and analyze results and shortcomings of scientific work." ;
+          dct:language "en-US" ;
+          dct:educationLevel "M. Sc." ;
+          pf:endDate "2019-01-30"^^xsd:date ;
+          pf:startDate "2018-10-10"^^xsd:date ;
+          sda:maintainer sdaperson:MariaMaleshkova, sdaperson:JensLehmann ;
+          sda:semester "Summer" ;
+          sda:year 2018 ;
+          sda:id "MA-INF 4313" .
+
 sdateaching:LabNaturalLanguageProcessingSummer2018 a sdatech:Course ;
            rdfs:label "SNLP" ;
            dct:title "Lab Natural Language Processing" ;
@@ -3157,9 +3171,9 @@ sdateaching:LabSemanticDataWebTechnologiesSummer2018 a sdatech:Course ;
            ex:description "" ;
            dct:language "en-US" ;
            dct:educationLevel "" ;
-           pf:endDate "2019-02-28"^^xsd:date ;
-           pf:startDate "2016-03-01"^^xsd:date ;
-           sda:maintainer sdaperson:IoannaLytra, sdaperson:ChristophLange, sdaperson:JensLehmann ;
+           pf:endDate "2019-01-30"^^xsd:date ;
+           pf:startDate "2018-10-10"^^xsd:date ;
+           sda:maintainer sdaperson:MariaMaleshkova, sdaperson:ChristophLange, sdaperson:SteffenLohmann, sdaperson:JensLehmann ;
            sda:semester "Summer" ;
            sda:year 2018 ;
            sda:id "MA-INF 4314" .
@@ -3177,6 +3191,20 @@ sdateaching:MasterSeminarSmartDataAnalyticsSummer2018 a sdatech:Course ;
            sda:semester "Summer" ;
            sda:year 2018 ;
            sda:id "MA-INF 0402" .
+
+sdateaching:SeminarKnowledgeGraphAnalysis2018 a sdatech:Course ;
+          rdfs:label "SKGA" ;
+          dct:title "Seminar Knowledge Graph Analysis" ;
+          foaf:homepage <https://basis.uni-bonn.de/qisserver/rds?state=verpublish&status=init&vmfile=no&publishid=150710&moduleCall=webInfo&publishConfFile=webInfo&publishSubDir=veranstaltung> ;
+          ex:description "" ;
+          dct:language "en-US" ;
+          dct:educationLevel "" ;
+          pf:endDate "2019-02-28"^^xsd:date ;
+          pf:startDate "2016-03-01"^^xsd:date ;
+          sda:maintainer sdaperson:HamedShariatYazdi, sdaperson:JensLehmann ;
+          sda:semester "Summer" ;
+          sda:year 2018 ;
+          sda:id "MA-INF 4317" .
 
 sdateaching:MasterSeminarSoftwareEngineeringSummer2018 a sdatech:Course ;
            rdfs:label "MSSE" ;
@@ -3220,6 +3248,19 @@ sdateaching:TemporalInformationSystemsSummer2018 a sdatech:ExtraCourse ;
             sda:year 2018 ;
             sda:id "MA-INF 3302" .
 
+sdateaching:KnowledgeGraphAnalysis2018 a sdatech:ExtraCourse ;
+            rdfs:label "KGA" ;
+            dct:title "Knowledge Graph Analysis" ;
+            foaf:homepage <https://basis.uni-bonn.de/qisserver/rds?state=verpublish&status=init&vmfile=no&publishid=150709&moduleCall=webInfo&publishConfFile=webInfo&publishSubDir=veranstaltung> ;
+            ex:description "" ;
+            dct:language "en-US" ;
+            dct:educationLevel "" ;
+            pf:endDate "2018-10-09"^^xsd:date ;
+            pf:startDate "2019-01-29"^^xsd:date ;
+            sda:maintainer sdaperson:JensLehmann, sdaperson:HamedShariatYazdi ;
+            sda:semester "Summer" ;
+            sda:year 2018 ;
+            sda:id "MA-INF 4316" .
 
 ########Winter Term##############
 
