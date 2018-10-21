@@ -89,13 +89,13 @@ jekyll_rdf:
         "http://sda.tech/Partner" : "partners.html"
         "http://sda.tech/Job" : "job.html"
         "http://sda.tech/Course" : "teaching.html"
-        "http://sda.tech/Blog" : "blogpost.html"
         "http://xmlns.com/foaf/0.1/Document" : "document.html"
     instance_template_mappings:
         "http://sda.tech/" : "home.html"
         "http://sda.tech/group" : "groupmain.html"
         "http://sda.tech/partners" : "partners.html"
         "http://sda.tech/about" : "page.html"
+        "http://sda.tech/blogpost" : "blogpost.html"
         #People
         "http://sda.tech/people" : "people.html"
         "http://sda.tech/People/professors" : "personProfessors.html"

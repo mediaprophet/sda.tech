@@ -19,3 +19,4 @@ PREFIX biboDegree: <http://purl.org/ontology/bibo/degree/>
 PREFIX dbo: <http://dbpedia.org/ontology/>
 PREFIX sioc: <http://rdfs.org/sioc/ns#>
 PREFIX schema: <http://schema.org/>
+PREFIX sdablog: <http://sda.tech/blog/>

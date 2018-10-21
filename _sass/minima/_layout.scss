@@ -1542,3 +1542,41 @@ blockquote {
 .borderAll{
   border: 1px solid #E0E0E0;
 }
+
+div.scrollmenu {
+    background-color: #f9f9f9;
+    overflow: auto;
+    white-space: nowrap;
+    margin-top: -20px;
+}
+
+div.scrollmenu a {
+    display: inline-block;
+    text-align: center;
+    padding: 14px;
+    color: black;
+    text-decoration: none;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+}
+
+div.scrollmenu a:hover {
+    color: $purple-sda-color;
+}
+
+.posttitle {
+  text-align:center;
+  width:200px;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}
+
+.postentry {
+  padding-left:50px;
+  padding-right:50px;
+}
+
+.postmetadata {
+  color:#999999;
+  margin-top:-10px;
+}

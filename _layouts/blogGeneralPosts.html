@@ -13,14 +13,29 @@ navigationdiv: Blog
     <div class="pagination">
       {% include blogHeader.html active="General Posts"%}
     </div>
-    <div class="partner-items content-people" style="display:block;">
-      <div class="grid-main">
-        <div class="grid">
-
-      </div>
-      </div>
+    {% capture query %} SELECT ?title ?creator ?date ?image ?abstract ?content WHERE{ ?blog a sdablog:generalposts . ?blog dct:title ?title . ?blog dct:creator ?person . ?person foaf:name ?creator . ?blog dct:created ?date . ?blog foaf:depiction ?image . ?blog dct:abstract ?abstract . ?blog sioc:content ?content .} {% endcapture %} {% assign blogposts = page.rdf | sparql_query: query %}
+    <div class="scrollmenu">
+      {% for post in blogposts %}
+        <a href="../../blog"><img src="{{post.image}}" style="height:100px;width:200px;"><br/>
+        <div class="posttitle">{{post.title}}</div></a>
+      {% endfor %}
     </div>
+
+    <br class="horizontal-separator2" />
+
+    {% for post in blogposts %}
+      <div class="postentry">
+        <p><font size="5">{{post.title}}</font></p>
+        <div class="postmetadata">&#128467; {{post.date}} &nbsp;&nbsp; &#x270D; {{post.creator}}</div>
+        <br/>
+        <p><img src="{{post.image}}" style="float:left;height:180px;width:230px;padding:30px;">{{post.content}}</p>
+        <br/><hr style="text-align:center;">
+      </div>
+      <hr style="width:100%;background:transparent;">
       <br class="horizontal-separator2" />
+    {% endfor %}
+
+    <br class="horizontal-separator2" />
   </article>
 </div>
 

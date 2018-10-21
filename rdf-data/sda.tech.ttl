@@ -3546,7 +3546,7 @@ sdablog:demo-paper-accepted-at-SIGIR-2018	 a sioc:Post;
     dct:language "en-US" ;
     foaf:depiction <https://www.vu.nl/en/Images/VUlogo_Wit_RGB_mettekst_tcm270-835563.svg> ;
     dct:abstract """SPARQL queries search for specified patterns in RDF data using triple patterns as building blocks. Although many different solutions for efficient querying have been proposed in the past. We want to explore the novel tensor based RDF representations and use them for fast and scalable Querying on large scale cluster. We will use a computational in-memory framework for distributed SPARQL query answering,based on the notion of degree of freedom of a triple. This algorithm relies on a general model of RDF graph based on the firstprinciples of linear algebra, in particular ontensorial calculus.""" ;
-    sioc:content """The content of the blog post""" .
+    sioc:content """SPARQL queries search for specified patterns in RDF data using triple patterns as building blocks. Although many different solutions for efficient querying have been proposed in the past. We want to explore the novel tensor based RDF representations and use them for fast and scalable Querying on large scale cluster. We will use a computational in-memory framework for distributed SPARQL query answering,based on the notion of degree of freedom of a triple. This algorithm relies on a general model of RDF graph based on the firstprinciples of linear algebra, in particular ontensorial calculus.""" .
 
 sdablog:papers-accepted-at-ICWE-2018	a sioc:Post ;
     dct:title "Papers accepted at ICWE 2018" ;
@@ -3558,11 +3558,11 @@ sdablog:papers-accepted-at-ICWE-2018	a sioc:Post ;
     dct:language "en-US" ;
     foaf:depiction <http://sda.cs.uni-bonn.de/wp-content/uploads/2018/04/ICWE_logo.png> ;
     dct:abstract """We are very pleased to announce that our group got 2 papers accepted for presentation at the ICWE 2018 : The 18th International Conference on Web Engineering, which will be held on CÁCERES, SPAIN. 5 – 8 JUNE, 2018.""" ;
-    sioc:content """The ICWE is the prime yearly international conference on the different aspects of designing, building, maintaining and using Web applications. The theme for the year 2018 — the 18th edition of the event — is Enhancing the Web with Advanced Engineering.""" .
+    sioc:content """We are very pleased to announce that our group got 2 papers accepted for presentation at the ICWE 2018 : The 18th International Conference on Web Engineering, which will be held on CÁCERES, SPAIN. 5 – 8 JUNE, 2018.<br><br>The ICWE is the prime yearly international conference on the different aspects of designing, building, maintaining and using Web applications. The theme for the year 2018 — the 18th edition of the event — is Enhancing the Web with Advanced Engineering. The conference will cover the different aspects of Web Engineering, including the design, creation, maintenance, and usage of Web applications. ICWE2018 is endorsed by the International Society for the Web Engineering (ISWE) and belongs to the ICWE conference series owned by ISWE.""" .
 
 ###################Paper Notifications#############
 
-sdablog:papers-accepted-at-CoNLL-2018 a sdablog:papernotifications ;
+sdablog:papers-accepted-at-CoNLL-2018 a sioc:Post, sdablog:papernotifications ;
     dct:title "Paper accepted at CoNLL 2018" ;
     sioc:topic "Paper accepted at CoNLL 2018" ;
     dct:creator sdaperson:GezimSejdiu ;
@@ -3576,11 +3576,11 @@ sdablog:papers-accepted-at-CoNLL-2018 a sdablog:papernotifications ;
     Here is the accepted paper with its abstract: <br><br>
     “<a href="https://arxiv.org/pdf/1809.03194.pdf">Improving Response Selection in Multi-turn Dialogue Systems</a> by Incorporating Domain Knowledge” by Debanjan Chaudhuri, Agustinus Kristiadi, Jens Lehmann and Asja Fischer.<br><br>
     <blockquote>Abstract : Building systems that can communicate with humans is a core problem in Artificial Intelligence. This work proposes a novel neural network architecture for response selection in an end-to-end multi-turn conversational dialogue setting. The architecture applies context level attention and incorporates additional external knowledge provided by descriptions of domain-specific words. It uses a bi-directional Gated Recurrent Unit (GRU) for encoding context and responses and learns to attend over the context words given the latent response representation and vice versa. In addition, it incorporates external domain specific information using another GRU for encoding the domain keyword descriptions. This allows better representation of domain-specific keywords in responses and hence improves the overall performance. Experimental results show that our model outperforms all other state-of-the-art methods for response selection in multi-turn conversations.</blockquote><br>
-    <strong>Acknowledgement</strong><br>This research was supported by the KDDS project at <a href="https://www.iais.fraunhofer.de/">Fraunhofer</a>.<br><br><hr>Looking forward to seeing you at The <a href="http://www.conll.org/2018">CoNLL 2018</a>.""" .
+    <strong>Acknowledgement</strong><br>This research was supported by the KDDS project at <a href="https://www.iais.fraunhofer.de/">Fraunhofer</a>.<br><br>Looking forward to seeing you at The <a href="http://www.conll.org/2018">CoNLL 2018</a>.""" .
 
 ###################Invited talks#############
 
-sdablog:invited-talk-by-anastasiadimou a sdablog:invitedtalks ;
+sdablog:invited-talk-by-anastasiadimou a sioc:Post, sdablog:invitedtalks ;
         dct:title "Invited talk by Dr. Anastasia Dimou" ;
         sioc:topic "High Quality Linked Data Generation from Heterogeneous data" ;
         dct:creator sdaperson:GezimSejdiu ;
@@ -3593,7 +3593,7 @@ sdablog:invited-talk-by-anastasiadimou a sdablog:invitedtalks ;
 
 ###################project announcements#############
 
-sdablog:a-BETTER-project-for-exploiting-big-data-in-earth-observation a sdablog:projectannouncements ;
+sdablog:a-BETTER-project-for-exploiting-big-data-in-earth-observation a sioc:Post, sdablog:projectannouncements ;
         dct:title "A BETTER project for exploiting Big Data in Earth Observation" ;
         sioc:topic "A BETTER project for exploiting Big Data in Earth Observation" ;
         dct:creator sdaperson:GezimSejdiu ;
@@ -3607,7 +3607,7 @@ sdablog:a-BETTER-project-for-exploiting-big-data-in-earth-observation a sdablog:
 
 ###################general posts#############
 
-sdablog:SOLIDE-at-the-BMBF-Innovation-Forum-Civil-Security-2018 a sdablog:generalposts ;
+sdablog:SOLIDE-at-the-BMBF-Innovation-Forum-Civil-Security-2018 a sioc:Post, sdablog:generalposts ;
         dct:title """SOLIDE at the BMBF Innovation Forum “Civil Security” 2018""" ;
         sioc:topic """SOLIDE at the BMBF Innovation Forum “Civil Security” 2018""" ;
         dct:creator sdaperson:GezimSejdiu ;
