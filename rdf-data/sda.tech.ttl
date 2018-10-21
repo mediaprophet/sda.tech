@@ -698,6 +698,23 @@ sdaperson:MojtabaNayyeri a foaf:Person, sdatech:phdStudent ;
                    sda:group sdagroup:KnowledgeGraph ;
                    cv:aboutPerson "Mojtaba Nayyeri is a PhD Student at the University of Bonn.".
 
+sdaperson:ChengjinXu a foaf:Person, sdatech:phdStudent ;
+                   sda:publicationsTag "Xu" ;
+                   ex:address sda:Room52 ;
+                   foaf:familyName "Xu" ;
+                   foaf:name "Chengjin Xu" ;
+                   foaf:nick "Chengjin" ;
+                   foaf:mbox <mailto:soledad921@gmail.com> ;
+                   foaf:depiction <https://media.licdn.com/dms/image/C4E03AQE4aTs0eHjpOw/profile-displayphoto-shrink_800_800/0?e=1545264000&v=beta&t=v0xZX2-utGwN93FneceSlQP_wTd95tAqTKcckUY1Jjs> ;
+                   foaf:phone "" ;
+                   foaf:firstName "Chengjin" ;
+                   foaf:title "" ;
+                   foaf:status "PhD Student" ;
+                   sda:profilepage <https://www.linkedin.com/in/chengjin-xu-7a534b153/> ;
+                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
+                   sda:group sdagroup:KnowledgeGraph ;
+                   cv:aboutPerson "Chengjin Xu is a PhD student at the university of Bonn. Chengjin’s research interests are in the area of Knowledge Embedding and Machine Learning.".
+
 ##############################Associated Researchers#####################
 
 sdaperson:SteffenLohmann a foaf:Person, sdatech:associateReseracher ;
