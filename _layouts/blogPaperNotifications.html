@@ -14,7 +14,7 @@ navigationdiv: Blog
       {% include blogHeader.html active="Paper Notifications"%}
     </div>
 
-    {% capture query %} SELECT ?title ?creator ?date ?image ?abstract ?content WHERE{ ?blog a sdablog:papernotifications . ?blog dct:title ?title . ?blog dct:creator ?person . ?person foaf:name ?creator . ?blog dct:created ?date . ?blog foaf:depiction ?image . ?blog dct:abstract ?abstract . ?blog sioc:content ?content .} {% endcapture %} {% assign blogposts = page.rdf | sparql_query: query %}
+    {% capture query %} SELECT ?title ?creator ?date ?image ?content WHERE{ ?blog a sdablog:papernotifications . ?blog dct:title ?title . ?blog dct:creator ?person . ?person foaf:name ?creator . ?blog dct:created ?date . ?blog foaf:depiction ?image . ?blog sioc:content ?content .} {% endcapture %} {% assign blogposts = page.rdf | sparql_query: query %}
     <div class="scrollmenu">
       {% for post in blogposts %}
         <a href="../../blog"><img src="{{post.image}}" style="height:100px;width:200px;"><br/>
