@@ -95,7 +95,6 @@ jekyll_rdf:
         "http://sda.tech/group" : "groupmain.html"
         "http://sda.tech/partners" : "partners.html"
         "http://sda.tech/about" : "page.html"
-        "http://sda.tech/blogpost" : "blogpost.html"
         #People
         "http://sda.tech/people" : "people.html"
         "http://sda.tech/People/professors" : "personProfessors.html"
