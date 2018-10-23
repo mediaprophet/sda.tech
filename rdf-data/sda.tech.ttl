@@ -1203,7 +1203,7 @@ sdaperson:AdrianBajraktari a foaf:Person, sdatech:studentAssistant ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    cv:aboutPerson "Adrian Bajraktari is a Student Assistant at the Computer Science Department III of the University of Bonn." .
 
-sdaperson:MehrdadB a foaf:Person, sdatech:studentAssistant ;
+sdaperson:MehrdadBozorg a foaf:Person, sdatech:studentAssistant ;
                    sda:publicationsTag "mehrdad" ;
                    ex:address sda:Room64-1 ;
                    foaf:familyName "Bozorg" ;
@@ -1219,7 +1219,7 @@ sdaperson:MehrdadB a foaf:Person, sdatech:studentAssistant ;
                    sda:group sdagroup:KnowledgeGraph ;
                    cv:aboutPerson "Mehrdad Bozorg is a Student Assistant at the Computer Science Department III of the University of Bonn." .
 
-sdaperson:FirasKa a foaf:Person, sdatech:studentAssistant ;
+sdaperson:FirasKassawat a foaf:Person, sdatech:studentAssistant ;
                   sda:publicationsTag "firas" ;
                   ex:address sda:Room64-1 ;
                   foaf:familyName "Firas" ;
@@ -1235,7 +1235,7 @@ sdaperson:FirasKa a foaf:Person, sdatech:studentAssistant ;
                   sda:group sdagroup:KnowledgeGraph ;
                   cv:aboutPerson "Firas Kassawat is a Student Assistant at the Computer Science Department III of the University of Bonn." .
 
-sdaperson:Mirza a foaf:Person, sdatech:studentAssistant ;
+sdaperson:MirzaMohtashimAlam a foaf:Person, sdatech:studentAssistant ;
                   sda:publicationsTag "mirza" ;
                   ex:address sda:Room64-1 ;
                   foaf:familyName "Mirza" ;
