@@ -585,7 +585,7 @@ sdaperson:AfshinSadeghi a foaf:Person, sdatech:phdStudent ;
                    foaf:name "Afshin Sadeghi" ;
                    foaf:nick "Afshin" ;
                    foaf:mbox <mailto:sadeghi@cs.uni-bonn.de> ;
-                   foaf:depiction <https://t4.ftcdn.net/jpg/01/40/46/19/160_F_140461947_tWo9D0W8QQnrhzhCXJbDHIXblMV9BTZv.jpg> ;
+                   foaf:depiction <http://afshn.com/index_files/afshin.png> ;
                    foaf:phone "" ;
                    foaf:firstName "Afshin" ;
                    foaf:title "" ;
@@ -1493,9 +1493,9 @@ sdagroup:SoftwareEngineeringForDataScience a aiiso:ResearchGroup, sdatech:Group 
                                 sda:miniIcon "fa fa-cogs margin-icon" ;
                                 sda:shortcut "seds" .
 
-##Knowledge Graph
+##Knowledge Graph Analysis
 sdagroup:KnowledgeGraph a aiiso:ResearchGroup, sdatech:Group ;
-                                rdfs:label "Knowledge Graph and Artificial Intelligence" ;
+                                rdfs:label "Knowledge Graph Analysis" ;
                                 dbo:leader sdaperson:HamedShariatYazdi ;
                                 foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
                                 foaf:currentProject sdaproject:SANSAStack ;
