@@ -1203,6 +1203,54 @@ sdaperson:AdrianBajraktari a foaf:Person, sdatech:studentAssistant ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    cv:aboutPerson "Adrian Bajraktari is a Student Assistant at the Computer Science Department III of the University of Bonn." .
 
+sdaperson:MehrdadBozorg a foaf:Person, sdatech:studentAssistant ;
+                   sda:publicationsTag "mehrdad" ;
+                   ex:address sda:Room64-1 ;
+                   foaf:familyName "Bozorg" ;
+                   foaf:name "Mehrdad Bozorg" ;
+                   foaf:nick "Mehrdad" ;
+                   foaf:mbox <> ;
+                   foaf:depiction <http://www.clker.com/cliparts/d/L/P/X/z/i/no-image-icon-md.png> ;
+                   foaf:firstName "Mehrdad" ;
+                   foaf:title "" ;
+                   foaf:status "Student Assistant" ;
+                   sda:profilepage <https://de.linkedin.com/in/mehrdad-bozorg-518585155/>;
+                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
+                   sda:group sdagroup:KnowledgeGraph ;
+                   cv:aboutPerson "Mehrdad Bozorg is a Student Assistant at the Computer Science Department III of the University of Bonn." .
+
+sdaperson:FirasKassawat a foaf:Person, sdatech:studentAssistant ;
+                  sda:publicationsTag "firas" ;
+                  ex:address sda:Room64-1 ;
+                  foaf:familyName "Firas" ;
+                  foaf:name "Firas Kassawat" ;
+                  foaf:nick "Firas" ;
+                  foaf:mbox <mailto:firas.kasa@gmail.com> ;
+                  foaf:depiction <http://www.clker.com/cliparts/d/L/P/X/z/i/no-image-icon-md.png> ;
+                  foaf:firstName "Mehdi" ;
+                  foaf:title "" ;
+                  foaf:status "Student Assistant" ;
+                  sda:profilepage <https://www.linkedin.com/in/firas-kassawat-010978a7/>;
+                  ov:businessCard <http://aksw.org/vCard/Bonn> ;
+                  sda:group sdagroup:KnowledgeGraph ;
+                  cv:aboutPerson "Firas Kassawat is a Student Assistant at the Computer Science Department III of the University of Bonn." .
+
+sdaperson:MirzaMohtashimAlam a foaf:Person, sdatech:studentAssistant ;
+                  sda:publicationsTag "mirza" ;
+                  ex:address sda:Room64-1 ;
+                  foaf:familyName "Mirza" ;
+                  foaf:name "Mirza Mohtashim Alam" ;
+                  foaf:nick "Mirza" ;
+                  foaf:mbox <mailto:turzo.mohtasim@gmail.com> ;
+                  foaf:depiction <http://www.clker.com/cliparts/d/L/P/X/z/i/no-image-icon-md.png> ;
+                  foaf:firstName "Mirza" ;
+                  foaf:title "" ;
+                  foaf:status "Student Assistant" ;
+                  sda:profilepage <https://www.linkedin.com/in/mirzamohtashim/>;
+                  ov:businessCard <http://aksw.org/vCard/Bonn> ;
+                  sda:group sdagroup:KnowledgeGraph ;
+                  cv:aboutPerson "Mirza Mohtashim Alam is a Student Assistant at the Computer Science Department III of the University of Bonn." .
+
 ##############################Interns####################################
 
 sdaperson:KathanKashiparekh a foaf:Person, sdatech:intern ;
@@ -1447,7 +1495,7 @@ sdagroup:SoftwareEngineeringForDataScience a aiiso:ResearchGroup, sdatech:Group 
 
 ##Knowledge Graph
 sdagroup:KnowledgeGraph a aiiso:ResearchGroup, sdatech:Group ;
-                                rdfs:label "Knowledge Graph" ;
+                                rdfs:label "Knowledge Graph and Artificial Intelligence" ;
                                 dbo:leader sdaperson:HamedShariatYazdi ;
                                 foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
                                 foaf:currentProject sdaproject:SANSAStack ;
