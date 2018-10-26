@@ -1,24 +1,34 @@
 ---
 rdf_prefix_path: sda.tech.pref
 layout: default
-rdf_prefix_path: sda.tech.pref
-
+navigationdiv: Blog
 ---
-<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
-  <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
-    <p class="post-meta">
-      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-        {{ page.date | date: date_format }}
-      </time> {% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>
-      {% endif %}</p>
-  </header>
+{% capture title %} {{ page.rdf | rdf_property: 'sioc:topic' }}{% endcapture %}
+{% assign title = title | strip %}
 
-  <div class="post-content" itemprop="articleBody">
-    {{ content }}
-  </div>
+<script>
+setTitle('{{title}}', '{{site.title | escape}}');
+</script>
 
-  {% if site.disqus.shortname %} {% include disqus_comments.html %} {% endif %}
-</article>
+{% capture depiction %} {{ page.rdf | rdf_property: 'foaf:depiction' }} {% endcapture %}
+{% capture creator %} {{ page.rdf | rdf_property: 'dct:creator' }} {% endcapture %}
+{% capture  date %} {{ page.rdf | rdf_property: 'dct:created' }} {% endcapture %}
+{% capture content %} {{ page.rdf | rdf_property: 'sioc:content' }} {% endcapture %}
+{% assign person= creator | remove: " http://sda.tech/Person/" %}
+
+<div class="borderAll">
+  <article class="post">
+    <div class="pagination">
+      <div class="post-content">
+        <div class="postentry">
+          <p><font size="5">{{title}}</font></p>
+          <div class="postmetadata">&#128467; {{date}} &nbsp;&nbsp; &#x270D; {{person}}</div>
+          <br/>
+          <p><img src="{{depiction}}" style="float:left;height:180px;width:230px;padding:30px;">{{content}}</p>
+          <br/><hr style="text-align:center;">
+        </div>
+      </div>
+    </div>
+  </article>
+</div>
