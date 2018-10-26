@@ -1576,6 +1576,27 @@ div.scrollmenu a:hover {
   padding-right:50px;
 }
 
+div.postentry a {
+  color: $purple-sda-color;
+  text-decoration: none;
+}
+
+div.postentry a:hover {
+  color: $blue-sda-color;
+}
+
+.posturl {
+}
+
+div.posturl a {
+  color: black;
+  text-decoration: none;
+}
+
+div.posturl a:hover {
+    color: $purple-sda-color;
+}
+
 .postmetadata {
   color:#999999;
   margin-top:-10px;
