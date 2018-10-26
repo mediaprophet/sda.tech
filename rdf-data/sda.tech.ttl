@@ -585,7 +585,7 @@ sdaperson:AfshinSadeghi a foaf:Person, sdatech:phdStudent ;
                    foaf:name "Afshin Sadeghi" ;
                    foaf:nick "Afshin" ;
                    foaf:mbox <mailto:sadeghi@cs.uni-bonn.de> ;
-                   foaf:depiction <https://t4.ftcdn.net/jpg/01/40/46/19/160_F_140461947_tWo9D0W8QQnrhzhCXJbDHIXblMV9BTZv.jpg> ;
+                   foaf:depiction <http://afshn.com/index_files/afshin.png> ;
                    foaf:phone "" ;
                    foaf:firstName "Afshin" ;
                    foaf:title "" ;
@@ -670,7 +670,7 @@ sdaperson:HebaIbrahim a foaf:Person, sdatech:phdStudent ;
                    foaf:name "Heba Ibrahim" ;
                    foaf:nick "Heba" ;
                    foaf:mbox <mailto:hmohamed@uni-bonn.de> ;
-                   foaf:depiction <http://www.clker.com/cliparts/d/L/P/X/z/i/no-image-icon-md.png> ;
+                   foaf:depiction <https://t4.ftcdn.net/jpg/01/40/46/19/160_F_140461947_tWo9D0W8QQnrhzhCXJbDHIXblMV9BTZv.jpg> ;
                    foaf:phone "" ;
                    foaf:firstName "Heba" ;
                    foaf:title "" ;
@@ -913,7 +913,7 @@ sdaperson:MiretteElias a foaf:Person, sdatech:associateReseracher ;
                    foaf:name "Mirette Elias" ;
                    foaf:nick "Mirette" ;
                    foaf:mbox <mailto:mirettemagdy@gmail.com> ;
-                   foaf:depiction <http://www.clker.com/cliparts/d/L/P/X/z/i/no-image-icon-md.png> ;
+                   foaf:depiction <https://t4.ftcdn.net/jpg/01/40/46/19/160_F_140461947_tWo9D0W8QQnrhzhCXJbDHIXblMV9BTZv.jpg> ;
                    foaf:phone "" ;
                    foaf:firstName "Mirette" ;
                    foaf:title "" ;
@@ -1127,7 +1127,7 @@ sdaperson:MingQu a foaf:Person, sdatech:studentAssistant ;
                    foaf:name "Ming Qu" ;
                    foaf:nick "Ming" ;
                    foaf:mbox <mailto:ming.qu0202@gmail.com> ;
-                   foaf:depiction <http://www.clker.com/cliparts/d/L/P/X/z/i/no-image-icon-md.png> ;
+                   foaf:depiction <https://t4.ftcdn.net/jpg/01/40/46/19/160_F_140461947_tWo9D0W8QQnrhzhCXJbDHIXblMV9BTZv.jpg> ;
                    foaf:phone "" ;
                    foaf:firstName "Ming" ;
                    foaf:title "" ;
@@ -1202,6 +1202,54 @@ sdaperson:AdrianBajraktari a foaf:Person, sdatech:studentAssistant ;
                    sda:github "" ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    cv:aboutPerson "Adrian Bajraktari is a Student Assistant at the Computer Science Department III of the University of Bonn." .
+
+sdaperson:MehrdadBozorg a foaf:Person, sdatech:studentAssistant ;
+                   sda:publicationsTag "mehrdad" ;
+                   ex:address sda:Room64-1 ;
+                   foaf:familyName "Bozorg" ;
+                   foaf:name "Mehrdad Bozorg" ;
+                   foaf:nick "Mehrdad" ;
+                   foaf:mbox <> ;
+                   foaf:depiction <http://www.clker.com/cliparts/d/L/P/X/z/i/no-image-icon-md.png> ;
+                   foaf:firstName "Mehrdad" ;
+                   foaf:title "" ;
+                   foaf:status "Student Assistant" ;
+                   sda:profilepage <https://de.linkedin.com/in/mehrdad-bozorg-518585155/>;
+                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
+                   sda:group sdagroup:KnowledgeGraph ;
+                   cv:aboutPerson "Mehrdad Bozorg is a Student Assistant at the Computer Science Department III of the University of Bonn." .
+
+sdaperson:FirasKassawat a foaf:Person, sdatech:studentAssistant ;
+                  sda:publicationsTag "firas" ;
+                  ex:address sda:Room64-1 ;
+                  foaf:familyName "Firas" ;
+                  foaf:name "Firas Kassawat" ;
+                  foaf:nick "Firas" ;
+                  foaf:mbox <mailto:firas.kasa@gmail.com> ;
+                  foaf:depiction <http://www.clker.com/cliparts/d/L/P/X/z/i/no-image-icon-md.png> ;
+                  foaf:firstName "Mehdi" ;
+                  foaf:title "" ;
+                  foaf:status "Student Assistant" ;
+                  sda:profilepage <https://www.linkedin.com/in/firas-kassawat-010978a7/>;
+                  ov:businessCard <http://aksw.org/vCard/Bonn> ;
+                  sda:group sdagroup:KnowledgeGraph ;
+                  cv:aboutPerson "Firas Kassawat is a Student Assistant at the Computer Science Department III of the University of Bonn." .
+
+sdaperson:MirzaMohtashimAlam a foaf:Person, sdatech:studentAssistant ;
+                  sda:publicationsTag "mirza" ;
+                  ex:address sda:Room64-1 ;
+                  foaf:familyName "Mirza" ;
+                  foaf:name "Mirza Mohtashim Alam" ;
+                  foaf:nick "Mirza" ;
+                  foaf:mbox <mailto:turzo.mohtasim@gmail.com> ;
+                  foaf:depiction <http://www.clker.com/cliparts/d/L/P/X/z/i/no-image-icon-md.png> ;
+                  foaf:firstName "Mirza" ;
+                  foaf:title "" ;
+                  foaf:status "Student Assistant" ;
+                  sda:profilepage <https://www.linkedin.com/in/mirzamohtashim/>;
+                  ov:businessCard <http://aksw.org/vCard/Bonn> ;
+                  sda:group sdagroup:KnowledgeGraph ;
+                  cv:aboutPerson "Mirza Mohtashim Alam is a Student Assistant at the Computer Science Department III of the University of Bonn." .
 
 ##############################Interns####################################
 
@@ -1445,9 +1493,9 @@ sdagroup:SoftwareEngineeringForDataScience a aiiso:ResearchGroup, sdatech:Group 
                                 sda:miniIcon "fa fa-cogs margin-icon" ;
                                 sda:shortcut "seds" .
 
-##Knowledge Graph
+##Knowledge Graph Analysis
 sdagroup:KnowledgeGraph a aiiso:ResearchGroup, sdatech:Group ;
-                                rdfs:label "Knowledge Graph" ;
+                                rdfs:label "Knowledge Graph Analysis" ;
                                 dbo:leader sdaperson:HamedShariatYazdi ;
                                 foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
                                 foaf:currentProject sdaproject:SANSAStack ;
