@@ -122,7 +122,7 @@ sdaperson:MariaMaleshkova a foaf:Person, sdatech:seniorResearcher ;
                   foaf:familyName "Maleshkova" ;
                   foaf:name "Dr. Maria Maleshkova" ;
                   foaf:mbox <mailto:maria.maleshkova@cs.uni-bonn.de> ;
-                  foaf:depiction <https://t4.ftcdn.net/jpg/01/40/46/19/160_F_140461947_tWo9D0W8QQnrhzhCXJbDHIXblMV9BTZv.jpg> ;
+                  foaf:depiction </assets/images/people/maria_maleshkova.jpg> ;
                   foaf:phone <Tel:+49-341-123456789> ;
                   foaf:title "Dr. " ;
                   foaf:status "Assistant Professor (Akademische Rätin)" ;
