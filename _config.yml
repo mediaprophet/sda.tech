@@ -74,6 +74,7 @@ jekyll_rdf:
                 UNION { ?resourceUri a <http://example.org/publication> . }
                 UNION { ?resourceUri a <http://sda.tech/Group> . }
                 UNION { ?resourceUri a <http://sda.tech/Blog> . }
+                UNION { ?resourceUri a <http://rdfs.org/sioc/ns#Post> . }
                 UNION { ?resourceUri a <http://sda.tech/Partner> . }
                 UNION { ?resourceUri a <http://sda.tech/Course> . }
                 UNION { ?resourceUri a <http://sda.tech/Job> . }
@@ -85,11 +86,12 @@ jekyll_rdf:
     class_template_mappings:
         "http://xmlns.com/foaf/0.1/Person" : "person.html"
         "http://sda.tech/Group" : "group.html"
+        "http://rdfs.org/sioc/ns#Post" : "post.html"
         "http://xmlns.com/foaf/0.1/Project" : "project.html"
         "http://sda.tech/Partner" : "partners.html"
         "http://sda.tech/Job" : "job.html"
         "http://sda.tech/Course" : "teaching.html"
-        "http://xmlns.com/foaf/0.1/Document" : "document.html"
+        "http://xmlns.com/foaf/0.1/Document" : "page.html"
     instance_template_mappings:
         "http://sda.tech/" : "home.html"
         "http://sda.tech/group" : "groupmain.html"

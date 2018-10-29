@@ -14,10 +14,11 @@ navigationdiv: Blog
       {% include blogHeader.html active="Paper Notifications"%}
     </div>
 
-    {% capture query %} SELECT ?title ?creator ?date ?image ?content WHERE{ ?blog a sdablog:papernotifications . ?blog dct:title ?title . ?blog dct:creator ?person . ?person foaf:name ?creator . ?blog dct:created ?date . ?blog foaf:depiction ?image . ?blog sioc:content ?content .} {% endcapture %} {% assign blogposts = page.rdf | sparql_query: query %}
+    {% capture query %} SELECT ?blog ?title ?creator ?date ?image ?content WHERE{ ?blog a sdablog:papernotifications . ?blog dct:title ?title . ?blog dct:creator ?person . ?person foaf:name ?creator . ?blog dct:created ?date . ?blog foaf:depiction ?image . ?blog sioc:content ?content .} {% endcapture %} {% assign blogposts = page.rdf | sparql_query: query %}
     <div class="scrollmenu">
       {% for post in blogposts %}
-        <a href="../../blog"><img src="{{post.image}}" style="height:100px;width:200px;"><br/>
+        {% assign url= post.blog | remove: "http://sda.tech/" %}
+        <a href="../../{{url}}"><img src="{{post.image}}" style="height:100px;width:200px;"><br/>
         <div class="posttitle">{{post.title}}</div></a>
       {% endfor %}
     </div>
@@ -25,8 +26,9 @@ navigationdiv: Blog
     <br class="horizontal-separator2" />
 
     {% for post in blogposts %}
+      {% assign url= post.blog | remove: "http://sda.tech/" %}
       <div class="postentry">
-        <p><font size="5">{{post.title}}</font></p>
+        <a href="../../{{url}}" style="color: black;"><p><font size="5">{{post.title}}</font></p></a>
         <div class="postmetadata">&#128467; {{post.date}} &nbsp;&nbsp; &#x270D; {{post.creator}}</div>
         <br/>
         <p><img src="{{post.image}}" style="float:left;height:180px;width:230px;padding:30px;">{{post.content}}</p>
