@@ -3,10 +3,6 @@ rdf_prefix_path: sda.tech.pref
 layout: default
 navigationdiv: Blog
 ---
-<script>
-deactivateHeader();
-activateHeader('{{page.navigationdiv}}');
-</script>
 
 <div class="borderAll">
   <article class="post">
@@ -23,21 +19,90 @@ activateHeader('{{page.navigationdiv}}');
       {% endfor %}
     </div>
 
-    <br class="horizontal-separator2" />
+    <br class="horizontal-separator2"/>
 
+    <!-- post -->
+
+    <div class="pagination3" id="oInput">
     {% for post in blogposts %}
       {% assign url= post.blog | remove: "http://sda.tech/" %}
-      <div class="postentry">
-        <a href="../../{{url}}" style="color: black;"><p><font size="5">{{post.title}}</font></p></a>
-        <div class="postmetadata">&#128467; {{post.date}} &nbsp;&nbsp; &#x270D; {{post.creator}}</div>
-        <br/>
+      <div class="postentry" id="page{{ forloop.index }}">
+        <a href="../../{{url}}"><p style="margin-top:25px;"><font size="5">{{post.title}}</font></p></a>
+        <span style="color: #666666;"> &#128467; {{post.date}} &nbsp;&nbsp; &#x270D; {{post.creator}}</span>
+        <br/><br/>
         <p><img src="{{post.image}}" style="float:left;height:180px;width:230px;padding:30px;">{{post.content}}</p>
         <br/><hr style="text-align:center;">
       </div>
-      <hr style="width:100%;background:transparent;">
-      <br class="horizontal-separator2" />
     {% endfor %}
+    </div>
 
+    <button href="#" id="prev" class="previous"><< Previous</button>
+    <button href="#" id="next" class="next" >Next >></button>
+
+    <hr style="width:100%;background:transparent;">
     <br class="horizontal-separator2" />
   </article>
 </div>
+
+<script>
+deactivateHeader();
+activateHeader('{{page.navigationdiv}}');
+
+var page = 1;
+
+function showPage(page) {
+    $('.pagination3 .postentry:not(#page'+page+')').hide();
+    $('.pagination3 .postentry#page'+page).show();page++;
+    $('.pagination3 .postentry#page'+page).show();page++;
+    $('.pagination3 .postentry#page'+page).show();page++;
+    $('.pagination3 .postentry#page'+page).show();page++;
+    $('.pagination3 .postentry#page'+page).show();
+}
+
+function prevPage() {
+    if (page-5 <= 1) {
+      page = page - 5;
+      $('#prev').hide();
+      $('#next').show();
+    }
+    else if (page-10 <= 1) {
+      page = page - 5;
+      $('#next').show();
+    }
+    else {
+        $('#next').show();
+        page = page - 5;
+    }
+    window.scrollTo(0, 0);
+    showPage(page);
+}
+
+function nextPage() {
+    if (page+5 >= $('.pagination3 .postentry').length) {
+      page = page + 5;
+      $('#prev').show();
+    }
+    else if (page+10 >= $('.pagination3 .postentry').length) {
+        page = page + 5;
+        $('#next').hide();
+        $('#prev').show();
+      }
+    else {
+        $('#prev').show();
+        page = page + 5;
+    }
+    window.scrollTo(0, 0);
+    showPage(page);
+}
+
+$(document).ready(function() {
+    showPage(page);
+
+    $('#prev').click(prevPage);
+    $('#prev').hide();
+    $('#next').click(nextPage);
+    if ($('.pagination3 .postentry').length < 5) {
+      $('#next').hide();
+    }
+});
+</script>
