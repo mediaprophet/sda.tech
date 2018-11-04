@@ -92,7 +92,7 @@ jekyll_rdf:
         "http://sda.tech/Partner" : "partners.html"
         "http://sda.tech/Job" : "job.html"
         "http://sda.tech/Course" : "teaching.html"
-        "http://xmlns.com/foaf/0.1/Document" : "document.html"
+        "http://xmlns.com/foaf/0.1/Document" : "page.html"
     instance_template_mappings:
         "http://sda.tech/" : "home.html"
         "http://sda.tech/group" : "groupmain.html"
