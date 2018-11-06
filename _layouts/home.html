@@ -100,37 +100,35 @@ activateHeader('{{page.navigationdiv}}');
   <!-- <article class="post backgroundMain "> -->
     <!-- blogAndTweetPosts -->
     <header class="post-header">
-      <h2 class="post-title">Keep Connected with Our Posts</h2>
-    </header>
-    <br class="horizontal-separator" />
-    <div class="blogAndTweet" style="max-height: 1000px;">
-      <div class="twoCol1">
-        <!-- using the split filter -->
-        <div class="blogHead">
-          <h1>Blog Posts</h1>
-        </div>
-        <div class="blogContent">
-          {% for post in site.posts limit:5 %}
-          <div class="blogItem">
-            <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-              <small><span class="post-date">{{ post.date | date: "%B %d, %Y" }}</span></small>
-              {{ post.content | split:'<!--more-->' | first }} {% if post.content contains '<!--more-->' %}
-              <a href="{{ post.url }}">Read more</a>
-              {% endif %}
-            </li>
-          </div>
-          {% endfor %}
-        </div>
-        <div class="blogFooter">
-          <p>See More Blog Items</p>
-        </div>
-      </div>
-      <div class="twoCol2">
-        <div class='jekyll-twitter-plugin' style="max-height: 1000px; overflow-y: scroll;">
-          {% twitter https://twitter.com/sda_research maxwidth=500 align=right link-color=#0896fe %}
-        </div>
-      </div>
-    </div>
+     <h2 class="post-title">Keep Connected with Our Posts</h2>
+   </header>
+   <br class="horizontal-separator" />
+   <div class="blogAndTweet" style="max-height: 1000px;">
+     <div class="twoCol1">
+       <!-- using the split filter -->
+       <div class="blogHead">
+         <h1>Blog Posts</h1>
+       </div>
+       <div class="scroll">
+         {% capture query %} SELECT ?blog ?title ?creator ?date ?image ?content WHERE{ ?blog a sioc:Post . ?blog dct:title ?title . ?blog dct:creator ?person . ?person foaf:name ?creator . ?blog dct:created ?date . ?blog foaf:depiction ?image  . ?blog sioc:abstract ?content .} {% endcapture %} {% assign blogposts = page.rdf | sparql_query: query %}
+         {% for post in blogposts %}
+         {% assign url= post.blog | remove: "http://sda.tech/" %}
+         <div class="blogItem">
+           <h2><a href="../../{{url}}">{{ post.title }}</a></h2>
+             <small><span class="post-date">{{ post.date | date: "%B %d, %Y" }}</span></small>
+             {{ post.content }}
+             <a href="../../{{url}}">Read more</a>
+           </li>
+         </div>
+         {% endfor %}
+       </div>
+     </div>
+     <div class="twoCol2">
+       <div class='jekyll-twitter-plugin' style="max-height: 1000px; overflow-y: scroll;">
+         {% twitter https://twitter.com/sda_research maxwidth=500 align=right link-color=#0896fe %}
+       </div>
+     </div>
+   </div>
   <!-- </article> -->
   <br class="horizontal-separator" />
   <br class="horizontal-separator" />

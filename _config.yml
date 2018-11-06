@@ -16,6 +16,7 @@
 url: http://sda.tech/ # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: ""
 title: Smart Data Analytics
+temp: temp value
 titleWithAcronym: Smart Data Analytics (SDA)
 author: Institut für Informatik III
 email: jens.lehmann@cs.uni-bonn.de
