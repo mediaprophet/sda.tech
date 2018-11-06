@@ -1,5 +1,5 @@
 ---
-rdf_prefix_path: sda.tech.pref
+rdf_prefix_path: rdf-data/sda.tech.pref
 navigationdiv: About
 ---
 <!DOCTYPE html>
@@ -15,28 +15,12 @@ activateHeader('{{page.navigationdiv}}');
   <br class="horizontal-separator-fixed" />
   <br class="horizontal-separator" />
   <main class="page-content" aria-label="Content">
-    <!-- <div class="sidenav">
-      <h4>ABC</h4>
-      <h4>ABCLorem ispum loret dor emor </h4>
-      <h4>ABC</h4>
-    </div> -->
+
     <div class="wrapper">
       {{ content }}
     </div>
-    <!-- <div class="wrapper">
-      <ul>
-        {% for member in site.data.members %}
-        <li>
-          <a href="https://github.com/{{ member.github }}">
-              {{ member.name }}
-            </a>
-        </li>
-        {% endfor %}
-      </ul>
-    </div> -->
     {% include bodyFab.html %}
   </main>
-
   {% include footer.html %} {% include foot.html %}
 
   <script type="text/javascript" src="{{ "/assets/heatMapTechnologies.js" | relative_url }}"></script>

@@ -4,9 +4,7 @@
     {% assign default_paths = site.pages | map: "path" %}
     {% assign page_paths = site.header_pages | default: default_paths %}
     <a class="site-title" href="{{ "/" | relative_url }}">
-      <!-- <img src="{{site.logo}}"> -->
       <img class="sitelogo" src="{{ "/assets/sdalogo.png" | relative_url }}" >
-      <!-- {{ site.title | escape }} -->
     </a>
     {% if page_paths %}
       <nav class="site-nav">
@@ -58,9 +56,6 @@
                   {% endfor %}
               {% endfor %}
           {% endfor%}
-          <!--<a href="/search/" class="nav-search-link" title="SEARCH">
-            <span class="fa fa-search nav-search-icon"></span>
-        </a> -->
         </div>
       </nav>
     {% endif %}

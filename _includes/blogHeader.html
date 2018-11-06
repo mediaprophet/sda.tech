@@ -1,6 +1,6 @@
 {% assign count = 0 %}
 {% capture query %}
-# select all main Navigation position properties for counting
+# select all Blog Navigation position properties for counting
 SELECT ?position WHERE{
     sdatech:BlogPostNavigation ?positionProp ?resource .
     ?positionProp a rdfs:ContainerMembershipProperty .
