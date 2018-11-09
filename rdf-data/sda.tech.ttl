@@ -10470,6 +10470,42 @@ rdf:_9 a rdfs:ContainerMembershipProperty ;
 rdf:_10 a rdfs:ContainerMembershipProperty ;
       rdfs:label "10" .
 
+
+##############PUBLICATION CLASSES###############
+
+dct:BibliographicResource rdfs:subClassOf foaf:Document .
+
+bibtex:InCollection rdfs:subClassOf dct:BibliographicResource .
+
+bibtex:InProceedings rdfs:subClassOf dct:BibliographicResource .
+
+bibtex:Manual rdfs:subClassOf dct:BibliographicResource .
+
+bibtex:Publication rdfs:subClassOf dct:BibliographicResource .
+
+bibtex:Unpublished rdfs:subClassOf foaf:Document .
+
+bibo:AcademicArticle rdfs:subClassOf bibo:Article .
+
+bibo:Article rdfs:subClassOf dct:BibliographicResource .
+
+bibo:Book rdfs:subClassOf dct:BibliographicResource .
+
+bibo:Chapter rdfs:subClassOf dct:BibliographicResource .
+
+bibo:Conference rdfs:subClassOf dct:BibliographicResource .
+
+bibo:Document rdfs:subClassOf foaf:Document .
+
+bibo:Periodical rdfs:subClassOf dct:BibliographicResource .
+
+bibo:Proceedings rdfs:subClassOf dct:BibliographicResource .
+
+bibo:Report rdfs:subClassOf dct:BibliographicResource .
+
+bibo:Thesis rdfs:subClassOf dct:BibliographicResource .
+
+
 ###############################################
 ####################SDA Classes################
 ###############################################
