@@ -2575,7 +2575,7 @@ sdathesis:End-to-End-Task-Completion-dialogue-System a dct:BibliographicResource
     foaf:homepage <http://sda.tech/> ;
     sda:thesisLevel "MS,BS" ;
     dct:abstract """Dialogue systems and chatbots  (Alexa, Siri etc) are increasingly becoming part of our day to day life. Since the inception of the field, component based dialogue systems have been developed by the research community by developing separate components for 1) natural language understanding 2) dialogue management, and 3) natural language generation. This approach has its own weaknesses. Recently, focus has been shifted to build end to end dialogue system and training all the components at once. In this thesis, we aim to build an end to end task completion dialogue system. Microsoft started a challenge for task based dialogue systems which include three domains 1) movie booking 2) restaurant booking and 3) taxi ordering. Following are the expected outcomes of the masters thesis :
-End to end dialogue system built for three domains given in <a>https://github.com/xiul-msr/e2e_dialog_challenge</a>.
+End to end dialogue system built for three domains given in <a href='https://github.com/xiul-msr/e2e_dialog_challenge'>https://github.com/xiul-msr/e2e_dialog_challenge</a>.
 In depth evaluation of the approach. <br/> <b>Requirements:</b> strong programming skills (python is preferred), good knowledge of using servers via unix commands, good understanding of machine learning and deep learning state of the art models and ability to apply them, ability to learn new reinforcement learning models.<br/><b>Keywords: </b>Dialogue Systems, Chatbots, Machine Learning, Deep Learning""" .
 
 sdathesis:Complex-Factoid-Question-Answering-With-Paraphrase-Clusters a dct:BibliographicResource, bibo:Thesis, sdatech:openThesis, sdatech:masterThesis ;
@@ -2588,27 +2588,13 @@ sdathesis:Complex-Factoid-Question-Answering-With-Paraphrase-Clusters a dct:Bibl
     sda:thesisLevel "MS,BS" ;
     foaf:homepage <http://sda.tech/> ;
     sda:thesisLevel "MS,BS" ;
-    dct:abstract """Question answering has gained momentum in recent years and researchers have build several QA systems targeting various knowledge sources.  A recently released dataset  ComQA <a>(http://qa.mpi-inf.mpg.de/comqa/)</a> provides a rich source of paraphrased questions and its answers extracted from the WikiAnswers. The dataset contains questions with various challenging phenomena such as the need for temporal reasoning, comparison (e.g., comparatives, superlatives, ordinals), compositionality (multiple, possibly nested, sub questions with multiple entities), and unanswerable questions (e.g., Who was the first human being on Mars?). Through a large crowdsourcing effort, questions in ComQA are grouped into 4,834 paraphrase clusters that express the same information need. Each cluster is annotated with its answer(s). In this thesis, we aim to build an end to end QA system over this dataset which is capable to advance state of the art by proposing new approach for targeting such complex questions. Expected outcomes of masters thesis are: 1) A novel approach for complex factoid question answering systems 2) Implementation of prototype QA system 3) In depth evaluation of QA system over dataset
+    dct:abstract """Question answering has gained momentum in recent years and researchers have build several QA systems targeting various knowledge sources.  A recently released dataset  ComQA <a href='http://qa.mpi-inf.mpg.de/comqa/'>(http://qa.mpi-inf.mpg.de/comqa/)</a> provides a rich source of paraphrased questions and its answers extracted from the WikiAnswers. The dataset contains questions with various challenging phenomena such as the need for temporal reasoning, comparison (e.g., comparatives, superlatives, ordinals), compositionality (multiple, possibly nested, sub questions with multiple entities), and unanswerable questions (e.g., Who was the first human being on Mars?). Through a large crowdsourcing effort, questions in ComQA are grouped into 4,834 paraphrase clusters that express the same information need. Each cluster is annotated with its answer(s). In this thesis, we aim to build an end to end QA system over this dataset which is capable to advance state of the art by proposing new approach for targeting such complex questions. Expected outcomes of masters thesis are: <br/> 1) A novel approach for complex factoid question answering systems <br/> 2) Implementation of prototype QA system <br/> 3) In depth evaluation of QA system over dataset
     <br/> <b>Requirements: </b> strong programming skills (java/python), good understanding of machine learning, deep learning state of the art models and experience in working with them as coursework or lab work in the university.  <br/>
     <b>Keywords: </b> Question Answering, Machine Learning, Deep Learning <br/>""" .
 
-sdathesis:Predicate-Linking-in-a-Sentence-a dct:BibliographicResource, bibo:Thesis, sdatech:openThesis, sdatech:masterThesis ;
-    dct:title "Predicate Linking in a Sentence" ;
-    dct:creator sdaperson:KuldeepSingh ;
-    foaf:maker sdaperson:KuldeepSingh ;
-    dct:issued "2017-06"^^xsd:gYearMonth ;
-    dct:language "en-US" ;
-    bibo:degree biboDegree:master ;
-    sda:thesisLevel "MS,BS" ;
-    foaf:homepage <http://sda.tech/> ;
-    sda:thesisLevel "MS,BS" ;
-    dct:abstract """Entity recognition and linking in a sentence has been a long standing field. For example, in sentence “Michelle Obama is the wife of Barack Obama”, there are two entities Michelle Obama, and Barack Obama. The entity linking tools (DBpedia Spotlight, TagMe, Texrazor etc.) in perfect case link these two entities to their knowledge graph mentions in DBpedia and Wikidata. In this thesis we go one step further and link predicates of the sentence to their knowledge graph mentions. In the above example, we aim to link  “wife of” to dbo:spouse <a href='http://dbpedia.org/ontology/spouse'>(http://dbpedia.org/ontology/spouse)</a> or wikidata:spouse <a href='https://www.wikidata.org/wiki/Property:P26'>(https://www.wikidata.org/wiki/Property:P26 )</a>. For the same in the scope of the thesis, we aim to train deep learning or machine learning models to correctly recognise the relations in the text and then link them to knowledge graph. Expected outcomes of the masters thesis:
-    1)  A novel approach for linking predicates in the sentence 2) Implementation of the approach 3) In depth evaluation <br/>
-    <b>Requirements: </b> strong programming skills, good knowledge of state of the art machine and deep learning models. <br/>
-    <b>Keywords: </b> NLP, Machine Learning, Deep Learning, Predicate Linking, Entity Linking""" .
 
-    sdathesis:Triple-Generation-for-Question-Answering-Using-Hidden-Markov-Model dct:BibliographicResource, bibo:Thesis, sdatech:openThesis, sdatech:masterThesis ;
-        dct:title "Triple Generation for Question Answering Using Hidden Markov Model" ;
+    sdathesis:Predicate-Linking-in-a-Sentence a dct:BibliographicResource, bibo:Thesis, sdatech:openThesis, sdatech:masterThesis ;
+        dct:title "Predicate Linking in a Sentence" ;
         dct:creator sdaperson:KuldeepSingh ;
         foaf:maker sdaperson:KuldeepSingh ;
         dct:issued "2017-06"^^xsd:gYearMonth ;
@@ -2617,16 +2603,30 @@ sdathesis:Predicate-Linking-in-a-Sentence-a dct:BibliographicResource, bibo:Thes
         sda:thesisLevel "MS,BS" ;
         foaf:homepage <http://sda.tech/> ;
         sda:thesisLevel "MS,BS" ;
-        dct:abstract """In knowledge graph based question answering, a question in natural language is expected to be translated in its associated formal query (i.e. SPARQL) by a QA system. For the same, QA system is desired to identify entity in the question, and relation, then link it to knowledge graph mentions. Consider the question “Which river crosses Bonn?”, here entity is <a href='http://dbpedia.org/page/Bonn'>http://dbpedia.org/page/Bonn</a>, predicate is <a href='http://dbpedia.org/ontology/crosses'>http://dbpedia.org/ontology/crosses</a>, ontology class is <a href='http://dbpedia.org/ontology/River'>http://dbpedia.org/ontology/River</a>. In the scope of thesis, we aim to generate <a href='http://dbpedia.org/page/Bonn'>http://dbpedia.org/page/Bonn</a>, <a href='http://dbpedia.org/ontology/crosses'>http://dbpedia.org/ontology/crosses</a>, <a href='http://dbpedia.org/ontology/River'>http://dbpedia.org/ontology/River</a> for the given example sentance using Hidden Markov Model similar to SINA [a]. Please note that we do not aim to further build SPARQL query of it. Expected outcome of masters thesis:
-        <br/>
-        1) Reusing SINA approach, and improve proposing novel approach for the triple generation using HMM model <br/>
-        2) In depth evaluation of the approach using question answering datasets. <br/>
-        <b>Requirements: </b> good programming skills in Java or python and willingness to learn hidden markov model <br/>
-        a) Shekarpour, Saeedeh, Axel-Cyrille Ngonga Ngomo, and Sören Auer. "Question answering on interlinked data." In Proceedings of the 22nd international conference on World Wide Web, pp. 1145-1156. ACM, 2013.
-        <br/>
-        <b> Keywords: </b> Question Answering, HMM, Knowledge Graph
-        <br/>""" .
+        dct:abstract """Entity recognition and linking in a sentence has been a long standing field. For example, in sentence “Michelle Obama is the wife of Barack Obama”, there are two entities Michelle Obama, and Barack Obama. The entity linking tools (DBpedia Spotlight, TagMe, Texrazor etc.) in perfect case link these two entities to their knowledge graph mentions in DBpedia and Wikidata. In this thesis we go one step further and link predicates of the sentence to their knowledge graph mentions. In the above example, we aim to link  “wife of” to dbo:spouse <a href='http://dbpedia.org/ontology/spouse'>(http://dbpedia.org/ontology/spouse)</a> or wikidata:spouse <a href='https://www.wikidata.org/wiki/Property:P26'>(https://www.wikidata.org/wiki/Property:P26 )</a>. For the same in the scope of the thesis, we aim to train deep learning or machine learning models to correctly recognise the relations in the text and then link them to knowledge graph. Expected outcomes of the masters thesis:
+        1)  A novel approach for linking predicates in the sentence 2) Implementation of the approach 3) In depth evaluation <br/>
+        <b>Requirements: </b> strong programming skills, good knowledge of state of the art machine and deep learning models. <br/>
+        <b>Keywords: </b> NLP, Machine Learning, Deep Learning, Predicate Linking, Entity Linking""" .
 
+        sdathesis:Triple-Generation-for-Question-Answering-Using-Hidden-Markov-Model a dct:BibliographicResource, bibo:Thesis, sdatech:openThesis, sdatech:masterThesis ;
+            dct:title "Triple Generation for Question Answering Using Hidden Markov Model" ;
+            dct:creator sdaperson:KuldeepSingh ;
+            foaf:maker sdaperson:KuldeepSingh ;
+            dct:issued "2017-06"^^xsd:gYearMonth ;
+            dct:language "en-US" ;
+            bibo:degree biboDegree:master ;
+            sda:thesisLevel "MS,BS" ;
+            foaf:homepage <http://sda.tech/> ;
+            sda:thesisLevel "MS,BS" ;
+            dct:abstract """In knowledge graph based question answering, a question in natural language is expected to be translated in its associated formal query (i.e. SPARQL) by a QA system. For the same, QA system is desired to identify entity in the question, and relation, then link it to knowledge graph mentions. Consider the question “Which river crosses Bonn?”, here entity is <a href='http://dbpedia.org/page/Bonn'>http://dbpedia.org/page/Bonn</a>, predicate is <a href='http://dbpedia.org/ontology/crosses'>http://dbpedia.org/ontology/crosses</a>, ontology class is <a href='http://dbpedia.org/ontology/River'>http://dbpedia.org/ontology/River</a>. In the scope of thesis, we aim to generate <a href='http://dbpedia.org/page/Bonn'>http://dbpedia.org/page/Bonn</a>, <a href='http://dbpedia.org/ontology/crosses'>http://dbpedia.org/ontology/crosses</a>, <a href='http://dbpedia.org/ontology/River'>http://dbpedia.org/ontology/River</a> for the given example sentance using Hidden Markov Model similar to SINA [a]. Please note that we do not aim to further build SPARQL query of it. Expected outcome of masters thesis:
+            <br/>
+            1) Reusing SINA approach, and improve proposing novel approach for the triple generation using HMM model <br/>
+            2) In depth evaluation of the approach using question answering datasets. <br/>
+            <b>Requirements: </b> good programming skills in Java or python and willingness to learn hidden markov model <br/>
+            a) Shekarpour, Saeedeh, Axel-Cyrille Ngonga Ngomo, and Sören Auer. "Question answering on interlinked data." In Proceedings of the 22nd international conference on World Wide Web, pp. 1145-1156. ACM, 2013.
+            <br/>
+            <b> Keywords: </b> Question Answering, HMM, Knowledge Graph
+            <br/>""" .
 
 sdathesis:distributed-in-memory-SPARQL-processing a dct:BibliographicResource, bibo:Thesis, sdatech:openThesis, sdatech:masterThesis ;
     dct:title "Distributed in-memory SPARQL Processing" ;
