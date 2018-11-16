@@ -2564,7 +2564,7 @@ sdapartner:YellowMap a foaf:Organization, sdatech:industryPartner, sdatech:Partn
 #######################################
 
 ########################Open Thesis########################
-sdathesis:End-to-End-Task-Completion-dialogue-System a dct:BibliographicResource, bibo:Thesis, sdatech:openThesis, sdatech:masterThesis ;
+sdathesis:end-to-end-task-completion-dialogue-system a dct:BibliographicResource, bibo:Thesis, sdatech:openThesis, sdatech:masterThesis ;
     dct:title "End to End Task Completion dialogue System" ;
     dct:creator sdaperson:KuldeepSingh ;
     foaf:maker sdaperson:KuldeepSingh ;
@@ -2572,13 +2572,11 @@ sdathesis:End-to-End-Task-Completion-dialogue-System a dct:BibliographicResource
     dct:language "en-US" ;
     bibo:degree biboDegree:master ;
     sda:thesisLevel "MS,BS" ;
-    foaf:homepage <http://sda.tech/> ;
-    sda:thesisLevel "MS,BS" ;
     dct:abstract """Dialogue systems and chatbots  (Alexa, Siri etc) are increasingly becoming part of our day to day life. Since the inception of the field, component based dialogue systems have been developed by the research community by developing separate components for 1) natural language understanding 2) dialogue management, and 3) natural language generation. This approach has its own weaknesses. Recently, focus has been shifted to build end to end dialogue system and training all the components at once. In this thesis, we aim to build an end to end task completion dialogue system. Microsoft started a challenge for task based dialogue systems which include three domains 1) movie booking 2) restaurant booking and 3) taxi ordering. Following are the expected outcomes of the masters thesis :
 End to end dialogue system built for three domains given in <a href='https://github.com/xiul-msr/e2e_dialog_challenge'>https://github.com/xiul-msr/e2e_dialog_challenge</a>.
 In depth evaluation of the approach. <br/> <b>Requirements:</b> strong programming skills (python is preferred), good knowledge of using servers via unix commands, good understanding of machine learning and deep learning state of the art models and ability to apply them, ability to learn new reinforcement learning models.<br/><b>Keywords: </b>Dialogue Systems, Chatbots, Machine Learning, Deep Learning""" .
 
-sdathesis:Complex-Factoid-Question-Answering-With-Paraphrase-Clusters a dct:BibliographicResource, bibo:Thesis, sdatech:openThesis, sdatech:masterThesis ;
+sdathesis:complex-factoid-question-answering-with-paraphrase-clusters a dct:BibliographicResource, bibo:Thesis, sdatech:openThesis, sdatech:masterThesis ;
     dct:title "Complex Factoid Question Answering with Paraphrase Clusters" ;
     dct:creator sdaperson:KuldeepSingh ;
     foaf:maker sdaperson:KuldeepSingh ;
@@ -2586,14 +2584,12 @@ sdathesis:Complex-Factoid-Question-Answering-With-Paraphrase-Clusters a dct:Bibl
     dct:language "en-US" ;
     bibo:degree biboDegree:master ;
     sda:thesisLevel "MS,BS" ;
-    foaf:homepage <http://sda.tech/> ;
-    sda:thesisLevel "MS,BS" ;
     dct:abstract """Question answering has gained momentum in recent years and researchers have build several QA systems targeting various knowledge sources.  A recently released dataset  ComQA <a href='http://qa.mpi-inf.mpg.de/comqa/'>(http://qa.mpi-inf.mpg.de/comqa/)</a> provides a rich source of paraphrased questions and its answers extracted from the WikiAnswers. The dataset contains questions with various challenging phenomena such as the need for temporal reasoning, comparison (e.g., comparatives, superlatives, ordinals), compositionality (multiple, possibly nested, sub questions with multiple entities), and unanswerable questions (e.g., Who was the first human being on Mars?). Through a large crowdsourcing effort, questions in ComQA are grouped into 4,834 paraphrase clusters that express the same information need. Each cluster is annotated with its answer(s). In this thesis, we aim to build an end to end QA system over this dataset which is capable to advance state of the art by proposing new approach for targeting such complex questions. Expected outcomes of masters thesis are: <br/> 1) A novel approach for complex factoid question answering systems <br/> 2) Implementation of prototype QA system <br/> 3) In depth evaluation of QA system over dataset
     <br/> <b>Requirements: </b> strong programming skills (java/python), good understanding of machine learning, deep learning state of the art models and experience in working with them as coursework or lab work in the university.  <br/>
     <b>Keywords: </b> Question Answering, Machine Learning, Deep Learning <br/>""" .
 
 
-    sdathesis:Predicate-Linking-in-a-Sentence a dct:BibliographicResource, bibo:Thesis, sdatech:openThesis, sdatech:masterThesis ;
+sdathesis:predicate-linking-in-a-sentence a dct:BibliographicResource, bibo:Thesis, sdatech:openThesis, sdatech:masterThesis ;
         dct:title "Predicate Linking in a Sentence" ;
         dct:creator sdaperson:KuldeepSingh ;
         foaf:maker sdaperson:KuldeepSingh ;
@@ -2601,22 +2597,18 @@ sdathesis:Complex-Factoid-Question-Answering-With-Paraphrase-Clusters a dct:Bibl
         dct:language "en-US" ;
         bibo:degree biboDegree:master ;
         sda:thesisLevel "MS,BS" ;
-        foaf:homepage <http://sda.tech/> ;
-        sda:thesisLevel "MS,BS" ;
         dct:abstract """Entity recognition and linking in a sentence has been a long standing field. For example, in sentence “Michelle Obama is the wife of Barack Obama”, there are two entities Michelle Obama, and Barack Obama. The entity linking tools (DBpedia Spotlight, TagMe, Texrazor etc.) in perfect case link these two entities to their knowledge graph mentions in DBpedia and Wikidata. In this thesis we go one step further and link predicates of the sentence to their knowledge graph mentions. In the above example, we aim to link  “wife of” to dbo:spouse <a href='http://dbpedia.org/ontology/spouse'>(http://dbpedia.org/ontology/spouse)</a> or wikidata:spouse <a href='https://www.wikidata.org/wiki/Property:P26'>(https://www.wikidata.org/wiki/Property:P26 )</a>. For the same in the scope of the thesis, we aim to train deep learning or machine learning models to correctly recognise the relations in the text and then link them to knowledge graph. Expected outcomes of the masters thesis:
         1)  A novel approach for linking predicates in the sentence 2) Implementation of the approach 3) In depth evaluation <br/>
         <b>Requirements: </b> strong programming skills, good knowledge of state of the art machine and deep learning models. <br/>
         <b>Keywords: </b> NLP, Machine Learning, Deep Learning, Predicate Linking, Entity Linking""" .
 
-        sdathesis:Triple-Generation-for-Question-Answering-Using-Hidden-Markov-Model a dct:BibliographicResource, bibo:Thesis, sdatech:openThesis, sdatech:masterThesis ;
+sdathesis:triple-generation-for-question-answering-using-hidden-markov-model a dct:BibliographicResource, bibo:Thesis, sdatech:openThesis, sdatech:masterThesis ;
             dct:title "Triple Generation for Question Answering Using Hidden Markov Model" ;
             dct:creator sdaperson:KuldeepSingh ;
             foaf:maker sdaperson:KuldeepSingh ;
             dct:issued "2017-06"^^xsd:gYearMonth ;
             dct:language "en-US" ;
             bibo:degree biboDegree:master ;
-            sda:thesisLevel "MS,BS" ;
-            foaf:homepage <http://sda.tech/> ;
             sda:thesisLevel "MS,BS" ;
             dct:abstract """In knowledge graph based question answering, a question in natural language is expected to be translated in its associated formal query (i.e. SPARQL) by a QA system. For the same, QA system is desired to identify entity in the question, and relation, then link it to knowledge graph mentions. Consider the question “Which river crosses Bonn?”, here entity is <a href='http://dbpedia.org/page/Bonn'>http://dbpedia.org/page/Bonn</a>, predicate is <a href='http://dbpedia.org/ontology/crosses'>http://dbpedia.org/ontology/crosses</a>, ontology class is <a href='http://dbpedia.org/ontology/River'>http://dbpedia.org/ontology/River</a>. In the scope of thesis, we aim to generate <a href='http://dbpedia.org/page/Bonn'>http://dbpedia.org/page/Bonn</a>, <a href='http://dbpedia.org/ontology/crosses'>http://dbpedia.org/ontology/crosses</a>, <a href='http://dbpedia.org/ontology/River'>http://dbpedia.org/ontology/River</a> for the given example sentance using Hidden Markov Model similar to SINA [a]. Please note that we do not aim to further build SPARQL query of it. Expected outcome of masters thesis:
             <br/>
@@ -2627,6 +2619,63 @@ sdathesis:Complex-Factoid-Question-Answering-With-Paraphrase-Clusters a dct:Bibl
             <br/>
             <b> Keywords: </b> Question Answering, HMM, Knowledge Graph
             <br/>""" .
+
+sdathesis:towards-a-scalable-extensible-and-sustainable-dbpedia-extraction-framework a dct:BibliographicResource, bibo:Thesis, sdatech:openThesis, sdatech:masterThesis ;
+            dct:title "Towards a scalable, extensible and sustainable DBpedia Extraction Framework" ;
+            dct:creator sdaperson:MohamedNadjibMami ;
+            foaf:maker sdaperson:MohamedNadjibMami ;
+            dct:issued "2018-11"^^xsd:gYearMonth ;
+            dct:language "en-US" ;
+            bibo:degree biboDegree:master ;
+            sda:thesisLevel "MS,BS" ;
+            dct:abstract """DBpedia is a semantic extract of Wikipedia content. 
+            It feeds today hundreds of applications and research prototypes. 
+            DBpedia Extraction Framework (EF) is the software that performs the data extraction from Wikipedia. 
+            DBpedia EF consists of several Extractors, each is responsible for retrieving a specific part of a Wikipedia article/wiki. 
+            Infobox-Extractor is responsible for extracting information found inside the Infobox section. 
+            Two main steps are involved (1) mapping schema information to DBpedia ontology, and (2) transforming data to a compliant shape before ingestion (RDF generation). 
+            The current extraction framework faces two major issues: (1) strong coupling and (2) severe performance. 
+            The first issue is manifested in the mapping and transformation processes. 
+            The mapping process is based on manually-created and curated mappings expressed in a custom in-house mapping language, and the transformations are hard-coded.
+            The second issue is manifested in the long time of extraction, which can take up to several days. 
+            In order to solve the strong coupling issue, the work [1] suggests to amend the original extractor implementation so it uses RML [2] for mappings declaration and FNO [3] for transformations declaration. 
+            The evaluation of this approach proved its feasibility. 
+            However, the performance of data extraction was worse than the original implementation.
+            On the other hand, as per DBpedia EF design, the original extractor can not be replaced, any extraction features, like the ones from [1], have to be implemented as a custom sub-extractor. 
+            Certain functionalities can still only be performed by the original extractor. 
+            In light of all the above, we see clearly an empty spot to fill and see already potential solution building blocks. 
+            That is the design and implementation of a completely new DBpedia Extractor that uses scalable techniques and Big Data engines for the extraction e.g. Spark, RML for mappings declaration and FNO for transformation declarations. 
+            Such a solution would presumably solve the aforementioned two issues. 
+            As in (certain parts of) the original extractor, the suggested solution should keep a high level of generality and extensibility, so the community could also participate in the creation and curation of the framework itself. 
+            The theoretical and practical experience gained in [1] would be of a great help to implement the new proposal. 
+            For example, the student could choose to start by deploying [1].
+            <br/>
+            <b>References</b>:<br/>
+            [1] Maroy, Wouter, et al. ""Sustainable linked data generation: The case of DBpedia"" ISWC, 2017. <a href='http://jens-lehmann.org/files/2017/iswc_dbpedia_rml.pdf'>http://jens-lehmann.org/files/2017/iswc_dbpedia_rml.pdf</a><br/>
+            [2] <a href ='http://rml.io/'>http://rml.io/</a><br/>
+            [3] De Meester, Ben, et al. ""Declarative data transformations for Linked Data generation: the case of DBpedia."" European Semantic Web Conference. Springer, Cham, 2017.
+        """ .
+
+sdathesis:exploring-negative-sampling-in-knowledge-graph-embeddings a dct:BibliographicResource, bibo:Thesis, sdatech:openThesis, sdatech:masterThesis ;
+            dct:title "Exploring negative sampling in Knowledge graph embeddings" ;
+            dct:creator sdaperson:HajiraJabeen ;
+            foaf:maker sdaperson:HajiraJabeen ;
+            dct:issued "2018-11"^^xsd:gYearMonth ;
+            dct:language "en-US" ;
+            bibo:degree biboDegree:master ;
+            sda:thesisLevel "MS,BS" ;
+            dct:abstract """Knowledge graph embedding represents entities as vectors in a common vector space. The objective of this work is to extend the existing KG embedding models to include more efficient and effective negative sampling methods like in TransE, or ConvE etc and compare the performance.""" .
+
+sdathesis:use-of-ontology-information-in-knowledge-graph-embeddings a dct:BibliographicResource, bibo:Thesis, sdatech:openThesis, sdatech:masterThesis ;
+            dct:title "Use of Ontology information in Knowledge graph embeddings" ;
+            dct:creator sdaperson:HajiraJabeen ;
+            foaf:maker sdaperson:HajiraJabeen ;
+            dct:issued "2018-11"^^xsd:gYearMonth ;
+            dct:language "en-US" ;
+            bibo:degree biboDegree:master ;
+            sda:thesisLevel "MS,BS" ;
+            dct:abstract """Knowledge graph embedding represents entities as vectors in a common vector space. The objective of this work is to extend the existing KG embedding models to include schema information in the KG embedding models like in TransE, or ConvE etc and compare the performance.""" .
+
 
 sdathesis:distributed-in-memory-SPARQL-processing a dct:BibliographicResource, bibo:Thesis, sdatech:openThesis, sdatech:masterThesis ;
     dct:title "Distributed in-memory SPARQL Processing" ;
