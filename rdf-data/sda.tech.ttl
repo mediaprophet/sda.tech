@@ -120,7 +120,7 @@ sdaperson:GuenterKniesel a foaf:Person, sdatech:seniorResearcher ;
 
 sdaperson:MariaMaleshkova a foaf:Person, sdatech:seniorResearcher ;
                   sda:publicationsTag "maleshkova" ;
-                  ex:address sda:Room65-1 ;
+                  ex:address sda:Room51 ;
                   foaf:firstName "Maria" ;
                   foaf:familyName "Maleshkova" ;
                   foaf:name "Dr. Maria Maleshkova" ;
@@ -265,7 +265,7 @@ sdaperson:GezimSejdiu a foaf:Person, sdatech:phdStudent ;
                    rdfs:seeAlso <http://aksw.org/GezimSejdiu> ;
                    owl:sameAs <http://aksw.org/GezimSejdiu> ;
                    sda:publicationsTag "sejdiu" ;
-                   ex:address sda:Room52 ;
+                   ex:address sda:Room68 ;
                    foaf:familyName "Sejdiu" ;
                    foaf:name "Gezim Sejdiu" ;
                    foaf:nick "Gezim" ;
@@ -278,7 +278,7 @@ sdaperson:GezimSejdiu a foaf:Person, sdatech:phdStudent ;
                    sda:profilepage <https://www.linkedin.com/in/g%C3%ABzim-sejdiu-08b1761b/>, <https://gezimsejdiu.github.io/>, <https://twitter.com/Gezim_Sejdiu>, <https://github.com/GezimSejdiu> ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    cv:aboutPerson "Gëzim Sejdiu is a PhD Student & Research Associate at the University of Bonn. Gëzim’s research interest are in the area of Semantic Web, Big Data and Machine Learning. He is also interested in the area of distributed computing systems (Apache Spark, Apache Flink).";
-                   #sda:publication sdapublication:Publication1 ;
+                   sda:publication sdapublication:lehmann-2017-sansa-iswc, sdapublication:iermilov-2017-sansa-iswc-demo, sdapublication:sejdiu-2018-dist-lod-stats-iswc, sdapublication:sejdiu-2018-statisfy-iswc-poster ;
                    sda:group sdagroup:DistributedSemanticAnalytics ;
                    foaf:currentProject sdaproject:BigDataOcean, sdaproject:BigDataEurope, sdaproject:SANSAStack, sdaproject:Boost40 .
 
@@ -327,7 +327,7 @@ sdaperson:HarshThakkar a foaf:Person, sdatech:phdStudent ;
                    rdfs:seeAlso <http://harshthakkar.in/> ;
                    owl:sameAs <http://aksw.org/HarshThakkar> ;
                    sda:publicationsTag "thakkar" ;
-                   ex:address sda:Room52 ;
+                   ex:address sda:Room68 ;
                    foaf:familyName "Thakkar" ;
                    foaf:name "Harsh Thakkar" ;
                    foaf:nick "Harsh" ;
@@ -367,7 +367,7 @@ sdaperson:DiegoEsteves a foaf:Person, sdatech:phdStudent ;
 
 sdaperson:FathoniMusyaffa a foaf:Person, sdatech:phdStudent ;
                    sda:publicationsTag "musyaffa" ;
-                   ex:address sda:Room68 ;
+                   ex:address sda:Room37 ;
                    foaf:familyName "Musyaffa" ;
                    foaf:name "Fathoni A. Musyaffa" ;
                    foaf:nick "Fathoni" ;
