@@ -9469,6 +9469,114 @@ sdajob:studentassistant a foaf:Document ;
 
 ###################Paper Notifications#############
 
+sdablog:papers-accepted-at-jurix-2018 a sioc:Post, sdatech:Blog, sdablog:papernotifications;
+    dct:title "Papers accepted at JURIX 2018" ;
+    sioc:topic "Papers accepted at JURIX 2018" ;
+    dct:creator sdaperson:GezimSejdiu ;
+    foaf:maker sdaperson:GezimSejdiu ;
+    sioc:has_creator sdaperson:GezimSejdiu ;
+    dct:created "2018-11-19"^^xsd:date ;
+    dct:language "en-US" ;
+    foaf:depiction <http://sda.cs.uni-bonn.de/wp-content/uploads/2018/11/header-jurix-150dpi1.png> ;
+    sioc:abstract """We are very pleased to announce that our group got one paper accepted for presentation at </span><a href="http://jurix2018.ai.rug.nl/"><span style="font-weight: 400;">The 31st international conference on Legal Knowledge and Information Systems (JURIX 2018)</span></a><span style="font-weight: 400;"> conference, which will be held on December 12–14, 2018 in Groningen, The Netherland.</span>""";
+    sioc:content """We are very pleased to announce that our group got one paper accepted for presentation at </span><a href="http://jurix2018.ai.rug.nl/"><span style="font-weight: 400;">The 31st international conference on Legal Knowledge and Information Systems (JURIX 2018)</span></a><span style="font-weight: 400;"> conference, which will be held on December 12–14, 2018 in Groningen, The Netherland.</span>
+<br/>
+<span style="font-weight: 400;">JURIX organizes yearly conferences on the topic of Legal Knowledge and Information Systems. The proceedings of the conferences are published in the Frontiers of Artificial Intelligence and Applications series of IOS Press.</span>
+<br/>
+<span style="font-weight: 400;">The JURIX conference attracts a wide variety of participants, coming from the government, academia, and business. It is accompanied by workshops on topics ranging from eGovernment, legal ontologies, legal XML, alternative dispute resolution (ADR), argumentation, deontic logic, etc.</span>
+<br/>
+<span style="font-weight: 400;">Here is the accepted paper with its abstract:</span>
+<ul>
+	<li style="font-weight: 400;"><i><i><span style="font-weight: 400;">“</span></i><a href="https://www.researchgate.net/publication/328281395_A_Question_Answering_System_on_Regulatory_Documents"><b><i>A Question Answering System on Regulatory Documents</i></b></a><b><i>” </i></b><span style="font-weight: 400;">by <a href="/people/diego-collarana/">Diego Collarana</a>, Timm Heuss, <a href="/people/prof-dr-jens-lehmann/">Jens Lehmann</a>, <a href="/people/dr-ioanna-lytra/">Ioanna Lytra</a>, <a href="/people/gaurav-maheshwari/">Gaurav Maheshwari</a>, Rostislav Nedelchev, Thorsten Schmidt, <a href="/people/priyansh-trivedi/">Priyansh Trivedi</a>.</span><i><span style="font-weight: 400;">
+</span></i><strong>Abstract</strong>:<i><span style="font-weight: 400;"> In this work, we outline an approach for question answering over regulatory documents. In contrast to traditional means to access information in the domain, the proposed system attempts to deliver an accurate and precise answer to user queries. This is accomplished by a two-step approach which first selects relevant paragraphs given a question; and then compares the selected paragraph with user query to predict a span in the paragraph as the answer. We employ neural network-based solutions for each step and compare them with existing, and alternate baselines. We perform our evaluations with a gold-standard benchmark comprising over 600 questions on the MaRisk regulatory document. In our experiments, we observe that our proposed system outperforms other baselines.</span></i></i></li>
+</ul>
+<br/>
+<b>Acknowledgment</b><b>
+<br/></b><span style="font-weight: 400;">This research was partially supported by an EU H2020 grant provided for the <a href="http://wdaqua.eu/">WDAqua</a> project (GA no. 642795).</span>
+
+<hr/>
+<br/>
+<span style="font-weight: 400;">Looking forward to seeing you at the </span><a href="http://jurix2018.ai.rug.nl/"><span style="font-weight: 400;">JURIX 2018</span></a><span style="font-weight: 400;">.</span>""" .
+
+sdablog:sda-at-iswc-2018-and-a-best-demo-award a sioc:Post, sdatech:Blog, sdablog:papernotifications;
+    dct:title "SDA at ISWC 2018 and a Best Demo Award" ;
+    sioc:topic "SDA at ISWC 2018 and a Best Demo Award" ;
+    dct:creator sdaperson:GezimSejdiu ;
+    foaf:maker sdaperson:GezimSejdiu ;
+    sioc:has_creator sdaperson:GezimSejdiu ;
+    dct:created "2018-11-05"^^xsd:date ;
+    dct:language "en-US" ;
+    foaf:depiction <http://sda.cs.uni-bonn.de/wp-content/uploads/2018/08/ISWC_2018.jpg> ;
+    sioc:abstract """The </span><a href="http://swsa.semanticweb.org/content/international-semantic-web-conference-iswc"><b>International Semantic Web Conference</b></a><span style="font-weight: 400;"><a href="http://swsa.semanticweb.org/content/international-semantic-web-conference-iswc"> (ISWC)</a> is the premier international forum where Semantic Web / Linked Data researchers, practitioners, and industry specialists come together to discuss, advance, and shape the future of semantic technologies on the web, within enterprises and in the context of the public institution. </span> <span style="font-weight: 400;">We are very pleased to announce that we got </span><b>3 papers accepted at <a href="http://iswc2018.semanticweb.org/">ISWC 2018</a></b><span style="font-weight: 400;"> for presentation at the main conference. Additionally, we also had </span><b>5 Posters/Demo papers</b><span style="font-weight: 400;"> accepted.</span>""";
+    sioc:content """The </span><a href="http://swsa.semanticweb.org/content/international-semantic-web-conference-iswc"><b>International Semantic Web Conference</b></a><span style="font-weight: 400;"><a href="http://swsa.semanticweb.org/content/international-semantic-web-conference-iswc"> (ISWC)</a> is the premier international forum where Semantic Web / Linked Data researchers, practitioners, and industry specialists come together to discuss, advance, and shape the future of semantic technologies on the web, within enterprises and in the context of the public institution. </span>
+
+<span style="font-weight: 400;">We are very pleased to announce that we got </span><b>3 papers accepted at <a href="http://iswc2018.semanticweb.org/">ISWC 2018</a></b><span style="font-weight: 400;"> for presentation at the main conference. Additionally, we also had </span><b>5 Posters/Demo papers</b><span style="font-weight: 400;"> accepted.</span>
+</br>
+<span style="font-weight: 400;">Furthermore</span><span style="font-weight: 400;">, </span><span style="font-weight: 400;">we are very happy to announce that we won the </span><b>Best Demo Award</b><span style="font-weight: 400;"> for the </span><b>WebVOWLEditor</b><span style="font-weight: 400;">: “</span><a href="http://ceur-ws.org/Vol-2180/paper-75.pdf"><b>WebVOWL Editor: Device-Independent Visual Ontology Modeling</b></a><span style="font-weight: 400;">” by <a href="/people/vitalis-wiens/">Vitalis Wiens</a>, <a href="/people/dr-steffen-lohmann/">Steffen Lohmann</a>, and Sören Auer.</span>
+<blockquote class="twitter-tweet" data-lang="en">
+<p dir="ltr" lang="en">Congratulations to the authors of the best poster and demo! <a href="https://twitter.com/hashtag/iswc2018?src=hash&amp;ref_src=twsrc%5Etfw">#iswc2018</a> <a href="https://twitter.com/hashtag/iswc_conf?src=hash&amp;ref_src=twsrc%5Etfw">#iswc_conf</a> <a href="https://twitter.com/hashtag/award?src=hash&amp;ref_src=twsrc%5Etfw">#award</a> <a href="https://t.co/N2CmdXWf9F">pic.twitter.com/N2CmdXWf9F</a></p>
+— iswc2018 (@iswc2018) <a href="https://twitter.com/iswc2018/status/1050880660171157504?ref_src=twsrc%5Etfw">October 12, 2018</a></blockquote>
+<script src="https://platform.twitter.com/widgets.js" async="" charset="utf-8"></script>
+
+<span style="font-weight: 400;">Here are some further pointers in case you want to know more about WebVOWL Editor:</span>
+
+<ul>
+	<li style="font-weight: 400;"><span style="font-weight: 400;">Website:</span><a href="http://editor.visualdataweb.org/"><span style="font-weight: 400;">http://editor.visualdataweb.org/</span></a></li>
+	<li style="font-weight: 400;"><span style="font-weight: 400;">GitHub:</span> <a href="https://github.com/VisualDataWeb/WebVOWL/tree/vowl_editor"><span style="font-weight: 400;">https://github.com/VisualDataWeb/WebVOWL/tree/vowl_editor</span></a></li>
+	<li style="font-weight: 400;"><span style="font-weight: 400;">Demo: </span><a href="https://www.youtube.com/watch?v=XWXhpEr9LPY"><span style="font-weight: 400;">https://www.youtube.com/watch?v=XWXhpEr9LPY</span></a></li>
+</ul>
+
+<span style="font-weight: 400;">Among the other presentations, our colleagues presented the following presentations:</span>
+
+<ul>
+	<li style="font-weight: 400;"><b>“</b><a href="https://arxiv.org/pdf/1801.03825.pdf"><b>EARL: Joint Entity and Relation Linking for Question Answering over Knowledge Graphs</b></a><b>” </b><span style="font-weight: 400;">by </span><span style="font-weight: 400;"><a href="/people/mohnish-dubey/">Mohnish Dubey</a>, <a href="/people/debayan-banerjee/">Debayan Banerjee</a>, <a href="/people/debanjan-chaudhuri/">Debanjan Chaudhuri</a> and <a href="/people/prof-dr-jens-lehmann/">Jens Lehmann</a>
+ </span>Mohnish Dubey presented EARL: A relation &amp; entity linking for DBpedia Question Answering on LC-QuAD via Elasticsearch using fastText embeddings and LSTM. It proposed two fold approaches, using GTSP solver and connection density (3 features) classifier for adaptive re-ranking.
+<blockquote class="twitter-tweet" data-lang="en">
+<a href="https://twitter.com/MohnishDubey?ref_src=twsrc%5Etfw">@MohnishDubey</a> is presenting "EARL: Joint Entity and Relation Linking for Question Answering over Knowledge Graphs" for the Research Track at <a href="https://twitter.com/hashtag/iswc2018?src=hash&amp;ref_src=twsrc%5Etfw">#iswc2018</a> <a href="https://t.co/TCaWRGGqf9">https://t.co/TCaWRGGqf9</a> <a href="https://t.co/Csc8aOLdjZ">pic.twitter.com/Csc8aOLdjZ</a>
+
+— SDA Research (@SDA_Research) <a href="https://twitter.com/SDA_Research/status/1050086225862770688?ref_src=twsrc%5Etfw">October 10, 2018</a>
+</blockquote>
+
+<script src="https://platform.twitter.com/widgets.js" async="" charset="utf-8"></script>
+
+<span style="font-weight: 400;">GitHub:</span> <a href="https://github.com/AskNowQA/EARL"><span style="font-weight: 400;">https://github.com/AskNowQA/EARL
+</span></a><span style="font-weight: 400;">Slides: </span><span style="font-weight: 400;"><a href="https://www.slideshare.net/MohnishDubey/earl-joint-entity-and-relation-linking-for-question-answering-over-knowledge-graphs">https://www.slideshare.net/MohnishDubey/earl-joint-entity-and-relation-linking-for-question-answering-over-knowledge-graphs
+</a></span><span style="font-weight: 400;">Demo: </span><a href="https://earldemo.sda.tech/"><span style="font-weight: 400;">https://earldemo.sda.tech/</span></a></li>
+	<li><span style="font-weight: 400;">“</span><a href="http://jens-lehmann.org/files/2018/iswc_distlodstats.pdf"><b>DistLODStats: Distributed Computation of RDF Dataset Statistics</b></a><span style="font-weight: 400;">” by <a href="/people/gezim-sejdiu/">Gezim Sejdiu</a>, Ivan Ermilov, <a href="/people/prof-dr-jens-lehmann/">Jens Lehmann</a> and <a href="/people/mohamed-nadjib-mami/">Mohamed Nadjib Mami</a>
+</span>Gezim Sejdiu presented DistLODStats, a novel software component for distributed in-memory computation of RDF Datasets statistics implemented using the Spark framework. The tool is maintained and has an active community due to its integration into the larger framework, SANSA.
+<blockquote class="twitter-tweet" data-lang="en">
+<p dir="ltr" lang="en"><a href="https://twitter.com/Gezim_Sejdiu?ref_src=twsrc%5Etfw">@Gezim_Sejdiu</a> is presenting "DistLODStats: <a href="https://twitter.com/hashtag/Distributed?src=hash&amp;ref_src=twsrc%5Etfw">#Distributed</a> Computation of <a href="https://twitter.com/hashtag/RDF?src=hash&amp;ref_src=twsrc%5Etfw">#RDF</a> <a href="https://twitter.com/hashtag/Dataset?src=hash&amp;ref_src=twsrc%5Etfw">#Dataset</a> <a href="https://twitter.com/hashtag/Statistics?src=hash&amp;ref_src=twsrc%5Etfw">#Statistics</a>" for the Resources Track at <a href="https://twitter.com/hashtag/iswc2018?src=hash&amp;ref_src=twsrc%5Etfw">#iswc2018</a> <a href="https://t.co/yszIduYevG">https://t.co/yszIduYevG</a> <a href="https://t.co/wnBYHEIlx4">pic.twitter.com/wnBYHEIlx4</a></p>
+— SDA Research (@SDA_Research) <a href="https://twitter.com/SDA_Research/status/1050523487071170561?ref_src=twsrc%5Etfw">October 11, 2018</a></blockquote>
+<script src="https://platform.twitter.com/widgets.js" async="" charset="utf-8"></script>
+
+<span style="font-weight: 400;">GitHub:</span> <a href="https://github.com/SANSA-Stack/SANSA-RDF"><span style="font-weight: 400;">https://github.com/SANSA-Stack/SANSA-RDF
+ </span></a><span style="font-weight: 400;">Slides: </span><a href="https://www.slideshare.net/GezimSejdiu/distlodstats-distributed-computation-of-rdf-dataset-statistics-iswc-2018-talk"><span style="font-weight: 400;">https://www.slideshare.net/GezimSejdiu/distlodstats-distributed-computation-of-rdf-dataset-statistics-iswc-2018-talk</span></a>
+</li>
+	<li><i><span style="font-weight: 400;">“</span></i><a href="https://www.researchgate.net/publication/325381996_Synthesizing_Knowledge_Graphs_from_web_sources_with_the_MINTE_framework"><b>Synthesizing Knowledge Graphs from web sources with the MINTE+ framework</b></a><i><span style="font-weight: 400;">” by  <a href="/people/diego-collarana/">Diego Collarana</a>, <a href="/people/michael-galkin/">Mikhail Galkin</a>, <a href="/people/dr-christoph-lange/">Christoph Lange</a>, <a href="/people/dr-simon-scerri/">Simon Scerri</a>, Sören Auer and Maria-Esther Vidal
+ </span></i><i><i><span style="font-weight: 400;">Diego Collarana presented the synthesizing KG from different web sources using MINTE+, an RDF Molecule-Based Integration Framework, in three domain-specific applications.
+ </span></i></i>
+<blockquote class="twitter-tweet" data-lang="en">
+<a href="https://twitter.com/collarad?ref_src=twsrc%5Etfw">@collarad</a> is presenting "Synthesizing <a href="https://twitter.com/hashtag/Knowledge?src=hash&amp;ref_src=twsrc%5Etfw">#Knowledge</a> <a href="https://twitter.com/hashtag/Graphs?src=hash&amp;ref_src=twsrc%5Etfw">#Graphs</a> from <a href="https://twitter.com/hashtag/web?src=hash&amp;ref_src=twsrc%5Etfw">#web</a> sources with the MINTE+ framework" for the In-Use Track at <a href="https://twitter.com/hashtag/iswc2018?src=hash&amp;ref_src=twsrc%5Etfw">#iswc2018</a> <a href="https://t.co/Dl3Jddmgeu">https://t.co/Dl3Jddmgeu</a> <a href="https://t.co/fMmapEcqeK">pic.twitter.com/fMmapEcqeK</a>
+
+— SDA Research (@SDA_Research) <a href="https://twitter.com/SDA_Research/status/1050129395363409920?ref_src=twsrc%5Etfw">October 10, 2018</a>
+</blockquote>
+
+<script src="https://platform.twitter.com/widgets.js" async="" charset="utf-8"></script>
+
+<span style="font-weight: 400;">GitHub:</span> <span style="font-weight: 400;"><a href="https://github.com/RDF-Molecules/MINTE">https://github.com/RDF-Molecules/MINTE
+</a></span>Slides: <span style="font-weight: 400;"><a href="https://docs.google.com/presentation/d/1tV1tEuIMJoOhaTvlsgndi4YTk5ZoIuBfl9Bi3XbVr0c/edit?usp=sharing">https://docs.google.com/presentation/d/1tV1tEuIMJoOhaTvlsgndi4YTk5ZoIuBfl9Bi3XbVr0c/edit?usp=sharing
+</a></span>Demo: <span style="font-weight: 400;"><a href="https://youtu.be/6bNP21XSu6s">https://youtu.be/6bNP21XSu6s</a></span></li>
+</ul>
+Workshops
+<ul>
+	<li><i><b><i>Visualization and Interaction for Ontologies and Linked Data</i></b><i><span style="font-weight: 400;"> (</span></i><a href="http://voila2018.visualdataweb.org/"><i><span style="font-weight: 400;">VOILA 2018</span></i></a><i><span style="font-weight: 400;">)</span></i><i><span style="font-weight: 400;">
+</span></i><i><span style="font-weight: 400;"><a href="/people/dr-steffen-lohmann/">Steffen Lohmann</a> co-organized the International Workshop on </span></i><a href="http://voila2018.visualdataweb.org/"><i><span style="font-weight: 400;">Visualization and Interaction for Ontologies and Linked Data (VOILA 2018)</span></i></a><i><span style="font-weight: 400;"> for the third time at ISWC. Overall, more than </span></i><a href="http://voila2018.visualdataweb.org/VOILA2018_impressions_large.jpg"><i><span style="font-weight: 400;">40 researchers and practitioners</span></i></a><i><span style="font-weight: 400;"> took part in this full-day event featuring talks, discussions, and tool demonstrations, including an interactive demo session. The workshop proceedings are published as </span></i><i><span style="font-weight: 400;"><a href="http://ceur-ws.org/Vol-2187/">CEUR-WS vol. 2187.</a></span></i></i></li>
+</ul>
+<i>ISWC18 was a great venue to meet the community, create new connections, talk about current research challenges, share ideas and settle new collaborations. We look forward to the next ISWC conference.</i><i>
+</i><i>
+</br>Until then, meet us at </i><a href="http://sda.tech"><i>SDA</i></a><i>!</i>""" .
+
+
 sdablog:paperAcceptedAtWebsemantics a sioc:Post, sdatech:Blog, sdablog:papernotifications;
     dct:title "Paper accepted at the Journal of Web Semantics" ;
     sioc:topic "Paper accepted at the Journal of Web Semantics" ;
@@ -9588,7 +9696,7 @@ sdablog:papers-accepted-at-CoNLL-2018 a sioc:Post, sdablog:papernotifications ;
     sioc:topic "Paper accepted at CoNLL 2018" ;
     dct:creator sdaperson:GezimSejdiu ;
     foaf:maker sdaperson:GezimSejdiu ;
-    dct:created "2018-07-05"^^xsd:date ;
+    dct:created "2018-09-17"^^xsd:date ;
     dct:language "en-US" ;
     foaf:depiction <http://sda.cs.uni-bonn.de/wp-content/uploads/2018/09/CoNLL2018.png> ;
     sioc:abstract """We are very pleased to announce that our group got one paper accepted for presentation at <a href="http://www.conll.org/2018">The SIGNLL Conference on Computational Natural Language Learning (CoNLL 2018)</a> conference. CoNLL is a top-tier conference, yearly organized by SIGNLL (ACL’s Special Interest Group on Natural Language Learning). This year, CoNLL will be colocated with <a href="http://emnlp2018.org/">EMNLP 2018</a> and will be held on October 31 – November 1, 2018, Brussels, Belgium. <br><br>
@@ -9796,9 +9904,31 @@ sdablog:Paper-accepted-at-ICLR-2018 a sioc:Post, sdablog:papernotifications ;
 
 ###################Invited talks#############
 
+sdablog:prof-dr-khalid-saeed-visits-sda a sioc:Post, sdablog:invitedtalks ;
+        dct:title "Prof. Dr. Khalid Saeed visits SDA" ;
+        sioc:topic "Prof. Dr. Khalid Saeed visits SD" ;
+        dct:creator sdaperson:GezimSejdiu ;
+        foaf:maker sdaperson:GezimSejdiu ;
+        dct:created "2018-11-08"^^xsd:date ;
+        dct:language "en-US" ;
+        foaf:depiction <http://sda.cs.uni-bonn.de/wp-content/uploads/2018/11/saeed.png> ;
+        sioc:abstract """Prof. Dr. Khalid Saeed</span></a><span style="font-weight: 400;"> (</span><a href="https://www.researchgate.net/profile/Khalid_Saeed11"><span style="font-weight: 400;">ResearchGate</span></a><span style="font-weight: 400;">) from</span><a href="https://pb.edu.pl/en/"> <span style="font-weight: 400;">Bialystok University of Technology</span></a><span style="font-weight: 400;">, Bialystok, Poland was visiting the SDA group on October 24, 2018.</span>""";
+        sioc:content """Prof. Dr. Khalid Saeed</span></a><span style="font-weight: 400;"> (</span><a href="https://www.researchgate.net/profile/Khalid_Saeed11"><span style="font-weight: 400;">ResearchGate</span></a><span style="font-weight: 400;">) from</span><a href="https://pb.edu.pl/en/"> <span style="font-weight: 400;">Bialystok University of Technology</span></a><span style="font-weight: 400;">, Bialystok, Poland was visiting the SDA group on October 24, 2018.</span>
+<br/>
+<span style="font-weight: 400;">Khalid Saeed is a full Professor of Computer Science in the Faculty of Computer Science at</span><a href="https://pb.edu.pl/en/"> <span style="font-weight: 400;">Bialystok University of Technology</span></a><span style="font-weight: 400;"> and Faculty of Mathematics and Information Science at</span><a href="https://www.pw.edu.pl/engpw"> <span style="font-weight: 400;">Warsaw University of Technology</span></a><span style="font-weight: 400;">, Poland. He was with AGH Krakow in 2008-2014.</span>
+<br/?
+<span style="font-weight: 400;">Khalid Saeed received the BSc Degree in Electrical and Electronics Engineering from Baghdad University in 1976, the MSc and PhD Degrees from the Wroclaw University of Technology in Poland in 1978 and 1981, respectively. He was nominated by the President of Poland for the title of Professor in 2014. </span><span style="font-weight: 400;">He received his DSc Degree (Habilitation) in Computer Science from the Polish Academy of Sciences in Warsaw in 2007. He has published more than 200 publications – 23 edited books and 8 text and reference books. He supervised more than 110 MSc and 12 PhD theses. </span><span style="font-weight: 400;">He received more than 20 academic awards. </span><span style="font-weight: 400;">His areas of interest are Image Analysis and Processing, Biometrics and Computer Information Systems.</span>
+<br/>
+<a href="http://jens-lehmann.org/"><span style="font-weight: 400;">Prof. Jens Lehmann</span></a><span style="font-weight: 400;"> invited the speaker to the bi-weekly “SDA colloquium presentations”. 20-30 researchers and students from SDA attended. The goal of his visit was to exchange experience and ideas on biometrics applications in daily life, including face recognition, fingerprints, privacy and many more. Apart from presenting various use-cases where biometrics has helped scientists to get useful insights from image analysis and processing and row data, Prof. Dr. Saeed shared with our group future research problems and challenges related to this research area and gave a talk on “Biometrics in everyday life”.</span>
+<br/>
+<span style="font-weight: 400;">As part of a national BMBF funded project, Prof. Saeed (BUT) is cooperating currently with Fraunhofer IAIS in the field of cognitive engineering, and as an outcome of this visit, we expect to strengthen our research collaboration networks with WUT and BUT, mainly on combining semantic knowledge and Ubiquitous Computing and its applications; Emotion Detection and Kansei Engineering.</span>
+<br/>
+<span style="font-weight: 400;">Simultaneously, this talk was a continuous networking within EU H2020</span><a href="https://project-lambda.org/"> <span style="font-weight: 400;">LAMBDA project</span></a><span style="font-weight: 400;"> (Learning, Applying, Multiplying Big Data Analytics) and as part of this event</span><a href="http://www.pupin.rs/en/cv/valentina-janev/">, <span style="font-weight: 400;">Dr. Valentina Janev</span></a><span style="font-weight: 400;"> from the</span><a href="http://www.pupin.rs/en/about-imp/profile/"> <span style="font-weight: 400;">Institute “Mihajlo Pupin” (PUPIN)</span></a><span style="font-weight: 400;"> was attending the SDA meeting to investigate further networking with potential partners from Poland as well. Among other points, co-organizing coming conferences and writing joint-research papers have been discussed.</span>""" .
+
+
 sdablog:invited-talk-by-anastasiadimou a sioc:Post, sdablog:invitedtalks ;
         dct:title "Invited talk by Dr. Anastasia Dimou" ;
-        sioc:topic "High Quality Linked Data Generation from Heterogeneous data" ;
+        sioc:topic "Invited talk by Dr. Anastasia Dimou" ;
         dct:creator sdaperson:GezimSejdiu ;
         foaf:maker sdaperson:GezimSejdiu ;
         dct:created "2018-04-19"^^xsd:date ;
@@ -9809,7 +9939,7 @@ sdablog:invited-talk-by-anastasiadimou a sioc:Post, sdablog:invitedtalks ;
 
 sdablog:Invited-talk-by-Svitlana-Vakulenko a sioc:Post, sdablog:invitedtalks ;
         dct:title "Invited talk by Svitlana Vakulenko" ;
-        sioc:topic "Semantic Coherence for Conversational Browsing of a Knowledge Graph" ;
+        sioc:topic "Invited talk by Svitlana Vakulenko" ;
         dct:creator sdaperson:GezimSejdiu ;
         foaf:maker sdaperson:GezimSejdiu ;
         dct:created "2018-02-02"^^xsd:date ;
