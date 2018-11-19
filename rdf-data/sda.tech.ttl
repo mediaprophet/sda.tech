@@ -9475,7 +9475,7 @@ sdablog:paperAcceptedAtWebsemantics a sioc:Post, sdatech:Blog, sdablog:papernoti
     dct:creator sdaperson:GezimSejdiu ;
     foaf:maker sdaperson:GezimSejdiu ;
     sioc:has_creator sdaperson:GezimSejdiu ;
-    dct:created "17 October 2018"^^xsd:gYearMonth ;
+    dct:created "2018-10-17"^^xsd:date ;
     dct:language "en-US" ;
     foaf:depiction <http://sda.cs.uni-bonn.de/wp-content/uploads/2018/10/Jourbal_of_web_Semantics_logo.png> ;
     sioc:abstract """We are very pleased to announce that our group got a paper accepted at the <a href="http://www.websemanticsjournal.org/"><span style="font-weight: 400;">Journal of Web Semantics</span></a> <span style="font-weight: 400;">on Managing the Evolution and Preservation of the Data Web (MEPDaW) issue</span><span style="font-weight: 400;">.</span> <span style="font-weight: 400;">The Journal of Web Semantics is an interdisciplinary journal based on research and applications of various subject areas that contribute to the development of a knowledge-intensive and intelligent service Web. These areas include knowledge technologies, ontology, agents, databases and the semantic grid, obviously, disciplines like information retrieval, language technology, human-computer interaction, and knowledge discovery are of major relevance as well. All aspects of Semantic Web development are covered. The publication of large-scale experiments and their analysis is also encouraged to clearly illustrate scenarios and methods that introduce semantics into existing Web interfaces, contents, and services. The journal emphasizes the publication of papers that combine theories, methods, and experiments from different subject areas in order to deliver innovative semantic methods and applications.</span>""";
@@ -9494,7 +9494,7 @@ sdablog:Papers-accepted-at-EMNLP-2018-FEVER-Workshops a sioc:Post, sdablog:paper
        dct:creator sdaperson:GezimSejdiu ;
        foaf:maker sdaperson:GezimSejdiu ;
        sioc:has_creator sdaperson:GezimSejdiu ;
-       dct:created "4 October 2018"^^xsd:gYearMonth ;
+       dct:created "2018-10-04 "^^xsd:date ;
        dct:language "en-US" ;
        foaf:depiction <http://sda.cs.uni-bonn.de/wp-content/uploads/2018/10/emnlp_2018.jpg> ;
        sioc:abstract """We are very pleased to announce that our group got 3 workshop papers accepted for presentation at <a href="http://emnlp2018.org/"><span style="font-weight: 400;">EMNLP 2018</span></a><span style="font-weight: 400;"> conference, that will be held on 1st of November 2018, Brussels, Belgium.</span>
@@ -9527,7 +9527,7 @@ sdablog:Papers-accepted-at-EKAW-2018 a sioc:Post, sdablog:papernotifications;
         dct:creator sdaperson:GezimSejdiu ;
         foaf:maker sdaperson:GezimSejdiu ;
         sioc:has_creator sdaperson:GezimSejdiu ;
-        dct:created "21 September 2018"^^xsd:gYearMonth ;
+        dct:created "2018-09-21 "^^xsd:date ;
         dct:language "en-US" ;
         foaf:depiction <http://sda.cs.uni-bonn.de/wp-content/uploads/2018/09/ekaw_logo.png> ;
         sioc:abstract """We are very pleased to announce that our group got <b>2 papers</b><span style="font-weight: 400;"> accepted for presentation at </span><a href="https://project.inria.fr/ekaw2018/"><span style="font-weight: 400;">The 21st International Conference on Knowledge Engineering and Knowledge Management (EKAW 2018)</span></a><span style="font-weight: 400;"> conference, which will be held on 12 - 16 November 2018 in Nancy, France.</span><span style="font-weight: 400;">The 21st International Conference on Knowledge Engineering and Knowledge Management is in concern with all aspects about eliciting, acquiring, modeling and managing knowledge, and the construction of knowledge-intensive systems and services for the semantic web, knowledge management, e-business, natural language processing, intelligent information integration, and so on. The special theme of EKAW 2018 is “Knowledge and AI”. We are indeed calling for papers that describe algorithms, tools, methodologies, and applications that exploit the interplay between knowledge and Artificial Intelligence techniques, with a special emphasis on knowledge discovery. Accordingly, EKAW 2018 will put a special emphasis on the importance of Knowledge Engineering and Knowledge Management with the help of AI as well as for AI.</span>""";
@@ -9550,7 +9550,7 @@ sdablog:demo-paper-accepted-at-SIGIR-2018	 a sioc:Post, sdablog:papernotificatio
     dct:creator sdaperson:GezimSejdiu ;
     foaf:maker sdaperson:GezimSejdiu ;
     sioc:has_creator sdaperson:GezimSejdiu ;
-    dct:created "4 May 2018"^^xsd:gYearMonth ;
+    dct:created "2018-05-04"^^xsd:date ;
     dct:language "en-US" ;
     foaf:depiction <http://sda.cs.uni-bonn.de/wp-content/uploads/2018/05/logo_brown.png> ;
     sioc:abstract """<span style="font-weight: 400;">We are very pleased to announce that our group got </span><b>1 papers</b><span style="font-weight: 400;"> accepted for presentation at the demo session on </span><a href="http://sigir.org/sigir2018/"><span style="font-weight: 400;">SIGIR 2018</span></a><span style="font-weight: 400;">: The 41st International ACM SIGIR Conference on Research and Development in Information Retrieval, which will be held on Ann Arbor Michigan, U.S.A. July 8-12, 2018.</span><span style="font-weight: 400;">The annual </span><a href="http://sigir.org/"><span style="font-weight: 400;">SIGIR</span></a><span style="font-weight: 400;"> conference is the major international forum for the presentation of new research results, and the demonstration of new systems and techniques, in the broad field of information retrieval (IR). The 41st ACM SIGIR conference welcomes contributions related to any aspect of information retrieval and access, including theories and foundations, algorithms and applications, and evaluation and analysis. The conference and program chairs invite those working in areas related to IR to submit high-impact original papers for review.</span><span style="font-weight: 400;"> </span>""" ;
@@ -9567,7 +9567,7 @@ sdablog:papers-accepted-at-ICWE-2018	a sioc:Post, sdablog:papernotifications ;
     dct:creator sdaperson:GezimSejdiu ;
     foaf:maker sdaperson:GezimSejdiu ;
     sioc:has_creator sdaperson:GezimSejdiu ;
-    dct:created "23 April 2018"^^xsd:gYearMonth ;
+    dct:created "2018-04-23"^^xsd:date ;
     dct:language "en-US" ;
     foaf:depiction <http://sda.cs.uni-bonn.de/wp-content/uploads/2018/04/ICWE_logo.png> ;
     sioc:abstract """We are very pleased to announce that our group got <b>2 papers</b><span style="font-weight: 400;"> accepted for presentation at the </span><a href="http://icwe2018.webengineering.org/"><span style="font-weight: 400;">ICWE 2018</span></a><span style="font-weight: 400;"> : The 18th International Conference on Web Engineering, which will be held on CÁCERES, SPAIN. 5 - 8 JUNE, 2018. </span><span style="font-weight: 400;">The ICWE is the prime yearly international conference on the different aspects of designing, building, maintaining and using Web applications. </span><span style="font-weight: 400;">The theme for the year 2018 -- the 18th edition of the event -- is </span><b>Enhancing the Web with Advanced Engineering</b><span style="font-weight: 400;">. The conference will cover the different aspects of Web Engineering, including the design, creation, maintenance, and usage of Web applications. ICWE2018 is endorsed by the</span><a href="http://www.iswe-ev.de/"><span style="font-weight: 400;"> International Society for the Web Engineering (ISWE)</span></a><span style="font-weight: 400;"> and belongs to the ICWE conference series owned by ISWE.</span>""" ;
@@ -9588,7 +9588,7 @@ sdablog:papers-accepted-at-CoNLL-2018 a sioc:Post, sdablog:papernotifications ;
     sioc:topic "Paper accepted at CoNLL 2018" ;
     dct:creator sdaperson:GezimSejdiu ;
     foaf:maker sdaperson:GezimSejdiu ;
-    dct:created "5 July 2018"^^xsd:gYearMonth ;
+    dct:created "2018-07-05"^^xsd:date ;
     dct:language "en-US" ;
     foaf:depiction <http://sda.cs.uni-bonn.de/wp-content/uploads/2018/09/CoNLL2018.png> ;
     sioc:abstract """We are very pleased to announce that our group got one paper accepted for presentation at <a href="http://www.conll.org/2018">The SIGNLL Conference on Computational Natural Language Learning (CoNLL 2018)</a> conference. CoNLL is a top-tier conference, yearly organized by SIGNLL (ACL’s Special Interest Group on Natural Language Learning). This year, CoNLL will be colocated with <a href="http://emnlp2018.org/">EMNLP 2018</a> and will be held on October 31 – November 1, 2018, Brussels, Belgium. <br><br>
@@ -9605,7 +9605,7 @@ sdablog:Workshop-Papers-accepted-at-ICMLFAIM-2018 a sioc:Post, sdablog:papernoti
         sioc:topic "Workshop Papers accepted at ICML/FAIM 2018" ;
         dct:creator sdaperson:GezimSejdiu ;
         foaf:maker sdaperson:GezimSejdiu ;
-        dct:created "3 September 2018"^^xsd:gYearMonth ;
+        dct:created "2018-09-03"^^xsd:date ;
         dct:language "en-US" ;
         foaf:depiction <http://sda.cs.uni-bonn.de/wp-content/uploads/2018/09/ICML.jpg> ;
         sioc:abstract """We are very pleased to announce that our group got 2 workshop papers accepted for presentation at <a href="https://uclmr.github.io/nampi/"><span style="font-weight: 400;">The Federated Artificial Intelligence Meeting (FAIM) → NAMPI</span></a><span style="font-weight: 400;"> workshop co-organized with </span><a href="https://icml.cc/Conferences/2018"><span style="font-weight: 400;">ICML</span></a><span style="font-weight: 400;">, </span><a href="https://www.ijcai-18.org/"><span style="font-weight: 400;">IJCAI/ECAI</span></a><span style="font-weight: 400;">, </span><a href="http://celweb.vuse.vanderbilt.edu/aamas18/"><span style="font-weight: 400;">AAMAS</span></a><span style="font-weight: 400;">. The workshop took place in Stockholm, Sweden on the 15th of July 2018.</span>
@@ -9628,7 +9628,7 @@ sdablog:Demo-and-Poster-Papers-accepted-at-ISWC-2018	a sioc:Post, sdablog:papern
         dct:creator sdaperson:GezimSejdiu ;
         foaf:maker sdaperson:GezimSejdiu ;
         sioc:has_creator sdaperson:GezimSejdiu ;
-        dct:created "28 August 2018"^^xsd:gYearMonth ;
+        dct:created "2018-08-28"^^xsd:date ;
         dct:language "en-US" ;
         foaf:depiction <http://sda.cs.uni-bonn.de/wp-content/uploads/2018/08/ISWC_2018.jpg> ;
         sioc:abstract """We are very pleased to announce that our group got <b>4 demo/poster papers</b><span style="font-weight: 400;"> accepted for presentation at </span><a href="http://iswc2018.semanticweb.org/"><span style="font-weight: 400;">ISWC 2018</span></a><span style="font-weight: 400;"> : The 17th International Semantic Web Conference, which will be held on October 8 - 12, 2018 in Monterey, California, USA.</span>
@@ -9654,7 +9654,7 @@ sdablog:Paper-and-Poster-Papers-accepted-at-SEMANTICS-2018	a sioc:Post, sdablog:
         dct:creator sdaperson:GezimSejdiu ;
         foaf:maker sdaperson:GezimSejdiu ;
         sioc:has_creator sdaperson:GezimSejdiu ;
-        dct:created "20 August 2018"^^xsd:gYearMonth ;
+        dct:created "2018-08-20"^^xsd:date ;
         dct:language "en-US" ;
         foaf:depiction <http://sda.cs.uni-bonn.de/wp-content/uploads/2018/08/logo-semantics-18.png> ;
         sioc:abstract """We are very pleased to announce that our group got two papers and two poster papers accepted for presentation at </span><a href="https://2018.semantics.cc/conference"><span style="font-weight: 400;">SEMANTiCS 2018</span></a><span style="font-weight: 400;"> conference which will take place in Vienna, Austria on 10th - 13th of September 2018.</span><b>SEMANTiCS</b><span style="font-weight: 400;"> is an established knowledge hub where technology professionals, industry experts, researchers and decision makers can learn about new technologies, innovations and enterprise implementations in the fields of Linked Data and Semantic AI. Since 2005, the conference series has focused on semantic technologies, which are today together with other methodologies such as NLP and machine learning the core of intelligent systems. The conference highlights the benefits of standards-based approaches.</span>""";
@@ -9676,7 +9676,7 @@ sdablog:Short-Paper-accepted-at-ECML-PKDD-2018 a sioc:Post, sdablog:papernotific
         sioc:topic "Short Paper accepted at ECML/PKDD 2018" ;
         dct:creator sdaperson:GezimSejdiu ;
         foaf:maker sdaperson:GezimSejdiu ;
-        dct:created "23 July 2018"^^xsd:gYearMonth ;
+        dct:created "2018-07-23"^^xsd:date ;
         dct:language "en-US" ;
         foaf:depiction <http://sda.cs.uni-bonn.de/wp-content/uploads/2018/07/27751522_2165221146852320_8214659695459960267_n.png> ;
         sioc:abstract """We are very pleased to announce that our group got a short paper accepted for presentation at <a href="http://www.ecmlpkdd2018.org/nectar-track/"><span style="font-weight: 400;">ECML/PKDD 2018 (nectar track)</span></a><span style="font-weight: 400;"> : The European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases will take place in the Croke Park Conference Centre, Dublin, Ireland during the 10 – 14 September 2018.</span>
@@ -9694,7 +9694,7 @@ sdablog:Papers-accepted-at-ISWC-2018 a sioc:Post, sdablog:papernotifications ;
         sioc:topic "Papers accepted at ISWC 2018" ;
         dct:creator sdaperson:GezimSejdiu ;
         foaf:maker sdaperson:GezimSejdiu ;
-        dct:created "21 June 2018"^^xsd:gYearMonth ;
+        dct:created "2018-06-21"^^xsd:date ;
         dct:language "en-US" ;
         foaf:depiction <http://sda.cs.uni-bonn.de/wp-content/uploads/2018/06/ISWC_2018.jpg> ;
         sioc:abstract """<span style="font-weight: 400;">We are very pleased to announce that our group got </span><b>3 papers</b><span style="font-weight: 400;"> accepted for presentation at </span><a href="http://iswc2018.semanticweb.org/"><span style="font-weight: 400;">ISWC 2018</span></a><span style="font-weight: 400;">: The 17th International Semantic Web Conference, which will be held on October 8 - 12, 2018 in Monterey, California, USA.</span>
@@ -9716,7 +9716,7 @@ sdablog:Paper-accepted-at-GRADES-2018-workshop-at-SIGMOD-PODS a sioc:Post, sdabl
         sioc:topic "Paper accepted at GRADES 2018 workshop at SIGMOD / PODS" ;
         dct:creator sdaperson:GezimSejdiu ;
         foaf:maker sdaperson:GezimSejdiu ;
-        dct:created "15 May 2018"^^xsd:gYearMonth ;
+        dct:created "2018-05-15"^^xsd:date ;
         dct:language "en-US" ;
         foaf:depiction <http://sda.cs.uni-bonn.de/wp-content/uploads/2018/05/SIGMODPODS2018-logo.png> ;
         sioc:abstract """<span style="font-weight: 400;">We are very pleased to announce that our group got </span><b>1 paper</b><span style="font-weight: 400;"> accepted for presentation at the </span><a href="https://sites.google.com/site/gradesnda2018/"><span style="font-weight: 400;">GRADES</span></a><span style="font-weight: 400;"> workshop at </span><a href="http://sigmod2018.org/"><span style="font-weight: 400;">SIGMOS / PODS 2018</span></a><span style="font-weight: 400;">: The International ACM International Conference on Management of Data, which will be held in Houston, TX, USA, on June 10th - June 15th, 2018. </span>""";
@@ -9735,7 +9735,7 @@ sdablog:Papers-and-a-tutorial-accepted-at-ESWC-2018 a sioc:Post, sdablog:paperno
         sioc:topic "Papers and a tutorial accepted at ESWC 2018" ;
         dct:creator sdaperson:GezimSejdiu ;
         foaf:maker sdaperson:GezimSejdiu ;
-        dct:created "11 April 2018"^^xsd:gYearMonth ;
+        dct:created "2018-04-11"^^xsd:date ;
         dct:language "en-US" ;
         foaf:depiction <http://sda.cs.uni-bonn.de/wp-content/uploads/2018/04/ESWC-Logo2018c.png> ;
         sioc:abstract """<span style="font-weight: 400;">We are very pleased to announce that our group got </span><b>3 papers</b><span style="font-weight: 400;"> accepted for presentation at the </span><a href="https://2018.eswc-conferences.org/"><span style="font-weight: 400;">ESWC 2018</span></a><span style="font-weight: 400;"> : The 15th edition of </span><span style="font-weight: 400;">The Extended Semantic Web Conference</span><span style="font-weight: 400;">, which will be held on June 3-7, 2018 in Heraklion, Crete, Greece.</span><span style="font-weight: 400;">The ESWC is a major venue for discussing the latest scientific results and technology innovations around semantic technologies. Building on its past success, ESWC is seeking to broaden its focus to span other relevant related research areas in which Web semantics plays an important role. ESWC 2018 will present the latest results in research, technologies, and applications in its field. Besides the technical program organized over twelve tracks, the conference will feature a workshop and tutorial program, a dedicated track on Semantic Web challenges, system descriptions and demos, a posters exhibition and a doctoral symposium.</span>""";
@@ -9759,7 +9759,7 @@ sdablog:Paper-accepted-at-Semantic-Web-Journal a sioc:Post, sdablog:papernotific
         sioc:topic "Paper accepted at Semantic Web Journal" ;
         dct:creator sdaperson:GezimSejdiu ;
         foaf:maker sdaperson:GezimSejdiu ;
-        dct:created "9 April 2018"^^xsd:gYearMonth ;
+        dct:created "2018-04-09"^^xsd:date ;
         dct:language "en-US" ;
         foaf:depiction <http://sda.cs.uni-bonn.de/wp-content/uploads/2018/04/swj_logo.png> ;
         sioc:abstract """<span style="font-weight: 400;">We are very pleased to announce that our group got </span><b>a paper</b><span style="font-weight: 400;"> accepted at </span><a href="http://www.semantic-web-journal.net/"><span style="font-weight: 400;">Semantic Web Journal</span></a><span style="font-weight: 400;"> on the Benchmarking Linked Data 2017 issue.</span>
@@ -9779,7 +9779,7 @@ sdablog:Paper-accepted-at-ICLR-2018 a sioc:Post, sdablog:papernotifications ;
         sioc:topic "Paper accepted at ICLR 2018" ;
         dct:creator sdaperson:GezimSejdiu ;
         foaf:maker sdaperson:GezimSejdiu ;
-        dct:created "3 February 2018"^^xsd:gYearMonth ;
+        dct:created "2018-02-03"^^xsd:date ;
         dct:language "en-US" ;
         foaf:depiction <http://sda.cs.uni-bonn.de/wp-content/uploads/2018/02/ICLR.png> ;
         sioc:abstract """<span style="font-weight: 400;">We are very pleased to announce that our group in collaboration with Fraunhofer IAIS got </span><b>a paper</b><span style="font-weight: 400;"> accepted for poster presentation at </span><a href="https://iclr.cc/"><span style="font-weight: 400;">ICLR 2018</span></a><span style="font-weight: 400;"> : The Sixth International Conference on Learning Representations, which will be held on April 30 - May 03, 2018 in Vancouver Convention Center, Vancouver CANADA.</span><span style="font-weight: 400;">The Sixth edition of ICLR will offer many opportunities to present and discuss latest advances in </span><span style="font-weight: 400;">the performance of machine learning methods and deep learning. With a broad view of the field and include topics such as feature learning, metric learning, compositional modeling, structured prediction, reinforcement learning, and issues regarding large-scale learning and non-convex optimization. The range of domains to which these techniques apply is also very broad, from vision to speech recognition, text understanding, gaming, music, etc.</span>""";
@@ -9801,7 +9801,7 @@ sdablog:invited-talk-by-anastasiadimou a sioc:Post, sdablog:invitedtalks ;
         sioc:topic "High Quality Linked Data Generation from Heterogeneous data" ;
         dct:creator sdaperson:GezimSejdiu ;
         foaf:maker sdaperson:GezimSejdiu ;
-        dct:created "19 April 2018"^^xsd:gYearMonth ;
+        dct:created "2018-04-19"^^xsd:date ;
         dct:language "en-US" ;
         foaf:depiction <http://sda.cs.uni-bonn.de/wp-content/uploads/2018/04/natadimou.jpeg> ;
         sioc:abstract """On Wednesday, 21st  of March <a href="https://scholar.google.com/citations?user=FT80VEAAAAAJ&hl=en">Anastasia Dimou</a> from the <a href="http://idlab.technology/">Internet Technology & Data Science Lab</a> visited SDA and gave a talk entitled “High Quality Linked Data Generation from Heterogeneous data”<br><br>Anastasia Dimou is a Post-Doc Researcher at the <a href="http://idlab.technology/">Internet Technology & Data Science Lab</a> at <a href="https://www.ugent.be/">Gent University</a>, Belgium. Anastasia joined the IDLab research group in February 2013. Her research expertise lies in the area of the Semantic Web, Linked Data Generation and Publication, Data Quality and Integration, Knowledge Representation and Management. She has broad experience on Semantic Wikis and Classification. """;
@@ -9812,7 +9812,7 @@ sdablog:Invited-talk-by-Svitlana-Vakulenko a sioc:Post, sdablog:invitedtalks ;
         sioc:topic "Semantic Coherence for Conversational Browsing of a Knowledge Graph" ;
         dct:creator sdaperson:GezimSejdiu ;
         foaf:maker sdaperson:GezimSejdiu ;
-        dct:created "2 February 2018"^^xsd:gYearMonth ;
+        dct:created "2018-02-02"^^xsd:date ;
         dct:language "en-US" ;
         foaf:depiction <http://sda.cs.uni-bonn.de/wp-content/uploads/2018/02/Svitlana-.jpg> ;
         sioc:abstract """On Wednesday, 31 <span style="font-weight: 400;">st </span><span style="font-weight: 400;"> of January </span><a href="http://vendi12.github.io/"><span style="font-weight: 400;">Svitlana Vakulenko</span></a><span style="font-weight: 400;"> from the </span><a href="https://www.wu.ac.at/en/infobiz/"><span style="font-weight: 400;">Institute for Information Business</span></a> <span style="font-weight: 400;">visited SDA and gave a talk entitled “</span><b>Semantic Coherence for Conversational Browsing of a Knowledge Graph</b><span style="font-weight: 400;">”</span><span style="font-weight: 400;">Svitlana Vakulenko is a researcher at the </span><a href="https://www.wu.ac.at/en/infobiz/"><span style="font-weight: 400;">Institute for Information Business</span></a><span style="font-weight: 400;"> at </span><a href="https://www.wu.ac.at/en/"><span style="font-weight: 400;">WU Wien</span></a><span style="font-weight: 400;"> and a PhD student in the </span><a href="http://www.informatik.tuwien.ac.at/">""" ;
@@ -9829,7 +9829,7 @@ sdablog:a-BETTER-project-for-exploiting-big-data-in-earth-observation a sioc:Pos
         sioc:topic "A BETTER project for exploiting Big Data in Earth Observation" ;
         dct:creator sdaperson:GezimSejdiu ;
         foaf:maker sdaperson:GezimSejdiu ;
-        dct:created "5 July 2018"^^xsd:gYearMonth ;
+        dct:created "2018-07-05"^^xsd:date ;
         dct:language "en-US" ;
         foaf:depiction <http://sda.cs.uni-bonn.de/wp-content/uploads/2018/07/Data-Pipeline-Development-cycle.png> ;
         sioc:abstract """The <a href="http://sansa-stack.net/">SANSA Stack</a> is one of the earmarked big data analytics components to be employed in the BETTER data pipelines.<br><br>Big-data Earth observation Technology and Tools Enhancing Research and development is an EU-H2020 research and innovation project started in November 2017 to the end of October 2020.<br><br>The project’s main objective is to implement Big Data solutions (denominated as Data Pipelines) based on the usage of large volumes and heterogeneous Earth Observation datasets. This should help addressing key Societal Challenges, so the users can focus on the analysis of the extraction of the potential knowledge within the data and not on the processing of the data itself.""";
@@ -9841,7 +9841,7 @@ sdablog:AskNow-0.1-Released a sioc:Post, sdablog:projectannouncements ;
         sioc:topic "AskNow 0.1 Released" ;
         dct:creator sdaperson:JensLehmann ;
         foaf:maker sdaperson:JensLehmann ;
-        dct:created "12 September 2018"^^xsd:gYearMonth ;
+        dct:created "2018-09-12"^^xsd:date ;
         dct:language "en-US" ;
         foaf:depiction <https://avatars2.githubusercontent.com/u/29380235?s=200&v=4> ;
         sioc:abstract """<span style="font-weight: 400;">Dear all,</span><span style="font-weight: 400;">the Smart Data Analytics group is happy to announce AskNow 0.1 – the initial release of Question Answering Components and Tools over RDF Knowledge Graphs.<br><br></span><span style="font-weight: 400;">Website: </span><a href="http://asknow.sda.tech/"><span style="font-weight: 400;">http://asknow.sda.tech/
@@ -9877,7 +9877,7 @@ sdablog:SANSA-0.4-Released a sioc:Post, sdablog:projectannouncements ;
         sioc:topic "SANSA 0.4 (Semantic Analytics Stack) Released" ;
         dct:creator sdaperson:JensLehmann ;
         foaf:maker sdaperson:JensLehmann ;
-        dct:created "26 June 2018"^^xsd:gYearMonth ;
+        dct:created "2018-06-26"^^xsd:date ;
         dct:language "en-US" ;
         foaf:depiction <http://sansa-stack.net/wp-content/uploads/2016/04/sansa-logo-blue.png> ;
         sioc:abstract """<span style="font-weight: 400;">We are happy to announce SANSA 0.4 - the fourth release of the Scalable Semantic Analytics Stack. SANSA employs distributed computing via Apache Spark and Flink in order to allow <strong>scalable machine learning, inference and querying capabilities for large knowledge graphs</strong>.</span>
@@ -9927,7 +9927,7 @@ sdablog:SOLIDE-at-the-BMBF-Innovation-Forum-Civil-Security-2018 a sioc:Post, sda
         sioc:topic """SOLIDE at the BMBF Innovation Forum “Civil Security” 2018""" ;
         dct:creator sdaperson:GezimSejdiu ;
         foaf:maker sdaperson:GezimSejdiu ;
-        dct:created "13 July 2018"^^xsd:gYearMonth ;
+        dct:created "2018-07-13"^^xsd:date ;
         dct:language "en-US" ;
         foaf:depiction <http://sda.cs.uni-bonn.de/wp-content/uploads/2018/07/CafeMoskau_Nacht.jpg> ;
         sioc:abstract """SDA as part of SOLIDE project participated at the invitation of the Federal Ministry of Education and Research, <a href="https://www.sifo.de/de/bmbf-innovationsforum-zivile-sicherheit-2018-2290.html">the BMBF Innovation Forum “Civil Security” 2018</a> took place on 19 and 20 June 2018. The two-day conference on the framework program “Research for Civil Security” was held in the Café Moskau conference center in Berlin.<br><br>SOLIDE, as one of the funded project from BMBF has been presented during the event  in the context of the session “Mission Support – Better Situation Management through Intelligent Information Acquisition”<br><br>The SOLIDE project aims to examine a new approach for efficient access to operational data using the command mission management software TecBos Command.""";
@@ -9938,7 +9938,7 @@ sdablog:SANSA-Collaboration-with-Alethio a sioc:Post, sdablog:generalposts ;
         sioc:topic """SANSA Collaboration with Alethio""" ;
         dct:creator sdaperson:GezimSejdiu ;
         foaf:maker sdaperson:GezimSejdiu ;
-        dct:created "13 July 2018"^^xsd:gYearMonth ;
+        dct:created "2018-07-13"^^xsd:date ;
         dct:language "en-US" ;
         foaf:depiction <http://sansa-stack.net/wp-content/uploads/2016/04/sansa-logo-blue.png> ;
         sioc:abstract """The <a href="http://sansa-stack.net/community/#Contributors">SANSA team</a> is excited to announce our collaboration with <a href="https://twitter.com/AlethioEthstats"><span style="font-weight: 400;">Alethio</span></a><span style="font-weight: 400;"> (a </span><a href="https://new.consensys.net"><span style="font-weight: 400;">ConsenSys</span></a><span style="font-weight: 400;"> formation). <a href="http://sansa-stack.net/">SANSA</a> is the major distributed, <a href="https://github.com/SANSA-Stack">open source</a> solution for RDF querying, reasoning and machine learning. Alethio is building an Ethereum analytics platform that strives to provide transparency over what’s happening on the Ethereum p2p network, the transaction pool and the blockchain and provide “blockchain archeology”. Their 5 billion triple data set contains large scale blockchain transaction data modelled as RDF according to the structure of the Ethereum ontology. </span><a href="https://github.com/ConsenSys/EthOn"><span style="font-weight: 400;">EthOn - The Ethereum Ontology</span>""";
