@@ -2628,26 +2628,26 @@ sdathesis:towards-a-scalable-extensible-and-sustainable-dbpedia-extraction-frame
             dct:language "en-US" ;
             bibo:degree biboDegree:master ;
             sda:thesisLevel "MS,BS" ;
-            dct:abstract """DBpedia is a semantic extract of Wikipedia content. 
-            It feeds today hundreds of applications and research prototypes. 
-            DBpedia Extraction Framework (EF) is the software that performs the data extraction from Wikipedia. 
-            DBpedia EF consists of several Extractors, each is responsible for retrieving a specific part of a Wikipedia article/wiki. 
-            Infobox-Extractor is responsible for extracting information found inside the Infobox section. 
-            Two main steps are involved (1) mapping schema information to DBpedia ontology, and (2) transforming data to a compliant shape before ingestion (RDF generation). 
-            The current extraction framework faces two major issues: (1) strong coupling and (2) severe performance. 
-            The first issue is manifested in the mapping and transformation processes. 
+            dct:abstract """DBpedia is a semantic extract of Wikipedia content.
+            It feeds today hundreds of applications and research prototypes.
+            DBpedia Extraction Framework (EF) is the software that performs the data extraction from Wikipedia.
+            DBpedia EF consists of several Extractors, each is responsible for retrieving a specific part of a Wikipedia article/wiki.
+            Infobox-Extractor is responsible for extracting information found inside the Infobox section.
+            Two main steps are involved (1) mapping schema information to DBpedia ontology, and (2) transforming data to a compliant shape before ingestion (RDF generation).
+            The current extraction framework faces two major issues: (1) strong coupling and (2) severe performance.
+            The first issue is manifested in the mapping and transformation processes.
             The mapping process is based on manually-created and curated mappings expressed in a custom in-house mapping language, and the transformations are hard-coded.
-            The second issue is manifested in the long time of extraction, which can take up to several days. 
-            In order to solve the strong coupling issue, the work [1] suggests to amend the original extractor implementation so it uses RML [2] for mappings declaration and FNO [3] for transformations declaration. 
-            The evaluation of this approach proved its feasibility. 
+            The second issue is manifested in the long time of extraction, which can take up to several days.
+            In order to solve the strong coupling issue, the work [1] suggests to amend the original extractor implementation so it uses RML [2] for mappings declaration and FNO [3] for transformations declaration.
+            The evaluation of this approach proved its feasibility.
             However, the performance of data extraction was worse than the original implementation.
-            On the other hand, as per DBpedia EF design, the original extractor can not be replaced, any extraction features, like the ones from [1], have to be implemented as a custom sub-extractor. 
-            Certain functionalities can still only be performed by the original extractor. 
-            In light of all the above, we see clearly an empty spot to fill and see already potential solution building blocks. 
-            That is the design and implementation of a completely new DBpedia Extractor that uses scalable techniques and Big Data engines for the extraction e.g. Spark, RML for mappings declaration and FNO for transformation declarations. 
-            Such a solution would presumably solve the aforementioned two issues. 
-            As in (certain parts of) the original extractor, the suggested solution should keep a high level of generality and extensibility, so the community could also participate in the creation and curation of the framework itself. 
-            The theoretical and practical experience gained in [1] would be of a great help to implement the new proposal. 
+            On the other hand, as per DBpedia EF design, the original extractor can not be replaced, any extraction features, like the ones from [1], have to be implemented as a custom sub-extractor.
+            Certain functionalities can still only be performed by the original extractor.
+            In light of all the above, we see clearly an empty spot to fill and see already potential solution building blocks.
+            That is the design and implementation of a completely new DBpedia Extractor that uses scalable techniques and Big Data engines for the extraction e.g. Spark, RML for mappings declaration and FNO for transformation declarations.
+            Such a solution would presumably solve the aforementioned two issues.
+            As in (certain parts of) the original extractor, the suggested solution should keep a high level of generality and extensibility, so the community could also participate in the creation and curation of the framework itself.
+            The theoretical and practical experience gained in [1] would be of a great help to implement the new proposal.
             For example, the student could choose to start by deploying [1].
             <br/>
             <b>References</b>:<br/>
@@ -3152,6 +3152,7 @@ sdatech:PublicationNavigation a sdatech:SecondaryNavigation ;
 ############################Publications########################################
 ################################################################################
 
+
 sdapublication:Alexiou a bibtex:InProceedings, dct:BibliographicResource ;
         dct:title "OpenAIRE LOD services: Scholarly Communication Data as Linked Data"  ;
         dct:creator  sdaperson:GiorgosAlexiou,  sdaperson:SaharVahdati,  sdaperson:ChristophLange,  sdaperson:GeorgePapastefanatos,  sdaperson:SteffenLohmann  ;
@@ -3195,7 +3196,7 @@ sdapublication:Attard2016 a bibtex:InProceedings, dct:BibliographicResource ;
         bibo:pageEnd "2614"  ;
         dct:publisher "IEEE"  ;
         sda:bibsource "dblp computer science bibliography, http://dblp.org"  ;
-        rdfs:seeAlso "httpdblpuni-trierderecbibconfhicssAttardOA16"  ;
+        rdfs:seeAlso <http://dblp.uni-trier.de/rec/bib/conf/hicss/AttardOA16>  ;
         dct:references sdapublication:DBLPconfhicss2016  ;
         bibo:doi "101109HICSS2016326"  ;
         dct:source <https://github.com/EIS-Bonn/Papers/raw/master/2015/HICSS_Gov_Data_Value_Creation/camera_ready.pdf>  ;
@@ -3210,7 +3211,7 @@ sdapublication:Attard2015a a bibtex:InProceedings, dct:BibliographicResource ;
         dct:isPartOf "Proceedings of the ISWC 2015 Posters  Demonstrations Track co-located with the 14th International Semantic Web Conference ISWC-2015, Bethlehem, PA, USA, October 11, 2015"  ;
         bibtex:year "2015"  ;
         sda:bibsource "dblp computer science bibliography, http://dblp.org"  ;
-        rdfs:seeAlso "httpdblpuni-trierderecbibconfsemwebAttardOA15"  ;
+        rdfs:seeAlso <http://dblp.uni-trier.de/rec/bib/conf/semweb/AttardOA15>  ;
         dct:references sdapublication:DBLPconfsemweb2015p  ;
         dct:source <https://github.com/EIS-Bonn/Papers/raw/master/2015/ISWC_Demo_RDF2Any/iswcDemo.pdf>  ;
         sda:pubs "attard,orlandi,auer"  ;
@@ -3556,7 +3557,7 @@ sdapublication:r2rml_pd a bibtex:InProceedings, dct:BibliographicResource ;
         bibo:volume "1486"  ;
         bibtex:volume "1486"  ;
         sda:added-at "2015-12-22T00:00:00.000+0100"  ;
-        rdfs:seeAlso "httpswwwbibsonomyorgbibtex2c6871e01a755c64b1df4804a815d7844dblp"  ;
+        rdfs:seeAlso <https://www.bibsonomy.org/bibtex/2c6871e01a755c64b1df4804a815d7844/dblp>  ;
         dct:references sdapublication:confsemweb2015p  ;
         sda:ee "http://ceur-ws.org/Vol-1486/paper_108.pdf"  ;
         sda:interhash "2bbe4572996c626514c9ad7a1c418140"  ;
@@ -3574,7 +3575,7 @@ sdapublication:Dong2014 a bibtex:InProceedings, dct:BibliographicResource ;
         bibo:pageStart "343"  ;
         bibo:pageEnd "354"  ;
         sda:bibsource "dblp computer science bibliography, http://dblp.org"  ;
-        rdfs:seeAlso "httpdblpuni-trierderecbibconfciclingDongC14"  ;
+        rdfs:seeAlso <http://dblp.uni-trier.de/rec/bib/conf/cicling/DongC14>  ;
         dct:references sdapublication:DBLPconfcicling2014-2  ;
         bibo:doi "101007978-3-642-54903-829"  ;
         sda:timestamp "Tue, 29 Apr 2014 09:58:38 +0200"  ;
@@ -3626,7 +3627,7 @@ sdapublication:estevesMNLCD15 a bibtex:InProceedings, dct:BibliographicResource 
         bibo:volume "1486"  ;
         bibtex:volume "1486"  ;
         sda:bdsk-url-1 "http://ceur-ws.org/Vol-1486/paper_102.pdf"  ;
-        rdfs:seeAlso "httpwwwbibsonomyorgbibtex291927b04e3cd969e894a6c93fd05af57dblp"  ;
+        rdfs:seeAlso <http://www.bibsonomy.org/bibtex/291927b04e3cd969e894a6c93fd05af57/dblp>  ;
         dct:references sdapublication:confsemweb2015p  ;
         bibtex:keywords "mex esteves aksw dblp 2015 baron neto lehmann moussallem"  ;
         sda:timestamp "2015-12-24T12:18:02.000+0100"  ;
@@ -3781,7 +3782,7 @@ sdapublication:confsemwebGrauxJGL16a a bibtex:InProceedings, dct:BibliographicRe
         bibo:volume "9982"  ;
         bibtex:volume "9982"  ;
         sda:added-at "2017-05-31T22:50:41.000+0200"  ;
-        rdfs:seeAlso "httpswwwbibsonomyorgbibtex2c4837ac877542d7824ee680737970e9ecirola2000"  ;
+        rdfs:seeAlso <https://www.bibsonomy.org/bibtex/2c4837ac877542d7824ee680737970e9e/cirola2000>  ;
         dct:references sdapublication:confsemweb2016-2  ;
         sda:ee "http://dx.doi.org/10.1007/978-3-319-46547-0_9"  ;
         sda:interhash "3864f3bd4abc364f06f190dff3ce489d"  ;
@@ -3864,7 +3865,7 @@ sdapublication:confwimsKarimMVA17 a bibtex:InProceedings, dct:BibliographicResou
         bibo:pageEnd "8:12"  ;
         dct:publisher "ACM"  ;
         sda:added-at "2017-08-16T00:00:00.000+0200"  ;
-        rdfs:seeAlso "httpswwwbibsonomyorgbibtex2d5202edc4bea31e063ad5bf341cc749fdblp"  ;
+        rdfs:seeAlso <https://www.bibsonomy.org/bibtex/2d5202edc4bea31e063ad5bf341cc749f/dblp>  ;
         dct:references sdapublication:confwims2017  ;
         sda:ee "http://doi.acm.org/10.1145/3102254.3102260"  ;
         sda:interhash "2a3b140a44a8bf5c775af34054cb6c0e"  ;
@@ -4335,7 +4336,7 @@ sdapublication:Lee2013 a bibtex:InProceedings, dct:BibliographicResource ;
         bibo:pageStart "221"  ;
         bibo:pageEnd "230"  ;
         sda:bibsource "dblp computer science bibliography, http://dblp.org"  ;
-        rdfs:seeAlso "httpdblpuni-trierderecbibconfcolcomLeeMK13"  ;
+        rdfs:seeAlso <http://dblp.uni-trier.de/rec/bib/conf/colcom/LeeMK13>  ;
         dct:references sdapublication:DBLPconfcolcom2013  ;
         bibo:doi "104108icstcollaboratecom2013254064"  ;
         sda:pubs "musyaffa"  ;
@@ -4382,7 +4383,7 @@ sdapublication:Mami2016 a bibtex:InProceedings, dct:BibliographicResource ;
         bibo:pageEnd "390"  ;
         dct:publisher "Springer"  ;
         sda:bibsource "dblp computer science bibliography, http://dblp.org"  ;
-        rdfs:seeAlso "httpdblpuni-trierderecbibconfdawakMamiSAV16"  ;
+        rdfs:seeAlso <http://dblp.uni-trier.de/rec/bib/conf/dawak/MamiSAV16>  ;
         dct:references sdapublication:DBLPconfdawak2016  ;
         bibo:doi "101007978-3-319-43946-425"  ;
         dct:source <https://github.com/EIS-Bonn/Papers/raw/65f5ed535a8f7035e088653113f456837b332a09/2015/Semantifying_Big_Data/SEMANTiCS_2015_Research_Track_submission_107.pdf>  ;
@@ -4420,7 +4421,7 @@ sdapublication:Musyaffa2016 a bibtex:InProceedings, dct:BibliographicResource ;
         bibo:pageStart "672"  ;
         bibo:pageEnd "677"  ;
         sda:bibsource "dblp computer science bibliography, http://dblp.org"  ;
-        rdfs:seeAlso "httpdblpuni-trierderecbibconficwsMusyaffaHSOA16"  ;
+        rdfs:seeAlso <http://dblp.uni-trier.de/rec/bib/conf/icws/MusyaffaHSOA16>  ;
         dct:references sdapublication:DBLPconficws2016  ;
         bibo:doi "101109ICWS201693"  ;
         dct:source <https://www.researchgate.net/publication/302026629_Minimally_Invasive_Semantification_of_Light_Weight_Service_Descriptions>  ;
@@ -4467,7 +4468,7 @@ sdapublication:confeswsNgomoH16 a bibtex:InProceedings, dct:BibliographicResourc
         bibo:volume "9678"  ;
         bibtex:volume "9678"  ;
         sda:added-at "2016-05-23T00:00:00.000+0200"  ;
-        rdfs:seeAlso "httpwwwbibsonomyorgbibtex2f10ed38832e989fbcfe16c38839518bedblp"  ;
+        rdfs:seeAlso <http://www.bibsonomy.org/bibtex/2f10ed38832e989fbcfe16c38839518be/dblp>  ;
         dct:references sdapublication:confesws2016  ;
         sda:ee "http://dx.doi.org/10.1007/978-3-319-34129-3_26"  ;
         sda:interhash "3538c8f01dbbdf2f585250f24901f740"  ;
@@ -4550,7 +4551,7 @@ sdapublication:Scerri2014 a bibtex:InProceedings, dct:BibliographicResource ;
         bibo:pageEnd "124"  ;
         sda:bdsk-url-1 "http://www.lrec-conf.org/proceedings/lrec2014/summaries/1092.html"  ;
         sda:bibsource "dblp computer science bibliography, http://dblp.org"  ;
-        rdfs:seeAlso "httpdblpuni-trierderecbibconflrecScerriZDR14"  ;
+        rdfs:seeAlso <http://dblp.uni-trier.de/rec/bib/conf/lrec/ScerriZDR14>  ;
         dct:references sdapublication:DBLPconflrec2014  ;
         sda:timestamp "Thu, 20 Nov 2014 16:04:45 +0100"  ;
         dct:hasFormat <http://www.lrec-conf.org/proceedings/lrec2014/summaries/1092.html>  ;
@@ -4678,7 +4679,7 @@ sdapublication:jassa a bibtex:InProceedings, dct:BibliographicResource ;
         bibo:pageEnd "36"  ;
         sda:bdsk-url-1 "http://ceur-ws.org/Vol-1268/paper6.pdf"  ;
         sda:bibsource "dblp computer science bibliography, http://dblp.org"  ;
-        rdfs:seeAlso "httpdblpuni-trierderecbibconfsemwebStadlerWL14"  ;
+        rdfs:seeAlso <http://dblp.uni-trier.de/rec/bib/conf/semweb/StadlerWL14>  ;
         dct:references sdapublication:DBLPconfsemweb2014dev  ;
         bibtex:keywords "2014 groupaksw geoknow topicgeospatial MOLE sysrelevantForinfai sysrelevantForbis sysrelevantForgeoknow lehmann westphal stadler"  ;
         sda:timestamp "Mon, 27 Oct 2014 20:39:35 +0100"  ;
@@ -4742,7 +4743,7 @@ sdapublication:Tygel2016 a bibtex:InProceedings, dct:BibliographicResource ;
         bibo:pageEnd "286"  ;
         dct:publisher "ACM"  ;
         sda:bibsource "dblp computer science bibliography, http://dblp.org"  ;
-        rdfs:seeAlso "httpdblpuni-trierderecbibconficegovTygelAOCA16"  ;
+        rdfs:seeAlso <http://dblp.uni-trier.de/rec/bib/conf/icegov/TygelAOCA16>  ;
         dct:references sdapublication:DBLPconficegov2016  ;
         bibo:doi "10114529100192910054"  ;
         sda:pubs "attard,orlandi,auer"  ;
@@ -5317,7 +5318,7 @@ sdapublication:dbpedia_iswc a bibtex:InProceedings, dct:BibliographicResource ;
         bibo:volume "4825"  ;
         bibtex:volume "4825"  ;
         sda:bdsk-url-1 "http://dx.doi.org/10.1007/978-3-540-76298-0_52"  ;
-        rdfs:seeAlso "httpwwwbibsonomyorgbibtex267584f8869a3211f5ae708e3757c7242jens"  ;
+        rdfs:seeAlso <http://www.bibsonomy.org/bibtex/267584f8869a3211f5ae708e3757c7242/jens>  ;
         sda:date-modified "2012-12-02 17:24:20 +0000"  ;
         sda:description "publications Jens Lehmann"  ;
         bibo:doi "doi101007978-3-540-76298-052"  ;
@@ -5377,7 +5378,7 @@ sdapublication:triplify_www a bibtex:InProceedings, dct:BibliographicResource ;
         sda:bdsk-url-2 "http://dx.doi.org/10.1145/1526709.1526793"  ;
         sda:bibdate "2009-05-05"  ;
         sda:bibsource "DBLP, http://dblp.uni-trier.de/db/conf/www/www2009.html#AuerDLHA09"  ;
-        rdfs:seeAlso "httpwwwbibsonomyorgbibtex2154a270c13c0f525a2f1ce82bb8aad32jens"  ;
+        rdfs:seeAlso <http://www.bibsonomy.org/bibtex/2154a270c13c0f525a2f1ce82bb8aad32/jens>  ;
         sda:date-modified "2012-12-02 12:30:19 +0000"  ;
         sda:description "publications Jens Lehmann"  ;
         bibo:doi "doi10114515267091526793"  ;
@@ -5400,7 +5401,7 @@ sdapublication:ontowiki_www a bibtex:InProceedings, dct:BibliographicResource ;
         sda:bdsk-url-1 "http://ceur-ws.org/Vol-273/paper_91.pdf"  ;
         sda:bibdate "2008-05-30"  ;
         sda:bibsource "DBLP, http://dblp.uni-trier.de/db/conf/www/ckc2007.html#AuerDLR07"  ;
-        rdfs:seeAlso "httpwwwbibsonomyorgbibtex2e646431fba0e629258b74292ab8fcffdjens"  ;
+        rdfs:seeAlso <http://www.bibsonomy.org/bibtex/2e646431fba0e629258b74292ab8fcffd/jens>  ;
         sda:description "publications Jens Lehmann"  ;
         bibtex:keywords "2007 groupaksw auer tramp lehmann riechert ontowiki sysrelevantForinfai sysrelevantForbis seebiprojectOntoWiki"  ;
         dct:hasFormat <http://ceur-ws.org/Vol-273/paper_91.pdf>  ;
@@ -5437,7 +5438,7 @@ sdapublication:Auer2006c a bibtex:InProceedings, dct:BibliographicResource ;
         bibo:volume "4273"  ;
         bibtex:volume "4273"  ;
         sda:bdsk-url-1 "http://dx.doi.org/10.1007/11926078_53"  ;
-        rdfs:seeAlso "httpwwwbibsonomyorgbibtex2adebb2cc068861ce489c3248f1a38a62aksw"  ;
+        rdfs:seeAlso <http://www.bibsonomy.org/bibtex/2adebb2cc068861ce489c3248f1a38a62/aksw>  ;
         bibo:doi "httpdxdoiorg1010071192607853"  ;
         dct:source <auer-s-2006-736-a.pdf:auer-s-2006-736-a.pdf:PDF>  ;
         sda:isbn "3-540-49029-9"  ;
@@ -5546,7 +5547,7 @@ sdapublication:Auer2012 a bibtex:InProceedings, dct:BibliographicResource ;
         sda:month_numeric "5"  ;
         dct:modified "Auer2012"  .
 
-sdapublication:auer2006aa a bibtex:InProceedings, dct:BibliographicResource ;
+sdapublication:auer-?-2006--a a bibtex:InProceedings, dct:BibliographicResource ;
         dct:title "A Versioning and Evolution Framework for RDF Knowledge Bases"  ;
         dct:creator  sdaperson:SorenAuer,  sdaperson:HeinrichHerre  ;
         dct:isPartOf "Proceedings of at Sixth International Andrei Ershov Memorial Conference - Perspectives of System Informatics PSI06, 27-30 June, Novosibirsk, Akademgorodok, Russia"  ;
@@ -5591,7 +5592,7 @@ sdapublication:Auer2008e a bibtex:InCollection, dct:BibliographicResource ;
         sda:month_numeric "4"  ;
         dct:modified "Auer2008e"  .
 
-sdapublication:auer2008aa a bibtex:InCollection, dct:BibliographicResource ;
+sdapublication:auer-?-2008--a a bibtex:InCollection, dct:BibliographicResource ;
         dct:title "Enabling Social Semantic Collaboration---bridging the gap between Web 2.0 and the Semantic Web"  ;
         dct:creator  sdaperson:SorenAuer,  sdaperson:ZacharyIves  ;
         dct:isPartOf "Emerging Technologies for Semantic Work Environments Techniques, Methods, and Applications"  ;
@@ -5606,7 +5607,7 @@ sdapublication:auer2008aa a bibtex:InCollection, dct:BibliographicResource ;
         sda:month_numeric "4"  ;
         dct:modified "auer-?-2008--a"  .
 
-sdapublication:auer2007-- a bibtex:InProceedings, dct:BibliographicResource ;
+sdapublication:auer-?-2007-- a bibtex:InProceedings, dct:BibliographicResource ;
         dct:title "Semantic Wiki Representations for Building an Enterprise Knowledge Base"  ;
         dct:creator  sdaperson:SorenAuer,  sdaperson:BeritJungmann,  sdaperson:FrankSchonefeld  ;
         dct:isPartOf "Reasoning Web, Third International Summer School 2007, Dresden, Germany, September 3-7, Tutorial Lectures"  ;
@@ -5633,7 +5634,7 @@ sdapublication:Auer2013b a bibo:AcademicArticle, dct:BibliographicResource ;
         bibo:volume "8"  ;
         bibtex:volume "8"  ;
         sda:bdsk-url-1 "https://online-journals.org/index.php/i-jet/article/viewArticle/2539"  ;
-        rdfs:seeAlso "httpwwwbibsonomyorgbibtex2e8110b450991adf9472338b95883598falikhalili"  ;
+        rdfs:seeAlso <http://www.bibsonomy.org/bibtex/2e8110b450991adf9472338b95883598f/alikhalili>  ;
         bibtex:keywords "2013 groupaksw ijet auer tarasowa slidewiki khalili sysrelevantForinfai sysrelevantForbis sysrelevantForlod2 lod2page peer-reviewed"  ;
         sda:timestamp "2013-04-13T08:55:23.000+0200"  ;
         dct:hasFormat <https://online-journals.org/index.php/i-jet/article/viewArticle/2539>  ;
@@ -5676,7 +5677,7 @@ sdapublication:dbpedia_eswc a bibtex:InProceedings, dct:BibliographicResource ;
         bibo:volume "4519"  ;
         bibtex:volume "4519"  ;
         sda:bdsk-url-1 "http://jens-lehmann.org/files/2007/wiki_extraction.pdf"  ;
-        rdfs:seeAlso "httpwwwbibsonomyorgbibtex28ddb3c68b29707dc830b9a0cd0fa6083jens"  ;
+        rdfs:seeAlso <http://www.bibsonomy.org/bibtex/28ddb3c68b29707dc830b9a0cd0fa6083/jens>  ;
         sda:date-modified "2012-12-02 13:06:40 +0000"  ;
         sda:description "publications Jens Lehmann"  ;
         sda:isbn "978-3-540-72666-1"  ;
@@ -5698,7 +5699,7 @@ sdapublication:ssw_beitrag a bibtex:InCollection, dct:BibliographicResource ;
         sda:bdsk-url-1 "http://dx.doi.org/10.1007/978-3-540-72216-8_14"  ;
         sda:bibdate "2008-11-09"  ;
         sda:bibsource "DBLP, http://dblp.uni-trier.de/db/series/xmedia/social2009.html#AuerLB09"  ;
-        rdfs:seeAlso "httpwwwbibsonomyorgbibtex24f35f63cdf457b91aaa9f720a0b2d072jens"  ;
+        rdfs:seeAlso <http://www.bibsonomy.org/bibtex/24f35f63cdf457b91aaa9f720a0b2d072/jens>  ;
         sda:date-modified "2012-12-02 12:59:26 +0000"  ;
         sda:description "publications Jens Lehmann"  ;
         sda:isbn "978-3-540-72215-1"  ;
@@ -5713,7 +5714,7 @@ sdapublication:linkedgeodata a bibtex:InProceedings, dct:BibliographicResource ;
         bibtex:year "2009"  ;
         sda:bdsk-url-1 "http://www.informatik.uni-leipzig.de/~auer/publication/linkedgeodata.pdf"  ;
         sda:bdsk-url-2 "http://dx.doi.org/10.1007/978-3-642-04930-9_46"  ;
-        rdfs:seeAlso "httpwwwbibsonomyorgbibtex2d7b66f26a99547a3c117570aca80e4a0jens"  ;
+        rdfs:seeAlso <http://www.bibsonomy.org/bibtex/2d7b66f26a99547a3c117570aca80e4a0/jens>  ;
         sda:date-modified "2012-12-02 13:01:44 +0000"  ;
         sda:description "publications Jens Lehmann"  ;
         bibo:doi "doi101007978-3-642-04930-946"  ;
@@ -6074,7 +6075,7 @@ sdapublication:bin-2017-sake a bibtex:InProceedings, dct:BibliographicResource ;
         dct:isPartOf "IEEE Big Data Conference 2017"  ;
         bibtex:year "2017"  ;
         sda:added-at "2017-11-17T14:26:26.000+0100"  ;
-        rdfs:seeAlso "httpswwwbibsonomyorgbibtex224f107297aa2a27c82b875e63c9b9055aksw"  ;
+        rdfs:seeAlso <https://www.bibsonomy.org/bibtex/224f107297aa2a27c82b875e63c9b9055/aksw>  ;
         sda:interhash "8ff7e69474050557c9f872c41433cc04"  ;
         sda:intrahash "24f107297aa2a27c82b875e63c9b9055"  ;
         bibtex:keywords "2017 bin groupaksw lehmann mole ngonga sake westphal"  ;
@@ -6295,7 +6296,7 @@ sdapublication:Caires2007 a bibtex:InProceedings, dct:BibliographicResource ;
         dct:creator  sdaperson:MilenaCaires,  sdaperson:SimonScerri,  sdaperson:SiegfriedHandschuh,  sdaperson:MichaelSintek,  sdaperson:LudgervanElst  ;
         dct:isPartOf "Proceedings of the 10th International Protege Conference"  ;
         bibtex:year "2007"  ;
-        rdfs:seeAlso "httpwwwbibsonomyorgbibtex274308f658c53b739af00964b789caa2csiggi"  ;
+        rdfs:seeAlso <http://www.bibsonomy.org/bibtex/274308f658c53b739af00964b789caa2c/siggi>  ;
         sda:interhash "28fdcf47c10c4fca39bbf9fee68164b4"  ;
         sda:intrahash "74308f658c53b739af00964b789caa2c"  ;
         bibtex:keywords "2007 NRL conference mypub nepomuk protege smilegroup"  ;
@@ -6596,7 +6597,7 @@ sdapublication:Cohen2003 a bibtex:InProceedings, dct:BibliographicResource ;
         bibtex:month "aug"  ;
         bibo:pageStart "73"  ;
         bibo:pageEnd "78"  ;
-        rdfs:seeAlso "httpwwwbibsonomyorgbibtex23bb9c395b0e75b41b95947ca73b897f8lillejul"  ;
+        rdfs:seeAlso <http://www.bibsonomy.org/bibtex/23bb9c395b0e75b41b95947ca73b897f8/lillejul>  ;
         sda:timestamp "2009-03-12T15:42:50.000+0100"  ;
         sda:month_numeric "8"  ;
         dct:modified "Cohen2003"  .
@@ -6630,7 +6631,7 @@ sdapublication:iguana2017 a bibtex:InProceedings, dct:BibliographicResource ;
         bibtex:year "2017"  ;
         sda:added-at "2017-08-31T16:24:38.000+0200"  ;
         sda:bdsk-url-1 "https://svn.aksw.org/papers/2017/ISWC_Iguana/public.pdf"  ;
-        rdfs:seeAlso "httpswwwbibsonomyorgbibtex2ce7ad6992a774250addf110553fde64aaksw"  ;
+        rdfs:seeAlso <https://www.bibsonomy.org/bibtex/2ce7ad6992a774250addf110553fde64a/aksw>  ;
         sda:interhash "c639fbec7d6069b3d7ab82ddb75dcc28"  ;
         sda:intrahash "ce7ad6992a774250addf110553fde64a"  ;
         bibtex:keywords "groupaksw jens-lehmann lehmann mole ngonga saleem simba"  ;
@@ -6644,7 +6645,7 @@ sdapublication:conrads-2017-iguana-demo a bibtex:InProceedings, dct:Bibliographi
         dct:isPartOf "Proceedings of 16th International Semantic Web Conference - Poster  Demos"  ;
         bibtex:year "2017"  ;
         sda:added-at "2017-08-31T16:24:38.000+0200"  ;
-        rdfs:seeAlso "httpswwwbibsonomyorgbibtex28b70350e9bacc3ea4e792ee5f7192057aksw"  ;
+        rdfs:seeAlso <https://www.bibsonomy.org/bibtex/28b70350e9bacc3ea4e792ee5f7192057/aksw>  ;
         sda:interhash "c2033f81289fdcb2a676c3891677d2ea"  ;
         sda:intrahash "8b70350e9bacc3ea4e792ee5f7192057"  ;
         bibtex:keywords "2017 groupaksw iermilov lehmann mole ngonga"  ;
@@ -6969,7 +6970,7 @@ sdapublication:dietzold-s-2005--d a bibtex:InProceedings, dct:BibliographicResou
         bibtex:volume "135"  ;
         dct:abstract "Lightweight Directory Access Protocol LDAP has gained importance as a database technology for the storage and retrieval of information on network and human resources This paper describes a method to create RDF models from a directory information tree or an LDAP search query by mapping LDAP schema information into OWL ontologies and LDAP objects into RDF instance triples Furthermore, it reports on an implementation of this method based on the RDF API for PHP"  ;
         sda:bdsk-url-1 "http://ceur-ws.org/Vol-135/"  ;
-        rdfs:seeAlso "httpwwwbibsonomyorgbibtex2ceb80fbff902e38009c41adea866c6d6aksw"  ;
+        rdfs:seeAlso <http://www.bibsonomy.org/bibtex/2ceb80fbff902e38009c41adea866c6d6/aksw>  ;
         bibtex:keywords "2005 tramp semanticldap eventsfsw sysrelevantForinfai sysrelevantForbis seebiprojectSemanticLDAP"  ;
         sda:owner "seebi"  ;
         sda:timestamp "2009.11.04"  ;
@@ -7023,7 +7024,7 @@ sdapublication:dietzold-s-2006--b a bibtex:InProceedings, dct:BibliographicResou
         bibo:volume "183"  ;
         bibtex:volume "183"  ;
         sda:bdsk-url-1 "http://sunsite.informatik.rwth-aachen.de/Publications/CEUR-WS/Vol-181/paper3.pdf"  ;
-        rdfs:seeAlso "httpwwwbibsonomyorgbibtex2c6c235c2ee1b79b8a4d432ef894ca823aksw"  ;
+        rdfs:seeAlso <http://www.bibsonomy.org/bibtex/2c6c235c2ee1b79b8a4d432ef894ca823/aksw>  ;
         dct:source <dietzold-s-2006--b.pdf:dietzold-s-2006--b.pdf:PDF>  ;
         bibtex:keywords "2006 groupaksw auer tramp eventsfsw sysrelevantForinfai sysrelevantForbis ontowiki seebiprojectOntoWiki"  ;
         sda:owner "seebi"  ;
@@ -7044,7 +7045,7 @@ sdapublication:dietzold-s-2007-290-a a bibtex:InProceedings, dct:BibliographicRe
         bibo:pageEnd "296"  ;
         dct:publisher "Journal of Univeral Computer Science"  ;
         sda:bdsk-url-1 "http://www.i-know.tugraz.at/content/download/843/3534/file/Dietzold.pdf"  ;
-        rdfs:seeAlso "httpwwwbibsonomyorgbibtex20fec61341781bb6e9c3e6f4a9cc7a2e1aksw"  ;
+        rdfs:seeAlso <http://www.bibsonomy.org/bibtex/20fec61341781bb6e9c3e6f4a9cc7a2e1/aksw>  ;
         dct:source <dietzold-s-2007-290-a.pdf:dietzold-s-2007-290-a.pdf:PDF>  ;
         bibtex:keywords "2007 groupaksw auer tramp semanticldap eventi-semantics sysrelevantForinfai sysrelevantForbis ontowiki seebiprojectSemanticLDAP"  ;
         sda:owner "seebi"  ;
@@ -7075,7 +7076,7 @@ sdapublication:dietzold-s-2006--c a bibtex:InProceedings, dct:BibliographicResou
         dct:isPartOf "Proceedings of the INFORMATIK 2006 Workshop Bildung von Sozialen Netzwerken in Anwendungen der Social Software"  ;
         bibtex:year "2006"  ;
         sda:bdsk-url-1 "http://www.informatik.uni-leipzig.de/~auer/publication/WissensarbeitMitOntoWiki.pdf"  ;
-        rdfs:seeAlso "httpwwwbibsonomyorgbibtex2a83ad6a1a4df24fae621f61185e4f299aksw"  ;
+        rdfs:seeAlso <http://www.bibsonomy.org/bibtex/2a83ad6a1a4df24fae621f61185e4f299/aksw>  ;
         bibtex:keywords "languagedeutsch 2006 groupaksw auer tramp ontowiki riechert eventgi sysrelevantForinfai sysrelevantForbis seebiprojectOntoWiki"  ;
         sda:owner "seebi"  ;
         sda:timestamp "2006.07.21"  ;
@@ -7132,7 +7133,7 @@ sdapublication:dietzold-s-2008--a a bibtex:InProceedings, dct:BibliographicResou
         dct:isPartOf "Proceedings of the 4th Workshop on Scripting for the Semantic Web"  ;
         bibtex:year "2008"  ;
         sda:bdsk-url-1 "http://www.semanticscripting.org/SFSW2008/papers/15.pdf"  ;
-        rdfs:seeAlso "httpwwwbibsonomyorgbibtex2a88dcdb9779f3a5405228932951a276baksw"  ;
+        rdfs:seeAlso <http://www.bibsonomy.org/bibtex/2a88dcdb9779f3a5405228932951a276b/aksw>  ;
         sda:date-modified "2012-12-02 17:19:02 +0000"  ;
         dct:source <dietzold-s-2008--a.pdf:dietzold-s-2008--a.pdf:PDF>  ;
         bibtex:keywords "2008 groupaksw ontowiki tramp hellmann kilt eventsfsw sysrelevantForinfai sysrelevantForbis rdfauthor seebiprojectRDFauthor"  ;
@@ -7198,7 +7199,7 @@ sdapublication:Dietzold2008a a bibtex:InProceedings, dct:BibliographicResource ;
         bibo:pageStart "787"  ;
         bibo:pageEnd "791"  ;
         sda:bdsk-url-1 "http://www.eswc2008.org/demos/demo05.pdf"  ;
-        rdfs:seeAlso "httpwwwbibsonomyorgbibtex242ca419d839e057416986b32ea2d8a21aksw"  ;
+        rdfs:seeAlso <http://www.bibsonomy.org/bibtex/242ca419d839e057416986b32ea2d8a21/aksw>  ;
         dct:source <dietzold-s-2008-787-a.pdf:dietzold-s-2008-787-a.pdf:PDF>  ;
         bibtex:keywords "2008 groupaksw eventeswc auer tramp sysrelevantForinfai sysrelevantForbis unbehauen xoperator seebiprojectxOperator seebiprojectFederatedSocialWeb"  ;
         sda:owner "seebi"  ;
@@ -7214,7 +7215,7 @@ sdapublication:dietzold-s-2008-19-a a bibtex:InProceedings, dct:BibliographicRes
         bibo:pageStart "19"  ;
         bibo:pageEnd "33"  ;
         sda:bdsk-url-1 "http://www.eswc2008.org/final-pdfs-for-web-site/aao-2.pdf"  ;
-        rdfs:seeAlso "httpwwwbibsonomyorgbibtex2a2f871befe81154aacf9e32ab249dcdbaksw"  ;
+        rdfs:seeAlso <http://www.bibsonomy.org/bibtex/2a2f871befe81154aacf9e32ab249dcdb/aksw>  ;
         dct:source <dietzold-s-2008-19-a.pdf:dietzold-s-2008-19-a.pdf:PDF>  ;
         bibtex:keywords "2008 eventeswc groupaksw auer tramp sysrelevantForinfai sysrelevantForbis unbehauen xoperator seebiprojectxOperator seebiprojectFederatedSocialWeb"  ;
         sda:owner "seebi"  ;
@@ -7230,7 +7231,7 @@ sdapublication:dietzold-s-2008-787-a a bibtex:InProceedings, dct:BibliographicRe
         bibo:pageStart "787"  ;
         bibo:pageEnd "791"  ;
         sda:bdsk-url-1 "http://www.eswc2008.org/demos/demo05.pdf"  ;
-        rdfs:seeAlso "httpwwwbibsonomyorgbibtex242ca419d839e057416986b32ea2d8a21aksw"  ;
+        rdfs:seeAlso <http://www.bibsonomy.org/bibtex/242ca419d839e057416986b32ea2d8a21/aksw>  ;
         dct:source <dietzold-s-2008-787-a.pdf:dietzold-s-2008-787-a.pdf:PDF>  ;
         bibtex:keywords "2008 groupaksw eventeswc auer tramp sysrelevantForinfai sysrelevantForbis unbehauen xoperator seebiprojectxOperator seebiprojectFederatedSocialWeb"  ;
         sda:owner "seebi"  ;
@@ -7719,7 +7720,7 @@ sdapublication:iermilov-2017-sansa-iswc-demo a bibtex:InProceedings, dct:Bibliog
         dct:isPartOf "Proceedings of 16th International Semantic Web Conference, Poster  Demos"  ;
         bibtex:year "2017"  ;
         sda:added-at "2017-08-31T16:24:45.000+0200"  ;
-        rdfs:seeAlso "httpswwwbibsonomyorgbibtex2f9b5a69afa4755944984ae63f59ad146aksw"  ;
+        rdfs:seeAlso <https://www.bibsonomy.org/bibtex/2f9b5a69afa4755944984ae63f59ad146/aksw>  ;
         sda:interhash "ebabfe08f697304b399c9b6b89f2829e"  ;
         sda:intrahash "f9b5a69afa4755944984ae63f59ad146"  ;
         bibtex:keywords "2017 bde buehmann chakraborty groupaksw iermilov lehmann mole ngonga saleem sbin sejdiu stadler westphal"  ;
@@ -7746,7 +7747,7 @@ sdapublication:KESW_2017_BDE a bibtex:InProceedings, dct:BibliographicResource ;
         dct:isPartOf "KESW"  ;
         bibtex:year "2017"  ;
         sda:added-at "2017-08-31T16:24:46.000+0200"  ;
-        rdfs:seeAlso "httpswwwbibsonomyorgbibtex2f5ee59fb595ade7ece4c840ad4a95741aksw"  ;
+        rdfs:seeAlso <https://www.bibsonomy.org/bibtex/2f5ee59fb595ade7ece4c840ad4a95741/aksw>  ;
         sda:interhash "8ac92f717e75f88d59f2811ecf7b816e"  ;
         sda:intrahash "f5ee59fb595ade7ece4c840ad4a95741"  ;
         bibtex:keywords "bde groupaksw iermilov lehmann ngonga simba"  ;
@@ -8837,7 +8838,7 @@ sdapublication:qa_survey_swj_2015 a bibo:AcademicArticle, dct:BibliographicResou
         bibo:volume "8"  ;
         bibtex:volume "8"  ;
         sda:added-at "2017-08-31T16:25:00.000+0200"  ;
-        rdfs:seeAlso "httpswwwbibsonomyorgbibtex2f0401ca8adebe1b7edfa36255ea1140daksw"  ;
+        rdfs:seeAlso <https://www.bibsonomy.org/bibtex/2f0401ca8adebe1b7edfa36255ea1140d/aksw>  ;
         sda:interhash "6bac844b30f9d1caf6bc72f57e43f7e5"  ;
         sda:intrahash "f0401ca8adebe1b7edfa36255ea1140d"  ;
         bibtex:keywords "diesel groupaksw hawk hoeffner lehmann marx mole ngonga openqa projecthobbit qamel simba sina tbsl usbeck"  ;
@@ -8984,7 +8985,7 @@ sdapublication:umair2016 a bibtex:InProceedings, dct:BibliographicResource ;
         dct:isPartOf "20th International Conference on Knowledge Engineering and Knowledge Management EKAW, November 19-23, 2016, Bologna, Italy"  ;
         bibtex:year "2016"  ;
         dct:isPartOf "EKAW 2016"  ;
-        rdfs:seeAlso "httpwwwbibsonomyorgbibtex2cbea4b8d22c87292c6e4405e7f1e60f2aksw"  ;
+        rdfs:seeAlso <http://www.bibsonomy.org/bibtex/2cbea4b8d22c87292c6e4405e7f1e60f2/aksw>  ;
         sda:interhash "e3b34694cb7f4c06ce1d782ff3d20d44"  ;
         sda:intrahash "cbea4b8d22c87292c6e4405e7f1e60f2"  ;
         bibtex:keywords "MOLE groupaksw lehmann marx mole simba zaveri"  ;
@@ -9020,7 +9021,7 @@ sdapublication:Heim2008gfacet a bibtex:InProceedings, dct:BibliographicResource 
         bibtex:volume "417"  ;
         sda:added-at "2011-03-07T16:16:20.000+0100"  ;
         sda:bdsk-url-1 "http://CEUR-WS.org/Vol-417"  ;
-        rdfs:seeAlso "httpwwwbibsonomyorgbibtex284664002055e64358420436ac73234fevisualdataweb"  ;
+        rdfs:seeAlso <http://www.bibsonomy.org/bibtex/284664002055e64358420436ac73234fe/visualdataweb>  ;
         sda:interhash "b12fe63dc70d0085b1f9e18d811fad12"  ;
         sda:intrahash "84664002055e64358420436ac73234fe"  ;
         bibo:issn "1613-0073"  ;
@@ -9046,7 +9047,7 @@ sdapublication:heino-n-2009-61-a a bibtex:InCollection, dct:BibliographicResourc
         dct:abstract "In this paper, we introduce the OntoWiki Application Framework for developing Semantic Web applications with a strong emphasis on collaboration After presenting OntoWiki as our main show case for the framework, we give both an architectural overview and a detailed view on the included componentsWe conclude this paper with a presentation of different use cases where the framework was strongly involved"  ;
         sda:bdsk-url-1 "http://www.springerlink.com/content/0j7673v3012p7156/"  ;
         sda:bdsk-url-2 "http://dx.doi.org/10.1007/978-3-642-02184-8_5"  ;
-        rdfs:seeAlso "httpwwwbibsonomyorgbibtex2bb7746b8ddbae8740f509ca6cf3ee852aksw"  ;
+        rdfs:seeAlso <http://www.bibsonomy.org/bibtex/2bb7746b8ddbae8740f509ca6cf3ee852/aksw>  ;
         bibo:doi "doi101007978-3-642-02184-85"  ;
         bibtex:keywords "2009 groupaksw auer ontowiki tramp heino martin erfurt sysrelevantForinfai sysrelevantForbis ontowiki seebiprojectOntoWiki ontowikieu"  ;
         sda:owner "seebi"  ;
@@ -9111,7 +9112,7 @@ sdapublication:sh_phdsymposium_10 a bibtex:InProceedings, dct:BibliographicResou
         bibtex:volume "6089"  ;
         sda:added-at "2010-07-21T15:58:30.000+0200"  ;
         sda:bdsk-url-1 "http://svn.aksw.org/papers/2010/ESWC_PHDSym_NLP2RDF/PhD_ESWC_hellmann_public.pdf"  ;
-        rdfs:seeAlso "httpwwwbibsonomyorgbibtex29af45d7e83ecea07c187c8b88a3f5b9adblp"  ;
+        rdfs:seeAlso <http://www.bibsonomy.org/bibtex/29af45d7e83ecea07c187c8b88a3f5b9a/dblp>  ;
         dct:issued "2010-06-08"  ;
         sda:date-modified "2012-12-02 13:10:13 +0000"  ;
         sda:ee "http://dx.doi.org/10.1007/978-3-642-13489-0_44"  ;
@@ -9225,7 +9226,7 @@ sdapublication:sh_scalability_poster_08 a bibtex:InProceedings, dct:Bibliographi
         sda:bdsk-url-1 "http://ceur-ws.org/Vol-401/iswc2008pd_submission_83.pdf"  ;
         sda:bibdate "2008-10-29"  ;
         sda:bibsource "DBLP, http://dblp.uni-trier.de/db/conf/semweb/iswc2008p.html#HellmannLA08"  ;
-        rdfs:seeAlso "httpwwwbibsonomyorgbibtex267bb52f69f2a430165d1266d6d7182dejens"  ;
+        rdfs:seeAlso <http://www.bibsonomy.org/bibtex/267bb52f69f2a430165d1266d6d7182de/jens>  ;
         sda:date-modified "2012-12-02 17:23:20 +0000"  ;
         sda:description "publications Jens Lehmann"  ;
         bibtex:keywords "2008 groupaksw dllearner hellmann kilt lehmann auer sysrelevantForinfai sysrelevantForbis eventiswc"  ;
@@ -9281,7 +9282,7 @@ sdapublication:hellmann_ijswis_09 a bibo:AcademicArticle, dct:BibliographicResou
         bibtex:volume "5"  ;
         sda:bdsk-url-1 "http://jens-lehmann.org/files/2009_dllearner_sparql.pdf"  ;
         sda:bdsk-url-2 "http://dx.doi.org/10.4018/jswis.2009040102"  ;
-        rdfs:seeAlso "httpwwwbibsonomyorgbibtex2ede309d0985a6ce5a8c75d3c5a2df30ejens"  ;
+        rdfs:seeAlso <http://www.bibsonomy.org/bibtex/2ede309d0985a6ce5a8c75d3c5a2df30e/jens>  ;
         sda:date-modified "2012-12-02 13:04:19 +0000"  ;
         sda:description "publications Jens Lehmann"  ;
         bibo:doi "doi104018jswis2009040102"  ;
@@ -9327,7 +9328,7 @@ sdapublication:hellmann_odbase_dbpedia_live_09 a bibtex:InProceedings, dct:Bibli
         bibtex:volume "5871"  ;
         sda:bdsk-url-1 "http://svn.aksw.org/papers/2009/ODBASE_LiveExtraction/dbpedia_live_extraction_public.pdf"  ;
         sda:bdsk-url-2 "http://dx.doi.org/10.1007/978-3-642-05151-7_33"  ;
-        rdfs:seeAlso "httpwwwbibsonomyorgbibtex27f9a95be2bad73ea9ec9e7e48af4c9ecjens"  ;
+        rdfs:seeAlso <http://www.bibsonomy.org/bibtex/27f9a95be2bad73ea9ec9e7e48af4c9ec/jens>  ;
         sda:date-modified "2012-12-02 13:04:11 +0000"  ;
         sda:description "publications Jens Lehmann"  ;
         bibo:doi "doi101007978-3-642-05151-733"  ;
@@ -10127,7 +10128,7 @@ sdapublication:khalili2013wysiwym a bibo:Conference, dct:BibliographicResource ;
         dct:abstract "Structured data is picking up on the Web, particularly in the search world Schemaorg, jointly initiated by Google, Microsoft, and Yahoo provides a hierarchical set of vocabularies to embed metadata in HTML pages for an enhanced search and browsing experience RDFa-Lite, Microdata and JSON-LD as lower semantic techniques have gained more attention by Web users to markup Web pages and even emails based on Schemaorg However, from the user interface point of view, we still lack user-friendly tools that facilitate the process of structured content authoring The majority of information still is contained in and exchanged using unstructured documents, such as Web pages, text documents, images and videos This can also not be expected to change, since text, images and videos are the natural way how humans interact with information In this paper we present RDFaCE as an implementation of WYSIWYM What-You-See-Is-What-You-Mean concept for direct manipulation of semantically structured content in conventional modalities RDFaCE utilizes on-the-fly form generation based on Schemaorg vocabulary for embedding metadata within Web documents Furthermore, it employs external NLP services to enable automatic annotation of entities and to suggest URIs for entities RDFaCE is written as a plugin for TinyMCE WYSIWYG editor thereby can be easily integrated into existing content management systems"  ;
         sda:added-at "2013-07-18T11:27:45.000+0200"  ;
         sda:bdsk-url-1 "http://dx.doi.org/10.1007/978-3-642-41154-0_32"  ;
-        rdfs:seeAlso "httpwwwbibsonomyorgbibtex27b921d585db77803ee9c0d9f4c0c1c77alikhalili"  ;
+        rdfs:seeAlso <http://www.bibsonomy.org/bibtex/27b921d585db77803ee9c0d9f4c0c1c77/alikhalili>  ;
         bibo:doi "101007978-3-642-41154-032"  ;
         sda:interhash "0a8d64c53e0a6910aa7a9b612066bb95"  ;
         sda:intrahash "7b921d585db77803ee9c0d9f4c0c1c77"  ;
@@ -10270,7 +10271,7 @@ sdapublication:Kim2008a a bibtex:InProceedings, dct:BibliographicResource ;
         bibo:volume "0"  ;
         bibtex:volume "0"  ;
         sda:added-at "2009-08-06T19:13:18.000+0200"  ;
-        rdfs:seeAlso "httpwwwbibsonomyorgbibtex211ce0807744b4a7c5de9d126ce18a082davids"  ;
+        rdfs:seeAlso <http://www.bibsonomy.org/bibtex/211ce0807744b4a7c5de9d126ce18a082/davids>  ;
         sda:interhash "b58a2757d53cd8da146aafdb4fb56a81"  ;
         sda:intrahash "11ce0807744b4a7c5de9d126ce18a082"  ;
         bibtex:keywords "nicetagbib scot semantic survey tagging tagontology"  ;
@@ -10296,7 +10297,7 @@ sdapublication:Kim2008 a bibtex:InProceedings, dct:BibliographicResource ;
         bibo:pageEnd "137"  ;
         dct:publisher "Dublin Core Metadata Initiative"  ;
         sda:added-at "2010-05-27T15:51:51.000+0200"  ;
-        rdfs:seeAlso "httpwwwbibsonomyorgbibtex27d3c3c2189394a8686ca9812d58bfe74arminhs"  ;
+        rdfs:seeAlso <http://www.bibsonomy.org/bibtex/27d3c3c2189394a8686ca9812d58bfe74/arminhs>  ;
         sda:description "The Bibliography of my Belegarbeit"  ;
         sda:interhash "9c5f5af6f47a1a563dbb405c5a58a3cc"  ;
         sda:intrahash "7d3c3c2189394a8686ca9812d58bfe74"  ;
@@ -10428,7 +10429,7 @@ sdapublication:kmueller-ldq16-etl-views a bibtex:InProceedings, dct:Bibliographi
         sda:month_numeric "5"  ;
         dct:modified "kmueller-ldq16-etl-views"  .
 
-sdapublication:kobilarov2009 a bibtex:InProceedings, dct:BibliographicResource ;
+sdapublication:kobilarov-?-2009-- a bibtex:InProceedings, dct:BibliographicResource ;
         dct:title "DBpedia - A Linked Data Hub and Data Source for Web Applications and Enterprises"  ;
         dct:creator  sdaperson:GeorgiKobilarov,  sdaperson:ChristianBizer,  sdaperson:SorenAuer,  sdaperson:JensLehmann  ;
         dct:isPartOf "Proceedings of Developers Track of 18th International World Wide Web Conference WWW 2009, April 20th-24th, Madrid, Spain"  ;
@@ -10668,7 +10669,7 @@ sdapublication:kosovan-2017-cscubs-dialogues a bibtex:InProceedings, dct:Bibliog
         dct:isPartOf "Proceedings of the Computer Science Conference for University of Bonn Students CSCUBS 2017"  ;
         bibtex:year "2017"  ;
         sda:added-at "2017-08-31T16:24:45.000+0200"  ;
-        rdfs:seeAlso "httpswwwbibsonomyorgbibtex2382e99967e196356de3f52f06df22115aksw"  ;
+        rdfs:seeAlso <https://www.bibsonomy.org/bibtex/2382e99967e196356de3f52f06df22115/aksw>  ;
         sda:interhash "919e1cac53865a68cbefe447f521bd50"  ;
         sda:intrahash "382e99967e196356de3f52f06df22115"  ;
         bibtex:keywords "2017 groupaksw lehmann mole"  ;
@@ -10719,7 +10720,7 @@ sdapublication:krueger2017deep a bibo:AcademicArticle, dct:BibliographicResource
         dct:hasFormat <https://openreview.net/pdf?id=rJv6ZgHYg>  ;
         dct:modified "krueger2017deep"  .
 
-sdapublication:kunze2006 a bibtex:InProceedings, dct:BibliographicResource ;
+sdapublication:kunze-?-2006-- a bibtex:InProceedings, dct:BibliographicResource ;
         dct:title "Eine Schnittstelle fur Arztpraxisdaten mittels einer Ontologie auf Basis von HL7 Version 3"  ;
         dct:creator  sdaperson:JanKunze,  sdaperson:ThomasRiechert,  sdaperson:SorenAuer  ;
         dct:isPartOf "Tagungsband XML-Tage, Berlin, 25-27 September"  ;
@@ -11379,7 +11380,7 @@ sdapublication:dllearner_jmlr a bibo:AcademicArticle, dct:BibliographicResource 
         bibo:volume "10"  ;
         bibtex:volume "10"  ;
         sda:bdsk-url-1 "http://www.jmlr.org/papers/volume10/lehmann09a/lehmann09a.pdf"  ;
-        rdfs:seeAlso "httpwwwbibsonomyorgbibtex2d863a06ce17d41d0e6695f0edac74f5fjens"  ;
+        rdfs:seeAlso <http://www.bibsonomy.org/bibtex/2d863a06ce17d41d0e6695f0edac74f5f/jens>  ;
         sda:date-modified "2012-12-02 13:05:46 +0000"  ;
         sda:description "publications Jens Lehmann"  ;
         bibtex:keywords "2009 groupaksw dllearner MOLE eventjmlr sysrelevantForinfai sysrelevantForbis lehmann"  ;
@@ -11400,7 +11401,7 @@ sdapublication:mldm07 a bibtex:InProceedings, dct:BibliographicResource ;
         sda:bdsk-url-1 "http://dx.doi.org/10.1007/978-3-540-73499-4_66"  ;
         sda:bibdate "2007-08-29"  ;
         sda:bibsource "DBLP, http://dblp.uni-trier.de/db/conf/mldm/mldm2007.html#Lehmann07"  ;
-        rdfs:seeAlso "httpwwwbibsonomyorgbibtex241e5c2a1eecd3580f29b2ed93244e8e9jens"  ;
+        rdfs:seeAlso <http://www.bibsonomy.org/bibtex/241e5c2a1eecd3580f29b2ed93244e8e9/jens>  ;
         sda:date-modified "2012-12-02 13:01:33 +0000"  ;
         sda:description "publications Jens Lehmann"  ;
         sda:isbn "978-3-540-73498-7"  ;
@@ -11503,7 +11504,7 @@ sdapublication:ann_extraction a bibo:AcademicArticle, dct:BibliographicResource 
         dct:isPartOf "Applied Intelligence"  ;
         bibtex:year "2008"  ;
         sda:bdsk-url-1 "http://jens-lehmann.org/files/2008/ann_extraction.pdf"  ;
-        rdfs:seeAlso "httpwwwbibsonomyorgbibtex2da8ca1f0994dbac3bb46c1de25fb13fbjens"  ;
+        rdfs:seeAlso <http://www.bibsonomy.org/bibtex/2da8ca1f0994dbac3bb46c1de25fb13fb/jens>  ;
         sda:date-modified "2012-12-02 13:07:51 +0000"  ;
         sda:description "publications Jens Lehmann"  ;
         bibtex:keywords "2008 groupaksw sysrelevantForinfai sysrelevantForbis lehmann"  ;
@@ -11523,7 +11524,7 @@ sdapublication:dbpedia_jws_09 a bibo:AcademicArticle, dct:BibliographicResource 
         address:localityName "Amsterdam, The Netherlands, The Netherlands"  ;
         sda:bdsk-url-1 "http://jens-lehmann.org/files/2009/dbpedia_jws.pdf"  ;
         sda:bdsk-url-2 "http://dx.doi.org/10.1016/j.websem.2009.07.002"  ;
-        rdfs:seeAlso "httpwwwbibsonomyorgbibtex2cd252e88108ce7f1635d6b0c9dcb5ae2jens"  ;
+        rdfs:seeAlso <http://www.bibsonomy.org/bibtex/2cd252e88108ce7f1635d6b0c9dcb5ae2/jens>  ;
         sda:date-modified "2012-12-02 13:06:17 +0000"  ;
         sda:description "publications Jens Lehmann"  ;
         bibo:doi "doi101016jwebsem200907002"  ;
@@ -11610,7 +11611,7 @@ sdapublication:el_operator a bibtex:InProceedings, dct:BibliographicResource ;
         dct:isPartOf "Inductive Logic Programming, 19th International Conference, ILP 2009, Leuven, Belgium"  ;
         bibtex:year "2009"  ;
         sda:bdsk-url-1 "http://jens-lehmann.org/files/2009/el_ilp.pdf"  ;
-        rdfs:seeAlso "httpwwwbibsonomyorgbibtex24dff6b9b0c73296aa64d12369dffa783jens"  ;
+        rdfs:seeAlso <http://www.bibsonomy.org/bibtex/24dff6b9b0c73296aa64d12369dffa783/jens>  ;
         sda:date-modified "2012-12-02 13:05:37 +0000"  ;
         sda:description "publications Jens Lehmann"  ;
         bibtex:keywords "2009 eventilp groupaksw dllearner mole sysrelevantForinfai sysrelevantForbis lehmann MOLE"  ;
@@ -11623,7 +11624,7 @@ sdapublication:el_operator_techreport a bibo:Report, dct:BibliographicResource ;
         bibtex:institution "University of Leipzig"  ;
         bibtex:year "2009"  ;
         sda:bdsk-url-1 "http://jens-lehmann.org/files/2009_ideal_operator_el_tr.pdf"  ;
-        rdfs:seeAlso "httpwwwbibsonomyorgbibtex2587ecc679dc1c513093512cdef151d04jens"  ;
+        rdfs:seeAlso <http://www.bibsonomy.org/bibtex/2587ecc679dc1c513093512cdef151d04/jens>  ;
         sda:date-modified "2012-12-02 13:05:29 +0000"  ;
         sda:description "publications Jens Lehmann"  ;
         bibtex:keywords "2009 groupaksw dllearner mole sysrelevantForinfai sysrelevantForbis lehmann MOLE"  ;
@@ -11661,7 +11662,7 @@ sdapublication:mlj a bibo:AcademicArticle, dct:BibliographicResource ;
         bibtex:volume "78"  ;
         sda:bdsk-url-1 "http://jens-lehmann.org/files/2010/concept_learning_mlj.pdf"  ;
         sda:bdsk-url-2 "http://dx.doi.org/10.1007/s10994-009-5146-2"  ;
-        rdfs:seeAlso "httpwwwbibsonomyorgbibtex211d55726073b12be444245965f12d57bjens"  ;
+        rdfs:seeAlso <http://www.bibsonomy.org/bibtex/211d55726073b12be444245965f12d57b/jens>  ;
         sda:date-modified "2012-12-02 13:01:18 +0000"  ;
         sda:description "publications Jens Lehmann"  ;
         bibo:doi "doi101007s10994-009-5146-2"  ;
@@ -11694,7 +11695,7 @@ sdapublication:alc_learning_algorithm_techreport a bibo:Report, dct:Bibliographi
         bibtex:institution "University of Leipzig"  ;
         bibtex:year "2007"  ;
         sda:bdsk-url-1 "http://jens-lehmann.org/files/2007_alc_learning_algorithm_techreport.pdf"  ;
-        rdfs:seeAlso "httpwwwbibsonomyorgbibtex24d90f2406fb3f2d3e257aff81e66a39djens"  ;
+        rdfs:seeAlso <http://www.bibsonomy.org/bibtex/24d90f2406fb3f2d3e257aff81e66a39d/jens>  ;
         sda:date-modified "2012-12-02 13:08:00 +0000"  ;
         sda:description "publications Jens Lehmann"  ;
         bibtex:keywords "2007 groupaksw dllearner sysrelevantForinfai sysrelevantForbis lehmann"  ;
@@ -11707,7 +11708,7 @@ sdapublication:property_analysis_techreport a bibo:Report, dct:BibliographicReso
         bibtex:institution "University of Leipzig"  ;
         bibtex:year "2007"  ;
         sda:bdsk-url-1 "http://jens-lehmann.org/files/2007_operator_analysis_techreport.pdf"  ;
-        rdfs:seeAlso "httpwwwbibsonomyorgbibtex28c37a8f80a2a5e3b92230321d0599df3jens"  ;
+        rdfs:seeAlso <http://www.bibsonomy.org/bibtex/28c37a8f80a2a5e3b92230321d0599df3/jens>  ;
         sda:description "publications Jens Lehmann"  ;
         bibtex:keywords "2007 groupaksw dllearner sysrelevantForinfai sysrelevantForbis lehmann"  ;
         dct:hasFormat <http://jens-lehmann.org/files/2007_operator_analysis_techreport.pdf>  ;
@@ -11759,7 +11760,7 @@ sdapublication:veriLinks a bibtex:InProceedings, dct:BibliographicResource ;
         dct:hasFormat <http://jens-lehmann.org/files/2013/icsc_verilinks.pdf>  ;
         dct:modified "veriLinks"  .
 
-sdapublication:lehmann2007 a bibtex:InProceedings, dct:BibliographicResource ;
+sdapublication:lehmann-?-2007-- a bibtex:InProceedings, dct:BibliographicResource ;
         dct:title "Discovering Unknown Connections - the DBpedia Relationship Finder"  ;
         dct:creator  sdaperson:JensLehmann,  sdaperson:JorgSchuppel,  sdaperson:SorenAuer  ;
         dct:isPartOf "Proceedings of 1st Conference on Social Semantic Web Leipzig CSSW07, 24-28 September"  ;
@@ -11784,7 +11785,7 @@ sdapublication:lehmann-2017-sansa-iswc a bibtex:InProceedings, dct:Bibliographic
         bibtex:year "2017"  ;
         dct:abstract "Over the past decade, vast amounts of machine-readable structured information have become available through the automation of research processes as well as the increasing popularity of knowledge graphs and semantic technologies A major research challenge today is to perform scalable analysis of large-scale knowledge graphs to facilitate applications like link prediction, knowledge base completion and question answering Most analytics approaches, which scale horizontally ie, can be executed in a distributed environment work on simple feature-vector-based input rather than more expressive knowledge structures On the other hand, analytics methods which exploit expressive structures usually do not scale well to very large knowledge bases This software framework paper describes the ongoing project Semantic Analytics Stack SANSA which supports expressive and scalable semantic analytics by providing functionality for distributed in-memory computing for RDF data The library provides APIs for RDF storage, querying using SPARQL and forward chaining inference It includes several machine learning algorithms for RDF knowledge graphs The article describes the vision, architecture and use cases of SANSA"  ;
         sda:added-at "2017-07-17T14:46:26.000+0200"  ;
-        rdfs:seeAlso "httpswwwbibsonomyorgbibtex21ae18ac13750f9cf74227fe0a7c50104aksw"  ;
+        rdfs:seeAlso <https://www.bibsonomy.org/bibtex/21ae18ac13750f9cf74227fe0a7c50104/aksw>  ;
         sda:interhash "eb99dff0ce6a9cdbce2c4cbea115fbee"  ;
         sda:intrahash "1ae18ac13750f9cf74227fe0a7c50104"  ;
         bibtex:keywords "2017 bde buehmann chakraborty groupaksw iermilov lehmann ngonga saleem sbin sejdiu stadler westphal"  ;
@@ -12025,7 +12026,7 @@ sdapublication:LOD2Book-ExplorationVisualization a bibtex:InCollection, dct:Bibl
 
 sdapublication:dbpedia_events a bibtex:InProceedings, dct:BibliographicResource ;
         dct:title "The DBpedia Events Dataset"  ;
-        dct:creator   sdaperson:MagnusKnuth,  sdaperson:JensLehmann,  sdaperson:DimitrisKontokostas,  sdaperson:ThomasSteiner,  sdaperson:HaraldSack  ;
+        dct:creator sdaperson:MagnusKnuth,  sdaperson:JensLehmann,  sdaperson:DimitrisKontokostas,  sdaperson:ThomasSteiner,  sdaperson:HaraldSack  ;
         dct:isPartOf "The 14th International Semantic Web Conference, Posters  Demonstrations Track"  ;
         bibtex:year "2015"  ;
         bibtex:keywords "groupaksw marx ngonga lehmann mole 2015"  ;
@@ -12038,7 +12039,7 @@ sdapublication:maheshwari-2017-sansa-iswc-demo a bibtex:InProceedings, dct:Bibli
         dct:isPartOf "Proceedings of 16th International Semantic Web Conference - Poster  Demos"  ;
         bibtex:year "2017"  ;
         sda:added-at "2017-08-31T16:25:26.000+0200"  ;
-        rdfs:seeAlso "httpswwwbibsonomyorgbibtex2c2bcdab20424d0c8e166943e1cd2a8afaksw"  ;
+        rdfs:seeAlso <https://www.bibsonomy.org/bibtex/2c2bcdab20424d0c8e166943e1cd2a8af/aksw>  ;
         sda:interhash "026ef0b6b83de1a5ebc9bceef028e4b4"  ;
         sda:intrahash "c2bcdab20424d0c8e166943e1cd2a8af"  ;
         bibtex:keywords "2017 groupaksw lehmann mole"  ;
@@ -12053,7 +12054,7 @@ sdapublication:simdoc a bibtex:InProceedings, dct:BibliographicResource ;
         bibtex:year "2017"  ;
         sda:organization "ACM"  ;
         sda:added-at "2017-12-01T09:57:46.000+0100"  ;
-        rdfs:seeAlso "httpswwwbibsonomyorgbibtex21d3087cab3edf0ed78ca301a49df119daksw"  ;
+        rdfs:seeAlso <https://www.bibsonomy.org/bibtex/21d3087cab3edf0ed78ca301a49df119d/aksw>  ;
         sda:interhash "d738558298d1a95f7cf5283622866248"  ;
         sda:intrahash "1d3087cab3edf0ed78ca301a49df119d"  ;
         bibtex:keywords "groupaksw lehmann"  ;
@@ -12259,7 +12260,7 @@ sdapublication:maroy-2017-dbpedia-rml-iswc a bibtex:InProceedings, dct:Bibliogra
         dct:isPartOf "Proceedings of 16th International Semantic Web Conference"  ;
         bibtex:year "2017"  ;
         sda:added-at "2017-08-31T16:25:26.000+0200"  ;
-        rdfs:seeAlso "httpswwwbibsonomyorgbibtex21d86a6ac50399a52d90e3a8d1ec5cb6aaksw"  ;
+        rdfs:seeAlso <https://www.bibsonomy.org/bibtex/21d86a6ac50399a52d90e3a8d1ec5cb6a/aksw>  ;
         sda:interhash "2e65dd03c3587df7d2edc26c4fb2b054"  ;
         sda:intrahash "1d86a6ac50399a52d90e3a8d1ec5cb6a"  ;
         bibtex:keywords "2017 groupaksw hellmann kontokostas lehmann mole"  ;
@@ -12505,7 +12506,7 @@ sdapublication:journalsspeMarx2012 a bibo:AcademicArticle, dct:BibliographicReso
         bibo:pageEnd "447"  ;
         bibo:volume "43"  ;
         bibtex:volume "43"  ;
-        rdfs:seeAlso "httpwwwbibsonomyorgbibtex2223cc79c7cfac3cfd7929ada19aa99fedblp"  ;
+        rdfs:seeAlso <http://www.bibsonomy.org/bibtex/2223cc79c7cfac3cfd7929ada19aa99fe/dblp>  ;
         sda:ee "http://dx.doi.org/10.1002/spe.2145"  ;
         bibtex:keywords "marx groupaksw"  ;
         dct:hasFormat <http://dblp.uni-trier.de/db/journals/spe/spe43.html#MarxSBFC13>  ;
@@ -12711,7 +12712,7 @@ sdapublication:meester-2017-dbpedia-rml-demo a bibtex:InProceedings, dct:Bibliog
         dct:isPartOf "Proceedings of 16th International Semantic Web Conference - Poster  Demos"  ;
         bibtex:year "2017"  ;
         sda:added-at "2017-08-31T16:25:32.000+0200"  ;
-        rdfs:seeAlso "httpswwwbibsonomyorgbibtex265ab845959061c78f8e81c9fe1432150aksw"  ;
+        rdfs:seeAlso <https://www.bibsonomy.org/bibtex/265ab845959061c78f8e81c9fe1432150/aksw>  ;
         sda:interhash "8e30080f2f4edc6f492a906d5f2e9716"  ;
         sda:intrahash "65ab845959061c78f8e81c9fe1432150"  ;
         bibtex:keywords "2017 groupaksw hellmann iermilov lehmann mole"  ;
@@ -13867,7 +13868,7 @@ sdapublication:otto-s-2007-14-a a bibo:AcademicArticle, dct:BibliographicResourc
         bibo:pageEnd "14"  ;
         bibo:volume "108"  ;
         bibtex:volume "108"  ;
-        rdfs:seeAlso "httpwwwbibsonomyorgbibtex2489bfebe82e7f28dd5a45bc136041499aksw"  ;
+        rdfs:seeAlso <http://www.bibsonomy.org/bibtex/2489bfebe82e7f28dd5a45bc136041499/aksw>  ;
         dct:source <otto-s-2007-14-a.pdf:/otto-s-2007-14-a.pdf:PDF>  ;
         bibtex:keywords "2007 groupaksw tramp ontowiki sysrelevantForinfai sysrelevantForbis seebiprojectOntoWiki"  ;
         sda:owner "seebi"  ;
@@ -14041,7 +14042,7 @@ sdapublication:petzka-semantics-facets a bibtex:InProceedings, dct:Bibliographic
         dct:isPartOf "13th International Conference on Semantic Systems SEMANTiCS 2017, September 11-14 2017, Amsterdam, Netherlands"  ;
         bibtex:year "2017"  ;
         sda:added-at "2017-08-31T16:24:48.000+0200"  ;
-        rdfs:seeAlso "httpswwwbibsonomyorgbibtex24cba1ee5aff5a8f53760660aa977adfbaksw"  ;
+        rdfs:seeAlso <https://www.bibsonomy.org/bibtex/24cba1ee5aff5a8f53760660aa977adfb/aksw>  ;
         sda:interhash "15573d7d66c8917d8f0f7adc05832b98"  ;
         sda:intrahash "4cba1ee5aff5a8f53760660aa977adfb"  ;
         bibtex:keywords "2017 groupaksw hobbit lehmann mole projecthobbit sda stadler"  ;
@@ -14468,7 +14469,7 @@ sdapublication:swore_sabre a bibtex:InProceedings, dct:BibliographicResource ;
         dct:isPartOf "Proceedings of the SABRE-07 SoftWiki Workshop"  ;
         bibtex:year "2007"  ;
         sda:bdsk-url-1 "http://jens-lehmann.org/files/2007/swore_sabre.pdf"  ;
-        rdfs:seeAlso "httpwwwbibsonomyorgbibtex203949b1faf8234885a317d498a4cac69jens"  ;
+        rdfs:seeAlso <http://www.bibsonomy.org/bibtex/203949b1faf8234885a317d498a4cac69/jens>  ;
         sda:date-modified "2012-12-02 12:58:53 +0000"  ;
         sda:description "publications Jens Lehmann"  ;
         bibtex:keywords "languagedeutsch 2007 groupaksw softwiki sysrelevantForinfai sysrelevantForbis lehmann"  ;
@@ -14481,7 +14482,7 @@ sdapublication:swore a bibtex:InProceedings, dct:BibliographicResource ;
         dct:isPartOf "Proceedings of the 7th International Conference on Knowledge Management I-KNOW"  ;
         bibtex:year "2007"  ;
         sda:bdsk-url-1 "http://jens-lehmann.org/files/2007/swore.pdf"  ;
-        rdfs:seeAlso "httpwwwbibsonomyorgbibtex2c10c6638dfd115382cdff7dbd853de63jens"  ;
+        rdfs:seeAlso <http://www.bibsonomy.org/bibtex/2c10c6638dfd115382cdff7dbd853de63/jens>  ;
         sda:date-modified "2012-12-02 12:59:02 +0000"  ;
         sda:description "publications Jens Lehmann"  ;
         bibtex:keywords "2007 eventi-know groupaksw softwiki sysrelevantForinfai sysrelevantForbis lehmann"  ;
@@ -14564,7 +14565,7 @@ sdapublication:riechert-t-2010-iswc-demo a bibtex:InProceedings, dct:Bibliograph
         dct:hasFormat <http://svn.aksw.org/papers/2010/ISWC_CP_demo/iswc_cp_demo.pdf>  ;
         dct:modified "riechert-t-2010-iswc-demo"  .
 
-sdapublication:riechert2009109 a bibtex:InCollection, dct:BibliographicResource ;
+sdapublication:riechert-?-2009-109- a bibtex:InCollection, dct:BibliographicResource ;
         dct:title "Integration des SoftWiki-Ansatzes in das Cofundos-Entwicklungsmodell"  ;
         dct:creator  sdaperson:ThomasRiechert,  sdaperson:FanZhang,  sdaperson:SorenAuer  ;
         dct:isPartOf "Agiles Requirements Engineering fur Softwareprojekte mit einer grossen Anzahl verteilter Stakeholder"  ;
@@ -14710,7 +14711,7 @@ sdapublication:Sadeghi2013 a bibo:AcademicArticle, dct:BibliographicResource ;
         bibo:volume "14"  ;
         bibtex:volume "14"  ;
         sda:bibsource "dblp computer science bibliography, http://dblp.org"  ;
-        rdfs:seeAlso "httpdblp2uni-trierderecbibjournalsbmcbiSadeghiF13"  ;
+        rdfs:seeAlso <http://dblp2.uni-trier.de/rec/bib/journals/bmcbi/SadeghiF13>  ;
         bibo:doi "1011861471-2105-14-144"  ;
         dct:source <http://dx.doi.org/10.1186/1471-2105-14-144>  ;
         sda:pubs "sadeghi"  ;
@@ -14746,7 +14747,7 @@ sdapublication:RDB2RDF a bibo:Document, dct:BibliographicResource ;
         bibtex:year "2009"  ;
         sda:added-at "2009-02-25T18:43:03.000+0100"  ;
         sda:bdsk-url-1 "http://www.w3.org/2005/Incubator/rdb2rdf/RDB2RDF_SurveyReport.pdf"  ;
-        rdfs:seeAlso "httpwwwbibsonomyorgbibtex270279ab60535eaca1cc9e52d4423cbdbjoergh"  ;
+        rdfs:seeAlso <http://www.bibsonomy.org/bibtex/270279ab60535eaca1cc9e52d4423cbdb/joergh>  ;
         sda:date-modified "2012-12-02 13:10:21 +0000"  ;
         sda:interhash "3e39f77c772d26a207df1c4d8c3d61d6"  ;
         sda:intrahash "70279ab60535eaca1cc9e52d4423cbdb"  ;
@@ -14762,7 +14763,7 @@ sdapublication:Sahoo2009 a bibo:Document, dct:BibliographicResource ;
         bibtex:year "2009"  ;
         sda:added-at "2009-02-25T18:43:03.000+0100"  ;
         sda:bdsk-url-1 "http://www.w3.org/2005/Incubator/rdb2rdf/RDB2RDF_SurveyReport.pdf"  ;
-        rdfs:seeAlso "httpwwwbibsonomyorgbibtex270279ab60535eaca1cc9e52d4423cbdbjoergh"  ;
+        rdfs:seeAlso <http://www.bibsonomy.org/bibtex/270279ab60535eaca1cc9e52d4423cbdb/joergh>  ;
         sda:date-modified "2012-12-02 13:10:21 +0000"  ;
         sda:interhash "3e39f77c772d26a207df1c4d8c3d61d6"  ;
         sda:intrahash "70279ab60535eaca1cc9e52d4423cbdb"  ;
@@ -15034,7 +15035,7 @@ sdapublication:Saleem2017SQC a bibtex:InProceedings, dct:BibliographicResource ;
         bibtex:year "2017"  ;
         sda:organization "ACM"  ;
         sda:added-at "2017-12-01T09:58:07.000+0100"  ;
-        rdfs:seeAlso "httpswwwbibsonomyorgbibtex2a4d1b8ca008f62987170266e6eae5f52aksw"  ;
+        rdfs:seeAlso <https://www.bibsonomy.org/bibtex/2a4d1b8ca008f62987170266e6eae5f52/aksw>  ;
         sda:interhash "52e674a10e916763bca3147fd8d4717e"  ;
         sda:intrahash "a4d1b8ca008f62987170266e6eae5f52"  ;
         bibtex:keywords "groupaksw lehmann ngonga project-hobbit stadler"  ;
@@ -15249,7 +15250,7 @@ sdapublication:Scerri2009b a bibtex:InProceedings, dct:BibliographicResource ;
         dct:isPartOf "Proceedings of the 6th European Semantic Web Conference"  ;
         bibtex:year "2009"  ;
         sda:added-at "2009-08-18T14:38:02.000+0200"  ;
-        rdfs:seeAlso "httpwwwbibsonomyorgbibtex297968d3258e50125e43d65c81dc6daf0irrecs"  ;
+        rdfs:seeAlso <http://www.bibsonomy.org/bibtex/297968d3258e50125e43d65c81dc6daf0/irrecs>  ;
         sda:interhash "43dcf124a5a1bf0d0e4e1a046b596c85"  ;
         sda:intrahash "97968d3258e50125e43d65c81dc6daf0"  ;
         bibtex:keywords "Email Scerri Semanta Semantic Simon desktop evaluation fornepomuk semantic social sysrelevantFornepomuk sysrelevantForsmile workflow"  ;
@@ -15291,7 +15292,7 @@ sdapublication:Scerri2009 a bibtex:InProceedings, dct:BibliographicResource ;
         dct:isPartOf "Demo at the 6th European Semantic Web Conference"  ;
         bibtex:year "2009"  ;
         sda:added-at "2010-10-11T20:57:02.000+0200"  ;
-        rdfs:seeAlso "httpwwwbibsonomyorgbibtex20ad5e14ddd9cd6e1e132b46f7b2c591eirrecs"  ;
+        rdfs:seeAlso <http://www.bibsonomy.org/bibtex/20ad5e14ddd9cd6e1e132b46f7b2c591e/irrecs>  ;
         sda:interhash "9db244bd78fe0decd128f5eea4d7eef9"  ;
         sda:intrahash "0ad5e14ddd9cd6e1e132b46f7b2c591e"  ;
         sda:timestamp "2017.10.12"  ;
@@ -15343,7 +15344,7 @@ sdapublication:Scerri2008 a bibtex:InProceedings, dct:BibliographicResource ;
         dct:isPartOf "Proceedings of the sixth International Conference on Language Resources and Evaluation"  ;
         bibtex:year "2008"  ;
         sda:added-at "2008-07-23T18:55:12.000+0200"  ;
-        rdfs:seeAlso "httpwwwbibsonomyorgbibtex28f7d5bfe28d6b1d0bc76018b8159545cirrecs"  ;
+        rdfs:seeAlso <http://www.bibsonomy.org/bibtex/28f7d5bfe28d6b1d0bc76018b8159545c/irrecs>  ;
         sda:interhash "08b10b890b79ef09382fe7917d0d5425"  ;
         sda:intrahash "8f7d5bfe28d6b1d0bc76018b8159545c"  ;
         bibtex:keywords "act deri email langen nuig ontology scerri semanta semantic simon smail speech"  ;
@@ -16020,7 +16021,7 @@ sdapublication:Tarasowa2015 a bibo:AcademicArticle, dct:BibliographicResource ;
         bibtex:volume "5"  ;
         sda:bdsk-url-1 "http://www.online-journals.org/index.php/i-jep/article/view/4951"  ;
         sda:bibsource "dblp computer science bibliography, http://dblp.org"  ;
-        rdfs:seeAlso "httpdblpuni-trierderecbibjournalsi-jepTarasowaKA15"  ;
+        rdfs:seeAlso <http://dblp.uni-trier.de/rec/bib/journals/i-jep/TarasowaKA15>  ;
         bibtex:keywords "tarasowa, khalili, auer"  ;
         sda:timestamp "Mon, 09 Nov 2015 13:10:31 +0100"  ;
         dct:hasFormat <http://www.online-journals.org/index.php/i-jep/article/view/4951>  ;
@@ -16101,7 +16102,7 @@ sdapublication:thakkar-litmus-semantics a bibtex:InProceedings, dct:Bibliographi
         dct:isPartOf "13th International Conference on Semantic Systems SEMANTiCS 2017, September 11-14 2017, Amsterdam, Netherlands"  ;
         bibtex:year "2017"  ;
         sda:added-at "2017-08-31T16:24:47.000+0200"  ;
-        rdfs:seeAlso "httpswwwbibsonomyorgbibtex2aa09fbf8be20376c7000f69a36db1484aksw"  ;
+        rdfs:seeAlso <https://www.bibsonomy.org/bibtex/2aa09fbf8be20376c7000f69a36db1484/aksw>  ;
         sda:interhash "d54fb52790cfe3553dc3b14e92db1d7c"  ;
         sda:intrahash "aa09fbf8be20376c7000f69a36db1484"  ;
         bibtex:keywords "2017 groupaksw hobbit lehmann mole projecthobbit sda"  ;
@@ -16354,7 +16355,7 @@ sdapublication:trivedi-2017-lcquad-iswc a bibtex:InProceedings, dct:Bibliographi
         dct:isPartOf "Proceedings of 16th International Semantic Web Conference - Resources Track ISWC2017"  ;
         bibtex:year "2017"  ;
         sda:added-at "2017-08-31T16:26:12.000+0200"  ;
-        rdfs:seeAlso "httpswwwbibsonomyorgbibtex2c8941c5b239a812b8435a381ec8438e6aksw"  ;
+        rdfs:seeAlso <https://www.bibsonomy.org/bibtex/2c8941c5b239a812b8435a381ec8438e6/aksw>  ;
         sda:interhash "e73fac9e1b601440e0b12f05c6b1a2b1"  ;
         sda:intrahash "c8941c5b239a812b8435a381ec8438e6"  ;
         bibtex:keywords "2017 groupaksw lehmann mole"  ;
@@ -16639,7 +16640,7 @@ sdapublication:ESWC_2016_EU_DIESEL a bibtex:InProceedings, dct:BibliographicReso
         dct:hasFormat <http://svn.aksw.org/papers/2016/ESWC_2016_EU_DIESEL/public.pdf>  ;
         dct:modified "ESWC_2016_EU_DIESEL"  .
 
-sdapublication:voelkel2006133 a bibtex:InProceedings, dct:BibliographicResource ;
+sdapublication:voelkel-?-2006-133- a bibtex:InProceedings, dct:BibliographicResource ;
         dct:title "Wiki-based knowledge engineering: second workshop on semantic Wikis"  ;
         dct:creator  sdaperson:MaxVolkel,  sdaperson:SebastianSchaffert,  sdaperson:ElenaPasaruBontas,  sdaperson:SorenAuer  ;
         dct:isPartOf "Proceedings of the 2006 International Symposium on Wikis"  ;
@@ -16984,7 +16985,7 @@ sdapublication:wagner2016bringing a bibo:AcademicArticle, dct:BibliographicResou
         bibtex:year "2016"  ;
         dct:modified "wagner2016bringing"  .
 
-sdapublication:weiske2007 a bibtex:InProceedings, dct:BibliographicResource ;
+sdapublication:weiske-?-2007-- a bibtex:InProceedings, dct:BibliographicResource ;
         dct:title "Implementing SPARQL Support for Relational Databases and Possible Enhancements"  ;
         dct:creator  sdaperson:ChristianWeiske,  sdaperson:SorenAuer  ;
         dct:isPartOf "Proceedings of 1st Conference on Social Semantic Web Leipzig CSSW07, 24-28 September,"  ;
@@ -17385,7 +17386,7 @@ sdapublication:DBLPserieslncs8661 a bibo:Book, dct:BibliographicResource ;
         bibo:volume "8661"  ;
         bibtex:volume "8661"  ;
         sda:bibsource "dblp computer science bibliography, http://dblp.org"  ;
-        rdfs:seeAlso "httpdblpuni-trierderecbibserieslncs8661"  ;
+        rdfs:seeAlso <http://dblp.uni-trier.de/rec/bib/series/lncs/8661>  ;
         dct:isPartOf "Linked Open Data"  ;
         bibo:doi "101007978-3-319-09846-3"  ;
         sda:isbn "978-3-319-09845-6"  ;
@@ -17394,7 +17395,7 @@ sdapublication:DBLPserieslncs8661 a bibo:Book, dct:BibliographicResource ;
         dct:hasFormat <http://dx.doi.org/10.1007/978-3-319-09846-3>  ;
         dct:modified "DBLP:series/lncs/8661"  .
 
-sdapublication:auer2009a a bibo:Proceedings, dct:BibliographicResource ;
+sdapublication:auer-?-2009--a a bibo:Proceedings, dct:BibliographicResource ;
         dct:title "Proceeding of 5th Scripting for the Semantic Web Workshop at the ESWC (SFSW 2009)"  ;
         bibtex:year "2009"  ;
         address:localityName "Hersonissos, Greece"  ;
@@ -17410,7 +17411,7 @@ sdapublication:auer2009a a bibo:Proceedings, dct:BibliographicResource ;
         sda:month_numeric "6"  ;
         dct:modified "auer-?-2009--a"  .
 
-sdapublication:auer2008 a bibo:Proceedings, dct:BibliographicResource ;
+sdapublication:auer-?-2008--b a bibo:Proceedings, dct:BibliographicResource ;
         dct:title "Proc. of Scripting for the Semantic Web Workshop at the ESWC (SFSW 2008)"  ;
         bibtex:year "2008"  ;
         address:localityName "Tenerife, Spain"  ;
@@ -17449,7 +17450,7 @@ sdapublication:auer_agiles_2009 a bibo:Book, dct:BibliographicResource ;
         sda:month_numeric "9"  ;
         dct:modified "auer_agiles_2009"  .
 
-sdapublication:auer2008c a bibo:Proceedings, dct:BibliographicResource ;
+sdapublication:auer-?-2008--c a bibo:Proceedings, dct:BibliographicResource ;
         dct:title "Proceedings of I-SEMANTICS 2008 International Conference on Semantic Systems as part of Triple-I, 3-5 September"  ;
         bibtex:year "2008"  ;
         address:localityName "Graz, Austria"  ;
@@ -17745,7 +17746,7 @@ sdapublication:DanowskiPohl2013 a bibo:Book, dct:BibliographicResource ;
         dct:isPartOf "Bibliotheks- und Informationspraxis"  ;
         sda:bdsk-url-1 "http://infobib.de/blog/2013/09/30/open-linked-data-in-bibliotheken/"  ;
         sda:bdsk-url-2 "http://dx.doi.org/10.1515/9783110278736"  ;
-        rdfs:seeAlso "httpwwwbibsonomyorgbibtex21b63d7872a1802c88e89d2e0ea7796caflint63"  ;
+        rdfs:seeAlso <http://www.bibsonomy.org/bibtex/21b63d7872a1802c88e89d2e0ea7796ca/flint63>  ;
         bibo:doi "1015159783110278736"  ;
         sda:isbn "978-3-11-027634-3"  ;
         sda:timestamp "2014-03-23T10:18:13.000+0100"  ;
@@ -17798,7 +17799,7 @@ sdapublication:LDQ2016 a bibo:Proceedings, dct:BibliographicResource ;
         sda:venue "Heraklion, Crete, Greece"  ;
         dct:modified "LDQ2016"  .
 
-sdapublication:decker2006 a bibo:Proceedings, dct:BibliographicResource ;
+sdapublication:decker-?-2006-- a bibo:Proceedings, dct:BibliographicResource ;
         dct:title "Proceedings of the Semantic Desktop and Social Semantic Collaboration Workshop (SemDesk 2006) located at 5th International Semantic Web Conference ISWC 2005"  ;
         bibtex:year "2006"  ;
         address:localityName "Athens, GA, USA"  ;
@@ -18318,7 +18319,7 @@ sdapublication:Libbrecht2007 a bibo:Proceedings, dct:BibliographicResource ;
         sda:month_numeric "6"  ;
         dct:modified "Libbrecht2007"  .
 
-sdapublication:lohmann2008 a bibo:Proceedings, dct:BibliographicResource ;
+sdapublication:lohmann-?-2008-- a bibo:Proceedings, dct:BibliographicResource ;
         dct:title "Proceedings of Workshop Nutzerinteraktion im Social Semantic Web. Collocated with ``Mensch und Computer Conference"  ;
         bibtex:year "2008"  ;
         address:localityName "Lubeck, Germany"  ;
@@ -18340,7 +18341,7 @@ sdapublication:auer-s-2008--a a bibo:Proceedings, dct:BibliographicResource ;
         bibo:volume "417"  ;
         bibtex:volume "417"  ;
         sda:bdsk-url-1 "http://sunsite.informatik.rwth-aachen.de/Publications/CEUR-WS/Vol-417/"  ;
-        rdfs:seeAlso "httpwwwbibsonomyorgbibtex224db8cdc66afe55126550f5279ab1f06aksw"  ;
+        rdfs:seeAlso <http://www.bibsonomy.org/bibtex/224db8cdc66afe55126550f5279ab1f06/aksw>  ;
         dct:source <auer-s-2008--a.pdf:auer-s-2008--a.pdf:PDF>  ;
         bibtex:keywords "2008 groupaksw auer tramp sysrelevantForinfai sysrelevantForbis"  ;
         sda:owner "seebi"  ;
@@ -23796,9 +23797,6 @@ sdaperson:WernerFaix  a  foaf:person ;
         foaf:name "Werner Faix"  ;
         foaf:familyName "Faix"  ;
         foaf:firstName "Werner"  .
-
-
-
 
 
 
