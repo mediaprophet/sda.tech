@@ -24703,8 +24703,8 @@ sdablog:Paper-accepted-at-ICLR-2018 a sioc:Post, sdablog:papernotifications ;
 ###################Invited talks#############
 
 sdablog:prof-dr-john-domingue-visits-sda a sioc:Post, sdablog:invitedtalks ;
-        dct:title "Prof. Dr. Khalid Saeed visits SDA" ;
-        sioc:topic "Prof. Dr. Khalid Saeed visits SD" ;
+        dct:title "Prof. Dr. John Domingue visits SDA" ;
+        sioc:topic "Prof. Dr. John Domingue visits SDA" ;
         dct:creator sdaperson:GezimSejdiu ;
         foaf:maker sdaperson:GezimSejdiu ;
         dct:created "2018-11-22"^^xsd:date ;
@@ -24727,7 +24727,7 @@ sdablog:prof-dr-john-domingue-visits-sda a sioc:Post, sdablog:invitedtalks ;
 
 sdablog:prof-dr-khalid-saeed-visits-sda a sioc:Post, sdablog:invitedtalks ;
         dct:title "Prof. Dr. Khalid Saeed visits SDA" ;
-        sioc:topic "Prof. Dr. Khalid Saeed visits SD" ;
+        sioc:topic "Prof. Dr. Khalid Saeed visits SDA" ;
         dct:creator sdaperson:GezimSejdiu ;
         foaf:maker sdaperson:GezimSejdiu ;
         dct:created "2018-11-08"^^xsd:date ;
