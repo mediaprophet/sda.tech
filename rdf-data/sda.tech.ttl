@@ -5547,7 +5547,7 @@ sdapublication:Auer2012 a bibtex:InProceedings, dct:BibliographicResource ;
         sda:month_numeric "5"  ;
         dct:modified "Auer2012"  .
 
-sdapublication:auer-?-2006--a a bibtex:InProceedings, dct:BibliographicResource ;
+sdapublication:auer-H-2006--a a bibtex:InProceedings, dct:BibliographicResource ;
         dct:title "A Versioning and Evolution Framework for RDF Knowledge Bases"  ;
         dct:creator  sdaperson:SorenAuer,  sdaperson:HeinrichHerre  ;
         dct:isPartOf "Proceedings of at Sixth International Andrei Ershov Memorial Conference - Perspectives of System Informatics PSI06, 27-30 June, Novosibirsk, Akademgorodok, Russia"  ;
@@ -5561,7 +5561,7 @@ sdapublication:auer-?-2006--a a bibtex:InProceedings, dct:BibliographicResource 
         sda:timestamp "2010.06.28"  ;
         dct:hasFormat <http://www.informatik.uni-leipzig.de/~auer/publication/PSI-evolution.pdf>  ;
         sda:month_numeric "6"  ;
-        dct:modified "auer-?-2006--a"  .
+        dct:modified "auer-H-2006--a"  .
 
 sdapublication:Auer2006a a bibtex:InProceedings, dct:BibliographicResource ;
         dct:title "Rapid OWL --- An Agile Knowledge Engineering Methodology"  ;
@@ -5592,7 +5592,7 @@ sdapublication:Auer2008e a bibtex:InCollection, dct:BibliographicResource ;
         sda:month_numeric "4"  ;
         dct:modified "Auer2008e"  .
 
-sdapublication:auer-?-2008--a a bibtex:InCollection, dct:BibliographicResource ;
+sdapublication:auer-IGI-2008--a a bibtex:InCollection, dct:BibliographicResource ;
         dct:title "Enabling Social Semantic Collaboration---bridging the gap between Web 2.0 and the Semantic Web"  ;
         dct:creator  sdaperson:SorenAuer,  sdaperson:ZacharyIves  ;
         dct:isPartOf "Emerging Technologies for Semantic Work Environments Techniques, Methods, and Applications"  ;
@@ -5605,9 +5605,9 @@ sdapublication:auer-?-2008--a a bibtex:InCollection, dct:BibliographicResource ;
         sda:owner "alex"  ;
         sda:timestamp "2010.07.05"  ;
         sda:month_numeric "4"  ;
-        dct:modified "auer-?-2008--a"  .
+        dct:modified "auer-IGI-2008--a"  .
 
-sdapublication:auer-?-2007-- a bibtex:InProceedings, dct:BibliographicResource ;
+sdapublication:auer-RW-2007-- a bibtex:InProceedings, dct:BibliographicResource ;
         dct:title "Semantic Wiki Representations for Building an Enterprise Knowledge Base"  ;
         dct:creator  sdaperson:SorenAuer,  sdaperson:BeritJungmann,  sdaperson:FrankSchonefeld  ;
         dct:isPartOf "Reasoning Web, Third International Summer School 2007, Dresden, Germany, September 3-7, Tutorial Lectures"  ;
@@ -5623,7 +5623,7 @@ sdapublication:auer-?-2007-- a bibtex:InProceedings, dct:BibliographicResource ;
         sda:owner "alex"  ;
         sda:timestamp "2010.07.05"  ;
         sda:month_numeric "9"  ;
-        dct:modified "auer-?-2007--"  .
+        dct:modified "auer-RW-2007--"  .
 
 sdapublication:Auer2013b a bibo:AcademicArticle, dct:BibliographicResource ;
         dct:title "Crowd-sourced Open Courseware Authoring with SlideWiki.org"  ;
@@ -10429,7 +10429,7 @@ sdapublication:kmueller-ldq16-etl-views a bibtex:InProceedings, dct:Bibliographi
         sda:month_numeric "5"  ;
         dct:modified "kmueller-ldq16-etl-views"  .
 
-sdapublication:kobilarov-?-2009-- a bibtex:InProceedings, dct:BibliographicResource ;
+sdapublication:kobilarov-WWW-2009-- a bibtex:InProceedings, dct:BibliographicResource ;
         dct:title "DBpedia - A Linked Data Hub and Data Source for Web Applications and Enterprises"  ;
         dct:creator  sdaperson:GeorgiKobilarov,  sdaperson:ChristianBizer,  sdaperson:SorenAuer,  sdaperson:JensLehmann  ;
         dct:isPartOf "Proceedings of Developers Track of 18th International World Wide Web Conference WWW 2009, April 20th-24th, Madrid, Spain"  ;
@@ -10443,7 +10443,7 @@ sdapublication:kobilarov-?-2009-- a bibtex:InProceedings, dct:BibliographicResou
         sda:timestamp "2010.06.28"  ;
         dct:hasFormat <http://www2009.eprints.org/228/>  ;
         sda:month_numeric "4"  ;
-        dct:modified "kobilarov-?-2009--"  .
+        dct:modified "kobilarov-WWW-2009--"  .
 
 sdapublication:Kohlhase2006 a bibo:Book, dct:BibliographicResource ;
         dct:title "textscOMDoc -- An open markup format for mathematical documents Version 1.2"  ;
@@ -10720,7 +10720,7 @@ sdapublication:krueger2017deep a bibo:AcademicArticle, dct:BibliographicResource
         dct:hasFormat <https://openreview.net/pdf?id=rJv6ZgHYg>  ;
         dct:modified "krueger2017deep"  .
 
-sdapublication:kunze-?-2006-- a bibtex:InProceedings, dct:BibliographicResource ;
+sdapublication:kunze-HL-2006-- a bibtex:InProceedings, dct:BibliographicResource ;
         dct:title "Eine Schnittstelle fur Arztpraxisdaten mittels einer Ontologie auf Basis von HL7 Version 3"  ;
         dct:creator  sdaperson:JanKunze,  sdaperson:ThomasRiechert,  sdaperson:SorenAuer  ;
         dct:isPartOf "Tagungsband XML-Tage, Berlin, 25-27 September"  ;
@@ -10734,7 +10734,7 @@ sdapublication:kunze-?-2006-- a bibtex:InProceedings, dct:BibliographicResource 
         sda:timestamp "2010.06.28"  ;
         dct:hasFormat <http://www.informatik.uni-leipzig.de/~auer/publication/HL72OWL.pdf>  ;
         sda:month_numeric "9"  ;
-        dct:modified "kunze-?-2006--"  .
+        dct:modified "kunze-HL-2006--"  .
 
 sdapublication:Kunze2013 a bibtex:InProceedings, dct:BibliographicResource ;
         dct:title "Dataset Retrieval"  ;
@@ -11760,7 +11760,7 @@ sdapublication:veriLinks a bibtex:InProceedings, dct:BibliographicResource ;
         dct:hasFormat <http://jens-lehmann.org/files/2013/icsc_verilinks.pdf>  ;
         dct:modified "veriLinks"  .
 
-sdapublication:lehmann-?-2007-- a bibtex:InProceedings, dct:BibliographicResource ;
+sdapublication:lehmann-LNI-2007-- a bibtex:InProceedings, dct:BibliographicResource ;
         dct:title "Discovering Unknown Connections - the DBpedia Relationship Finder"  ;
         dct:creator  sdaperson:JensLehmann,  sdaperson:JorgSchuppel,  sdaperson:SorenAuer  ;
         dct:isPartOf "Proceedings of 1st Conference on Social Semantic Web Leipzig CSSW07, 24-28 September"  ;
@@ -11776,7 +11776,7 @@ sdapublication:lehmann-?-2007-- a bibtex:InProceedings, dct:BibliographicResourc
         sda:timestamp "2010.06.28"  ;
         dct:hasFormat <http://www.informatik.uni-leipzig.de/~auer/publication/relfinder.pdf>  ;
         sda:month_numeric "9"  ;
-        dct:modified "lehmann-?-2007--"  .
+        dct:modified "lehmann-LNI-2007--"  .
 
 sdapublication:lehmann-2017-sansa-iswc a bibtex:InProceedings, dct:BibliographicResource ;
         dct:title "Distributed Semantic Analytics using the SANSA Stack"  ;
@@ -14565,7 +14565,7 @@ sdapublication:riechert-t-2010-iswc-demo a bibtex:InProceedings, dct:Bibliograph
         dct:hasFormat <http://svn.aksw.org/papers/2010/ISWC_CP_demo/iswc_cp_demo.pdf>  ;
         dct:modified "riechert-t-2010-iswc-demo"  .
 
-sdapublication:riechert-?-2009-109- a bibtex:InCollection, dct:BibliographicResource ;
+sdapublication:riechert-LIV-2009-109- a bibtex:InCollection, dct:BibliographicResource ;
         dct:title "Integration des SoftWiki-Ansatzes in das Cofundos-Entwicklungsmodell"  ;
         dct:creator  sdaperson:ThomasRiechert,  sdaperson:FanZhang,  sdaperson:SorenAuer  ;
         dct:isPartOf "Agiles Requirements Engineering fur Softwareprojekte mit einer grossen Anzahl verteilter Stakeholder"  ;
@@ -14581,7 +14581,7 @@ sdapublication:riechert-?-2009-109- a bibtex:InCollection, dct:BibliographicReso
         bibtex:keywords "2009 riechert zhang auer languagedeutsch groupaksw sysrelevantForinfai sysrelevantForbis"  ;
         sda:owner "alex"  ;
         sda:timestamp "2010.06.28"  ;
-        dct:modified "riechert-?-2009-109-"  .
+        dct:modified "riechert-LIV-2009-109-"  .
 
 sdapublication:rizzo2016integrating a bibtex:InProceedings, dct:BibliographicResource ;
         dct:title "Integrating New Refinement Operators in Terminological Decision Trees Learning"  ;
@@ -16640,7 +16640,7 @@ sdapublication:ESWC_2016_EU_DIESEL a bibtex:InProceedings, dct:BibliographicReso
         dct:hasFormat <http://svn.aksw.org/papers/2016/ESWC_2016_EU_DIESEL/public.pdf>  ;
         dct:modified "ESWC_2016_EU_DIESEL"  .
 
-sdapublication:voelkel-?-2006-133- a bibtex:InProceedings, dct:BibliographicResource ;
+sdapublication:voelkel-ISW-2006-133- a bibtex:InProceedings, dct:BibliographicResource ;
         dct:title "Wiki-based knowledge engineering: second workshop on semantic Wikis"  ;
         dct:creator  sdaperson:MaxVolkel,  sdaperson:SebastianSchaffert,  sdaperson:ElenaPasaruBontas,  sdaperson:SorenAuer  ;
         dct:isPartOf "Proceedings of the 2006 International Symposium on Wikis"  ;
@@ -16654,7 +16654,7 @@ sdapublication:voelkel-?-2006-133- a bibtex:InProceedings, dct:BibliographicReso
         sda:owner "alex"  ;
         sda:timestamp "2010.07.05"  ;
         sda:month_numeric "8"  ;
-        dct:modified "voelkel-?-2006-133-"  .
+        dct:modified "voelkel-ISW-2006-133-"  .
 
 sdapublication:Vahdati2016 a bibo:Document, dct:BibliographicResource ;
         dct:title "Making Use of the Linked Open Data Services for OpenAIRE: Querying Data about Research Results, Persons, Projects and Organisations"  ;
@@ -16985,7 +16985,7 @@ sdapublication:wagner2016bringing a bibo:AcademicArticle, dct:BibliographicResou
         bibtex:year "2016"  ;
         dct:modified "wagner2016bringing"  .
 
-sdapublication:weiske-?-2007-- a bibtex:InProceedings, dct:BibliographicResource ;
+sdapublication:weiske-CSSW-2007-- a bibtex:InProceedings, dct:BibliographicResource ;
         dct:title "Implementing SPARQL Support for Relational Databases and Possible Enhancements"  ;
         dct:creator  sdaperson:ChristianWeiske,  sdaperson:SorenAuer  ;
         dct:isPartOf "Proceedings of 1st Conference on Social Semantic Web Leipzig CSSW07, 24-28 September,"  ;
@@ -17001,7 +17001,7 @@ sdapublication:weiske-?-2007-- a bibtex:InProceedings, dct:BibliographicResource
         sda:timestamp "2010.06.28"  ;
         dct:hasFormat <http://www.informatik.uni-leipzig.de/~auer/publication/sparql-enhancements.pdf>  ;
         sda:month_numeric "9"  ;
-        dct:modified "weiske-?-2007--"  .
+        dct:modified "weiske-CSSW-2007--"  .
 
 sdapublication:welleractivity a bibo:AcademicArticle, dct:BibliographicResource ;
         dct:title "Activity Duration Prediction of Workflows by using a Data Science Approach: Unveiling the Advantage of Semantics"  ;
@@ -17395,7 +17395,7 @@ sdapublication:DBLPserieslncs8661 a bibo:Book, dct:BibliographicResource ;
         dct:hasFormat <http://dx.doi.org/10.1007/978-3-319-09846-3>  ;
         dct:modified "DBLP:series/lncs/8661"  .
 
-sdapublication:auer-?-2009--a a bibo:Proceedings, dct:BibliographicResource ;
+sdapublication:auer-SFSW-2009--a a bibo:Proceedings, dct:BibliographicResource ;
         dct:title "Proceeding of 5th Scripting for the Semantic Web Workshop at the ESWC (SFSW 2009)"  ;
         bibtex:year "2009"  ;
         address:localityName "Hersonissos, Greece"  ;
@@ -17409,9 +17409,9 @@ sdapublication:auer-?-2009--a a bibo:Proceedings, dct:BibliographicResource ;
         sda:timestamp "2010.07.05"  ;
         dct:hasFormat <http://sunsite.informatik.rwth-aachen.de/Publications/CEUR-WS/Vol-449/>  ;
         sda:month_numeric "6"  ;
-        dct:modified "auer-?-2009--a"  .
+        dct:modified "auer-SFSW-2009--a"  .
 
-sdapublication:auer-?-2008--b a bibo:Proceedings, dct:BibliographicResource ;
+sdapublication:auer-SFSW-2008--b a bibo:Proceedings, dct:BibliographicResource ;
         dct:title "Proc. of Scripting for the Semantic Web Workshop at the ESWC (SFSW 2008)"  ;
         bibtex:year "2008"  ;
         address:localityName "Tenerife, Spain"  ;
@@ -17425,7 +17425,7 @@ sdapublication:auer-?-2008--b a bibo:Proceedings, dct:BibliographicResource ;
         sda:timestamp "2010.07.05"  ;
         dct:hasFormat <http://sunsite.informatik.rwth-aachen.de/Publications/CEUR-WS/Vol-248/>  ;
         sda:month_numeric "6"  ;
-        dct:modified "auer-?-2008--b"  .
+        dct:modified "auer-SFSW-2008--b"  .
 
 sdapublication:auer_agiles_2009 a bibo:Book, dct:BibliographicResource ;
         dct:title "Agiles Requirements Engineering fur Softwareprojekte mit einer grossen Anzahl verteilter Stakeholder"  ;
@@ -17450,7 +17450,7 @@ sdapublication:auer_agiles_2009 a bibo:Book, dct:BibliographicResource ;
         sda:month_numeric "9"  ;
         dct:modified "auer_agiles_2009"  .
 
-sdapublication:auer-?-2008--c a bibo:Proceedings, dct:BibliographicResource ;
+sdapublication:auer-SEMANTICS-2008--c a bibo:Proceedings, dct:BibliographicResource ;
         dct:title "Proceedings of I-SEMANTICS 2008 International Conference on Semantic Systems as part of Triple-I, 3-5 September"  ;
         bibtex:year "2008"  ;
         address:localityName "Graz, Austria"  ;
@@ -17461,7 +17461,7 @@ sdapublication:auer-?-2008--c a bibo:Proceedings, dct:BibliographicResource ;
         bibtex:keywords "2008 eventi-semantics auer schaffer pellegrini groupaksw sysrelevantForinfai sysrelevantForbis"  ;
         sda:owner "alex"  ;
         sda:timestamp "2010.07.05"  ;
-        dct:modified "auer-?-2008--c"  .
+        dct:modified "auer-SEMANTICS-2008--c"  .
 
 sdapublication:Autexier2010 a bibo:Proceedings, dct:BibliographicResource ;
         dct:title "Intelligent Computer Mathematics"  ;
@@ -17799,7 +17799,7 @@ sdapublication:LDQ2016 a bibo:Proceedings, dct:BibliographicResource ;
         sda:venue "Heraklion, Crete, Greece"  ;
         dct:modified "LDQ2016"  .
 
-sdapublication:decker-?-2006-- a bibo:Proceedings, dct:BibliographicResource ;
+sdapublication:decker-SemDesk-2006-- a bibo:Proceedings, dct:BibliographicResource ;
         dct:title "Proceedings of the Semantic Desktop and Social Semantic Collaboration Workshop (SemDesk 2006) located at 5th International Semantic Web Conference ISWC 2005"  ;
         bibtex:year "2006"  ;
         address:localityName "Athens, GA, USA"  ;
@@ -17812,7 +17812,7 @@ sdapublication:decker-?-2006-- a bibo:Proceedings, dct:BibliographicResource ;
         sda:owner "alex"  ;
         sda:timestamp "2010.07.05"  ;
         dct:hasFormat <http://sunsite.informatik.rwth-aachen.de/Publications/CEUR-WS/Vol-202/>  ;
-        dct:modified "decker-?-2006--"  .
+        dct:modified "decker-SemDesk-2006--"  .
 
 sdapublication:Delahaye2010 a bibo:Proceedings, dct:BibliographicResource ;
         dct:title "CALCULEMUS (Emerging Trends)"  ;
@@ -18319,7 +18319,7 @@ sdapublication:Libbrecht2007 a bibo:Proceedings, dct:BibliographicResource ;
         sda:month_numeric "6"  ;
         dct:modified "Libbrecht2007"  .
 
-sdapublication:lohmann-?-2008-- a bibo:Proceedings, dct:BibliographicResource ;
+sdapublication:lohmann-SocialWeb-2008-- a bibo:Proceedings, dct:BibliographicResource ;
         dct:title "Proceedings of Workshop Nutzerinteraktion im Social Semantic Web. Collocated with ``Mensch und Computer Conference"  ;
         bibtex:year "2008"  ;
         address:localityName "Lubeck, Germany"  ;
@@ -18329,7 +18329,7 @@ sdapublication:lohmann-?-2008-- a bibo:Proceedings, dct:BibliographicResource ;
         bibtex:keywords "2008 lohmann auer ziegler languagedeutsch groupaksw sysrelevantForinfai sysrelevantForbis"  ;
         sda:owner "alex"  ;
         sda:timestamp "2010.07.05"  ;
-        dct:modified "lohmann-?-2008--"  .
+        dct:modified "lohmann-SocialWeb-2008--"  .
 
 sdapublication:auer-s-2008--a a bibo:Proceedings, dct:BibliographicResource ;
         dct:title "Proceedings of the International Workshop on Interacting with Multimedia Content in the Social Semantic Web (IMC-SSW 2008)"  ;
