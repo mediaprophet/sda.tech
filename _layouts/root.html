@@ -1,0 +1,19 @@
+---
+navigationdiv: About
+---
+<!DOCTYPE html>
+<html xmlns:xlink="http://www.w3.org/1999/xlink" lang="{{ page.lang | default: site.lang | default: " en " }}">
+{% include head.html %}
+<script>
+deactivateHeader();
+activateHeader('{{page.navigationdiv}}');
+</script>
+<body>
+  {% include rootHead.html %}
+  {{ content }}
+  {% include footer.html %} {% include foot.html %}
+
+  <script type="text/javascript" src="{{ "/assets/heatMapTechnologies.js" | relative_url }}"></script>
+</body>
+
+</html>
