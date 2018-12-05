@@ -24267,6 +24267,26 @@ sdajob:studentassistant a foaf:Document ;
 
 ###################Paper Notifications#############
 
+sdablog:paper-accepted-at-nature-scientific-data-journal a sioc:Post, sdatech:Blog, sdablog:papernotifications;
+    dct:title "Paper accepted at Nature Scientific Data Journal" ;
+    sioc:topic "Paper accepted at Nature Scientific Data Journal" ;
+    dct:creator sdaperson:GezimSejdiu ;
+    foaf:maker sdaperson:GezimSejdiu ;
+    sioc:has_creator sdaperson:GezimSejdiu ;
+    dct:created "2018-12-05"^^xsd:date ;
+    dct:language "en-US" ;
+    foaf:depiction </assets/images/posts/scientific_data.jpg> ;
+    sioc:abstract """We are very pleased to announce that our group got a paper accepted at the <a href="https://www.nature.com/sdata/"><span style="font-weight: 400;">Scientific Data journal</span></a><span style="font-weight: 400;"> - an open access publication from the </span><a href="https://www.nature.com/"><span style="font-weight: 400;">Nature Research</span></a><span style="font-weight: 400;"> for the descriptions of scientifically valuable datasets.</span>""";
+    sioc:content """We are very pleased to announce that our group got a paper accepted at the </span><a href="http://www.nature.com/"><span style="font-weight: 400;">Nature Journal</span></a> <span style="font-weight: 400;">on </span><a href="https://www.nature.com/sdata/"><span style="font-weight: 400;">Scientific Data</span></a><span style="font-weight: 400;">.</span>
+<br/>
+<span style="font-weight: 400;"><a href="https://www.nature.com/">Nature</a> is a weekly international journal publishing the finest peer-reviewed research in all fields of science and technology on the basis of its originality, importance, interdisciplinary interest, timeliness, accessibility, elegance and surprising conclusions. Nature also provides rapid, authoritative, insightful and arresting news and interpretation of topical and coming trends affecting science, scientists and the wider public.  Scientific Data is a peer-reviewed, open-access journal for descriptions of scientifically valuable datasets, and research that advances the sharing and reuse of scientific data. It covers a broad range of research disciplines, including descriptions of big or small datasets, from major consortiums to single research groups. Scientific Data primarily publishes Data Descriptors, a new type of publication that focuses on helping others reuse data, and crediting those who share.</span>
+</br>
+<span style="font-weight: 400;">Here is the pre-print of the accepted paper with its abstract:</span>
+<ul>
+	<li style="font-weight: 400;"><i><i><span style="font-weight: 400;">“</span></i><a href="https://www.nature.com/articles/sdata2018279"><b><i>A linked open data representation of patents registered in the US from 2005-2017</i></b></a><b><i>” </i></b><span style="font-weight: 400;">by <a href="/people/mofeed-hassan/">Mofeed Hassan</a>, Amrapali Zaveri, <a href="/people/prof-dr-jens-lehmann/">Jens Lehmann</a></span></i></li>
+</ul>
+<blockquote><b>Abstract</b><i><span style="font-weight: 400;">: Patents are widely used to protect intellectual property and a measure of innovation output. Each year, the USPTO grants over 150,000 patents to individuals and companies all over the world.  In fact, there were more than 280,000 patent grants issued in the US in 2015. However, accessing, searching and analyzing those patents is often still cumbersome and inefficient. To overcome those problems, Google indexes patents and converts them to Extensible Markup Language (XML) files using Optical Character Recognition (OCR) techniques. In this article, we take this idea one step further and provide semantically rich, machine-readable patents using the Linked Data principles. We have converted the data spanning 12 years - i.e. 2005 - 2017 from XML to Resource Description Framework (RDF) format, conforming to the Linked Data principles and made them publicly available for re-use. This data can be integrated with other data sources in order to further simplify use cases such as trend analysis, structured patent search &amp; exploration and societal progress measurements. We describe the conversion, publishing, interlinking process along with several use cases for the USPTO Linked Patent data.</span></i></blockquote>""" .
+
 sdablog:papers-accepted-at-jurix-2018 a sioc:Post, sdatech:Blog, sdablog:papernotifications;
     dct:title "Papers accepted at JURIX 2018" ;
     sioc:topic "Papers accepted at JURIX 2018" ;
