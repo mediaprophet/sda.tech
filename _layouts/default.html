@@ -1,16 +1,9 @@
 ---
-rdf_prefix_path: sda.tech.pref
+rdf_prefix_path: rdf-data/sda.tech.pref
 navigationdiv: About
+layout: root
 ---
-<!DOCTYPE html>
-<html xmlns:xlink="http://www.w3.org/1999/xlink" lang="{{ page.lang | default: site.lang | default: " en " }}">
-{% include head.html %}
-<script>
-deactivateHeader();
-activateHeader('{{page.navigationdiv}}');
-</script>
-<body>
-  {% include rootHead.html %}
+
   {% include header.html %}
   <br class="horizontal-separator-fixed" />
   <br class="horizontal-separator" />
@@ -21,9 +14,3 @@ activateHeader('{{page.navigationdiv}}');
     </div>
     {% include bodyFab.html %}
   </main>
-  {% include footer.html %} {% include foot.html %}
-
-  <script type="text/javascript" src="{{ "/assets/heatMapTechnologies.js" | relative_url }}"></script>
-</body>
-
-</html>

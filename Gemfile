@@ -20,8 +20,8 @@ gem "minima", "~> 2.0"
 # If you have any plugins, put them here!
 group :jekyll_plugins do
    gem "jekyll-feed", "~> 0.6"
-   #gem "jekyll-rdf", ">= 3.0.1.a"
-   gem "jekyll-rdf", "~> 2.3.0"
+   gem "jekyll-rdf", ">= 3.1.1.a"
+   #gem "jekyll-rdf", "~> 2.3.0"
    #gem "jekyll-rdf", :path => "../jekyll-rdf"
    gem "jekyll-twitter-plugin"
    gem "jekyll-email-protect"
