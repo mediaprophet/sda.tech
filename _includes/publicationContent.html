@@ -1,47 +1,98 @@
 <!--  Query to GET Article Publications -->
-{% capture query %} SELECT ?publication ?title ?publisher ?var ?date ?url ?full WHERE{
-  ?publication a bibo:Article .
-  ?publication dct:title ?title .
-  OPTIONAL { ?publication dct:date ?date } .
+{% capture query %} SELECT DISTINCT ?publication ?title ?publisher ?var ?year ?url ?full ?source ?partOf ?volume WHERE{
+  ?publication a bibo:AcademicArticle .
+  OPTIONAL { ?publication dct:title ?title } .
   OPTIONAL { ?publication dct:hasFormat ?url } .
-  ?publication dct:isPartOf ?publisher .
-  OPTIONAL{ ?publisher  bibo:shortTitle ?var } .
-  OPTIONAL{ ?publisher  dct:title ?full } .
+  OPTIONAL { ?publication dct:isPartOf ?publisher } .
+  OPTIONAL { ?publication bibtex:year ?year } .
+  OPTIONAL { ?publication dct:source ?source } .
+  OPTIONAL { ?publication dct:isPartOf ?partOf } .
+  OPTIONAL { ?publication bibo:volume ?volume } .
+  OPTIONAL { ?publication bibo:pageStart ?pages } .
+  OPTIONAL { ?publication bibo:pageEnd ?pagee } .
 
 }
-ORDER BY (?date)
+ORDER BY DESC(?year)
 {% endcapture %}
 {% assign article = page.rdf | sparql_query: query %}
 
 <!-- QUERY to GET Thesis Publications -->
-{% capture query %} SELECT ?publication ?title ?publisher ?var ?date ?url ?full WHERE{
+{% capture query %} SELECT ?publication ?title ?publisher ?var ?date ?url ?full ?hasFormat ?year ?creator ?authorname WHERE{
   ?publication a bibo:Thesis .
-  ?publication a sdatech:published .
-  ?publication dct:title ?title .
+  ?publication a sdatech:completedThesis .
+  OPTIONAL { ?publication dct:title ?title } .
   OPTIONAL { ?publication dct:issued ?date } .
   OPTIONAL { ?publication foaf:homepage ?url } .
-}
-ORDER BY (?date)
-{% endcapture %}
-{% assign thesis = page.rdf | sparql_query: query %}
+  OPTIONAL { ?publication dct:hasFormat ?hasFormat } .
+  OPTIONAL { ?publication dct:type ?thesisType } .
+  OPTIONAL { ?publication bibtex:year ?year } .
+  OPTIONAL { ?publication dct:abstract ?abstract } .
+  OPTIONAL { ?publication dct:creator ?creator } .
+  OPTIONAL { ?creator foaf:name ?authorname } .
 
-<!-- {% capture query %} SELECT ?publication ?title ?author ?authorname  WHERE{
-  ?publication a bibo:Article .
-  ?publication dct:title ?title .
-  ?publication dc:author ?author .
-  ?author foaf:name ?authorname .
 }
+ORDER BY DESC(?year)
 {% endcapture %}
-{% assign query2 = page.rdf | sparql_query: query %} -->
+{% assign Thesis = page.rdf | sparql_query: query %}
+
 
 <!--QUERY to GET ALL the Book Types  -->
+{% capture query %} SELECT DISTINCT ?publication ?title ?author ?authorname  WHERE{
+  ?publication a bibo:Book .
+  OPTIONAL { ?publication dct:title ?title } .
+  OPTIONAL { ?publication dct:hasFormat ?url } .
+  OPTIONAL { ?publication dct:isPartOf ?publisher } .
+  OPTIONAL { ?publication bibtex:year ?year } .
+  OPTIONAL { ?publication dct:source ?source } .
+  OPTIONAL { ?publication dct:isPartOf ?partOf } .
+  OPTIONAL { ?publication dct:publisher ?publisher } .
+}
+ORDER BY DESC(?year)
+{% endcapture %}
+{% assign Book = page.rdf | sparql_query: query %}
+
+<!--QUERY to GET ALL the Report Types  -->
+{% capture query %} SELECT ?publication ?title ?partOf ?authorname ?year ?source ?publisher ?publicationType  WHERE{
+  ?publication a bibo:Report .
+  OPTIONAL { ?publication dct:title ?title } .
+  OPTIONAL { ?publication dct:hasFormat ?url } .
+  OPTIONAL { ?publication dct:isPartOf ?partOf } .
+  OPTIONAL { ?publication bibtex:year ?year } .
+  OPTIONAL { ?publication dct:source ?source } .
+  OPTIONAL { ?publication dct:publisher ?publisher } .
+  OPTIONAL { ?publication dct:type ?publicationtType } .
+}
+ORDER BY DESC(?year)
+{% endcapture %}
+{% assign Report = page.rdf | sparql_query: query %}
 
 <!--QUERY to GET ALL the Thesis Types  -->
 
 <!--QUERY to GET ALL the Journal Types  -->
+{% capture query %} SELECT ?publication ?title ?author ?authorname  WHERE{
+  ?publication a bibo:Journal .
+  ?publication dct:title ?title .
+}
+ORDER BY DESC(?year)
+{% endcapture %}
+{% assign Journal = page.rdf | sparql_query: query %}
 
-<!--QUERY to GET ALL the Article Types  -->
+<!--QUERY to GET ALL the CONFERENCE PROCEEDINGS Types  -->
+{% capture query %} SELECT DISTINCT ?publication ?year ?title ?author ?authorname  WHERE{
+  ?publication a bibo:Proceedings .
+  OPTIONAL { ?publication dct:title ?title } .
+  OPTIONAL { ?publication dct:hasFormat ?url } .
+  OPTIONAL { ?publication dct:isPartOf ?publisher } .
+  OPTIONAL { ?publication bibtex:year ?year } .
+  OPTIONAL { ?publication dct:source ?source } .
+  OPTIONAL { ?publication dct:isPartOf ?partOf } .
+  OPTIONAL { ?publication bibtex:year ?year } .
+  OPTIONAL { ?publication dct:publisher ?publisher } .
 
+}
+ORDER BY DESC(?year)
+{% endcapture %}
+{% assign Proceedings = page.rdf | sparql_query: query %}
 
 
 <!-- PRESENTATION OF THE PUBLICATIONS -->
@@ -84,42 +135,113 @@ SELECT ?position WHERE{
                     </thead>
                     <tbody>
                       {% if navlabel == "Conference" %}
-                        {% for art in article %}
-                          {% capture year %}{{art.date | slice: 0, 4}}{% endcapture %}
-                          {% capture title %}{{art.title}}{% endcapture %}
-                          {% capture query %} SELECT ?publication ?title ?author ?authorname  WHERE{
-                            ?publication a bibo:Article .
-                            ?publication dct:title ?title .
-                            ?publication dc:author ?author .
-                            ?author foaf:name ?authorname .
-                            FILTER ( ?title = '{{art.title}}' )
-                          }
-                          {% endcapture %}
-                          {% assign query2 = page.rdf | sparql_query: query %}
-                          {% include publicationRow.html year=year title=art.title authors=query2 wherePublished=art.var url=art.url fulltitle=art.full %}
-                        {% endfor %}
-                      {% elsif  navlabel == "Book" %}
-
-                      {% elsif  navlabel == "Thesis" %}
-                          {% for thes in thesis %}
-                            {% capture year %}{{thes.date | slice: 0, 4}}{% endcapture %}
-                            {% capture title %}{{thes.title}}{% endcapture %}
-                            {% capture query %} SELECT ?publication ?title ?author ?authorname  WHERE{
-                              ?publication a bibo:Thesis .
-                              ?publication dct:title ?title .
-                              ?publication dc:author ?author .
-                              ?author foaf:name ?authorname .
-                              FILTER ( ?title = '{{thes.title}}' )
-                            }
-                            {% endcapture %}
-                            {% assign query2 = page.rdf | sparql_query: query %}
-
-                            {% include publicationRow.html year=year title=thes.title authors=query2  url=thes.url  %}
+                        {% if article.size != 0 %}
+                          {% for art in article %}
+                            {% capture year %}{{art.year}}{% endcapture %}
+                            {% capture title %}{{art.title}}{% endcapture %}
+                            {% if art.hasFormat %}
+                              {% capture url %}{{art.url}}{% endcapture %}
+                            {% elsif art.source %}
+                              {% capture url %}{{art.source}}{% endcapture %}
+                            {% endif %}
+                            {% include publicationRow.html year=year title=art.title authors=query2 wherePublished=art.var url=url fulltitle=art.full %}
                           {% endfor %}
+                        {% else %}
+                          <p>Currently there are no {{navlabel}} publications to show.</p>
+                        {% endif %}
+                      {% elsif  navlabel == "Conference Proceedings" %}
+                        {% if Proceedings.size != 0 %}
+                          {% for proceedings in Proceedings %}
+                            {% capture year %}{{proceedings.year}}{% endcapture %}
+                            {% capture title %}{{proceedings.title}}{% endcapture %}
+                            {% if proceedings.hasFormat %}
+                              {% capture url %}{{proceedings.url}}{% endcapture %}
+                            {% elsif proceedings.source %}
+                              {% capture url %}{{proceedings.source}}{% endcapture %}
+                            {% endif %}
+                            {% include publicationRow.html year=year title=proceedings.title authors=query2 wherePublished=proceedings.var url=url fulltitle=proceedings.full %}
+                          {% endfor %}
+                        {% else %}
+                          <p>Currently there are no {{navlabel}} publications to show.</p>
+                        {% endif %}
+                      {% elsif  navlabel == "Book" %}
+                        {% if Book.size != 0 %}
+                          {% for book in Book %}
+                            {% capture year %}{{book.year}}{% endcapture %}
+                            {% capture title %}{{book.title}}{% endcapture %}
+                            {% if book.hasFormat %}
+                              {% capture url %}{{book.url}}{% endcapture %}
+                            {% elsif book.source %}
+                              {% capture url %}{{book.source}}{% endcapture %}
+                            {% endif %}
+                            {% include publicationRow.html year=year title=book.title authors=query2 wherePublished=book.var url=url fulltitle=book.full %}
+                          {% endfor %}
+                        {% else %}
+                          <p>Currently there are no {{navlabel}} publications to show.</p>
+                        {% endif %}
+                      {% elsif  navlabel == "Thesis" %}
+                        {% if Thesis.size != 0 %}
+                          {% for thesis in Thesis %}
+                            {% capture year %}{{thesis.year}}{% endcapture %}
+                            {% capture title %}{{thesis.title}}{% endcapture %}
+                            {% if book.hasFormat %}
+                              {% capture url %}{{thesis.url}}{% endcapture %}
+                            {% elsif book.source %}
+                              {% capture url %}{{thesis.source}}{% endcapture %}
+                            {% endif %}
+                            {% include publicationRow.html year=year title=thesis.title authors=query2 wherePublished=thesis.var url=url fulltitle=thesis.full %}
+                          {% endfor %}
+                        {% else %}
+                          <p>Currently there are no {{navlabel}} publications to show.</p>
+                        {% endif %}
                       {% elsif  navlabel == "Journal" %}
-
-                      {% elsif  navlabel == "Report" %}
-
+                        {% if Journal.size != 0 %}
+                          {% for journal in Journal %}
+                            {% capture year %}{{journal.year}}{% endcapture %}
+                            {% capture title %}{{journal.title}}{% endcapture %}
+                            {% if journal.hasFormat %}
+                              {% capture url %}{{journal.url}}{% endcapture %}
+                            {% elsif journal.source %}
+                              {% capture url %}{{journal.source}}{% endcapture %}
+                            {% endif %}
+                            {% include publicationRow.html year=year title=journal.title authors=query2 wherePublished=journal.var url=url fulltitle=journal.full %}
+                          {% endfor %}
+                        {% else %}
+                          <p>Currently there are no {{navlabel}} publications to show.</p>
+                        {% endif %}
+                      {% elsif  navlabel == "Technical Report" %}
+                        {% if Report.size != 0 %}
+                          {% for report in Report %}
+                            {% capture url %}'#'{% endcapture %}
+                            {% capture year %}{{report.year}}{% endcapture %}
+                            {% capture title %}{{report.title}}{% endcapture %}
+                            {% if report.hasFormat %}
+                              {% capture url %}{{report.url}}{% endcapture %}
+                            {% elsif report.source %}
+                              {% capture url %}{{report.source}}{% endcapture %}
+                            {% endif %}
+                            {% include publicationRow.html year=year title=report.title authors=query2 wherePublished=report.var url=url fulltitle=report.full %}
+                          {% endfor %}
+                        {% else %}
+                          <p>Currently there are no {{navlabel}} publications to show.</p>
+                        {% endif %}
+                      {% elsif  navlabel == "All Publications" %}
+                        {% if Report.size != 0 %}
+                          {% for report in Report %}
+                            {% capture url %}'#'{% endcapture %}
+                            {% capture year %}{{report.year}}{% endcapture %}
+                            {% capture title %}{{report.title}}{% endcapture %}
+                            {% if report.hasFormat %}
+                              {% capture url %}{{report.url}}{% endcapture %}
+                            {% elsif report.source %}
+                              {% capture url %}{{report.source}}{% endcapture %}
+                            {% endif %}
+                            {% include publicationRow.html year=year title=report.title authors=query2 wherePublished=report.var url=url fulltitle=report.full %}
+                            <h1> {{report}}</h1>
+                          {% endfor %}
+                        {% else %}
+                          <p>Currently there are no {{navlabel}} publications to show.</p>
+                        {% endif %}
                       {% endif %}
                     </tbody>
                   </table>

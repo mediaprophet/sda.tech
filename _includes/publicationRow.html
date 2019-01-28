@@ -1,5 +1,14 @@
 {% capture authorSize %}{{include.authors | size }}{% endcapture %}
 <tr>
   <td>{{include.year}}</td>
-  <td><a href="{{include.url}}" target="_blank" class="publink">{{include.title}}</a> <i>by</i> {% for authors in include.authors %}<a href="{{authors.author}}" class="pubauthorlink" target="_blank">{{authors.authorname}}</a> {% capture index %}{{forloop.index}}{% endcapture %}{% if index != authorSize %},{% endif %}{% endfor %}<i>in</i> {{include.fulltitle}} - {{include.wherePublished}}</td>
+  <td><a href="{% if include.url != '' %}{{include.url}}{% endif %}" target="_blank" class="publink">{{include.title}}</a>
+    <i>by</i>
+    {%  for titles in articleTitle %}
+      {% capture comparasionTitle %}{{titles.title}}{% endcapture %}
+      {% capture title %}{{include.title}}{% endcapture %}
+      {% if comparasionTitle == title %}
+          <a href="{{authors.author}}" class="pubauthorlink" target="_blank">{{titles.authorname}}</a>
+      {% endif %}{% endfor %}
+    <i>in</i>
+    {{include.fulltitle}} - {{include.wherePublished}}</td>
 </tr>
