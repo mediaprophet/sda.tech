@@ -37,7 +37,7 @@ activateHeader('{{page.navigationdiv}}');
           {% for result in resultset %}{% assign class = "responsiveTabItem" %}
           {% capture shortcut %}{{result.shortcut}}{% endcapture %} {% if shortcut == label %}{% assign class = "active responsiveTabItem" %}{% endif %}
           {% capture groupname %}{{result.name}}{% endcapture %}
-          {% assign url = result.group | remove: "http://sda.tech/" | remove: "Group" %}
+          {% assign url = result.group | remove: "http://sda.tech/" %}
           <a href="../{{url}}" id="{{groupname | remove: " " }}" class="{{class}}">
                 <i class="{{result.imageclass}} margin-icon"></i>
                {{groupname}}</a>{% assign count = count | plus:1 %} {% if count == 4 %}
