@@ -13,6 +13,7 @@
   OPTIONAL { ?publication dct:creator ?creator } .
   OPTIONAL { ?publication bibo:pageEnd ?pagee } .
   OPTIONAL { ?publication bibo:issn ?issn } .
+  FILTER ( ?year >= "2015" ) .
 }
 ORDER BY DESC(?year)
 {% endcapture %}
@@ -31,7 +32,7 @@ ORDER BY DESC(?year)
   OPTIONAL { ?publication dct:abstract ?abstract } .
   OPTIONAL { ?publication dct:creator ?creator } .
   OPTIONAL { ?creator foaf:name ?authorname } .
-
+  FILTER ( ?year >= "2015" ) .
 }
 ORDER BY DESC(?year)
 {% endcapture %}
@@ -48,6 +49,8 @@ ORDER BY DESC(?year)
   OPTIONAL { ?publication dct:source ?source } .
   OPTIONAL { ?publication dct:isPartOf ?partOf } .
   OPTIONAL { ?publication dct:publisher ?publisher } .
+  FILTER ( ?year >= "2015" ) .
+
 }
 ORDER BY DESC(?year)
 {% endcapture %}
@@ -63,6 +66,8 @@ ORDER BY DESC(?year)
   OPTIONAL { ?publication dct:source ?source } .
   OPTIONAL { ?publication dct:publisher ?publisher } .
   OPTIONAL { ?publication dct:type ?publicationtType } .
+  FILTER ( ?year >= "2015" ) .
+
 }
 ORDER BY DESC(?year)
 {% endcapture %}
@@ -74,6 +79,8 @@ ORDER BY DESC(?year)
 {% capture query %} SELECT ?publication ?title ?author ?authorname  WHERE{
   ?publication a bibo:Journal .
   ?publication dct:title ?title .
+  FILTER ( ?year >= "2015" ) .
+
 }
 ORDER BY DESC(?year)
 {% endcapture %}
@@ -90,6 +97,7 @@ ORDER BY DESC(?year)
   OPTIONAL { ?publication dct:isPartOf ?partOf } .
   OPTIONAL { ?publication bibtex:year ?year } .
   OPTIONAL { ?publication dct:publisher ?publisher } .
+  FILTER ( ?year >= "2015" ) .
 
 }
 ORDER BY DESC(?year)
@@ -146,7 +154,7 @@ SELECT ?position WHERE{
                             {% elsif art.source %}
                               {% capture url %}{{art.source}}{% endcapture %}
                             {% endif %}
-                            {% include publicationRow.html year=year title=art.title authors=query2 wherePublished=art.var url=url fulltitle=art.full %}
+                            {% include publicationRow.html year=year title=art.title authors=query2 wherePublished=art.var url=url partOf=art.publisher  %}
                           {% endfor %}
                         {% else %}
                           <p>Currently there are no {{navlabel}} publications to show.</p>
