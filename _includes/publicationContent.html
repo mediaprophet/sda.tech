@@ -1,16 +1,18 @@
 <!--  Query to GET Article Publications -->
-{% capture query %} SELECT DISTINCT ?publication ?title ?publisher ?var ?year ?url ?full ?source ?partOf ?volume WHERE{
+{% capture query %} SELECT DISTINCT ?publication ?title ?publisher ?var ?year ?url ?full ?source ?partOf ?volume ?pubcompany ?pages ?pagee ?issn WHERE{
   ?publication a bibo:AcademicArticle .
   OPTIONAL { ?publication dct:title ?title } .
   OPTIONAL { ?publication dct:hasFormat ?url } .
   OPTIONAL { ?publication dct:isPartOf ?publisher } .
+  OPTIONAL { ?publication dct:publisher ?pubcompany } .
   OPTIONAL { ?publication bibtex:year ?year } .
   OPTIONAL { ?publication dct:source ?source } .
   OPTIONAL { ?publication dct:isPartOf ?partOf } .
   OPTIONAL { ?publication bibo:volume ?volume } .
   OPTIONAL { ?publication bibo:pageStart ?pages } .
+  OPTIONAL { ?publication dct:creator ?creator } .
   OPTIONAL { ?publication bibo:pageEnd ?pagee } .
-
+  OPTIONAL { ?publication bibo:issn ?issn } .
 }
 ORDER BY DESC(?year)
 {% endcapture %}
