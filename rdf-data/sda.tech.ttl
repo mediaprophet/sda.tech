@@ -24967,6 +24967,62 @@ sdablog:SANSA-0.4-Released a sioc:Post, sdablog:projectannouncements ;
 
 ###################general posts#############
 
+sdablog:new-year-at-sda-looking-back-at-2018 a sioc:Post, sdablog:generalposts ;
+        dct:title """New Year at SDA - Looking back at 2018""" ;
+        sioc:topic """New Year at SDA - Looking back at 2018""" ;
+        dct:creator sdaperson:JensLehmann ;
+        foaf:maker sdaperson:JensLehmann ;
+        dct:created "2019-01-03"^^xsd:date ;
+        dct:language "en-US" ;
+        foaf:depiction <http://sda.cs.uni-bonn.de/wp-content/uploads/2019/01/Xmas.jpg> ;
+        sioc:abstract """2019 has just started and we want to take a moment to look back at a very busy and successful year 2018, full of new members, inspirational discussions, exciting conferences, accepted research papers, new software releases and a lot of highlights we had throughout the year.""";
+        sioc:content """<img class="wp-image-3659 alignleft" src="http://sda.cs.uni-bonn.de/wp-content/uploads/2019/01/Xmas.jpg" alt="Xmas" width="173" height="115" />2019 has just started and we want to take a moment to look back at a very busy and successful year 2018, full of new members, inspirational discussions, exciting conferences, accepted research papers, new software releases and a lot of highlights we had throughout the year.
+<br/>
+<span style="font-weight: 400;">Below is a short summary of the main cornerstones for 2018:</span>
+<br/>
+<b>An interesting future for AI and knowledge graphs</b>
+<br/>
+<span style="font-weight: 400;">Artificial intelligence/machine learning and semantic technologies/knowledge graphs are central topics for SDA. Throughout the year, we have been able to accomplish a range of interesting research achievements. One particularly active area was question answering and dialogue systems (with and without knowledge graphs). We acquired new projects for more than a million Euro this year and were able to transfer our expertise to industry via successful projects at Fraunhofer. External interest in our results has been remarkably high. Furthermore, we extended our already established position in scalable distributed querying, inference, and analysis of large RDF datasets. Among the race for ever-improving achievements in AI, which has gone far beyond what many could have imagined 10 years ago, our researchers were able to deliver important contributions and continued to shape different sub-areas of the growing AI research landscape. </span>
+<br/>
+<b>Papers accepted
+</b><span style="font-weight: 400;">
+</span><span style="font-weight: 400;">We had </span><b>41 papers accepted</b><span style="font-weight: 400;"> at well-known conferences (i.e., the AAAI 2019 workshops, </span><a href="http://sda.cs.uni-bonn.de/papers-accepted-at-iswc-2018/"><span style="font-weight: 400;">ISWC 2018</span></a><span style="font-weight: 400;">, </span><a href="http://sda.cs.uni-bonn.de/papers-and-a-tutorial-accepted-at-eswc-2018/"><span style="font-weight: 400;">ESWC 2018</span></a><span style="font-weight: 400;">, </span><a href="http://sda.cs.uni-bonn.de/paper-accepted-at-nature-scientific-data-journal/"><span style="font-weight: 400;">Nature Scientific Data Journal</span></a><span style="font-weight: 400;">, </span><a href="http://sda.cs.uni-bonn.de/paper-accepted-at-the-journal-of-web-semantics/"><span style="font-weight: 400;">Journal of Web Semantics</span></a><span style="font-weight: 400;">, </span><a href="http://sda.cs.uni-bonn.de/paper-accepted-at-semantic-web-journal/"><span style="font-weight: 400;">Semantic Web Journal</span></a><span style="font-weight: 400;">, </span><a href="http://sda.cs.uni-bonn.de/papers-and-workshops-accepted-at-thewebconference-ex-www-2018/"><span style="font-weight: 400;">WWW 2018 workshops</span></a><span style="font-weight: 400;">, </span><a href="http://sda.cs.uni-bonn.de/papers-accepted-at-emnlp-2018-fever-w-nut-workshops/"><span style="font-weight: 400;">EMNLP 2018 workshops</span></a><span style="font-weight: 400;">, </span><a href="http://sda.cs.uni-bonn.de/workshop-papers-accepted-at-icmlfaim-2018/"><span style="font-weight: 400;">ECML 2018 workshops</span></a><span style="font-weight: 400;">, </span><a href="http://sda.cs.uni-bonn.de/paper-accepted-at-conll-2018/"><span style="font-weight: 400;">CoNLL 2018</span></a><span style="font-weight: 400;">, </span><a href="http://sda.cs.uni-bonn.de/paper-accepted-at-grades-2018-workshop-at-sigmod-pods/"><span style="font-weight: 400;">SIGMOD 2018 workshops</span></a><span style="font-weight: 400;">, </span><a href="http://sda.cs.uni-bonn.de/demo-paper-accepted-at-sigir-2018/"><span style="font-weight: 400;">SIGIR 2018</span></a><span style="font-weight: 400;">, </span><a href="http://sda.cs.uni-bonn.de/paper-accepted-at-iclr-2018/"><span style="font-weight: 400;">ICLR 2018</span></a><span style="font-weight: 400;">, </span><a href="http://sda.cs.uni-bonn.de/papers-accepted-at-ekaw-2018/"><span style="font-weight: 400;">EKAW 2018</span></a><span style="font-weight: 400;">, </span><a href="http://sda.cs.uni-bonn.de/paper-and-poster-papers-accepted-at-semantics-2018/"><span style="font-weight: 400;">SEMANTiCS 2018</span></a><span style="font-weight: 400;">, </span><a href="http://sda.cs.uni-bonn.de/papers-accepted-at-icwe-2018/"><span style="font-weight: 400;">ICWE 2018</span></a><span style="font-weight: 400;">, </span><a href="http://sda.cs.uni-bonn.de/papers-accepted-at-icsc-2018/"><span style="font-weight: 400;">ICSC 2018</span></a><span style="font-weight: 400;">, </span><a href="http://sda.cs.uni-bonn.de/paper-accepted-at-tpdl-2018/"><span style="font-weight: 400;">TPDL 2018</span></a><span style="font-weight: 400;">, </span><a href="http://sda.cs.uni-bonn.de/papers-accepted-at-jurix-2018/"><span style="font-weight: 400;">JURIX 2018</span></a><span style="font-weight: 400;"> and more. We estimate that SDA members had approximately 2500+ citations per year (based on Google Scholar profiles). </span>
+<br/>
+<b>Software releases
+</b><b>
+</b><a href="http://sansa-stack.net/"><b>SANSA</b></a><span style="font-weight: 400;"> - An </span><a href="https://github.com/SANSA-Stack"><span style="font-weight: 400;">open source</span></a> <b>data flow processing engine</b><span style="font-weight: 400;"> for performing distributed computation over large-scale RDF datasets had 2 successfully released during 2018 (</span><a href="http://sda.cs.uni-bonn.de/sansa-0-5/"><span style="font-weight: 400;">SANSA 0.5</span></a><span style="font-weight: 400;"> and </span><a href="http://sda.cs.uni-bonn.de/sansa-0-4/"><span style="font-weight: 400;">SANSA 0.4</span></a><span style="font-weight: 400;">).</span>
+<br/>
+<span style="font-weight: 400;">From the funded projects we were happy to launch the </span><a href="http://www.bigdataocean.eu/site/2018/05/03/bigdataocean-platform-first-major-release/"><span style="font-weight: 400;">first major release</span></a><span style="font-weight: 400;"> of the </span><b>Big Data Ocean platform</b><span style="font-weight: 400;"> - a platform for Exploiting Ocean's of Data for Maritime Applications.</span>
+<br/>
+<span style="font-weight: 400;">There were several other releases:</span>
+<ul>
+	<li style="font-weight: 400;"><a href="http://sml-bench.sda.tech/"><span style="font-weight: 400;">SML-Bench</span></a><span style="font-weight: 400;"> - A Structured Machine Learning benchmark framework </span><a href="http://sda.cs.uni-bonn.de/sml-bench-0-2-released/"><span style="font-weight: 400;">0.2</span></a><span style="font-weight: 400;"> has been released. </span></li>
+	<li style="font-weight: 400;"><a href="http://vowl.visualdataweb.org/webvowl.html"><span style="font-weight: 400;">WebVOWL</span></a><span style="font-weight: 400;"> - A web-based visualization for ontologies had</span><a href="http://vowl.visualdataweb.org/webvowl.html#releases"><span style="font-weight: 400;"> several releases</span></a><span style="font-weight: 400;"> in 2018. AS a major new feature characterizing WebVOWL is the integration of the </span><a href="http://editor.visualdataweb.org/"><span style="font-weight: 400;">WebVOWL Editor</span></a><span style="font-weight: 400;"> - a Device-Independent Visual Ontology Modeling.</span></li>
+	<li style="font-weight: 400;"><a href="http://asknow.sda.tech/"><span style="font-weight: 400;">AskNowQA</span></a><span style="font-weight: 400;"> - A Suite of Natural Language interaction technologies that behave intelligently through domain knowledge. The </span><a href="http://sda.cs.uni-bonn.de/asknow-0-1-released/"><span style="font-weight: 400;">0.1</span></a><span style="font-weight: 400;"> version has been released.</span></li>
+</ul>
+<br/>
+<b>Highlights</b>
+<ul>
+	<li style="font-weight: 400;"><span style="font-weight: 400;">Move to the brand new Computer Science Campus: After many delays, we finally moved into our </span><a href="https://www.informatik.uni-bonn.de/en/institute"><span style="font-weight: 400;">new campus</span></a><span style="font-weight: 400;"> where we have modern rooms and equipment.</span></li>
+	<li style="font-weight: 400;"><a href="http://sda.cs.uni-bonn.de/sda-at-iswc-2018-and-a-best-demo-award/"><span style="font-weight: 400;">A Best Demo Award at ISWC 2018</span></a></li>
+	<li style="font-weight: 400;"><span style="font-weight: 400;">Two PhD defenses: Mikhail Galkin and Lavdim Halilaj both successfully defended their PhD thesis. Congratulations to them again! Four more theses have been submitted, with defenses scheduled for January and February. </span></li>
+	<li style="font-weight: 400;"><span style="font-weight: 400;">Many invited speakers (</span><a href="http://sda.cs.uni-bonn.de/prof-dr-john-domingue-visits-sda/"><span style="font-weight: 400;">Prof. Dr. John Domingue</span></a><span style="font-weight: 400;">, </span><a href="http://sda.cs.uni-bonn.de/prof-dr-khalid-saeed-visits-sda/"><span style="font-weight: 400;">Prof. Dr. Khalid Saeed</span></a><span style="font-weight: 400;">, </span><a href="http://sda.cs.uni-bonn.de/invited-talk-by-dr-anastasia-dimou/"><span style="font-weight: 400;">Dr. Anastasia Dimou</span></a><span style="font-weight: 400;">, </span><a href="http://sda.cs.uni-bonn.de/invited-talk-by-svitlana-vakulenko/"><span style="font-weight: 400;">Svitlana Vakulenko</span></a><span style="font-weight: 400;"> and </span><a href="https://figshare.com/authors/Katherine_Thornton/3237981"><span style="font-weight: 400;">Dr. Katherine Thornton</span></a><span style="font-weight: 400;">).</span></li>
+	<li style="font-weight: 400;"><span style="font-weight: 400;">We did an off-site meeting together with the EIS department of Fraunhofer IAIS, at their place.</span></li>
+</ul>
+<br/>
+<span style="font-weight: 400;">Likewise, SDA deeply values team bonding activities. Often we try to introduce fun activities that involve teamwork and teambuilding. At our X-mas party, we enjoyed a very international and lovely dinner together while exchanging a `Secret Santa` gifts and played some ad-hoc games.</span>
+<br/>
+<img class="wp-image-3660 alignleft" src="http://sda.cs.uni-bonn.de/wp-content/uploads/2019/01/IMG_20181212_183158_1.jpg" alt="IMG_20181212_183158_1" width="230" height="307" /> <img class="wp-image-3661 alignleft" src="http://sda.cs.uni-bonn.de/wp-content/uploads/2019/01/IMG_20181212_184803.jpg" alt="IMG_20181212_184803" width="409" height="307" />
+<br/>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+
+<span style="font-weight: 400;">Long-term team building through deeper discussions, genuine connections and healthy communication helps us to connect within the group!</span>
+<br/>
+<span style="font-weight: 400;">Many thanks to all who have accompanied and supported us on this way! So from all of us at SDA, we wish you a wonderful new year! </span>
+<br/>
+<span style="font-weight: 400;">Jens Lehmann on behalf of </span><a href="http://sda.tech/people/"><span style="font-weight: 400;">The SDA Research Team</span></a>""" .
+
+
 sdablog:SOLIDE-at-the-BMBF-Innovation-Forum-Civil-Security-2018 a sioc:Post, sdablog:generalposts ;
         dct:title """SOLIDE at the BMBF Innovation Forum “Civil Security” 2018""" ;
         sioc:topic """SOLIDE at the BMBF Innovation Forum “Civil Security” 2018""" ;
