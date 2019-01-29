@@ -1,14 +1,27 @@
 {% capture authorSize %}{{include.authors | size }}{% endcapture %}
+{% capture title %}{{include.title}}{% endcapture %}
+{% assign iterator = 1 | plus: 0 %}
 <tr>
   <td>{{include.year}}</td>
   <td><a href="{% if include.url != '' %}{{include.url}}{% endif %}" target="_blank" class="publink">{{include.title}}</a>
-    <i>by</i>
-    {%  for titles in articleTitle %}
+    <br/><i><b>Authors: </b></i>
+    {%  for titles in include.authorList %}
       {% capture comparasionTitle %}{{titles.title}}{% endcapture %}
-      {% capture title %}{{include.title}}{% endcapture %}
       {% if comparasionTitle == title %}
-          <a href="{{authors.author}}" class="pubauthorlink" target="_blank">{{titles.authorname}}</a>
+          {% if iterator != 1 %},{% endif %}<a href="{{titles.creator}}" class="pubauthorlink" target="_blank">{{titles.name}}</a>
+          {% assign iterator = iterator | plus: 1 %}
       {% endif %}{% endfor %}
-    <i>in</i>
-    {{include.partOf}} - {{include.wherePublished}}</td>
-</tr>
+    <!-- <i><b>Authors: </b></i> -->
+    {% capture var1 %}{{include.wherePublished | size }}{% endcapture %}
+    {% capture var2 %}{{include.volume | size }}{% endcapture %}
+    {% capture var3 %}{{include.pagee | size }}{% endcapture %}
+    {% capture var4 %}{{include.pages | size }}{% endcapture %}
+    {% capture var5 %}{{include.partOf | size }}{% endcapture %}
+    {% assign s = var1 | plus: 0 %}
+    {% assign t = var2 | plus: 0 %}
+    {% assign u = var3 | plus: 0 %}
+    {% assign v = var4 | plus: 0 %}
+    {% assign w = var5 | plus: 0 %}
+    {% if w >= 1%}<br/><i><b>Part Of: </b></i>{{include.partOf}} {% if s >= 1 %} in {{include.wherePublished}} {% endif %} {% endif %}
+    {% if t >= 1 %}<br/><i><b>Volume Number: </b></i>{{include.volume}}{% if u > 0 and v > 0 %} <i><b>from</b></i> <i>page<i/>:{{include.pages}} to <i>page<i/>:{{include.pagee}}{% endif %}{% endif %}</td>
+</tr>Authors

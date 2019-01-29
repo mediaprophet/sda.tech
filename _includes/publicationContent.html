@@ -1,13 +1,12 @@
 <!--  Query to GET Article Publications -->
-{% capture query %} SELECT DISTINCT ?publication ?title ?publisher ?var ?year ?url ?full ?source ?partOf ?volume ?pubcompany ?pages ?pagee ?issn WHERE{
+{% capture query %} SELECT DISTINCT ?publication ?title ?publisher ?var ?year ?url ?full ?source ?partof ?volume ?pubcompany ?pages ?pagee ?issn WHERE{
   ?publication a bibo:AcademicArticle .
   OPTIONAL { ?publication dct:title ?title } .
   OPTIONAL { ?publication dct:hasFormat ?url } .
-  OPTIONAL { ?publication dct:isPartOf ?publisher } .
   OPTIONAL { ?publication dct:publisher ?pubcompany } .
   OPTIONAL { ?publication bibtex:year ?year } .
   OPTIONAL { ?publication dct:source ?source } .
-  OPTIONAL { ?publication dct:isPartOf ?partOf } .
+  OPTIONAL { ?publication dct:isPartOf ?partof } .
   OPTIONAL { ?publication bibo:volume ?volume } .
   OPTIONAL { ?publication bibo:pageStart ?pages } .
   OPTIONAL { ?publication dct:creator ?creator } .
@@ -40,14 +39,14 @@ ORDER BY DESC(?year)
 
 
 <!--QUERY to GET ALL the Book Types  -->
-{% capture query %} SELECT DISTINCT ?publication ?title ?author ?authorname  WHERE{
+{% capture query %} SELECT DISTINCT ?publication ?title ?url ?publisher ?creator ?source ?partof WHERE{
   ?publication a bibo:Book .
   OPTIONAL { ?publication dct:title ?title } .
   OPTIONAL { ?publication dct:hasFormat ?url } .
-  OPTIONAL { ?publication dct:isPartOf ?publisher } .
   OPTIONAL { ?publication bibtex:year ?year } .
   OPTIONAL { ?publication dct:source ?source } .
-  OPTIONAL { ?publication dct:isPartOf ?partOf } .
+  OPTIONAL { ?publication dct:isPartOf ?partof } .
+  OPTIONAL { ?publication dct:creator ?creator } .
   OPTIONAL { ?publication dct:publisher ?publisher } .
   FILTER ( ?year >= "2015" ) .
 
@@ -146,6 +145,15 @@ SELECT ?position WHERE{
                     <tbody>
                       {% if navlabel == "Conference" %}
                         {% if article.size != 0 %}
+                        <!--  Query to GET ALL the AUTHOR List for Article Type Publications -->
+                          {% capture query %} SELECT ?publication ?title ?creator ?name WHERE{
+                            ?publication a bibo:AcademicArticle .
+                            ?publication dct:title ?title .
+                            ?publication dct:creator ?creator .
+                            ?creator foaf:name ?name .
+                          }
+                          {% endcapture %}
+                          {% assign articleWithAuthorList = page.rdf | sparql_query: query %}
                           {% for art in article %}
                             {% capture year %}{{art.year}}{% endcapture %}
                             {% capture title %}{{art.title}}{% endcapture %}
@@ -154,7 +162,7 @@ SELECT ?position WHERE{
                             {% elsif art.source %}
                               {% capture url %}{{art.source}}{% endcapture %}
                             {% endif %}
-                            {% include publicationRow.html year=year title=art.title authors=query2 wherePublished=art.var url=url partOf=art.publisher  %}
+                            {% include publicationRow.html year=year title=art.title authors=query2 wherePublished=art.pubcompany url=url partOf=art.partof volume=art.volume pagee=art.pagee pages=art.pages authorList=articleWithAuthorList  %}
                           {% endfor %}
                         {% else %}
                           <p>Currently there are no {{navlabel}} publications to show.</p>
