@@ -24795,6 +24795,60 @@ sdablog:Invited-talk-by-Svitlana-Vakulenko a sioc:Post, sdablog:invitedtalks ;
 
 ###################project announcements#############
 
+sdablog:sansa-0-5 a sioc:Post, sdablog:projectannouncements ;
+        dct:title "SANSA 0.5 (Scalable Semantic Analytics Stack) Released" ;
+        sioc:topic "SANSA 0.5 (Scalable Semantic Analytics Stack) Released" ;
+        dct:creator sdaperson:JensLehmann ;
+        foaf:maker sdaperson:JensLehmann ;
+        dct:created "2018-12-13"^^xsd:date ;
+        dct:language "en-US" ;
+        foaf:depiction <http://sansa-stack.net/wp-content/uploads/2016/04/sansa-logo-blue.png> ;
+        sioc:abstract """We are happy to announce SANSA 0.5 – the fifth release of the Scalable Semantic Analytics Stack. SANSA employs distributed computing via Apache Spark and Flink in order to allow <strong>scalable machine learning, inference and querying capabilities for large knowledge graphs</strong>.""";
+        sioc:content """We are happy to announce SANSA 0.5 – the fifth release of the Scalable Semantic Analytics Stack. SANSA employs distributed computing via Apache Spark and Flink in order to allow <strong>scalable machine learning, inference and querying capabilities for large knowledge graphs</strong>.
+<ul>
+	<li>Website: <a href="http://sansa-stack.net/">http://sansa-stack.net</a></li>
+	<li>GitHub: <a href="https://github.com/SANSA-Stack">https://github.com/SANSA-Stack</a></li>
+	<li>Download: <a href="http://sansa-stack.net/downloads-usage/">http://sansa-stack.net/downloads-usage/</a></li>
+	<li>ChangeLog: <a href="https://github.com/SANSA-Stack/SANSA-Stack/releases">https://github.com/SANSA-Stack/SANSA-Stack/releases</a></li>
+</ul>
+You can find the FAQ and usage examples at <a href="http://sansa-stack.net/faq/">http://sansa-stack.net/faq/</a>.
+
+The following features are currently supported by SANSA:
+<ul>
+	<li>Reading and writing RDF files in N-Triples, Turtle, RDF/XML, N-Quad format</li>
+	<li>Reading OWL files in various standard formats</li>
+	<li>Query heterogeneous sources (Data Lake) using SPARQL – CSV, Parquet, MongoDB, Cassandra, JDBC (MySQL, SQL Server, etc.) are supported</li>
+	<li>Support for multiple data partitioning techniques</li>
+	<li>SPARQL querying via <a href="https://github.com/SmartDataAnalytics/Sparqlify">Sparqlify</a> and Ontop</li>
+	<li>Graph-parallel querying of RDF using SPARQL (1.0) via GraphX traversals (experimental)</li>
+	<li>RDFS, RDFS Simple and OWL-Horst forward chaining inference</li>
+	<li>RDF graph clustering with different algorithms</li>
+	<li>Terminological decision trees (experimental)</li>
+	<li>Knowledge graph embedding approaches: <a href="http://papers.nips.cc/paper/5071-translating-embeddings-for-modeling-multi-relational-data.pdf">TransE</a> (beta), <a href="https://arxiv.org/pdf/1412.6575.pdf">DistMult</a> (beta)</li>
+</ul>
+Noteworthy changes or updates since the previous release are:
+<ul>
+	<li>A data lake concept for querying heterogeneous data sources has been integrated into SANSA</li>
+	<li>New clustering algorithms have been added and the interface for clustering has been unified</li>
+	<li>Ontop RDB2RDF engine support has been added</li>
+	<li>RDF data quality assessment methods have been substantially improved</li>
+	<li>Dataset statistics calculation has been substantially improved</li>
+	<li>Improved unit test coverage</li>
+</ul>
+Deployment and getting started:
+<ul>
+	<li>There are template projects for SBT and Maven for Apache Spark as well as for Apache Flink<a href="http://sansa-stack.net/downloads-usage/"> available</a> to get started.</li>
+	<li>The SANSA jar files are in Maven Central i.e. in most IDEs you can just search for “sansa” to include the dependencies in Maven projects.</li>
+	<li><a href="https://github.com/SANSA-Stack/SANSA-Examples">Example code</a> is available for various tasks.</li>
+	<li>We provide interactive <a href="https://github.com/SANSA-Stack/SANSA-Notebooks">notebooks</a> for running and testing code via Docker.</li>
+</ul>
+We want to thank everyone who helped to create this release, in particular the projects <a href="https://project-hobbit.eu/">HOBBIT</a>, <a href="http://www.bigdataocean.eu/">Big Data Ocean</a>, <a href="http://slipo.eu/">SLIPO</a>, <a href="http://qrowd-project.eu/">QROWD</a>, <a href="https://www.ec-better.eu/">BETTER</a>, <a href="http://boost40.eu/">BOOST</a>, MLwin and <a href="https://simple-ml.de/">Simple-ML</a>.
+
+Spread the word by retweeting our <a href="https://twitter.com/SANSA_Stack/status/1072897902828285953">release announcement on Twitter</a>. For more updates, please <a href="https://twitter.com/SANSA_Stack">view our Twitter feed</a> and consider following us.
+
+Greetings from the <a href="http://sansa-stack.net/community/#Contributors">SANSA Development Team</a>""".
+
+
 sdablog:a-BETTER-project-for-exploiting-big-data-in-earth-observation a sioc:Post, sdablog:projectannouncements ;
         dct:title "A BETTER project for exploiting Big Data in Earth Observation" ;
         sioc:topic "A BETTER project for exploiting Big Data in Earth Observation" ;
