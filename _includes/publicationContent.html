@@ -29,7 +29,6 @@ ORDER BY DESC(?year)
   OPTIONAL { ?publication dct:type ?thesisType } .
   OPTIONAL { ?publication bibtex:year ?year } .
   OPTIONAL { ?publication dct:abstract ?abstract } .
-  OPTIONAL { ?publication dct:creator ?creator } .
   OPTIONAL { ?creator foaf:name ?authorname } .
   FILTER ( ?year >= "2015" ) .
 }
@@ -39,15 +38,17 @@ ORDER BY DESC(?year)
 
 
 <!--QUERY to GET ALL the Book Types  -->
-{% capture query %} SELECT DISTINCT ?publication ?title ?url ?publisher ?creator ?source ?partof WHERE{
+{% capture query %} SELECT DISTINCT ?publication ?title ?url ?publisher ?source ?partof ?year ?volume ?pages ?pagee WHERE{
   ?publication a bibo:Book .
   OPTIONAL { ?publication dct:title ?title } .
   OPTIONAL { ?publication dct:hasFormat ?url } .
   OPTIONAL { ?publication bibtex:year ?year } .
   OPTIONAL { ?publication dct:source ?source } .
   OPTIONAL { ?publication dct:isPartOf ?partof } .
-  OPTIONAL { ?publication dct:creator ?creator } .
   OPTIONAL { ?publication dct:publisher ?publisher } .
+  OPTIONAL { ?publication bibo:volume ?volume } .
+  OPTIONAL { ?publication bibo:pageStart ?pages } .
+  OPTIONAL { ?publication bibo:pageEnd ?pagee } .
   FILTER ( ?year >= "2015" ) .
 
 }
@@ -56,7 +57,7 @@ ORDER BY DESC(?year)
 {% assign Book = page.rdf | sparql_query: query %}
 
 <!--QUERY to GET ALL the Report Types  -->
-{% capture query %} SELECT ?publication ?title ?partOf ?authorname ?year ?source ?publisher ?publicationType  WHERE{
+{% capture query %} SELECT ?publication ?title ?partOf ?authorname ?year ?source ?publisher ?publicationType ?institution ?number WHERE{
   ?publication a bibo:Report .
   OPTIONAL { ?publication dct:title ?title } .
   OPTIONAL { ?publication dct:hasFormat ?url } .
@@ -65,6 +66,8 @@ ORDER BY DESC(?year)
   OPTIONAL { ?publication dct:source ?source } .
   OPTIONAL { ?publication dct:publisher ?publisher } .
   OPTIONAL { ?publication dct:type ?publicationtType } .
+  OPTIONAL { ?publication bibtex:institution ?institution } .
+  OPTIONAL { ?publication bibtex:number ?number }
   FILTER ( ?year >= "2015" ) .
 
 }
@@ -162,7 +165,7 @@ SELECT ?position WHERE{
                             {% elsif art.source %}
                               {% capture url %}{{art.source}}{% endcapture %}
                             {% endif %}
-                            {% include publicationRow.html year=year title=art.title authors=query2 wherePublished=art.pubcompany url=url partOf=art.partof volume=art.volume pagee=art.pagee pages=art.pages authorList=articleWithAuthorList  %}
+                            {% include publicationRow.html year=year title=art.title wherePublished=art.pubcompany url=url partOf=art.partof volume=art.volume pagee=art.pagee pages=art.pages authorList=articleWithAuthorList  %}
                           {% endfor %}
                         {% else %}
                           <p>Currently there are no {{navlabel}} publications to show.</p>
@@ -177,13 +180,31 @@ SELECT ?position WHERE{
                             {% elsif proceedings.source %}
                               {% capture url %}{{proceedings.source}}{% endcapture %}
                             {% endif %}
-                            {% include publicationRow.html year=year title=proceedings.title authors=query2 wherePublished=proceedings.var url=url fulltitle=proceedings.full %}
+                            {% include publicationRow.html year=year title=proceedings.title authors=query2 wherePublished=proceedings.var url=url  %}
                           {% endfor %}
                         {% else %}
                           <p>Currently there are no {{navlabel}} publications to show.</p>
                         {% endif %}
                       {% elsif  navlabel == "Book" %}
                         {% if Book.size != 0 %}
+                          <!--  Query to GET ALL the AUTHOR List for Book Type Publications -->
+                          {% capture query %} SELECT ?publication ?title ?creator ?name WHERE{
+                            ?publication a bibo:Book .
+                            ?publication dct:title ?title .
+                            ?publication dct:creator ?creator .
+                            ?creator foaf:name ?name .
+                          }
+                          {% endcapture %}
+                          {% assign bookWithAuthorList = page.rdf | sparql_query: query %}
+                          {% capture query %} SELECT ?publication ?title ?creator ?name WHERE{
+                            ?publication a bibo:Book .
+                            ?publication dct:title ?title .
+                            ?publication dct:creator ?creator .
+                            ?creator foaf:name ?name .
+                          }
+                          {% endcapture %}
+                          {% assign bookWithEditorList = page.rdf | sparql_query: query %}
+                          {{bookWithEditorList}}
                           {% for book in Book %}
                             {% capture year %}{{book.year}}{% endcapture %}
                             {% capture title %}{{book.title}}{% endcapture %}
@@ -192,7 +213,7 @@ SELECT ?position WHERE{
                             {% elsif book.source %}
                               {% capture url %}{{book.source}}{% endcapture %}
                             {% endif %}
-                            {% include publicationRow.html year=year title=book.title authors=query2 wherePublished=book.var url=url fulltitle=book.full %}
+                            {% include publicationRow.html year=year title=book.title authors=query2 wherePublished=book.var url=url volume=book.volume pagee=book.pagee pages=book.pages authorList=bookWithAuthorList editorList=bookWithEditorList %}
                           {% endfor %}
                         {% else %}
                           <p>Currently there are no {{navlabel}} publications to show.</p>
@@ -207,7 +228,7 @@ SELECT ?position WHERE{
                             {% elsif book.source %}
                               {% capture url %}{{thesis.source}}{% endcapture %}
                             {% endif %}
-                            {% include publicationRow.html year=year title=thesis.title authors=query2 wherePublished=thesis.var url=url fulltitle=thesis.full %}
+                            {% include publicationRow.html year=year title=thesis.title wherePublished=thesis.var url=url fulltitle=thesis.full %}
                           {% endfor %}
                         {% else %}
                           <p>Currently there are no {{navlabel}} publications to show.</p>
@@ -222,13 +243,22 @@ SELECT ?position WHERE{
                             {% elsif journal.source %}
                               {% capture url %}{{journal.source}}{% endcapture %}
                             {% endif %}
-                            {% include publicationRow.html year=year title=journal.title authors=query2 wherePublished=journal.var url=url fulltitle=journal.full %}
+                            {% include publicationRow.html year=year title=journal.title wherePublished=journal.var url=url fulltitle=journal.full %}
                           {% endfor %}
                         {% else %}
                           <p>Currently there are no {{navlabel}} publications to show.</p>
                         {% endif %}
                       {% elsif  navlabel == "Technical Report" %}
                         {% if Report.size != 0 %}
+                        <!--  Query to GET ALL the AUTHOR List for Book Type Publications -->
+                        {% capture query %} SELECT ?publication ?title ?creator ?name WHERE{
+                          ?publication a bibo:Report .
+                          ?publication dct:title ?title .
+                          ?publication dct:creator ?creator .
+                          ?creator foaf:name ?name .
+                        }
+                        {% endcapture %}
+                        {% assign reportWithAuthorList = page.rdf | sparql_query: query %}
                           {% for report in Report %}
                             {% capture url %}'#'{% endcapture %}
                             {% capture year %}{{report.year}}{% endcapture %}
@@ -238,7 +268,7 @@ SELECT ?position WHERE{
                             {% elsif report.source %}
                               {% capture url %}{{report.source}}{% endcapture %}
                             {% endif %}
-                            {% include publicationRow.html year=year title=report.title authors=query2 wherePublished=report.var url=url fulltitle=report.full %}
+                            {% include publicationRow.html year=year title=report.title  wherePublished=report.var url=url partOf=report.partof fulltitle=report.full authorList=reportWithAuthorList institution=report.institution type=report.publicationType number=report.number  %}
                           {% endfor %}
                         {% else %}
                           <p>Currently there are no {{navlabel}} publications to show.</p>

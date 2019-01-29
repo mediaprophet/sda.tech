@@ -4,24 +4,44 @@
 <tr>
   <td>{{include.year}}</td>
   <td><a href="{% if include.url != '' %}{{include.url}}{% endif %}" target="_blank" class="publink">{{include.title}}</a>
-    <br/><i><b>Authors: </b></i>
     {%  for titles in include.authorList %}
       {% capture comparasionTitle %}{{titles.title}}{% endcapture %}
       {% if comparasionTitle == title %}
-          {% if iterator != 1 %},{% endif %}<a href="{{titles.creator}}" class="pubauthorlink" target="_blank">{{titles.name}}</a>
+          {% if iterator == 1 %}<br/><i><b>Authors: </b></i>{% endif %}
+          {% if iterator != 1 %},{% endif %} <a href="{{titles.creator}}" class="pubauthorlink" target="_blank">{{titles.name}}</a>
           {% assign iterator = iterator | plus: 1 %}
       {% endif %}{% endfor %}
+      {%  for titles in include.editorList %}
+        {% capture comparasionTitle %}{{titles.title}}{% endcapture %}
+        <br/>
+        TEST: {{comparasionTitle}} --- {{Title}}
+        <br/>
+        {% if comparasionTitle == title %}
+            {% if iterator == 1 %}<br/><i><b>Editors: </b></i>{% endif %}
+            {% if iterator != 1 %},{% endif %} <a href="{{titles.creator}}" class="pubauthorlink" target="_blank">{{titles.name}}</a>
+            {% assign iterator = iterator | plus: 1 %}
+        {% endif %}{% endfor %}
     <!-- <i><b>Authors: </b></i> -->
     {% capture var1 %}{{include.wherePublished | size }}{% endcapture %}
     {% capture var2 %}{{include.volume | size }}{% endcapture %}
     {% capture var3 %}{{include.pagee | size }}{% endcapture %}
     {% capture var4 %}{{include.pages | size }}{% endcapture %}
     {% capture var5 %}{{include.partOf | size }}{% endcapture %}
+    {% capture var6 %}{{include.institution | size }}{% endcapture %}
+    {% capture var7 %}{{include.number | size }}{% endcapture %}
+    {% capture var8 %}{{include.type | size }}{% endcapture %}
     {% assign s = var1 | plus: 0 %}
     {% assign t = var2 | plus: 0 %}
     {% assign u = var3 | plus: 0 %}
     {% assign v = var4 | plus: 0 %}
     {% assign w = var5 | plus: 0 %}
+    {% assign x = var6 | plus: 0 %}
+    {% assign y = var7 | plus: 0 %}
+    {% assign z = var8 | plus: 0 %}
     {% if w >= 1%}<br/><i><b>Part Of: </b></i>{{include.partOf}} {% if s >= 1 %} in {{include.wherePublished}} {% endif %} {% endif %}
-    {% if t >= 1 %}<br/><i><b>Volume Number: </b></i>{{include.volume}}{% if u > 0 and v > 0 %} <i><b>from</b></i> <i>page<i/>:{{include.pages}} to <i>page<i/>:{{include.pagee}}{% endif %}{% endif %}</td>
-</tr>Authors
+    {% if t >= 1 %}<br/><i><b>Volume Number: </b></i>{{include.volume}}{% if u > 0 and v > 0 %} <i><b>from</b></i> <i>page<i/>:{{include.pages}} to <i>page<i/>:{{include.pagee}}{% endif %}{% endif %}
+    {% if y >= 1%}<br/><i><b>Report Number: </b></i>{{include.number}}{% endif %}
+    {% if x >= 1%}<br/><i><b>Institution: </b></i>{{include.institution}}{% endif %}
+    {% if z >= 1%}<br/><i><b>Report Type: </b></i>{{include.type}}{% endif %}
+    </td>
+</tr>
