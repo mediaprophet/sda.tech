@@ -1,8 +1,6 @@
 #!/bin/bash
 set -e
-uit=$(ttl "$file")
+uit=$(ttl "$1")
 if [[ $uit == *[Error:* ]]; then
-   set +e
-   echo "Test : Exit 1"
-   exit 1
+   >&2 echo "Fail"; exit 1;
 fi
