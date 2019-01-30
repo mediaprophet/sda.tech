@@ -4,7 +4,8 @@ rvm:
 before_install:
   - npm install -g turtle-validator
   - set -e
-  - ttl rdf-data/sda.tech.ttl
+  - set -v
+  - ttl rdf-data/sda.tech.ttl || grep Error || travis_terminate 1
 install:
   - bundle update
   - bundle install
