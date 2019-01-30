@@ -3,9 +3,8 @@ rvm:
   - 2.3.1
 before_install:
   - npm install -g turtle-validator
-  - set -e
-  - set -v
-  - ttl rdf-data/sda.tech.ttl || grep Error || travis_terminate 1
+script:
+  - bash TurtleValidator.sh || travis_terminate 1
 install:
   - bundle update
   - bundle install
