@@ -267,7 +267,7 @@ sdaperson:GezimSejdiu a foaf:Person, sdatech:phdStudent ;
                    sda:publicationsTag "sejdiu" ;
                    ex:address sda:Room68 ;
                    foaf:familyName "Sejdiu" ;
-                   foaf:name "Gezim Sejdiu" ;
+                   foaf:name "Gezim Sejdiu" .
                    foaf:nick "Gezim" ;
                    foaf:mbox <mailto:sejdiu@cs.uni-bonn.de> ;
                    foaf:depiction <https://avatars3.githubusercontent.com/u/5259296?s=400&u=2923073a71257798968eb57c860c45d4e7a18d72&v=4> ;
