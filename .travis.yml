@@ -1,6 +1,9 @@
 language: ruby
 rvm:
   - 2.3.1
+before_install:
+  - npm install -g turtle-validator
+  - ttl rdf-data/sda.tech.ttl
 install:
   - bundle update
   - bundle install
