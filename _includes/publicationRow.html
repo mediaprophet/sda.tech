@@ -11,6 +11,7 @@
           {% if iterator != 1 %},{% endif %} <a href="{{titles.creator}}" class="pubauthorlink" target="_blank">{{titles.name}}</a>
           {% assign iterator = iterator | plus: 1 %}
       {% endif %}{% endfor %}
+      EDITORLIST: {{include.editorList}}
       {%  for titles in include.editorList %}
         {% capture comparasionTitle %}{{titles.title}}{% endcapture %}
         <br/>
@@ -41,7 +42,7 @@
     {% if w >= 1%}<br/><i><b>Part Of: </b></i>{{include.partOf}} {% if s >= 1 %} in {{include.wherePublished}} {% endif %} {% endif %}
     {% if t >= 1 %}<br/><i><b>Volume Number: </b></i>{{include.volume}}{% if u > 0 and v > 0 %} <i><b>from</b></i> <i>page<i/>:{{include.pages}} to <i>page<i/>:{{include.pagee}}{% endif %}{% endif %}
     {% if y >= 1%}<br/><i><b>Report Number: </b></i>{{include.number}}{% endif %}
-    {% if x >= 1%}<br/><i><b>Institution: </b></i>{{include.institution}}{% endif %}
     {% if z >= 1%}<br/><i><b>Report Type: </b></i>{{include.type}}{% endif %}
+    {% if x >= 1%}<br/><i><b>Institution: </b></i>{{include.institution}}{% endif %}
     </td>
 </tr>

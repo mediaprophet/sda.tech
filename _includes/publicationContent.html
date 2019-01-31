@@ -89,18 +89,16 @@ ORDER BY DESC(?year)
 {% assign Journal = page.rdf | sparql_query: query %}
 
 <!--QUERY to GET ALL the CONFERENCE PROCEEDINGS Types  -->
-{% capture query %} SELECT DISTINCT ?publication ?year ?title ?author ?authorname  WHERE{
+{% capture query %} SELECT DISTINCT ?publication ?year ?title ?author ?authorname ?partOf WHERE{
   ?publication a bibo:Proceedings .
   OPTIONAL { ?publication dct:title ?title } .
   OPTIONAL { ?publication dct:hasFormat ?url } .
-  OPTIONAL { ?publication dct:isPartOf ?publisher } .
   OPTIONAL { ?publication bibtex:year ?year } .
   OPTIONAL { ?publication dct:source ?source } .
   OPTIONAL { ?publication dct:isPartOf ?partOf } .
   OPTIONAL { ?publication bibtex:year ?year } .
   OPTIONAL { ?publication dct:publisher ?publisher } .
   FILTER ( ?year >= "2015" ) .
-
 }
 ORDER BY DESC(?year)
 {% endcapture %}
@@ -172,6 +170,24 @@ SELECT ?position WHERE{
                         {% endif %}
                       {% elsif  navlabel == "Conference Proceedings" %}
                         {% if Proceedings.size != 0 %}
+                        <!--  Query to GET ALL the AUTHOR List for Proceedings Type Publications -->
+                          {% capture query %} SELECT ?publication ?title ?creator ?name WHERE{
+                            ?publication a bibo:Proceedings .
+                            ?publication dct:title ?title .
+                            ?publication bibo:editor ?creator .
+                            ?creator foaf:name ?name .
+                          }
+                          {% endcapture %}
+                          {% assign proceedingsWithEditorList = page.rdf | sparql_query: query %}
+                          {% capture query %} SELECT ?publication ?title ?creator ?name WHERE{
+                            ?publication a bibo:Proceedings .
+                            ?publication dct:title ?title .
+                            ?publication dct:creator ?creator .
+                            ?creator foaf:name ?name .
+                          }
+                          {% endcapture %}
+                          {% assign proceedingsWithAuthorList = page.rdf | sparql_query: query %}
+                          EDITOR:{{proceedingsWithEditorList}}
                           {% for proceedings in Proceedings %}
                             {% capture year %}{{proceedings.year}}{% endcapture %}
                             {% capture title %}{{proceedings.title}}{% endcapture %}
@@ -180,7 +196,7 @@ SELECT ?position WHERE{
                             {% elsif proceedings.source %}
                               {% capture url %}{{proceedings.source}}{% endcapture %}
                             {% endif %}
-                            {% include publicationRow.html year=year title=proceedings.title authors=query2 wherePublished=proceedings.var url=url  %}
+                            {% include publicationRow.html year=year title=proceedings.title  wherePublished=proceedings.var url=url authorList=proceedingsWithAuthorList editorList=proceedingsWithEditorList  %}
                           {% endfor %}
                         {% else %}
                           <p>Currently there are no {{navlabel}} publications to show.</p>
@@ -199,12 +215,11 @@ SELECT ?position WHERE{
                           {% capture query %} SELECT ?publication ?title ?creator ?name WHERE{
                             ?publication a bibo:Book .
                             ?publication dct:title ?title .
-                            ?publication dct:creator ?creator .
+                            ?publication bibo:editor ?creator .
                             ?creator foaf:name ?name .
                           }
                           {% endcapture %}
                           {% assign bookWithEditorList = page.rdf | sparql_query: query %}
-                          {{bookWithEditorList}}
                           {% for book in Book %}
                             {% capture year %}{{book.year}}{% endcapture %}
                             {% capture title %}{{book.title}}{% endcapture %}
