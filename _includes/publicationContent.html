@@ -1,5 +1,5 @@
 <!--  Query to GET Article Publications -->
-{% capture query %} SELECT DISTINCT ?publication ?title ?publisher ?var ?year ?url ?full ?source ?partof ?volume ?pubcompany ?pages ?pagee ?issn WHERE{
+{% capture query %} SELECT DISTINCT ?publication ?title ?var ?year ?url ?full ?source ?partof ?volume ?pubcompany ?pages ?pagee ?issn WHERE{
   ?publication a bibo:AcademicArticle .
   OPTIONAL { ?publication dct:title ?title } .
   OPTIONAL { ?publication dct:hasFormat ?url } .
@@ -19,7 +19,7 @@ ORDER BY DESC(?year)
 {% assign article = page.rdf | sparql_query: query %}
 
 <!-- QUERY to GET Thesis Publications -->
-{% capture query %} SELECT ?publication ?title ?publisher ?var ?date ?url ?full ?hasFormat ?year ?creator ?authorname WHERE{
+{% capture query %} SELECT DISTINCT ?publication ?title ?publisher ?var ?date ?url ?full ?hasFormat ?year ?creator ?authorname WHERE{
   ?publication a bibo:Thesis .
   ?publication a sdatech:completedThesis .
   OPTIONAL { ?publication dct:title ?title } .
@@ -57,7 +57,7 @@ ORDER BY DESC(?year)
 {% assign Book = page.rdf | sparql_query: query %}
 
 <!--QUERY to GET ALL the Report Types  -->
-{% capture query %} SELECT ?publication ?title ?partOf ?authorname ?year ?source ?publisher ?publicationType ?institution ?number WHERE{
+{% capture query %} SELECT DISTINCT ?publication ?title ?partOf ?authorname ?year ?source ?publisher ?publicationType ?institution ?number WHERE{
   ?publication a bibo:Report .
   OPTIONAL { ?publication dct:title ?title } .
   OPTIONAL { ?publication dct:hasFormat ?url } .
@@ -75,10 +75,9 @@ ORDER BY DESC(?year)
 {% endcapture %}
 {% assign Report = page.rdf | sparql_query: query %}
 
-<!--QUERY to GET ALL the Thesis Types  -->
 
 <!--QUERY to GET ALL the Journal Types  -->
-{% capture query %} SELECT ?publication ?title ?author ?authorname  WHERE{
+{% capture query %} SELECT DISTINCT ?publication ?title ?author ?authorname  WHERE{
   ?publication a bibo:Journal .
   ?publication dct:title ?title .
   FILTER ( ?year >= "2015" ) .
@@ -89,14 +88,13 @@ ORDER BY DESC(?year)
 {% assign Journal = page.rdf | sparql_query: query %}
 
 <!--QUERY to GET ALL the CONFERENCE PROCEEDINGS Types  -->
-{% capture query %} SELECT DISTINCT ?publication ?year ?title ?author ?authorname ?partOf WHERE{
+{% capture query %} SELECT DISTINCT ?publication ?year ?title ?partOf ?publisher WHERE{
   ?publication a bibo:Proceedings .
   OPTIONAL { ?publication dct:title ?title } .
   OPTIONAL { ?publication dct:hasFormat ?url } .
   OPTIONAL { ?publication bibtex:year ?year } .
   OPTIONAL { ?publication dct:source ?source } .
   OPTIONAL { ?publication dct:isPartOf ?partOf } .
-  OPTIONAL { ?publication bibtex:year ?year } .
   OPTIONAL { ?publication dct:publisher ?publisher } .
   FILTER ( ?year >= "2015" ) .
 }
@@ -104,6 +102,28 @@ ORDER BY DESC(?year)
 {% endcapture %}
 {% assign Proceedings = page.rdf | sparql_query: query %}
 
+<!--QUERY to GET ALL the Publication Types  -->
+{% capture query %} SELECT DISTINCT ?publication ?year ?title ?url ?pubcompany ?source ?volume ?pages ?creator ?pagee ?issn ?publicationType ?institution ?number ?partOf  WHERE{
+  ?publication a dct:BibliographicResource .
+  OPTIONAL { ?publication dct:title ?title } .
+  OPTIONAL { ?publication dct:hasFormat ?url } .
+  OPTIONAL { ?publication dct:publisher ?pubcompany } .
+  OPTIONAL { ?publication bibtex:year ?year } .
+  OPTIONAL { ?publication dct:source ?source } .
+  OPTIONAL { ?publication dct:isPartOf ?partof } .
+  OPTIONAL { ?publication bibo:volume ?volume } .
+  OPTIONAL { ?publication bibo:pageStart ?pages } .
+  OPTIONAL { ?publication dct:creator ?creator } .
+  OPTIONAL { ?publication bibo:pageEnd ?pagee } .
+  OPTIONAL { ?publication bibo:issn ?issn } .
+  OPTIONAL { ?publication dct:type ?publicationtType } .
+  OPTIONAL { ?publication bibtex:institution ?institution } .
+  OPTIONAL { ?publication bibtex:number ?number }
+  FILTER ( ?year >= "2015" ) .
+}
+ORDER BY DESC(?year)
+{% endcapture %}
+{% assign All = page.rdf | sparql_query: query %}
 
 <!-- PRESENTATION OF THE PUBLICATIONS -->
 {% assign count = 0 %}
@@ -173,21 +193,20 @@ SELECT ?position WHERE{
                         <!--  Query to GET ALL the AUTHOR List for Proceedings Type Publications -->
                           {% capture query %} SELECT ?publication ?title ?creator ?name WHERE{
                             ?publication a bibo:Proceedings .
-                            ?publication dct:title ?title .
-                            ?publication bibo:editor ?creator .
-                            ?creator foaf:name ?name .
+                            OPTIONAL { ?publication dct:title ?title } .
+                            OPTIONAL { ?publication bibo:editor ?creator } .
+                            OPTIONAL { ?creator foaf:name ?name } .
                           }
                           {% endcapture %}
                           {% assign proceedingsWithEditorList = page.rdf | sparql_query: query %}
                           {% capture query %} SELECT ?publication ?title ?creator ?name WHERE{
                             ?publication a bibo:Proceedings .
-                            ?publication dct:title ?title .
-                            ?publication dct:creator ?creator .
-                            ?creator foaf:name ?name .
+                            OPTIONAL { ?publication dct:title ?title } .
+                            OPTIONAL { ?publication dct:creator ?creator } .
+                            OPTIONAL { ?creator foaf:name ?name } .
                           }
                           {% endcapture %}
                           {% assign proceedingsWithAuthorList = page.rdf | sparql_query: query %}
-                          EDITOR:{{proceedingsWithEditorList}}
                           {% for proceedings in Proceedings %}
                             {% capture year %}{{proceedings.year}}{% endcapture %}
                             {% capture title %}{{proceedings.title}}{% endcapture %}
@@ -206,17 +225,18 @@ SELECT ?position WHERE{
                           <!--  Query to GET ALL the AUTHOR List for Book Type Publications -->
                           {% capture query %} SELECT ?publication ?title ?creator ?name WHERE{
                             ?publication a bibo:Book .
-                            ?publication dct:title ?title .
-                            ?publication dct:creator ?creator .
-                            ?creator foaf:name ?name .
+                            OPTIONAL { ?publication dct:title ?title } .
+                            OPTIONAL { ?publication dct:creator ?creator } .
+                            OPTIONAL { ?creator foaf:name ?name } .
                           }
                           {% endcapture %}
                           {% assign bookWithAuthorList = page.rdf | sparql_query: query %}
+                          AUTHOR TEST: {{bookWithAuthorList}}
                           {% capture query %} SELECT ?publication ?title ?creator ?name WHERE{
-                            ?publication a bibo:Book .
-                            ?publication dct:title ?title .
-                            ?publication bibo:editor ?creator .
-                            ?creator foaf:name ?name .
+                            OPTIONAL { ?publication a bibo:Book } .
+                            OPTIONAL { ?publication dct:title ?title } .
+                            OPTIONAL { ?publication bibo:editor ?creator } .
+                            OPTIONAL { ?creator foaf:name ?name } .
                           }
                           {% endcapture %}
                           {% assign bookWithEditorList = page.rdf | sparql_query: query %}
@@ -289,17 +309,35 @@ SELECT ?position WHERE{
                           <p>Currently there are no {{navlabel}} publications to show.</p>
                         {% endif %}
                       {% elsif  navlabel == "All Publications" %}
-                        {% if Report.size != 0 %}
-                          {% for report in Report %}
+                        {% if All.size != 0 %}
+                          <!--  Query to GET ALL the EDITOR List for all Publications -->
+                            {% capture query %} SELECT ?publication ?title ?creator ?name WHERE{
+                              ?publication a dct:BibliographicResource .
+                              OPTIONAL { ?publication dct:title ?title } .
+                              OPTIONAL { ?publication bibo:editor ?creator } .
+                              OPTIONAL { ?creator foaf:name ?name } .
+                            }
+                            {% endcapture %}
+                            {% assign publicationsWithEditorList = page.rdf | sparql_query: query %}
+                            <!--  Query to GET ALL the AUTHOR List for all Publications -->
+                            {% capture query %} SELECT ?publication ?title ?creator ?name WHERE{
+                              ?publication a dct:BibliographicResource .
+                              OPTIONAL { ?publication dct:title ?title } .
+                              OPTIONAL { ?publication dct:creator ?creator } .
+                              OPTIONAL { ?creator foaf:name ?name } .
+                            }
+                            {% endcapture %}
+                            {% assign publicationsWithAuthorList = page.rdf | sparql_query: query %}
+                          {% for publications in All %}
                             {% capture url %}'#'{% endcapture %}
-                            {% capture year %}{{report.year}}{% endcapture %}
-                            {% capture title %}{{report.title}}{% endcapture %}
-                            {% if report.hasFormat %}
+                            {% capture year %}{{publications.year}}{% endcapture %}
+                            {% capture title %}{{publications.title}}{% endcapture %}
+                            {% if publication.hasFormat %}
                               {% capture url %}{{report.url}}{% endcapture %}
-                            {% elsif report.source %}
+                            {% elsif publication.source %}
                               {% capture url %}{{report.source}}{% endcapture %}
                             {% endif %}
-                            {% include publicationRow.html year=year title=report.title authors=query2 wherePublished=report.var url=url fulltitle=report.full %}
+                            {% include publicationRow.html year=year title=publication.title wherePublished=publication.pubcompany volume=publication.volume url=url fulltitle=report.full pagee=publication.pagee pages=publication.pages partOf=publication.partof institution=publication.institution number=publication.number type=publication.type authorList=publicationsWithAuthorList editorList=publicationsWithEditorList %}
                             <h1> {{report}}</h1>
                           {% endfor %}
                         {% else %}
