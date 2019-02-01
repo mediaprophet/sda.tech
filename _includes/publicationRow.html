@@ -29,6 +29,8 @@
     {% capture var7 %}{{include.number | size }}{% endcapture %}
     {% capture var8 %}{{include.type | size }}{% endcapture %}
     {% capture var9 %}{{include.issn | size }}{% endcapture %}
+    {% capture var10 %}{{include.thesisType | size }}{% endcapture %}
+    {% capture var11 %}{{include.abstract | size }}{% endcapture %}
     {% assign s = var1 | plus: 0 %}
     {% assign t = var2 | plus: 0 %}
     {% assign u = var3 | plus: 0 %}
@@ -38,11 +40,15 @@
     {% assign y = var7 | plus: 0 %}
     {% assign z = var8 | plus: 0 %}
     {% assign a = var9 | plus: 0 %}
+    {% assign b = var10 | plus: 0 %}
+    {% assign c = var11 | plus: 0 %}
     {% if w >= 1%}<br/><i><b>Part Of: </b></i>{{include.partOf}} {% if s >= 1 %} in {{include.wherePublished}} {% endif %} {% endif %}
     {% if t >= 1 %}<br/><i><b>Volume Number: </b></i>{{include.volume}}{% if u > 0 and v > 0 %} <i><b>from</b></i> <i>page<i/>:{{include.pages}} to <i>page<i/>:{{include.pagee}}{% endif %}{% endif %}
     {% if y >= 1%}<br/><i><b>Report Number: </b></i>{{include.number}}{% endif %}
     {% if z >= 1%}<br/><i><b>Report Type: </b></i>{{include.type}}{% endif %}
+    {% if b >= 1%}<br/><i><b>Thesis Type: </b></i>{{include.thesisType}}{% endif %}
     {% if x >= 1%}<br/><i><b>Institution: </b></i>{{include.institution}}{% endif %}
     {% if a >= 1%}<br/><i><b>Issn: </b></i>{{include.issn}}{% endif %}
+    {% if c >= 1%}<br/><i><b>Abstract: </b></i>{{include.abstract}}{% endif %}
     </td>
 </tr>
