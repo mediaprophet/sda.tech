@@ -3,7 +3,7 @@
 {% assign iterator = 1 | plus: 0 %}
 <tr>
   <td>{{include.year}}</td>
-  <td><a href="{% if include.url != '' %}{{include.url}}{% endif %}" target="_blank" class="publink">{{include.title}}</a>
+  <td><a href="{% if include.url != '' and include.url != '#' %}{{include.url}}{% elsif include.url == '#' %}#{% endif %}" target="_blank" class="publink">{{include.title}}</a>
     {%  for titles in include.authorList %}
       {% capture comparasionTitle %}{{titles.title}}{% endcapture %}
       {% if comparasionTitle == title %}

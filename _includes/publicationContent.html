@@ -118,7 +118,7 @@ ORDER BY DESC(?year)
   OPTIONAL { ?publication bibo:issn ?issn } .
   OPTIONAL { ?publication dct:type ?publicationtType } .
   OPTIONAL { ?publication bibtex:institution ?institution } .
-  OPTIONAL { ?publication bibtex:number ?number }
+  OPTIONAL { ?publication bibtex:number ?number } .
   FILTER ( ?year >= "2015" ) .
 }
 ORDER BY DESC(?year)
@@ -254,6 +254,23 @@ SELECT ?position WHERE{
                         {% endif %}
                       {% elsif  navlabel == "Thesis" %}
                         {% if Thesis.size != 0 %}
+                          <!--  Query to GET ALL the AUTHOR List for Book Type Publications -->
+                          {% capture query %} SELECT ?publication ?title ?creator ?name WHERE{
+                            ?publication a sdatech:completedThesis .
+                            ?publication dct:title ?title  .
+                            ?publication dct:creator ?creator  .
+                            ?creator foaf:name ?name  .
+                          }
+                          {% endcapture %}
+                          {% assign thesisWithAuthorList = page.rdf | sparql_query: query %}
+                          {% capture query %} SELECT ?publication ?title ?creator ?name WHERE{
+                            ?publication a sdatech:completedThesis .
+                            ?publication dct:title ?title .
+                            ?publication bibo:editor ?creator  .
+                            ?creator foaf:name ?name  .
+                          }
+                          {% endcapture %}
+                          {% assign thesisWithEditorList = page.rdf | sparql_query: query %}
                           {% for thesis in Thesis %}
                             {% capture year %}{{thesis.year}}{% endcapture %}
                             {% capture title %}{{thesis.title}}{% endcapture %}
@@ -262,7 +279,7 @@ SELECT ?position WHERE{
                             {% elsif thesis.source %}
                               {% capture url %}{{thesis.source}}{% endcapture %}
                             {% endif %}
-                            {% include publicationRow.html year=year title=thesis.title url=url fulltitle=thesis.full issued=thesis.date thesisType=thesis.thesisType abstract=thesis.abstract  %}
+                            {% include publicationRow.html year=year title=thesis.title url=url fulltitle=thesis.full issued=thesis.date thesisType=thesis.thesisType abstract=thesis.abstract authorList=thesisWithAuthorList editorList=thesisWithEditorList  %}
                           {% endfor %}
                         {% else %}
                           <p>Currently there are no {{navlabel}} publications to show.</p>
@@ -294,7 +311,7 @@ SELECT ?position WHERE{
                         {% endcapture %}
                         {% assign reportWithAuthorList = page.rdf | sparql_query: query %}
                           {% for report in Report %}
-                            {% capture url %}'#'{% endcapture %}
+                            {% capture url %}#{% endcapture %}
                             {% capture year %}{{report.year}}{% endcapture %}
                             {% capture title %}{{report.title}}{% endcapture %}
                             {% if report.hasFormat %}
@@ -307,7 +324,7 @@ SELECT ?position WHERE{
                         {% else %}
                           <p>Currently there are no {{navlabel}} publications to show.</p>
                         {% endif %}
-                      {% elsif  navlabel == "All Publications" %}
+                      {% elsif  navlabel == "Publications" %}
                         {% if All.size != 0 %}
                           <!--  Query to GET ALL the EDITOR List for all Publications -->
                             {% capture query %} SELECT ?publication ?title ?creator ?name WHERE{
@@ -328,7 +345,8 @@ SELECT ?position WHERE{
                             {% endcapture %}
                             {% assign publicationsWithAuthorList = page.rdf | sparql_query: query %}
                           {% for publications in All %}
-                            {% capture url %}'#'{% endcapture %}
+                            TITLE: {{All.title}}
+                            {% capture url %}#{% endcapture %}
                             {% capture year %}{{publications.year}}{% endcapture %}
                             {% capture title %}{{publications.title}}{% endcapture %}
                             {% if publication.hasFormat %}
@@ -337,7 +355,7 @@ SELECT ?position WHERE{
                               {% capture url %}{{report.source}}{% endcapture %}
                             {% endif %}
                             {% include publicationRow.html year=year title=publication.title wherePublished=publication.pubcompany volume=publication.volume url=url fulltitle=report.full pagee=publication.pagee pages=publication.pages partOf=publication.partof institution=publication.institution number=publication.number type=publication.type authorList=publicationsWithAuthorList editorList=publicationsWithEditorList %}
-                            <h1> {{report}}</h1>
+                            <h1> TEST</h1>
                           {% endfor %}
                         {% else %}
                           <p>Currently there are no {{navlabel}} publications to show.</p>
