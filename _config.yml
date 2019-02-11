@@ -66,6 +66,8 @@ plugins:
 #Configuration of jekyll-rdf in our template
 jekyll_rdf:
     path: "rdf-data/sda.tech.ttl"
+#    remote:
+          #endpoint: http://localhost:3030/sda/query
     language: "en"
     include_blank: true
     render_orphaned_uris: true
