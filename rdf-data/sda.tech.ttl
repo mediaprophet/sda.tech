@@ -1211,7 +1211,7 @@ sdaperson:FirasKassawat a foaf:Person, sdatech:studentAssistant ;
                   foaf:nick "Firas" ;
                   foaf:mbox <mailto:firas.kasa@gmail.com> ;
                   foaf:depiction <http://www.clker.com/cliparts/d/L/P/X/z/i/no-image-icon-md.png> ;
-                  foaf:firstName "Mehdi" ;
+                  foaf:firstName "Firas" ;
                   foaf:title "" ;
                   foaf:status "Student Assistant" ;
                   sda:profilepage <https://www.linkedin.com/in/firas-kassawat-010978a7/>;
