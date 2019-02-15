@@ -24267,13 +24267,38 @@ sdajob:studentassistant a foaf:Document ;
 
 ###################Paper Notifications#############
 
+sdablog:paper-accepted-at-oxford-bioinformatics-journal a sioc:Post, sdatech:Blog, sdablog:papernotifications;
+    dct:title "Paper accepted at Oxford Bioinformatics Journal" ;
+    sioc:topic "Paper accepted at Oxford Bioinformatics Journal" ;
+    dct:creator sdaperson:GezimSejdiu ;
+    foaf:maker sdaperson:GezimSejdiu ;
+    sioc:has_creator sdaperson:GezimSejdiu ;
+    dct:created "2019-02-12"^^xsd:date ;
+    dct:language "en-US" ;
+    foaf:depiction <https://oup.silverchair-cdn.com/UI/app/svg/umbrella/oxford-academic-logo.svg> ;
+    sioc:abstract """We are very pleased to announce that our group got a paper accepted at the <a href="https://academic.oup.com/bioinformatics">Oxford Bioinformatics Journal</a>.""";
+    sioc:content """We are very pleased to announce that our group got a paper accepted at the <a href="https://academic.oup.com/bioinformatics">Oxford Bioinformatics Journal</a>.
+</br></br>
+<a href="https://academic.oup.com/bioinformatics"><span style="font-weight: 400;">Oxford Bioinformatics Journal</span></a><span style="font-weight: 400;"> is </span><span style="font-weight: 400;">a bi-weekly peer-reviewed scientific journal that focuses on genome bioinformatics and computational biology. The journal is leading its field, and publishes scientific papers that are relevant to academic and industrial researchers.</span>
+</br>
+<span style="font-weight: 400;">Here is the pre-print of the accepted paper with its abstract:</span>
+<ul>
+	<li style="font-weight: 400;"><a href="https://www.biorxiv.org/content/10.1101/475202v1"><b>BioKEEN: A library for learning and evaluating biological knowledge graph embeddings</b></a><span style="font-weight: 400;"> by  <a href="/people/mehdi-ali/">Mehdi Ali</a>, Charles Tapley Hoyt, Daniel Domingo-Fernandez,  <a href="/people/prof-dr-jens-lehmann/">Jens Lehmann</a>, and <a href="/people/dr-hajira-jabeen/">Hajira Jabeen</a>.</span></li>
+</ul>
+<blockquote><span style="font-weight: 400;"><strong>Abstract</strong>: </span><i><span style="font-weight: 400;">Knowledge graph embeddings (KGEs) have received significant attention in other domains due to their ability to predict links and create dense representations for graphs' nodes and edges. However, the software ecosystem for their application to bioinformatics remains limited and inaccessible for users without expertise in programming and machine learning. Therefore, we developed BioKEEN (Biological KnowlEdge EmbeddiNgs) and PyKEEN (Python KnowlEdge EmbeddiNgs) to facilitate their easy use through an interactive command line interface. Finally, we present a case study in which we used a novel biological pathway mapping resource to predict links that represent pathway crosstalks and hierarchies. Availability: BioKEEN and PyKEEN are open source Python packages publicly available under the MIT License at <a href="https://github.com/SmartDataAnalytics/BioKEEN">https://github.com/SmartDataAnalytics/BioKEEN</a> and <a href="https://github.com/SmartDataAnalytics/PyKEEN">https://github.com/SmartDataAnalytics/PyKEEN</a> as well as through PyPI.</span></i></blockquote>
+</br> </br>
+
+<b>Acknowledgement</b>
+</br>
+<span style="font-weight: 400;">We thank our partners from the </span><a href="http://bio2vec.net/"><span style="font-weight: 400;">Bio2Vec</span></a><span style="font-weight: 400;">, MLwin, and </span><a href="https://simple-ml.de/"><span style="font-weight: 400;">SimpleML</span></a><span style="font-weight: 400;"> projects for their assistance.</span> <span style="font-weight: 400;">This research was supported by Bio2Vec project </span><span style="font-weight: 400;">(</span><a href="http://bio2vec.net/"><span style="font-weight: 400;">http://bio2vec.net/</span></a><span style="font-weight: 400;">, CRG6 grant 3454) with funding from King Abdullah University of Science and Technology (KAUST).</span>""" .
+
 sdablog:papers-accepted-at-aaai-compexqa-recnlp-workshops a sioc:Post, sdatech:Blog, sdablog:papernotifications;
     dct:title "Papers accepted at AAAI / CompexQA & RecNLP Workshops" ;
     sioc:topic "Papers accepted at AAAI / CompexQA & RecNLP Workshops" ;
     dct:creator sdaperson:GezimSejdiu ;
     foaf:maker sdaperson:GezimSejdiu ;
     sioc:has_creator sdaperson:GezimSejdiu ;
-    dct:created "2019-01-232"^^xsd:date ;
+    dct:created "2019-01-23"^^xsd:date ;
     dct:language "en-US" ;
     foaf:depiction <https://aaai.memberclicks.net/assets/slideshow-images/ss-aaai.jpg> ;
     sioc:abstract """We are very pleased to announce that our group got two papers got accepted for presentation at the </span><a href="https://aaai.org/Conferences/AAAI-19/"><span style="font-weight: 400;">Thirty-First The Thirty-Third AAAI Conference on Artificial Intelligence (AAAI-19)</span></a><span style="font-weight: 400;"> workshops (</span><a href="http://ibm.biz/complexqa"><span style="font-weight: 400;">ComplexQA 2019</span></a><span style="font-weight: 400;"> and </span><a href="https://recnlp2019.github.io/"><span style="font-weight: 400;">RecNLP 2019</span></a><span style="font-weight: 400;">), which will be held January 27 – February 1, 2019 at the Hilton Hawaiian Village, Honolulu, Hawaii, USA.""";
