@@ -1206,7 +1206,7 @@ sdaperson:MehrdadBozorg a foaf:Person, sdatech:studentAssistant ;
 sdaperson:FirasKassawat a foaf:Person, sdatech:studentAssistant ;
                   sda:publicationsTag "firas" ;
                   ex:address sda:Room64-1 ;
-                  foaf:familyName "Firas" ;
+                  foaf:familyName "Kassawat" ;
                   foaf:name "Firas Kassawat" ;
                   foaf:nick "Firas" ;
                   foaf:mbox <mailto:firas.kasa@gmail.com> ;
