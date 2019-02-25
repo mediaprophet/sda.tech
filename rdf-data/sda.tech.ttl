@@ -24267,6 +24267,33 @@ sdajob:studentassistant a foaf:Document ;
 
 ###################Paper Notifications#############
 
+sdablog:paper-accepted-at-edbt-2019 a sioc:Post, sdatech:Blog, sdablog:papernotifications;
+    dct:title "Paper accepted at EDBT 2019" ;
+    sioc:topic "Paper accepted at EDBT 2019" ;
+    dct:creator sdaperson:GezimSejdiu ;
+    foaf:maker sdaperson:GezimSejdiu ;
+    sioc:has_creator sdaperson:GezimSejdiu ;
+    dct:created "2019-02-25"^^xsd:date ;
+    dct:language "en-US" ;
+    foaf:depiction <http://edbticdt2019.inesc-id.pt/images/logos/EDBT-ICDT-Lisboa.png> ;
+    sioc:abstract """We are very pleased to announce that our group got a paper accepted for presentation at The 2019 edition of <a href="http://edbticdt2019.inesc-id.pt/">The EDBT conference</a>, which will be held on March 26-29, 2019 - Lisbon, Portugal.""";
+    sioc:content """We are very pleased to announce that our group got a paper accepted for presentation at The 2019 edition of <a href="http://edbticdt2019.inesc-id.pt/">The EDBT conference</a>, which will be held on March 26-29, 2019 - Lisbon, Portugal.
+</br></br>
+The International Conference on Extending Database Technology is a leading international forum for database researchers, practitioners, developers, and users to discuss cutting-edge ideas, and to exchange techniques, tools, and experiences related to data management.
+</br> </br>
+Here is the pre-print of the accepted paper with its abstract:
+<ul>
+	<li><a href="http://svn.aksw.org/papers/2019/EDBT_SLIPO/public.pdf"><b>Big POI Data Integration with Linked Data Technologies</b></a> by Spiros Athanasiou, Giorgos Giannopoulos, <a href="/people/dr-damien-graux/">Damien Graux</a>, Nikos Karagiannakis, <a href="/people/prof-dr-jens-lehmann/">Jens Lehmann</a>, Axel-Cyrille Ngonga Ngomo, Kostas Patroumpas, Mohamed Ahmed Sherif, and Dimitrios Skoutas.</li>
+</ul>
+<blockquote>Abstract: <i>Point of Interest (POI) data constitutes the cornerstone in many modern applications. From navigation to social networks, tourism, and logistics, we use POI data to search, communicate, decide and plan our actions. POIs are semantically diverse and spatio-temporally evolving entities, having geographical, temporal, and thematic relations. Currently, integrating POI datasets to increase their coverage, timeliness, accuracy and value is a resource-intensive and mostly manual process, with no specialized software available to address the specific challenges of this task. In this paper, we present an integrated toolkit for transforming, linking, fusing and enriching POI data, and extracting additional value from them. In particular, we demonstrate how Linked Data technologies can address the limitations, gaps and challenges of the current landscape in Big POI data integration. We have built a prototype application that enables users to define, manage and execute scalable POI data integration workflows built on top of state-of-the-art software for geospatial Linked Data. This application abstracts and hides away the underlying complexity, automates quality-assured integration, scales efficiently for world-scale integration tasks, and lowers the entry barrier for end-users. Validated against real-world POI datasets in several application domains, our system has shown great potential to address the requirements and needs of cross-sector, cross-border and cross-lingual integration of Big POI data.</i></blockquote>
+</br>
+<b>Acknowledgment</b>
+</br>
+This work was partially funded by the EU H2020 project <a href="http://slipo.eu/">SLIPO</a>(#731581).
+</br> </br>
+Looking forward to seeing you at <a href="http://edbticdt2019.inesc-id.pt/">The EDBT 2019 conference</a>.""" .
+
+
 sdablog:paper-accepted-at-oxford-bioinformatics-journal a sioc:Post, sdatech:Blog, sdablog:papernotifications;
     dct:title "Paper accepted at Oxford Bioinformatics Journal" ;
     sioc:topic "Paper accepted at Oxford Bioinformatics Journal" ;
