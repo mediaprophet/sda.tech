@@ -745,7 +745,7 @@ sdaperson:DamienGraux a foaf:Person, sdatech:associateReseracher ;
                   foaf:familyName "Graux" ;
                   foaf:name "Dr. Damien Graux" ;
                   foaf:mbox <mailto:damien.graux@iais.fraunhofer.de> ;
-                  foaf:depiction <http://tyrex.inria.fr/people/img/damien.jpg> ;
+                  foaf:depiction </assets/images/people/damien-graux.jpg> ;
                   foaf:phone "" ;
                   #foaf:phone <Tel:+49-2241-14-1234> ;
                   foaf:title "Dr. " ;
@@ -24267,6 +24267,43 @@ sdajob:studentassistant a foaf:Document ;
 ##########################################
 
 ###################Paper Notifications#############
+
+sdablog:demo-and-workshop-papers-accepted-at-the-webconference-ex-www-2019 a sioc:Post, sdatech:Blog, sdablog:papernotifications;
+    dct:title "Demo and workshop papers accepted at The WEBConference (ex WWW) 2019" ;
+    sioc:topic "Demo and workshop papers accepted at The WEBConference (ex WWW) 2019" ;
+    dct:creator sdaperson:GezimSejdiu ;
+    foaf:maker sdaperson:GezimSejdiu ;
+    sioc:has_creator sdaperson:GezimSejdiu ;
+    dct:created "2019-03-14"^^xsd:date ;
+    dct:language "en-US" ;
+    foaf:depiction <https://www2019.thewebconf.org/media/logo.svg> ;
+    sioc:abstract """We are very pleased to announce that our group got a demo paper accepted for presentation at the 2019 edition of <a href="https://www2019.thewebconf.org/">The Web Conference</a> (30th edition of the former WWW conference), which will be held on May 13-17, 2019, in San Francisco, US.""";
+    sioc:content """We are very pleased to announce that our group got a demo paper accepted for presentation at the 2019 edition of <a href="https://www2019.thewebconf.org/">The Web Conference</a> (30th edition of the former WWW conference), which will be held on May 13-17, 2019, in San Francisco, US.
+</br></br>
+The 2019 edition of The Web Conference will offer many opportunities to present and discuss latest advances in academia and industry. This first joint call for contributions provides a list of the first calls for: research tracks, workshops, tutorials, exhibition, posters, demos, developers' track, W3C track, industry track, PhD symposium, challenges, minute of madness, international project track, W4A, hackathon, the BIG web, journal track.
+</br> </br>
+Here is the pre-print of the accepted paper with its abstract:
+<ul>
+	<li><a href="https://dgraux.github.io/publications/Squerall_WWW_2019_Demo.pdf"><b>Querying Data Lakes using Spark and Presto</b></a> by <a href="/Person/MohamedNadjibMami">Mohamed Najib Mami</>, <a href="/Person/DamienGraux">Damien Graux</a>, <a href="/Person/HajiraJabeen">Hajira Jabeen</>, <a href="/Person/SimonScerri/">Simon Scerri</a>, and Sören Auer.</li>
+</ul>
+<blockquote><b>Abstract</b>: <i>Squerall is a tool that allows the querying of heterogeneous, large-scale data sources by leveraging state-of-the-art Big Data processing engines: Spark and Presto. Queries are posed on-demand against a Data Lake, i.e., directly on the original data sources without requiring prior data transformation. We showcase Squerall's ability to query five different data sources, including inter alia the popular Cassandra and MongoDB. In particular, we demonstrate how it can jointly query heterogeneous data sources, and how interested developers can easily extend it to support additional data sources. Graphical user interfaces (GUIs) are offered to support users in (1) building  intra-source queries, and (2) creating required input files.</i></blockquote>
+</br></br>
+Furthermore, we are pleased to inform that we got a workshop paper accepted at the <a href="https://mepdaw2019.ai.wu.ac.at/">5th Workshop On Managing The Evolution And Preservation of The Data Web</a>, which will be co-located with TheWebConference 2019.
+</br>
+The MEPDaW’19 aims at addressing challenges and issues on managing Knowledge Graph evolution and preservation by providing a forum for researchers and practitioners to discuss, exchange and disseminate their ideas and work, to network and cross-fertilise new ideas.
+</br></br>
+Here is the pre-print of the accepted paper with its abstract:
+<ul>
+	<li><a href="https://www.researchgate.net/publication/331408465_Summarizing_Entity_Temporal_Evolution_in_Knowledge_Graphs"><b>Summarizing Entity Temporal Evolution in Knowledge Graphs</b></a> by Mayesha Tasnim, <a href="/Person/DiegoCollarana">Diego Collarana</a>, <a href="/Person/DamienGraux">Damien Graux</a>, <a href="/Person/FabrizioOrlandi/">Fabrizio Orlandi</a>, and Maria-Esther Vidal.</li>
+</ul>
+<blockquote><b>Abstract</b>: <i>Knowledge graphs are dynamic in nature, new facts about an entity are added or removed over time. Therefore, multiple versions of the same knowledge graph exist, each of which represents a snapshot of the knowledge graph at some point in time. Entities within the knowledge graph undergo evolution as new facts are added or removed. The problem of automatically generating a summary out of different versions of a knowledge graph is a long-studied problem. However, most of the existing approaches limit to pair-wise version comparison. Making it difficult to capture complete evolution out of several versions of the same graph. To overcome this limitation, we envision an approach to create a summary graph capturing temporal evolution of entities across different versions of a knowledge graph. The entity summary graphs may then be used for documentation generation, profiling or visualization purposes. First, we take different temporal versions of a knowledge graph and convert them into RDF molecules. Secondly, we perform Formal Concept Analysis on these molecules to generate summary information. Finally, we apply a summary fusion policy in order to generate a compact summary graph which captures the evolution of entities.</i></blockquote>
+</br></br>
+<b>Acknowledgment</b>
+</br>
+This research was supported by the German Ministry of Education and Research (BMBF) in the context of the project MLwin (Maschinelles Lernen mit Wissensgraphen, grant no. 01IS18050F).
+</br></hr></br>
+Looking forward to seeing you at <a href="https://www2019.thewebconf.org/">The Web Conference 2019</a>.""" .
+
 
 sdablog:paper-accepted-at-knowledge-based-systems-journal a sioc:Post, sdatech:Blog, sdablog:papernotifications;
     dct:title "Paper accepted at Knowledge-Based Systems Journal" ;
