@@ -745,7 +745,7 @@ sdaperson:DamienGraux a foaf:Person, sdatech:associateReseracher ;
                   foaf:familyName "Graux" ;
                   foaf:name "Dr. Damien Graux" ;
                   foaf:mbox <mailto:damien.graux@iais.fraunhofer.de> ;
-                  foaf:depiction <http://tyrex.inria.fr/people/img/damien.jpg> ;
+                  foaf:depiction </assets/images/people/damien-graux.jpg> ;
                   foaf:phone "" ;
                   #foaf:phone <Tel:+49-2241-14-1234> ;
                   foaf:title "Dr. " ;
