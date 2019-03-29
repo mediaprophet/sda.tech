@@ -1179,7 +1179,7 @@ sdaperson:MehdiAli a foaf:Person, sdatech:studentAssistant ;
                    foaf:name "Mehdi Ali" ;
                    foaf:nick "Mehdi" ;
                    foaf:mbox <mailto:mehdi.ali@cs.uni-bonn.de> ;
-                   foaf:depiction </assets/images/people/mehdi-ali.jpeg> ;
+                   foaf:depiction </assets/images/people/mehdi-ali.jpg> ;
                    foaf:firstName "Mehdi" ;
                    foaf:title "" ;
                    foaf:status "Student Assistant" ;
