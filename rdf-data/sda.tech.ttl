@@ -24268,6 +24268,36 @@ sdajob:studentassistant a foaf:Document ;
 
 ###################Paper Notifications#############
 
+sdablog:paper-accepted-at-evostar-2019 a sioc:Post, sdatech:Blog, sdablog:papernotifications;
+    dct:title "Papers, workshop and tutorials accepted at ESWC 2019" ;
+    sioc:topic "Papers, workshop and tutorials accepted at ESWC 2019" ;
+    dct:creator sdaperson:GezimSejdiu ;
+    foaf:maker sdaperson:GezimSejdiu ;
+    sioc:has_creator sdaperson:GezimSejdiu ;
+    dct:created "2019-04-02"^^xsd:date ;
+    dct:language "en-US" ;
+    foaf:depiction <http://www.evostar.org/2019/img/evostar2019logo.png> ;
+    sioc:abstract """We are very pleased to announce that our group got a paper accepted for presentation at the <a href="http://www.evostar.org/2019/index.phpv">EvoStar 2019</a>: The Leading European Event on Bio-Inspired Computation, which will be held on 24-26 April 2019, Leipzig, Germany.""";
+    sioc:content """We are very pleased to announce that our group got a paper accepted for presentation at the <a href="http://www.evostar.org/2019/index.phpv">EvoStar 2019</a>: The Leading European Event on Bio-Inspired Computation, which will be held on 24-26 April 2019, Leipzig, Germany.
+</br></br>
+EvoStar comprises of four co-located conferences run each spring at different locations throughout Europe. These events arose out of workshops originally developed by EvoNet, the Network of Excellence in Evolutionary Computing, established by the Information Societies Technology Programme of the European Commission, and they represent a continuity of research collaboration stretching back over 20 years.
+</br> </br>
+Our paper got accepted at the EvoMUSART, the 8th International Conference (and 13th European event) on Evolutionary and Biologically Inspired Music, Sound, Art and Design.
+</br> </br>
+The main goal of evoMUSART 2019 is to bring together researchers who are using Computational Intelligence techniques for artistic tasks, providing the opportunity to promote, present and discuss ongoing work in the area.
+</br> </br>
+Here is the accepted paper with its abstract:
+<ul>
+	<li><b>“</b><a href="http://jens-lehmann.org/files/2019/evostar_evochef.pdf"><b>EvoChef: Show me What to Cook! Artificial Evolution of Culinary Arts</b></a><b>” </b>by <a href="/Person/HajiraJabeen/">Hajira Jabeen</a>, Nargis Tahara, <a href="/Person/JensLehmann/">Jens Lehmann</a></li>
+</ul>
+<blockquote><b>Abstract</b>: <i>Computational Intelligence (CI) has proven its artistry in creation of music, graphics, and drawings. EvoChef demonstrates the creativity of CI in artificial evolution of culinary arts. EvoChef takes input from well-rated recipes of different cuisines and evolves new recipes by recombining the instructions, spices, and ingredients. Each recipe is represented as a property graph containing ingredients, their status, spices, and cooking instructions. These recipes are evolved using recombination and mutation operators. The expert opinion (user ratings) has been used as the fitness function for the evolved recipes. It was observed that the overall fitness of the recipes improved with the number of generations and almost all the resulting recipes were found to be conceptually correct. We also conducted a blind-comparison of the original recipes with the EvoChef recipes and the EvoChef was rated to be more innovative. To the best of our knowledge, EvoChef is the first semi-automated, open source, and valid recipe generator that creates easily to follow, and novel recipes.</i></blockquote>
+</br><b>Acknowledgment</b>
+</br> This work was partially funded by the EU H2020 project <a href="http://www.bigdataocean.eu">Big Data Ocean</a> (Gr. No 732310).
+</br></hr></br>
+Looking forward to seeing you at <a href="http://www.evostar.org/2019/index.php">The EvoStar 2019</a>.""" .
+
+
+
 sdablog:papers-workshop-and-tutorials-accepted-at-eswc-2019 a sioc:Post, sdatech:Blog, sdablog:papernotifications;
     dct:title "Papers, workshop and tutorials accepted at ESWC 2019" ;
     sioc:topic "Papers, workshop and tutorials accepted at ESWC 2019" ;
