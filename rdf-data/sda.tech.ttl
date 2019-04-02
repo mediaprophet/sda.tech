@@ -24269,8 +24269,8 @@ sdajob:studentassistant a foaf:Document ;
 ###################Paper Notifications#############
 
 sdablog:paper-accepted-at-evostar-2019 a sioc:Post, sdatech:Blog, sdablog:papernotifications;
-    dct:title "Papers, workshop and tutorials accepted at ESWC 2019" ;
-    sioc:topic "Papers, workshop and tutorials accepted at ESWC 2019" ;
+    dct:title "Paper accepted at EvoStar 2019" ;
+    sioc:topic "Paper accepted at EvoStar 2019" ;
     dct:creator sdaperson:GezimSejdiu ;
     foaf:maker sdaperson:GezimSejdiu ;
     sioc:has_creator sdaperson:GezimSejdiu ;
