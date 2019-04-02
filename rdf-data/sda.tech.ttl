@@ -709,7 +709,7 @@ sdaperson:ChengjinXu a foaf:Person, sdatech:phdStudent ;
                    foaf:name "Chengjin Xu" ;
                    foaf:nick "Chengjin" ;
                    foaf:mbox <mailto:soledad921@gmail.com> ;
-                   foaf:depiction <https://media.licdn.com/dms/image/C4E03AQE4aTs0eHjpOw/profile-displayphoto-shrink_800_800/0?e=1545264000&v=beta&t=v0xZX2-utGwN93FneceSlQP_wTd95tAqTKcckUY1Jjs> ;
+                   foaf:depiction </assets/images/people/chengjin-xu.jpeg> ;
                    foaf:phone "" ;
                    foaf:firstName "Chengjin" ;
                    foaf:title "" ;
@@ -947,7 +947,7 @@ sdaperson:SebastianBader a foaf:Person, sdatech:associateReseracher ;
                    foaf:name "Sebastian Bader" ;
                    foaf:nick "Sebastian" ;
                    foaf:mbox <mailto:sebastian.bader@iais.fraunhofer.de> ;
-                   foaf:depiction <https://media.licdn.com/dms/image/C5103AQHjlwfhFHHTRQ/profile-displayphoto-shrink_800_800/0?e=1541635200&v=beta&t=tFgTvO2_o-FQt8r2-Qqw_zF3iTxvYy-g2R3EG1oNsD0> ;
+                   foaf:depiction </assets/images/people/sebastian-bader.jpeg> ;
                    foaf:phone "" ;
                    foaf:firstName "Sebastian" ;
                    foaf:title "" ;
@@ -965,7 +965,7 @@ sdaperson:RostislavNedelchev a foaf:Person, sdatech:associateReseracher ;
                    foaf:name "Rostislav Nedelchev" ;
                    foaf:nick "Rostislav" ;
                    foaf:mbox <mailto:rostislav.nedelchev@iais.fraunhofer.de> ;
-                   foaf:depiction <https://media.licdn.com/dms/image/C4E03AQHom9H1txHVfg/profile-displayphoto-shrink_800_800/0?e=1542240000&v=beta&t=2D4YbKLds_FlmK06kbCYqzgUwyCV4wgpOvIIMhoNTVY> ;
+                   foaf:depiction </assets/images/people/rostislav-nedelchev.jpeg> ;
                    foaf:phone "" ;
                    foaf:firstName "Rostislav" ;
                    foaf:title "" ;
@@ -24267,6 +24267,86 @@ sdajob:studentassistant a foaf:Document ;
 ##########################################
 
 ###################Paper Notifications#############
+
+sdablog:paper-accepted-at-evostar-2019 a sioc:Post, sdatech:Blog, sdablog:papernotifications;
+    dct:title "Papers, workshop and tutorials accepted at ESWC 2019" ;
+    sioc:topic "Papers, workshop and tutorials accepted at ESWC 2019" ;
+    dct:creator sdaperson:GezimSejdiu ;
+    foaf:maker sdaperson:GezimSejdiu ;
+    sioc:has_creator sdaperson:GezimSejdiu ;
+    dct:created "2019-04-02"^^xsd:date ;
+    dct:language "en-US" ;
+    foaf:depiction <http://www.evostar.org/2019/img/evostar2019logo.png> ;
+    sioc:abstract """We are very pleased to announce that our group got a paper accepted for presentation at the <a href="http://www.evostar.org/2019/index.phpv">EvoStar 2019</a>: The Leading European Event on Bio-Inspired Computation, which will be held on 24-26 April 2019, Leipzig, Germany.""";
+    sioc:content """We are very pleased to announce that our group got a paper accepted for presentation at the <a href="http://www.evostar.org/2019/index.phpv">EvoStar 2019</a>: The Leading European Event on Bio-Inspired Computation, which will be held on 24-26 April 2019, Leipzig, Germany.
+</br></br>
+EvoStar comprises of four co-located conferences run each spring at different locations throughout Europe. These events arose out of workshops originally developed by EvoNet, the Network of Excellence in Evolutionary Computing, established by the Information Societies Technology Programme of the European Commission, and they represent a continuity of research collaboration stretching back over 20 years.
+</br> </br>
+Our paper got accepted at the EvoMUSART, the 8th International Conference (and 13th European event) on Evolutionary and Biologically Inspired Music, Sound, Art and Design.
+</br> </br>
+The main goal of evoMUSART 2019 is to bring together researchers who are using Computational Intelligence techniques for artistic tasks, providing the opportunity to promote, present and discuss ongoing work in the area.
+</br> </br>
+Here is the accepted paper with its abstract:
+<ul>
+	<li><b>“</b><a href="http://jens-lehmann.org/files/2019/evostar_evochef.pdf"><b>EvoChef: Show me What to Cook! Artificial Evolution of Culinary Arts</b></a><b>” </b>by <a href="/Person/HajiraJabeen/">Hajira Jabeen</a>, Nargis Tahara, <a href="/Person/JensLehmann/">Jens Lehmann</a></li>
+</ul>
+<blockquote><b>Abstract</b>: <i>Computational Intelligence (CI) has proven its artistry in creation of music, graphics, and drawings. EvoChef demonstrates the creativity of CI in artificial evolution of culinary arts. EvoChef takes input from well-rated recipes of different cuisines and evolves new recipes by recombining the instructions, spices, and ingredients. Each recipe is represented as a property graph containing ingredients, their status, spices, and cooking instructions. These recipes are evolved using recombination and mutation operators. The expert opinion (user ratings) has been used as the fitness function for the evolved recipes. It was observed that the overall fitness of the recipes improved with the number of generations and almost all the resulting recipes were found to be conceptually correct. We also conducted a blind-comparison of the original recipes with the EvoChef recipes and the EvoChef was rated to be more innovative. To the best of our knowledge, EvoChef is the first semi-automated, open source, and valid recipe generator that creates easily to follow, and novel recipes.</i></blockquote>
+</br><b>Acknowledgment</b>
+</br> This work was partially funded by the EU H2020 project <a href="http://www.bigdataocean.eu">Big Data Ocean</a> (Gr. No 732310).
+</br></hr></br>
+Looking forward to seeing you at <a href="http://www.evostar.org/2019/index.php">The EvoStar 2019</a>.""" .
+
+
+
+sdablog:papers-workshop-and-tutorials-accepted-at-eswc-2019 a sioc:Post, sdatech:Blog, sdablog:papernotifications;
+    dct:title "Papers, workshop and tutorials accepted at ESWC 2019" ;
+    sioc:topic "Papers, workshop and tutorials accepted at ESWC 2019" ;
+    dct:creator sdaperson:GezimSejdiu ;
+    foaf:maker sdaperson:GezimSejdiu ;
+    sioc:has_creator sdaperson:GezimSejdiu ;
+    dct:created "2019-03-28"^^xsd:date ;
+    dct:language "en-US" ;
+    foaf:depiction <https://2019.eswc-conferences.org/wp-content/uploads/2018/11/logo-93px-2.png> ;
+    sioc:abstract """We are very pleased to announce that our group got 2 papers accepted for presentation at the <a href="https://2019.eswc-conferences.org/">ESWC 2019: The 16th edition of The Extended Semantic Web Conference</a>, which will be held on June 2-6, 2019 in Portorož, Slovenia.""";
+    sioc:content """We are very pleased to announce that our group got 2 papers accepted for presentation at the <a href="https://2019.eswc-conferences.org/">ESWC 2019: The 16th edition of The Extended Semantic Web Conference</a>, which will be held on June 2-6, 2019 in Portorož, Slovenia.
+</br></br>
+The ESWC is a major venue for discussing the latest scientific results and technology innovations around semantic technologies. Building on its past success, ESWC is seeking to broaden its focus to span other relevant related research areas in which Web semantics plays an important role. ESWC 2019 will present the latest results in research, technologies and applications in its field. Besides the technical program organized over twelve tracks, the conference will feature a workshop and tutorial program, a dedicated track on Semantic Web challenges, system descriptions and demos, a posters exhibition and a doctoral symposium.
+</br> </br>
+Here are the pre-prints of the accepted papers with their abstract:
+<ul>
+	<li><a href="http://jens-lehmann.org/files/2019/eswc_jointembedding_dialoguesystems.pdf"><b>Incorporating Joint Embeddings into Goal-Oriented Dialogues with Multi-Task Learning</b></a> by Firas Kassawat, Debanjan Chaudhuri, and Jens Lehmann</li>
+</ul>
+<blockquote><strong>Abstract</strong>: <i>Attention-based encoder-decoder neural network models have recently shown promising results in goal-oriented dialogue systems. However, these models struggle to reason over and incorporate state-full knowledge while preserving their end-to-end text generation functionality. Since such models can greatly benefit from user intent and knowledge graph integration, in this paper we propose an RNN-based end-to-end encoder-decoder architecture which is trained with joint embeddings of the knowledge graph and the corpus as input. The model provides an additional integration of user intent along with text generation, trained with multi-task learning paradigm along with an additional regularization technique to penalize generating the wrong entity as output. The model further incorporates a Knowledge graph entity lookup during inference to guarantee the generated output is state-full based on the local knowledge graph provided. We finally evaluated the model using the BLEU score, empirical evaluation depicts that our proposed architecture can aid in the betterment of task-oriented dialogue system‘s performance.</span></i></blockquote>
+<ul>
+	<li><a href="https://www.researchgate.net/publication/331400015_EVENTSKG_A_5-Star_Dataset_of_Top-ranked_Events_in_Eight_Computer_Science_Communities"><b>EVENTSKG: A 5-Star Dataset of Top-ranked Events in Eight Computer Science Communities</b></a> by Said Fathalla, Christoph Lange, and Sören Auer</li>
+</ul>
+<blockquote><strong>Abstract</strong>: <i>Nowadays the organization of scientific events, as well as submission and publication of papers, has become considerably easier than before. Consequently, metadata of scientific events is increasingly available on the Web, albeit often as raw data in various formats, immolating its semantics and interlinking relations. This leads to restricting the usability of this data for, e.g., subsequent analyses and reasoning. Therefore, there is a pressing need to represent this data in a semantic representation, i.e., Linked Data. We present the new release of the EVENTSKG dataset, comprising comprehensive semantic descriptions of scientific events of eight computer science communities. Currently, EVENTSKG is a 5-star dataset containing metadata of 73 top-ranked event series (about 1,950 events in total) established over the last five decades. The new release is a Linked Open Dataset adhering to an updated version of the SEO Scientific Events Ontology, a reference ontology for event metadata representation, leading to richer and cleaner data. To facilitate the maintenance of EVENTSKG and to ensure its sustainability, EVENTSKG is coupled with a Java API that enables users to create/update events metadata without going into the details of the representation of the dataset. We shed light on events characteristics by demonstrating an analysis of the EVENTSKG data, which provides a flexible means for customization in order to better understand the characteristics of top-ranked CS events.</i></blockquote>
+</br><b>Acknowledgment</b>
+</br>
+This work was partly supported by the European Union‘s Horizon 2020 funded projects WDAqua (grant no. 642795), ScienceGRAPH project (GA no.~819536), and Cleopatra (grant no. 812997), as well as the BmBF funded project Simple-ML.
+</br> </br>
+Furthermore, we are pleased to inform that we got a workshop and two tutorials accepted, which will be co-located with the ESWC 2019.
+</br></br>
+Here is the accepted workshop and tutorials with their short description:
+<ul>
+	<li><b><b>Workshops</b></b>
+<ul>
+	<li><a href="http://lascar.sda.tech/"><b>1st Workshop on Large Scale RDF Analytics (LASCAR-19)</b></a>by Hajira Jabeen, Damien Graux, Gezim Sejdiu, Muhammad Saleem and Jens Lehmann.
+</br><strong>Abstract</strong>:<i> This workshop on Large Scale RDF Analytics (LASCAR) invites papers and posters related to the problems faced when dealing with the enormous growth of linked datasets, and by the advancement of semantic web technologies in the domain of large scale and distributed computing. LASCAR particularly welcomes research efforts exploring the use of generic big data frameworks like Apache Spark, Apache Flink, or specialized libraries like Giraph, Tinkerpop, SparkSQL etc. for Semantic Web technologies. The goal is to demonstrate the use of existing frameworks and libraries to exploit Knowledge Graph processing and to discuss the solutions to the challenges and issues arising therein. There will be a keynote by an expert speaker, and a panel discussion among experts and scientists working in the area of distributed semantic analytics. LASCAR targets a range of interesting research areas in large scale processing of Knowledge Graphs, like querying, inference, and analytics, therefore we expect a wider audience interested in attending the workshop.</i></li>
+</ul>
+</li>
+	<li><i><b>Tutorials</b></i>
+<ul>
+	<li><a href="http://sansa-stack.net/eswc2019-tutorial/"><b>SANSA’s Leap of Faith: Scalable RDF and Heterogeneous Data Lakes</b></a> by Hajira Jabeen, Mohamed Nadjib Mami, Damien Graux, Gezim Sejdiu, and Jens Lehmann.
+</br><strong>Abstract</strong>: <i>Scalable processing of Knowledge Graphs (KG) is an important requirement for today’s KG engineers. Scalable Semantic Analytics Stack (SANSA) is a library built on top of Apache Spark and it offers several APIs tackling various facets of scalable KG processing. SANSA is organized into several layers: (1) RDF data handling e.g. filtering, computation of RDF statistics, and quality assessment (2) SPARQL querying (3) inference reasoning (4) analytics over KGs. In addition to processing native RDF, SANSA also allows users to query a wide range of heterogeneous data sources (e.g. files stored in Hadoop or other popular NoSQL stores) uniformly using SPARQL. This tutorial, aims to provide an overview, detailed discussion, and a hands-on session on SANSA, covering all the aforementioned layers using simple use-cases.</i></li>
+	<li><a href="http://qatutorial.sda.tech/"><b>Build a Question Answering system overnight</b></a> by Denis Lukovnikov, Gaurav Maheshwari, Jens Lehmann, Mohnish Dubey and Priyansh Trivedi
+</br><strong>Abstract</strong>: <i>With this tutorial, we aim to provide the participants with an overview of the field of Question Answering over Knowledge Graphs, insights into commonly faced problems, its recent trends, and developments. In doing so, we hope to provide a suitable entry point for the people new to this field and ease their process of making informed decisions while creating their own QA systems. At the end of the tutorial, the audience would have hands-on experience of developing a working deep learning based QA system.</i></li>
+</ul>
+</li>
+</ul>
+</br></hr></br>
+Looking forward to seeing you at <a href="https://2019.eswc-conferences.org/">The ESWC 2019</a>.""" .
+
 
 sdablog:demo-and-workshop-papers-accepted-at-the-webconference-ex-www-2019 a sioc:Post, sdatech:Blog, sdablog:papernotifications;
     dct:title "Demo and workshop papers accepted at The WEBConference (ex WWW) 2019" ;
