@@ -1000,7 +1000,7 @@ hr {
   margin-left: 2px;
   margin-right: 2px;
   border-radius: 4px;
-  padding: 5px;
+  padding: 20px;
   border: 1px solid #EEEEEE;
   position: relative;
   float: left;
@@ -1094,6 +1094,7 @@ hr {
 
 .jobDescription, .course-desc{
   padding: 40px;
+  width: 100%;
 }
 
 .jobRef {
