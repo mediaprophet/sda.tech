@@ -795,40 +795,6 @@ sdaperson:MohamedNadjibMami a foaf:Person, sdatech:associateReseracher ;
                    sda:group sdagroup:SemanticDataManagement, sdagroup:DistributedSemanticAnalytics ;
                    foaf:currentProject sdaproject:SANSAStack, sdaproject:BigDataEurope .
 
-sdaperson:LavdimHalilaj a foaf:Person, sdatech:associateReseracher ;
-                   sda:publicationsTag "halilaj" ;
-                   ex:address sda:RoomB3236-1 ;
-                   foaf:familyName "Halilaj" ;
-                   foaf:name "Lavdim Halilaj" ;
-                   foaf:nick "Lavdim" ;
-                   foaf:mbox <mailto:lavdim.halilaj@iais.fraunhofer.de> ;
-                   foaf:depiction </assets/images/people/lavdim-halilaj.jpeg> ;
-                   foaf:phone "" ;
-                   foaf:firstName "Lavdim" ;
-                   foaf:title "" ;
-                   foaf:status "Researcher" ;
-                   sda:profilepage <https://www.linkedin.com/in/lavdim-halilaj-843b1522>;
-                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
-                   cv:aboutPerson "Lavdim Halilaj is a Researcher at the Fraunhofer IAIS." ;
-                   sda:group sdagroup:SemanticDataManagement ;
-                   foaf:currentProject sdaproject:LUCID .
-
-sdaperson:IrlanGrangelGonzales a foaf:Person, sdatech:associateReseracher ;
-                   sda:publicationsTag "grangel" ;
-                   foaf:familyName "Grangel-Gonzales" ;
-                   foaf:name "Irlan Grangel-Gonzales" ;
-                   foaf:nick "Irlan" ;
-                   foaf:mbox <mailto:Irlan.Grangel@iais.fraunhofer.de> ;
-                   foaf:depiction </assets/images/people/irlan-grangel-gonzalez.jpg> ;
-                   foaf:phone "" ;
-                   foaf:firstName "Irlan" ;
-                   foaf:title "" ;
-                   foaf:status "Researcher" ;
-                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
-                   cv:aboutPerson "Irlan Grangel-Gonzales is a Researcher at the Fraunhofer IAIS." ;
-                   sda:group sdagroup:SemanticDataManagement ;
-                   foaf:currentProject sdaproject:Boost40, sdaproject:LUCID .
-
 sdaperson:DiegoCollarana a foaf:Person, sdatech:associateReseracher ;
                    sda:publicationsTag "collarana" ;
                    foaf:familyName "Collarana" ;
@@ -978,22 +944,6 @@ sdaperson:MichaelGalkin a foaf:Person, sdatech:associateReseracher ;
 
 ##############################Student Assistants#########################
 
-sdaperson:JuliusKaufmann a foaf:Person, sdatech:studentAssistant ;
-                   sda:publicationsTag "kaufmann" ;
-                   ex:address sda:Room55 ;
-                   foaf:familyName "Kaufmann" ;
-                   foaf:name "Julius Kaufmann" ;
-                   foaf:nick "Julius" ;
-                   foaf:mbox <mailto:julius.kaufmann@uni-bonn.de> ;
-                   foaf:depiction </assets/images/people/julius-kaufmann.jpeg> ;
-                   foaf:phone "" ;
-                   foaf:firstName "Julius" ;
-                   foaf:title "" ;
-                   foaf:status "Student Assistant" ;
-                   sda:profilepage <https://www.linkedin.com/in/julius-kaufmann-474953137/>;
-                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
-                   cv:aboutPerson "Julius Kaufmann is a Student Assistant at the Computer Science Department III of the University of Bonn." .
-
 sdaperson:NileshChakraborty a foaf:Person, sdatech:studentAssistant ;
                    sda:publicationsTag "chakraborty" ;
                    ex:address sda:Room52-1 ;
@@ -1048,50 +998,6 @@ sdaperson:PriyanshTrivedi a foaf:Person, sdatech:studentAssistant ;
                    sda:group sdagroup:SemanticQuestionAnswering ;
                    cv:aboutPerson "Priyansh Trivedi is a Student Assistant at the Computer Science Department III of the University of Bonn." ;
                    foaf:currentProject sdaproject:AskNow .
-
-sdaperson:JeanHernandez a foaf:Person, sdatech:studentAssistant ;
-                   sda:publicationsTag "hernandez" ;
-                   foaf:familyName "Hernandez" ;
-                   foaf:name "Jean Hernandez" ;
-                   foaf:nick "Jean" ;
-                   foaf:mbox <mailto:jeanhernandezmeze@gmail.com> ;
-                   foaf:depiction </assets/images/people/jean-hernandez.jpeg> ;
-                   foaf:phone "" ;
-                   foaf:firstName "Jean" ;
-                   foaf:title "" ;
-                   foaf:status "Student Assistant" ;
-                   sda:profilepage <https://www.linkedin.com/in/jeanpierohm/>;
-                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
-                   cv:aboutPerson "Jean Hernandez is a Student Assistant at the Computer Science Department III of the University of Bonn.".
-
-sdaperson:GabrielGimenez a foaf:Person, sdatech:studentAssistant ;
-                   sda:publicationsTag "gimenez" ;
-                   foaf:familyName "Gimenez" ;
-                   foaf:name "Gabriel Gimenez" ;
-                   foaf:nick "Gabriel" ;
-                   foaf:mbox <mailto:12-11006@usb.ve> ;
-                   foaf:depiction </assets/images/people/gabriel-gimenez.jpeg> ;
-                   foaf:phone "" ;
-                   foaf:firstName "Gabriel" ;
-                   foaf:title "" ;
-                   foaf:status "Student Assistant" ;
-                   sda:profilepage <https://www.linkedin.com/in/ggcatu/>;
-                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
-                   cv:aboutPerson "Gabriel Gimenez is a Student Assistant at the Computer Science Department III of the University of Bonn.".
-
-sdaperson:GuillermoBetancourt a foaf:Person, sdatech:studentAssistant ;
-                   sda:publicationsTag "betancourt" ;
-                   foaf:familyName "Betancourt" ;
-                   foaf:name "Guillermo Betancourt" ;
-                   foaf:nick "Guillermo" ;
-                   foaf:mbox <mailto:11-10103@usb.ve> ;
-                   foaf:depiction <http://www.clker.com/cliparts/d/L/P/X/z/i/no-image-icon-md.png> ;
-                   foaf:phone "" ;
-                   foaf:firstName "Guillermo" ;
-                   foaf:title "" ;
-                   foaf:status "Student Assistant" ;
-                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
-                   cv:aboutPerson "Guillermo Betancourt is a Student Assistant at the Computer Science Department III of the University of Bonn." .
 
 sdaperson:YersonRoa a foaf:Person, sdatech:studentAssistant ;
                    sda:publicationsTag "roa" ;
@@ -1413,6 +1319,101 @@ sdaperson:AdrianBajraktari a foaf:Person, sdatech:formerMember ;
                    sda:github "" ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    cv:aboutPerson "Adrian Bajraktari is a Student Assistant at the Computer Science Department III of the University of Bonn." .
+
+sdaperson:LavdimHalilaj a foaf:Person, sdatech:formerMember ;
+                   sda:publicationsTag "halilaj" ;
+                   ex:address sda:RoomB3236-1 ;
+                   foaf:familyName "Halilaj" ;
+                   foaf:name "Dr. Lavdim Halilaj" ;
+                   foaf:nick "Lavdim" ;
+                   foaf:mbox <mailto:lavdim.halilaj@iais.fraunhofer.de> ;
+                   foaf:depiction </assets/images/people/lavdim-halilaj.jpeg> ;
+                   foaf:phone "" ;
+                   foaf:firstName "Lavdim" ;
+                   foaf:title "Dr. " ;
+                   foaf:status "Senior Researcher" ;
+                   sda:profilepage <https://www.linkedin.com/in/lavdim-halilaj-843b1522>;
+                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
+                   cv:aboutPerson "Dr. Lavdim Halilaj is a Senior Researcher at the Fraunhofer IAIS." ;
+                   sda:group sdagroup:SemanticDataManagement ;
+                   foaf:currentProject sdaproject:LUCID .
+
+sdaperson:IrlanGrangelGonzales a foaf:Person, sdatech:formerMember ;
+                   sda:publicationsTag "grangel" ;
+                   foaf:familyName "Grangel-Gonzales" ;
+                   foaf:name "Dr. Irlan Grangel-Gonzales" ;
+                   foaf:nick "Irlan" ;
+                   foaf:mbox <mailto:Irlan.Grangel@iais.fraunhofer.de> ;
+                   foaf:depiction </assets/images/people/irlan-grangel-gonzalez.jpg> ;
+                   foaf:phone "" ;
+                   foaf:firstName "Irlan" ;
+                   foaf:title "Dr. " ;
+                   foaf:status "Senior Researcher" ;
+                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
+                   cv:aboutPerson "Dr. Irlan Grangel-Gonzales is a Senior Researcher at the Fraunhofer IAIS." ;
+                   sda:group sdagroup:SemanticDataManagement ;
+                   foaf:currentProject sdaproject:Boost40, sdaproject:LUCID .
+
+
+sdaperson:JuliusKaufmann a foaf:Person, sdatech:formerMember ;
+                   sda:publicationsTag "kaufmann" ;
+                   ex:address sda:Room55 ;
+                   foaf:familyName "Kaufmann" ;
+                   foaf:name "Julius Kaufmann" ;
+                   foaf:nick "Julius" ;
+                   foaf:mbox <mailto:julius.kaufmann@uni-bonn.de> ;
+                   foaf:depiction </assets/images/people/julius-kaufmann.jpeg> ;
+                   foaf:phone "" ;
+                   foaf:firstName "Julius" ;
+                   foaf:title "" ;
+                   foaf:status "Student Assistant" ;
+                   sda:profilepage <https://www.linkedin.com/in/julius-kaufmann-474953137/>;
+                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
+                   cv:aboutPerson "Julius Kaufmann is a Student Assistant at the Computer Science Department III of the University of Bonn." .
+
+sdaperson:JeanHernandez a foaf:Person, sdatech:formerMember ;
+                   sda:publicationsTag "hernandez" ;
+                   foaf:familyName "Hernandez" ;
+                   foaf:name "Jean Hernandez" ;
+                   foaf:nick "Jean" ;
+                   foaf:mbox <mailto:jeanhernandezmeze@gmail.com> ;
+                   foaf:depiction </assets/images/people/jean-hernandez.jpeg> ;
+                   foaf:phone "" ;
+                   foaf:firstName "Jean" ;
+                   foaf:title "" ;
+                   foaf:status "Student Assistant" ;
+                   sda:profilepage <https://www.linkedin.com/in/jeanpierohm/>;
+                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
+                   cv:aboutPerson "Jean Hernandez is a Student Assistant at the Computer Science Department III of the University of Bonn.".
+
+sdaperson:GabrielGimenez a foaf:Person, sdatech:formerMember ;
+                   sda:publicationsTag "gimenez" ;
+                   foaf:familyName "Gimenez" ;
+                   foaf:name "Gabriel Gimenez" ;
+                   foaf:nick "Gabriel" ;
+                   foaf:mbox <mailto:12-11006@usb.ve> ;
+                   foaf:depiction </assets/images/people/gabriel-gimenez.jpeg> ;
+                   foaf:phone "" ;
+                   foaf:firstName "Gabriel" ;
+                   foaf:title "" ;
+                   foaf:status "Student Assistant" ;
+                   sda:profilepage <https://www.linkedin.com/in/ggcatu/>;
+                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
+                   cv:aboutPerson "Gabriel Gimenez is a Student Assistant at the Computer Science Department III of the University of Bonn.".
+
+sdaperson:GuillermoBetancourt a foaf:Person, sdatech:formerMember ;
+                   sda:publicationsTag "betancourt" ;
+                   foaf:familyName "Betancourt" ;
+                   foaf:name "Guillermo Betancourt" ;
+                   foaf:nick "Guillermo" ;
+                   foaf:mbox <mailto:11-10103@usb.ve> ;
+                   foaf:depiction <http://www.clker.com/cliparts/d/L/P/X/z/i/no-image-icon-md.png> ;
+                   foaf:phone "" ;
+                   foaf:firstName "Guillermo" ;
+                   foaf:title "" ;
+                   foaf:status "Student Assistant" ;
+                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
+                   cv:aboutPerson "Guillermo Betancourt is a Student Assistant at the Computer Science Department III of the University of Bonn." .
 
 
 #######################################
