@@ -217,12 +217,12 @@ activateHeader('{{page.navigationdiv}}');
             {% endif %}
             <br>
             <div style="text-align:center;">
-              {% capture boolTwitter | strip  %}{{ page.rdf | rdf_property: 'sda:twitter' }}{% endcapture %}
+              <!-- {% capture boolTwitter | strip  %}{{ page.rdf | rdf_property: 'sda:twitter' }}{% endcapture %}
               {% capture boolWebsite | strip %}{{ page.rdf | rdf_property: 'sda:website' }}{% endcapture %}
               {% capture boolFacebook | strip %}{{ page.rdf | rdf_property: 'sda:facebook' }}{% endcapture %}
               {% capture boolLinkedin | strip %}{{  page.rdf | rdf_property: 'sda:linkedin' }}{% endcapture %}
               {% capture boolResearchGate | strip %}{{  page.rdf | rdf_property: 'sda:researchgate' }}{% endcapture %}
-              {% capture boolGoogleScholar | strip %}{{  page.rdf | rdf_property: 'sda:googlescholar' }}{% endcapture %}
+              {% capture boolGoogleScholar | strip %}{{  page.rdf | rdf_property: 'sda:googlescholar' }}{% endcapture %} -->
               {% capture query %} SELECT ?person ?profilepage WHERE { ?person sda:profilepage ?profilepage . ?person foaf:name "{{pName}}" .}  {% endcapture %}{% assign profiles = page.rdf | sparql_query: query %}
               {% for profile in profiles  %}
                 {% capture query %} SELECT ?buttonname WHERE { <{{profile.profilepage}}> a schema:ProfilePage .  <{{profile.profilepage}}> ex:buttonLabel ?buttonname .}  {% endcapture %}{% assign profiledetails = page.rdf | sparql_query: query %}
