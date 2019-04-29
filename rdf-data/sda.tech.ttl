@@ -2972,6 +2972,40 @@ sdathesis:product-matching-through-embedding-representation a dct:BibliographicR
     sda:thesisLevel "MS" ;
     dct:abstract """A central problem in the context of the Web of Data, as well as in data integration in general is to identify entities in different datasets that describe the same real-world object. The LiteralE approach [1] will be used to represent the entities from two datasets in a vector space. The aim of the project is to implement a neural network to learn a similarity function between entities. <br>[1]. <a href ='https://arxiv.org/abs/1802.00934'>https://arxiv.org/abs/1802.00934</a>""" .
 
+sdathesis:quality-metric-preservation-from-relational-to-rdf-data a dct:BibliographicResource, bibo:Thesis, sdatech:openThesis, sdatech:masterThesis ;
+    dct:title "Quality metric preservation from relational to RDF data" ;
+    dct:creator sdaperson:AnisaRula ;
+    foaf:maker sdaperson:AnisaRula ;
+    dct:issued "2019-04"^^xsd:gYearMonth ;
+    dct:language "en-US" ;
+    bibo:degree biboDegree:phd ;
+    sda:thesisLevel "MS" ;
+    dct:abstract """Mapping relational databases to RDF is a fundamental problem for the development of the Semantic Web. The problem is to define what are the qualtiy metrics preserved or not preserved from RDB data model to the RDF data model. Understand the relation between quality metrics in RDB and quality metrics in RDF and define quality metrics fro RDB2RDF""" .
+
+sdathesis:data-integration-and-data-quality-in-the-big-data-lifecycle a dct:BibliographicResource, bibo:Thesis, sdatech:openThesis, sdatech:masterThesis ;
+    dct:title "Data Integration and Data Quality in the Big Data Lifecycle" ;
+    dct:creator sdaperson:AnisaRula, sdaperson:GezimSejdiu ;
+    foaf:maker sdaperson:AnisaRula, sdaperson:GezimSejdiu ;
+    dct:issued "2019-04"^^xsd:gYearMonth ;
+    dct:language "en-US" ;
+    bibo:degree biboDegree:phd ;
+    sda:thesisLevel "MS" ;
+    dct:abstract """Mapping relational databases to RDF is a fundamental problem for the development of the Semantic Web. The problem is to define what are the qualtiy metrics preserved or not preserved from RDB data model to the RDF data model. Understand the relation between quality metrics in RDB and quality metrics in RDF and define quality metrics fro RDB2RDF""" .
+
+sdathesis:evaluation-of-verbalization-apporach-for-qa-system a dct:BibliographicResource, bibo:Thesis, sdatech:openThesis, sdatech:masterThesis ;
+    dct:title "Evaluation of verbalization apporach for QA system" ;
+    dct:creator sdaperson:HamidZafar ;
+    foaf:maker sdaperson:HamidZafar ;
+    dct:issued "2019-04"^^xsd:gYearMonth ;
+    dct:language "en-US" ;
+    bibo:degree biboDegree:phd ;
+    sda:thesisLevel "MS" ;
+    dct:abstract """Considering the fact that QA system are note perfect, they might present theend-user with incorrect result.  Thus, a user-friendly tool ought to be providedto enable the end-user to assess whether the underlying QA system has correctlyunderstand the question as the end-user intended.Considering  the  fact  that  QA  system  over  KG,  usually  produce  a  formalquery  (e.g.   SPARQL)  that  supposedly  capture  the  intention  of  input  natu-ral language question,  one can simple ask the end-user to judge the accuracyof the generated SPARQL. However, this representation might not be easy tounderstand to the end-user as SPARQL is a formal query language which re-quires a certain skills that cannot be expected from the end-users.  Furthermore,there are some tools such as Spartiqulator [1] and SPARQL2NL [2] that givena SPARQL query produce a semi-natural language representation.Nevertheless, since these tools are also not perfect, and might generate ques-tions that are not grammatically correct, other researchers (such as SPARQL-toUser [3]) suggested a more schematic representation which is language agnos-tic.Nonetheless,  as  there  is  no  well-defined  qualitative  metric  to  evaluate  theapproach, the aim of this thesis as follows:
+    <ul><li>To study related works on verbalization in QA system over KG</li>
+    <li>To implement/reuse at least one of existing approaches in the aforemen-tioned groups.</li>
+    <li>To design and carry out user study, including related metrics to evaluatethe user-satisfaction.</li></ul>""" .
+
+
 ########################onGoingThesis########################
 sdathesis:big-data-quality-assessment  a dct:BibliographicResource, bibo:Thesis, sdatech:ongoingThesis, sdatech:masterThesis ;
     dct:title "Big Data quality Assessment" ;
