@@ -2677,18 +2677,6 @@ sdathesis:use-of-ontology-information-in-knowledge-graph-embeddings a dct:Biblio
             sda:thesisLevel "MS,BS" ;
             dct:abstract """Knowledge graph embedding represents entities as vectors in a common vector space. The objective of this work is to extend the existing KG embedding models to include schema information in the KG embedding models like in TransE, or ConvE etc and compare the performance.""" .
 
-
-sdathesis:distributed-in-memory-SPARQL-processing a dct:BibliographicResource, bibo:Thesis, sdatech:openThesis, sdatech:masterThesis ;
-    dct:title "Distributed in-memory SPARQL Processing" ;
-    dct:creator sdaperson:HajiraJabeen ;
-    foaf:maker sdaperson:HajiraJabeen ;
-    dct:issued "2017-06"^^xsd:gYearMonth ;
-    dct:language "en-US" ;
-    bibo:degree biboDegree:phd ;
-    foaf:homepage <http://sansa-stack.net/> ;
-    sda:thesisLevel "MS,BS" ;
-    dct:abstract """SPARQL queries search for specified patterns in RDF data using triple patterns as building blocks. Although many different solutions for efficient querying have been proposed in the past. We want to explore the novel tensor based RDF representations and use them for fast and scalable Querying on large scale cluster. We will use a computational in-memory framework for distributed SPARQL query answering,based on the notion of degree of freedom of a triple. This algorithm relies on a general model of RDF graph based on the firstprinciples of linear algebra, in particular ontensorial calculus.""" .
-
 sdathesis:entity-resolution a dct:BibliographicResource, bibo:Thesis, sdatech:openThesis, sdatech:masterThesis ;
     dct:title "Entity Resolution" ;
     dct:creator sdaperson:HajiraJabeen ;
@@ -2785,16 +2773,6 @@ sdathesis:relation-linking-for-question-answering-in-german a dct:BibliographicR
     sda:thesisLevel "MS,BS" ;
     dct:abstract """The task of relation linking in question answering is the identification of the relation (predicate) in a given question and its linking to the corresponding entity in a knowledge base. It is an important step in question answering, which allows us afterwards to build formal queries against, e.g., a knowledge graph. Most of the existing question answering systems focus on the English language and very few question answering components support other languages like German. The goal of this thesis is to identify from the literature as well as develop relation extraction tools that could be adapted to work for German questions.""" .
 
-sdathesis:query-decomposer-and-optimizer-for-querying-scientific-datasets a dct:BibliographicResource, bibo:Thesis, sdatech:openThesis, sdatech:masterThesis ;
-    dct:title "Query Decomposer and Optimizer for querying scientific datasets" ;
-    dct:creator sdaperson:IoannaLytra ;
-    foaf:maker sdaperson:IoannaLytra ;
-    dct:issued "2017-06"^^xsd:gYearMonth ;
-    dct:language "en-US" ;
-    bibo:degree biboDegree:phd ;
-    sda:thesisLevel "MS,BS" ;
-    dct:abstract """The task of relation linking in question answering is the identification of the relation (predicate) in a given question and its linking to the corresponding entity in a knowledge base. It is an important step in question answering, which allows us afterwards to build formal queries against, e.g., a knowledge graph. Most of the existing question answering systems focus on the English language and very few question answering components support other languages like German. The goal of this thesis is to identify from the literature as well as develop relation extraction tools that could be adapted to work for German questions.The amount of scientific datasets has increased dramatically in recent years. Copernicus data repository – <a href="http://www.copernicus.eu/">http://www.copernicus.eu/</a> is a prominent example of a collection of datasets related to climate, atmosphere, agriculture, and marine domains, publicly available on the Web. Until now, scientists have to look for the appropriate datasets, download them, and query/analyze them using their own infrastructure. Being able to query/analyze scientific data without knowing about the underlying datasets is not at the moment possible. The goal of this thesis will be to create a query engine that will be able to query scientific datasets transparently, without being aware of the available datasets.""" .
-
 sdathesis:knowledge-data-containers-with-access-control-and-security-capabilities a dct:BibliographicResource, bibo:Thesis, sdatech:openThesis, sdatech:masterThesis ;
     dct:title "Knowledge Data Containers with Access Control and Security Capabilities" ;
     dct:creator sdaperson:IoannaLytra ;
@@ -2875,17 +2853,6 @@ sdathesis:provide-tools-for-latex-leveraging-semantic-web-standards a dct:Biblio
     bibo:degree biboDegree:phd ;
     sda:thesisLevel "MS" ;
     dct:abstract """When articles are written (and submitted to pear review), one of the biggest fear of researchers is to forget some state-of-the-art works. Indeed, articles should be positioned among the already existing ones to show they are new. However, a specific relevant paper can sometimes be forgotten by authors. To avoid this unpleasant situation, one could imagine a LaTeX package able to check if no citation is missing in a manuscript. To do so, several things might be implemented: (i) extending the already existing pdf2rdf tool by implementing a tex2rdf module; (ii) generating bib-code from these RDF data; (iii) extracting RDF data from the reference sections of articles; (iv) aggregating all these RDF data and loading this dataset into a store; (v) developing a LaTeX package which would be able to automatically query this endpoint to possibly provide missing references.""" .
-
-sdathesis:rdf-2-resume a dct:BibliographicResource, bibo:Thesis, sdatech:openThesis, sdatech:bachelorThesis ;
-    dct:title "RDF2Résumé" ;
-    dct:creator sdaperson:DamienGraux ;
-    foaf:maker sdaperson:DamienGraux ;
-    dct:issued "2017-06"^^xsd:gYearMonth ;
-    dct:language "en-US" ;
-    bibo:degree biboDegree:phd ;
-    sda:thesisLevel "BS" ;
-    dct:abstract """Basically, this subject would offer the student the possibility of entering in the SemanticWeb world while creating a fancy and useful tool. In a nutshell, RDF2Résumé would imply (1) to design a résumé ontology; (2) to be provide a simple tool (a simple piece of software such as a script) able to generate -let’s say- LaTeX code from an RDF file compliant with the aforementioned ontology; (3) in parallel to propose several final résumé templates; (4) and finally to realize a basic user-interface; (+) to give the possibility of automatically changing languages.""" .
-
 sdathesis:distributed-anomaly-detection-in-rdf a dct:BibliographicResource, bibo:Thesis, sdatech:openThesis, sdatech:masterThesis ;
     dct:title "Distributed Anomaly Detection in RDF" ;
     dct:creator sdaperson:HajiraJabeen ;
@@ -3005,6 +2972,40 @@ sdathesis:product-matching-through-embedding-representation a dct:BibliographicR
     sda:thesisLevel "MS" ;
     dct:abstract """A central problem in the context of the Web of Data, as well as in data integration in general is to identify entities in different datasets that describe the same real-world object. The LiteralE approach [1] will be used to represent the entities from two datasets in a vector space. The aim of the project is to implement a neural network to learn a similarity function between entities. <br>[1]. <a href ='https://arxiv.org/abs/1802.00934'>https://arxiv.org/abs/1802.00934</a>""" .
 
+sdathesis:quality-metric-preservation-from-relational-to-rdf-data a dct:BibliographicResource, bibo:Thesis, sdatech:openThesis, sdatech:masterThesis ;
+    dct:title "Quality metric preservation from relational to RDF data" ;
+    dct:creator sdaperson:AnisaRula ;
+    foaf:maker sdaperson:AnisaRula ;
+    dct:issued "2019-04"^^xsd:gYearMonth ;
+    dct:language "en-US" ;
+    bibo:degree biboDegree:phd ;
+    sda:thesisLevel "MS" ;
+    dct:abstract """Mapping relational databases to RDF is a fundamental problem for the development of the Semantic Web. The problem is to define what are the qualtiy metrics preserved or not preserved from RDB data model to the RDF data model. Understand the relation between quality metrics in RDB and quality metrics in RDF and define quality metrics fro RDB2RDF""" .
+
+sdathesis:data-integration-and-data-quality-in-the-big-data-lifecycle a dct:BibliographicResource, bibo:Thesis, sdatech:openThesis, sdatech:masterThesis ;
+    dct:title "Data Integration and Data Quality in the Big Data Lifecycle" ;
+    dct:creator sdaperson:AnisaRula, sdaperson:GezimSejdiu ;
+    foaf:maker sdaperson:AnisaRula, sdaperson:GezimSejdiu ;
+    dct:issued "2019-04"^^xsd:gYearMonth ;
+    dct:language "en-US" ;
+    bibo:degree biboDegree:phd ;
+    sda:thesisLevel "MS" ;
+    dct:abstract """Mapping relational databases to RDF is a fundamental problem for the development of the Semantic Web. The problem is to define what are the qualtiy metrics preserved or not preserved from RDB data model to the RDF data model. Understand the relation between quality metrics in RDB and quality metrics in RDF and define quality metrics fro RDB2RDF""" .
+
+sdathesis:evaluation-of-verbalization-apporach-for-qa-system a dct:BibliographicResource, bibo:Thesis, sdatech:openThesis, sdatech:masterThesis ;
+    dct:title "Evaluation of verbalization apporach for QA system" ;
+    dct:creator sdaperson:HamidZafar ;
+    foaf:maker sdaperson:HamidZafar ;
+    dct:issued "2019-04"^^xsd:gYearMonth ;
+    dct:language "en-US" ;
+    bibo:degree biboDegree:phd ;
+    sda:thesisLevel "MS" ;
+    dct:abstract """Considering the fact that QA system are note perfect, they might present theend-user with incorrect result.  Thus, a user-friendly tool ought to be providedto enable the end-user to assess whether the underlying QA system has correctlyunderstand the question as the end-user intended.Considering  the  fact  that  QA  system  over  KG,  usually  produce  a  formalquery  (e.g.   SPARQL)  that  supposedly  capture  the  intention  of  input  natu-ral language question,  one can simple ask the end-user to judge the accuracyof the generated SPARQL. However, this representation might not be easy tounderstand to the end-user as SPARQL is a formal query language which re-quires a certain skills that cannot be expected from the end-users.  Furthermore,there are some tools such as Spartiqulator [1] and SPARQL2NL [2] that givena SPARQL query produce a semi-natural language representation.Nevertheless, since these tools are also not perfect, and might generate ques-tions that are not grammatically correct, other researchers (such as SPARQL-toUser [3]) suggested a more schematic representation which is language agnos-tic.Nonetheless,  as  there  is  no  well-defined  qualitative  metric  to  evaluate  theapproach, the aim of this thesis as follows:
+    <ul><li>To study related works on verbalization in QA system over KG</li>
+    <li>To implement/reuse at least one of existing approaches in the aforemen-tioned groups.</li>
+    <li>To design and carry out user study, including related metrics to evaluatethe user-satisfaction.</li></ul>""" .
+
+
 ########################onGoingThesis########################
 sdathesis:big-data-quality-assessment  a dct:BibliographicResource, bibo:Thesis, sdatech:ongoingThesis, sdatech:masterThesis ;
     dct:title "Big Data quality Assessment" ;
@@ -3047,6 +3048,38 @@ sdathesis:rdf-compression-techniques a dct:BibliographicResource, bibo:Thesis, s
     bibo:degree biboDegree:phd ;
     sda:thesisLevel "MS" ;
     dct:abstract """As a starting point, realizing a fresh state-of-the-art of compression techniques for RDF could be made. These techniques can mainly be divided into two families: the ones that compress as much as possible datasets in order to make transfers easier (see e.g. the study of Fernández et al.) and the ones which still allow data to be queried (see e.g. the HDT structure). Secondly, a reflexion on a new compression model may be thought about and then realized/implemented successfully -obviously, a already have some suggestion which could help the student 😉 like for instance try to compress the RDF graphs according to patterns which could be used in parallel of SPARQL query shapes.""" .
+
+sdathesis:rdf-2-resume a dct:BibliographicResource, bibo:Thesis, sdatech:ongoingThesis, sdatech:bachelorThesis ;
+    dct:title "RDF2Résumé" ;
+    dct:creator sdaperson:DamienGraux ;
+    foaf:maker sdaperson:DamienGraux ;
+    dct:issued "2017-06"^^xsd:gYearMonth ;
+    dct:language "en-US" ;
+    bibo:degree biboDegree:phd ;
+    sda:thesisLevel "BS" ;
+    dct:abstract """Basically, this subject would offer the student the possibility of entering in the SemanticWeb world while creating a fancy and useful tool. In a nutshell, RDF2Résumé would imply (1) to design a résumé ontology; (2) to be provide a simple tool (a simple piece of software such as a script) able to generate -let’s say- LaTeX code from an RDF file compliant with the aforementioned ontology; (3) in parallel to propose several final résumé templates; (4) and finally to realize a basic user-interface; (+) to give the possibility of automatically changing languages.""" .
+
+sdathesis:query-decomposer-and-optimizer-for-querying-scientific-datasets a dct:BibliographicResource, bibo:Thesis, sdatech:ongoingThesis, sdatech:masterThesis ;
+    dct:title "Query Decomposer and Optimizer for querying scientific datasets" ;
+    dct:creator sdaperson:IoannaLytra ;
+    foaf:maker sdaperson:IoannaLytra ;
+    dct:issued "2017-06"^^xsd:gYearMonth ;
+    dct:language "en-US" ;
+    bibo:degree biboDegree:phd ;
+    sda:thesisLevel "MS,BS" ;
+    dct:abstract """The task of relation linking in question answering is the identification of the relation (predicate) in a given question and its linking to the corresponding entity in a knowledge base. It is an important step in question answering, which allows us afterwards to build formal queries against, e.g., a knowledge graph. Most of the existing question answering systems focus on the English language and very few question answering components support other languages like German. The goal of this thesis is to identify from the literature as well as develop relation extraction tools that could be adapted to work for German questions.The amount of scientific datasets has increased dramatically in recent years. Copernicus data repository – <a href="http://www.copernicus.eu/">http://www.copernicus.eu/</a> is a prominent example of a collection of datasets related to climate, atmosphere, agriculture, and marine domains, publicly available on the Web. Until now, scientists have to look for the appropriate datasets, download them, and query/analyze them using their own infrastructure. Being able to query/analyze scientific data without knowing about the underlying datasets is not at the moment possible. The goal of this thesis will be to create a query engine that will be able to query scientific datasets transparently, without being aware of the available datasets.""" .
+
+sdathesis:distributed-in-memory-SPARQL-processing a dct:BibliographicResource, bibo:Thesis, sdatech:ongoingThesis, sdatech:masterThesis ;
+    dct:title "Distributed in-memory SPARQL Processing" ;
+    dct:creator sdaperson:HajiraJabeen ;
+    foaf:maker sdaperson:HajiraJabeen ;
+    dct:issued "2017-06"^^xsd:gYearMonth ;
+    dct:language "en-US" ;
+    bibo:degree biboDegree:phd ;
+    foaf:homepage <http://sansa-stack.net/> ;
+    sda:thesisLevel "MS,BS" ;
+    dct:abstract """SPARQL queries search for specified patterns in RDF data using triple patterns as building blocks. Although many different solutions for efficient querying have been proposed in the past. We want to explore the novel tensor based RDF representations and use them for fast and scalable Querying on large scale cluster. We will use a computational in-memory framework for distributed SPARQL query answering,based on the notion of degree of freedom of a triple. This algorithm relies on a general model of RDF graph based on the firstprinciples of linear algebra, in particular ontensorial calculus.""" .
+
 
 
 ###############################################################
