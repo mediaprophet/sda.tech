@@ -6,7 +6,7 @@
   <div class="containerProfile">
     <p class="titleProfile">{{include.status}}</p>
     <div style="margin: 24px 0;">
-      {% capture query %} SELECT ?person ?profilepage WHERE { ?person sda:profilepage ?profilepage . ?person foaf:name "{{include.name}}" .}  {% endcapture %}{% assign profiles = page.rdf | sparql_query: query %}
+      {% capture query %} SELECT ?person ?profilepage WHERE { ?person sda:profilepage ?profilepage . ?person foaf:name "{{include.pname}}" .}  {% endcapture %}{% assign profiles = page.rdf | sparql_query: query %}
       {% for profile in profiles  %}
         {% capture query %} SELECT ?buttonname WHERE { <{{profile.profilepage}}> a schema:ProfilePage .  <{{profile.profilepage}}> ex:buttonLabel ?buttonname .}  {% endcapture %}{% assign profiledetails = page.rdf | sparql_query: query %}
         {% for pdetail in profiledetails  %}
