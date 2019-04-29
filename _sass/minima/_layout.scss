@@ -502,6 +502,13 @@ text-align: center;
   display: inline-block;
 }
 
+.membersofProject {
+  img {
+    padding: 0px !important;
+    border: 0px solid #fff;
+  }
+}
+
 .blogandTweetPosts {
     height: 100vh;
     margin-top: 160px;
@@ -679,6 +686,12 @@ text-align: center;
   width: 100%;
 }
 
+img {
+  object-fit: contain;
+  padding: 6px;
+  border: 1px solid #E0E0E0;
+}
+
 .publink
 {
   color:  $blue-sda-color !important;
@@ -765,10 +778,12 @@ img {
 }
 
 .sitelogo {
-  padding: 8px;
+  padding: 12px;
   width: 220px;
-  height: 100px;
+  height: 80px;
   object-fit: contain;
+  border: 0px solid #fff;
+
 }
 
 .container {
@@ -804,7 +819,7 @@ hr {
     width: 50px;
     height: 50px;
     margin-right: 12px;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .person-project {
@@ -900,17 +915,18 @@ hr {
   margin-bottom: 32px;
   display: inline-block;
   text-align: left;
+  min-height: 130px;
 
     img {
-        width: 20%;
-        height: 20%;
+        width: 20% ;
+        height: 120px;
         float: left;
         margin: 12px;
         margin-top: 4px;
-
+        object-fit: contain;
+        padding: 6px ;
+        border: 1px solid #E0E0E0;
     }
-
-
 }
 
 .partner-title {
@@ -934,7 +950,7 @@ hr {
   a {
     color: $purple-sda-color !important;
     padding: 0px !important;
-    margin: 0px !important;
+    //margin: 0px !important;
     webkit-margin-after: 0px !important;
     webkit-margin-before: 0px !important;
 
@@ -944,6 +960,11 @@ hr {
       background-color: transparent !important;
     }
   }
+}
+
+
+.linkMarginRight {
+  margin-right: 12px !important;
 }
 
 // Contact Specifics
@@ -989,6 +1010,30 @@ hr {
   float: right;
   display: inline-block;
   margin-right: 24px;
+}
+
+.thesis-items {
+
+  min-height: 130px;
+
+  a {
+    color: $purple-sda-color !important;
+    padding: 0px !important;
+  }
+
+  a:hover{
+    text-decoration: none !important;
+    color: $blue-sda-color !important;
+    transition: transparent !important;
+
+  }
+
+}
+
+.faqThesis {
+  margin-left: 47px;
+  margin-right: 47px;
+  text-align: left;
 }
 
 // Job
@@ -1585,9 +1630,6 @@ div.postentry a:hover {
   color: $blue-sda-color;
 }
 
-.posturl {
-}
-
 div.posturl a {
   color: black;
   text-decoration: none;
@@ -1659,6 +1701,7 @@ ul.sc_menu
     -webkit-border-radius: 5px;
     border: 1px solid #fff;
 }
+
 
 .next {
     display: block;

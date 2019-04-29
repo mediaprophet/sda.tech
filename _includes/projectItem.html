@@ -1,36 +1,35 @@
-<br class="horizontal-separator"/>
+<br class="horizontal-separator3"/>
 <div class="partner-title" style="text-align:center;">
-  <a href={% if include.projectItemFor == "P
-projectList"%}"../{{include.href}}"{% elsif include.projectItemFor== "project" %}"{{include.href}}"{% endif %} ><h1>{{include.title}}</h1></a>
+  <a href={% if include.projectItemFor == "projectList"%}"../{{include.href}}"{% elsif include.projectItemFor== "project" %}"{{include.href}}"{% endif %} ><h1>{{include.title}}</h1></a>
 </div>
 <div class="partner-item">
   <div class="image">
-    <img style="width: 200px;" src="{{include.image}}" alt="{{iclude.title}}">
+    <a href={% if include.projectItemFor == "projectList"%}"../{{include.href}}"{% elsif include.projectItemFor== "project" %}"{{include.href}}"{% endif %}><img style="width: 200px;" src="{{include.image}}" alt="{{iclude.title}}"></a>
   </div>
   <div class="description">
     {{include.description}}<br/>
     <div class="links">
-    <br class="horizontal-separator" />
+    <br class="horizontal-separator3" />
     {% capture count %}{{include.twitter}}{% endcapture %}
     {% if count != 'undefined' %}
-      <a href="{{include.twitter}}" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i>Twitter</a>
+      <a class="linkMarginRight" href="{{include.twitter}}" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i>Twitter</a>
     {% endif %}
     {% capture count %}{{include.homepage}}{% endcapture %}
     {% if count != 'undefined' %}
-      <a href="{{include.homepage}}" target="_blank"><i class="fa fa-home" aria-hidden="true"></i> Homepage</a>
+      <a class="linkMarginRight" href="{{include.homepage}}" target="_blank"><i class="fa fa-home" aria-hidden="true"></i> Homepage</a>
     {% endif %}
     {% capture count %}{{include.source}}{% endcapture %}
     {% if count != 'undefined' %}
-      <a href="{{include.source}}" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> Source</a>
+      <a class="linkMarginRight" href="{{include.source}}" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> Source</a>
     {% endif %}
     {% capture count %}{{include.download}}{% endcapture %}
     {% if count != 'undefined' %}
-      <a href="{{include.download}}" target="_blank"><i class="fa fa-download" aria-hidden="true"></i> Download</a>
+      <a class="linkMarginRight" href="{{include.download}}" target="_blank"><i class="fa fa-download" aria-hidden="true"></i> Download</a>
     {% endif %}
   </div>
   </div>
 </div>
 <!-- NO RULE FOR LAST ELEMENT -->
-{% if include.last != 1 %}
+<!-- {% if include.last != 1 %}
   <hr />
-{% endif %}
+{% endif %} -->

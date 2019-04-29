@@ -1,4 +1,4 @@
-<br class="horizontal-separator"/>
+<br class="horizontal-separator3"/>
 <div class="partner-title">
   {% if {{include.href}} == null %}
     <h1>{{include.title}}  <sup>({{include.language}})</sup></h1>
@@ -13,7 +13,7 @@
     </div>
   </div>
   <div class="description">
-    <br class="horizontal-separator" />
+    <br class="horizontal-separator3" />
     {% for person in include.personList %}
       {% capture thesisNameinArray %}{{person.thesisTitle}}{% endcapture%}
       {% if thesisNameinArray == include.title %}
@@ -29,6 +29,6 @@
   </div>
 </div>
 <!-- NO RULE FOR LAST ELEMENT -->
-{% if include.last != 1 %}
+<!-- {% if include.last != 1 %}
   <hr />
-{% endif %}
+{% endif %} -->

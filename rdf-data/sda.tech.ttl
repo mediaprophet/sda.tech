@@ -1998,7 +1998,7 @@ sdaproject:LITMUS a foaf:Project, sdatech:openSourceProject ;
            sda:status "active" .
 
 # DeFacto
-ex:DeFacto a foaf:Project, sdatech:openSourceProject ;
+sdaproject:DeFacto a foaf:Project, sdatech:openSourceProject ;
            rdfs:label "DeFacto" ;
            doap:maintainer sda:JensLehmann ;
            foaf:depiction <https://avatars3.githubusercontent.com/u/42012598?s=200&v=4> ;
@@ -2007,8 +2007,7 @@ ex:DeFacto a foaf:Project, sdatech:openSourceProject ;
            sda:twitter "undefined" ;
            foaf:homepage "undefined" ;
            sda:source "http://defacto.aksw.org/" ;
-           sda:download "undefined" ;
-           ex:opensource "Open Source" .
+           sda:download "undefined" .
 
 # MEX Vocabulary
 sdaproject:MEX a foaf:Project, sdatech:openSourceProject ;
@@ -3006,7 +3005,7 @@ sdathesis:product-matching-through-embedding-representation a dct:BibliographicR
     dct:abstract """A central problem in the context of the Web of Data, as well as in data integration in general is to identify entities in different datasets that describe the same real-world object. The LiteralE approach [1] will be used to represent the entities from two datasets in a vector space. The aim of the project is to implement a neural network to learn a similarity function between entities. <br>[1]. <a href ='https://arxiv.org/abs/1802.00934'>https://arxiv.org/abs/1802.00934</a>""" .
 
 ########################onGoingThesis########################
-sdathesis:big-data-quality-assessment  a dct:BibliographicResource, bibo:Thesis, sdatech:ongoingThesis, sdatech:masterThesis ;
+sdathesis:big-data-quality-assessment  a dct:BibliographicResource, bibo:Thesis, sdatech:archivedThesis, sdatech:masterThesis ;
     dct:title "Big Data quality Assessment" ;
     dct:creator sdaperson:AnisaRula, sdaperson:GezimSejdiu ;
     foaf:maker sdaperson:AnisaRula, sdaperson:GezimSejdiu ;
@@ -3017,7 +3016,7 @@ sdathesis:big-data-quality-assessment  a dct:BibliographicResource, bibo:Thesis,
     sda:thesisLevel "MS,BS" ;
     dct:abstract """Data quality is considered as a multidimensional concept that covers different aspects of quality such as accuracy, completeness, and timeliness. With the advent of Big Data, traditional quality assessment techniques are facing different challenges. Therefore, we should adopt the traditional techniques to big data technologies. The goal of this thesis is to re-implement the assessment techniques in the SANSA framework.""" .
 
-sdathesis:graph-partitioning-for-rdf-data  a dct:BibliographicResource, bibo:Thesis, sdatech:ongoingThesis, sdatech:masterThesis ;
+sdathesis:graph-partitioning-for-rdf-data  a dct:BibliographicResource, bibo:Thesis, sdatech:archivedThesis, sdatech:masterThesis ;
     dct:title "Graph partitioning for RDF data" ;
     dct:creator sdaperson:IoannaLytra, sdaperson:GezimSejdiu ;
     foaf:maker sdaperson:IoannaLytra, sdaperson:GezimSejdiu ;
@@ -3028,7 +3027,7 @@ sdathesis:graph-partitioning-for-rdf-data  a dct:BibliographicResource, bibo:The
     sda:thesisLevel "MS,BS" ;
     dct:abstract """Big RDF datasets need to be stored and processed in distributed RDF data stores that are built on top of cluster servers. Several partitioning schemes like horizontal, vertical, and hash partitioning, exist that allow for splitting the datasets into several nodes, in order to achieve scalability and efficient query processing. The goal of this thesis is to study graph partitioning approaches for RDF data, compare the state of the art, and implement corresponding algorithms that will be integrated into the <a href='http://sansa-stack.net/'>SANSA</a> framework.""" .
 
-sdathesis:recommendation-system-for-RDF-partitioners a dct:BibliographicResource, bibo:Thesis, sdatech:ongoingThesis, sdatech:masterThesis ;
+sdathesis:recommendation-system-for-RDF-partitioners a dct:BibliographicResource, bibo:Thesis, sdatech:archivedThesis, sdatech:masterThesis ;
     dct:title "Recommendation system for RDF partitioners" ;
     dct:creator sdaperson:GezimSejdiu, sdaperson:IoannaLytra ;
     foaf:maker sdaperson:GezimSejdiu, sdaperson:IoannaLytra ;
@@ -3038,7 +3037,7 @@ sdathesis:recommendation-system-for-RDF-partitioners a dct:BibliographicResource
     sda:thesisLevel "MS,BS" ;
     dct:abstract """In order to store and query big RDF datasets efficiently in distributed environments, different partitioning techniques need to be implemented. Several techniques have been proposed for splitting Big RDF Data, ranging from vertical, hash, graph to semantic-based partitioners. However, the selection of the “best partitioner” depends highly on the structure of the dataset and the query efficiency and effectiveness are coupled to the query engine used. The goal of this thesis will be to develop a recommender system that will suggest the “best partitioner” based on the structure of the data and specific requirements.""" .
 
-sdathesis:rdf-compression-techniques a dct:BibliographicResource, bibo:Thesis, sdatech:ongoingThesis, sdatech:masterThesis ;
+sdathesis:rdf-compression-techniques a dct:BibliographicResource, bibo:Thesis, sdatech:archivedThesis, sdatech:masterThesis ;
     dct:title "RDF compression techniques" ;
     dct:creator sdaperson:DamienGraux ;
     foaf:maker sdaperson:DamienGraux ;
@@ -3096,7 +3095,8 @@ sdatech:ThesisNavigation a sdatech:SecondaryNavigation ;
         rdf:_2 sdathesis:bachelorthesis ;
         rdf:_3 sdathesis:masterthesis ;
         rdf:_4 sdathesis:ongoingthesis ;
-        rdf:_5 sdathesis:frequentlyaskedquestions .
+        rdf:_5 sdathesis:completedthesis ;
+        rdf:_6 sdathesis:frequentlyaskedquestions .
 
 sdatech:TeachingNavigation a sdatech:SecondaryNavigation ;
         rdf:_1 sdatech:teaching ;
@@ -25897,6 +25897,11 @@ sdathesis:masterthesis a foaf:Document ;
 sdathesis:ongoingthesis a foaf:Document ;
           sda:miniIcon "fa fa-folder-open margin-icon" ;
           rdfs:label "On Going Thesis" .
+
+sdathesis:completedthesis a foaf:Document ;
+          sda:miniIcon "fa fa-archive margin-icon" ;
+          rdfs:label "Completed Thesis" .
+
 
 ###############################################
 ###########Container Membership Nav############
