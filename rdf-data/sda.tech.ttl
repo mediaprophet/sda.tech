@@ -260,6 +260,24 @@ sdaperson:SimonScerri a foaf:Person, sdatech:seniorResearcher ;
                   sda:group sdagroup:SmartServices ;
                   foaf:currentProject sdaproject:BigDataEurope, sdaproject:Boost40, sdaproject:EDSA .
 
+sdaperson:SaharVahdati a foaf:Person, sdatech:seniorResearcher ;
+                   sda:publicationsTag "vahdati" ;
+                   ex:address sda:Room126 ;
+                   foaf:familyName "Vahdati" ;
+                   foaf:name "Dr. Sahar Vahdati" ;
+                   foaf:nick "Sahar" ;
+                   foaf:mbox <mailto:vahdati@cs.uni-bonn.de> ;
+                   foaf:depiction </assets/images/people/sahar-vahdati.jpeg> ;
+                   foaf:phone <Tel:0228/73-4533> ;
+                   foaf:firstName "Sahar" ;
+                   foaf:title "Dr. " ;
+                   foaf:status "Senior Researcher" ;
+                   sda:profilepage <https://www.linkedin.com/in/saharvahdati/>, <https://twitter.com/SaVahdati> ;
+                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
+                   cv:aboutPerson "Dr. Sahar Vahdati is a Senior Researcher in the Smart Data Analytics (SDA) research group at the University of Bonn. She also partly collaborate in teaching activities of Intelligent Database group. Her research interests include linked data, big data, data integration and management, scholarly communication, and semantic publishing." ;
+                   sda:group sdagroup:SemanticDataManagement ;
+                   foaf:currentProject sdaproject:OSCOSS, sdaproject:OpenAIRE2020, sdaproject:SlideWiki .
+
 ##############################PHD Students#########################
 sdaperson:GezimSejdiu a foaf:Person, sdatech:phdStudent ;
                    rdfs:seeAlso <http://aksw.org/GezimSejdiu> ;
@@ -545,25 +563,6 @@ sdaperson:ShimaaIbrahim a foaf:Person, sdatech:phdStudent ;
                    sda:group sdagroup:DistributedSemanticAnalytics ;
                    foaf:currentProject sdaproject:SANSAStack .
 
-
-sdaperson:SaharVahdati a foaf:Person, sdatech:phdStudent ;
-                   sda:publicationsTag "vahdati" ;
-                   ex:address sda:Room126 ;
-                   foaf:familyName "Vahdati" ;
-                   foaf:name "Sahar Vahdati" ;
-                   foaf:nick "Sahar" ;
-                   foaf:mbox <mailto:vahdati@cs.uni-bonn.de> ;
-                   foaf:depiction </assets/images/people/sahar-vahdati.jpeg> ;
-                   foaf:phone <Tel:0228/73-4533> ;
-                   foaf:firstName "Sahar" ;
-                   foaf:title "" ;
-                   foaf:status "PhD Student" ;
-                   sda:profilepage <https://www.linkedin.com/in/saharvahdati/>, <https://twitter.com/SaVahdati> ;
-                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
-                   cv:aboutPerson "Sahar Vahdati is a research associate and a PhD candidate in the Smart Data Analytics (SDA) research group at the University of Bonn. She also partly collaborate in teaching activities of Intelligent Database group. She received her master’s degree in Computer Science in 2013 from the University of Bonn. Her research interests include linked data, big data, data integration and management, scholarly communication, and semantic publishing." ;
-                   sda:group sdagroup:SemanticDataManagement ;
-                   foaf:currentProject sdaproject:OSCOSS, sdaproject:OpenAIRE2020, sdaproject:SlideWiki .
-
 sdaperson:ElisaMargarethSibarani a foaf:Person, sdatech:phdStudent ;
                    sda:publicationsTag "Sibarani" ;
                    ex:address sda:Room68 ;
@@ -651,21 +650,6 @@ sdaperson:SaidFathalla a foaf:Person, sdatech:phdStudent ;
                    sda:group sdagroup:SemanticDataManagement ;
                    cv:aboutPerson "Said Fathalla received the M.S. degree in Computer Science from Alexandria University, Alexandria, Egypt, in 2013. In 2007-2016 he has been working as Assistant Lecturer at Department of Mathematics and Computer Science, Faculty of Science, Alexandria University, Alexandria, Egypt. He is currently pursuing the Ph.D. degree in Computer Science at Smart Data Analytics (SDA), University of Bonn, Bonn, Germany. His research focus in semantic web technologies, scholarly communication, knowledge graph construction, semantic reasoning and natural language processing. He has several conference and journal publications in semantic web, text classification, Bioinformatics, scholarly communication, and knowledge engineering.  He participated in the program committee of several conferences, such as ACM SAC and he is a reviewer in several journal, such as IJSWIS and TKDE." .
 
-sdaperson:MichaelGalkin a foaf:Person, sdatech:phdStudent ;
-                   sda:publicationsTag "galkin" ;
-                   foaf:familyName "Galkin" ;
-                   foaf:name "Michael Galkin" ;
-                   foaf:nick "Michael" ;
-                   foaf:mbox <mailto:galkin@cs.uni-bonn.de> ;
-                   foaf:depiction </assets/images/people/michael-galkin.jpg> ;
-                   foaf:phone "" ;
-                   foaf:firstName "Michael" ;
-                   foaf:title "" ;
-                   foaf:status "PhD Student" ;
-                   sda:profilepage <https://www.linkedin.com/in/michael-galkin-80b71294/> ;
-                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
-                   cv:aboutPerson "Michael Galkin is a PhD Student at the University of Bonn." ;
-                   foaf:currentProject sdaproject:LinDA.
 
 sdaperson:HebaIbrahim a foaf:Person, sdatech:phdStudent ;
                    sda:publicationsTag "ibrahim" ;
@@ -848,34 +832,34 @@ sdaperson:IrlanGrangelGonzales a foaf:Person, sdatech:associateReseracher ;
 sdaperson:DiegoCollarana a foaf:Person, sdatech:associateReseracher ;
                    sda:publicationsTag "collarana" ;
                    foaf:familyName "Collarana" ;
-                   foaf:name "Diego Collarana" ;
+                   foaf:name "Dr. Diego Collarana" ;
                    foaf:nick "Diego" ;
                    foaf:mbox <mailto:collaran@iai.uni-bonn.de> ;
                    foaf:depiction </assets/images/people/diego-collarana.jpeg> ;
                    foaf:phone "" ;
                    foaf:firstName "Diego" ;
-                   foaf:title "" ;
+                   foaf:title "Dr. " ;
                    foaf:status "Researcher" ;
                    sda:profilepage <https://www.linkedin.com/in/diego-collarana-60ab6127/>;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
-                   cv:aboutPerson "Diego Collarana is a Researcher at the Fraunhofer IAIS." ;
+                   cv:aboutPerson "Dr. Diego Collarana is a Senior Researcher at the Fraunhofer IAIS." ;
                    sda:group sdagroup:SemanticDataManagement ;
                    foaf:currentProject sdaproject:EDSA .
 
 sdaperson:KuldeepSingh a foaf:Person, sdatech:associateReseracher ;
                    sda:publicationsTag "singh" ;
                    foaf:familyName "Singh" ;
-                   foaf:name "Kuldeep Singh" ;
+                   foaf:name "Dr. Kuldeep Singh" ;
                    foaf:nick "Kuldeep" ;
                    foaf:mbox <mailto:kuldeep.singh@iais.fraunhofer.de> ;
                    foaf:depiction </assets/images/people/kuldeep-singh.jpeg> ;
                    foaf:phone "" ;
                    foaf:firstName "Kuldeep" ;
-                   foaf:title "" ;
+                   foaf:title "Dr. " ;
                    foaf:status "Researcher" ;
                    sda:profilepage <https://www.linkedin.com/in/kuldeep-singh-67a4a840/>;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
-                   cv:aboutPerson "Kuldeep Singh is a Researcher at the Fraunhofer IAIS." ;
+                   cv:aboutPerson "Dr. Kuldeep Singh is a Senior Researcher at the Fraunhofer IAIS." ;
                    sda:group sdagroup:SemanticQuestionAnswering;
                    foaf:currentProject sdaproject:AskNow, sdaproject:WDAqua .
 
@@ -975,6 +959,22 @@ sdaperson:RostislavNedelchev a foaf:Person, sdatech:associateReseracher ;
                    foaf:currentProject sdaproject:AskNow ;
                    sda:group sdagroup:SemanticQuestionAnswering ;
                    cv:aboutPerson "Rostislav Nedelchev is a PhD Student at the University of Bonn and a Research Engineer at Fraunhofer IAIS. Rostislav's research interests are in Natural Language Processing, Machine Learning and Data Science." .
+
+sdaperson:MichaelGalkin a foaf:Person, sdatech:associateReseracher ;
+                   sda:publicationsTag "galkin" ;
+                   foaf:familyName "Galkin" ;
+                   foaf:name "Dr. Michael Galkin" ;
+                   foaf:nick "Michael" ;
+                   foaf:mbox <mailto:galkin@cs.uni-bonn.de> ;
+                   foaf:depiction </assets/images/people/michael-galkin.jpg> ;
+                   foaf:phone "" ;
+                   foaf:firstName "Michael" ;
+                   foaf:title "" ;
+                   foaf:status "Senior Researcher" ;
+                   sda:profilepage <https://www.linkedin.com/in/michael-galkin-80b71294/> ;
+                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
+                   cv:aboutPerson "Dr. Michael Galkin is a Researcher at the Fraunhofer IAIS." ;
+                   foaf:currentProject sdaproject:LinDA.
 
 ##############################Student Assistants#########################
 
