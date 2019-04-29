@@ -12,9 +12,9 @@
         {% for pdetail in profiledetails  %}
           {% if buttonname == "homepage" %}<a href="{{profile.profilepage}}"  target="_blank"><i class="fa fa-globe" aria-hidden="true"></i></a>{% endif %}
           {% if buttonname == "linkedin"  %}<a href="{{profile.profilepage}}"  target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i> </a>{% endif %}
-          <a href="mailto:{{include.mailto | remove: 'mailto' | encode_email }}" target="_blank"><i class="fa fa-envelope-o"></i></a>
         {% endfor %}
       {% endfor %}
+      <a href="mailto:{{include.mailto | remove: 'mailto' | encode_email }}" target="_blank"><i class="fa fa-envelope-o"></i></a>
    </div>
   </div>
 </div>

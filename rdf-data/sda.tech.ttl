@@ -22,7 +22,6 @@
 @prefix sdateaching: <http://sda.tech/Course/> .
 @prefix sdablog: <http://sda.tech/blog/> .
 @prefix sdajob: <http://sda.tech/Job/> .
-@prefix sdacontact: <http://sda.tech/Contact/> .
 @prefix aiiso: <http://purl.org/vocab/aiiso/schema#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix ov: <http://open.vocab.org/terms/> .
@@ -3076,7 +3075,8 @@ sdatech:Mainnav a sdatech:Navigation ;
            rdf:_7 sdatech:teaching ;
            rdf:_8 sdatech:thesis ;
            rdf:_9 sdatech:partners ;
-           rdf:_10 sdatech:blog .
+           rdf:_10 sdatech:blog ;
+           rdf:_11 sdatech:contact .
 
 sdatech:BlogPostNavigation a sdatech:SecondaryNavigation ;
          rdf:_1 sdatech:blog ;
@@ -25937,6 +25937,8 @@ rdf:_9 a rdfs:ContainerMembershipProperty ;
 rdf:_10 a rdfs:ContainerMembershipProperty ;
       rdfs:label "10" .
 
+rdf:_11 a rdfs:ContainerMembershipProperty ;
+      rdfs:label "11" .
 
 ##############PUBLICATION CLASSES###############
 
@@ -26012,6 +26014,9 @@ foaf:Document sysont:instanceNamingScheme "label" ;
 
 sdatech:about a foaf:Document ;
   rdfs:label "About" .
+
+sdatech:contact a foaf:Document ;
+  rdfs:label "Contact" .
 
 
 sdatech:fundedProject a owl:Class ;
