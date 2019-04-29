@@ -1609,10 +1609,11 @@ blockquote {
 }
 
 div.scrollmenu {
-    background-color: #f9f9f9;
+    background-color: #fafafa;
     overflow: auto;
     white-space: nowrap;
-    margin-top: -20px;
+    margin-top: -24px;
+    border-bottom: 1px solid #e0e0e0;
 }
 
 div.scrollmenu a {
