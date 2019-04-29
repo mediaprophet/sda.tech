@@ -69,7 +69,7 @@ activateHeader('{{page.navigationdiv}}');
               <div class="rgroupsSection">
                 {% for group in groupList %}
                   {% assign url= group.group | remove: "http://sda.tech/" %}
-                  <div class="chip">
+                  <div class="chip chipNonCircleIcon">
                     <i class="{{group.groupImage}} margin-icon"></i>
                     <a href="../../{{url}}">{{group.groupName}}</a>
                   </div>
@@ -166,7 +166,7 @@ activateHeader('{{page.navigationdiv}}');
            <br class="horizontal-separator2" />
            <h4>Thesis Topics</h4>
              <div class="partnersOfProject" style="display:block !important;" min-width="100%">
-               <div class="rthesistopics">
+               <div class="thesisTopics">
                  {% for topic in thesistopics %}
                    <div class="links">
                      <ul>

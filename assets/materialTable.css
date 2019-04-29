@@ -3,6 +3,7 @@
 		border-collapse:collapse;
 		font-family: 'Lato', Calibri, Arial, sans-serif;
 		border: none;
+		border: 1px solid #eeeeee;
                 border-radius: 1px;
                -webkit-border-radius: 1px;
                -moz-border-radius: 1px;
@@ -18,11 +19,12 @@
 		font-weight: normal;
 		-webkit-font-smoothing: antialiased;
 		padding: 1em;
-		color: white;
+		color: #24292e;
 		text-shadow: 0 0 1px rgba(0,0,0,0.1);
 		font-size: 1.0em;
-    background-color: #9E9E9E;
+    background-color: #f6f8fa;
     text-align: left;
+		border-bottom: 1px solid #eeeeee;
 	}
 	.flat-table td {
 		color: #616161;

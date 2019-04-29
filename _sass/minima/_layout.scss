@@ -446,22 +446,24 @@ text-align: center;
   float: left;
   position: relative;
   padding: 0 25px;
-  margin-right: 16px;
+  margin-right: 32px;
   margin-bottom: 16px;
   height: 50px;
   font-size: 16px;
   line-height: 50px;
   border-radius: 25px;
   background-color: #ffffff;
-    -webkit-box-shadow: 0 8px 6px -6px #e0e0e0;
-	   -moz-box-shadow: 0 8px 6px -6px #e0e0e0;
-	  box-shadow: 0 8px 6px -6px #e0e0e0;
+  border: 1px solid #eeeeee;
+    // -webkit-box-shadow: 0 8px 6px -6px #e0e0e0;
+	  //  -moz-box-shadow: 0 8px 6px -6px #e0e0e0;
+	  // box-shadow: 0 8px 6px -6px #e0e0e0;
 }
 
 .chip:hover {
   -webkit-box-shadow: 0 24px 24px -10px #e0e0e0;
   -moz-box-shadow: 0 24px 24px -10px #e0e0e0;
   box-shadow: 0 24px 24px -10px #e0e0e0;
+  border: 1px solid #ffffff;
 }
 
 .chip img {
@@ -470,7 +472,17 @@ text-align: center;
     height: 50px !important;
     width: 50px !important;
     border-radius: 50% !important;
+    background-color: rgba(225 , 245 , 254 , 0.2);
+    border-right: 1px solid #e1f5fe;
+}
+
+.chip-circleIcon img {
+    margin: 0 10px 0 -26px !important;
     background-color: #e0e0e0;
+}
+
+.chipNonCircleIcon img {
+    margin: 0 10px 0 0px !important;
 }
 
 .chip a {
@@ -850,6 +862,30 @@ hr {
   margin: 0 auto;
 }
 
+.thesisTopics {
+  ul {
+    list-style-type: none;
+
+    li {
+      position: relative;
+
+      &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        left: -20px;
+        top: 6px;
+        width: 12px;
+        height: 12px;
+        border: 1px solid #018df5;
+        background: #018df5;
+        border-radius: 50%;
+        box-shadow: 0px 0px 0px 3px #fff inset;
+      }
+    }
+  }
+}
+
 // profile cards
 
 .cardProfile {
@@ -934,7 +970,7 @@ hr {
   margin-right: 32px;
   margin-bottom: 32px;
   display: inline-block;
-  text-align: left;
+  text-align: center;
   min-height: 130px;
 
     img {
@@ -951,6 +987,7 @@ hr {
 
 .partner-title {
   margin-left: 8px;
+  text-align: center;
 
   a {
     color: $purple-sda-color;
