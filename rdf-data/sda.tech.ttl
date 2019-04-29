@@ -703,6 +703,23 @@ sdaperson:ChengjinXu a foaf:Person, sdatech:phdStudent ;
                    sda:group sdagroup:KnowledgeGraph ;
                    cv:aboutPerson "Chengjin Xu is a PhD student at the university of Bonn. Chengjin’s research interests are in the area of Knowledge Embedding and Machine Learning.".
 
+sdaperson:MehdiAli a foaf:Person, sdatech:phdStudent ;
+                   sda:publicationsTag "ali" ;
+                   ex:address sda:Room51-2 ;
+                   foaf:familyName "Ali" ;
+                   foaf:name "Mehdi Ali" ;
+                   foaf:nick "Mehdi" ;
+                   foaf:mbox <mailto:mehdi.ali@cs.uni-bonn.de> ;
+                   foaf:depiction </assets/images/people/mehdi-ali.jpg> ;
+                   foaf:firstName "Mehdi" ;
+                   foaf:title "" ;
+                   foaf:status "PhD Student" ;
+                   sda:profilepage <https://www.linkedin.com/in/mehdi-ali-548834a4/>;
+                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
+                   sda:group sdagroup:KnowledgeGraph ;
+                   cv:aboutPerson "Mehdi Ali is a PhD Student at the Computer Science Department III of the University of Bonn." .
+
+
 ##############################Associated Researchers#####################
 
 sdaperson:SteffenLohmann a foaf:Person, sdatech:associateReseracher ;
@@ -1077,22 +1094,6 @@ sdaperson:PiyushChawla a foaf:Person, sdatech:studentAssistant ;
                    sda:profilepage <https://www.linkedin.com/in/piyush-chawla-36020111a>;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    cv:aboutPerson "Piyush Chawla is a Student Assistant at the Computer Science Department III of the University of Bonn." .
-
-sdaperson:MehdiAli a foaf:Person, sdatech:studentAssistant ;
-                   sda:publicationsTag "ali" ;
-                   ex:address sda:Room51-2 ;
-                   foaf:familyName "Ali" ;
-                   foaf:name "Mehdi Ali" ;
-                   foaf:nick "Mehdi" ;
-                   foaf:mbox <mailto:mehdi.ali@cs.uni-bonn.de> ;
-                   foaf:depiction </assets/images/people/mehdi-ali.jpg> ;
-                   foaf:firstName "Mehdi" ;
-                   foaf:title "" ;
-                   foaf:status "Student Assistant" ;
-                   sda:profilepage <https://www.linkedin.com/in/mehdi-ali-548834a4/>;
-                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
-                   sda:group sdagroup:KnowledgeGraph ;
-                   cv:aboutPerson "Mehdi Ali is a Student Assistant at the Computer Science Department III of the University of Bonn." .
 
 sdaperson:MehrdadBozorg a foaf:Person, sdatech:studentAssistant ;
                    sda:publicationsTag "mehrdad" ;
