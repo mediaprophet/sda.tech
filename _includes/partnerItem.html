@@ -13,7 +13,7 @@
       {% for projects in projectList %}
         {% assign url= projects.project | remove: "http://sda.tech/" %}
         <div class="chip">
-          <img class="img-circle-small" src="{{projects.image}}" alt="Project" width="96" height="96">
+          <img class="img-circle-small" src="{{projects.image}}" width="96" height="96">
           <a href="../../{{url}}">{{projects.projectname}}</a>
         </div>
       {% endfor %}

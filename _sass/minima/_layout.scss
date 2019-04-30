@@ -633,10 +633,8 @@ text-align: center;
 .pagination {
   margin: 0 auto;
   text-align: center;
-  // padding-bottom: 24px;
   padding-top: 32px;
   width: 100%;
-  // background-color: #F5F5F5;
   background-color: #fafafa;
 
   > .post-content {
@@ -667,15 +665,17 @@ text-align: center;
   width: 100%;
 }
 .pagination a {
-    color: black;
+    color: #24292e;
     float: center;
     padding: 8px 16px;
     text-decoration: none;
     transition: background-color .3s;
+    font-weight: lighter;
 }
 
 .pagination a.active {
     background-color: #ddd;
+    font-weight: bold;
 }
 
 .pagination a:hover:not(.active) {background-color: #ddd;}
@@ -715,7 +715,19 @@ text-align: center;
   padding-top: 0px;
   padding-left: 24px;
   padding-right: 24px;
+  padding: 32px !important;
   width: 100%;
+}
+
+.content-title {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  
+  h2{
+    font-weight: bold;
+    font-size: x-large;
+    color: #757575;
+  }
 }
 
 img {
@@ -976,7 +988,7 @@ hr {
   width: 90%;
   margin-left: 32px;
   margin-right: 32px;
-  margin-bottom: 32px;
+  margin-bottom: 56px;
   display: inline-block;
   text-align: left;
   min-height: 130px;
@@ -990,6 +1002,7 @@ hr {
         object-fit: contain;
         padding: 6px ;
         border: 1px solid #E0E0E0;
+        color: #eeeeee;
     }
 
     h1 {
@@ -1019,7 +1032,7 @@ hr {
 
 .links {
   a {
-    color: $purple-sda-color !important;
+    color: $sda-chip-link-color !important;
     padding: 0px !important;
     //margin: 0px !important;
     webkit-margin-after: 0px !important;
@@ -1618,21 +1631,6 @@ div.posturl a:hover {
   color:#999999;
   margin-top:-10px;
 }
-
-.pagination2 a {
-    color: black;
-    float: left;
-    padding: 8px 16px;
-    text-decoration: none;
-    transition: background-color .3s;
-}
-
-.pagination2 a.active {
-    background-color: dodgerblue;
-    color: white;
-}
-
-.pagination2 a:hover:not(.active) {background-color: #ddd;}
 
 div.sc_menu
 {
