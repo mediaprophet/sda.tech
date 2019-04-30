@@ -1,30 +1,40 @@
-<br class="horizontal-separator3"/>
-<div class="partner-title" style="text-align:center;">
-  <a href={% if include.projectItemFor == "projectList"%}"../{{include.href}}"{% elsif include.projectItemFor== "project" %}"{{include.href}}"{% endif %} ><h1>{{include.title}}</h1></a>
-</div>
 <div class="partner-item">
+  <div class="partner-title">
+    <a href={% if include.projectItemFor == "projectList"%}"../{{include.href}}"{% elsif include.projectItemFor== "project" %}"{{include.href}}"{% endif %} ><h1>{{include.title}}</h1></a>
+  </div>
   <div class="image">
     <a href={% if include.projectItemFor == "projectList"%}"../{{include.href}}"{% elsif include.projectItemFor== "project" %}"{{include.href}}"{% endif %}><img style="width: 200px;" src="{{include.image}}" alt="{{iclude.title}}"></a>
   </div>
   <div class="description">
     {{include.description}}<br/>
     <div class="links">
-    <br class="horizontal-separator3" />
     {% capture count %}{{include.twitter}}{% endcapture %}
     {% if count != 'undefined' %}
-      <a class="linkMarginRight" href="{{include.twitter}}" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i>Twitter</a>
+      <div class="chip chipNonCircleIcon">
+        <i class="fa fa-twitter" aria-hidden="true"></i>
+        <a class="linkMarginRight" href="{{include.twitter}}" target="_blank">Twitter</a>
+      </div>
     {% endif %}
     {% capture count %}{{include.homepage}}{% endcapture %}
     {% if count != 'undefined' %}
-      <a class="linkMarginRight" href="{{include.homepage}}" target="_blank"><i class="fa fa-home" aria-hidden="true"></i> Homepage</a>
+      <div class="chip chipNonCircleIcon">
+        <i class="fa fa-home" aria-hidden="true"></i>
+        <a class="linkMarginRight" href="{{include.homepage}}" target="_blank">Homepage</a>
+      </div>
     {% endif %}
     {% capture count %}{{include.source}}{% endcapture %}
     {% if count != 'undefined' %}
-      <a class="linkMarginRight" href="{{include.source}}" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> Source</a>
+      <div class="chip chipNonCircleIcon">
+        <i class="fa fa-github" aria-hidden="true"></i>
+        <a class="linkMarginRight" href="{{include.source}}" target="_blank">Source</a>
+      </div>
     {% endif %}
     {% capture count %}{{include.download}}{% endcapture %}
     {% if count != 'undefined' %}
-      <a class="linkMarginRight" href="{{include.download}}" target="_blank"><i class="fa fa-download" aria-hidden="true"></i> Download</a>
+      <div class="chip chipNonCircleIcon">
+        <i class="fa fa-download" aria-hidden="true"></i>
+        <a class="linkMarginRight" href="{{include.download}}" target="_blank">Download</a>
+      </div>
     {% endif %}
   </div>
   </div>

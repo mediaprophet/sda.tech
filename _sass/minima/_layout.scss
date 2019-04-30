@@ -721,10 +721,10 @@ text-align: center;
 
 .content-title {
   margin-top: 24px;
-  margin-bottom: 24px;
-  
+  margin-bottom: 56px;
+
   h2{
-    font-weight: bold;
+    font-weight: lighter;
     font-size: x-large;
     color: #757575;
   }
@@ -1031,6 +1031,8 @@ hr {
 }
 
 .links {
+  margin-top: 12px;
+  
   a {
     color: $sda-chip-link-color !important;
     padding: 0px !important;
