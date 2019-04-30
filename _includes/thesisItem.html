@@ -11,17 +11,15 @@
       {{include.description}}<br/>
     </div>
   </div>
-  <div class="links">
+  <div class="membersInThesis">
     {% for person in include.personList %}
       {% capture thesisNameinArray %}{{person.thesisTitle}}{% endcapture%}
       {% if thesisNameinArray == include.title %}
         {% assign url= person.person | remove: "http://sda.tech/" %}
-        <div class="membersInThesis">
           <div class="chip">
             <img class="img-circle-small" src="{{person.personImage}}" alt="Person" width="96" height="96">
             <a href="../../{{url}}">{{person.personName}}</a>
           </div>
-        </div>
       {% endif %}
     {% endfor %}
   </div>
