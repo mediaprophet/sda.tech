@@ -97,14 +97,8 @@ activateHeader('{{page.navigationdiv}}');
 
               <br class="horizontal-separator" />
               <br class="horizontal-separator2" />
-              <h4>Publications </h4>
-              {% for result4 in resultset4 %} {% capture groupname %}{{result4.name}}{% endcapture %} {% if groupname == name %}
-                {% include pubEntry.html link=result4.link date=result4.date publisher=result4.publisher title=result4.title  %}
-              {% endif %} {% endfor %}
-              <br class="horizontal-separator2" />
             </div>
           </div>
-          <br class="horizontal-separator" />
         </div>
       </div>
       {% endfor %}

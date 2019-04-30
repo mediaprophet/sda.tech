@@ -11,7 +11,7 @@ navigationdiv: Blog
 <div class="borderAll">
   <article class="post">
     <div class="pagination">
-      {% include blogHeader.html active="All Blog Posts"%}
+      {% include blogHeader.html active="Blog"%}
     </div>
 
     {% capture query %} SELECT ?blog ?title ?creator ?date ?image ?content WHERE{ ?blog a sioc:Post . ?blog dct:title ?title . ?blog dct:creator ?person . ?person foaf:name ?creator . ?blog dct:created ?date . ?blog foaf:depiction ?image  . ?blog sioc:content ?content .} ORDER BY DESC(?date) {% endcapture %} {% assign blogposts = page.rdf | sparql_query: query %}

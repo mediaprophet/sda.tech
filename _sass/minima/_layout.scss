@@ -46,11 +46,11 @@
 }
 
 .site-rootHead {
-  border-bottom: 1px solid #e0e0e0;
+  border-bottom: 1px solid #bbdefb;
   padding: 0px 0;
   color: $carbon-color;
-  height: 6px;
-  background-color: darken(#ffffff, 30);
+  height: 1px;
+  background-color: #ffffff;
   text-align: right;
   vertical-align: middle;
   position: fixed;
@@ -488,6 +488,7 @@ text-align: center;
 .chip a {
   color: $purple-sda-color !important;
   padding: 0px !important;
+  font-weight: lighter;
 }
 
 .chip a:hover{
@@ -512,6 +513,11 @@ text-align: center;
 
  .membersofProject, .partnersOfProject, .partnerProjects {
   display: inline-block;
+}
+
+.projectInPartners{
+  margin-top: 12px;
+
 }
 
 .membersofProject {
@@ -627,11 +633,11 @@ text-align: center;
 .pagination {
   margin: 0 auto;
   text-align: center;
-  padding-bottom: 24px;
+  // padding-bottom: 24px;
   padding-top: 32px;
   width: 100%;
   // background-color: #F5F5F5;
-  background-color: white;
+  background-color: #fafafa;
 
   > .post-content {
     text-align: left;
@@ -863,7 +869,7 @@ hr {
 }
 
 // Reference List CodePen: List item bullet, https://codepen.io/Aortan/pen/GYBWzb
-.thesisTopics {
+.thesisTopics, .course-list {
   ul {
     list-style-type: none;
 
@@ -963,6 +969,7 @@ hr {
     vertical-align: middle;
     float: left;
     width: 75%;
+    color: #757575;
 }
 
 .partner-item {
@@ -971,7 +978,7 @@ hr {
   margin-right: 32px;
   margin-bottom: 32px;
   display: inline-block;
-  text-align: center;
+  text-align: left;
   min-height: 130px;
 
     img {
@@ -984,11 +991,17 @@ hr {
         padding: 6px ;
         border: 1px solid #E0E0E0;
     }
+
+    h1 {
+      margin-bottom: 8px;
+      font-size: larger;
+      font-weight: lighter !important;
+    }
 }
 
 .partner-title {
-  margin-left: 8px;
-  text-align: center;
+  margin-left: 274px;
+  text-align: left;
 
   a {
     color: $purple-sda-color;
@@ -999,7 +1012,7 @@ hr {
 
     &:hover {
       text-decoration: none;
-      color: lighten($purple-sda-color, 15%);
+      color: $blue-sda-color;
     }
   }
 }
@@ -1528,7 +1541,6 @@ blockquote {
 
 .mainDiv {
   background-color: white !important;
-  border: 1px solid #E0E0E0 !important;
 }
 
 .headline {
@@ -1554,7 +1566,7 @@ div.scrollmenu {
     background-color: #fafafa;
     overflow: auto;
     white-space: nowrap;
-    margin-top: -24px;
+    margin-top: 0px;
     border-bottom: 1px solid #e0e0e0;
 }
 
