@@ -515,9 +515,8 @@ text-align: center;
   display: inline-block;
 }
 
-.projectInPartners{
+.projectInPartners, .membersInThesis{
   margin-top: 12px;
-
 }
 
 .membersofProject {
@@ -647,6 +646,14 @@ text-align: center;
 
 }
 
+// Footer pagination
+
+.pagination-footer {
+  background-color: #fafafa;
+  height: 80px;
+  border-top: 1px solid #e0e0e0;
+}
+
 //Reference Shadow Code Pen, Material Design Box Shadows
 // https://codepen.io/sdthornton/pen/wBZdXq
 
@@ -727,6 +734,19 @@ text-align: center;
     font-weight: lighter;
     font-size: x-large;
     color: #757575;
+  }
+}
+
+.content-empty {
+  text-align: center;
+  align-content: center;
+
+  img {
+    object-fit: contain;
+    padding: 8px;
+    border: 0px solid #fff;
+    width: 250px;
+    height: 250px;
   }
 }
 
@@ -984,6 +1004,10 @@ hr {
     color: #757575;
 }
 
+.descriptionThesis {
+  width: 100% !important;
+}
+
 .partner-item {
   width: 90%;
   margin-left: 32px;
@@ -1030,9 +1054,13 @@ hr {
   }
 }
 
+.thesis-title{
+  margin-left: 0px !important;
+}
+
 .links {
   margin-top: 12px;
-  
+
   a {
     color: $sda-chip-link-color !important;
     padding: 0px !important;

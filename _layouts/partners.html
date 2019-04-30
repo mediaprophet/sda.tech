@@ -16,12 +16,14 @@ activateHeader('{{page.navigationdiv}}');
     <div class="pagination">
       {% include partnerHeader.html active="Partners"%}
     </div>
-      <!-- FOR GETTING ASSOCIATED PROJECTS -->
-      {% capture query %} SELECT ?partners ?project ?partnername ?name ?image  WHERE{ ?partners a sdatech:Partner . ?partners foaf:currentProject ?project . OPTIONAL { ?partners foaf:name ?partnername } . ?project rdfs:label ?name  . OPTIONAL { ?project foaf:logo ?image } }
-      {% endcapture %} {% assign partnersWithProjects = page.rdf | sparql_query: query %} {% assign length2 = partners | size %}
-      <div class="partner-items content-people clear-padding">
-        {% include partnerContent.html active="all"%}
-      </div>
-      <br class="horizontal-separator2" />
+    <!-- FOR GETTING ASSOCIATED PROJECTS -->
+    {% capture query %} SELECT ?partners ?project ?partnername ?name ?image  WHERE{ ?partners a sdatech:Partner . ?partners foaf:currentProject ?project . OPTIONAL { ?partners foaf:name ?partnername } . ?project rdfs:label ?name  . OPTIONAL { ?project foaf:logo ?image } }
+    {% endcapture %} {% assign partnersWithProjects = page.rdf | sparql_query: query %} {% assign length2 = partners | size %}
+    <div class="partner-items content-people clear-padding">
+      {% include partnerContent.html active="all"%}
+    </div>
+    <div class="pagination-footer">
+
+    </div>
   </article>
 </div>
