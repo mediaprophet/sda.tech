@@ -43,13 +43,14 @@ activateHeader('{{page.navigationdiv}}');
   . ?publication dc:date ?date . ?publication dc:publisher ?publisher . ?publication foaf:homepage ?link . } {% endcapture %} {% assign resultset4 = page.rdf | sparql_query: queryfour %}
   {% capture query %} SELECT ?group ?name ?leader ?leadername ?leaderimage WHERE{
   ?group a aiiso:ResearchGroup . ?group rdfs:label ?name . ?group dbo:leader ?leader . ?leader foaf:name ?leadername . ?leader foaf:depiction ?leaderimage} {% endcapture %} {% assign resultset5 = page.rdf | sparql_query: query %}
-  {% assign visible = "none" %} {% capture shortcut %}{{result.shortcut}}{% endcapture %} {% if shortcut == "dsa" %} {% assign visible = "inline-block" %}{% endif %}  <div id="{{shortcut}}" class="content-people" style="display:{{visible}}">
-        <div class="post-content">
+  {% assign visible = "none" %} {% capture shortcut %}{{result.shortcut}}{% endcapture %} {% if shortcut == "dsa" %} {% assign visible = "inline-block" %}{% endif %}
+    <div id="{{shortcut}}" class="content-people" style="display:{{visible}}">
+        <div class="content-title">
+          <h2>{{result.name}}</h2>
+        </div>
+        <div class="groupContent">
           <div>
-            <div class="container">
-              <div class="content-title">
-                <h2>{{result.name}}</h2>
-              </div>
+            <div class="">
               <br class="horizontal-separator" />
               <p>{{result.desc}}</p>
               <br class="horizontal-separator" />
@@ -95,14 +96,12 @@ activateHeader('{{page.navigationdiv}}');
                 </div>
                 {% endif %} {% endfor %}
               </div>
-
-              <br class="horizontal-separator" />
-              <br class="horizontal-separator2" />
             </div>
           </div>
+        </div>
+        <div class="pagination-footer">
         </div>
       </div>
       {% endfor %}
   </article>
-  <br class="horizontal-separator" />
 </div>
