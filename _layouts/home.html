@@ -42,9 +42,6 @@ activateHeader('{{page.navigationdiv}}');
   <br class="horizontal-separator" />
   <br class="horizontal-separator" />
   <div class="warp">
-  <!-- Icon representation of Group and the Activities -->
-  <!-- <article class="post backgroundMain"> -->
-    <!-- class to be added back if like old style content-container-separation -->
     <!--Query to GET all the groupnames and metaInformation  -->
     {% capture query %} SELECT ?group ?description ?imageclass ?longdescription WHERE{ ?group a aiiso:ResearchGroup . ?group rdfs:label ?description . ?group dct:abstract ?longdescription.  ?group sda:imageclass ?imageclass . } {% endcapture %} {% assign groups = page.rdf | sparql_query: query %}
     <!--Query to GET associated leaders with the Groupnames-->
@@ -66,7 +63,6 @@ activateHeader('{{page.navigationdiv}}');
         <div class="groupAbstract">
           <h4>{{group.longdescription}}</h4>
         </div>
-       <!-- <b>Lead by:</b> -->
         <br/>
         <div class="groupLeaders">
             <h3 style="text-align:left;color:black;margin-left:24px;">Group Leader</h3>
@@ -85,11 +81,9 @@ activateHeader('{{page.navigationdiv}}');
     </div>
     {% endfor %}
   </div><br>
-  <!-- </article> -->
   <br class="horizontal-separator" />
   <br class="horizontal-separator" />
   <!--Blog posts excerpt: List of lates three or four blog posts  -->
-  <!-- <article class="post backgroundMain "> -->
     <!-- blogAndTweetPosts -->
     <header class="post-header">
      <h2 class="post-title">Keep Connected with Our Posts</h2>
@@ -121,17 +115,7 @@ activateHeader('{{page.navigationdiv}}');
        </div>
      </div>
    </div>
-  <!-- </article> -->
   <br class="horizontal-separator" />
   <br class="horizontal-separator" />
-  <!-- <article class="post backgroundMain ">
-    <header class="post-header">
-      <h2 class="post-title">Our Group is Funded By </h2>
-      <br class="horizontal-separator" />
-      <div class="cardItem">
-        Rohan Asmat
-      </div>
-    </header>
-  </article> -->
   <br class="horizontal-separator2" />
 </div>

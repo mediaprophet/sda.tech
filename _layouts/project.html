@@ -13,8 +13,11 @@ deactivateHeader();
 activateHeader('{{page.navigationdiv}}');
 </script>
 
-<div class="post mainDiv">
-  <div class="pagination" style="background-color:white !important;">
+<div class="borderAll">
+  <div class="pagination">
+    {% include projectHeader.html active="Funded Projects"%}
+  </div>
+  <div class="content-people">
     <div class="post-content">
       <div class="main-content">
         {% assign title= page.rdf | rdf_property: 'rdfs:label' %}{% assign homepageProject= page.rdf | rdf_property: 'foaf:homepage' %}{% assign twitterProject= page.rdf | rdf_property: 'sda:twitter' %}{% assign downloadProject= page.rdf | rdf_property: 'sda:download' %}{% assign projectSource= page.rdf | rdf_property: 'sda:source' %}{% assign image= page.rdf | rdf_property: 'foaf:depiction' %} {% assign description= page.rdf |rdf_property: 'ex:longdescription' %} {% include projectItem.html title=title image=image description=description last=1 href=url projectItemFor="project" homepage=homepageProject twitter=twitterProject source=projectSource download=downloadProject %}
@@ -75,5 +78,7 @@ activateHeader('{{page.navigationdiv}}');
       </div>
       {% endif %}
   </div>
+</div>
+<div class="pagination-footer">
 </div>
 </div>

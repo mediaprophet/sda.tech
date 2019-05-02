@@ -1,11 +1,8 @@
 /**
  * Site header
  */
- $red: #2979FF;
-
 .site-header {
   border-top: 0px solid #e0e0e0;
-  // border-bottom: 1px solid #e0e0e0;
   min-height: $spacing-unit * 2.10;
   color: #ffffff; /* Old browsers */
   background-color: #ffffff; /* Modern Browsers */
@@ -15,34 +12,6 @@
   width: 100%;
   overflow: hidden;
   z-index: 9999;
-}
-
-// Side Navigation
-
-.sidenav {
-  min-height: 80%;
-  width: 180px;
-  position: absolute;
-  z-index: 1;
-  // top: 0;
-  // left: 0;
-  background-color: #f5f5f5;
-  overflow-x: hidden;
-  padding-top: 24px;
-  margin-left: 24px;
-  overflow-wrap: break-word;
-}
-
-.blankNode{
-  margin-right: 24px;
-}
-
-.backgroundMain {
-  background-color: #F5F5F5;
-  border-radius: 8px;
-  border: 1px solid #EEEEEE;
-  padding: 40px;
-  overflow: hidden;
 }
 
 .site-rootHead {
@@ -65,10 +34,6 @@
       padding-top: 20px;
       padding-left: 16px;
     }
-}
-
-.root-heading {
-  font-weight: bolder;
 }
 
 .site-title {
@@ -307,9 +272,9 @@
 }
 
 .post-content {
-  margin-bottom: $spacing-unit;
+  // margin-bottom: $spacing-unit;
   text-align: left;
-  padding: 24px;
+  // padding: 24px;
 
   h2 {
     @include relative-font-size(2);
@@ -518,7 +483,7 @@ text-align: center;
   display: inline-block;
 }
 
-.projectInPartners, .membersInThesis{
+.projectInPartners, .membersInThesis, .leadersInGroup{
   margin-top: 12px;
 }
 
@@ -641,9 +606,9 @@ text-align: center;
 
   > .post-content {
     text-align: left;
-    padding-top: 32px;
-    margin-left: 32px;
-    margin-right: 32px;
+    // padding-top: 32px;
+    // margin-left: 32px;
+    // margin-right: 32px;
   }
 
 
@@ -752,6 +717,10 @@ text-align: center;
     width: 170px;
     height: 170px;
   }
+}
+
+.main-content {
+  text-align: left;
 }
 
 img {
@@ -1607,7 +1576,7 @@ blockquote {
 }
 
 .borderAll{
-  // border: 1px solid #E0E0E0;
+
 }
 
 div.scrollmenu {

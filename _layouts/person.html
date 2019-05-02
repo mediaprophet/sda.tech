@@ -13,10 +13,12 @@ activateHeader('{{page.navigationdiv}}');
 </script>
 
 <div class="borderAll">
+  <div class="pagination">
+    {% include peopleHeader.html active ="People" %}
+  </div>
   <article class="post">
     <div class="content-people">
       <div class="post-content">
-        <br class="horizontal-separator" />
         <div style="text-align:center;"><img class="img-circle-small" style="width: 250px; height: 250px; border-radius: 0%; " src="{{ page.rdf | rdf_property: 'foaf:depiction'}}"></img>
             <div style="display:inline-block; vertical-align: middle;">
               <h3 style="text-align:left;"> {{title}} </h3>
@@ -242,7 +244,13 @@ activateHeader('{{page.navigationdiv}}');
         </div>
         </div>
         </div>
+
+
+
+
   </article>
+</div>
+<div class="pagination-footer">
 </div>
 
 <script type="text/javascript">
