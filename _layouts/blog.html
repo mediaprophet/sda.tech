@@ -1,19 +1,15 @@
 ---
 rdf_prefix_path: sda.tech.pref
 layout: default
-toggledURL: blog
-toggledURLTo: /blog/papernotifications/
 navigationdiv: Blog
 ---
 
 {% capture title %} {{ page.rdf | rdf_property: 'rdfs:label' }} {% endcapture %}
-
 <div class="borderAll">
+  <div class="pagination">
+    {% include blogHeader.html active="Blog"%}
+  </div>
   <article class="post">
-    <div class="pagination">
-      {% include blogHeader.html active="Blog"%}
-    </div>
-
     {% capture query %} SELECT ?blog ?title ?creator ?date ?image ?content WHERE{ ?blog a sioc:Post . ?blog dct:title ?title . ?blog dct:creator ?person . ?person foaf:name ?creator . ?blog dct:created ?date . ?blog foaf:depiction ?image  . ?blog sioc:content ?content .} ORDER BY DESC(?date) {% endcapture %} {% assign blogposts = page.rdf | sparql_query: query %}
     <div class="scrollmenu">
       {% for post in blogposts %}
@@ -44,6 +40,8 @@ navigationdiv: Blog
     <!-- <hr style="width:100%;background:transparent;"> -->
     <br class="horizontal-separator2" />
   </article>
+  <div class="pagination-footer">
+  </div>
 </div>
 
 <script>

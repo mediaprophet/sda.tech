@@ -8,7 +8,9 @@ navigationdiv: Blog
 {% assign title = title | strip %}
 
 <script>
-setTitle('{{title}}', '{{site.title | escape}}');
+  setTitle('{{title}}', '{{site.title | escape}}');
+  deactivateHeader();
+  activateHeader('{{page.navigationdiv}}');
 </script>
 
 {% capture depiction %} {{ page.rdf | rdf_property: 'foaf:depiction' }} {% endcapture %}
@@ -18,6 +20,9 @@ setTitle('{{title}}', '{{site.title | escape}}');
 {% assign person= creator | remove: " http://sda.tech/Person/" %}
 
 <div class="borderAll">
+  <div class="pagination">
+    {% include blogHeader.html active="Blog"%}
+  </div>
   <article class="post">
       <div class="post-content">
         <div class="postentry">
@@ -29,4 +34,6 @@ setTitle('{{title}}', '{{site.title | escape}}');
         </div>
       </div>
   </article>
+  <div class="pagination-footer">
+  </div>
 </div>

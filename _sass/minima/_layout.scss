@@ -36,6 +36,7 @@
     }
 }
 
+// TODO: CSS Refactored Till Here
 .site-title {
   @include relative-font-size(1.625);
   font-weight: 300;
@@ -701,7 +702,7 @@ text-align: center;
   h2{
     font-weight: lighter;
     font-size: x-large;
-    color: #757575;
+    color: #424242;
   }
 }
 
@@ -924,9 +925,15 @@ hr {
 
     a {
         text-decoration: none;
-        font-size: 22px;
+        font-size: large;
+        font-weight: lighter;
         color: $purple-sda-color;
         margin-right: 8px;
+
+        &:hover {
+          text-decoration: none;
+          color: $blue-sda-color;
+        }
     }
 
     h4{
@@ -977,7 +984,7 @@ hr {
     color: #757575;
 }
 
-.descriptionThesis {
+.descriptionThesis, .descriptionProjects {
   width: 100% !important;
 }
 
