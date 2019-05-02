@@ -194,7 +194,7 @@
       <div class="faqThesis">
         {% capture query %} SELECT ?group ?description ?imageclass ?longdescription WHERE{ ?group a aiiso:ResearchGroup . ?group rdfs:label ?description . ?group dct:abstract ?longdescription.  ?group sda:imageclass ?imageclass . } {% endcapture %} {% assign groups = page.rdf | sparql_query: query %}
 
-        
+        <p class="faq-question"><strong>Q.</strong>Is there possibility to come up with a thesis topic of students choice?</p>
         <p>The Smart Data Analytics group is always looking for good students to write theses. The topics can be in one of the following broad areas:</p>
         {% for group in groups %} {% assign url= group.group | remove: "http://sda.tech/" %} {% capture imageClass %}{{group.imageclass}}{% endcapture %} {% capture name %}{{group.description}}{% endcapture %} {% capture longdescription %}{{group.longdescription}}{% endcapture %}  {% capture leader %}{{group.leadername}}{% endcapture %} {% assign
         image=imageClass | append:' fa-1x' %}
