@@ -110,12 +110,12 @@
         {% if content != "" %}{{result.desc}}{% endif %}<br>
         <div class="membersofProject projectInPartners">
           {% assign counter = 0 %}
-          {% for result2 in resultset2 %} {% capture short2 %}{{result2.short}}{% endcapture %}{% capture semester2 %}{{result2.semester}}{% endcapture %}{% capture year2 %}{{result2.year}}{% endcapture %}{% assign year2 = year2 | plus: 0 %}{% capture id2 %}{{result2.id}}{% endcapture %} {% if id2 == id %}{% if short2 == short %}{% assign url= result2.maintainer | remove: "http://sda.tech/" %}{% assign counter = counter | plus:1 %}
+          {% for result2 in resultset2 %} {% capture short2 %}{{result2.short}}{% endcapture %}{% capture semester2 %}{{result2.semester}}{% endcapture %}{% capture year2 %}{{result2.year}}{% endcapture %}{% assign year2 = year2 | plus: 0 %}{% capture id2 %}{{result2.id}}{% endcapture %} {% if id2 == id %}{% if short2 == short %}{% if year2 == year %}{% assign url= result2.maintainer | remove: "http://sda.tech/" %}{% assign counter = counter | plus:1 %}
             <div class="chip">
               <img  class="img-circle-small" src="{{result2.image}}"  width="96" height="96">
               <a href="../../{{url}}">{{result2.name}}</a>
             </div>
-        {% endif %}{% endif %}{% endfor %}
+        {% endif %}{% endif %}{% endif %}{% endfor %}
         </div>
       </div>
     </div>
