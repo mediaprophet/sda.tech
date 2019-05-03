@@ -14,10 +14,14 @@ activateHeader('{{page.navigationdiv}}');
 
 <div class="borderAll">
   <div class="pagination">
+    <!--Tab Highlighting Based on Person-->
     {% include peopleHeader.html active ="People" %}
   </div>
   <article class="post">
-    <div class="content-people">
+    <div class="secondary-nav">
+        <p>abc</p>
+    </div>
+    <div class="content-people active-nav">
       <div class="post-content">
         <div style="text-align:center;"><img class="img-circle-small" style="width: 250px; height: 250px; border-radius: 0%; " src="{{ page.rdf | rdf_property: 'foaf:depiction'}}"></img>
             <div style="display:inline-block; vertical-align: middle;">
@@ -157,10 +161,8 @@ activateHeader('{{page.navigationdiv}}');
                     </tbody>
                   </table>
               </div>
-            </div>
-            <!-- <hr width="100%" > -->
+            <!-- </div> CHECK-->
           {% endif %}
-
            <!-- Displaying all the Thesis Topics of the PERSON  -->
            {% capture personName %}{{ page.rdf | rdf_property: 'foaf:name' }}{% endcapture %}
            {% capture query %} SELECT ?thesis ?title ?creator ?name ?thesislevel WHERE{ ?thesis a sdatech:openThesis . ?thesis dct:title ?title . ?thesis sda:thesisLevel ?thesislevel . ?thesis dct:creator ?creator . ?creator foaf:name "{{personName}}" . } {% endcapture %} {% assign thesistopics = page.rdf | sparql_query: query %}
@@ -178,10 +180,8 @@ activateHeader('{{page.navigationdiv}}');
                  {% endfor %}
                </div>
              </div>
-           <!-- <hr width="100%" > -->
            {% endif %}
-
-        
+           <!--  -->
             <br>
             <div style="text-align:center;">
               <!-- {% capture boolTwitter | strip  %}{{ page.rdf | rdf_property: 'sda:twitter' }}{% endcapture %}

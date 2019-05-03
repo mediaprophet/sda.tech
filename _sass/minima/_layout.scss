@@ -679,6 +679,17 @@
   width: 100%;
 }
 
+.active-nav {
+  width: 75%;
+  float: right;
+}
+
+.secondary-nav {
+  width: 25%;
+  float: left;
+  background-color: blue;
+}
+
 .content-title {
   margin-top: 24px;
   margin-bottom: 56px;
