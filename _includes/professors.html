@@ -1,5 +1,10 @@
 <div class="cardProfile">
-  <a href="../../{{include.urlp}}"><h4>{{include.title}} {{include.firstname}} {{include.name}} </h4></a>
+  {% if include.fromAll == 1 %}
+    <a href="../../{{include.urlp}}" onclick="setBoolFromAllToDetailPerson(true)"><h4>{{include.title}} {{include.firstname}} {{include.name}} </h4></a>
+  {% endif %}
+  {% if include.fromAll != 1 %}
+    <a href="../../{{include.urlp}}"><h4>{{include.title}} {{include.firstname}} {{include.name}} </h4></a>
+  {% endif %}
   <img src="{{include.image}}" alt="{{include.name}}" >
   <hr/>
   <br/>

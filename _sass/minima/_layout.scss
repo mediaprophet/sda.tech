@@ -247,17 +247,25 @@
  * Posts
  */
 .post-header {
-  margin-bottom: $spacing-unit;
+  padding-bottom: (($spacing-unit*2)+4);
+  padding-top: (($spacing-unit*2)+4);
+
 }
 
 .post-title {
-  @include relative-font-size(2.625);
+  // @include relative-font-size(2.625);
+  font-size: xx-large;
   letter-spacing: -1px;
   line-height: 1;
   text-align: center;
+  color: #424242;
   @include media-query($on-laptop) {
     @include relative-font-size(2.25);
   }
+}
+
+.post-title-secondary{
+  font-size: x-large;
 }
 
 .post-content {
@@ -316,7 +324,7 @@
   background-color: #FFFFFF;
   width: 166px;
   min-height: 800px;
-  margin-bottom: 48px;
+  margin-bottom: 64px;
   margin-left: 4px;
   margin-right: 4px;
   border-radius: 4px;
@@ -328,8 +336,8 @@
 
   .groupAbstract {
     text-align: left;
-    color: black;
     margin-left: 24px;
+    color: #757575;
   }
 
   a {
@@ -487,12 +495,14 @@
   height: 100vh;
   margin-top: 160px;
   margin-bottom: 160px;
+
 }
 
 .blogAndTweet {
   width: 100%;
   height: 100%;
   display: inline-flex;
+  margin-bottom: 64px;
 
   a {
     color: $purple-sda-color;
@@ -619,6 +629,20 @@
 
 .home {
   width: 100%;
+  padding-top: 32px;
+  // padding-bottom: 32px;
+}
+
+.main-description, .main-slider, .section-break{
+  padding: 32px;
+}
+
+.main-description{
+  color: #757575;
+}
+
+.warp{
+  padding: 1px;
 }
 
 .pagination a {
@@ -687,7 +711,7 @@
   width: 25%;
   background-color: #fafafa;
   border-right: 1px solid #e0e0e0;
-
+  box-shadow: 3px 0px 0px 0px #f5f5f5;
 
 }
 
@@ -931,7 +955,6 @@ hr {
   a {
     text-decoration: none;
     font-size: large;
-    font-weight: lighter;
     color: $purple-sda-color;
     margin-right: 8px;
 
@@ -943,6 +966,8 @@ hr {
 
   h4 {
     margin: 12px;
+    font-weight: lighter !important;
+    
   }
 
   a:hover,

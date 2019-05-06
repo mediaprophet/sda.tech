@@ -36,6 +36,42 @@
       document.getElementById("Blog").style.color = "#087CCD"
       document.getElementById("Contact").style.color = "#087CCD"
     }
+
+    var boolFromAllToDetailPerson = false ;
+    var boolFromAllToDetailProject = false ;
+    var boolFromAllToDetailPost = false ;
+
+    function setBoolFromAllToDetailPerson( var bool )
+    {
+      boolFromAllToDetailPerson = bool ;
+    }
+
+    function getBoolFromAllToDetailPerson( )
+    {
+      return boolFromAllToDetailPerson ;
+    }
+
+    function setBoolFromAllToDetailProject( var bool )
+    {
+      boolFromAllToDetailProject = bool ;
+    }
+
+    function getBoolFromAllToDetailProject( )
+    {
+      return boolFromAllToDetailProject ;
+    }
+
+    function setBoolFromAllToDetailPost( var bool )
+    {
+      boolFromAllToDetailPost = bool ;
+    }
+
+    function getBoolFromAllToDetailPost( )
+    {
+      return boolFromAllToDetailPost ;
+    }
+
+
   </script>
   {% if jekyll.environment == 'production' and site.google_analytics %}
   {% include google-analytics.html %}

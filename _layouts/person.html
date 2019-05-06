@@ -10,20 +10,102 @@ navigationdiv: People
 setTitle('{{title}}', '{{site.title | escape}}');
 deactivateHeader();
 activateHeader('{{page.navigationdiv}}');
+
+if( getBoolFromAllToDetailPerson == true )
+{
+  document.getElementById('allPersonHeader').style.display = 'block';
+  document.getElementById('particularPersonHeader').style.display = 'none';
+  setBoolFromAllToDetailPerson(false);
+
+}else {
+  document.getElementById('allPersonHeader').style.display = 'none';
+  document.getElementById('particularPersonHeader').style.display = 'block';
+
+}
+
 </script>
 
 <div class="borderAll">
   <div class="pagination">
     <!-- Toggle Button Item -->
-    {% include toggleMenu.html  type = "twoRow" %}
+    <!-- TODO: Toggle Menu updated with Secondary Navigation -->
+    <!-- {% include toggleMenu.html  type = "twoRow" %} -->
+    <!-- Query For Professors -->
 
-    <!--Tab Highlighting Based on Person-->
-    {% include peopleHeader.html active ="People" %}
+    <div id="allPersonHeader" style="display:none;">
+      {% include peopleHeader.html active ="Professors" %}
+    </div>
+    <div id="particularPersonHeader" style="display:block;">
+      {% capture query %} SELECT ?person ?personname Where {
+          <{{page.rdf}}> a sdatech:professor . ?person foaf:name ?personname . } {% endcapture %}
+      {% assign professors = page.rdf | sparql_query: query %}
+
+      {% if professors.size != 0 %}
+        {% include peopleHeader.html active ="Professors" %}
+      {% endif %}
+
+      <!-- Query For Senior Researchers -->
+      {% capture query %} SELECT ?person ?personname Where {
+          <{{page.rdf}}> a sdatech:seniorResearcher . ?person foaf:name ?personname . } {% endcapture %}
+      {% assign seniorresearchers = page.rdf | sparql_query: query %}
+
+
+      {% if seniorresearchers.size != 0 %}
+        {% include peopleHeader.html active ="Senior Researchers" %}
+      {% endif %}
+
+      <!-- Query For PhD Students -->
+      {% capture query %} SELECT ?person ?personname Where {
+          <{{page.rdf}}> a sdatech:phdStudent . ?person foaf:name ?personname . } {% endcapture %}
+      {% assign phdstudents = page.rdf | sparql_query: query %}
+
+      {% if phdstudents.size != 0 %}
+        {% include peopleHeader.html active ="PhD Students" %}
+      {% endif %}
+
+      <!-- Query For Associate Researchers -->
+      {% capture query %} SELECT ?person ?personname Where {
+          <{{page.rdf}}> a sdatech:associateReseracher . ?person foaf:name ?personname . } {% endcapture %}
+      {% assign associatedresearchers = page.rdf | sparql_query: query %}
+
+      {% if associatedresearchers.size != 0 %}
+        {% include peopleHeader.html active ="Associate Researchers" %}
+      {% endif %}
+
+      <!-- Query For Student Assistants -->
+      {% capture query %} SELECT ?person ?personname Where {
+          <{{page.rdf}}> a sdatech:studentAssistant . ?person foaf:name ?personname . } {% endcapture %}
+      {% assign studentassistants = page.rdf | sparql_query: query %}
+
+      {% if studentassistants.size != 0 %}
+        {% include peopleHeader.html active ="Student Assistants" %}
+      {% endif %}
+
+      <!-- Query For Interns -->
+      {% capture query %} SELECT ?person ?personname Where {
+          <{{page.rdf}}> a sdatech:intern . ?person foaf:name ?personname . } {% endcapture %}
+      {% assign interns = page.rdf | sparql_query: query %}
+
+      {% if interns.size != 0 %}
+        {% include peopleHeader.html active ="Interns" %}
+      {% endif %}
+
+      <!-- Query For Former Members -->
+      {% capture query %} SELECT ?person ?personname Where {
+          <{{page.rdf}}> a sdatech:formerMember . ?person foaf:name ?personname . } {% endcapture %}
+      {% assign formermembers = page.rdf | sparql_query: query %}
+
+      {% if formermembers.size != 0 %}
+        {% include peopleHeader.html active ="Former Members" %}
+      {% endif %}
+      <!-- EndQuery -->
+    </div>
   </div>
   <article class="post">
     <div class="view-table">
       <div class="view-row">
-        {% include secondaryNav.html %}
+        <!-- TODO: Secondary Navigation Include Activate-->
+        <!-- {% include secondaryNav.html %} -->
         <!-- <div class=""> -->
           <div class="content-people active-nav">
             <div class="post-content">
@@ -218,9 +300,10 @@ activateHeader('{{page.navigationdiv}}');
     </div>
   </article>
   <div class="pagination-footer">
-    <div class="blank-node">
+    <!-- TODO: Activate with Secondary Navigation Update and Adctivation -->
+    <!-- <div class="blank-node">
 
-    </div>
+    </div> -->
   </div>
 </div>
 
