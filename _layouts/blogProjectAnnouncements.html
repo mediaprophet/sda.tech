@@ -10,7 +10,7 @@ navigationdiv: Blog
     {% include blogHeader.html active="Project Announcements"%}
   </div>
   <article class="post">
-    {% capture query %} SELECT ?blog ?title ?creator ?date ?image ?content WHERE{ ?blog a sdablog:projectannouncements . ?blog dct:title ?title . ?blog dct:creator ?person . ?person foaf:name ?creator . ?blog dct:created ?date . ?blog foaf:depiction ?image . ?blog sioc:content ?content .} ORDER BY DESC(?date) {% endcapture %} {% assign blogposts = page.rdf | sparql_query: query %}
+    {% capture query %} SELECT ?blog ?title ?creator ?date ?image ?content WHERE{ ?blog a sdatech:ProjectAnnouncements . ?blog dct:title ?title . ?blog dct:creator ?person . ?person foaf:name ?creator . ?blog dct:created ?date . ?blog foaf:depiction ?image . ?blog sioc:content ?content .} ORDER BY DESC(?date) {% endcapture %} {% assign blogposts = page.rdf | sparql_query: query %}
     <div class="scrollmenu">
       {% for post in blogposts %}
         {% assign url= post.blog | remove: "http://sda.tech/" %}

@@ -2024,7 +2024,7 @@ sdaproject:MEX a foaf:Project, sdatech:openSourceProject ;
 
 ###############Incubator Projects####################
 
-sdaproject:MLDSLs a foaf:Project, sdatech:incubator ;
+sdaproject:MLDSLs a foaf:Project, sdatech:incubatorProject ;
                  rdfs:label "ML-DSLs" ;
                  foaf:depiction <http://sda.cs.uni-bonn.de/wp-content/uploads/2017/10/Smart-Data-Analytics.png> ;
                  ex:description "Domain Specific Languages for Machine Learning algorithms." ;
@@ -2037,7 +2037,7 @@ sdaproject:MLDSLs a foaf:Project, sdatech:incubator ;
                  #sdapublication:publication sdapublication:Publication1 ;
                  sda:status "active" .
 
-sdaproject:CogRob a foaf:Project, sdatech:incubator ;
+sdaproject:CogRob a foaf:Project, sdatech:incubatorProject ;
                  rdfs:label "Cognitive Robotics" ;
                  foaf:depiction <http://sda.cs.uni-bonn.de/wp-content/uploads/2017/10/Smart-Data-Analytics.png> ;
                  ex:description "Cognitive Robotics." ;
@@ -2050,7 +2050,7 @@ sdaproject:CogRob a foaf:Project, sdatech:incubator ;
                  #sdapublication:publication sdapublication:Publication1 ;
                  sda:status "active" .
 
-sdaproject:EACCP a foaf:Project, sdatech:incubator ;
+sdaproject:EACCP a foaf:Project, sdatech:incubatorProject ;
                  rdfs:label "Experimental Analysis of Class CS Problems" ;
                  foaf:depiction <http://sda.cs.uni-bonn.de/wp-content/uploads/2017/10/Smart-Data-Analytics.png> ;
                  ex:description "Experimental Analysis of Class CS Problems." ;
@@ -2063,7 +2063,7 @@ sdaproject:EACCP a foaf:Project, sdatech:incubator ;
                  #sdapublication:publication sdapublication:Publication1 ;
                  sda:status "active" .
 
-sdaproject:SAML a foaf:Project, sdatech:incubator ;
+sdaproject:SAML a foaf:Project, sdatech:incubatorProject ;
                  rdfs:label "Smoothed Analysis ML" ;
                  foaf:depiction <http://sda.cs.uni-bonn.de/wp-content/uploads/2017/10/Smart-Data-Analytics.png> ;
                  ex:description "Smoothed Analysis of Structured Machine Learning Algorithms from Knowledge Graphs." ;
@@ -2076,7 +2076,7 @@ sdaproject:SAML a foaf:Project, sdatech:incubator ;
                  #sdapublication:publication sdapublication:Publication1 ;
                  sda:status "active" .
 
-#sdaproject:TFVKG a foaf:Project, sdatech:incubator ;
+#sdaproject:TFVKG a foaf:Project, sdatech:incubatorProject ;
 #                 rdfs:label "Tensor Factorisation and Visualization for Knowledge Graphs" ;
 #                 ex:description "Tensor Factorisation and Visualization for Knowledge Graphs." ;
 #                 ex:longdescription "" ;
@@ -24268,7 +24268,7 @@ sdajob:studentassistant a foaf:Document ;
 
 ###################Paper Notifications#############
 
-sdablog:paper-accepted-at-naacl-2019 a sioc:Post, sdatech:Blog, sdablog:papernotifications;
+sdablog:paper-accepted-at-naacl-2019 a sioc:Post, sdatech:Blog, sdatech:PaperNotification;
     dct:title "Paper accepted at NAACL 2019" ;
     sioc:topic "Paper accepted at NAACL 2019" ;
     dct:creator sdaperson:GezimSejdiu ;
@@ -24293,7 +24293,7 @@ Here is the pre-print of the accepted paper with its abstract::
 Looking forward to seeing you at <a href="https://naacl2019.org/">The NAACL 2019 conference</a>.""" .
 
 
-sdablog:paper-accepted-at-evostar-2019 a sioc:Post, sdatech:Blog, sdablog:papernotifications;
+sdablog:paper-accepted-at-evostar-2019 a sioc:Post, sdatech:Blog, sdatech:PaperNotification;
     dct:title "Paper accepted at EvoStar 2019" ;
     sioc:topic "Paper accepted at EvoStar 2019" ;
     dct:creator sdaperson:GezimSejdiu ;
@@ -24323,7 +24323,7 @@ Looking forward to seeing you at <a href="http://www.evostar.org/2019/index.php"
 
 
 
-sdablog:papers-workshop-and-tutorials-accepted-at-eswc-2019 a sioc:Post, sdatech:Blog, sdablog:papernotifications;
+sdablog:papers-workshop-and-tutorials-accepted-at-eswc-2019 a sioc:Post, sdatech:Blog, sdatech:PaperNotification;
     dct:title "Papers, workshop and tutorials accepted at ESWC 2019" ;
     sioc:topic "Papers, workshop and tutorials accepted at ESWC 2019" ;
     dct:creator sdaperson:GezimSejdiu ;
@@ -24373,7 +24373,7 @@ Here is the accepted workshop and tutorials with their short description:
 Looking forward to seeing you at <a href="https://2019.eswc-conferences.org/">The ESWC 2019</a>.""" .
 
 
-sdablog:demo-and-workshop-papers-accepted-at-the-webconference-ex-www-2019 a sioc:Post, sdatech:Blog, sdablog:papernotifications;
+sdablog:demo-and-workshop-papers-accepted-at-the-webconference-ex-www-2019 a sioc:Post, sdatech:Blog, sdatech:PaperNotification;
     dct:title "Demo and workshop papers accepted at The WEBConference (ex WWW) 2019" ;
     sioc:topic "Demo and workshop papers accepted at The WEBConference (ex WWW) 2019" ;
     dct:creator sdaperson:GezimSejdiu ;
@@ -24410,7 +24410,7 @@ This research was supported by the German Ministry of Education and Research (BM
 Looking forward to seeing you at <a href="https://www2019.thewebconf.org/">The Web Conference 2019</a>.""" .
 
 
-sdablog:paper-accepted-at-knowledge-based-systems-journal a sioc:Post, sdatech:Blog, sdablog:papernotifications;
+sdablog:paper-accepted-at-knowledge-based-systems-journal a sioc:Post, sdatech:Blog, sdatech:PaperNotification;
     dct:title "Paper accepted at Knowledge-Based Systems Journal" ;
     sioc:topic "Paper accepted at Knowledge-Based Systems Journal" ;
     dct:creator sdaperson:GezimSejdiu ;
@@ -24430,7 +24430,7 @@ Here is the accepted paper with its abstract:
 </ul>
 <blockquote><b>Abstract</b>: <i>Noise is often present in real datasets used for training Machine Learning classifiers. Their disruptive effects in the learning process may include: increasing the complexity of the induced models, a higher processing time and a reduced predictive power in the classification of new examples. Therefore, treating noisy data in a preprocessing step is crucial for improving data quality and to reduce their harmful effects in the learning process. There are various filters using different concepts for identifying noisy examples in a dataset. Their ability in noise preprocessing is usually assessed in the identification of artificial noise injected into one or more datasets. This is performed to overcome the limitation that only a domain expert can guarantee whether a real example is indeed noisy. The most frequently used label noise injection method is the noise at random method, in which a percentage of the training examples have their labels randomly exchanged. This is carried out regardless of the characteristics and example space positions of the selected examples. This paper proposes two novel methods to inject label noise in classification datasets. These methods, based on complexity measures, can produce more challenging and realistic noisy datasets by the disturbance of the labels of critical examples situated close to the decision borders and can improve the noise filtering evaluation. An extensive experimental evaluation of different noise filters is performed using public datasets with imputed label noise and the influence of the noise injection methods are compared in both data preprocessing and classification steps.</i></blockquote>""" .
 
-sdablog:paper-accepted-at-edbt-2019 a sioc:Post, sdatech:Blog, sdablog:papernotifications;
+sdablog:paper-accepted-at-edbt-2019 a sioc:Post, sdatech:Blog, sdatech:PaperNotification;
     dct:title "Paper accepted at EDBT 2019" ;
     sioc:topic "Paper accepted at EDBT 2019" ;
     dct:creator sdaperson:GezimSejdiu ;
@@ -24457,7 +24457,7 @@ This work was partially funded by the EU H2020 project <a href="http://slipo.eu/
 Looking forward to seeing you at <a href="http://edbticdt2019.inesc-id.pt/">The EDBT 2019 conference</a>.""" .
 
 
-sdablog:paper-accepted-at-oxford-bioinformatics-journal a sioc:Post, sdatech:Blog, sdablog:papernotifications;
+sdablog:paper-accepted-at-oxford-bioinformatics-journal a sioc:Post, sdatech:Blog, sdatech:PaperNotification;
     dct:title "Paper accepted at Oxford Bioinformatics Journal" ;
     sioc:topic "Paper accepted at Oxford Bioinformatics Journal" ;
     dct:creator sdaperson:GezimSejdiu ;
@@ -24482,7 +24482,7 @@ sdablog:paper-accepted-at-oxford-bioinformatics-journal a sioc:Post, sdatech:Blo
 </br>
 <span style="font-weight: 400;">We thank our partners from the </span><a href="http://bio2vec.net/"><span style="font-weight: 400;">Bio2Vec</span></a><span style="font-weight: 400;">, MLwin, and </span><a href="https://simple-ml.de/"><span style="font-weight: 400;">SimpleML</span></a><span style="font-weight: 400;"> projects for their assistance.</span> <span style="font-weight: 400;">This research was supported by Bio2Vec project </span><span style="font-weight: 400;">(</span><a href="http://bio2vec.net/"><span style="font-weight: 400;">http://bio2vec.net/</span></a><span style="font-weight: 400;">, CRG6 grant 3454) with funding from King Abdullah University of Science and Technology (KAUST).</span>""" .
 
-sdablog:papers-accepted-at-aaai-compexqa-recnlp-workshops a sioc:Post, sdatech:Blog, sdablog:papernotifications;
+sdablog:papers-accepted-at-aaai-compexqa-recnlp-workshops a sioc:Post, sdatech:Blog, sdatech:PaperNotification;
     dct:title "Papers accepted at AAAI / CompexQA & RecNLP Workshops" ;
     sioc:topic "Papers accepted at AAAI / CompexQA & RecNLP Workshops" ;
     dct:creator sdaperson:GezimSejdiu ;
@@ -24517,7 +24517,7 @@ sdablog:papers-accepted-at-aaai-compexqa-recnlp-workshops a sioc:Post, sdatech:B
 <span style="font-weight: 400;">Looking forward to seeing you at </span><a href="https://aaai.org/Conferences/AAAI-19/"><span style="font-weight: 400;">The AAAI-19</span></a><span style="font-weight: 400;">.</span>""" .
 
 
-sdablog:paper-accepted-at-nature-scientific-data-journal a sioc:Post, sdatech:Blog, sdablog:papernotifications;
+sdablog:paper-accepted-at-nature-scientific-data-journal a sioc:Post, sdatech:Blog, sdatech:PaperNotification;
     dct:title "Paper accepted at Nature Scientific Data Journal" ;
     sioc:topic "Paper accepted at Nature Scientific Data Journal" ;
     dct:creator sdaperson:GezimSejdiu ;
@@ -24537,7 +24537,7 @@ sdablog:paper-accepted-at-nature-scientific-data-journal a sioc:Post, sdatech:Bl
 </ul>
 <blockquote><b>Abstract</b><i><span style="font-weight: 400;">: Patents are widely used to protect intellectual property and a measure of innovation output. Each year, the USPTO grants over 150,000 patents to individuals and companies all over the world.  In fact, there were more than 280,000 patent grants issued in the US in 2015. However, accessing, searching and analyzing those patents is often still cumbersome and inefficient. To overcome those problems, Google indexes patents and converts them to Extensible Markup Language (XML) files using Optical Character Recognition (OCR) techniques. In this article, we take this idea one step further and provide semantically rich, machine-readable patents using the Linked Data principles. We have converted the data spanning 12 years - i.e. 2005 - 2017 from XML to Resource Description Framework (RDF) format, conforming to the Linked Data principles and made them publicly available for re-use. This data can be integrated with other data sources in order to further simplify use cases such as trend analysis, structured patent search &amp; exploration and societal progress measurements. We describe the conversion, publishing, interlinking process along with several use cases for the USPTO Linked Patent data.</span></i></blockquote>""" .
 
-sdablog:papers-accepted-at-jurix-2018 a sioc:Post, sdatech:Blog, sdablog:papernotifications;
+sdablog:papers-accepted-at-jurix-2018 a sioc:Post, sdatech:Blog, sdatech:PaperNotification;
     dct:title "Papers accepted at JURIX 2018" ;
     sioc:topic "Papers accepted at JURIX 2018" ;
     dct:creator sdaperson:GezimSejdiu ;
@@ -24566,7 +24566,7 @@ sdablog:papers-accepted-at-jurix-2018 a sioc:Post, sdatech:Blog, sdablog:paperno
 <br/>
 <span style="font-weight: 400;">Looking forward to seeing you at the </span><a href="http://jurix2018.ai.rug.nl/"><span style="font-weight: 400;">JURIX 2018</span></a><span style="font-weight: 400;">.</span>""" .
 
-sdablog:sda-at-iswc-2018-and-a-best-demo-award a sioc:Post, sdatech:Blog, sdablog:papernotifications;
+sdablog:sda-at-iswc-2018-and-a-best-demo-award a sioc:Post, sdatech:Blog, sdatech:PaperNotification;
     dct:title "SDA at ISWC 2018 and a Best Demo Award" ;
     sioc:topic "SDA at ISWC 2018 and a Best Demo Award" ;
     dct:creator sdaperson:GezimSejdiu ;
@@ -24645,7 +24645,7 @@ Workshops
 </br>Until then, meet us at </i><a href="http://sda.tech"><i>SDA</i></a><i>!</i>""" .
 
 
-sdablog:paperAcceptedAtWebsemantics a sioc:Post, sdatech:Blog, sdablog:papernotifications;
+sdablog:paperAcceptedAtWebsemantics a sioc:Post, sdatech:Blog, sdatech:PaperNotification;
     dct:title "Paper accepted at the Journal of Web Semantics" ;
     sioc:topic "Paper accepted at the Journal of Web Semantics" ;
     dct:creator sdaperson:GezimSejdiu ;
@@ -24664,7 +24664,7 @@ sdablog:paperAcceptedAtWebsemantics a sioc:Post, sdatech:Blog, sdablog:papernoti
     <b>Acknowledgment</b><b>
     </b><span style="font-weight: 400;">This research has been supported in part by the research grant number 17A209 from the University of Milano-Bicocca and by a scholarship from the University of Bonn</span>""" .
 
-sdablog:Papers-accepted-at-EMNLP-2018-FEVER-Workshops a sioc:Post, sdablog:papernotifications;
+sdablog:Papers-accepted-at-EMNLP-2018-FEVER-Workshops a sioc:Post, sdatech:PaperNotification;
        dct:title "Papers accepted at EMNLP 2018 / FEVER & W-NUT Workshops" ;
        sioc:topic "Papers accepted at EMNLP 2018 / FEVER & W-NUT Workshops" ;
        dct:creator sdaperson:GezimSejdiu ;
@@ -24697,7 +24697,7 @@ sdablog:Papers-accepted-at-EMNLP-2018-FEVER-Workshops a sioc:Post, sdablog:paper
          </b><span style="font-weight: 400;">This research was partially supported by an EU H2020 grant provided for the WDAqua project (GA no. 642795) and by the DAAD under the “International promovieren in Deutschland fur alle” (IPID4all) project.</span><hr />
          <span style="font-weight: 400;"> Looking forward to seeing you at The </span><a href="http://fever.ai/"><span style="font-weight: 400;">EMNLP/FEVER 2018</span></a><span style="font-weight: 400;">.</span>""" .
 
-sdablog:Papers-accepted-at-EKAW-2018 a sioc:Post, sdablog:papernotifications;
+sdablog:Papers-accepted-at-EKAW-2018 a sioc:Post, sdatech:PaperNotification;
         dct:title "Papers accepted at EKAW 2018" ;
         sioc:topic "Papers accepted at EKAW 2018" ;
         dct:creator sdaperson:GezimSejdiu ;
@@ -24720,7 +24720,7 @@ sdablog:Papers-accepted-at-EKAW-2018 a sioc:Post, sdablog:papernotifications;
         </b><span style="font-weight: 400;">This work was partly supported by the EU Horizon2020 projects <a href="http://wdaqua.eu/">WDAqua</a> (GA no.~642795), <a href="https://boost40.eu/">Boost4.0</a> (GA no.~780732) and <a href="http://www.bigdataocean.eu/site/">BigDataOcean</a> (GA no.~732310) and DAAD.</span>
         <hr /><span style="font-weight: 400;"> Looking forward to seeing you at The </span><a href="https://project.inria.fr/ekaw2018/"><span style="font-weight: 400;">EKAW 2018</span></a><span style="font-weight: 400;">.</span>""" .
 
-sdablog:demo-paper-accepted-at-SIGIR-2018	 a sioc:Post, sdablog:papernotifications;
+sdablog:demo-paper-accepted-at-SIGIR-2018	 a sioc:Post, sdatech:PaperNotification;
     dct:title " Demo Paper accepted at SIGIR 2018" ;
     sioc:topic " Demo Paper accepted at SIGIR 2018" ;
     dct:creator sdaperson:GezimSejdiu ;
@@ -24737,7 +24737,7 @@ sdablog:demo-paper-accepted-at-SIGIR-2018	 a sioc:Post, sdablog:papernotificatio
     </span></blockquote><b>Acknowledgment</b><span style="font-weight: 400;">This work has received funding from the EU H2020 R&amp;I programme for the Marie Skłodowska-Curie action <a href="http://wdaqua.eu/">WDAqua</a> (GA No 642795.</span>
     <hr />Looking forward to seeing you at <a href="http://sigir.org/sigir2018/">The SIGR 2018</a>.<a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Demo Paper accepted at #SIGIR2018. More details at" data-size="large">Tweet</a>""" .
 
-sdablog:papers-accepted-at-ICWE-2018	a sioc:Post, sdablog:papernotifications ;
+sdablog:papers-accepted-at-ICWE-2018	a sioc:Post, sdatech:PaperNotification ;
     dct:title "Papers accepted at ICWE 2018" ;
     sioc:topic "Papers accepted at ICWE 2018" ;
     dct:creator sdaperson:GezimSejdiu ;
@@ -24759,7 +24759,7 @@ sdablog:papers-accepted-at-ICWE-2018	a sioc:Post, sdablog:papernotifications ;
     <b>Acknowledgment</b><span style="font-weight: 400;">This work was partly supported by the grant from the European Unions Horizon </span><span style="font-weight: 400;">2020 research Europe flag and innovation programme for the projects <a href="https://project-hobbit.eu/">HOBBIT</a> </span><span style="font-weight: 400;">(GA no. 688227), <a href="http://qrowd-project.eu/">QROWD</a> (GA no. 732194), <a href="http://wdaqua.eu/">WDAqua</a> (GA no. 642795), <a href="http://OpenBudgets.eu">OpenBudgets.eu</a> the EU H2020 (GA no. 645833) and DAAD scholarship.</span><hr />&nbsp;Looking forward to seeing you at <strong><a href="http://icwe2018.webengineering.org/">ICWE 2018</a></strong>.
     <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Papers accepted for presentation @icwe2018 ! #icwe2018. More details at" data-size="large">Tweet</a>""" .
 
-sdablog:papers-accepted-at-CoNLL-2018 a sioc:Post, sdablog:papernotifications ;
+sdablog:papers-accepted-at-CoNLL-2018 a sioc:Post, sdatech:PaperNotification ;
     dct:title "Paper accepted at CoNLL 2018" ;
     sioc:topic "Paper accepted at CoNLL 2018" ;
     dct:creator sdaperson:GezimSejdiu ;
@@ -24776,7 +24776,7 @@ sdablog:papers-accepted-at-CoNLL-2018 a sioc:Post, sdablog:papernotifications ;
     <blockquote>Abstract : Building systems that can communicate with humans is a core problem in Artificial Intelligence. This work proposes a novel neural network architecture for response selection in an end-to-end multi-turn conversational dialogue setting. The architecture applies context level attention and incorporates additional external knowledge provided by descriptions of domain-specific words. It uses a bi-directional Gated Recurrent Unit (GRU) for encoding context and responses and learns to attend over the context words given the latent response representation and vice versa. In addition, it incorporates external domain specific information using another GRU for encoding the domain keyword descriptions. This allows better representation of domain-specific keywords in responses and hence improves the overall performance. Experimental results show that our model outperforms all other state-of-the-art methods for response selection in multi-turn conversations.</blockquote><br>
     <strong>Acknowledgement</strong><br>This research was supported by the KDDS project at <a href="https://www.iais.fraunhofer.de/">Fraunhofer</a>.<br><br>Looking forward to seeing you at The <a href="http://www.conll.org/2018">CoNLL 2018</a>.""" .
 
-sdablog:Workshop-Papers-accepted-at-ICMLFAIM-2018 a sioc:Post, sdablog:papernotifications ;
+sdablog:Workshop-Papers-accepted-at-ICMLFAIM-2018 a sioc:Post, sdatech:PaperNotification ;
         dct:title "Workshop Papers accepted at ICML/FAIM 2018" ;
         sioc:topic "Workshop Papers accepted at ICML/FAIM 2018" ;
         dct:creator sdaperson:GezimSejdiu ;
@@ -24798,7 +24798,7 @@ sdablog:Workshop-Papers-accepted-at-ICMLFAIM-2018 a sioc:Post, sdablog:papernoti
         &nbsp;<b>Acknowledgment</b><span style="font-weight: 400;">This work was partially supported by <a href="https://near.ai/">NEAR AI</a>.</span>""" .
 
 
-sdablog:Demo-and-Poster-Papers-accepted-at-ISWC-2018	a sioc:Post, sdablog:papernotifications ;
+sdablog:Demo-and-Poster-Papers-accepted-at-ISWC-2018	a sioc:Post, sdatech:PaperNotifications ;
         dct:title "Demo and Poster Papers accepted at ISWC 2018" ;
         sioc:topic "Demo and Poster Papers accepted at ISWC 2018" ;
         dct:creator sdaperson:GezimSejdiu ;
@@ -24824,7 +24824,7 @@ sdablog:Demo-and-Poster-Papers-accepted-at-ISWC-2018	a sioc:Post, sdablog:papern
         </ul><blockquote><b>Abstract</b><i><span style="font-weight: 400;">: Data Scientist is one of the most sought-after jobs of this decade. In order to analyze the job market in this domain, interested institutions have to integrate numerous job advertising coming from heterogeneous Web sources e.g., job portals, company websites, professional community platforms such as StackOverflow, GitHub, etc. In this demo, we show the application of the RDF Molecule-Based Integration Framework MINTE+ in the domain-specific application of job market analysis. The use of RDF molecules for knowledge representation is a core element of the framework gives MINTE+ enough flexibility to integrate job advertising from different web resources and countries. Attendees will observe how  exploration and analysis of the data science job market in Europe can be facilitated by synthesizing at query time a consolidated knowledge graph of job advertising. The demo is available at: </span></i><a href="https://github.com/RDF-Molecules/MINTE/blob/master/README.md#live-demo"><i><span style="font-weight: 400;">https://github.com/RDF-Molecules/MINTE/blob/master/README.md#live-demo</span></i></a></blockquote>
         <b>Acknowledgment</b><span style="font-weight: 400;">This work has received funding from the EU Horizon 2020 projects </span><a href="https://www.big-data-europe.eu/"><span style="font-weight: 400;">BigDataEurope</span></a><span style="font-weight: 400;"> (GA </span><span style="font-weight: 400;">644564) and </span><a href="http://qrowd-project.eu/"><span style="font-weight: 400;">QROWD</span></a><span style="font-weight: 400;"> (GA no. 723088), the Marie Skłodowska-Curie action WDAqua(GA No 642795), and HOBBIT (GA. 688227), and (project SlideWiki, grant no. 688095), and the German Ministry of Education and Research (BMBF) in the context of the projects LiDaKrA (Linked-Data-basierte Kriminalanalyse, grant no. 13N13627) and InDaSpacePlus (grant no. 01IS17031).</span><hr /><span style="font-weight: 400;">Looking forward to seeing you at The <a href="http://iswc2018.semanticweb.org/">ISWC 2018</a><b>.</b></span>""".
 
-sdablog:Paper-and-Poster-Papers-accepted-at-SEMANTICS-2018	a sioc:Post, sdablog:papernotifications ;
+sdablog:Paper-and-Poster-Papers-accepted-at-SEMANTICS-2018	a sioc:Post, sdatech:PaperNotification ;
         dct:title "Paper and Poster Papers accepted at SEMANTICS 2018" ;
         sioc:topic "Paper and Poster Papers accepted at SEMANTICS 2018" ;
         dct:creator sdaperson:GezimSejdiu ;
@@ -24847,7 +24847,7 @@ sdablog:Paper-and-Poster-Papers-accepted-at-SEMANTICS-2018	a sioc:Post, sdablog:
         <strong>Speaker</strong>: <a href="/people/dr-hajira-jabeen/">Hajira Jabeen</a></i></blockquote>
         <b>Acknowledgment</b><span style="font-weight: 400;">This work has received funding from the EU Horizon 2020 projects </span><a href="http://www.bigdataocean.eu/"><span style="font-weight: 400;">BigDataOcean</span></a><span style="font-weight: 400;"> (GA. </span><span style="font-weight: 400;">732310) and </span><a href="http://qrowd-project.eu/"><span style="font-weight: 400;">QROWD</span></a><span style="font-weight: 400;"> (GA no. 723088), the Marie Skłodowska-Curie action <a href="http://wdaqua.eu/">WDAqua</a> (GA No 642795), and </span><a href="https://www.specialprivacy.eu/"><span style="font-weight: 400;">SPECIAL</span></a><span style="font-weight: 400;"> (GA. 731601).</span>&nbsp;<hr /><span style="font-weight: 400;">Looking forward to seeing you at The <a href="https://2018.semantics.cc/conference">SEMANTiCS 2018</a><b>.</b></span>""".
 
-sdablog:Short-Paper-accepted-at-ECML-PKDD-2018 a sioc:Post, sdablog:papernotifications ;
+sdablog:Short-Paper-accepted-at-ECML-PKDD-2018 a sioc:Post, sdatech:PaperNotification ;
         dct:title "Short Paper accepted at ECML/PKDD 2018" ;
         sioc:topic "Short Paper accepted at ECML/PKDD 2018" ;
         dct:creator sdaperson:GezimSejdiu ;
@@ -24865,7 +24865,7 @@ sdablog:Short-Paper-accepted-at-ECML-PKDD-2018 a sioc:Post, sdablog:papernotific
         </b><span style="font-weight: 400;">This research was supported by EU H2020 grants for the projects HOBBIT (GA no. 688227) and WDAqua (GA no. 642795) as well as by German Federal Ministry of Education and Research (BMBF) funding for the project SOLIDE (no. 13N14456).</span><hr />
         <span style="font-weight: 400;"> Looking forward to seeing you at The </span><a href="http://www.tpdl.eu/tpdl2018/"><span style="font-weight: 400;">TPDL 2018</span></a><span style="font-weight: 400;">.</span>""".
 
-sdablog:Papers-accepted-at-ISWC-2018 a sioc:Post, sdablog:papernotifications ;
+sdablog:Papers-accepted-at-ISWC-2018 a sioc:Post, sdatech:PaperNotification ;
         dct:title "Papers accepted at ISWC 2018" ;
         sioc:topic "Papers accepted at ISWC 2018" ;
         dct:creator sdaperson:GezimSejdiu ;
@@ -24887,7 +24887,7 @@ sdablog:Papers-accepted-at-ISWC-2018 a sioc:Post, sdablog:papernotifications ;
           <b>Acknowledgment</b><span style="font-weight: 400;">This work has received funding from the EU Horizon 2020 projects </span><a href="https://www.big-data-europe.eu/"><span style="font-weight: 400;">BigDataEurope</span></a><span style="font-weight: 400;"> (GA </span><span style="font-weight: 400;">no. 644564) and </span><a href="http://qrowd-project.eu/"><span style="font-weight: 400;">QROWD</span></a><span style="font-weight: 400;"> (GA no. 723088), the Marie Skłodowska-Curie action <a href="http://wdaqua.eu/">WDAqua</a>(GA No 642795), and <a href="https://project-hobbit.eu/">HOBBIT</a> (GA. 688227), and (project <a href="https://slidewiki.eu/">SlideWiki</a>, grant no. 688095), and the German Ministry of Education and Research (BMBF) in the context of the projects LiDaKrA (Linked-Data-basierte Kriminalanalyse, grant no. 13N13627) and InDaSpacePlus (grant no. 01IS17031).</span>
           <hr />Looking forward to seeing you at <a href="http://iswc2018.semanticweb.org/">The ISWC 2018</a>.<a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=3 papers accepted at the @ISWC2018! #iswc2018. More details at" data-size="large">Tweet</a>""".
 
-sdablog:Paper-accepted-at-GRADES-2018-workshop-at-SIGMOD-PODS a sioc:Post, sdablog:papernotifications ;
+sdablog:Paper-accepted-at-GRADES-2018-workshop-at-SIGMOD-PODS a sioc:Post, sdatech:PaperNotification ;
         dct:title "Paper accepted at GRADES 2018 workshop at SIGMOD / PODS" ;
         sioc:topic "Paper accepted at GRADES 2018 workshop at SIGMOD / PODS" ;
         dct:creator sdaperson:GezimSejdiu ;
@@ -24906,7 +24906,7 @@ sdablog:Paper-accepted-at-GRADES-2018-workshop-at-SIGMOD-PODS a sioc:Post, sdabl
         <hr />Looking forward to seeing you at <a href="https://sites.google.com/site/gradesnda2018/">The GRADES 2018</a>.
         <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Paper accepted at the GRADES’18 workshop co-located with @SIGMOD! #sigmod2018. More details at" data-size="large">Tweet</a>""".
 
-sdablog:Papers-and-a-tutorial-accepted-at-ESWC-2018 a sioc:Post, sdablog:papernotifications ;
+sdablog:Papers-and-a-tutorial-accepted-at-ESWC-2018 a sioc:Post, sdatech:PaperNotification ;
         dct:title "Papers and a tutorial accepted at ESWC 2018" ;
         sioc:topic "Papers and a tutorial accepted at ESWC 2018" ;
         dct:creator sdaperson:GezimSejdiu ;
@@ -24930,7 +24930,7 @@ sdablog:Papers-and-a-tutorial-accepted-at-ESWC-2018 a sioc:Post, sdablog:paperno
       <span style="font-weight: 400;">Website: </span><span style="font-weight: 400;"><a href="http://qatutorial.sda.tech/">http://qatutorial.sda.tech/</a></span></li>
       </ul><hr />Looking forward to seeing you at <strong><a href="https://2018.eswc-conferences.org/">The ESWC 2018</a></strong>.<a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=We are very pleased to announce that our group got 3 papers and a tutorial accepted at #ESWC2018 ! More details at" data-size="large">Tweet</a>""".
 
-sdablog:Paper-accepted-at-Semantic-Web-Journal a sioc:Post, sdablog:papernotifications ;
+sdablog:Paper-accepted-at-Semantic-Web-Journal a sioc:Post, sdatech:PaperNotification ;
         dct:title "Paper accepted at Semantic Web Journal" ;
         sioc:topic "Paper accepted at Semantic Web Journal" ;
         dct:creator sdaperson:GezimSejdiu ;
@@ -24950,7 +24950,7 @@ sdablog:Paper-accepted-at-Semantic-Web-Journal a sioc:Post, sdablog:papernotific
         </b><span style="font-weight: 400;">This part of work is supported were supported by grants from the EU FP7 Programme for the project </span><a href="http://geoknow.eu/Welcome.html"><span style="font-weight: 400;">GeoKnow </span></a><span style="font-weight: 400;">(GA no. 318159) as well as for the German Research Foundation project GOLD and the German Ministry for Economic Affairs and Energy project </span><a href="https://www.sake-projekt.de/start/"><span style="font-weight: 400;">SAKE</span></a><span style="font-weight: 400;"> (GA no. 01MD15006E), the European Union’s Horizon 2020 research and innovation programme for the project </span><a href="http://www.slipo.eu/"><span style="font-weight: 400;">SLIPO</span></a><span style="font-weight: 400;"> (GA no. 731581) as well as the European Union's H2020 research and innovation action </span><a href="https://project-hobbit.eu/"><span style="font-weight: 400;">HOBBIT</span></a><span style="font-weight: 400;"> (GA 688227) and the CSA </span><a href="https://www.big-data-europe.eu/"><span style="font-weight: 400;">BigDataEurope</span></a><span style="font-weight: 400;"> (GA No 644564).</span>
         </span><hr /><a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=We are very pleased to announce that our group got a paper accepted at the @SW_Journal ! More details at" data-size="large">Tweet</a>""".
 
-sdablog:Paper-accepted-at-ICLR-2018 a sioc:Post, sdablog:papernotifications ;
+sdablog:Paper-accepted-at-ICLR-2018 a sioc:Post, sdatech:PaperNotification ;
         dct:title "Paper accepted at ICLR 2018" ;
         sioc:topic "Paper accepted at ICLR 2018" ;
         dct:creator sdaperson:GezimSejdiu ;
@@ -24972,7 +24972,7 @@ sdablog:Paper-accepted-at-ICLR-2018 a sioc:Post, sdablog:papernotifications ;
 
 ###################Invited talks#############
 
-sdablog:dr-katherine-thornton-visits-sda a sioc:Post, sdablog:invitedtalks ;
+sdablog:dr-katherine-thornton-visits-sda a sioc:Post, sdatech:InvitedTalks ;
         dct:title "Dr. Katherine Thornton visits SDA" ;
         sioc:topic "Dr. Katherine Thornton visits SDA" ;
         dct:creator sdaperson:GezimSejdiu ;
@@ -24992,7 +24992,7 @@ sdablog:dr-katherine-thornton-visits-sda a sioc:Post, sdablog:invitedtalks ;
 <span style="font-weight: 400;">The goal of Dr. Thornton’s visit was to exchange experience and ideas on digital preservation using RDF technologies. In addition to presenting various use-cases where these technologies have applied, Dr. Thornton shared with our group future research problems and challenges related to this research area. During the meeting, SDA core research topics and main research projects were presented and we investigated suitable topics for future collaborations with Dr. Thornton and her research group.</span>""" .
 
 
-sdablog:prof-dr-john-domingue-visits-sda a sioc:Post, sdablog:invitedtalks ;
+sdablog:prof-dr-john-domingue-visits-sda a sioc:Post, sdatech:InvitedTalks ;
         dct:title "Prof. Dr. John Domingue visits SDA" ;
         sioc:topic "Prof. Dr. John Domingue visits SDA" ;
         dct:creator sdaperson:GezimSejdiu ;
@@ -25015,7 +25015,7 @@ sdablog:prof-dr-john-domingue-visits-sda a sioc:Post, sdablog:invitedtalks ;
 <span style="font-weight: 400;">At the bi-weekly “SDA colloquium presentations” he presented </span><a href="http://kmi.open.ac.uk/"><span style="font-weight: 400;">KMi</span></a><span style="font-weight: 400;"> and the main research topics of the institute. The goal of Prof. Domingue’s visit was to exchange experience and ideas on decentralized applications using blockchains technologies in combination with Linked Data. In addition to presenting various use-cases where blockchains and linked data technologies have helped communities to get useful insights, Prof. Dr. Domingue shared with our group future research problems and challenges related to this research area. During the meeting, SDA core research topics and main research projects were presented and we investigated suitable topics for future collaborations with Prof. Domingue and his research group.</span>""" .
 
 
-sdablog:prof-dr-khalid-saeed-visits-sda a sioc:Post, sdablog:invitedtalks ;
+sdablog:prof-dr-khalid-saeed-visits-sda a sioc:Post, sdatech:InvitedTalks ;
         dct:title "Prof. Dr. Khalid Saeed visits SDA" ;
         sioc:topic "Prof. Dr. Khalid Saeed visits SDA" ;
         dct:creator sdaperson:GezimSejdiu ;
@@ -25037,7 +25037,7 @@ sdablog:prof-dr-khalid-saeed-visits-sda a sioc:Post, sdablog:invitedtalks ;
 <span style="font-weight: 400;">Simultaneously, this talk was a continuous networking within EU H2020</span><a href="https://project-lambda.org/"> <span style="font-weight: 400;">LAMBDA project</span></a><span style="font-weight: 400;"> (Learning, Applying, Multiplying Big Data Analytics) and as part of this event</span><a href="http://www.pupin.rs/en/cv/valentina-janev/">, <span style="font-weight: 400;">Dr. Valentina Janev</span></a><span style="font-weight: 400;"> from the</span><a href="http://www.pupin.rs/en/about-imp/profile/"> <span style="font-weight: 400;">Institute “Mihajlo Pupin” (PUPIN)</span></a><span style="font-weight: 400;"> was attending the SDA meeting to investigate further networking with potential partners from Poland as well. Among other points, co-organizing coming conferences and writing joint-research papers have been discussed.</span>""" .
 
 
-sdablog:invited-talk-by-anastasiadimou a sioc:Post, sdablog:invitedtalks ;
+sdablog:invited-talk-by-anastasiadimou a sioc:Post, sdatech:InvitedTalks ;
         dct:title "Invited talk by Dr. Anastasia Dimou" ;
         sioc:topic "Invited talk by Dr. Anastasia Dimou" ;
         dct:creator sdaperson:GezimSejdiu ;
@@ -25048,7 +25048,7 @@ sdablog:invited-talk-by-anastasiadimou a sioc:Post, sdablog:invitedtalks ;
         sioc:abstract """On Wednesday, 21st  of March <a href="https://scholar.google.com/citations?user=FT80VEAAAAAJ&hl=en">Anastasia Dimou</a> from the <a href="http://idlab.technology/">Internet Technology & Data Science Lab</a> visited SDA and gave a talk entitled “High Quality Linked Data Generation from Heterogeneous data”<br><br>Anastasia Dimou is a Post-Doc Researcher at the <a href="http://idlab.technology/">Internet Technology & Data Science Lab</a> at <a href="https://www.ugent.be/">Gent University</a>, Belgium. Anastasia joined the IDLab research group in February 2013. Her research expertise lies in the area of the Semantic Web, Linked Data Generation and Publication, Data Quality and Integration, Knowledge Representation and Management. She has broad experience on Semantic Wikis and Classification. """;
         sioc:content """On Wednesday, 21st  of March <a href="https://scholar.google.com/citations?user=FT80VEAAAAAJ&hl=en">Anastasia Dimou</a> from the <a href="http://idlab.technology/">Internet Technology & Data Science Lab</a> visited SDA and gave a talk entitled “High Quality Linked Data Generation from Heterogeneous data”<br><br>Anastasia Dimou is a Post-Doc Researcher at the <a href="http://idlab.technology/">Internet Technology & Data Science Lab</a> at <a href="https://www.ugent.be/">Gent University</a>, Belgium. Anastasia joined the IDLab research group in February 2013. Her research expertise lies in the area of the Semantic Web, Linked Data Generation and Publication, Data Quality and Integration, Knowledge Representation and Management. She has broad experience on Semantic Wikis and Classification.  As part of her research, she investigated a uniform language for describing the mapping rules for generating high-quality Linked Data from multiple heterogeneous data formats and access interfaces and she also conducted research on Linked Data generation and publishing workflows. Her research activities led to the development of the <a href="http://rml.io/">RML tool chain</a> (RMLProcessor, RMLEditor, RMLValidator, and RMLWorkbench). Anastasia has been involved in different national and l research projects and publications.<br><br><a href="http://jens-lehmann.org/">Prof. Jens Lehmann</a> invited the speaker to the bi-weekly “SDA colloquium presentations”. The goal of her visit was to exchange experience and ideas on RML tools specialized for data quality and on the fly mapping, including heterogeneous dataset mapping into LOD. Apart from presenting various use cases where RML tools were used, she introduced a declarative RML serialization which models the mapping rules using the well-known yaml language. Anastasia shared with our group future research problems and challenges related to this research area.<br><br>In her talk, she introduced a full workflow aka the RML tool chain which models components of an RML mapping lifecycle. She discussed its application to the structure of heterogeneous data sources. Anastasia Dimou mentioned that adding support for data quality during the mapping shall allow users to efficiently explore a structured search space to enable the future violations not only map the range of the known domain but also help to discover new knowledge from the existing knowledge base worth mapping.<br><br>During the visit, SDA core research topics and main research projects were presented in a (successful!) attempt to find an intersection on the future collaborations with Anastasia and her research group.<br><br>As an outcome of this visit, we expect to strengthen our research collaboration networks with the  Internet Technology & Data Science Lab at UGent, mainly on combining semantic knowledge for exploratory and mapping tools and apply those techniques for a very large-scale KG using our distributed analytics framework <a href="http://sansa-stack.net/"">SANSA</a> and <a href="https://wiki.dbpedia.org/">DBpedia</a>.""" .
 
-sdablog:Invited-talk-by-Svitlana-Vakulenko a sioc:Post, sdablog:invitedtalks ;
+sdablog:Invited-talk-by-Svitlana-Vakulenko a sioc:Post, sdatech:InvitedTalks ;
         dct:title "Invited talk by Svitlana Vakulenko" ;
         sioc:topic "Invited talk by Svitlana Vakulenko" ;
         dct:creator sdaperson:GezimSejdiu ;
@@ -25065,7 +25065,7 @@ sdablog:Invited-talk-by-Svitlana-Vakulenko a sioc:Post, sdablog:invitedtalks ;
 
 ###################project announcements#############
 
-sdablog:sansa-0-5 a sioc:Post, sdablog:projectannouncements ;
+sdablog:sansa-0-5 a sioc:Post, sdatech:ProjectAnnouncements ;
         dct:title "SANSA 0.5 (Scalable Semantic Analytics Stack) Released" ;
         sioc:topic "SANSA 0.5 (Scalable Semantic Analytics Stack) Released" ;
         dct:creator sdaperson:JensLehmann ;
@@ -25119,7 +25119,7 @@ Spread the word by retweeting our <a href="https://twitter.com/SANSA_Stack/stat
 Greetings from the <a href="http://sansa-stack.net/community/#Contributors">SANSA Development Team</a>""".
 
 
-sdablog:a-BETTER-project-for-exploiting-big-data-in-earth-observation a sioc:Post, sdablog:projectannouncements ;
+sdablog:a-BETTER-project-for-exploiting-big-data-in-earth-observation a sioc:Post, sdatech:ProjectAnnouncements ;
         dct:title "A BETTER project for exploiting Big Data in Earth Observation" ;
         sioc:topic "A BETTER project for exploiting Big Data in Earth Observation" ;
         dct:creator sdaperson:GezimSejdiu ;
@@ -25131,7 +25131,7 @@ sdablog:a-BETTER-project-for-exploiting-big-data-in-earth-observation a sioc:Pos
         sioc:content """The <a href="http://sansa-stack.net/">SANSA Stack</a> is one of the earmarked big data analytics components to be employed in the BETTER data pipelines.<br><br>Big-data Earth observation Technology and Tools Enhancing Research and development is an EU-H2020 research and innovation project started in November 2017 to the end of October 2020.<br><br>The project’s main objective is to implement Big Data solutions (denominated as Data Pipelines) based on the usage of large volumes and heterogeneous Earth Observation datasets. This should help addressing key Societal Challenges, so the users can focus on the analysis of the extraction of the potential knowledge within the data and not on the processing of the data itself.<br><br>To achieve that, BETTER is improving the way Big Data service developers interact with end-users. After defining the challenges, the promoters validate the pipelines requirements and co-design the solution with a dedicated development team in a workshop. During the implementation, promoters can continuously test and validate the pipelines. Later, the implemented pipelines will be used by the public in the scope of Hackathons, enabling the use of specific solutions in other areas and the collection of additional user feedback. <a href="www.ec-better.eu">www.ec-better.eu</a><br><br>
         <a href="https://ec-better.us17.list-manage.com/subscribe?u=73fe09a73ff0d648f37153b54&id=e24c46621f">SUBSCRIBE HERE</a> for major project updates.""" .
 
-sdablog:AskNow-0.1-Released a sioc:Post, sdablog:projectannouncements ;
+sdablog:AskNow-0.1-Released a sioc:Post, sdatech:ProjectAnnouncements ;
         dct:title "AskNow 0.1 Released" ;
         sioc:topic "AskNow 0.1 Released" ;
         dct:creator sdaperson:JensLehmann ;
@@ -25167,7 +25167,7 @@ sdablog:AskNow-0.1-Released a sioc:Post, sdablog:projectannouncements ;
         </span><span style="font-weight: 400;"><br>The AskNow Development Team
         </span><span style="font-weight: 400;"><br>(</span><a href="http://asknow.sda.tech/people/"><span style="font-weight: 400;">http://asknow.sda.tech/people/</span></a><span style="font-weight: 400;">)</span>""" .
 
-sdablog:SANSA-0.4-Released a sioc:Post, sdablog:projectannouncements ;
+sdablog:SANSA-0.4-Released a sioc:Post, sdatech:ProjectAnnouncements ;
         dct:title "SANSA 0.4 (Semantic Analytics Stack) Released" ;
         sioc:topic "SANSA 0.4 (Semantic Analytics Stack) Released" ;
         dct:creator sdaperson:JensLehmann ;
@@ -25217,7 +25217,7 @@ sdablog:SANSA-0.4-Released a sioc:Post, sdablog:projectannouncements ;
 
 ###################general posts#############
 
-sdablog:new-year-at-sda-looking-back-at-2018 a sioc:Post, sdablog:generalposts ;
+sdablog:new-year-at-sda-looking-back-at-2018 a sioc:Post, sdatech:GeneralPosts ;
         dct:title """New Year at SDA - Looking back at 2018""" ;
         sioc:topic """New Year at SDA - Looking back at 2018""" ;
         dct:creator sdaperson:JensLehmann ;
@@ -25271,7 +25271,7 @@ Many thanks to all who have accompanied and supported us on this way! So from al
 Jens Lehmann on behalf of </span><a href="http://sda.tech/people/">The SDA Research Team</a>""" .
 
 
-sdablog:SOLIDE-at-the-BMBF-Innovation-Forum-Civil-Security-2018 a sioc:Post, sdablog:generalposts ;
+sdablog:SOLIDE-at-the-BMBF-Innovation-Forum-Civil-Security-2018 a sioc:Post, sdatech:GeneralPosts ;
         dct:title """SOLIDE at the BMBF Innovation Forum “Civil Security” 2018""" ;
         sioc:topic """SOLIDE at the BMBF Innovation Forum “Civil Security” 2018""" ;
         dct:creator sdaperson:GezimSejdiu ;
@@ -25282,7 +25282,7 @@ sdablog:SOLIDE-at-the-BMBF-Innovation-Forum-Civil-Security-2018 a sioc:Post, sda
         sioc:abstract """SDA as part of SOLIDE project participated at the invitation of the Federal Ministry of Education and Research, <a href="https://www.sifo.de/de/bmbf-innovationsforum-zivile-sicherheit-2018-2290.html">the BMBF Innovation Forum “Civil Security” 2018</a> took place on 19 and 20 June 2018. The two-day conference on the framework program “Research for Civil Security” was held in the Café Moskau conference center in Berlin.<br><br>SOLIDE, as one of the funded project from BMBF has been presented during the event  in the context of the session “Mission Support – Better Situation Management through Intelligent Information Acquisition”<br><br>The SOLIDE project aims to examine a new approach for efficient access to operational data using the command mission management software TecBos Command.""";
         sioc:content """SDA as part of SOLIDE project participated at the invitation of the Federal Ministry of Education and Research, <a href="https://www.sifo.de/de/bmbf-innovationsforum-zivile-sicherheit-2018-2290.html">the BMBF Innovation Forum “Civil Security” 2018</a> took place on 19 and 20 June 2018. The two-day conference on the framework program “Research for Civil Security” was held in the Café Moskau conference center in Berlin.<br><br>SOLIDE, as one of the funded project from BMBF has been presented during the event  in the context of the session “Mission Support – Better Situation Management through Intelligent Information Acquisition”<br><br>The SOLIDE project aims to examine a new approach for efficient access to operational data using the command mission management software TecBos Command. The focus here is on the fact that information can be accessed in a natural language dialogue. For this purpose, we do research into subject-specific algorithms for filtering relevant knowledge as well as suitable data integration procedures to make the available data usable and retrievable via dialogues.<br><br><a href="http://solide-projekt.de/">SOLIDE</a> is a joint project of PRO DV (Dortmund), Aristech GmbH (Heidelberg) together with the research group Smart Data Analytics (SDA) of the University of Bonn and the Data Science Chair (DICE) of the University of Paderborn.<br><br>SDA contribute to the project by providing a cut edge dialog system for providing information support in emergency situations.""" .
 
-sdablog:SANSA-Collaboration-with-Alethio a sioc:Post, sdablog:generalposts ;
+sdablog:SANSA-Collaboration-with-Alethio a sioc:Post, sdatech:GeneralPosts ;
         dct:title """SANSA Collaboration with Alethio""" ;
         sioc:topic """SANSA Collaboration with Alethio""" ;
         dct:creator sdaperson:GezimSejdiu ;
@@ -26037,6 +26037,13 @@ sdatech:incubatorProject a owl:Class ;
                    site:classTemplate "project" ;
                    sysont:creationLabel "Projects" .
 
+
+ sdatech:archivedProject a owl:Class ;
+                    rdfs:label "Archived Project" ;
+                    rdfs:subClassOf foaf:Project ;
+                    site:classTemplate "project" ;
+                    sysont:creationLabel "Projects" .
+
 sdatech:ongoingThesis a owl:Class ;
                   rdfs:label "Ongoing Thesis" ;
                   rdfs:subClassOf bibo:Thesis, dct:BibliographicResource ;
@@ -26193,6 +26200,15 @@ sdatech:ProjectAnnouncements a owl:Class ;
                     rdfs:subClassOf sdatech:Blog ;
                     site:classTemplate "ProjectAnnouncements" ;
                     sysont:creationLabel "Project Announcements" ;
+                    dct:issued "2008-05-14" .
+
+
+sdatech:GeneralPosts a owl:Class ;
+                    rdfs:label "General Posts" ;
+                    rdfs:comment "All the blog posts that notify information realated to the general posts at the SDA Group." ;
+                    rdfs:subClassOf sdatech:Blog ;
+                    site:classTemplate "GeneralPosts" ;
+                    sysont:creationLabel "General Posts" ;
                     dct:issued "2008-05-14" .
 
 sda:Room a owl:Class ;

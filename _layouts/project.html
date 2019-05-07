@@ -11,6 +11,18 @@ navigationdiv: Projects
 setTitle('{{title}}', '{{site.title | escape}}');
 deactivateHeader();
 activateHeader('{{page.navigationdiv}}');
+
+if( getBoolFromAllToDetailProject() == true )
+{
+  document.getElementById('allProjectHeader').style.display = 'block';
+  document.getElementById('particularProjectHeader').style.display = 'none';
+  setBoolFromAllToDetailPerson(false);
+
+}else {
+  document.getElementById('allProjectHeader').style.display = 'none';
+  document.getElementById('particularProjectHeader').style.display = 'block';
+
+}
 </script>
 
 <div class="borderAll">
@@ -19,7 +31,48 @@ activateHeader('{{page.navigationdiv}}');
     <!-- TODO: Toggle menu with updated SecondaryNavigation -->
     <!-- {% include toggleMenu.html type = "oneRow" %} -->
     <!--  -->
-    {% include projectHeader.html active="Funded Projects"%}
+    <div id="allProjectHeader" style="display:none;">
+      {% include projectHeader.html active="Projects"%}
+    </div>
+    <div id="particularProjectHeader" style="display:block;">
+      <!-- Query For Funded Projects -->
+      {% capture query %} SELECT ?project ?projectname Where {
+          <{{page.rdf}}> a sdatech:fundedProject . ?project foaf:name ?projectname . } {% endcapture %}
+      {% assign fundedprojects = page.rdf | sparql_query: query %}
+
+      {% if fundedprojects.size != 0 %}
+        {% include projectHeader.html active="Funded Projects"%}
+      {% endif %}
+
+      <!--Query for Open source Projects  -->
+      {% capture query %} SELECT ?project ?projectname Where {
+          <{{page.rdf}}> a sdatech:openSourceProject . ?project foaf:name ?projectname . } {% endcapture %}
+      {% assign opensourceprojects = page.rdf | sparql_query: query %}
+
+      {% if opensourceprojects.size != 0 %}
+        {% include projectHeader.html active="Open Source Projects"%}
+      {% endif %}
+
+      <!--Query for Incubator Projects  -->
+      {% capture query %} SELECT ?project ?projectname Where {
+          <{{page.rdf}}> a sdatech:incubatorProject . ?project foaf:name ?projectname . } {% endcapture %}
+      {% assign incubatorprojects = page.rdf | sparql_query: query %}
+
+      {% if incubatorprojects.size != 0 %}
+        {% include projectHeader.html active="Incubator Projects"%}
+      {% endif %}
+
+      <!--Query for Archived Projects  -->
+      {% capture query %} SELECT ?project ?projectname Where {
+          <{{page.rdf}}> a sdatech:archivedProject . ?project foaf:name ?projectname . } {% endcapture %}
+      {% assign archivedprojects = page.rdf | sparql_query: query %}
+
+      {% if archivedprojects.size != 0 %}
+        {% include projectHeader.html active="Archived Projects"%}
+      {% endif %}
+
+    <!--  -->
+    </div>
   </div>
   <div class="content-people">
     <div class="post-content">

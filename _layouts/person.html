@@ -10,12 +10,13 @@ navigationdiv: People
 setTitle('{{title}}', '{{site.title | escape}}');
 deactivateHeader();
 activateHeader('{{page.navigationdiv}}');
+console.log(getBoolFromAllToDetailPerson());
 
-if( getBoolFromAllToDetailPerson == true )
+if( localStorage.getItem("boolFromAllToDetailPerson") == 'true' )
 {
   document.getElementById('allPersonHeader').style.display = 'block';
   document.getElementById('particularPersonHeader').style.display = 'none';
-  setBoolFromAllToDetailPerson(false);
+  sessionStorage.setItem("boolFromAllToDetailPerson", "false");
 
 }else {
   document.getElementById('allPersonHeader').style.display = 'none';
@@ -36,6 +37,7 @@ if( getBoolFromAllToDetailPerson == true )
       {% include peopleHeader.html active ="Professors" %}
     </div>
     <div id="particularPersonHeader" style="display:block;">
+      <!-- Query for Professors -->
       {% capture query %} SELECT ?person ?personname Where {
           <{{page.rdf}}> a sdatech:professor . ?person foaf:name ?personname . } {% endcapture %}
       {% assign professors = page.rdf | sparql_query: query %}

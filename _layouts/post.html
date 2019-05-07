@@ -11,6 +11,18 @@ navigationdiv: Blog
   setTitle('{{title}}', '{{site.title | escape}}');
   deactivateHeader();
   activateHeader('{{page.navigationdiv}}');
+
+  if( getBoolFromAllToDetailPost() == 'true' )
+  {
+    document.getElementById('allPostHeader').style.display = 'block';
+    document.getElementById('particularPostHeader').style.display = 'none';
+    setBoolFromAllToDetailPerson('false');
+
+  }else {
+    document.getElementById('allPostHeader').style.display = 'none';
+    document.getElementById('particularPostHeader').style.display = 'block';
+
+  }
 </script>
 
 {% capture depiction %} {{ page.rdf | rdf_property: 'foaf:depiction' }} {% endcapture %}
@@ -25,7 +37,49 @@ navigationdiv: Blog
     <!-- TODO: Toggle Functionality with updated secondaryNav -->
     <!-- {% include toggleMenu.html type = "oneRow" %} -->
     <!--  -->
-    {% include blogHeader.html active="Blog"%}
+    <div id="allPostHeader" style="display:none;">
+      {% include blogHeader.html active="Blog"%}
+    </div>
+    <div id="particularPostHeader" style="display:block;">
+      <!-- Query for Paper Notifications -->
+      {% capture query %} SELECT ?paper ?papername Where {
+          <{{page.rdf}}> a sdatech:PaperNotification . ?paper dct:title ?papername . } {% endcapture %}
+      {% assign papernotifications = page.rdf | sparql_query: query %}
+
+      {% if papernotifications.size != 0 %}
+        {% include blogHeader.html active="Paper Notifications"%}
+      {% endif %}
+
+      <!-- Query for Invited Talks -->
+      {% capture query %} SELECT ?paper ?papername Where {
+          <{{page.rdf}}> a sdatech:InvitedTalks . ?paper dct:title ?papername . } {% endcapture %}
+      {% assign invitedtalks = page.rdf | sparql_query: query %}
+
+      {% if invitedtalks.size != 0 %}
+        {% include blogHeader.html active="Invited Talks"%}
+      {% endif %}
+
+      <!-- Query for Project Announcements -->
+      {% capture query %} SELECT ?paper ?papername Where {
+          <{{page.rdf}}> a sdatech:ProjectAnnouncements . ?paper dct:title ?papername . } {% endcapture %}
+      {% assign projectannouncements = page.rdf | sparql_query: query %}
+
+      {% if projectannouncements.size != 0 %}
+        {% include blogHeader.html active="Project Announcements"%}
+      {% endif %}
+
+      <!-- Query for General Posts -->
+      {% capture query %} SELECT ?paper ?papername Where {
+          <{{page.rdf}}> a sdatech:GeneralPosts . ?paper dct:title ?papername . } {% endcapture %}
+      {% assign generalposts = page.rdf | sparql_query: query %}
+
+      {% if generalposts.size != 0 %}
+        {% include blogHeader.html active="General Posts"%}
+      {% endif %}
+
+    </div>
+
+
   </div>
   <article class="post">
       <div class="post-content">

@@ -37,13 +37,27 @@
       document.getElementById("Contact").style.color = "#087CCD"
     }
 
-    var boolFromAllToDetailPerson = false ;
-    var boolFromAllToDetailProject = false ;
-    var boolFromAllToDetailPost = false ;
+    // if(typeof(Storage) !== "undefined" )
+    // {
+    //   localStorage.setItem("boolFromAllToDetailPerson", "false");
+    //
+    // }else {
+    //   // Session storage is not supported by the browser.
+    // }
+    boolFromAllToDetailPerson = 'false' ;
+    boolFromAllToDetailProject = false ;
+    boolFromAllToDetailPost = false ;
 
-    function setBoolFromAllToDetailPerson( var bool )
+    function setBoolFromAllToDetailPerson(  bool, path )
     {
-      boolFromAllToDetailPerson = bool ;
+      localStorage.setItem("boolFromAllToDetailPerson", "true");
+      boolFromAllToDetailPerson = 'true' ;
+      console.log("Bool Set");
+      // if(boolFromAllToDetailPerson == 'true')
+      // {
+        window.location.href = path ;
+      // }
+      console.log("path",path);
     }
 
     function getBoolFromAllToDetailPerson( )
@@ -51,7 +65,7 @@
       return boolFromAllToDetailPerson ;
     }
 
-    function setBoolFromAllToDetailProject( var bool )
+    function setBoolFromAllToDetailProject(  bool )
     {
       boolFromAllToDetailProject = bool ;
     }
@@ -61,7 +75,7 @@
       return boolFromAllToDetailProject ;
     }
 
-    function setBoolFromAllToDetailPost( var bool )
+    function setBoolFromAllToDetailPost(  bool )
     {
       boolFromAllToDetailPost = bool ;
     }
