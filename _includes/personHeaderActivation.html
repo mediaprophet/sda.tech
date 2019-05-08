@@ -12,6 +12,8 @@ document.onreadystatechange = function(e)
         {
           document.getElementById('allPersonHeader').style.display = 'block';
           document.getElementById('particularPersonHeader').style.display = 'none';
+          document.getElementById('secondaryNavPersonAll').style.display = 'block';
+          document.getElementById('secondaryNavParticularPerson').style.display = 'none';
 
           if(document.getElementById('allPersonHeader').style.display == 'block' && document.getElementById('particularPersonHeader').style.display )
             localStorage.setItem("boolFromAllToDetailPerson", 'false' );
@@ -19,7 +21,8 @@ document.onreadystatechange = function(e)
         }else {
           document.getElementById('allPersonHeader').style.display = 'none';
           document.getElementById('particularPersonHeader').style.display = 'block';
-
+          document.getElementById('secondaryNavPersonAll').style.display = 'none';
+          document.getElementById('secondaryNavParticularPerson').style.display = 'block';
         }
     }
 };

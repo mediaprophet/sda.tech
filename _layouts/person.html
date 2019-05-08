@@ -7,13 +7,33 @@ navigationdiv: People
 {% assign title = title | strip %}
 
 {% include personHeaderActivation.html %}
+<!-- GET  querry for Professors -->
+{% capture query %} SELECT ?Person ?name ?pname ?fname ?title ?status ?room ?linkedin ?website ?mailto ?image WHERE{ ?Person a foaf:Person . ?Person a sdatech:professor . ?Person foaf:familyName ?name . OPTIONAL { ?Person foaf:name ?pname } . ?Person foaf:status ?status . ?Person foaf:mbox ?mailto . ?Person foaf:depiction ?image .
+   ?Person foaf:firstName ?fname . ?Person foaf:title ?title . OPTIONAL {?Person sda:website ?website} . OPTIONAL {?Person sda:linkedin ?linkedin} .} {% endcapture %} {% assign professorsArray = page.rdf | sparql_query: query %}
+<!--GET querry for Senior Researchers  -->
+{% capture query %} SELECT ?Person ?name ?pname ?fname ?title ?status ?room ?linkedin ?website ?mailto ?image WHERE{ ?Person a foaf:Person . ?Person a sdatech:seniorResearcher . OPTIONAL { ?Person foaf:familyName ?name } . OPTIONAL { ?Person foaf:name ?pname } . OPTIONAL { ?Person foaf:status ?status } . OPTIONAL { ?Person foaf:mbox ?mailto } . OPTIONAL { ?Person foaf:depiction ?image } .
+OPTIONAL { ?Person foaf:firstName ?fname } . OPTIONAL { ?Person foaf:title ?title } . OPTIONAL { ?Person sda:website ?website } . OPTIONAL { ?Person sda:linkedin ?linkedin } .} {% endcapture %} {% assign seniorResearchersArray = page.rdf | sparql_query: query %}
+<!--GET querry for Phd Setudents  -->
+ {% capture query %} SELECT ?Person ?name ?pname ?fname ?title ?status ?room ?linkedin ?website ?mailto ?image WHERE{ ?Person a foaf:Person . ?Person a sdatech:phdStudent . OPTIONAL { ?Person foaf:familyName ?name } . OPTIONAL { ?Person foaf:name ?pname } . OPTIONAL { ?Person foaf:status ?status } . OPTIONAL {?Person foaf:mbox ?mailto } . OPTIONAL {?Person foaf:depiction ?image } .
+ OPTIONAL {?Person foaf:firstName ?fname } . OPTIONAL { ?Person foaf:title ?title } . OPTIONAL {?Person sda:website ?website } . OPTIONAL { ?Person sda:linkedin ?linkedin } .} {% endcapture %} {% assign phdStudentsArray = page.rdf | sparql_query: query %}
+<!--Get querry for Associate Researchers  -->
+ {% capture query %} SELECT ?Person ?name ?pname ?fname ?title ?status ?room ?linkedin ?website ?mailto ?image WHERE{ ?Person a foaf:Person . ?Person a sdatech:associateReseracher . OPTIONAL { ?Person foaf:familyName ?name } . OPTIONAL { ?Person foaf:name ?pname } . OPTIONAL { ?Person foaf:status ?status } . OPTIONAL {?Person foaf:mbox ?mailto } . OPTIONAL {?Person foaf:depiction ?image } .
+ OPTIONAL {?Person foaf:firstName ?fname } . OPTIONAL { ?Person foaf:title ?title } . OPTIONAL {?Person sda:website ?website } . OPTIONAL { ?Person sda:linkedin ?linkedin } .} {% endcapture %} {% assign associateResearchersArray = page.rdf | sparql_query: query %}
+<!--GET querry for Student Assistants  -->
+ {% capture query %} SELECT ?Person ?name ?pname ?fname ?title ?status ?room ?linkedin ?website ?mailto ?image WHERE{ ?Person a foaf:Person . ?Person a sdatech:studentAssistant . OPTIONAL { ?Person foaf:familyName ?name } . OPTIONAL { ?Person foaf:name ?pname } . OPTIONAL { ?Person foaf:status ?status } . OPTIONAL {?Person foaf:mbox ?mailto } . OPTIONAL {?Person foaf:depiction ?image } .
+ OPTIONAL {?Person foaf:firstName ?fname } . OPTIONAL { ?Person foaf:title ?title } . OPTIONAL {?Person sda:website ?website } . OPTIONAL { ?Person sda:linkedin ?linkedin } .} {% endcapture %} {% assign studentAssistantsArray = page.rdf | sparql_query: query %}
+<!--GET querry for Internees -->
+ {% capture query %} SELECT ?Person ?name ?pname ?fname ?title ?status ?room ?linkedin ?website ?mailto ?image WHERE{ ?Person a foaf:Person . ?Person a sdatech:intern . OPTIONAL { ?Person foaf:familyName ?name } . OPTIONAL { ?Person foaf:name ?pname } . OPTIONAL { ?Person foaf:status ?status } . OPTIONAL {?Person foaf:mbox ?mailto } . OPTIONAL {?Person foaf:depiction ?image } .
+ OPTIONAL {?Person foaf:firstName ?fname } . OPTIONAL { ?Person foaf:title ?title } . OPTIONAL {?Person sda:website ?website } . OPTIONAL { ?Person sda:linkedin ?linkedin } .} {% endcapture %} {% assign interneesArray = page.rdf | sparql_query: query %}
+<!--GET querry for Former Students  -->
+ {% capture query %} SELECT ?Person ?name ?pname ?fname ?title ?status ?room ?linkedin ?website ?mailto ?image WHERE{ ?Person a foaf:Person . ?Person a sdatech:formerMember . OPTIONAL { ?Person foaf:familyName ?name } . OPTIONAL { ?Person foaf:name ?pname } . OPTIONAL { ?Person foaf:status ?status } . OPTIONAL {?Person foaf:mbox ?mailto } . OPTIONAL {?Person foaf:depiction ?image } .
+OPTIONAL {?Person foaf:firstName ?fname } . OPTIONAL { ?Person foaf:title ?title } . OPTIONAL {?Person sda:website ?website } . OPTIONAL { ?Person sda:linkedin ?linkedin } .} {% endcapture %} {% assign formerMembersArray = page.rdf | sparql_query: query %}
 
 <div class="borderAll">
   <div class="pagination">
     <!-- Toggle Button Item -->
     <!-- TODO: Toggle Menu updated with Secondary Navigation -->
-    <!-- {% include toggleMenu.html  type = "twoRow" %} -->
-    <!-- Query For Professors -->
+    {% include toggleMenu.html  type = "twoRow" %}
 
     <div id="allPersonHeader" style="display:none;">
       {% include peopleHeader.html active ="People" %}
@@ -26,6 +46,7 @@ navigationdiv: People
 
       {% if professors.size != 0 %}
         {% include peopleHeader.html active ="Professors" %}
+        {% capture list %}{{professorsArray}}{% endcapture %}
       {% endif %}
 
       <!-- Query For Senior Researchers -->
@@ -36,6 +57,7 @@ navigationdiv: People
 
       {% if seniorresearchers.size != 0 %}
         {% include peopleHeader.html active ="Senior Researchers" %}
+        {% capture list %}{{seniorResearchersArray}}{% endcapture %}
       {% endif %}
 
       <!-- Query For PhD Students -->
@@ -45,6 +67,7 @@ navigationdiv: People
 
       {% if phdstudents.size != 0 %}
         {% include peopleHeader.html active ="PhD Students" %}
+        {% capture list %}{{phdStudentsArray}}{% endcapture %}
       {% endif %}
 
       <!-- Query For Associate Researchers -->
@@ -54,6 +77,7 @@ navigationdiv: People
 
       {% if associatedresearchers.size != 0 %}
         {% include peopleHeader.html active ="Associate Researchers" %}
+        {% capture list %}{{associateResearchersArray}}{% endcapture %}
       {% endif %}
 
       <!-- Query For Student Assistants -->
@@ -63,6 +87,7 @@ navigationdiv: People
 
       {% if studentassistants.size != 0 %}
         {% include peopleHeader.html active ="Student Assistants" %}
+        {% capture list %}{{studentAssistantsArray}}{% endcapture %}
       {% endif %}
 
       <!-- Query For Interns -->
@@ -72,6 +97,7 @@ navigationdiv: People
 
       {% if interns.size != 0 %}
         {% include peopleHeader.html active ="Interns" %}
+        {% capture list %}{{interneesArray}}{% endcapture %}
       {% endif %}
 
       <!-- Query For Former Members -->
@@ -81,6 +107,7 @@ navigationdiv: People
 
       {% if formermembers.size != 0 %}
         {% include peopleHeader.html active ="Former Members" %}
+        {% capture list %}{{formerMembersArray}}{% endcapture %}
       {% endif %}
       <!-- EndQuery -->
     </div>
@@ -89,7 +116,12 @@ navigationdiv: People
     <div class="view-table">
       <div class="view-row">
         <!-- TODO: Secondary Navigation Include Activate-->
-        <!-- {% include secondaryNav.html %} -->
+        <div id="secondaryNavPersonAll" style="display:none;">
+          {% include secondaryNav.html list=list %}
+        </div>
+        <div id="secondaryNavParticularPerson" style="display:none;">
+          {% include secondaryNav.html list=list %}
+        </div>
         <!-- <div class=""> -->
           <div class="content-people active-nav">
             <div class="post-content">
@@ -285,9 +317,9 @@ navigationdiv: People
   </article>
   <div class="pagination-footer">
     <!-- TODO: Activate with Secondary Navigation Update and Adctivation -->
-    <!-- <div class="blank-node">
+    <div class="blank-node">
 
-    </div> -->
+    </div>
   </div>
 </div>
 
