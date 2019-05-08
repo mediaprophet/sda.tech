@@ -6,33 +6,7 @@ navigationdiv: People
 {% capture title %} {{ page.rdf | rdf_property: 'foaf:title' }} {{ page.rdf | rdf_property: 'foaf:firstName' }} {{ page.rdf | rdf_property: 'foaf:familyName' }} {% endcapture %}
 {% assign title = title | strip %}
 
-<script>
-
-document.onreadystatechange = function(e)
-{
-    if (document.readyState === 'interactive')
-    {
-        //dom is ready, window.onload fires later
-        setTitle('{{title}}', '{{site.title | escape}}');
-        deactivateHeader();
-        activateHeader('{{page.navigationdiv}}');
-
-        if( getBoolFromAllToDetailPerson( ) == 'true' )
-        {
-          document.getElementById('allPersonHeader').style.display = 'block';
-          document.getElementById('particularPersonHeader').style.display = 'none';
-
-          if(document.getElementById('allPersonHeader').style.display == 'block' && document.getElementById('particularPersonHeader').style.display )
-            localStorage.setItem("boolFromAllToDetailPerson", 'false' );
-
-        }else {
-          document.getElementById('allPersonHeader').style.display = 'none';
-          document.getElementById('particularPersonHeader').style.display = 'block';
-
-        }
-    }
-};
-</script>
+{% include personHeaderActivation.html %}
 
 <div class="borderAll">
   <div class="pagination">

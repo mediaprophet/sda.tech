@@ -1008,6 +1008,7 @@ hr {
   display: inline-block;
   vertical-align: middle;
   float: left;
+  padding-left: 16px;
   width: 75%;
   color: #757575;
 }
@@ -1019,8 +1020,8 @@ hr {
 
 .partner-item {
   width: 90%;
-  margin-left: 32px;
-  margin-right: 32px;
+  padding-left: 32px;
+  padding-right: 32px;
   margin-bottom: 56px;
   display: inline-block;
   text-align: left;
@@ -1124,6 +1125,7 @@ hr {
   h1, h2 {
     color: #424242;
     font-weight: lighter;
+    font-size: larger;
 
   }
 }
@@ -1134,6 +1136,7 @@ hr {
   background-color: #fafafa;
   border-radius: 30%;
   margin-right: 12px;
+
 }
 // group card layouts
 .group-Members,

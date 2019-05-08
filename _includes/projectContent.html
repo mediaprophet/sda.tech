@@ -9,7 +9,7 @@
     <!-- Presentation of the ALL Projects  -->
     {% assign allProjectCount = allProjects | size %} {% assign iterator = 1 %} {% assign lastItem = 0 %} {% for project in allProjects %} {% if iterator == allProjectCount %} {% assign lastItem = 1 %} {% else %} {% assign lastItem = 0 %} {% endif %} {% assign
     url= project.project | remove: "http://sda.tech/" %} {% include projectItem.html projectItemFor="projectList" title=project.title image=project.image description=project.description last=lastItem href=url homepage=project.homepage twitter=project.twitter source=project.source
-    download=project.download %} {% assign iterator = iterator | plus:1 %} {% endfor %}
+    download=project.download fromAll=1%} {% assign iterator = iterator | plus:1 %} {% endfor %}
   {% else %}
     <div class="content-title">
       <h2>Projects</h2>

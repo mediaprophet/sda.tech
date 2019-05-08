@@ -1,0 +1,26 @@
+<script>
+document.onreadystatechange = function(e)
+{
+    if (document.readyState === 'interactive')
+    {
+        //dom is ready, window.onload fires later
+        setTitle('{{title}}', '{{site.title | escape}}');
+        deactivateHeader();
+        activateHeader('{{page.navigationdiv}}');
+
+        if( getBoolFromAllToDetailPost() == 'true' )
+        {
+          document.getElementById('allPostHeader').style.display = 'block';
+          document.getElementById('particularPostHeader').style.display = 'none';
+
+          if(document.getElementById('allPostHeader').style.display == 'block' && document.getElementById('particularPostHeader').style.display )
+            localStorage.setItem("boolFromAllToDetailPost", 'false' );
+
+        }else {
+          document.getElementById('allPostHeader').style.display = 'none';
+          document.getElementById('particularPostHeader').style.display = 'block';
+        }
+    }
+};
+
+</script>

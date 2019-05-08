@@ -7,23 +7,7 @@ navigationdiv: Blog
 {% capture title %} {{ page.rdf | rdf_property: 'sioc:topic' }}{% endcapture %}
 {% assign title = title | strip %}
 
-<script>
-  setTitle('{{title}}', '{{site.title | escape}}');
-  deactivateHeader();
-  activateHeader('{{page.navigationdiv}}');
-
-  if( getBoolFromAllToDetailPost() == 'true' )
-  {
-    document.getElementById('allPostHeader').style.display = 'block';
-    document.getElementById('particularPostHeader').style.display = 'none';
-    setBoolFromAllToDetailPerson('false');
-
-  }else {
-    document.getElementById('allPostHeader').style.display = 'none';
-    document.getElementById('particularPostHeader').style.display = 'block';
-
-  }
-</script>
+{% include postHeaderActivation.html %}
 
 {% capture depiction %} {{ page.rdf | rdf_property: 'foaf:depiction' }} {% endcapture %}
 {% capture creator %} {{ page.rdf | rdf_property: 'dct:creator' }} {% endcapture %}
@@ -78,8 +62,6 @@ navigationdiv: Blog
       {% endif %}
 
     </div>
-
-
   </div>
   <article class="post">
       <div class="post-content">

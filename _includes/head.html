@@ -58,17 +58,19 @@
 
     function getBoolFromAllToDetailProject( )
     {
-      return boolFromAllToDetailProject ;
+      return localStorage.getItem("boolFromAllToDetailProject") ;
     }
 
-    function setBoolFromAllToDetailPost(  bool, path )
+    function setBoolFromAllToDetailPost( bool, path )
     {
-      boolFromAllToDetailPost = bool ;
+      localStorage.setItem("boolFromAllToDetailPost", bool );
+      window.location.href = path ;
     }
 
     function getBoolFromAllToDetailPost( )
     {
-      return boolFromAllToDetailPost ;
+      return localStorage.getItem("boolFromAllToDetailPost") ;
+
     }
 
 

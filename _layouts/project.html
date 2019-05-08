@@ -5,26 +5,9 @@ toggledURL: project
 toggledURLTo: /project/allProjects
 navigationdiv: Projects
 ---
-
 {% capture title %} {{ page.rdf | rdf_property: 'rdfs:label' }} {% endcapture %}
-<script>
-setTitle('{{title}}', '{{site.title | escape}}');
-deactivateHeader();
-activateHeader('{{page.navigationdiv}}');
 
-if( getBoolFromAllToDetailProject() == true )
-{
-  document.getElementById('allProjectHeader').style.display = 'block';
-  document.getElementById('particularProjectHeader').style.display = 'none';
-  setBoolFromAllToDetailPerson(false);
-
-}else {
-  document.getElementById('allProjectHeader').style.display = 'none';
-  document.getElementById('particularProjectHeader').style.display = 'block';
-
-}
-</script>
-
+{% include projectHeaderActivation.html %}
 <div class="borderAll">
   <div class="pagination">
     <!-- Toggle Button Item -->
