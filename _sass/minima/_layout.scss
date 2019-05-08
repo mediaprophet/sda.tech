@@ -276,6 +276,7 @@
     @include relative-font-size(2);
     @include media-query($on-laptop) {
       @include relative-font-size(1.75);
+      color: #424242;
     }
   }
 
@@ -758,7 +759,7 @@
   }
 }
 
-.main-content {
+.main-content, .address-content {
   text-align: left;
 }
 
@@ -967,7 +968,7 @@ hr {
   h4 {
     margin: 12px;
     font-weight: lighter !important;
-    
+
   }
 
   a:hover,
@@ -1086,8 +1087,16 @@ hr {
 .linkMarginRight {
   margin-right: 12px !important;
 }
+
+.adressAlocatorGoogleMaps{
+  margin-bottom: 40px;
+}
+
 // Contact Specifics
 .adressSectionOne {
+  color: #757575;
+  padding: 16px;
+
   a {
     color: $purple-sda-color;
     padding: 0;
@@ -1096,6 +1105,7 @@ hr {
     webkit-margin-before: 0;
     text-decoration: none;
     transition: background-color 0.3s;
+    font-weight: lighter;
 
     &:hover {
       text-decoration: none;
@@ -1111,9 +1121,19 @@ hr {
     background-color: white;
   }
 
-  h1 {
-    color: $blue-sda-color;
+  h1, h2 {
+    color: #424242;
+    font-weight: lighter;
+
   }
+}
+
+.contact-icon{
+  padding: 16px;
+  border: 1px solid #e0e0e0;
+  background-color: #fafafa;
+  border-radius: 30%;
+  margin-right: 12px;
 }
 // group card layouts
 .group-Members,
@@ -1728,8 +1748,11 @@ div.scrollmenu a:hover {
 }
 
 .postentry {
-  padding-left: 50px;
-  padding-right: 50px;
+  padding: 32px;
+}
+
+.postentrytiles{
+  padding-bottom: 56px;
 }
 
 div.postentry a {

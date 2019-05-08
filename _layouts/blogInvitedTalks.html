@@ -26,7 +26,7 @@ navigationdiv: Blog
     <div class="pagination3" id="oInput">
     {% for post in blogposts %}
       {% assign url= post.blog | remove: "http://sda.tech/" %}
-      <div class="postentry" id="page{{ forloop.index }}">
+      <div class="postentry postentrytiles" id="page{{ forloop.index }}">
         <a href="../../{{url}}"><p style="margin-top:25px;"><font size="5">{{post.title}}</font></p></a>
         <span style="color: #666666;"> &#128467; {{post.date}} &nbsp;&nbsp; &#x270D; {{post.creator}}</span>
         <br/><br/>

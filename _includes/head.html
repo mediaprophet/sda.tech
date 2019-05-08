@@ -20,54 +20,40 @@
   <script type="text/javascript" src="/assets/scripts/setTitle.js"></script>
   <script type="text/javascript">
     function activateHeader(div) {
-      document.getElementById(div).style.color = "#5CBF14";
+      document.getElementById(div).style.color = "#5CBF14" ;
     }
 
     function deactivateHeader() {
-      document.getElementById("About").style.color = "#087CCD";
-      document.getElementById("People").style.color = "#087CCD"
-      document.getElementById("Groups").style.color = "#087CCD"
-      document.getElementById("Projects").style.color = "#087CCD"
-      document.getElementById("Publications").style.color = "#087CCD"
-      document.getElementById("Jobs").style.color = "#087CCD"
-      document.getElementById("Teaching").style.color = "#087CCD"
-      document.getElementById("Thesis").style.color = "#087CCD"
-      document.getElementById("Partners").style.color = "#087CCD"
-      document.getElementById("Blog").style.color = "#087CCD"
-      document.getElementById("Contact").style.color = "#087CCD"
+      document.getElementById("About").style.color = "#087CCD" ;
+      document.getElementById("People").style.color = "#087CCD" ;
+      document.getElementById("Groups").style.color = "#087CCD" ;
+      document.getElementById("Projects").style.color = "#087CCD" ;
+      document.getElementById("Publications").style.color = "#087CCD" ;
+      document.getElementById("Jobs").style.color = "#087CCD" ;
+      document.getElementById("Teaching").style.color = "#087CCD" ;
+      document.getElementById("Thesis").style.color = "#087CCD" ;
+      document.getElementById("Partners").style.color = "#087CCD" ;
+      document.getElementById("Blog").style.color = "#087CCD" ;
+      document.getElementById("Contact").style.color = "#087CCD" ;
     }
 
-    // if(typeof(Storage) !== "undefined" )
-    // {
-    //   localStorage.setItem("boolFromAllToDetailPerson", "false");
-    //
-    // }else {
-    //   // Session storage is not supported by the browser.
-    // }
-    boolFromAllToDetailPerson = 'false' ;
-    boolFromAllToDetailProject = false ;
-    boolFromAllToDetailPost = false ;
 
-    function setBoolFromAllToDetailPerson(  bool, path )
+
+    function setBoolFromAllToDetailPerson( bool, path )
     {
-      localStorage.setItem("boolFromAllToDetailPerson", "true");
-      boolFromAllToDetailPerson = 'true' ;
-      console.log("Bool Set");
-      // if(boolFromAllToDetailPerson == 'true')
-      // {
-        window.location.href = path ;
-      // }
-      console.log("path",path);
+      localStorage.setItem("boolFromAllToDetailPerson", bool );
+      window.location.href = path ;
     }
 
     function getBoolFromAllToDetailPerson( )
     {
-      return boolFromAllToDetailPerson ;
+      return localStorage.getItem("boolFromAllToDetailPerson") ;
     }
 
-    function setBoolFromAllToDetailProject(  bool )
+    function setBoolFromAllToDetailProject( bool, path )
     {
-      boolFromAllToDetailProject = bool ;
+      localStorage.setItem("boolFromAllToDetailProject", bool );
+      window.location.href = path ;
     }
 
     function getBoolFromAllToDetailProject( )
@@ -75,7 +61,7 @@
       return boolFromAllToDetailProject ;
     }
 
-    function setBoolFromAllToDetailPost(  bool )
+    function setBoolFromAllToDetailPost(  bool, path )
     {
       boolFromAllToDetailPost = bool ;
     }

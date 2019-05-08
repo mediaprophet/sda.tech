@@ -7,23 +7,31 @@ navigationdiv: People
 {% assign title = title | strip %}
 
 <script>
-setTitle('{{title}}', '{{site.title | escape}}');
-deactivateHeader();
-activateHeader('{{page.navigationdiv}}');
-console.log(getBoolFromAllToDetailPerson());
 
-if( localStorage.getItem("boolFromAllToDetailPerson") == 'true' )
+document.onreadystatechange = function(e)
 {
-  document.getElementById('allPersonHeader').style.display = 'block';
-  document.getElementById('particularPersonHeader').style.display = 'none';
-  sessionStorage.setItem("boolFromAllToDetailPerson", "false");
+    if (document.readyState === 'interactive')
+    {
+        //dom is ready, window.onload fires later
+        setTitle('{{title}}', '{{site.title | escape}}');
+        deactivateHeader();
+        activateHeader('{{page.navigationdiv}}');
 
-}else {
-  document.getElementById('allPersonHeader').style.display = 'none';
-  document.getElementById('particularPersonHeader').style.display = 'block';
+        if( getBoolFromAllToDetailPerson( ) == 'true' )
+        {
+          document.getElementById('allPersonHeader').style.display = 'block';
+          document.getElementById('particularPersonHeader').style.display = 'none';
 
-}
+          if(document.getElementById('allPersonHeader').style.display == 'block' && document.getElementById('particularPersonHeader').style.display )
+            localStorage.setItem("boolFromAllToDetailPerson", 'false' );
 
+        }else {
+          document.getElementById('allPersonHeader').style.display = 'none';
+          document.getElementById('particularPersonHeader').style.display = 'block';
+
+        }
+    }
+};
 </script>
 
 <div class="borderAll">
@@ -34,9 +42,9 @@ if( localStorage.getItem("boolFromAllToDetailPerson") == 'true' )
     <!-- Query For Professors -->
 
     <div id="allPersonHeader" style="display:none;">
-      {% include peopleHeader.html active ="Professors" %}
+      {% include peopleHeader.html active ="People" %}
     </div>
-    <div id="particularPersonHeader" style="display:block;">
+    <div id="particularPersonHeader" style="display:none;">
       <!-- Query for Professors -->
       {% capture query %} SELECT ?person ?personname Where {
           <{{page.rdf}}> a sdatech:professor . ?person foaf:name ?personname . } {% endcapture %}
