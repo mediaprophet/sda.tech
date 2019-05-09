@@ -110,7 +110,7 @@ OPTIONAL {?Person foaf:firstName ?fname } . OPTIONAL { ?Person foaf:title ?title
 
       {% if formermembers.size != 0 %}
         {% include peopleHeader.html active ="Former Members" %}
-        {% assign list = formerMembersArray | sort: 'pname' %}
+        {% assign list = formerMembersArray %}
       {% endif %}
       <!-- EndQuery -->
     </div>
@@ -121,7 +121,7 @@ OPTIONAL {?Person foaf:firstName ?fname } . OPTIONAL { ?Person foaf:title ?title
         <!-- TODO: Secondary Navigation Include Activate-->
         <div id="personSecondaryNav" class="secondary-nav" style="display:none;">
           <div id="secondaryNavPersonAll" style="display:none;">
-            {% include secondaryNav.html listItems=completeList status='all' name=pname %}
+            {% include secondaryNav.html listItems=completeList status='all' name=pname fromAll=1 %}
           </div>
           <div id="secondaryNavParticularPerson" style="display:none;">
             {% include secondaryNav.html listItems=list name=pname %}
