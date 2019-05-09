@@ -5,6 +5,7 @@ navigationdiv: People
 ---
 {% capture title %} {{ page.rdf | rdf_property: 'foaf:title' }} {{ page.rdf | rdf_property: 'foaf:firstName' }} {{ page.rdf | rdf_property: 'foaf:familyName' }} {% endcapture %}
 {% assign title = title | strip %}
+{% capture pname %}{{ page.rdf | rdf_property: 'foaf:name' }}{% endcapture %}
 
 {% include personHeaderActivation.html %}
 <!-- GET  querry for Professors -->
@@ -33,10 +34,12 @@ OPTIONAL {?Person foaf:firstName ?fname } . OPTIONAL { ?Person foaf:title ?title
   <div class="pagination">
     <!-- Toggle Button Item -->
     <!-- TODO: Toggle Menu updated with Secondary Navigation -->
-    {% include toggleMenu.html  type = "twoRow" %}
+    {% include toggleMenu.html  type = "twoRow" id="persontoggleicon" %}
 
     <div id="allPersonHeader" style="display:none;">
       {% include peopleHeader.html active ="People" %}
+      {% assign completeList = professorsArray | concat: seniorResearchersArray | concat: phdStudentsArray | concat: associateResearchersArray | concat: studentAssistantsArray | concat: interneesArray %}
+
     </div>
     <div id="particularPersonHeader" style="display:none;">
       <!-- Query for Professors -->
@@ -46,7 +49,7 @@ OPTIONAL {?Person foaf:firstName ?fname } . OPTIONAL { ?Person foaf:title ?title
 
       {% if professors.size != 0 %}
         {% include peopleHeader.html active ="Professors" %}
-        {% capture list %}{{professorsArray}}{% endcapture %}
+        {% assign list = professorsArray %}
       {% endif %}
 
       <!-- Query For Senior Researchers -->
@@ -57,7 +60,7 @@ OPTIONAL {?Person foaf:firstName ?fname } . OPTIONAL { ?Person foaf:title ?title
 
       {% if seniorresearchers.size != 0 %}
         {% include peopleHeader.html active ="Senior Researchers" %}
-        {% capture list %}{{seniorResearchersArray}}{% endcapture %}
+        {% assign list = seniorResearchersArray %}
       {% endif %}
 
       <!-- Query For PhD Students -->
@@ -67,7 +70,7 @@ OPTIONAL {?Person foaf:firstName ?fname } . OPTIONAL { ?Person foaf:title ?title
 
       {% if phdstudents.size != 0 %}
         {% include peopleHeader.html active ="PhD Students" %}
-        {% capture list %}{{phdStudentsArray}}{% endcapture %}
+        {% assign list = phdStudentsArray %}
       {% endif %}
 
       <!-- Query For Associate Researchers -->
@@ -77,7 +80,7 @@ OPTIONAL {?Person foaf:firstName ?fname } . OPTIONAL { ?Person foaf:title ?title
 
       {% if associatedresearchers.size != 0 %}
         {% include peopleHeader.html active ="Associate Researchers" %}
-        {% capture list %}{{associateResearchersArray}}{% endcapture %}
+        {% assign list = associateResearchersArray %}
       {% endif %}
 
       <!-- Query For Student Assistants -->
@@ -87,7 +90,7 @@ OPTIONAL {?Person foaf:firstName ?fname } . OPTIONAL { ?Person foaf:title ?title
 
       {% if studentassistants.size != 0 %}
         {% include peopleHeader.html active ="Student Assistants" %}
-        {% capture list %}{{studentAssistantsArray}}{% endcapture %}
+        {% assign list = studentAssistantsArray %}
       {% endif %}
 
       <!-- Query For Interns -->
@@ -97,7 +100,7 @@ OPTIONAL {?Person foaf:firstName ?fname } . OPTIONAL { ?Person foaf:title ?title
 
       {% if interns.size != 0 %}
         {% include peopleHeader.html active ="Interns" %}
-        {% capture list %}{{interneesArray}}{% endcapture %}
+        {% assign list = interneesArray %}
       {% endif %}
 
       <!-- Query For Former Members -->
@@ -107,23 +110,25 @@ OPTIONAL {?Person foaf:firstName ?fname } . OPTIONAL { ?Person foaf:title ?title
 
       {% if formermembers.size != 0 %}
         {% include peopleHeader.html active ="Former Members" %}
-        {% capture list %}{{formerMembersArray}}{% endcapture %}
+        {% assign list = formerMembersArray | sort: 'pname' %}
       {% endif %}
       <!-- EndQuery -->
     </div>
   </div>
   <article class="post">
     <div class="view-table">
-      <div class="view-row">
+      <div class="view-row" id="personTableRow">
         <!-- TODO: Secondary Navigation Include Activate-->
-        <div id="secondaryNavPersonAll" style="display:none;">
-          {% include secondaryNav.html list=list %}
-        </div>
-        <div id="secondaryNavParticularPerson" style="display:none;">
-          {% include secondaryNav.html list=list %}
+        <div id="personSecondaryNav" class="secondary-nav" style="display:none;">
+          <div id="secondaryNavPersonAll" style="display:none;">
+            {% include secondaryNav.html listItems=completeList status='all' name=pname %}
+          </div>
+          <div id="secondaryNavParticularPerson" style="display:none;">
+            {% include secondaryNav.html listItems=list name=pname %}
+          </div>
         </div>
         <!-- <div class=""> -->
-          <div class="content-people active-nav">
+          <div id="person" class="content-people" >
             <div class="post-content">
               <div style="text-align:center;"><img class="img-circle-small" style="width: 250px; height: 250px; border-radius: 0%; " src="{{ page.rdf | rdf_property: 'foaf:depiction'}}"></img>
                   <div style="display:inline-block; vertical-align: middle;">
