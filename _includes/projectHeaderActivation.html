@@ -1,0 +1,26 @@
+<script>
+document.onreadystatechange = function(e)
+{
+    if (document.readyState === 'interactive')
+    {
+        //dom is ready, window.onload fires later
+        setTitle('{{title}}', '{{site.title | escape}}');
+        deactivateHeader();
+        activateHeader('{{page.navigationdiv}}');
+
+        if( getBoolFromAllToDetailProject() == 'true' )
+        {
+          document.getElementById('allProjectHeader').style.display = 'block';
+          document.getElementById('particularProjectHeader').style.display = 'none';
+
+          if(document.getElementById('allProjectHeader').style.display == 'block' && document.getElementById('particularProjectHeader').style.display )
+            localStorage.setItem("boolFromAllToDetailProject", 'false' );
+
+        }else {
+          document.getElementById('allProjectHeader').style.display = 'none';
+          document.getElementById('particularProjectHeader').style.display = 'block';
+        }
+    }
+};
+
+</script>

@@ -23,6 +23,7 @@
 @prefix sdablog: <http://sda.tech/blog/> .
 @prefix sdajob: <http://sda.tech/jobs/> .
 @prefix sdacontact: <http://sda.tech/Contact/> .
+@prefix sdajob: <http://sda.tech/Job/> .
 @prefix aiiso: <http://purl.org/vocab/aiiso/schema#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix ov: <http://open.vocab.org/terms/> .
@@ -24240,6 +24241,31 @@ sdajob:frequentlyaskedquestions a foaf:Document ;
 
 ###################Paper Notifications#############
 
+sdablog:paper-accepted-at-naacl-2019 a sioc:Post, sdatech:Blog, sdablog:papernotifications;
+    dct:title "Paper accepted at NAACL 2019" ;
+    sioc:topic "Paper accepted at NAACL 2019" ;
+    dct:creator sdaperson:GezimSejdiu ;
+    foaf:maker sdaperson:GezimSejdiu ;
+    sioc:has_creator sdaperson:GezimSejdiu ;
+    dct:created "2019-04-15"^^xsd:date ;
+    dct:language "en-US" ;
+    foaf:depiction <https://pbs.twimg.com/profile_images/900043529140883456/e4LvoI67_400x400.jpg> ;
+    sioc:abstract """We are very pleased to announce that our group got a paper accepted for presentation at The 2019 edition of <a href="https://naacl2019.org/">The NAACL conference</a>, which will be held on June 2–7, 2019 Minneapolis, USA.""";
+    sioc:content """We are very pleased to announce that our group got a paper accepted for presentation at The 2019 edition of <a href="https://naacl2019.org/">The NAACL conference</a>, which will be held on June 2–7, 2019 Minneapolis, USA.
+</br></br>
+NAACL aims to bring together researchers interested in the design and study of natural language processing technology as well as its applications to new problem areas. With this goal in mind, the 2019 edition invites the submission of long and short papers on creative, substantial and unpublished research in all aspects of computational linguistics. It covers a diverse technical program–in addition to traditional research results, papers may present negative findings, survey an area, announce the creation of a new resource, argue a position, report novel linguistic insights derived using existing techniques, and reproduce, or fail to reproduce, previous results.
+</br> </br>
+Here is the pre-print of the accepted paper with its abstract::
+<ul>
+	<li ><a href="https://www.researchgate.net/publication/332104600_Old_is_Gold_Linguistic_Driven_Approach_for_Entity_and_Relation_Linking_of_Short_Text"><b>Old is Gold: Linguistic Driven Approach for Entity and Relation Linking of Short Text</b></a>by Ahmad Sakor, <a href="/Person/IsaiahOnandoMulang/">Isaiah Onando Mulang'</a>, <a href="/Person/KuldeepSingh/">Kuldeep Singh</a>, Saeedeh Shekarpour, Maria Esther Vidal, <a href="/Person/JensLehmann/">Jens Lehmann</a>, and Sören Auer.</span></li>
+</ul>
+<blockquote><strong>Abstract</strong>: <i>Short texts challenge NLP tasks such as named entity recognition, disambiguation, linking and relation inference because they do not provide sufficient context or are partially malformed (e.g. wrt. capitalization, long tail entities, implicit relations). In this work, we present the Falcon approach which effectively maps entities and relations within a short text to its mentions of a background knowledge graph. Falcon overcomes the challenges of short text using a light-weight linguistic approach relying on a background knowledge graph. Falcon performs joint entity and relation linking of a short text by leveraging several fundamental principles of English morphology (e.g. compounding, headword identification) and utilizes an extended knowledge graph created by merging entities and relations from various knowledge sources. It uses the context of entities for finding relations and does not require training data. Our empirical study using several standard benchmarks and datasets show that Falcon significantly outperforms state-of-the-art entity and relation linking for short text query inventories.</i></blockquote>
+</br><b>Acknowledgment</b>
+</br> This work was partially funded by the Fraunhofer IAIS, and EU H2020 project <a href="http://project-iasis.eu/">IASIS</a>.
+</br></hr></br>
+Looking forward to seeing you at <a href="https://naacl2019.org/">The NAACL 2019 conference</a>.""" .
+
+
 sdablog:paper-accepted-at-evostar-2019 a sioc:Post, sdatech:Blog, sdablog:papernotifications;
     dct:title "Paper accepted at EvoStar 2019" ;
     sioc:topic "Paper accepted at EvoStar 2019" ;
@@ -25946,6 +25972,9 @@ foaf:Document sysont:instanceNamingScheme "label" ;
 
 sdatech:about a foaf:Document ;
   rdfs:label "About" .
+
+sdatech:contact a foaf:Document ;
+  rdfs:label "Contact" .
 
 
 sdatech:fundedProject a owl:Class ;

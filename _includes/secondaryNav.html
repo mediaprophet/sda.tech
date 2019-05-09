@@ -1,0 +1,12 @@
+<div class="secondary-nav">
+  {% for items in include.list %}
+    <div class="cell">
+      <div class="cell-img">
+        <a href=""><img src="{{item.url}}" alt=""></a>
+      </div>
+      <div class="cell-title">
+        <a href=""><h2>{{item.title}}</h2></a>
+      </div>
+    </div>
+  {% endfor %}
+</div>

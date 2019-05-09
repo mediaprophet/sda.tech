@@ -46,10 +46,11 @@ activateHeader('{{page.navigationdiv}}');
           <br/>
           <hr class="ruleh" /></div>
         <div class="content-people">
-          <div class="post-content">
-            <div class="container groupLink">
-              <br class="horizontal-separator" />
-              <h2 style="text-align:center;"><i class="{{ page.rdf | rdf_property: 'sda:imageclass'}}"></i> {{ page.rdf | rdf_property: 'rdfs:label'}}</h2>
+          <div class="content-title">
+            <h2>{{ page.rdf | rdf_property: 'rdfs:label'}}</h2>
+          </div>
+          <div class="groupContent">
+            <div class="groupLink">
               <br class="horizontal-separator2" />
               <div class="description-project">
                 <p>{{ page.rdf | rdf_property: 'dct:description'}}</p>
@@ -98,15 +99,10 @@ activateHeader('{{page.navigationdiv}}');
                   </div>
                   {% endfor %}
                 </div>
-              <br class="horizontal-separator2" />
-              <br class="horizontal-separator" />
-              <h4>Publications</h4>
-              {% for result4 in resultset4 %}
-                {% include pubEntry.html link=result4.link date=result4.date publisher=result4.publisher title=result4.title  %}
-              {% endfor %}
-              <br class="horizontal-separator" />
             </div>
           </div>
+        </div>
+        <div class="pagination-footer">
         </div>
     </article>
   </div>
