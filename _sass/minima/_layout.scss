@@ -709,7 +709,11 @@
 }
 
 #personSecondaryNav{
-    transition: height 1s, width 1s, padding 1s, visibility 1s, opacity 0.5s ease-out;
+    // opacity:0;
+    // -moz-transition: all .3s ease .15s;
+    // transition: all .3s ease .15s;
+    -webkit-transition: left .5s ease;
+
 }
 
 #secondaryNavPersonAll, #secondaryNavParticularPerson{
@@ -735,7 +739,7 @@
 }
 
 .cell-active{
-  background-color: white; 
+  background-color: white;
 }
 
 .cell-img {

@@ -4,7 +4,7 @@
     <div class="cell {% if include.name == items.pname %}cell-active{% endif %}">
         <div class="cell-img">
           {% if include.fromAll == 1 %}
-            <a onclick="setBoolFromAllToDetailPerson('true', '../../{{include.url}}' )"><img class="img-circle-small" src="{{items.image}}" alt=""></a>
+            <a onclick="setBoolFromAllToDetailPerson('true', '../../{{url}}' )"><img class="img-circle-small" src="{{items.image}}" alt=""></a>
           {% endif %}
           {% if include.fromAll != 1 %}
             <a href="../../{{include.url}}"><img class="img-circle-small" src="{{items.image}}" alt=""></a>
@@ -12,13 +12,13 @@
         </div>
         <div class="cell-title">
           {% if include.fromAll == 1 %}
-            <a onclick="setBoolFromAllToDetailPerson('true', '../../{{include.url}}' )" ><h2>{{items.pname}}</h2></a>
+            <a onclick="setBoolFromAllToDetailPerson('true', '../../{{url}}' )" ><h2>{{items.pname}}</h2></a>
           {% endif %}
           {% if include.fromAll != 1 %}
             <a href="../../{{url}}"><h2>{{items.pname}}</h2></a>
           {% endif %}
           {% if include.status == 'all' %}
-            <p style="font-size: 10px;padding-left: 8px;margin-bottom: 0px;">{{include.status}}</p>
+            <p style="font-size: 10px;padding-left: 8px;margin-bottom: 0px;">{{items.status}}</p>
           {% endif %}
         </div>
     </div>
