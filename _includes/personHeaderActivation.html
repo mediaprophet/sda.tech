@@ -27,53 +27,56 @@ document.onreadystatechange = function(e)
 
 
     }
+
+    if ( document.readyState === 'complete')
+    {
+      // Toggle functionality for Person Secondary Navigation
+      var btn = document.querySelector('.toggle-menu');
+      var icon = document.getElementById('persontoggleicon');
+      var hint = document.getElementById('personSecondaryNav');
+      var content = document.getElementById('personTableRow');
+      var personTableRow = document.getElementById('personTableRow');
+
+      var height = hint.clientHeight;
+      var width = hint.clientWidth;
+      var heightPerson = content.clientHeight;
+      var widthTable = ( personTableRow.clientWidth * 25 ) / 100 ;
+
+
+      console.log(width + 'x' + height);
+      console.log("HP", heightPerson);
+      // initialize them (within hint.style)
+      hint.style.height = height + 'px';
+      hint.style.width = width + 'px';
+      hint.style.left = '-' + width + 'px' ;
+      var active = document.querySelector("#person");
+
+      btn.addEventListener('click', function(){
+        if(hint.style.display == 'none'){
+
+          hint.style.display = 'inline-block';
+          active.classList.add("active-nav");
+          icon.classList.add("icon-active");
+          hint.style.opacity = '1';
+          hint.style.height = document.getElementById('person').clientHeight + 'px';
+          hint.style.width = widthTable + 'px';
+
+
+        }
+        else{
+          hint.style.opacity = 0;
+          hint.style.height = '0';
+          hint.style.width = '0';
+
+          active.classList.remove("active-nav");
+          icon.classList.remove("icon-active");
+          hint.style.display = 'none';
+
+        }
+
+      });
+    }
 };
 
-  // Toggle functionality for Person Secondary Navigation
-  var btn = document.querySelector('.toggle-menu');
-  var icon = document.getElementById('persontoggleicon');
-  var hint = document.getElementById('personSecondaryNav');
-  var content = document.getElementById('personTableRow');
-  var personTableRow = document.getElementById('personTableRow');
 
-  var height = hint.clientHeight;
-  var width = hint.clientWidth;
-  var heightPerson = content.clientHeight;
-  var widthTable = ( personTableRow.clientWidth * 25 ) / 100 ;
-
-
-  console.log(width + 'x' + height);
-  console.log("HP", heightPerson);
-  // initialize them (within hint.style)
-  hint.style.height = height + 'px';
-  hint.style.width = width + 'px';
-  hint.style.left = '-' + width + 'px' ;
-  var active = document.querySelector("#person");
-
-  btn.addEventListener('click', function(){
-    if(hint.style.display == 'none'){
-      hint.style.display = 'inline-block';
-      //hint.style.opacity = '1';
-      hint.style.height = heightPerson + 'px';
-      hint.style.width = widthTable + 'px';
-
-      active.classList.add("active-nav");
-      icon.classList.add("icon-active");
-      // hint.style.padding = '.5em';
-      hint.style.opacity = 1;
-
-    }
-    else{
-      hint.style.display = 'none';
-      //hint.style.opacity = '0';
-      hint.style.height = '0';
-      hint.style.width = '0';
-      // hint.style.padding = '0';
-      active.classList.remove("active-nav");
-      icon.classList.remove("icon-active");
-      hint.style.opacity = 0;
-
-    }
-
-  });
 </script>

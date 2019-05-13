@@ -18,11 +18,7 @@ navigationdiv: Blog
         <div class="posttitle">{{post.title}}</div></a>
       {% endfor %}
     </div>
-
     <br class="horizontal-separator2"/>
-
-    <!-- post -->
-
     <div class="pagination3" id="oInput">
     {% for post in blogposts %}
       {% assign url= post.blog | remove: "http://sda.tech/" %}
@@ -35,14 +31,10 @@ navigationdiv: Blog
       </div>
     {% endfor %}
     </div>
-
-    <button href="#" id="prev" class="previous"><< Previous</button>
-    <button href="#" id="next" class="next" >Next >></button>
-
-    <!-- <hr style="width:100%;background:transparent;"> -->
-    <br class="horizontal-separator2" />
   </article>
   <div class="pagination-footer">
+    <button href="#" id="prev" class="previous"><< Previous</button>
+    <button href="#" id="next" class="next" >Next >></button>
   </div>
 </div>
 
