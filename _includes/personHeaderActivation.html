@@ -1,7 +1,12 @@
 <script>
 document.onreadystatechange = function(e)
 {
-    if (document.readyState === 'interactive')
+    if ( document.readyState === 'loading' )
+    {
+
+    }
+
+    if ( document.readyState === 'interactive' )
     {
         //dom is ready, window.onload fires later
         setTitle('{{title}}', '{{site.title | escape}}');
@@ -28,13 +33,16 @@ document.onreadystatechange = function(e)
 
     }
 
-    if ( document.readyState === 'complete')
+    if ( document.readyState === 'complete' )
     {
+      var active = document.querySelector("#person");
+      active.classList.remove("active-nav");
+
       // Toggle functionality for Person Secondary Navigation
       var btn = document.querySelector('.toggle-menu');
       var icon = document.getElementById('persontoggleicon');
       var hint = document.getElementById('personSecondaryNav');
-      var content = document.getElementById('personTableRow');
+      var content = document.getElementById('person');
       var personTableRow = document.getElementById('personTableRow');
 
       var height = hint.clientHeight;
@@ -49,16 +57,15 @@ document.onreadystatechange = function(e)
       hint.style.height = height + 'px';
       hint.style.width = width + 'px';
       hint.style.left = '-' + width + 'px' ;
-      var active = document.querySelector("#person");
 
       btn.addEventListener('click', function(){
         if(hint.style.display == 'none'){
 
-          hint.style.display = 'inline-block';
           active.classList.add("active-nav");
+          hint.style.display = 'inline-block';
           icon.classList.add("icon-active");
-          hint.style.opacity = '1';
           hint.style.height = document.getElementById('person').clientHeight + 'px';
+          hint.style.opacity = '1';
           hint.style.width = widthTable + 'px';
 
 
