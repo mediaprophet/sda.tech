@@ -1,4 +1,5 @@
 <script>
+var btn;
 document.onreadystatechange = function(e)
 {
     // Snack Bar Call Function
@@ -38,7 +39,7 @@ document.onreadystatechange = function(e)
           document.getElementById('secondaryNavParticularPerson').style.display = 'block';
         }
 
-        var btn = document.querySelector('.toggle-menu');
+        btn = document.querySelector('.toggle-menu');
         btn.addEventListener('click', snackbarCall );
 
     }
@@ -46,7 +47,6 @@ document.onreadystatechange = function(e)
     if ( document.readyState === 'complete' )
     {
       // Toggle functionality for Person Secondary Navigation
-      var btn = document.querySelector('.toggle-menu');
       btn.removeEventListener('click', snackbarCall ) ;
       var icon = document.getElementById('persontoggleicon');
       var hint = document.getElementById('personSecondaryNav');
@@ -64,8 +64,8 @@ document.onreadystatechange = function(e)
       console.log(width + 'x' + height);
       console.log("HP", heightPerson);
       // initialize them (within hint.style)
-      hint.style.height = heightPerson + 'px';
-      hint.style.width = width + 'px';
+      // hint.style.height = heightPerson + 'px';
+      // hint.style.width = width + 'px';
 
       btn.addEventListener('click', function(){
         if( hint.style.display == 'none' ){
@@ -78,7 +78,7 @@ document.onreadystatechange = function(e)
           hint.style.width = widthTable + 'px';
 
           heightPerson = content.clientHeight;
-          hint.style.height = heightPerson;
+          hint.style.height = heightPerson + 'px' ;
 
         }
         else{
@@ -94,6 +94,4 @@ document.onreadystatechange = function(e)
       });
     }
 };
-
-
 </script>

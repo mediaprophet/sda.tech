@@ -36,10 +36,7 @@ navigationdiv: Blog
     {% endfor %}
     </div>
   </article>
-  <div class="pagination-footer">
-    <button href="#" id="prev" class="previous"><< Previous</button>
-    <button href="#" id="next" class="next" >Next >></button>
-  </div>
+  {% include blogPostFooter.html %}
 </div>
 
 <script>

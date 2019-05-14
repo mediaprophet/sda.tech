@@ -112,7 +112,7 @@ navigationdiv: People
             <div class="post-content">
               <div style="text-align:center;"><img class="img-circle-small" style="width: 250px; height: 250px; border-radius: 0%; " src="{{ page.rdf | rdf_property: 'foaf:depiction'}}"></img>
                   <div style="display:inline-block; vertical-align: middle;">
-                    <h3 style="text-align:left;"> {{title}} </h3>
+                    <h3 style="text-align:left;"><a name="personTitle" style="text-decoration:none;">{{title}} </a></h3>
                     {% capture pName %}{{ page.rdf | rdf_property: 'foaf:name' }}{% endcapture %}
                     {% capture query %} SELECT ?l ?loc WHERE { ?l ex:address ?loc . ?l foaf:name "{{pName}}" .}  {% endcapture %}{% assign locations = page.rdf | sparql_query: query %}
                     {% if locations.size == 0 %}
@@ -296,15 +296,9 @@ navigationdiv: People
               </div>
               </div>
               </div>
-        <!-- </div> -->
       </div>
     </div>
   </article>
-  <div class="pagination-footer">
-    <!-- TODO: Activate with Secondary Navigation Update and Adctivation -->
-    <div class="blank-node">
-
-    </div>
-  </div>
+  {% include personFooter.html name=pname %}
 </div>
 <div id="snackbar">Please wait the page is loading</div>
