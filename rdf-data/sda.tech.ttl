@@ -719,6 +719,38 @@ sdaperson:MehdiAli a foaf:Person, sdatech:phdStudent ;
                    sda:group sdagroup:KnowledgeGraph ;
                    cv:aboutPerson "Mehdi Ali is a PhD Student at the Computer Science Department III of the University of Bonn." .
 
+sdaperson:FirasKassawat a foaf:Person, sdatech:phdStudent ;
+                  sda:publicationsTag "kassawat" ;
+                  ex:address sda:Room64-1 ;
+                  foaf:familyName "Kassawat" ;
+                  foaf:name "Firas Kassawat" ;
+                  foaf:nick "Firas" ;
+                  foaf:mbox <mailto:firas.kasa@gmail.com> ;
+                  foaf:depiction <http://www.clker.com/cliparts/d/L/P/X/z/i/no-image-icon-md.png> ;
+                  foaf:firstName "Firas" ;
+                  foaf:title "" ;
+                  foaf:status "PhD Student" ;
+                  sda:profilepage <https://www.linkedin.com/in/firas-kassawat-010978a7/>;
+                  ov:businessCard <http://aksw.org/vCard/Bonn> ;
+                  sda:group sdagroup:SoftwareEngineeringForDataScience ;
+                  cv:aboutPerson "Firas Kassawat is a PhD Student at the Computer Science Department III of the University of Bonn." .
+
+sdaperson:LarsReimann a foaf:Person, sdatech:phdStudent ;
+                  sda:publicationsTag "reimann" ;
+                  ex:address sda:Room52 ;
+                  foaf:familyName "Reimann" ;
+                  foaf:name "Lars Reimann" ;
+                  foaf:nick "Lars" ;
+                  foaf:mbox <mailto:mail@larsreimann.com> ;
+                  foaf:depiction </assets/images/people/lars-reimann.jpg> ;
+                  foaf:firstName "Lars" ;
+                  foaf:title "" ;
+                  foaf:status "PhD Student" ;
+                  sda:profilepage <https://www.linkedin.com/in/lars-reimann-a42568168/>, <https://github.com/lars-reimann>;
+                  ov:businessCard <http://aksw.org/vCard/Bonn> ;
+                  sda:group sdagroup:SoftwareEngineeringForDataScience ;
+                  cv:aboutPerson "Lars Reimann is a PhD Student at the Computer Science Department III of the University of Bonn." .
+
 
 ##############################Associated Researchers#####################
 
@@ -952,7 +984,7 @@ sdaperson:MichaelGalkin a foaf:Person, sdatech:associateReseracher ;
                    foaf:depiction </assets/images/people/michael-galkin.jpg> ;
                    foaf:phone "" ;
                    foaf:firstName "Michael" ;
-                   foaf:title "" ;
+                   foaf:title "Dr. " ;
                    foaf:status "Senior Researcher" ;
                    sda:profilepage <https://www.linkedin.com/in/michael-galkin-80b71294/> ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
@@ -1110,22 +1142,6 @@ sdaperson:MehrdadBozorg a foaf:Person, sdatech:studentAssistant ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    sda:group sdagroup:KnowledgeGraph ;
                    cv:aboutPerson "Mehrdad Bozorg is a Student Assistant at the Computer Science Department III of the University of Bonn." .
-
-sdaperson:FirasKassawat a foaf:Person, sdatech:studentAssistant ;
-                  sda:publicationsTag "firas" ;
-                  ex:address sda:Room64-1 ;
-                  foaf:familyName "Kassawat" ;
-                  foaf:name "Firas Kassawat" ;
-                  foaf:nick "Firas" ;
-                  foaf:mbox <mailto:firas.kasa@gmail.com> ;
-                  foaf:depiction <http://www.clker.com/cliparts/d/L/P/X/z/i/no-image-icon-md.png> ;
-                  foaf:firstName "Firas" ;
-                  foaf:title "" ;
-                  foaf:status "Student Assistant" ;
-                  sda:profilepage <https://www.linkedin.com/in/firas-kassawat-010978a7/>;
-                  ov:businessCard <http://aksw.org/vCard/Bonn> ;
-                  sda:group sdagroup:KnowledgeGraph ;
-                  cv:aboutPerson "Firas Kassawat is a Student Assistant at the Computer Science Department III of the University of Bonn." .
 
 sdaperson:MirzaMohtashimAlam a foaf:Person, sdatech:studentAssistant ;
                   sda:publicationsTag "mirza" ;
@@ -25669,6 +25685,12 @@ sdablog:generalposts a foaf:Document ;
 
 <https://www.linkedin.com/in/maleshkova/> a schema:ProfilePage ;
                                           ex:buttonLabel "Linkedin" .
+
+<https://www.linkedin.com/in/lars-reimann-a42568168/> a schema:ProfilePage ;
+                                                          ex:buttonLabel "Linkedin" .
+
+<https://github.com/lars-reimann> a schema:ProfilePage ;
+                                                          ex:buttonLabel "GitHub" .
 
 ##########################################
 ###################Rooms##################
