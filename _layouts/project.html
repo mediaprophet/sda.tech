@@ -6,8 +6,10 @@ toggledURLTo: /project/allProjects
 navigationdiv: Projects
 ---
 {% capture title %} {{ page.rdf | rdf_property: 'rdfs:label' }} {% endcapture %}
+{% include projectQuerries.html %}
 
 {% include projectHeaderActivation.html %}
+
 <div class="borderAll">
   <div class="pagination">
     <!-- Toggle Button Item -->
@@ -15,7 +17,7 @@ navigationdiv: Projects
     <!-- {% include toggleMenu.html type = "oneRow" %} -->
     <!--  -->
     <div id="allProjectHeader" style="display:none;">
-      {% include projectHeader.html active="Projects"%}
+      {% include projectHeader.html active="Projects" total=allProjects.size %}
     </div>
     <div id="particularProjectHeader" style="display:block;">
       <!-- Query For Funded Projects -->
@@ -24,7 +26,7 @@ navigationdiv: Projects
       {% assign fundedprojects = page.rdf | sparql_query: query %}
 
       {% if fundedprojects.size != 0 %}
-        {% include projectHeader.html active="Funded Projects"%}
+        {% include projectHeader.html active="Funded Projects" total=fundprojects.size %}
       {% endif %}
 
       <!--Query for Open source Projects  -->
@@ -33,7 +35,7 @@ navigationdiv: Projects
       {% assign opensourceprojects = page.rdf | sparql_query: query %}
 
       {% if opensourceprojects.size != 0 %}
-        {% include projectHeader.html active="Open Source Projects"%}
+        {% include projectHeader.html active="Open Source Projects" total=opensource.size %}
       {% endif %}
 
       <!--Query for Incubator Projects  -->
@@ -42,7 +44,7 @@ navigationdiv: Projects
       {% assign incubatorprojects = page.rdf | sparql_query: query %}
 
       {% if incubatorprojects.size != 0 %}
-        {% include projectHeader.html active="Incubator Projects"%}
+        {% include projectHeader.html active="Incubator Projects" total=incubators.size %}
       {% endif %}
 
       <!--Query for Archived Projects  -->
@@ -51,7 +53,7 @@ navigationdiv: Projects
       {% assign archivedprojects = page.rdf | sparql_query: query %}
 
       {% if archivedprojects.size != 0 %}
-        {% include projectHeader.html active="Archived Projects"%}
+        {% include projectHeader.html active="Archived Projects" total=archiveds.size %}
       {% endif %}
 
     </div>

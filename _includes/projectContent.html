@@ -1,7 +1,4 @@
 <div id="allProjects" style="{% if include.active == 'allProjects' %}display:block{% else %}display:none{% endif %}">
-  <!-- QUERRY to GET ALL the PROJECTS -->
-  {% capture query %} SELECT ?project ?title ?description ?longdescription ?image ?homepage ?twitter ?source ?download WHERE{ ?project a foaf:Project . ?project rdfs:label ?title . ?project ex:description ?description . optional {?project ex:longdescription ?longdescription }
-   optional {?project foaf:depiction ?image } optional { ?project foaf:homepage ?homepage } optional {?project sda:twitter ?twitter } optional {?project sda:source ?source } optional { ?project sda:download ?download } } {% endcapture %} {% assign allProjects = page.rdf | sparql_query: query %}
   {% if allProjects.size != 0  %}
     <div class="content-title">
       <h2>Projects</h2>
@@ -22,11 +19,7 @@
   {% endif %}
 </div>
 <div id="fundedProjects" style="{% if include.active == 'fundedProjects' %}display:block{% else %}display:none{% endif %}">
-  <!-- QUERRY to GET the FundedProjects -->
-  {% capture query %} SELECT ?project ?title ?description ?longdescription ?image ?homepage ?twitter ?source ?download WHERE{ ?project a foaf:Project . ?project a sdatech:fundedProject . ?project rdfs:label ?title . ?project ex:description ?description
-  . optional {?project foaf:depiction ?image } optional { ?project foaf:homepage ?homepage } optional {?project sda:twitter ?twitter } optional {?project ex:source ?source } optional { ?project ex:download ?download }  } {% endcapture %} {% assign fundprojects
-  = page.rdf | sparql_query: query %}
-  {% if fundedprojects.size != 0  %}
+    {% if fundedprojects.size != 0  %}
     <div class="content-title">
       <h2>Funded Projects</h2>
     </div>
@@ -45,11 +38,7 @@
   {% endif %}
 </div>
 <div id="openSourceProjects" style="{% if include.active == 'openSourceProjects' %}display:block{% else %}display:none{% endif %}">
-  <!-- QUERRY to GET the FundedProjects -->
-  {% capture query %} SELECT ?project ?title ?description ?longdescription ?image ?homepage ?twitter ?source ?download WHERE{ ?project a foaf:Project . ?project a sdatech:openSourceProject . ?project rdfs:label ?title . ?project ex:description ?description
-  .  optional {?project foaf:depiction ?image } optional { ?project foaf:homepage ?homepage } optional {?project sda:twitter ?twitter } optional {?project ex:source ?source } optional { ?project ex:download ?download } } {% endcapture %} {% assign opensource
-  = page.rdf | sparql_query: query %} {% assign opensourceCount = opensource | size %} {% assign iterator = 1 %} {% assign lastItem = 0 %}
-
+  {% assign opensourceCount = opensource | size %} {% assign iterator = 1 %} {% assign lastItem = 0 %}
   {% if opensource.size != 0  %}
     <div class="content-title">
       <h2>Open Source Projects</h2>
@@ -68,11 +57,7 @@
   {% endif %}
 </div>
 <div id="incubatorProjects" style="{% if include.active == 'incubatorProjects' %}display:block{% else %}display:none{% endif %}">
-  <!-- QUERRY to GET the FundedProjects -->
-  {% capture query %} SELECT ?project ?title ?description ?longdescription ?image ?homepage ?twitter ?source ?download WHERE{ ?project a foaf:Project . ?project a sdatech:incubator . ?project rdfs:label ?title . ?project ex:description ?description
-  . optional {?project foaf:depiction ?image }. optional { ?project foaf:homepage ?homepage }. optional {?project sda:twitter ?twitter }. optional {?project ex:source ?source }. optional { ?project ex:download ?download } } {% endcapture %} {% assign incubators
-  = page.rdf | sparql_query: query %} {% assign incubatorsCount = incubators | size %} {% assign iterator = 1 %} {% assign lastItem = 0 %}
-
+  {% assign incubatorsCount = incubators | size %} {% assign iterator = 1 %} {% assign lastItem = 0 %}
   {% if incubators.size != 0  %}
     <div class="content-title">
       <h2>Incubator Projects</h2>
@@ -92,10 +77,6 @@
   {% endif %}
 </div>
 <div id="archProjectList" style="{% if include.active == 'archProjectList' %}display:block{% else %}display:none{% endif %}">
-  <!--QUERRY to GET the Archived Projects  -->
-  {% capture query %} SELECT ?project ?title ?description ?longdescription ?image ?homepage ?twitter ?source ?download WHERE{ ?project a foaf:Project . ?project a sdatech:archived . ?project rdfs:label ?title . ?project ex:description ?description
-  .  optional {?project foaf:depiction ?image } optional { ?project foaf:homepage ?homepage } optional {?project sda:twitter ?twitter } optional {?project ex:source ?source } optional { ?project ex:download ?download } } {% endcapture %} {% assign archiveds
-  = page.rdf | sparql_query: query %} {% assign archivedsCount = archiveds | size %} {% assign iterator = 1 %} {% assign lastItem = 0 %}
   {% if archiveds.size != 0  %}
     <div class="content-title">
       <h2>Archived Projects</h2>

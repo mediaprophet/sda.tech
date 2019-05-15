@@ -11,9 +11,11 @@ deactivateHeader();
 activateHeader('{{page.navigationdiv}}');
 </script>
 
+{% include projectQuerries.html %}
+
 <div class="borderAll">
   <div class="pagination">
-    {% include projectHeader.html active="Funded Projects"%}
+    {% include projectHeader.html active="Funded Projects" total=fundprojects.size %}
   </div>
   <div class="projects content-people clear-padding">
     {% include projectContent.html active="fundedProjects"%}
