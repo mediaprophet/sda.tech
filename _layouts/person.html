@@ -17,8 +17,19 @@ navigationdiv: People
     {% include toggleMenu.html  type = "twoRow" id="persontoggleicon" %}
 
     <div id="allPersonHeader" style="display:none;">
-      {% include peopleHeader.html active ="People" %}
       {% assign completeList = professorsArray | concat: seniorResearchersArray | concat: phdStudentsArray | concat: associateResearchersArray | concat: studentAssistantsArray | concat: interneesArray %}
+      {% include peopleHeader.html active ="People" total=completeList.size %}
+      {% for items in completeList %}
+        {% capture nameInListAll %}{{items.pname}}{% endcapture %}
+        {% if nameInListAll == pname %}
+          {% assign indexPreviousAll = forloop0.index | minus: 1 %}
+          {% assign indexNextAll = forloop0.index | plus:1  %}
+        {% endif %}
+      {% endfor %}
+      {% capture previousTitleAll %}{{completeList[indexPreviousAll].pname}}{% endcapture %}
+      {% assign previousUrlAll = completeList[indexPreviousAll].Person | remove: "http://sda.tech/" %}
+      {% capture nextTitleAll %}{{completeList[indexNextAll].pname}}{% endcapture %}
+      {% assign nextUrlAll = completeList[indexNextAll].Person | remove: "http://sda.tech/" %}
 
     </div>
     <div id="particularPersonHeader" style="display:none;">
@@ -28,7 +39,7 @@ navigationdiv: People
       {% assign professors = page.rdf | sparql_query: query %}
 
       {% if professors.size != 0 %}
-        {% include peopleHeader.html active ="Professors" %}
+        {% include peopleHeader.html active ="Professors" total=professorsArray.size %}
         {% assign list = professorsArray %}
       {% endif %}
 
@@ -39,7 +50,7 @@ navigationdiv: People
 
 
       {% if seniorresearchers.size != 0 %}
-        {% include peopleHeader.html active ="Senior Researchers" %}
+        {% include peopleHeader.html active ="Senior Researchers" total=seniorResearchersArray.size %}
         {% assign list = seniorResearchersArray %}
       {% endif %}
 
@@ -49,7 +60,7 @@ navigationdiv: People
       {% assign phdstudents = page.rdf | sparql_query: query %}
 
       {% if phdstudents.size != 0 %}
-        {% include peopleHeader.html active ="PhD Students" %}
+        {% include peopleHeader.html active ="PhD Students" total=phdStudentsArray.size %}
         {% assign list = phdStudentsArray %}
       {% endif %}
 
@@ -59,7 +70,7 @@ navigationdiv: People
       {% assign associatedresearchers = page.rdf | sparql_query: query %}
 
       {% if associatedresearchers.size != 0 %}
-        {% include peopleHeader.html active ="Associate Researchers" %}
+        {% include peopleHeader.html active ="Associate Researchers" total=associateResearchersArray.size %}
         {% assign list = associateResearchersArray %}
       {% endif %}
 
@@ -69,7 +80,7 @@ navigationdiv: People
       {% assign studentassistants = page.rdf | sparql_query: query %}
 
       {% if studentassistants.size != 0 %}
-        {% include peopleHeader.html active ="Student Assistants" %}
+        {% include peopleHeader.html active ="Student Assistants" total=studentAssistantsArray.size %}
         {% assign list = studentAssistantsArray %}
       {% endif %}
 
@@ -79,7 +90,7 @@ navigationdiv: People
       {% assign interns = page.rdf | sparql_query: query %}
 
       {% if interns.size != 0 %}
-        {% include peopleHeader.html active ="Interns" %}
+        {% include peopleHeader.html active ="Interns" total=interneesArray.size %}
         {% assign list = interneesArray %}
       {% endif %}
 
@@ -89,10 +100,22 @@ navigationdiv: People
       {% assign formermembers = page.rdf | sparql_query: query %}
 
       {% if formermembers.size != 0 %}
-        {% include peopleHeader.html active ="Former Members" %}
+        {% include peopleHeader.html active ="Former Members" total=formerMembersArray.size  %}
         {% assign list = formerMembersArray %}
       {% endif %}
       <!-- EndQuery -->
+      {% for items in list %}
+        {% capture nameInList %}{{items.pname}}{% endcapture %}
+        {% if nameInList == pname %}
+          {% assign indexPrevious = forloop0.index | minus:1 %}
+          {% assign indexNext = forloop0.index | plus:1  %}
+        {% endif %}
+      {% endfor %}
+      {% capture previousTitle %}{{list[indexPrevious].pname}}{% endcapture %}
+      {% assign previousUrl = list[indexPrevious].Person | remove: "http://sda.tech/" %}
+      {% capture nextTitle %}{{list[indexNext].pname}}{% endcapture %}
+      {% assign nextUrl = list[indexNext].Person | remove: "http://sda.tech/" %}
+
     </div>
   </div>
   <article class="post">
@@ -111,8 +134,8 @@ navigationdiv: People
           <div id="person" class="content-people" >
             <div class="post-content">
               <div style="text-align:center;"><img class="img-circle-small" style="width: 250px; height: 250px; border-radius: 0%; " src="{{ page.rdf | rdf_property: 'foaf:depiction'}}"></img>
-                  <div style="display:inline-block; vertical-align: middle;">
-                    <h3 style="text-align:left;"><a name="personTitle" style="text-decoration:none;">{{title}} </a></h3>
+                  <div style="display:inline-block; vertical-align: middle; color:#424242;">
+                    <h3 style="text-align:left;"><a name="personTitle" style="text-decoration:none; color:#424242; font-weight:lighter; font-size:x-large;">{{title}} </a></h3>
                     {% capture pName %}{{ page.rdf | rdf_property: 'foaf:name' }}{% endcapture %}
                     {% capture query %} SELECT ?l ?loc WHERE { ?l ex:address ?loc . ?l foaf:name "{{pName}}" .}  {% endcapture %}{% assign locations = page.rdf | sparql_query: query %}
                     {% if locations.size == 0 %}
@@ -299,6 +322,13 @@ navigationdiv: People
       </div>
     </div>
   </article>
-  {% include personFooter.html name=pname %}
+  <div class="footer-wraper">
+    <div id="footer-allPerson" style="display:none;">
+      {% include personFooter.html name=pname previousPerson=previousTitleAll previousUrl=previousUrlAll nextPerson=nextTitleAll nextUrl=nextUrlAll %}
+    </div>
+    <div id="footer-particularPerson" style="display:none;">
+      {% include personFooter.html name=pname previousPerson=previousTitle previousUrl=previousUrl nextPerson=nextTitle nextUrl=nextUrl  %}
+    </div>
+  </div>
 </div>
 <div id="snackbar">Please wait the page is loading</div>

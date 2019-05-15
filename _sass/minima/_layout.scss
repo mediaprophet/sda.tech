@@ -272,6 +272,10 @@
   // margin-bottom: $spacing-unit;
   text-align: left;
   // padding: 24px;
+  p {
+    color: #757575;
+  }
+
   h2 {
     @include relative-font-size(2);
     @include media-query($on-laptop) {
@@ -630,6 +634,10 @@
     height: 100%;
     width: 50%;
     padding: 8px;
+
+    h2{
+      color: $blue-sda-color;
+    }
   }
 
   .footer-left{
@@ -645,6 +653,11 @@
     font-size: medium;
     color: #424242;
     text-align: center;
+    margin-bottom: 0px;
+  }
+
+  h2:hover {
+    color: $blue-sda-color;
   }
 
 }
@@ -687,11 +700,19 @@
   text-decoration: none;
   transition: background-color 0.3s;
   font-weight: lighter;
+
+  span{
+    visibility: hidden;
+  }
 }
 
 .pagination a.active {
   background-color: #ddd;
   font-weight: bold;
+
+  span{
+    visibility: visible;
+  }
 }
 
 .pagination a:hover:not(.active) {
@@ -1958,53 +1979,87 @@ ul.sc_menu {
   border: 1px solid #fff;
 }
 
+//REference https://css-tricks.com/overriding-default-button-styles/
+button {
+    display: inline-block;
+    border: none;
+    padding: 1rem 2rem;
+    margin: 0;
+    text-decoration: none;
+    background: #0069ed;
+    color: #ffffff;
+    font-family: sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    transition: background 250ms ease-in-out,
+                transform 150ms ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+button:hover,
+button:focus {
+    background: #0053ba;
+}
+
+button:focus {
+    outline: 1px solid #fff;
+    outline-offset: -4px;
+}
+
+button:active {
+    transform: scale(0.99);
+}
+
 .next {
-  display: block;
-  float: right;
-  margin-right: 300px;
-  border-radius: 3px;
-  transition: 0.3s;
-  background: #eaeaea;
-  color: #00000;
-  font-weight: 400;
-  line-height: normal;
+  // display: block;
+  float: left;
+  // border-radius: 3px;
+  // transition: 0.3s;
+  // background: white;
+  // color: #00000;
+  // font-weight: 400;
+  // line-height: normal;
   outline-style: none;
-  padding: 0.7142em 1.1428em;
-}
+  // padding: 0.7142em 1.1428em;
+  min-width: 150px;
 
-.next a {
-  background: #eaeaea !important;
-  color: #00000 !important;
 }
-
-.next a:hover {
-  background-color: #0B95F7 !important;
-  color: #ffffff !important;
-}
+//
+// .next a {
+//   background: #eaeaea !important;
+//   color: #00000 !important;
+// }
+//
+// .next a:hover {
+//   background-color: #0B95F7 !important;
+//   color: #ffffff !important;
+// }
 
 .previous {
-  display: block;
-  float: left;
-  margin-left: 300px;
+  // display: block;
+  float: right;
   border-radius: 3px;
-  transition: 0.3s;
-  background: #eaeaea;
-  color: #00000;
-  font-weight: 400;
-  line-height: normal;
+  // transition: 0.3s;
+  // background: #eaeaea;
+  // color: #00000;
+  // font-weight: 400;
+  // line-height: normal;
   outline-style: none;
-  padding: 0.7142em 1.1428em;
+  // padding: 0.7142em 1.1428em;
+  min-width: 150px;
 }
-
-.previous a {
-  background: #eaeaea !important;
-  color: #00000 !important;
-}
-
-.previous a:hover {
-  background: #0B95F7 !important;
-  color: #ffffff !important;
-}
+//
+// .previous a {
+//   background: #eaeaea !important;
+//   color: #00000 !important;
+// }
+//
+// .previous a:hover {
+//   background: #0B95F7 !important;
+//   color: #ffffff !important;
+// }
 
 div.scroll {
   float: left;

@@ -1,14 +1,15 @@
 <script>
 var btn;
+// Snack Bar Call Function
+function snackbarCall()
+{
+  var x = document.getElementById("snackbar");
+  x.className = "show";
+  setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+}
+
 document.onreadystatechange = function(e)
 {
-    // Snack Bar Call Function
-    function snackbarCall()
-    {
-      var x = document.getElementById("snackbar");
-      x.className = "show";
-      setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
-    }
 
     if ( document.readyState === 'loading' )
     {
@@ -28,6 +29,8 @@ document.onreadystatechange = function(e)
           document.getElementById('particularPersonHeader').style.display = 'none';
           document.getElementById('secondaryNavPersonAll').style.display = 'block';
           document.getElementById('secondaryNavParticularPerson').style.display = 'none';
+          document.getElementById('footer-particularPerson').style.display = 'none' ;
+          document.getElementById('footer-allPerson').style.display = 'block' ;
 
           if(document.getElementById('allPersonHeader').style.display == 'block' && document.getElementById('particularPersonHeader').style.display )
             localStorage.setItem("boolFromAllToDetailPerson", 'false' );
@@ -37,6 +40,8 @@ document.onreadystatechange = function(e)
           document.getElementById('particularPersonHeader').style.display = 'block';
           document.getElementById('secondaryNavPersonAll').style.display = 'none';
           document.getElementById('secondaryNavParticularPerson').style.display = 'block';
+          document.getElementById('footer-particularPerson').style.display = 'block' ;
+          document.getElementById('footer-allPerson').style.display = 'none' ;
         }
 
         btn = document.querySelector('.toggle-menu');

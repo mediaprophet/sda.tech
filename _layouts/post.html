@@ -14,6 +14,7 @@ navigationdiv: Blog
 {% capture  date %} {{ page.rdf | rdf_property: 'dct:created' }} {% endcapture %}
 {% capture content %} {{ page.rdf | rdf_property: 'sioc:content' }} {% endcapture %}
 {% assign person= creator | remove: " http://sda.tech/Person/" %}
+{% include blogQuerries.html %}
 
 <div class="borderAll">
   <div class="pagination">

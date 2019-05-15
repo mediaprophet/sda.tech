@@ -10,9 +10,12 @@ deactivateHeader();
 activateHeader('{{page.navigationdiv}}');
 </script>
 
+{% include personQuerries.html %}
+{% assign totalPerson = professorsArray.size | plus:seniorResearchersArray | plus:phdStudentsArray | plus:associateResearchersArray | plus:studentAssistantsArray | plus:interneesArray | plus:formerMembersArray %}
+
 <div class="borderAll" >
   <div class="pagination">
-    {% include peopleHeader.html active ="People" %}
+    {% include peopleHeader.html active ="People" total=totalPerson %}
   </div>
   <div class="content-people">
     {% include peopleContent.html active ="All" %}
