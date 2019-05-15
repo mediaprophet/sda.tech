@@ -636,7 +636,11 @@
     padding: 8px;
 
     h2{
-      color: $blue-sda-color;
+      color: #424242;
+    }
+
+    h2:hover{
+      color: #424242;
     }
   }
 
@@ -651,12 +655,24 @@
   h2 {
     font-weight: lighter;
     font-size: medium;
-    color: #424242;
+    color: #616161;
     text-align: center;
     margin-bottom: 0px;
   }
 
   h2:hover {
+    color: $blue-sda-color;
+
+    i{
+      color: $blue-sda-color;
+    }
+  }
+
+  i {
+    color: #616161;
+  }
+
+  i:hover{
     color: $blue-sda-color;
   }
 

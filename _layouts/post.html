@@ -14,6 +14,7 @@ navigationdiv: Blog
 {% capture  date %} {{ page.rdf | rdf_property: 'dct:created' }} {% endcapture %}
 {% capture content %} {{ page.rdf | rdf_property: 'sioc:content' }} {% endcapture %}
 {% assign person= creator | remove: " http://sda.tech/Person/" %}
+
 {% include blogQuerries.html %}
 
 <div class="borderAll">
@@ -32,7 +33,7 @@ navigationdiv: Blog
       {% assign papernotifications = page.rdf | sparql_query: query %}
 
       {% if papernotifications.size != 0 %}
-        {% include blogHeader.html active="Paper Notifications"%}
+        {% include blogHeader.html active="Paper Notifications" total=paperNotificationsArray.size %}
       {% endif %}
 
       <!-- Query for Invited Talks -->
@@ -41,7 +42,7 @@ navigationdiv: Blog
       {% assign invitedtalks = page.rdf | sparql_query: query %}
 
       {% if invitedtalks.size != 0 %}
-        {% include blogHeader.html active="Invited Talks"%}
+        {% include blogHeader.html active="Invited Talks" total=invitedTalksArray.size %}
       {% endif %}
 
       <!-- Query for Project Announcements -->
@@ -50,7 +51,7 @@ navigationdiv: Blog
       {% assign projectannouncements = page.rdf | sparql_query: query %}
 
       {% if projectannouncements.size != 0 %}
-        {% include blogHeader.html active="Project Announcements"%}
+        {% include blogHeader.html active="Project Announcements" total=projectAnnouncementsArray %}
       {% endif %}
 
       <!-- Query for General Posts -->
@@ -59,7 +60,7 @@ navigationdiv: Blog
       {% assign generalposts = page.rdf | sparql_query: query %}
 
       {% if generalposts.size != 0 %}
-        {% include blogHeader.html active="General Posts"%}
+        {% include blogHeader.html active="General Posts" total=generalPostsArray.size %}
       {% endif %}
 
     </div>

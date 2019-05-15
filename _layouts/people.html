@@ -11,7 +11,7 @@ activateHeader('{{page.navigationdiv}}');
 </script>
 
 {% include personQuerries.html %}
-{% assign totalPerson = professorsArray.size | plus:seniorResearchersArray | plus:phdStudentsArray | plus:associateResearchersArray | plus:studentAssistantsArray | plus:interneesArray | plus:formerMembersArray %}
+{% assign totalPerson = professorsArray.size | plus:seniorResearchersArray.size | plus:phdStudentsArray.size | plus:associateResearchersArray.size | plus:studentAssistantsArray.size | plus:interneesArray.size  %}
 
 <div class="borderAll" >
   <div class="pagination">
