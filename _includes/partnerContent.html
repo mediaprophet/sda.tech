@@ -1,7 +1,4 @@
 <div id="allPartners" style="{% if include.active == 'all' %}display:block{% else %}display:none{% endif %}">
-  <!-- QUERRY to GET ALL the PARTNERS -->
-  {% capture query %} SELECT ?partners ?title ?description ?image ?homepage WHERE{ ?partners a sdatech:Partner . OPTIONAL { ?partners rdfs:label ?title } . OPTIONAL { ?partners dct:abstract ?description } . OPTIONAL { ?partners foaf:depiction ?image }
-  . OPTIONAL { ?partners foaf:homepage ?homepage } . } ORDER BY ASC(?title) {% endcapture %} {% assign partnersArray = page.rdf | sparql_query: query %} {% assign length = partners | size %}
   <!--Presenting ALL the PARTNERS  -->
   {% if partnersArray.size != 0 %}
     <div class="content-title">
@@ -21,10 +18,7 @@
   {% endif %}
 </div>
 <div id="industryPartners" style="{% if include.active == 'industry' %}display:block{% else %}display:none{% endif %}">
-  <!-- QUERRY to GET the INDUSTRY PARTNERS -->
-  {% capture query %} SELECT ?partners ?title ?description ?image ?homepage WHERE{ ?partners a sdatech:Partner . ?partners a sdatech:industryPartner . ?partners foaf:name ?title . ?partners dct:abstract ?description . ?partners foaf:depiction ?image
-  . ?partners foaf:homepage ?homepage . } {% endcapture %} {% assign partners = page.rdf | sparql_query: query %} {% assign length = partners | size %}
-  {% if partners.size != 0 %}
+  {% if industryPartnersArray.size != 0 %}
     <!--Presenting ALL the INDUSTRY PARTNERS  -->
     <div class="content-title">
       <h2>Industry Partners</h2>
@@ -42,12 +36,8 @@
   {% endif %}
 </div>
 <div id="academicPartners" style="{% if include.active == 'academic' %}display:block{% else %}display:none{% endif %}">
-  <!-- QUERRY to GET ALL the ACADMEIC PARTNERS -->
-  {% capture query %} SELECT ?partners ?title ?description ?image ?homepage WHERE{ ?partners a sdatech:Partner . ?partners a sdatech:academicPartner . ?partners foaf:name ?title . ?partners dct:abstract ?description . ?partners foaf:depiction ?image
-  . ?partners foaf:homepage ?homepage . } {% endcapture %} {% assign partners = page.rdf | sparql_query: query %} {% assign length = partners | size %}
   <!--Presenting ALL the ACADEMIC PARTNERS  -->
-  {% if partners.size != 0 %}
-    <!--Presenting ALL the INDUSTRY PARTNERS  -->
+  {% if academicPartnersArray.size != 0 %}
     <div class="content-title">
       <h2>Academic Partners</h2>
     </div>
