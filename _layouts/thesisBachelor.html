@@ -13,15 +13,15 @@ activateHeader('{{page.navigationdiv}}');
 {% include toggleThesisTypes.html %}
 {% include toggleBachelorThesis.html %}
 {% include toggleMasterThesis.html %}
-
+{% include thesisQuerries.html %}
+{% assing totalNumber=openBachelorsThesis.size | plus:archivedBachelorsThesis.size %}
 <!-- Presentation of thesis Items  -->
 <div class="borderAll">
   <article class="post">
     <!--Thesis Header  -->
-    {% include thesisHeader.html active="Bachelor Thesis" %}
+    {% include thesisHeader.html active="Bachelor Thesis" total=totalNumber %}
     <!--Thesis Contetnt Types  -->
     {% include thesisContent.html active="bachelor" %}
   </article>
-  <div class="pagination-footer">
-  </div>
+  {% include thesisFooter.html %}
 </div>

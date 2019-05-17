@@ -13,15 +13,15 @@ activateHeader('{{page.navigationdiv}}');
 {% include toggleThesisTypes.html %}
 {% include toggleBachelorThesis.html %}
 {% include toggleMasterThesis.html %}
+{% include thesisQuerries.html %}
 
 <!-- Presentation of Completed Thesis Items  -->
 <div class="borderAll">
   <article class="post">
     <!--Thesis Header  -->
-    {% include thesisHeader.html active="Completed Thesis" %}
+    {% include thesisHeader.html active="Completed Thesis" total=archivedThesisList.size %}
     <!--Thesis Contetnt Types  -->
     {% include thesisContent.html active="completed" %}
   </article>
-  <div class="pagination-footer">
-  </div>
+  {% include thesisFooter.html %}
 </div>

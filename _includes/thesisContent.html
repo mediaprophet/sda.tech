@@ -1,13 +1,6 @@
-<!--Querry to GET all the Contact Persons of the Thesis   -->
-{% capture query %} SELECT  ?thesis ?thesisTitle ?person ?personName ?personImage WHERE{
- ?thesis a dct:BibliographicResource . ?thesis a bibo:Thesis . ?thesis dct:title ?thesisTitle . ?thesis dct:creator ?person . ?person foaf:name ?personName . ?person foaf:depiction ?personImage . } {% endcapture %} {% assign personsInThesis = page.rdf | sparql_query: query %}
-
 <div class="thesis-items content-people clear-padding">
   <div id="allThesis" style="{% if include.active == 'Thesis' %}display:block{% else %}display:none{% endif %}">
     <div id="openTheses" style="display:block">
-      <!--QUERY for all open Thesis  -->
-      {% capture query %} SELECT  ?thesis ?thesisTitle ?language ?link ?abstract WHERE{
-       ?thesis a dct:BibliographicResource . ?thesis a bibo:Thesis . ?thesis a sdatech:openThesis . ?thesis dct:title ?thesisTitle . ?thesis dct:abstract ?abstract . ?thesis dct:language ?language . OPTIONAL { ?thesis foaf:homepage ?link } . } {% endcapture %} {% assign openThesis = page.rdf | sparql_query: query %}
        <!-- Presentation for all Open Thesis  -->
        {% if openTheses.size != 0 %}
          <div class="content-title">
@@ -38,9 +31,6 @@
       </label>
     </div>
     <div id="openBachelorsTheses" style="display:block">
-      <!--QUERY for open Bachelor Thesis  -->
-      {% capture query %} SELECT  ?thesis ?thesisTitle ?language ?link ?abstract WHERE{
-       ?thesis a dct:BibliographicResource . ?thesis a bibo:Thesis . ?thesis a sdatech:openThesis . ?thesis a sdatech:bachelorThesis .  ?thesis dct:title ?thesisTitle . ?thesis dct:abstract ?abstract . ?thesis dct:language ?language . OPTIONAL { ?thesis foaf:homepage ?link } . } {% endcapture %} {% assign openBachelorsThesis = page.rdf | sparql_query: query %}
        {% if openBachelorsThesis.size != 0 %}
          <div class="content-title">
            <h2>Available Bachelor Thesis</h2>
@@ -61,9 +51,6 @@
         {% endif %}
     </div>
     <div id="archivedBachelorThesis" style="display:none">
-      <!--QUERY for archived Bachelor Thesis  -->
-      {% capture query %} SELECT  ?thesis ?thesisTitle ?language ?link ?abstract WHERE{
-       ?thesis a dct:BibliographicResource . ?thesis a bibo:Thesis . ?thesis a sdatech:archivedThesis . ?thesis a sdatech:bachelorThesis . ?thesis dct:title ?thesisTitle . ?thesis dct:abstract ?abstract . ?thesis dct:language ?language . OPTIONAL { ?thesis foaf:homepage ?link } . } {% endcapture %} {% assign archivedBachelorsThesis = page.rdf | sparql_query: query %}
       {% if archivedBachelorsThesis.size != 0 %}
         <div class="content-title">
           <h2>Completed Bachelor Thesis</h2>
@@ -92,9 +79,6 @@
       </label>
     </div>
     <div id="openMasterTheses" style="display:block">
-      <!--QUERY for open Master Thesis  -->
-      {% capture query %} SELECT  ?thesis ?thesisTitle ?language ?link ?abstract WHERE{
-       ?thesis a dct:BibliographicResource . ?thesis a bibo:Thesis . ?thesis a sdatech:openThesis . ?thesis a sdatech:masterThesis . ?thesis dct:title ?thesisTitle . ?thesis dct:abstract ?abstract . ?thesis dct:language ?language . OPTIONAL { ?thesis foaf:homepage ?link } . } {% endcapture %} {% assign openMasterThesis = page.rdf | sparql_query: query %}
       {% if openMasterThesis.size != 0 %}
           <div class="content-title">
             <h2>Available Master Thesis</h2>
@@ -115,9 +99,6 @@
       {% endif %}
     </div>
     <div id="archivedMasterThesis" style="display:none">
-      <!--QUERY for archived Master Thesis  -->
-      {% capture query %} SELECT  ?thesis ?thesisTitle ?language ?link ?abstract WHERE{
-       ?thesis a dct:BibliographicResource . ?thesis a bibo:Thesis . ?thesis a sdatech:archivedThesis . ?thesis a sdatech:masterThesis . ?thesis dct:title ?thesisTitle . ?thesis dct:abstract ?abstract . ?thesis dct:language ?language . OPTIONAL { ?thesis foaf:homepage ?link } . } {% endcapture %} {% assign archivedMasterThesis = page.rdf | sparql_query: query %}
       {% if archivedMasterThesis.size != 0 %}
         <div class="content-title">
           <h2>Completed Master Thesis</h2>
@@ -139,9 +120,6 @@
     </div>
   </div>
   <div id="finishedThesis" style="{% if include.active == 'ongoing' %}display:block{% else %}display:none{% endif %}">
-      <!-- QUERY for OnGoingThesis  -->
-      {% capture query %} SELECT  ?thesis ?thesisTitle ?language ?link ?abstract WHERE{
-       ?thesis a dct:BibliographicResource . ?thesis a bibo:Thesis . ?thesis a sdatech:ongoingThesis . ?thesis dct:title ?thesisTitle . ?thesis dct:abstract ?abstract . ?thesis dct:language ?language . OPTIONAL { ?thesis foaf:homepage ?link } . } {% endcapture %} {% assign openOngoingThesis = page.rdf | sparql_query: query %}
       {% if openOngoingThesis.size != 0 %}
           <div class="content-title">
             <h2>On Going Thesis</h2>
@@ -163,9 +141,6 @@
   </div>
   <div id="compltedThesisContent" style="{% if include.active == 'completed' %}display:block{% else %}display:none{% endif %}">
     <div class="completedThesis">
-      <!-- QUERY for CompletedThesis  -->
-      {% capture query %} SELECT  ?thesis ?thesisTitle ?language ?link ?abstract WHERE{
-       ?thesis a dct:BibliographicResource . ?thesis a bibo:Thesis . ?thesis a sdatech:archivedThesis . ?thesis dct:title ?thesisTitle . ?thesis dct:abstract ?abstract . ?thesis dct:language ?language . OPTIONAL { ?thesis foaf:homepage ?link } . } {% endcapture %} {% assign archivedThesisList = page.rdf | sparql_query: query %}
       {% if archivedThesisList.size != 0  %}
           <div class="content-title">
             <h2>Completed Thesis</h2>
@@ -192,8 +167,6 @@
         <h2>Frequently Asked Thesis Questions</h2>
       </div>
       <div class="faqThesis">
-        {% capture query %} SELECT ?group ?description ?imageclass ?longdescription WHERE{ ?group a aiiso:ResearchGroup . ?group rdfs:label ?description . ?group dct:abstract ?longdescription.  ?group sda:imageclass ?imageclass . } {% endcapture %} {% assign groups = page.rdf | sparql_query: query %}
-
         <p class="faq-question"><strong>Q.</strong>Is there possibility to come up with a thesis topic of students choice?</p>
         <p>The Smart Data Analytics group is always looking for good students to write theses. The topics can be in one of the following broad areas:</p>
         {% for group in groups %} {% assign url= group.group | remove: "http://sda.tech/" %} {% capture imageClass %}{{group.imageclass}}{% endcapture %} {% capture name %}{{group.description}}{% endcapture %} {% capture longdescription %}{{group.longdescription}}{% endcapture %}  {% capture leader %}{{group.leadername}}{% endcapture %} {% assign

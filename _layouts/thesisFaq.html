@@ -13,6 +13,7 @@ activateHeader('{{page.navigationdiv}}');
 {% include toggleThesisTypes.html %}
 {% include toggleBachelorThesis.html %}
 {% include toggleMasterThesis.html %}
+{% include thesisQuerries.html %}
 
 <!-- Presentation of thesis Items  -->
 <div class="borderAll">
@@ -22,6 +23,5 @@ activateHeader('{{page.navigationdiv}}');
     <!--Thesis Contetnt Types  -->
     {% include thesisContent.html active="faq" %}
   </article>
-  <div class="pagination-footer">
-  </div>
+  {% include thesisFooter.html %}
 </div>

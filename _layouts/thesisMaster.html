@@ -13,11 +13,10 @@ activateHeader('{{page.navigationdiv}}');
 {% include toggleThesisTypes.html %}
 {% include toggleBachelorThesis.html %}
 {% include toggleMasterThesis.html %}
+{% include thesisQuerries.html %}
 
-<!--Querry to GET all the Contact Persons of the Thesis   -->
-{% capture query %} SELECT  ?thesis ?thesisTitle ?person ?personName ?personImage WHERE{
- ?thesis a dct:BibliographicResource . ?thesis a bibo:Thesis . ?thesis dct:title ?thesisTitle . ?thesis dct:creator ?person . ?person foaf:name ?personName . ?person foaf:depiction ?personImage . } {% endcapture %} {% assign personsInThesis = page.rdf | sparql_query: query %}
-  <!-- Presentation of thesis Items  -->
+{% assign totalNumber=openMasterThesis.size | plus:archivedMasterThesis.size %}
+<!-- Presentation of thesis Items  -->
 <div class="borderAll">
   <article class="post">
     <!--Thesis Header  -->
@@ -25,6 +24,5 @@ activateHeader('{{page.navigationdiv}}');
     <!--Thesis Contetnt Types  -->
     {% include thesisContent.html active="master" %}
   </article>
-  <div class="pagination-footer">
-  </div>
+  {% include thesisFooter.html %}
 </div>
