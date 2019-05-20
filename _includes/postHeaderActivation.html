@@ -1,7 +1,7 @@
 <script>
 document.onreadystatechange = function(e)
 {
-    if (document.readyState === 'interactive')
+    if ( document.readyState === 'interactive' )
     {
         //dom is ready, window.onload fires later
         setTitle('{{title}}', '{{site.title | escape}}');
@@ -12,6 +12,8 @@ document.onreadystatechange = function(e)
         {
           document.getElementById('allPostHeader').style.display = 'block';
           document.getElementById('particularPostHeader').style.display = 'none';
+          document.getElementById('footer-particularPost').style.display = 'none' ;
+          document.getElementById('footer-allPost').style.display = 'block' ;
 
           if(document.getElementById('allPostHeader').style.display == 'block' && document.getElementById('particularPostHeader').style.display )
             localStorage.setItem("boolFromAllToDetailPost", 'false' );
@@ -19,6 +21,8 @@ document.onreadystatechange = function(e)
         }else {
           document.getElementById('allPostHeader').style.display = 'none';
           document.getElementById('particularPostHeader').style.display = 'block';
+          document.getElementById('footer-particularPost').style.display = 'block' ;
+          document.getElementById('footer-allPost').style.display = 'none' ;
         }
     }
 };

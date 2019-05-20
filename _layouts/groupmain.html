@@ -30,7 +30,8 @@ activateHeader('{{page.navigationdiv}}');
       <br class="breakpoint-pagination"/><br class="breakpoint-pagination"/> {% endif %} {% endfor %}
       <br/>
       <br/>
-      <hr class="ruleh" /></div>
+      <hr class="ruleh" />
+    </div>
   {% for result in resultset %} {% capture name %}{{result.name}}{% endcapture %}
   {% capture querytwo %} SELECT ?group ?project ?name ?nameproject ?image WHERE{ ?group a aiiso:ResearchGroup . ?group rdfs:label ?name . ?group foaf:currentProject ?project . ?project rdfs:label ?nameproject . ?project foaf:depiction ?image . } {%
   endcapture %} {% assign
@@ -50,11 +51,11 @@ activateHeader('{{page.navigationdiv}}');
           <div class="groupContent">
             <div>
               <div class="">
-                <div class="description descriptionProjects">
+                <div class="description descriptionProjects paddingBottom56px" style="padding-left:0px;">
                   <p>{{result.desc}}</p>
                 </div>
-                <div class="leadersInGroup">
-                  <h4>Leaders</h4>
+                <div class="leadersInGroup paddingBottom56px">
+                  <h4 class="h4Font">Leaders</h4>
                   <div class="membersofProject">
                     {% for result5 in resultset5 %} {% capture groupname %}{{result5.name}}{% endcapture %} {% if groupname == name %} {% assign url= result5.leader | remove: "http://sda.tech/" %}
                     <div class="chip">
@@ -64,9 +65,8 @@ activateHeader('{{page.navigationdiv}}');
                     {% endif %} {% endfor %}
                   </div>
                 </div>
-                <br class="horizontal-separator2" />
-                <h4>Group Members</h4>
-                <div class="membersofProject">
+                <h4 class="h4Font">Group Members</h4>
+                <div class="membersofProject paddingBottom56px">
                   {% capture groupMainTitle %}{{result.name}}{% endcapture %}
                   {% capture query %} SELECT ?person ?personname ?image ?group ?groupname Where {
                     ?person a foaf:Person . OPTIONAL { ?person foaf:name ?personname } . OPTIONAL { ?person foaf:depiction ?image } .  ?person sda:group ?group . ?group  rdfs:label ?groupname .
@@ -82,11 +82,8 @@ activateHeader('{{page.navigationdiv}}');
                     {% endif %}
                   {% endfor %}
                 </div>
-
-                <br class="horizontal-separator" />
-                <br class="horizontal-separator2" />
-                <h4>Projects</h4>
-                <div class="partnersOfProject">
+                <h4 class="h4Font">Projects</h4>
+                <div class="partnersOfProject paddingBottom56px">
                   {% for result2 in resultset2 %} {% capture groupname %}{{result2.name}}{% endcapture %} {% if groupname == name %} {% assign url= result2.project | remove: "http://sda.tech/" %}
                   <div class="chip">
                     <img class="img-circle-small" src="{{result2.image}}" width="96" height="96">

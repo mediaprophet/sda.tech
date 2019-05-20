@@ -21,10 +21,25 @@ navigationdiv: Blog
   <div class="pagination">
     <!-- Toggle Button Item -->
     <!-- TODO: Toggle Functionality with updated secondaryNav -->
-    <!-- {% include toggleMenu.html type = "oneRow" %} -->
+    {% include toggleMenu.html type = "oneRow" %}
     <!--  -->
     <div id="allPostHeader" style="display:none;">
+      {% assign completeList = blogposts %}
       {% include blogHeader.html active="Blog"%}
+
+      {% assign x = 0 %}
+      {% for items in completeList %}
+        {% capture titleInListAll %}{{items.title | strip }}{% endcapture %}
+        {% if titleInListAll == title %}
+          {% assign indexPreviousAll = x | minus: 1 %}
+          {% assign indexNextAll = x | plus:1  %}
+        {% endif %}
+        {% assign x = x | plus:1 %}
+      {% endfor %}
+      {% capture previousTitleAll %}{{completeList[indexPreviousAll].title}}{% endcapture %}
+      {% assign previousUrlAll = completeList[indexPreviousAll].blog | remove: "http://sda.tech/" %}
+      {% capture nextTitleAll %}{{completeList[indexNextAll].title}}{% endcapture %}
+      {% assign nextUrlAll = completeList[indexNextAll].blog | remove: "http://sda.tech/" %}
     </div>
     <div id="particularPostHeader" style="display:block;">
       <!-- Query for Paper Notifications -->
@@ -34,6 +49,7 @@ navigationdiv: Blog
 
       {% if papernotifications.size != 0 %}
         {% include blogHeader.html active="Paper Notifications" total=paperNotificationsArray.size %}
+        {% assign list = paperNotificationsArray %}
       {% endif %}
 
       <!-- Query for Invited Talks -->
@@ -43,6 +59,7 @@ navigationdiv: Blog
 
       {% if invitedtalks.size != 0 %}
         {% include blogHeader.html active="Invited Talks" total=invitedTalksArray.size %}
+        {% assign list = invitedTalksArray %}
       {% endif %}
 
       <!-- Query for Project Announcements -->
@@ -52,6 +69,7 @@ navigationdiv: Blog
 
       {% if projectannouncements.size != 0 %}
         {% include blogHeader.html active="Project Announcements" total=projectAnnouncementsArray %}
+        {% assign list = projectAnnouncementsArray %}
       {% endif %}
 
       <!-- Query for General Posts -->
@@ -61,7 +79,22 @@ navigationdiv: Blog
 
       {% if generalposts.size != 0 %}
         {% include blogHeader.html active="General Posts" total=generalPostsArray.size %}
+        {% assign list = generalPostsArray %}
       {% endif %}
+
+      {% assign i = 0 %}
+      {% for items in completeList %}
+        {% capture titleInListAll %}{{items.title | strip }}{% endcapture %}
+        {% if titleInListAll == title %}
+          {% assign indexPreviousAll = x | minus: 1 %}
+          {% assign indexNextAll = x | plus:1  %}
+        {% endif %}
+        {% assign i = i | plus:1 %}
+      {% endfor %}
+      {% capture previousTitleAll %}{{completeList[indexPreviousAll].title}}{% endcapture %}
+      {% assign previousUrlAll = completeList[indexPreviousAll].blog | remove: "http://sda.tech/" %}
+      {% capture nextTitleAll %}{{completeList[indexNextAll].title}}{% endcapture %}
+      {% assign nextUrlAll = completeList[indexNextAll].blog | remove: "http://sda.tech/" %}
 
     </div>
   </div>
@@ -76,6 +109,12 @@ navigationdiv: Blog
         </div>
       </div>
   </article>
-  <div class="pagination-footer">
+  <div class="footer-wraper">
+    <div id="footer-allPost" style="display:none;">
+      {% include blogFooter.html name=pname previousPerson=previousTitleAll previousUrl=previousUrlAll nextPerson=nextTitleAll nextUrl=nextUrlAll fromAll=1 %}
+    </div>
+    <div id="footer-particularPost" style="display:none;">
+      {% include blogFooter.html name=pname previousPerson=previousTitle previousUrl=previousUrl nextPerson=nextTitle nextUrl=nextUrl  %}
+    </div>
   </div>
 </div>

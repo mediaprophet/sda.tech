@@ -296,6 +296,8 @@
     @include media-query($on-laptop) {
       @include relative-font-size(1.125);
     }
+
+    color: #212121;
   }
 
   a {
@@ -908,9 +910,9 @@
   margin-bottom: 56px;
 
   h2 {
-    font-weight: lighter;
+    // font-weight: lighter;
     font-size: x-large;
-    color: #424242;
+    color: #212121;
   }
 }
 
@@ -1187,6 +1189,17 @@ hr {
   width: 100% !important;
 }
 
+.descriptionThesis{
+  padding-left:0px;
+  padding-bottom: 16px;
+  padding-top: 16px;
+}
+
+.descriptionPartners{
+  padding-bottom: 4px;
+}
+
+
 .partner-item {
   width: 90%;
   padding-left: 32px;
@@ -1200,7 +1213,7 @@ hr {
     width: 20%;
     height: 120px;
     float: left;
-    margin: 4px 12px 12px;
+    margin: 4px 0px 16px;
     object-fit: contain;
     padding: 6px;
     border: 1px solid #E0E0E0;
@@ -1208,14 +1221,14 @@ hr {
   }
 
   h1 {
-    margin-bottom: 8px;
+    margin-bottom: 16px;
     font-size: larger;
     font-weight: lighter !important;
   }
 }
 
 .partner-title {
-  margin-left: 274px;
+  // margin-left: 274px;
   text-align: left;
 
   a {
@@ -1230,6 +1243,10 @@ hr {
       color: $blue-sda-color;
     }
   }
+}
+
+.partner-content-container {
+  padding-top: 16px;
 }
 
 .thesis-title {
@@ -1399,8 +1416,14 @@ hr {
 .job-contents {
   text-align: left;
 
+  p {
+    color: #757575;
+  }
+
   h3 {
     font-weight: bold;
+    color: #212121;
+
   }
 
   a {
@@ -1483,11 +1506,8 @@ hr {
   padding-top: 7%;
   padding-bottom: 7%;
   color: #757575;
-  margin-right: 63px;
-  margin-left: 13px;
+  margin: 4px 0px 16px;
   height:120px;
-  margin-top: 3px;
-  margin-bottom: 32px;
   border-radius: 4px;
   text-align: center;
   width: 200px;
@@ -2029,57 +2049,41 @@ button:active {
 }
 
 .next {
-  // display: block;
   float: left;
-  // border-radius: 3px;
-  // transition: 0.3s;
-  // background: white;
-  // color: #00000;
-  // font-weight: 400;
-  // line-height: normal;
   outline-style: none;
-  // padding: 0.7142em 1.1428em;
   min-width: 150px;
 
 }
-//
-// .next a {
-//   background: #eaeaea !important;
-//   color: #00000 !important;
-// }
-//
-// .next a:hover {
-//   background-color: #0B95F7 !important;
-//   color: #ffffff !important;
-// }
 
 .previous {
-  // display: block;
   float: right;
-  border-radius: 3px;
-  // transition: 0.3s;
-  // background: #eaeaea;
-  // color: #00000;
-  // font-weight: 400;
-  // line-height: normal;
+  border-radius: 3px;;
   outline-style: none;
-  // padding: 0.7142em 1.1428em;
   min-width: 150px;
 }
-//
-// .previous a {
-//   background: #eaeaea !important;
-//   color: #00000 !important;
-// }
-//
-// .previous a:hover {
-//   background: #0B95F7 !important;
-//   color: #ffffff !important;
-// }
 
 div.scroll {
   float: left;
   width: 100%;
   height: 900px;
   overflow: scroll;
+}
+
+.paddingBottom56px {
+  padding-bottom: 56px;
+}
+
+.h4Font{
+  color: #212121;
+  @include relative-font-size(1.25);
+  @include media-query($on-laptop) ;
+  @include relative-font-size(1.125);
+}
+
+.description-project {
+  color: #757575;
+}
+
+.reuirementsList{
+  color: #757575;  
 }
