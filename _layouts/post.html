@@ -7,9 +7,7 @@ navigationdiv: Blog
 {% capture title %} {{ page.rdf | rdf_property: 'sioc:topic' }}{% endcapture %}
 {% assign title = title | strip %}
 
-<script>
-setTitle('{{title}}', '{{site.title | escape}}');
-</script>
+{% include postHeaderActivation.html %}
 
 {% capture depiction %} {{ page.rdf | rdf_property: 'foaf:depiction' }} {% endcapture %}
 {% capture creator %} {{ page.rdf | rdf_property: 'dct:creator' }} {% endcapture %}
@@ -17,7 +15,89 @@ setTitle('{{title}}', '{{site.title | escape}}');
 {% capture content %} {{ page.rdf | rdf_property: 'sioc:content' }} {% endcapture %}
 {% assign person= creator | remove: " http://sda.tech/Person/" %}
 
+{% include blogQuerries.html %}
+
 <div class="borderAll">
+  <div class="pagination">
+    <!-- Toggle Button Item -->
+    <!-- TODO: Toggle Functionality with updated secondaryNav -->
+    <!-- {% include toggleMenu.html type = "oneRow" %} -->
+    <!--  -->
+    <div id="allPostHeader" style="display:none;">
+      {% assign completeList = blogposts %}
+      {% include blogHeader.html active="Blog"%}
+
+      {% assign x = 0 %}
+      {% for items in completeList %}
+        {% capture titleInListAll %}{{items.title | strip }}{% endcapture %}
+        {% if titleInListAll == title %}
+          {% assign indexPreviousAll = x | minus: 1 %}
+          {% assign indexNextAll = x | plus:1  %}
+        {% endif %}
+        {% assign x = x | plus:1 %}
+      {% endfor %}
+      {% capture previousTitleAll %}{{completeList[indexPreviousAll].title}}{% endcapture %}
+      {% assign previousUrlAll = completeList[indexPreviousAll].blog | remove: "http://sda.tech/" %}
+      {% capture nextTitleAll %}{{completeList[indexNextAll].title}}{% endcapture %}
+      {% assign nextUrlAll = completeList[indexNextAll].blog | remove: "http://sda.tech/" %}
+    </div>
+    <div id="particularPostHeader" style="display:block;">
+      <!-- Query for Paper Notifications -->
+      {% capture query %} SELECT ?paper ?papername Where {
+          <{{page.rdf}}> a sdatech:PaperNotification . ?paper dct:title ?papername . } {% endcapture %}
+      {% assign papernotifications = page.rdf | sparql_query: query %}
+
+      {% if papernotifications.size != 0 %}
+        {% include blogHeader.html active="Paper Notifications" total=paperNotificationsArray.size %}
+        {% assign list = paperNotificationsArray %}
+      {% endif %}
+
+      <!-- Query for Invited Talks -->
+      {% capture query %} SELECT ?paper ?papername Where {
+          <{{page.rdf}}> a sdatech:InvitedTalks . ?paper dct:title ?papername . } {% endcapture %}
+      {% assign invitedtalks = page.rdf | sparql_query: query %}
+
+      {% if invitedtalks.size != 0 %}
+        {% include blogHeader.html active="Invited Talks" total=invitedTalksArray.size %}
+        {% assign list = invitedTalksArray %}
+      {% endif %}
+
+      <!-- Query for Project Announcements -->
+      {% capture query %} SELECT ?paper ?papername Where {
+          <{{page.rdf}}> a sdatech:ProjectAnnouncements . ?paper dct:title ?papername . } {% endcapture %}
+      {% assign projectannouncements = page.rdf | sparql_query: query %}
+
+      {% if projectannouncements.size != 0 %}
+        {% include blogHeader.html active="Project Announcements" total=projectAnnouncementsArray %}
+        {% assign list = projectAnnouncementsArray %}
+      {% endif %}
+
+      <!-- Query for General Posts -->
+      {% capture query %} SELECT ?paper ?papername Where {
+          <{{page.rdf}}> a sdatech:GeneralPosts . ?paper dct:title ?papername . } {% endcapture %}
+      {% assign generalposts = page.rdf | sparql_query: query %}
+
+      {% if generalposts.size != 0 %}
+        {% include blogHeader.html active="General Posts" total=generalPostsArray.size %}
+        {% assign list = generalPostsArray %}
+      {% endif %}
+
+      {% assign i = 0 %}
+      {% for items in completeList %}
+        {% capture titleInListAll %}{{items.title | strip }}{% endcapture %}
+        {% if titleInListAll == title %}
+          {% assign indexPreviousAll = x | minus: 1 %}
+          {% assign indexNextAll = x | plus:1  %}
+        {% endif %}
+        {% assign i = i | plus:1 %}
+      {% endfor %}
+      {% capture previousTitleAll %}{{completeList[indexPreviousAll].title}}{% endcapture %}
+      {% assign previousUrlAll = completeList[indexPreviousAll].blog | remove: "http://sda.tech/" %}
+      {% capture nextTitleAll %}{{completeList[indexNextAll].title}}{% endcapture %}
+      {% assign nextUrlAll = completeList[indexNextAll].blog | remove: "http://sda.tech/" %}
+
+    </div>
+  </div>
   <article class="post">
       <div class="post-content">
         <div class="postentry">
@@ -25,8 +105,16 @@ setTitle('{{title}}', '{{site.title | escape}}');
           <div class="postmetadata">&#128467; {{date}} &nbsp;&nbsp; &#x270D; {{person}}</div>
           <br/>
           <p><img src="{{depiction}}" style="float:left;height:180px;width:230px;padding:30px;">{{content}}</p>
-          <br/><hr style="text-align:center;">
+          <br/>
         </div>
       </div>
   </article>
+  <div class="footer-wraper">
+    <div id="footer-allPost" style="display:none;">
+      {% include blogFooter.html name=pname previousPerson=previousTitleAll previousUrl=previousUrlAll nextPerson=nextTitleAll nextUrl=nextUrlAll fromAll=1 %}
+    </div>
+    <div id="footer-particularPost" style="display:none;">
+      {% include blogFooter.html name=pname previousPerson=previousTitle previousUrl=previousUrl nextPerson=nextTitle nextUrl=nextUrl  %}
+    </div>
+  </div>
 </div>
