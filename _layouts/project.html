@@ -68,7 +68,7 @@ navigationdiv: Projects
           ?person a foaf:Person . OPTIONAL { ?person foaf:name ?personname } . OPTIONAL { ?person foaf:depiction ?image } .  ?person foaf:currentProject ?project . ?project  rdfs:label ?projectname .
       } {% endcapture %} {% assign projectmembers = page.rdf | sparql_query: query %}
       {% if projectmembers.size != 0 %}
-      <div class="members-projects" style="margin-right:32px; margin-bottom:56px;">
+      <div class="members-projects" style="margin-right:32px; margin-left:32px; margin-bottom:56px;">
         <h4>Team</h4>
           <div class="membersofProject links">
             {% for person in projectmembers %}
@@ -88,7 +88,7 @@ navigationdiv: Projects
       {% capture query %} SELECT ?partner ?partnername ?image ?partnersite WHERE{
       ?partner a sdatech:Partner . ?partner foaf:currentProject <{{page.rdf}}> . ?partner rdfs:label ?partnername . ?partner foaf:depiction ?image . OPTIONAL{ ?partner foaf:homepage ?partnersite } . } {% endcapture %} {% assign partners = page.rdf | sparql_query: query %}
       {% if partners.size != 0 %}
-      <div class="partners-project" style="margin-right:32px; margin-bottom:0px;">
+      <div class="partners-project" style="margin-right:32px; margin-left:32px; margin-bottom:0px;">
           <h4>Partners</h4>
           <div class="partnersOfProject links">
             {% for partner in partners %} {% assign url= partner.partner | remove: "http://sda.tech/"%}
