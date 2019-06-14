@@ -16,111 +16,10 @@ navigationdiv: People
     {% include toggleMenu.html  type = "twoRow" id="persontoggleicon" %}
 
     <div id="allPersonHeader" style="display:none;">
-      {% assign completeList = professorsArray | concat: seniorResearchersArray | concat: phdStudentsArray | concat: associateResearchersArray | concat: studentAssistantsArray | concat: interneesArray %}
-      {% include peopleHeader.html active ="People" total=completeList.size %}
-      {% assign x = 0 %}
-      {% for items in completeList %}
-        {% capture nameInListAll %}{{items.pname}}{% endcapture %}
-        {% if nameInListAll == pname %}
-          {% assign indexPreviousAll = x | minus: 1 %}
-          {% assign indexNextAll = x | plus:1  %}
-        {% endif %}
-        {% assign x = x | plus:1 %}
-      {% endfor %}
-      {% capture previousTitleAll %}{{completeList[indexPreviousAll].pname}}{% endcapture %}
-      {% assign previousUrlAll = completeList[indexPreviousAll].Person | remove: "http://sda.tech/" %}
-      {% capture nextTitleAll %}{{completeList[indexNextAll].pname}}{% endcapture %}
-      {% assign nextUrlAll = completeList[indexNextAll].Person | remove: "http://sda.tech/" %}
-
+      {% include personAllPersonHeaderLogic.html %}
     </div>
     <div id="particularPersonHeader" style="display:none;">
-      <!-- Query for Professors -->
-      {% capture query %} SELECT ?person ?personname Where {
-          <{{page.rdf}}> a sdatech:professor . ?person foaf:name ?personname . } {% endcapture %}
-      {% assign professors = page.rdf | sparql_query: query %}
-
-      {% if professors.size != 0 %}
-        {% include peopleHeader.html active ="Professors" total=professorsArray.size %}
-        {% assign list = professorsArray %}
-      {% endif %}
-
-      <!-- Query For Senior Researchers -->
-      {% capture query %} SELECT ?person ?personname Where {
-          <{{page.rdf}}> a sdatech:seniorResearcher . ?person foaf:name ?personname . } {% endcapture %}
-      {% assign seniorresearchers = page.rdf | sparql_query: query %}
-
-
-      {% if seniorresearchers.size != 0 %}
-        {% include peopleHeader.html active ="Senior Researchers" total=seniorResearchersArray.size %}
-        {% assign list = seniorResearchersArray %}
-      {% endif %}
-
-      <!-- Query For PhD Students -->
-      {% capture query %} SELECT ?person ?personname Where {
-          <{{page.rdf}}> a sdatech:phdStudent . ?person foaf:name ?personname . } {% endcapture %}
-      {% assign phdstudents = page.rdf | sparql_query: query %}
-
-      {% if phdstudents.size != 0 %}
-        {% include peopleHeader.html active ="PhD Students" total=phdStudentsArray.size %}
-        {% assign list = phdStudentsArray %}
-      {% endif %}
-
-      <!-- Query For Associate Researchers -->
-      {% capture query %} SELECT ?person ?personname Where {
-          <{{page.rdf}}> a sdatech:associateReseracher . ?person foaf:name ?personname . } {% endcapture %}
-      {% assign associatedresearchers = page.rdf | sparql_query: query %}
-
-      {% if associatedresearchers.size != 0 %}
-        {% include peopleHeader.html active ="Associate Researchers" total=associateResearchersArray.size %}
-        {% assign list = associateResearchersArray %}
-      {% endif %}
-
-      <!-- Query For Student Assistants -->
-      {% capture query %} SELECT ?person ?personname Where {
-          <{{page.rdf}}> a sdatech:studentAssistant . ?person foaf:name ?personname . } {% endcapture %}
-      {% assign studentassistants = page.rdf | sparql_query: query %}
-
-      {% if studentassistants.size != 0 %}
-        {% include peopleHeader.html active ="Student Assistants" total=studentAssistantsArray.size %}
-        {% assign list = studentAssistantsArray %}
-      {% endif %}
-
-      <!-- Query For Interns -->
-      {% capture query %} SELECT ?person ?personname Where {
-          <{{page.rdf}}> a sdatech:intern . ?person foaf:name ?personname . } {% endcapture %}
-      {% assign interns = page.rdf | sparql_query: query %}
-
-      {% if interns.size != 0 %}
-        {% include peopleHeader.html active ="Interns" total=interneesArray.size %}
-        {% assign list = interneesArray %}
-      {% endif %}
-
-      <!-- Query For Former Members -->
-      {% capture query %} SELECT ?person ?personname Where {
-          <{{page.rdf}}> a sdatech:formerMember . ?person foaf:name ?personname . } {% endcapture %}
-      {% assign formermembers = page.rdf | sparql_query: query %}
-
-      {% if formermembers.size != 0 %}
-        {% include peopleHeader.html active ="Former Members" total=formerMembersArray.size  %}
-        {% assign list = formerMembersArray %}
-      {% endif %}
-
-      <!-- EndQuery -->
-      {% assign i = 0 %}
-      {% for items in list %}
-        {% capture nameInList %}{{items.pname}}{% endcapture %}
-        {% if nameInList == pname %}
-          {% assign indexPrevious = i | minus:1 %}
-          {% assign indexNext = i | plus:1  %}
-        {% endif %}
-        {% assign i = i | plus:1 %}
-      {% endfor %}
-      <!-- <p>TEST0: {{index}} , TEST-1:{{indexPrevious}}, TEST1:{{indexNext}}</p> -->
-      {% capture previousTitle %}{{list[indexPrevious].pname}}{% endcapture %}
-      {% assign previousUrl = list[indexPrevious].Person | remove: "http://sda.tech/" %}
-      {% capture nextTitle %}{{list[indexNext].pname}}{% endcapture %}
-      {% assign nextUrl = list[indexNext].Person | remove: "http://sda.tech/" %}
-
+      {% include personParticularPersonHeaderLogic.html %}
     </div>
   </div>
   <article class="post">
@@ -168,7 +67,6 @@ navigationdiv: People
               </p><p style="text-align:left;font-size:80%;"> {{page.rdf | rdf_property: 'foaf:phone'}}  <br/> <a style="padding-right:2px; padding-left:2px; color: black;" href="mailto:{{page.rdf | rdf_property: 'foaf:mbox' |remove: 'mailto:' | encode_email}}">{{page.rdf | rdf_property: 'foaf:mbox' |remove: 'mailto:'}} </a></p>
               </div>
 
-              <!-- <br class="horizontal-separator"><br class="horizontal-separator"> -->
             </div>
             {% capture shortCV %}{{page.rdf | rdf_property: 'cv:aboutPerson'}}{% endcapture %}
             {% if shortCV.size != 0 %}
@@ -197,8 +95,8 @@ navigationdiv: People
                     </div>
                 </div>
                 </div>
-                <!-- <hr width="100%" > -->
                 {% endif %}
+
                 <!-- Person to Project Relationship Direct -->
                 {% capture query %} SELECT ?person ?project ?projectname ?image WHERE {
                 <{{page.rdf}}> foaf:currentProject ?project . ?project rdfs:label ?projectname . ?project foaf:depiction ?image .
@@ -281,7 +179,7 @@ navigationdiv: People
                  {% capture personName %}{{ page.rdf | rdf_property: 'foaf:name' }}{% endcapture %}
                  {% capture query %} SELECT ?thesis ?title ?creator ?name ?thesislevel WHERE{ ?thesis a sdatech:openThesis . ?thesis dct:title ?title . ?thesis sda:thesisLevel ?thesislevel . ?thesis dct:creator ?creator . ?creator foaf:name "{{personName}}" . } {% endcapture %} {% assign thesistopics = page.rdf | sparql_query: query %}
                  {% if thesistopics.size != 0 %}
-                 <!-- <br class="horizontal-separator2" /> -->
+
                  <h4>Thesis Topics</h4>
                    <div class="partnersOfProject paddingBottom56px" style="display:block !important;" min-width="100%">
                      <div class="thesisTopics">
@@ -296,20 +194,7 @@ navigationdiv: People
                    </div>
                  {% endif %}
                   <div style="text-align:center;">
-                    {% capture query %} SELECT ?person ?profilepage WHERE { ?person sda:profilepage ?profilepage . ?person foaf:name "{{pName}}" .}  {% endcapture %}{% assign profiles = page.rdf | sparql_query: query %}
-                    {% for profile in profiles  %}
-                      {% capture query %} SELECT ?buttonname WHERE { <{{profile.profilepage}}> a schema:ProfilePage .  <{{profile.profilepage}}> ex:buttonLabel ?buttonname .}  {% endcapture %}{% assign profiledetails = page.rdf | sparql_query: query %}
-                      {% for pdetail in profiledetails  %}
-                        {% capture buttonname %}{{pdetail.buttonname | downcase  }}{% endcapture %}
-                        {% if buttonname == "twitter"  %}<a href="{{profile.profilepage}}" style="margin-right:6px !important;" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i> </a>{% endif %}
-                        {% if buttonname == "homepage" %}<a href="{{profile.profilepage}}" style="margin-right:6px !important;" target="_blank"><i class="fa fa-globe" aria-hidden="true"></i></a>{% endif %}
-                        {% if buttonname == "facebook"  %}<a href="{{profile.profilepage}}" style="margin-right:6px !important;" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i> </a>{% endif %}
-                        {% if buttonname == "linkedin"  %}<a href="{{profile.profilepage}}" style="margin-right:6px !important;" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i> </a>{% endif %}
-                        {% if buttonname == "researchgate"  %}<a href="{{profile.profilepage}}" style="margin-right:6px !important;" target="_blank"><i style="font-weight:900" class="fa fa-researchgate" aria-hidden="true">RG</i></a>{% endif %}
-                        {% if buttonname == "googlescholar"  %}<a href="{{profile.profilepage}}" style="margin-right:6px !important;" target="_blank"><i class="fa fa-google" aria-hidden="true"></i> </a>{% endif %}
-                        {% if buttonname == "github"  %}<a href="{{profile.profilepage}}" style="margin-right:6px !important;" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> </a>{% endif %}
-                      {% endfor %}
-                    {% endfor %}
+                    {% include personFootSocialIcons.html %}
                   </div>
               </div>
               </div>

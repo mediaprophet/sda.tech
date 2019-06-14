@@ -863,7 +863,7 @@
 }
 
 // Reference SnackBar Implementation W3Schools: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_snackbar
-#snackbar {
+#snackbar, #snackbar2 {
   visibility: hidden;
   min-width: 250px;
   margin-left: -125px;
@@ -879,7 +879,7 @@
   font-size: 17px;
 }
 
-#snackbar.show {
+#snackbar.show, #snackbar2.show {
   visibility: visible;
   -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
   animation: fadein 0.5s, fadeout 0.5s 2.5s;
@@ -1819,6 +1819,17 @@ img {
   -webkit-font-smoothing: antialiased !important;
 }
 // clear CSS
+div:not(.nostyle) {
+
+}
+
+.nostyle{
+  a {
+    color: $purple-sda-color;
+
+  }
+}
+
 .transitionClear {
   -webkit-transition: none !important;
   -moz-transition: none !important;
@@ -2085,5 +2096,5 @@ div.scroll {
 }
 
 .reuirementsList{
-  color: #757575;  
+  color: #757575;
 }
