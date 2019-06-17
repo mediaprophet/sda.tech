@@ -21,7 +21,7 @@ navigationdiv: Projects
     {% assign x = 0 %}
     {% for items in completeList %}
       {% capture nameInListAll %}{{items.pname}}{% endcapture %}
-      {% if nameInListAll == pname %}
+      {% if nameInListAll == title %}
         {% assign indexPreviousAll = x | minus: 1 %}
         {% assign indexNextAll = x | plus:1  %}
       {% endif %}
@@ -39,7 +39,7 @@ navigationdiv: Projects
     <div id="particularProjectHeader" style="display:block;">
       <!-- Query For Funded Projects -->
       {% capture query %} SELECT ?project ?projectname Where {
-          <{{page.rdf}}> a sdatech:fundedProject . ?project foaf:name ?projectname . } {% endcapture %}
+          <{{page.rdf}}> a sdatech:fundedProject . ?project rdfs:label ?projectname . } {% endcapture %}
       {% assign fundedprojects = page.rdf | sparql_query: query %}
 
       {% if fundedprojects.size != 0 %}
@@ -49,7 +49,7 @@ navigationdiv: Projects
 
       <!--Query for Open source Projects  -->
       {% capture query %} SELECT ?project ?projectname Where {
-          <{{page.rdf}}> a sdatech:openSourceProject . ?project foaf:name ?projectname . } {% endcapture %}
+          <{{page.rdf}}> a sdatech:openSourceProject . ?project rdfs:label ?projectname . } {% endcapture %}
       {% assign opensourceprojects = page.rdf | sparql_query: query %}
 
       {% if opensourceprojects.size != 0 %}
@@ -59,7 +59,7 @@ navigationdiv: Projects
 
       <!--Query for Incubator Projects  -->
       {% capture query %} SELECT ?project ?projectname Where {
-          <{{page.rdf}}> a sdatech:incubatorProject . ?project foaf:name ?projectname . } {% endcapture %}
+          <{{page.rdf}}> a sdatech:incubatorProject . ?project rdfs:label ?projectname . } {% endcapture %}
       {% assign incubatorprojects = page.rdf | sparql_query: query %}
 
       {% if incubatorprojects.size != 0 %}
@@ -69,7 +69,7 @@ navigationdiv: Projects
 
       <!--Query for Archived Projects  -->
       {% capture query %} SELECT ?project ?projectname Where {
-          <{{page.rdf}}> a sdatech:archivedProject . ?project foaf:name ?projectname . } {% endcapture %}
+          <{{page.rdf}}> a sdatech:archivedProject . ?project rdfs:label ?projectname . } {% endcapture %}
       {% assign archivedprojects = page.rdf | sparql_query: query %}
 
       {% if archivedprojects.size != 0 %}
@@ -80,7 +80,7 @@ navigationdiv: Projects
       {% assign i = 0 %}
       {% for items in list %}
         {% capture nameInList %}{{items.projectname}}{% endcapture %}
-        {% if nameInList == pname %}
+        {% if nameInList == title %}
           {% assign indexPrevious = i | minus:1 %}
           {% assign indexNext = i | plus:1  %}
         {% endif %}
@@ -93,15 +93,15 @@ navigationdiv: Projects
 
     </div>
   </div>
-  <div class="content-people" style="padding-right:0px !important; padding-left:0px !important;">
+  <div class="content-people" style="padding-right:0px !important; padding-top:0px !important; padding-bottom:0px !important; padding-left:0px !important;">
     <div class="view-table">
       <div class="view-row" id="projectTableRow">
         <div id="projectSecondaryNav" class="secondary-nav" style="display:none;">
           <div id="secondaryNavProjectAll" style="display:none;">
-            {% include secondaryNavProjects.html listItems=completeList status='all' name=pname fromAll=1 %}
+            {% include secondaryNavProjects.html listItems=completeList status='all' name=title fromAll=1 %}
           </div>
           <div id="secondaryNavParticularProject" style="display:none;">
-            {% include secondaryNavProjects.html listItems=list name=pname %}
+            {% include secondaryNavProjects.html listItems=list name=title %}
           </div>
         </div>
           <div id="project" class="post-content">
@@ -163,6 +163,13 @@ navigationdiv: Projects
       </div>
     </div>
   </div>
-{% include projectFooter.html %}
+  <div class="footer-wraper">
+    <div id="footer-allProject" style="display:none;">
+      {% include projectFooter.html name=title previousProject=previousTitleAll previousUrl=previousUrlAll nextProject=nextTitleAll nextUrl=nextUrlAll fromAll=1 %}
+    </div>
+    <div id="footer-particularProject" style="display:none;">
+      {% include projectFooter.html name=title previousProject=previousTitle previousUrl=previousUrl nextProject=nextTitle nextUrl=nextUrl  %}
+    </div>
+  </div>
 </div>
 <div id="snackbar2">Please wait the page is loading</div>

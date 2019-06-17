@@ -28,6 +28,8 @@ document.onreadystatechange = function(e)
           document.getElementById('particularProjectHeader').style.display = 'none';
           document.getElementById('secondaryNavProjectAll').style.display = 'block';
           document.getElementById('secondaryNavParticularProject').style.display = 'none';
+          document.getElementById('footer-particularProject').style.display = 'none' ;
+          document.getElementById('footer-allProject').style.display = 'block' ;
 
           if(document.getElementById('allProjectHeader').style.display == 'block' && document.getElementById('particularProjectHeader').style.display )
             localStorage.setItem("boolFromAllToDetailProject", 'false' );
@@ -37,6 +39,8 @@ document.onreadystatechange = function(e)
           document.getElementById('particularProjectHeader').style.display = 'block';
           document.getElementById('secondaryNavProjectAll').style.display = 'none';
           document.getElementById('secondaryNavParticularProject').style.display = 'block';
+          document.getElementById('footer-particularProject').style.display = 'block' ;
+          document.getElementById('footer-allProject').style.display = 'none' ;
         }
 
         btn = document.querySelector('.toggle-menu');

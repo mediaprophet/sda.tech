@@ -837,6 +837,7 @@
     color: #616161;
     font-size: small;
     font-weight: lighter;
+    text-align: left;
   }
 
   h2:hover {
@@ -932,6 +933,7 @@
 
 .main-content, .address-content {
   text-align: left;
+  padding-top: 32px;
 }
 
 img {

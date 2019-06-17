@@ -13,10 +13,10 @@
         </div>
         <div class="cell-title">
           {% if include.fromAll == 1 %}
-            <a onclick="setBoolFromAllToDetailProject('true', '../../{{url}}' )" ><h2>{{items.pname}}</h2></a>
+            <a onclick="setBoolFromAllToDetailProject('true', '../../{{url}}' )" ><h2>{{items.title}}</h2></a>
           {% endif %}
           {% if include.fromAll != 1 %}
-            <a href="../../{{url}}"><h2>{{items.pname}}</h2></a>
+            <a href="../../{{url}}"><h2>{{items.title}}</h2></a>
           {% endif %}
           {% if include.status == 'all' %}
             <p style="font-size: 10px;padding-left: 8px;margin-bottom: 0px;">{{items.status}}</p>

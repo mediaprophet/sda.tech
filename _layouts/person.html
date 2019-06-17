@@ -193,6 +193,10 @@ navigationdiv: People
                      </div>
                    </div>
                  {% endif %}
+
+                 {% capture content %} {{ page.rdf | rdf_property: 'sioc:content' }} {% endcapture %}
+                 {{content}}
+
                   <div style="text-align:center;">
                     {% include personFootSocialIcons.html %}
                   </div>
