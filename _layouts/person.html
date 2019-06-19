@@ -195,7 +195,14 @@ navigationdiv: People
                  {% endif %}
 
                  {% capture content %} {{ page.rdf | rdf_property: 'sda:publication' }} {% endcapture %}
-                 {{content}}
+
+                 {% if content.size %}
+                   <h4>Publications</h4>
+                   <div class="bibase-publications-rdf">
+                     {{content}}
+                   </div>
+                {% endcapture %}
+
 
                   <div style="text-align:center;">
                     {% include personFootSocialIcons.html %}
