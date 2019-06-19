@@ -10,7 +10,7 @@
  .  optional {?project foaf:depiction ?image } optional { ?project foaf:homepage ?homepage } optional {?project sda:twitter ?twitter } optional {?project ex:source ?source } optional { ?project ex:download ?download } } {% endcapture %} {% assign opensource
  = page.rdf | sparql_query: query %}
  <!-- QUERRY to GET the Incubator Projects -->
- {% capture query %} SELECT ?project ?title ?description ?longdescription ?image ?homepage ?twitter ?source ?download WHERE{ ?project a foaf:Project . ?project a sdatech:incubator . ?project rdfs:label ?title . ?project ex:description ?description
+ {% capture query %} SELECT ?project ?title ?description ?longdescription ?image ?homepage ?twitter ?source ?download WHERE{ ?project a foaf:Project . ?project a sdatech:incubatorProject . ?project rdfs:label ?title . ?project ex:description ?description
  . optional {?project foaf:depiction ?image }. optional { ?project foaf:homepage ?homepage }. optional {?project sda:twitter ?twitter }. optional {?project ex:source ?source }. optional { ?project ex:download ?download } } {% endcapture %} {% assign incubators
  = page.rdf | sparql_query: query %}
  <!--QUERRY to GET the Archived Projects  -->
