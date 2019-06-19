@@ -194,7 +194,7 @@ navigationdiv: People
                    </div>
                  {% endif %}
 
-                 {% capture content %} {{ page.rdf | rdf_property: 'sioc:content' }} {% endcapture %}
+                 {% capture content %} {{ page.rdf | rdf_property: 'sda:publication' }} {% endcapture %}
                  {{content}}
 
                   <div style="text-align:center;">

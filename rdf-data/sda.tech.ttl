@@ -72,15 +72,14 @@ sdaperson:JensLehmann a foaf:Person, sdatech:professor ;
                   foaf:firstName "Jens" ;
                   foaf:title "Prof. Dr." ;
                   foaf:status "Head of Department" ;
-                  sioc:content """<div class="content-people">
+                  sda:publication """<div class="content-people">
                     <div class="nostyle"  style="text-align:left; ">
-                      <script src="http://bibbase.org/show?bib=https://raw.githubusercontent.com/SmartDataAnalytics/sda.tech/master/_publications/lehmann.sda.bib&jsonp=1&fullnames=1&theme=side&token=8fdfccb91fb8675707dcb9b6ae18c8f5"></script>
+                      <script src="http://bibbase.org/show?bib=https://raw.githubusercontent.com/SmartDataAnalytics/sda.tech/mergeLayoutFeature/_publications/lehmann.sda.bib&jsonp=1&fullnames=1&theme=side&token=8fdfccb91fb8675707dcb9b6ae18c8f5"></script>
                     </div>
                   </div>""" ;
                   sda:profilepage <https://de.linkedin.com/in/jenslehmann82/en>, <http://jens-lehmann.org/>, <https://twitter.com/JLehmann82> ;
                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
                   cv:aboutPerson "Prof. Dr. Jens Lehmann (<a href='http://jens-lehmann.org/'>http://www.jens-lehmann.org</a>) is a full professor at the University of Bonn and Fraunhofer IAIS. He is leading the SDA group with 50 researchers. He obtained a PhD with grade summa cum laude at the University of Leipzig in 2010 including research stays at the University of Oxford and a master degree in Computer Science from Technical University of Dresden in 2006. His research interests involve Semantic Web and Artificial Intelligence. He is founder, leader or contributor of several open source projects, including SANSA, AskNow, DL-Learner, DBpedia, LinkedGeoData and ORE. He works/worked in several funded projects, e.g. GeoKnow (EU STREP, coordinator), LOD2 (EU IP, work package lead), LATC (EU STREP, lead for University of Leipzig) and SoftWiki (BmBF). Prof. Dr. Jens Lehmann authored more than 100 articles in international journals and conferences cited more than 11000 times according to Google Scholar." ;
-                  sda:publication sdapublication:Publication1 ;
                   sda:group sdagroup:SemanticQuestionAnswering, sdagroup:DistributedSemanticAnalytics, sdagroup:SmartServices, sdagroup:KnowledgeGraph, sdagroup:SemanticDataManagement, sdagroup:SoftwareEngineeringForDataScience,sdagroup:StructuredMachineLearning ;
                   foaf:currentProject sdaproject:BigDataEurope, sdaproject:Boost40, sdaproject:SANSAStack, sdaproject:DLLearner, sdaproject:AskNow, sdaproject:SMLBench, sdaproject:SLIPO, sdaproject:QROWD, sdaproject:HOBBIT, sdaproject:WDAqua, sdaproject:GEISER, sdaproject:BigDataOcean, ex:DeFacto, sdaproject:MEX, sdaproject:MLDSLs, sdaproject:CogRob, sdaproject:EACCP, sdaproject:SAML .
 
@@ -98,10 +97,14 @@ sdaperson:HajiraJabeen a foaf:Person, sdatech:seniorResearcher ;
                   foaf:phone <Tel:+49-341-123456789> ;
                   foaf:title "Dr. " ;
                   foaf:status "Senior Researcher" ;
+                  sda:publication """<div class="content-people">
+                    <div class="nostyle"  style="text-align:left; ">
+                      <script src="http://bibbase.org/show?bib=https://raw.githubusercontent.com/SmartDataAnalytics/sda.tech/mergeLayoutFeature/_publications/jabeen.sda.bib&jsonp=1&fullnames=1&theme=side&token=8fdfccb91fb8675707dcb9b6ae18c8f5"></script>
+                    </div>
+                  </div>""" ;
                   sda:profilepage <https://de.linkedin.com/in/hajirajabeen> ;
                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
                   cv:aboutPerson "Dr. Hajira Jabeen is a Senior Researcher at the University of Bonn." ;
-                  #sda:publication sdapublication:Publication1 ;
                   sda:group sdagroup:DistributedSemanticAnalytics, sdagroup:StructuredMachineLearning ;
                   foaf:currentProject sdaproject:BigDataEurope, sdaproject:SANSAStack, sdaproject:SMLBench, sdaproject:DLLearner,sdaproject:BigDataOcean .
 
@@ -116,10 +119,14 @@ sdaperson:GuenterKniesel a foaf:Person, sdatech:seniorResearcher ;
                   foaf:phone <Tel:+49-22873-4511> ;
                   foaf:title "Dr. " ;
                   foaf:status "Senior lecturer" ;
+                  sda:publication """<div class="content-people">
+                    <div class="nostyle"  style="text-align:left; ">
+                      <script src="http://bibbase.org/show?bib=https://raw.githubusercontent.com/SmartDataAnalytics/sda.tech/mergeLayoutFeature/_publications/kniesel.sda.bib&jsonp=1&fullnames=1&theme=side&token=8fdfccb91fb8675707dcb9b6ae18c8f5"></script>
+                    </div>
+                  </div>""" ;
                   sda:profilepage <https://www.linkedin.com/in/kniesel/> ;
                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
                   cv:aboutPerson "Dr. Günter Kniesel is a Senior lecturer at the University of Bonn." ;
-                  #sda:publication sdapublication:Publication1 ;
                   sda:group sdagroup:SoftwareEngineeringforDataScience .
 
 sdaperson:MariaMaleshkova a foaf:Person, sdatech:seniorResearcher ;
@@ -133,10 +140,14 @@ sdaperson:MariaMaleshkova a foaf:Person, sdatech:seniorResearcher ;
                   foaf:phone <Tel:+49-341-123456789> ;
                   foaf:title "Dr. " ;
                   foaf:status "Assistant Professor (Akademische Rätin)" ;
+                  sda:publication """<div class="content-people">
+                    <div class="nostyle"  style="text-align:left; ">
+                      <script src="http://bibbase.org/show?bib=https://raw.githubusercontent.com/SmartDataAnalytics/sda.tech/mergeLayoutFeature/_publications/maleshkova.sda.bib&jsonp=1&fullnames=1&theme=side&token=8fdfccb91fb8675707dcb9b6ae18c8f5"></script>
+                    </div>
+                  </div>""" ;
                   sda:profilepage <https://www.linkedin.com/in/maleshkova/> ;
                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
                   cv:aboutPerson "Dr. Maria Maleshkova is an Assistant Professor at the Computer Science Department III of the University of Bonn. Before, she was a postdoctoral researcher at the Karlsruhe Service Research Institute (KSRI) and the Institute of Applied Informatics and Formal Description Methods (AIFB) at the Karlsruhe Institute of Technology. Her research work covers the Web of Things (WoT) and semantics-based data integration topics as well as work in the area of the semantic description of Web APIs, RESTful services and their joint use with Linked Data. Prior to that, she was a Research Associate and a PhD student at the Knowledge Media Institute (KMi) at the Open University, where she worked on projects in the domain of SOA and Web Services." ;
-                  #sda:publication sdapublication:Publication1 ;
                   sda:group sdagroup:SmartServices ;
                   foaf:currentProject sdaproject:Boost40 .
 
@@ -151,9 +162,13 @@ sdaperson:AlexanderKister a foaf:Person, sdatech:seniorResearcher ;
                   foaf:phone <Tel:+49-341-123456789> ;
                   foaf:title "Dr. " ;
                   foaf:status "Senior Researcher" ;
+                  sda:publication """<div class="content-people">
+                    <div class="nostyle"  style="text-align:left; ">
+                      <script src="http://bibbase.org/show?bib=https://raw.githubusercontent.com/SmartDataAnalytics/sda.tech/mergeLayoutFeature/_publications/kister.sda.bib&jsonp=1&fullnames=1&theme=side&token=8fdfccb91fb8675707dcb9b6ae18c8f5"></script>
+                    </div>
+                  </div>""" ;
                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
                   cv:aboutPerson "Dr. Alexander Kister is a Senior Researcher at the Fraunhofer IAIS." ;
-                  #sda:publication sdapublication:Publication1 ;
                   sda:group sdagroup:SmartServices ;
                   foaf:currentProject sdaproject:SLIPO, sdaproject:GEISER .
 
@@ -168,10 +183,14 @@ sdaperson:HamedShariatYazdi a foaf:Person, sdatech:seniorResearcher ;
                   foaf:phone <Tel:+49-341-123456789> ;
                   foaf:title "Dr. " ;
                   foaf:status "Senior Researcher" ;
+                  sda:publication """<div class="content-people">
+                    <div class="nostyle"  style="text-align:left; ">
+                      <script src="http://bibbase.org/show?bib=https://raw.githubusercontent.com/SmartDataAnalytics/sda.tech/mergeLayoutFeature/_publications/yazdi.sda.bib&jsonp=1&fullnames=1&theme=side&token=8fdfccb91fb8675707dcb9b6ae18c8f5"></script>
+                    </div>
+                  </div>""" ;
                   sda:profilepage <https://www.linkedin.com/in/hamed-shariat-yazdi-phd-5aa70182/> ;
                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
                   cv:aboutPerson "Dr. Hamed Shariat Yazdi is a Senior Researcher at the University of Bonn." ;
-                  #sda:publication sdapublication:Publication1 ;
                   sda:group sdagroup:KnowledgeGraph .
                   #foaf:currentProject sdaproject: .
 
@@ -186,10 +205,14 @@ sdaperson:GiulioNapolitano a foaf:Person, sdatech:seniorResearcher ;
                   foaf:phone <Tel:+49-224114-1930> ;
                   foaf:title "Dr. " ;
                   foaf:status "Senior Researcher" ;
+                  sda:publication """<div class="content-people">
+                    <div class="nostyle"  style="text-align:left; ">
+                      <script src="http://bibbase.org/show?bib=https://raw.githubusercontent.com/SmartDataAnalytics/sda.tech/mergeLayoutFeature/_publications/napolitano.sda.bib&jsonp=1&fullnames=1&theme=side&token=8fdfccb91fb8675707dcb9b6ae18c8f5"></script>
+                    </div>
+                  </div>""" ;
                   sda:profilepage <https://www.linkedin.com/in/giulio-napolitano-8a550210/>, <https://twitter.com/giulionapo> ;
                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
                   cv:aboutPerson "Dr. Giulio Napolitano is a senior researcher and competence area leader (QA and Dialogue Systems) at the “Enterprise Information Systems” department at Fraunhofer IAIS (https://www.iais.fraunhofer.de/?&L=1) , as well as Question Answering team leader at UniBonn Smart Data Analytics group. He is currently leading or involved in various research projects funded by the industry, by national bodies and the EU. Prior to joining Fraunhofer, he was a senior scientist at Bonn University Clinic and a researcher and senior IM&T Officer at the Centre for Public Health, Queen’s University Belfast. While there, he was awarded the 2014 Excellence in Innovation Award and the 2008 Innovation in Oncology Award. Previously, he had gained software engineering experience with Siemens Medical Solutions in Rome. His current research interests include semantic technologies, question answering, natural language processing and analysis and machine learning. More broadly, his research interests span from philosophy of science and epistemology to mathematical modelling for medicine, medical informatics and epidemiology. Among other things, he studied Philosophy, Physics and Astrophysics, Bioinformatics and Applied Mathematics." ;
-                  #sda:publication sdapublication:Publication1 ;
                   sda:group sdagroup:SemanticQuestionAnswering ;
                   foaf:currentProject sdaproject:AskNow, sdaproject:HOBBIT .
 
@@ -203,10 +226,14 @@ sdaperson:AnisaRula a foaf:Person, sdatech:seniorResearcher ;
                   #foaf:phone <Tel:+49-341-123456789> ;
                   foaf:title "Dr. " ;
                   foaf:status "Senior Researcher" ;
+                  sda:publication """<div class="content-people">
+                    <div class="nostyle"  style="text-align:left; ">
+                      <script src="http://bibbase.org/show?bib=https://raw.githubusercontent.com/SmartDataAnalytics/sda.tech/mergeLayoutFeature/_publications/rula.sda.bib&jsonp=1&fullnames=1&theme=side&token=8fdfccb91fb8675707dcb9b6ae18c8f5"></script>
+                    </div>
+                  </div>""" ;
                   sda:profilepage <https://www.linkedin.com/in/anisa-rula-ph-d-9a258919> ;
                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
                   cv:aboutPerson "Dr. Anisa Rula is a Senior Researcher at the University of Bonn." ;
-                  #sda:publication sdapublication:Publication1 ;
                   sda:group sdagroup:DistributedSemanticAnalytics ;
                   foaf:currentProject sdaproject:SANSA .
 
@@ -222,9 +249,13 @@ sdaperson:IoannaLytra a foaf:Person, sdatech:seniorResearcher ;
                   #foaf:phone <Tel:+49-341-123456789> ;
                   foaf:title "Dr. " ;
                   foaf:status "Senior Researcher" ;
+                  sda:publication """<div class="content-people">
+                    <div class="nostyle"  style="text-align:left; ">
+                      <script src="http://bibbase.org/show?bib=https://raw.githubusercontent.com/SmartDataAnalytics/sda.tech/mergeLayoutFeature/_publications/lytra.sda.bib&jsonp=1&fullnames=1&theme=side&token=8fdfccb91fb8675707dcb9b6ae18c8f5"></script>
+                    </div>
+                  </div>""" ;
                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
                   cv:aboutPerson "Dr. Ioanna Lytra is a senior researcher at the Smart Data Analytics research group, University of Bonn. She has completed her PhD thesis on Software Architecture at the University of Vienna. Before that, she worked as a software engineer in the telecommunications area. She received my Diploma in Electrical and Computer Engineering with specialization in Computer Networks and Telecommunications from the National Technical University of Athens in 2006." ;
-                  #sda:publication sdapublication:Publication1 ;
                   sda:group sdagroup:SemanticQuestionAnswering ;
                   foaf:currentProject sdaproject:AskNow, sdaproject:WDAqua, sdaproject:BigDataOcean .
 
@@ -239,10 +270,14 @@ sdaperson:ChristophLange a foaf:Person, sdatech:seniorResearcher ;
                   foaf:phone <Tel:+49-224114-2428> ;
                   foaf:title "Dr. " ;
                   foaf:status "Senior Researcher/ Head of EIS department @ IAIS" ;
+                  sda:publication """<div class="content-people">
+                    <div class="nostyle"  style="text-align:left; ">
+                      <script src="http://bibbase.org/show?bib=https://raw.githubusercontent.com/SmartDataAnalytics/sda.tech/mergeLayoutFeature/_publications/lange.sda.bib&jsonp=1&fullnames=1&theme=side&token=8fdfccb91fb8675707dcb9b6ae18c8f5"></script>
+                    </div>
+                  </div>""" ;
                   sda:profilepage <https://www.linkedin.com/in/langechristoph/>,<https://twitter.com/clange>, <https://langec.wordpress.com/> ;
                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
                   cv:aboutPerson "<a href='http://langec.wordpress.com/about/'>Christoph Lange</a> is the head of the <a href='https://www.iais.fraunhofer.de/de/institut/abteilungen/enterprise-information-systems.html'>Enterprise Information Systems (EIS) department</a> at the Fraunhofer Institute for Intelligent Analysis and Information Systems IAIS and a senior researcher leading the <a href='http://sda.cs.uni-bonn.de/research-topic/semantic-data-management/'>Semantic Data Management group</a> within the <a href='http://sda.iai.uni-bonn.de/'>Smart Data Analytics (SDA) research group</a> at the University of Bonn, Germany.  He has been working with both institutions since 2013.  In 2011, he received a Ph.D. from Jacobs University Bremen, Germany, for <em><a href='http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.696.6350&rep=rep1&type=pdf'>enabling collaboration on semiformal mathematical knowledge by semantic web integration</a></em>.  His research is broadly concerned with representing expressive knowledge in complex domains in a formal but scalable way using linked (open) data, which enables and facilitates machine support with retrieval, analysis, quality assessment, publishing, collaborative authoring, etc.; results have been published in high-profile international journals and conferences (h-index 20 according to <a href='https://scholar.google.de/citations?user=Yr0WcFwAAAAJ&amp;hl=en'>Google Scholar</a>).  Application domains range from research infrastructures to information integration within enterprises and across enterprise boundaries.  The latter has been subject of contractual R&amp;D for leading German enterprises in the automotive and other sectors.  On semantic web and intelligent computer mathematics topics, Christoph Lange has organised numerous conferences, challenges, trainings and workshops, co-supervised 10 PhD students, taught lectures and coordinated lab and seminar classes, served as an expert for several international funding bodies and contributed to international OMG and W3C standards." ;
-                  #sda:publication sdapublication:Publication1 ;
                   sda:group sdagroup:SemanticDataManagement ;
                   foaf:currentProject sdaproject:WDAqua, sdaproject:OSCOSS, sdaproject:Boost40, sdaproject:DIACHRON, sdaproject:LiDaKrA, sdaproject:OpenAIRE2020, sdaproject:SeReCo .
 
@@ -257,10 +292,14 @@ sdaperson:SimonScerri a foaf:Person, sdatech:seniorResearcher ;
                   #foaf:phone <Tel:+49-341-123456789> ;
                   foaf:title "Dr. " ;
                   foaf:status "Senior Researcher" ;
+                  sda:publication """<div class="content-people">
+                    <div class="nostyle"  style="text-align:left; ">
+                      <script src="http://bibbase.org/show?bib=https://raw.githubusercontent.com/SmartDataAnalytics/sda.tech/mergeLayoutFeature/_publications/scerri.sda.bib&jsonp=1&fullnames=1&theme=side&token=8fdfccb91fb8675707dcb9b6ae18c8f5"></script>
+                    </div>
+                  </div>""" ;
                   sda:profilepage <https://www.linkedin.com/in/scerrisimon/> ;
                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
                   cv:aboutPerson "Dr. Simon Scerri is a Senior Researcher at the University of Bonn." ;
-                  #sda:publication sdapublication:Publication1 ;
                   sda:group sdagroup:SmartServices ;
                   foaf:currentProject sdaproject:BigDataEurope, sdaproject:Boost40, sdaproject:EDSA .
 
@@ -276,6 +315,11 @@ sdaperson:SaharVahdati a foaf:Person, sdatech:seniorResearcher ;
                    foaf:firstName "Sahar" ;
                    foaf:title "Dr. " ;
                    foaf:status "Senior Researcher" ;
+                   sda:publication """<div class="content-people">
+                     <div class="nostyle"  style="text-align:left; ">
+                       <script src="http://bibbase.org/show?bib=https://raw.githubusercontent.com/SmartDataAnalytics/sda.tech/mergeLayoutFeature/_publications/vahdati.sda.bib&jsonp=1&fullnames=1&theme=side&token=8fdfccb91fb8675707dcb9b6ae18c8f5"></script>
+                     </div>
+                   </div>""" ;
                    sda:profilepage <https://www.linkedin.com/in/saharvahdati/>, <https://twitter.com/SaVahdati> ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    cv:aboutPerson "Dr. Sahar Vahdati is a Senior Researcher in the Smart Data Analytics (SDA) research group at the University of Bonn. She also partly collaborate in teaching activities of Intelligent Database group. Her research interests include linked data, big data, data integration and management, scholarly communication, and semantic publishing." ;
@@ -297,10 +341,14 @@ sdaperson:GezimSejdiu a foaf:Person, sdatech:phdStudent ;
                    foaf:firstName "Gezim" ;
                    foaf:title "" ;
                    foaf:status "PhD Student" ;
+                   sda:publication """<div class="content-people">
+                     <div class="nostyle"  style="text-align:left; ">
+                       <script src="http://bibbase.org/show?bib=https://raw.githubusercontent.com/SmartDataAnalytics/sda.tech/mergeLayoutFeature/_publications/sejdiu.sda.bib&jsonp=1&fullnames=1&theme=side&token=8fdfccb91fb8675707dcb9b6ae18c8f5"></script>
+                     </div>
+                   </div>""" ;
                    sda:profilepage <https://www.linkedin.com/in/g%C3%ABzim-sejdiu-08b1761b/>, <https://gezimsejdiu.github.io/>, <https://twitter.com/Gezim_Sejdiu>, <https://github.com/GezimSejdiu> ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    cv:aboutPerson "Gëzim Sejdiu is a PhD Student & Research Associate at the University of Bonn. Gëzim’s research interest are in the area of Semantic Web, Big Data and Machine Learning. He is also interested in the area of distributed computing systems (Apache Spark, Apache Flink).";
-                   sda:publication sdapublication:lehmann-2017-sansa-iswc, sdapublication:iermilov-2017-sansa-iswc-demo, sdapublication:sejdiu-2018-dist-lod-stats-iswc, sdapublication:sejdiu-2018-statisfy-iswc-poster ;
                    sda:group sdagroup:DistributedSemanticAnalytics ;
                    foaf:currentProject sdaproject:BigDataOcean, sdaproject:BigDataEurope, sdaproject:SANSAStack, sdaproject:Boost40 .
 
@@ -316,10 +364,14 @@ sdaperson:LorenzBuehmann a foaf:Person, sdatech:phdStudent ;
                    foaf:phone <Tel:+49-341-9732292> ;
                    #foaf:title "" ;
                    foaf:status "PhD Student" ;
+                   sda:publication """<div class="content-people">
+                     <div class="nostyle"  style="text-align:left; ">
+                       <script src="http://bibbase.org/show?bib=https://raw.githubusercontent.com/SmartDataAnalytics/sda.tech/mergeLayoutFeature/_publications/buhmann.sda.bib&jsonp=1&fullnames=1&theme=side&token=8fdfccb91fb8675707dcb9b6ae18c8f5"></script>
+                     </div>
+                   </div>""" ;
                    sda:profilepage <https://www.linkedin.com/in/lorenz-b%C3%BChmann-09486861/>, <http://aksw.org/LorenzBuehmann.html>;
                    ov:businessCard <http://aksw.org/vCard/Hainstrasse> ;
                    cv:aboutPerson "Lorenz Bühmann is a PhD Student & Research Associate at the University of Leipzig. His research interest are in the area of Semantic Web, Big Data and Machine Learning. He is also interested in the area of distributed computing systems (Apache Spark, Apache Flink)." ;
-                   #sda:publication sdapublication:Publication1 ;
                    sda:group sdagroup:StructuredMachineLearning ;
                    foaf:currentProject sdaproject:QROWD, sdaproject:SANSAStack, sdaproject:SMLBench, sdaproject:DLLearner  .
 
@@ -338,10 +390,14 @@ sdaperson:MohnishDubey a foaf:Person, sdatech:phdStudent ;
                    foaf:firstName "Mohnish" ;
                    foaf:title "" ;
                    foaf:status "PhD Student" ;
+                   sda:publication """<div class="content-people">
+                     <div class="nostyle"  style="text-align:left; ">
+                       <script src="http://bibbase.org/show?bib=https://raw.githubusercontent.com/SmartDataAnalytics/sda.tech/mergeLayoutFeature/_publications/dubey.sda.bib&jsonp=1&fullnames=1&theme=side&token=8fdfccb91fb8675707dcb9b6ae18c8f5"></script>
+                     </div>
+                   </div>""" ;
                    sda:profilepage <https://www.linkedin.com/in/mohnish-dubey-bonn>, <https://twitter.com/MohnishDubey>, <https://github.com/mohnish-rygbee>;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    cv:aboutPerson "Mohnish Dubey is a PhD Student & Research Associate at the University of Bonn. Mohnish’s research interest are in the area of Question Answering, Semantic Web and Machine Learning." ;
-                   #sda:publication sdapublication:Publication1 ;
                    sda:group sdagroup:SemanticQuestionAnswering ;
                    foaf:currentProject sdaproject:AskNow .
 
@@ -359,10 +415,14 @@ sdaperson:HarshThakkar a foaf:Person, sdatech:phdStudent ;
                    foaf:firstName "Harsh" ;
                    foaf:title "" ;
                    foaf:status "PhD Student" ;
+                   sda:publication """<div class="content-people">
+                     <div class="nostyle"  style="text-align:left; ">
+                       <script src="http://bibbase.org/show?bib=https://raw.githubusercontent.com/SmartDataAnalytics/sda.tech/mergeLayoutFeature/_publications/thakkar.sda.bib&jsonp=1&fullnames=1&theme=side&token=8fdfccb91fb8675707dcb9b6ae18c8f5"></script>
+                     </div>
+                   </div>""" ;
                    sda:profilepage <https://www.linkedin.com/in/thakkarharsh/>, <http://harshthakkar.in/>, <https://twitter.com/harsh9t>, <https://github.com/harsh9t>;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    cv:aboutPerson "Mr. Harsh V. Thakkar is currently pursuing Doctoral studies at the University of Bonn under the supervision of Prof. Dr. Jens Lehmann and Prof. Dr. Sören Auer. His research areas are not limited to Graph Data Management, Formal Query Translation, Benchmarking and Linked Open Data Quality. Currently, he works as Marie-Curie Early Stage Researcher (ESR) in the EU funded project WDAqua ITN. " ;
-                   #sda:publication sdapublication:Publication1 ;
                    sda:group sdagroup:DistributedSemanticAnalytics ;
                    foaf:currentProject sdaproject:WDAqua, sdaproject:LITMUS, sdaproject:Boost40 .
 
@@ -380,10 +440,14 @@ sdaperson:DiegoEsteves a foaf:Person, sdatech:phdStudent ;
                    foaf:firstName "Diego" ;
                    foaf:title "" ;
                    foaf:status "PhD Student" ;
+                   sda:publication """<div class="content-people">
+                     <div class="nostyle"  style="text-align:left; ">
+                       <script src="http://bibbase.org/show?bib=https://raw.githubusercontent.com/SmartDataAnalytics/sda.tech/mergeLayoutFeature/_publications/esteves.sda.bib&jsonp=1&fullnames=1&theme=side&token=8fdfccb91fb8675707dcb9b6ae18c8f5"></script>
+                     </div>
+                   </div>""" ;
                    sda:profilepage <https://www.linkedin.com/in/diegoestevesde/>, <https://diegoesteves.github.io/>, <https://twitter.com/dne5pt>, <https://github.com/diegoesteves>;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    cv:aboutPerson "Diego Esteves is a PhD Student & Research Associate at the University of Bonn. Esteves’ research interest are in the area of Natural Language Processing, Machine Learning and Semantic Web." ;
-                   #sda:publication sdapublication:Publication1 ;
                    sda:group sdagroup:SemanticDataManagement ;
                    foaf:currentProject sdaproject:DeFacto, sdaproject:HORUS, sdaproject:MEX, sdaproject:LiDaKrA, ex:DeFacto .
 
@@ -399,10 +463,14 @@ sdaperson:FathoniMusyaffa a foaf:Person, sdatech:phdStudent ;
                    foaf:firstName "Fathoni" ;
                    foaf:title "" ;
                    foaf:status "PhD Student" ;
+                   sda:publication """<div class="content-people">
+                     <div class="nostyle"  style="text-align:left; ">
+                       <script src="http://bibbase.org/show?bib=https://raw.githubusercontent.com/SmartDataAnalytics/sda.tech/mergeLayoutFeature/_publications/musyaffa.sda.bib&jsonp=1&fullnames=1&theme=side&token=8fdfccb91fb8675707dcb9b6ae18c8f5"></script>
+                     </div>
+                   </div>""" ;
                    sda:profilepage <https://www.linkedin.com/in/fathoni/>, <https://twitter.com/fathoni_am>, <https://github.com/fathoni>;
                    sda:group sdagroup:SmartServices ;
                    cv:aboutPerson "Fathoni Musyaffa is a PhD Student & Research Associate at the University of Bonn. Fathoni's research interest are in the area of Semantic Web, Linked and Open Data especially in the domain of budget and spending from public administrations. He is also interested in the area of data interlinking and natural language processing." ;
-                   #sda:publication sdapublication:Publication1 ;
                    sda:group sdagroup:DistributedSemanticAnalytics ;
                    foaf:currentProject sdaproject:OpenBudgetseu.
 
@@ -417,9 +485,13 @@ sdaperson:MousaviNajmeh a foaf:Person, sdatech:phdStudent ;
                    foaf:firstName "Najmeh" ;
                    foaf:title "" ;
                    foaf:status "PhD Student" ;
+                   sda:publication """<div class="content-people">
+                     <div class="nostyle"  style="text-align:left; ">
+                       <script src="http://bibbase.org/show?bib=https://raw.githubusercontent.com/SmartDataAnalytics/sda.tech/mergeLayoutFeature/_publications/najmeh.sda.bib&jsonp=1&fullnames=1&theme=side&token=8fdfccb91fb8675707dcb9b6ae18c8f5"></script>
+                     </div>
+                   </div>""" ;
                    sda:profilepage <www.linkedin.com/in/najmeh-mousavi>, <https://twitter.com/Najme_M>, <https://github.com/Najmeh-M>;
                    cv:aboutPerson "Najmeh Mousavi Nejad is a PhD student in the Smart Data Analytics group at University of Bonn. She received her master's degree in Artificial Intelligence in 2011 in Iran, following which she accumulated research experience supported by publications as well as working experience in industry. Since 2015, she is the recipient of a DAAD scholarship (German Academic Exchange Service) for PhD studies in Germany and continues to conduct research (also received a nomination for Best Research and Innovation Paper award in an international conference). Her research interests are semantic web, text mining and analysis, information extraction & retrieval and Natural language processing." ;
-                   #sda:publication sdapublication:Publication1 ;
                    sda:group sdagroup:SemanticDataManagement .
 
 sdaperson:DebanjanChaudhuri a foaf:Person, sdatech:phdStudent ;
@@ -434,10 +506,14 @@ sdaperson:DebanjanChaudhuri a foaf:Person, sdatech:phdStudent ;
                    foaf:firstName "Debanjan" ;
                    foaf:title "" ;
                    foaf:status "PhD Student" ;
+                   sda:publication """<div class="content-people">
+                     <div class="nostyle"  style="text-align:left; ">
+                       <script src="http://bibbase.org/show?bib=https://raw.githubusercontent.com/SmartDataAnalytics/sda.tech/mergeLayoutFeature/_publications/chaudhuri.sda.bib&jsonp=1&fullnames=1&theme=side&token=8fdfccb91fb8675707dcb9b6ae18c8f5"></script>
+                     </div>
+                   </div>""" ;
                    sda:profilepage <https://www.linkedin.com/in/debanjan-chaudhuri-206062b8>, <https://github.com/DeepInEvil> ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    cv:aboutPerson "Debanjan Chaudhuri is a PhD Student at the University of Bonn." ;
-                   #sda:publication sdapublication:Publication1 ;
                    sda:group sdagroup:SemanticQuestionAnswering .
 
 sdaperson:SimonBin a foaf:Person, sdatech:phdStudent ;
@@ -453,6 +529,11 @@ sdaperson:SimonBin a foaf:Person, sdatech:phdStudent ;
                    foaf:firstName "Simon" ;
                    foaf:title "" ;
                    foaf:status "PhD Student" ;
+                   sda:publication """<div class="content-people">
+                     <div class="nostyle"  style="text-align:left; ">
+                       <script src="http://bibbase.org/show?bib=https://raw.githubusercontent.com/SmartDataAnalytics/sda.tech/mergeLayoutFeature/_publications/bin.sda.bib&jsonp=1&fullnames=1&theme=side&token=8fdfccb91fb8675707dcb9b6ae18c8f5"></script>
+                     </div>
+                   </div>""" ;
                    ov:businessCard <http://aksw.org/vCard/Hainstrasse> ;
                    cv:aboutPerson "Simon Bin is a PhD Student at the University of Leipzig." ;
                    sda:group sdagroup:StructuredMachineLearning ;
@@ -471,6 +552,11 @@ sdaperson:PatrickWestphal a foaf:Person, sdatech:phdStudent ;
                    foaf:firstName "Patrick" ;
                    foaf:title "" ;
                    foaf:status "PhD Student" ;
+                   sda:publication """<div class="content-people">
+                     <div class="nostyle"  style="text-align:left; ">
+                       <script src="http://bibbase.org/show?bib=https://raw.githubusercontent.com/SmartDataAnalytics/sda.tech/mergeLayoutFeature/_publications/westphal.sda.bib&jsonp=1&fullnames=1&theme=side&token=8fdfccb91fb8675707dcb9b6ae18c8f5"></script>
+                     </div>
+                   </div>""" ;
                    ov:businessCard <http://aksw.org/vCard/Hainstrasse> ;
                    cv:aboutPerson "Patrick Westphal is a PhD Student at the University of Leipzig." ;
                    sda:group sdagroup:StructuredMachineLearning ;
@@ -489,6 +575,11 @@ sdaperson:ClausStadler a foaf:Person, sdatech:phdStudent ;
                    foaf:firstName "Claus" ;
                    foaf:title "" ;
                    foaf:status "PhD Student" ;
+                   sda:publication """<div class="content-people">
+                     <div class="nostyle"  style="text-align:left; ">
+                       <script src="http://bibbase.org/show?bib=https://raw.githubusercontent.com/SmartDataAnalytics/sda.tech/mergeLayoutFeature/_publications/stadler.sda.bib&jsonp=1&fullnames=1&theme=side&token=8fdfccb91fb8675707dcb9b6ae18c8f5"></script>
+                     </div>
+                   </div>""" ;
                    sda:profilepage <https://www.linkedin.com/in/claus-stadler-89154b61/> ;
                    ov:businessCard <http://aksw.org/vCard/Hainstrasse> ;
                    cv:aboutPerson "Claus Stadler is a PhD Student at the University of Leipzig." ;
@@ -509,6 +600,11 @@ sdaperson:KonradHoeffner a foaf:Person, sdatech:phdStudent ;
                    foaf:firstName "Konrad" ;
                    foaf:title "" ;
                    foaf:status "PhD Student" ;
+                   sda:publication """<div class="content-people">
+                     <div class="nostyle"  style="text-align:left; ">
+                       <script src="http://bibbase.org/show?bib=https://raw.githubusercontent.com/SmartDataAnalytics/sda.tech/mergeLayoutFeature/_publications/hoffner.sda.bib&jsonp=1&fullnames=1&theme=side&token=8fdfccb91fb8675707dcb9b6ae18c8f5"></script>
+                     </div>
+                   </div>""" ;
                    ov:businessCard <http://aksw.org/vCard/Hainstrasse> ;
                    cv:aboutPerson "Konrad Höffner is a PhD Student at the University of Leipzig." ;
                    sda:group sdagroup:SemanticQuestionAnswering .
@@ -527,6 +623,11 @@ sdaperson:MofeedHassan a foaf:Person, sdatech:phdStudent ;
                    foaf:firstName "Mofeed" ;
                    foaf:title "" ;
                    foaf:status "PhD Student" ;
+                   sda:publication """<div class="content-people">
+                     <div class="nostyle"  style="text-align:left; ">
+                       <script src="http://bibbase.org/show?bib=https://raw.githubusercontent.com/SmartDataAnalytics/sda.tech/mergeLayoutFeature/_publications/hassan.sda.bib&jsonp=1&fullnames=1&theme=side&token=8fdfccb91fb8675707dcb9b6ae18c8f5"></script>
+                     </div>
+                   </div>""" ;
                    ov:businessCard <http://aksw.org/vCard/Hainstrasse> ;
                    cv:aboutPerson "Mofeed Hassan is a PhD Student at the University of Leipzig." .
 
@@ -542,6 +643,11 @@ sdaperson:HamidZafar a foaf:Person, sdatech:phdStudent ;
                    foaf:firstName "Hamid" ;
                    foaf:title "" ;
                    foaf:status "PhD Student" ;
+                   sda:publication """<div class="content-people">
+                     <div class="nostyle"  style="text-align:left; ">
+                       <script src="http://bibbase.org/show?bib=https://raw.githubusercontent.com/SmartDataAnalytics/sda.tech/mergeLayoutFeature/_publications/zafar.sda.bib&jsonp=1&fullnames=1&theme=side&token=8fdfccb91fb8675707dcb9b6ae18c8f5"></script>
+                     </div>
+                   </div>""" ;
                    sda:profilepage <https://www.linkedin.com/in/hamid-zafar-138a0a46/>, <https://twitter.com/HamidZafart> ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    cv:aboutPerson "Hamid Zafar is a PhD Student at the University of Bonn." ;
@@ -561,6 +667,11 @@ sdaperson:ShimaaIbrahim a foaf:Person, sdatech:phdStudent ;
                    foaf:firstName "Shimaa" ;
                    foaf:title "" ;
                    foaf:status "PhD Student" ;
+                   sda:publication """<div class="content-people">
+                     <div class="nostyle"  style="text-align:left; ">
+                       <script src="http://bibbase.org/show?bib=https://raw.githubusercontent.com/SmartDataAnalytics/sda.tech/mergeLayoutFeature/_publications/ibrahim.sda.bib&jsonp=1&fullnames=1&theme=side&token=8fdfccb91fb8675707dcb9b6ae18c8f5"></script>
+                     </div>
+                   </div>""" ;
                    sda:profilepage <https://www.linkedin.com/in/shimaa-ibrahim-57a23b21/> ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    cv:aboutPerson "Shimaa Ibrahim is a PhD Student in the Smart Data Analytics (SDA) research group at the University of Bonn. She got her bachelor in Computer Science in 2006 and her master degree in Information Technology in 2013 from the Alexandria University, Egypt. Her research interests include Semantic Web, Big Data and Machine Learning." ;
@@ -579,6 +690,11 @@ sdaperson:ElisaMargarethSibarani a foaf:Person, sdatech:phdStudent ;
                    foaf:firstName "Elisa" ;
                    foaf:title "" ;
                    foaf:status "PhD Student" ;
+                   sda:publication """<div class="content-people">
+                     <div class="nostyle"  style="text-align:left; ">
+                       <script src="http://bibbase.org/show?bib=https://raw.githubusercontent.com/SmartDataAnalytics/sda.tech/mergeLayoutFeature/_publications/sibarani.sda.bib&jsonp=1&fullnames=1&theme=side&token=8fdfccb91fb8675707dcb9b6ae18c8f5"></script>
+                     </div>
+                   </div>""" ;
                    sda:profilepage <https://www.linkedin.com/in/elisa-margareth-sibarani-652545b1/> ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    cv:aboutPerson "Elisa Margareth Sibarani is a PhD Student at the University of Bonn." ;
@@ -596,6 +712,11 @@ sdaperson:AfshinSadeghi a foaf:Person, sdatech:phdStudent ;
                    foaf:firstName "Afshin" ;
                    foaf:title "" ;
                    foaf:status "PhD Student" ;
+                   sda:publication """<div class="content-people">
+                     <div class="nostyle"  style="text-align:left; ">
+                       <script src="http://bibbase.org/show?bib=https://raw.githubusercontent.com/SmartDataAnalytics/sda.tech/mergeLayoutFeature/_publications/sadeghi.sda.bib&jsonp=1&fullnames=1&theme=side&token=8fdfccb91fb8675707dcb9b6ae18c8f5"></script>
+                     </div>
+                   </div>""" ;
                    sda:profilepage <https://www.linkedin.com/in/afshin-sadeghi-b58a72b3/> ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    cv:aboutPerson "Afshin Sadeghi is a PhD Student at the University of Bonn." ;
@@ -614,6 +735,11 @@ sdaperson:IsaiahOnandoMulang a foaf:Person, sdatech:phdStudent ;
                    foaf:firstName "Isaiah" ;
                    foaf:title "" ;
                    foaf:status "PhD Student" ;
+                   sda:publication """<div class="content-people">
+                     <div class="nostyle"  style="text-align:left; ">
+                       <script src="http://bibbase.org/show?bib=https://raw.githubusercontent.com/SmartDataAnalytics/sda.tech/mergeLayoutFeature/_publications/mulang.sda.bib&jsonp=1&fullnames=1&theme=side&token=8fdfccb91fb8675707dcb9b6ae18c8f5"></script>
+                     </div>
+                   </div>""" ;
                    sda:profilepage <https://www.linkedin.com/in/onando-mulang-31a16ab1/> ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    sda:group sdagroup:KnowledgeGraph ;
@@ -631,6 +757,11 @@ sdaperson:DenisLukovnikov a foaf:Person, sdatech:phdStudent ;
                    foaf:firstName "Denis" ;
                    foaf:title "" ;
                    foaf:status "PhD Student" ;
+                   sda:publication """<div class="content-people">
+                     <div class="nostyle"  style="text-align:left; ">
+                       <script src="http://bibbase.org/show?bib=https://raw.githubusercontent.com/SmartDataAnalytics/sda.tech/mergeLayoutFeature/_publications/lukovnikov.sda.bib&jsonp=1&fullnames=1&theme=side&token=8fdfccb91fb8675707dcb9b6ae18c8f5"></script>
+                     </div>
+                   </div>""" ;
                    sda:profilepage <https://www.linkedin.com/in/lukovnikovdenis/> ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    cv:aboutPerson "Denis Lukovnikov is a PhD Student at the University of Bonn." ;
@@ -649,6 +780,11 @@ sdaperson:SaidFathalla a foaf:Person, sdatech:phdStudent ;
                    foaf:firstName "Said" ;
                    foaf:title "" ;
                    foaf:status "PhD Student" ;
+                   sda:publication """<div class="content-people">
+                     <div class="nostyle"  style="text-align:left; ">
+                       <script src="http://bibbase.org/show?bib=https://raw.githubusercontent.com/SmartDataAnalytics/sda.tech/mergeLayoutFeature/_publications/fathalla.sda.bib&jsonp=1&fullnames=1&theme=side&token=8fdfccb91fb8675707dcb9b6ae18c8f5"></script>
+                     </div>
+                   </div>""" ;
                    sda:profilepage <https://scholar.google.com/citations?user=JOI-7d0AAAAJ> ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    sda:group sdagroup:SemanticDataManagement ;
@@ -667,6 +803,11 @@ sdaperson:HebaIbrahim a foaf:Person, sdatech:phdStudent ;
                    foaf:firstName "Heba" ;
                    foaf:title "" ;
                    foaf:status "PhD Student" ;
+                   sda:publication """<div class="content-people">
+                     <div class="nostyle"  style="text-align:left; ">
+                       <script src="http://bibbase.org/show?bib=https://raw.githubusercontent.com/SmartDataAnalytics/sda.tech/mergeLayoutFeature/_publications/hebaibrahim.sda.bib&jsonp=1&fullnames=1&theme=side&token=8fdfccb91fb8675707dcb9b6ae18c8f5"></script>
+                     </div>
+                   </div>""" ;
                    sda:profilepage <www.linkedin.com/in/heba-mohamed-b7b7a914b>, <https://twitter.com/HebaAIbrahim1> ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    cv:aboutPerson "Heba Mohamed is a PhD candidate in the Smart Data Analytics (SDA) research group at the University of Bonn. She received her master’s degree in Computer Science in 2012 from the Alexandria University, Egypt. Her research interests include Semantic Web, Big Data and Machine Learning.";
@@ -685,6 +826,11 @@ sdaperson:MojtabaNayyeri a foaf:Person, sdatech:phdStudent ;
                    foaf:firstName "Mojtaba" ;
                    foaf:title "" ;
                    foaf:status "PhD Student" ;
+                   sda:publication """<div class="content-people">
+                     <div class="nostyle"  style="text-align:left; ">
+                       <script src="http://bibbase.org/show?bib=https://raw.githubusercontent.com/SmartDataAnalytics/sda.tech/mergeLayoutFeature/_publications/nayyeri.sda.bib&jsonp=1&fullnames=1&theme=side&token=8fdfccb91fb8675707dcb9b6ae18c8f5"></script>
+                     </div>
+                   </div>""" ;
                    sda:profilepage <https://www.linkedin.com/in/mojtaba-nayyeri-a2047378/>;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    sda:group sdagroup:KnowledgeGraph ;
@@ -702,6 +848,11 @@ sdaperson:ChengjinXu a foaf:Person, sdatech:phdStudent ;
                    foaf:firstName "Chengjin" ;
                    foaf:title "" ;
                    foaf:status "PhD Student" ;
+                   sda:publication """<div class="content-people">
+                     <div class="nostyle"  style="text-align:left; ">
+                       <script src="http://bibbase.org/show?bib=https://raw.githubusercontent.com/SmartDataAnalytics/sda.tech/mergeLayoutFeature/_publications/xu.sda.bib&jsonp=1&fullnames=1&theme=side&token=8fdfccb91fb8675707dcb9b6ae18c8f5"></script>
+                     </div>
+                   </div>""" ;
                    sda:profilepage <https://www.linkedin.com/in/chengjin-xu-7a534b153/> ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    sda:group sdagroup:KnowledgeGraph ;
@@ -718,6 +869,11 @@ sdaperson:MehdiAli a foaf:Person, sdatech:phdStudent ;
                    foaf:firstName "Mehdi" ;
                    foaf:title "" ;
                    foaf:status "PhD Student" ;
+                   sda:publication """<div class="content-people">
+                     <div class="nostyle"  style="text-align:left; ">
+                       <script src="http://bibbase.org/show?bib=https://raw.githubusercontent.com/SmartDataAnalytics/sda.tech/mergeLayoutFeature/_publications/ali.sda.bib&jsonp=1&fullnames=1&theme=side&token=8fdfccb91fb8675707dcb9b6ae18c8f5"></script>
+                     </div>
+                   </div>""" ;
                    sda:profilepage <https://www.linkedin.com/in/mehdi-ali-548834a4/>;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    sda:group sdagroup:KnowledgeGraph ;
@@ -734,6 +890,11 @@ sdaperson:FirasKassawat a foaf:Person, sdatech:phdStudent ;
                   foaf:firstName "Firas" ;
                   foaf:title "" ;
                   foaf:status "PhD Student" ;
+                  sda:publication """<div class="content-people">
+                    <div class="nostyle"  style="text-align:left; ">
+                      <script src="http://bibbase.org/show?bib=https://raw.githubusercontent.com/SmartDataAnalytics/sda.tech/mergeLayoutFeature/_publications/kassawat.sda.bib&jsonp=1&fullnames=1&theme=side&token=8fdfccb91fb8675707dcb9b6ae18c8f5"></script>
+                    </div>
+                  </div>""" ;
                   sda:profilepage <https://www.linkedin.com/in/firas-kassawat-010978a7/>;
                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
                   sda:group sdagroup:SoftwareEngineeringForDataScience ;
@@ -750,6 +911,11 @@ sdaperson:LarsReimann a foaf:Person, sdatech:phdStudent ;
                   foaf:firstName "Lars" ;
                   foaf:title "" ;
                   foaf:status "PhD Student" ;
+                  sda:publication """<div class="content-people">
+                    <div class="nostyle"  style="text-align:left; ">
+                      <script src="http://bibbase.org/show?bib=https://raw.githubusercontent.com/SmartDataAnalytics/sda.tech/mergeLayoutFeature/_publications/reimann.sda.bib&jsonp=1&fullnames=1&theme=side&token=8fdfccb91fb8675707dcb9b6ae18c8f5"></script>
+                    </div>
+                  </div>""" ;
                   sda:profilepage <https://www.linkedin.com/in/lars-reimann-a42568168/>, <https://github.com/lars-reimann>;
                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
                   sda:group sdagroup:SoftwareEngineeringForDataScience ;
@@ -769,6 +935,11 @@ sdaperson:SteffenLohmann a foaf:Person, sdatech:associateReseracher ;
                   foaf:phone <Tel:+49-2241-14-3021> ;
                   foaf:title "Dr. " ;
                   foaf:status "Senior Researcher" ;
+                  sda:publication """<div class="content-people">
+                    <div class="nostyle"  style="text-align:left; ">
+                      <script src="http://bibbase.org/show?bib=https://raw.githubusercontent.com/SmartDataAnalytics/sda.tech/mergeLayoutFeature/_publications/lohmann.sda.bib&jsonp=1&fullnames=1&theme=side&token=8fdfccb91fb8675707dcb9b6ae18c8f5"></script>
+                    </div>
+                  </div>""" ;
                   sda:profilepage <http://steffen-lohmann.de/>, <https://www.linkedin.com/in/steffen-lohmann-b19267123/>;
                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
                   cv:aboutPerson "Dr. Steffen Lohmann is a researcher and deputy head of the Enterprise Information Systems (EIS) department at the Fraunhofer Institute for Intelligent Analysis and Information Systems (IAIS), and associated member of the Smart Data Analytics (SDA) research group of the University of Bonn. My research is devoted to all exciting topics related to Semantic Technologies, Knowledge Engineering, Interactive Systems, Information Visualization, and the Web. At Fraunhofer IAIS, I am leading the business unit on Enterprise Information Integration concerned with research and development in areas such as Industry 4.0, Internet of Things, Semantic Interoperability, and Data Integration." ;
@@ -787,6 +958,11 @@ sdaperson:DamienGraux a foaf:Person, sdatech:associateReseracher ;
                   #foaf:phone <Tel:+49-2241-14-1234> ;
                   foaf:title "Dr. " ;
                   foaf:status "Senior Researcher" ;
+                  sda:publication """<div class="content-people">
+                    <div class="nostyle"  style="text-align:left; ">
+                      <script src="http://bibbase.org/show?bib=https://raw.githubusercontent.com/SmartDataAnalytics/sda.tech/mergeLayoutFeature/_publications/graux.sda.bib&jsonp=1&fullnames=1&theme=side&token=8fdfccb91fb8675707dcb9b6ae18c8f5"></script>
+                    </div>
+                  </div>""" ;
                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
                   cv:aboutPerson "Dr. Damien Graux is a Senior Researcher at the Fraunhofer IAIS." ;
                   sda:group sdagroup:SemanticDataManagement, sdagroup:DistributedSemanticAnalytics ;
@@ -804,6 +980,11 @@ sdaperson:AsjaFischer a foaf:Person, sdatech:associateReseracher ;
                   foaf:phone <Tel:+49-341-123456789> ;
                   foaf:title "Dr. " ;
                   foaf:status "Senior Researcher" ;
+                  sda:publication """<div class="content-people">
+                    <div class="nostyle"  style="text-align:left; ">
+                      <script src="http://bibbase.org/show?bib=https://raw.githubusercontent.com/SmartDataAnalytics/sda.tech/mergeLayoutFeature/_publications/fischer.sda.bib&jsonp=1&fullnames=1&theme=side&token=8fdfccb91fb8675707dcb9b6ae18c8f5"></script>
+                    </div>
+                  </div>""" ;
                   sda:profilepage <https://www.linkedin.com/in/asja-fischer-32007a94>;
                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
                   cv:aboutPerson "Dr. Asja Fischer is a Assistant Professor at the Computer Science Department III of the University of Bonn. Before, she was a post-doctoral researcher at the Montreal Institute for Machine Learning (MILA). Between 2010 and end of 2014, Asja was employed both at the Institute for Neural Computation at the Ruhr-University Bochum and the Department of Computer Science at the University of Copenhagen working on her PhD in Machine Learning, which she defended in Copenhagen in 2014. Before, she studied Biology. Bioinformatics, Mathematics and Cognitive Science at the Ruhr-University Bochum, the Universidade de Lisboa and the University of Osnabrück." .
@@ -824,6 +1005,11 @@ sdaperson:NiklasPetersen a foaf:Person, sdatech:associateReseracher ;
                    foaf:firstName "Niklas" ;
                    foaf:title "" ;
                    foaf:status "Researcher" ;
+                   sda:publication """<div class="content-people">
+                     <div class="nostyle"  style="text-align:left; ">
+                       <script src="http://bibbase.org/show?bib=https://raw.githubusercontent.com/SmartDataAnalytics/sda.tech/mergeLayoutFeature/_publications/petersen.sda.bib&jsonp=1&fullnames=1&theme=side&token=8fdfccb91fb8675707dcb9b6ae18c8f5"></script>
+                     </div>
+                   </div>""" ;
                    sda:profilepage <https://www.linkedin.com/in/niklas-petersen-a8ab5765/>;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    cv:aboutPerson "Niklas Petersen is a Researcher at the Fraunhofer IAIS." ;
@@ -842,6 +1028,11 @@ sdaperson:MohamedNadjibMami a foaf:Person, sdatech:associateReseracher ;
                    foaf:firstName "Mohamed" ;
                    foaf:title "" ;
                    foaf:status "Researcher" ;
+                   sda:publication """<div class="content-people">
+                     <div class="nostyle"  style="text-align:left; ">
+                       <script src="http://bibbase.org/show?bib=https://raw.githubusercontent.com/SmartDataAnalytics/sda.tech/mergeLayoutFeature/_publications/mami.sda.bib&jsonp=1&fullnames=1&theme=side&token=8fdfccb91fb8675707dcb9b6ae18c8f5"></script>
+                     </div>
+                   </div>""" ;
                    sda:profilepage <https://www.linkedin.com/in/mohamednadjibmami/>, <http://mohamednadjibmami.com/>, <https://twitter.com/MohamedNadjMAMI>;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    cv:aboutPerson "Mohamed Nadjib Mami is a Researcher at the Fraunhofer IAIS with focus on Big Data and Semantic Web." ;
@@ -859,6 +1050,11 @@ sdaperson:DiegoCollarana a foaf:Person, sdatech:associateReseracher ;
                    foaf:firstName "Diego" ;
                    foaf:title "Dr. " ;
                    foaf:status "Researcher" ;
+                   sda:publication """<div class="content-people">
+                     <div class="nostyle"  style="text-align:left; ">
+                       <script src="http://bibbase.org/show?bib=https://raw.githubusercontent.com/SmartDataAnalytics/sda.tech/mergeLayoutFeature/_publications/collarana.sda.bib&jsonp=1&fullnames=1&theme=side&token=8fdfccb91fb8675707dcb9b6ae18c8f5"></script>
+                     </div>
+                   </div>""" ;
                    sda:profilepage <https://www.linkedin.com/in/diego-collarana-60ab6127/>;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    cv:aboutPerson "Dr. Diego Collarana is a Senior Researcher at the Fraunhofer IAIS." ;
@@ -876,6 +1072,11 @@ sdaperson:KuldeepSingh a foaf:Person, sdatech:associateReseracher ;
                    foaf:firstName "Kuldeep" ;
                    foaf:title "Dr. " ;
                    foaf:status "Researcher" ;
+                   sda:publication """<div class="content-people">
+                     <div class="nostyle"  style="text-align:left; ">
+                       <script src="http://bibbase.org/show?bib=https://raw.githubusercontent.com/SmartDataAnalytics/sda.tech/mergeLayoutFeature/_publications/singh.sda.bib&jsonp=1&fullnames=1&theme=side&token=8fdfccb91fb8675707dcb9b6ae18c8f5"></script>
+                     </div>
+                   </div>""" ;
                    sda:profilepage <https://www.linkedin.com/in/kuldeep-singh-67a4a840/>;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    cv:aboutPerson "Dr. Kuldeep Singh is a Senior Researcher at the Fraunhofer IAIS." ;
@@ -893,6 +1094,11 @@ sdaperson:JewgeniRose a foaf:Person, sdatech:associateReseracher ;
                    foaf:firstName "Jewgeni" ;
                    foaf:title "" ;
                    foaf:status "Researcher" ;
+                   sda:publication """<div class="content-people">
+                     <div class="nostyle"  style="text-align:left; ">
+                       <script src="http://bibbase.org/show?bib=https://raw.githubusercontent.com/SmartDataAnalytics/sda.tech/mergeLayoutFeature/_publications/rose.sda.bib&jsonp=1&fullnames=1&theme=side&token=8fdfccb91fb8675707dcb9b6ae18c8f5"></script>
+                     </div>
+                   </div>""" ;
                    sda:profilepage <https://www.linkedin.com/in/jewgeni-rose-5480a7104/>;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    cv:aboutPerson "Jewgeni Rose is a Researcher at the Fraunhofer IAIS." ;
@@ -909,6 +1115,11 @@ sdaperson:AshwiniJayaKumar a foaf:Person, sdatech:associateReseracher ;
                    foaf:firstName "Ashwini" ;
                    foaf:title "" ;
                    foaf:status "Researcher" ;
+                   sda:publication """<div class="content-people">
+                     <div class="nostyle"  style="text-align:left; ">
+                       <script src="http://bibbase.org/show?bib=https://raw.githubusercontent.com/SmartDataAnalytics/sda.tech/mergeLayoutFeature/_publications/kumar.sda.bib&jsonp=1&fullnames=1&theme=side&token=8fdfccb91fb8675707dcb9b6ae18c8f5"></script>
+                     </div>
+                   </div>""" ;
                    sda:profilepage <https://www.linkedin.com/in/ashwini-jaya-kumar-bab04216/>;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    cv:aboutPerson "Ashwini Jaya Kumar is a Researcher at the Fraunhofer IAIS." ;
@@ -925,6 +1136,11 @@ sdaperson:MiretteElias a foaf:Person, sdatech:associateReseracher ;
                    foaf:firstName "Mirette" ;
                    foaf:title "" ;
                    foaf:status "Researcher" ;
+                   sda:publication """<div class="content-people">
+                     <div class="nostyle"  style="text-align:left; ">
+                       <script src="http://bibbase.org/show?bib=https://raw.githubusercontent.com/SmartDataAnalytics/sda.tech/mergeLayoutFeature/_publications/elias.sda.bib&jsonp=1&fullnames=1&theme=side&token=8fdfccb91fb8675707dcb9b6ae18c8f5"></script>
+                     </div>
+                   </div>""" ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    cv:aboutPerson "Mirette Elias is a Researcher at the Fraunhofer IAIS." .
 
@@ -940,6 +1156,11 @@ sdaperson:VitalisWiens a foaf:Person, sdatech:associateReseracher ;
                    foaf:firstName "Vitalis" ;
                    foaf:title "" ;
                    foaf:status "Researcher" ;
+                   sda:publication """<div class="content-people">
+                     <div class="nostyle"  style="text-align:left; ">
+                       <script src="http://bibbase.org/show?bib=https://raw.githubusercontent.com/SmartDataAnalytics/sda.tech/mergeLayoutFeature/_publications/wiens.sda.bib&jsonp=1&fullnames=1&theme=side&token=8fdfccb91fb8675707dcb9b6ae18c8f5"></script>
+                     </div>
+                   </div>""" ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    cv:aboutPerson "Vitalis Wiens is a Researcher at the Fraunhofer IAIS." .
 
@@ -955,6 +1176,11 @@ sdaperson:SebastianBader a foaf:Person, sdatech:associateReseracher ;
                    foaf:firstName "Sebastian" ;
                    foaf:title "" ;
                    foaf:status "Researcher" ;
+                   sda:publication """<div class="content-people">
+                     <div class="nostyle"  style="text-align:left; ">
+                       <script src="http://bibbase.org/show?bib=https://raw.githubusercontent.com/SmartDataAnalytics/sda.tech/mergeLayoutFeature/_publications/bader.sda.bib&jsonp=1&fullnames=1&theme=side&token=8fdfccb91fb8675707dcb9b6ae18c8f5"></script>
+                     </div>
+                   </div>""" ;
                    sda:profilepage <https://www.linkedin.com/in/sebastianrbader/>, <https://github.com/sebbader>, <http://dblp.org/pers/hd/b/Bader:Sebastian_R=>;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    foaf:currentProject sdaproject:Boost40 ;
@@ -973,6 +1199,11 @@ sdaperson:RostislavNedelchev a foaf:Person, sdatech:associateReseracher ;
                    foaf:firstName "Rostislav" ;
                    foaf:title "" ;
                    foaf:status "Researcher" ;
+                   sda:publication """<div class="content-people">
+                     <div class="nostyle"  style="text-align:left; ">
+                       <script src="http://bibbase.org/show?bib=https://raw.githubusercontent.com/SmartDataAnalytics/sda.tech/mergeLayoutFeature/_publications/nedelchev.sda.bib&jsonp=1&fullnames=1&theme=side&token=8fdfccb91fb8675707dcb9b6ae18c8f5"></script>
+                     </div>
+                   </div>""" ;
                    sda:profilepage <https://www.linkedin.com/in/rostislav91nedelchev/>;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    foaf:currentProject sdaproject:AskNow ;
@@ -990,6 +1221,11 @@ sdaperson:MichaelGalkin a foaf:Person, sdatech:associateReseracher ;
                    foaf:firstName "Michael" ;
                    foaf:title "Dr. " ;
                    foaf:status "Senior Researcher" ;
+                   sda:publication """<div class="content-people">
+                     <div class="nostyle"  style="text-align:left; ">
+                       <script src="http://bibbase.org/show?bib=https://raw.githubusercontent.com/SmartDataAnalytics/sda.tech/mergeLayoutFeature/_publications/galkin.sda.bib&jsonp=1&fullnames=1&theme=side&token=8fdfccb91fb8675707dcb9b6ae18c8f5"></script>
+                     </div>
+                   </div>""" ;
                    sda:profilepage <https://www.linkedin.com/in/michael-galkin-80b71294/> ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    cv:aboutPerson "Dr. Michael Galkin is a Researcher at the Fraunhofer IAIS." ;
@@ -1009,6 +1245,11 @@ sdaperson:NileshChakraborty a foaf:Person, sdatech:studentAssistant ;
                    foaf:firstName "Nilesh" ;
                    foaf:title "" ;
                    foaf:status "Student Assistant" ;
+                   sda:publication """<div class="content-people">
+                     <div class="nostyle"  style="text-align:left; ">
+                       <script src="http://bibbase.org/show?bib=https://raw.githubusercontent.com/SmartDataAnalytics/sda.tech/mergeLayoutFeature/_publications/chakraborty.sda.bib&jsonp=1&fullnames=1&theme=side&token=8fdfccb91fb8675707dcb9b6ae18c8f5"></script>
+                     </div>
+                   </div>""" ;
                    sda:profilepage <https://www.linkedin.com/in/nileshchakraborty/>, <https://github.com/nilesh-c>;
                    sda:github "https://github.com/nilesh-c" ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
@@ -1028,6 +1269,11 @@ sdaperson:GauravMaheshwari a foaf:Person, sdatech:studentAssistant ;
                    foaf:firstName "Gaurav" ;
                    foaf:title "" ;
                    foaf:status "Student Assistant" ;
+                   sda:publication """<div class="content-people">
+                     <div class="nostyle"  style="text-align:left; ">
+                       <script src="http://bibbase.org/show?bib=https://raw.githubusercontent.com/SmartDataAnalytics/sda.tech/mergeLayoutFeature/_publications/maheshwari.sda.bib&jsonp=1&fullnames=1&theme=side&token=8fdfccb91fb8675707dcb9b6ae18c8f5"></script>
+                     </div>
+                   </div>""" ;
                    sda:profilepage <https://www.linkedin.com/in/maheshwarigaurav1/>;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    sda:group sdagroup:SemanticQuestionAnswering ;
@@ -1046,6 +1292,11 @@ sdaperson:PriyanshTrivedi a foaf:Person, sdatech:studentAssistant ;
                    foaf:firstName "Priyansh" ;
                    foaf:title "" ;
                    foaf:status "Student Assistant" ;
+                   sda:publication """<div class="content-people">
+                     <div class="nostyle"  style="text-align:left; ">
+                       <script src="http://bibbase.org/show?bib=https://raw.githubusercontent.com/SmartDataAnalytics/sda.tech/mergeLayoutFeature/_publications/trivedi.sda.bib&jsonp=1&fullnames=1&theme=side&token=8fdfccb91fb8675707dcb9b6ae18c8f5"></script>
+                     </div>
+                   </div>""" ;
                    sda:profilepage <https://www.linkedin.com/in/priyanshtrivedi/>;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    sda:group sdagroup:SemanticQuestionAnswering ;
@@ -1063,6 +1314,11 @@ sdaperson:YersonRoa a foaf:Person, sdatech:studentAssistant ;
                    foaf:firstName "Yerson" ;
                    foaf:title "" ;
                    foaf:status "Student Assistant" ;
+                   sda:publication """<div class="content-people">
+                     <div class="nostyle"  style="text-align:left; ">
+                       <script src="http://bibbase.org/show?bib=https://raw.githubusercontent.com/SmartDataAnalytics/sda.tech/mergeLayoutFeature/_publications/roa.sda.bib&jsonp=1&fullnames=1&theme=side&token=8fdfccb91fb8675707dcb9b6ae18c8f5"></script>
+                     </div>
+                   </div>""" ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    cv:aboutPerson "Yerson Roa is a Student Assistant at the Computer Science Department III of the University of Bonn." .
 
@@ -1078,6 +1334,11 @@ sdaperson:DebayanBanerjee a foaf:Person, sdatech:studentAssistant ;
                    foaf:firstName "Debayan" ;
                    foaf:title "" ;
                    foaf:status "Student Assistant" ;
+                   sda:publication """<div class="content-people">
+                     <div class="nostyle"  style="text-align:left; ">
+                       <script src="http://bibbase.org/show?bib=https://raw.githubusercontent.com/SmartDataAnalytics/sda.tech/mergeLayoutFeature/_publications/banerjee.sda.bib&jsonp=1&fullnames=1&theme=side&token=8fdfccb91fb8675707dcb9b6ae18c8f5"></script>
+                     </div>
+                   </div>""" ;
                    sda:profilepage <https://www.linkedin.com/in/debayan-banerjee-93608b57>;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    sda:group sdagroup:SemanticQuestionAnswering ;
@@ -1095,6 +1356,11 @@ sdaperson:MingQu a foaf:Person, sdatech:studentAssistant ;
                    foaf:firstName "Ming" ;
                    foaf:title "" ;
                    foaf:status "Student Assistant" ;
+                   sda:publication """<div class="content-people">
+                     <div class="nostyle"  style="text-align:left; ">
+                       <script src="http://bibbase.org/show?bib=https://raw.githubusercontent.com/SmartDataAnalytics/sda.tech/mergeLayoutFeature/_publications/qu.sda.bib&jsonp=1&fullnames=1&theme=side&token=8fdfccb91fb8675707dcb9b6ae18c8f5"></script>
+                     </div>
+                   </div>""" ;
                    sda:profilepage <https://www.linkedin.com/in/ming-qu-51229711b/>;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    cv:aboutPerson "Ming Qu is a Student Assistant at the Computer Science Department III of the University of Bonn." .
@@ -1111,6 +1377,11 @@ sdaperson:AsifKhan a foaf:Person, sdatech:studentAssistant ;
                    foaf:firstName "Asif" ;
                    foaf:title "" ;
                    foaf:status "Student Assistant" ;
+                   sda:publication """<div class="content-people">
+                     <div class="nostyle"  style="text-align:left; ">
+                       <script src="http://bibbase.org/show?bib=https://raw.githubusercontent.com/SmartDataAnalytics/sda.tech/mergeLayoutFeature/_publications/khan.sda.bib&jsonp=1&fullnames=1&theme=side&token=8fdfccb91fb8675707dcb9b6ae18c8f5"></script>
+                     </div>
+                   </div>""" ;
                    sda:profilepage <https://www.linkedin.com/in/mak4086/>;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    cv:aboutPerson "Asif Khan is a Student Assistant at the Computer Science Department III of the University of Bonn." .
@@ -1127,6 +1398,11 @@ sdaperson:PiyushChawla a foaf:Person, sdatech:studentAssistant ;
                    foaf:firstName "Piyush" ;
                    foaf:title "" ;
                    foaf:status "Student Assistant" ;
+                   sda:publication """<div class="content-people">
+                     <div class="nostyle"  style="text-align:left; ">
+                       <script src="http://bibbase.org/show?bib=https://raw.githubusercontent.com/SmartDataAnalytics/sda.tech/mergeLayoutFeature/_publications/chawla.sda.bib&jsonp=1&fullnames=1&theme=side&token=8fdfccb91fb8675707dcb9b6ae18c8f5"></script>
+                     </div>
+                   </div>""" ;
                    sda:profilepage <https://www.linkedin.com/in/piyush-chawla-36020111a>;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    cv:aboutPerson "Piyush Chawla is a Student Assistant at the Computer Science Department III of the University of Bonn." .
@@ -1142,6 +1418,11 @@ sdaperson:MehrdadBozorg a foaf:Person, sdatech:studentAssistant ;
                    foaf:firstName "Mehrdad" ;
                    foaf:title "" ;
                    foaf:status "Student Assistant" ;
+                   sda:publication """<div class="content-people">
+                     <div class="nostyle"  style="text-align:left; ">
+                       <script src="http://bibbase.org/show?bib=https://raw.githubusercontent.com/SmartDataAnalytics/sda.tech/mergeLayoutFeature/_publications/bozorg.sda.bib&jsonp=1&fullnames=1&theme=side&token=8fdfccb91fb8675707dcb9b6ae18c8f5"></script>
+                     </div>
+                   </div>""" ;
                    sda:profilepage <https://de.linkedin.com/in/mehrdad-bozorg-518585155/>;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    sda:group sdagroup:KnowledgeGraph ;
@@ -1158,6 +1439,11 @@ sdaperson:MirzaMohtashimAlam a foaf:Person, sdatech:studentAssistant ;
                   foaf:firstName "Mirza" ;
                   foaf:title "" ;
                   foaf:status "Student Assistant" ;
+                  sda:publication """<div class="content-people">
+                    <div class="nostyle"  style="text-align:left; ">
+                      <script src="http://bibbase.org/show?bib=https://raw.githubusercontent.com/SmartDataAnalytics/sda.tech/mergeLayoutFeature/_publications/mirza.sda.bib&jsonp=1&fullnames=1&theme=side&token=8fdfccb91fb8675707dcb9b6ae18c8f5"></script>
+                    </div>
+                  </div>""" ;
                   sda:profilepage <https://www.linkedin.com/in/mirzamohtashim/>;
                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
                   sda:group sdagroup:KnowledgeGraph ;
@@ -1176,6 +1462,11 @@ sdaperson:KathanKashiparekh a foaf:Person, sdatech:intern ;
                    foaf:firstName "Kathan" ;
                    foaf:title "" ;
                    foaf:status "Intern" ;
+                   sda:publication """<div class="content-people">
+                     <div class="nostyle"  style="text-align:left; ">
+                       <script src="http://bibbase.org/show?bib=https://raw.githubusercontent.com/SmartDataAnalytics/sda.tech/mergeLayoutFeature/_publications/kashiparekh.sda.bib&jsonp=1&fullnames=1&theme=side&token=8fdfccb91fb8675707dcb9b6ae18c8f5"></script>
+                     </div>
+                   </div>""" ;
                    sda:profilepage <https://www.linkedin.com/in/kathan-kashiparekh-094606b8/>;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    cv:aboutPerson "Kathan Kashiparekh is a Student Intern at the Computer Science Department III of the University of Bonn." .
@@ -1191,6 +1482,11 @@ sdaperson:AnikethReddy a foaf:Person, sdatech:intern ;
                    foaf:firstName "Aniketh" ;
                    foaf:title "" ;
                    foaf:status "Intern" ;
+                   sda:publication """<div class="content-people">
+                     <div class="nostyle"  style="text-align:left; ">
+                       <script src="http://bibbase.org/show?bib=https://raw.githubusercontent.com/SmartDataAnalytics/sda.tech/mergeLayoutFeature/_publications/reddy.sda.bib&jsonp=1&fullnames=1&theme=side&token=8fdfccb91fb8675707dcb9b6ae18c8f5"></script>
+                     </div>
+                   </div>""" ;
                    sda:profilepage <https://www.linkedin.com/in/aniketh-reddy/>;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    cv:aboutPerson "Aniketh Reddy is a Student Intern at the Computer Science Department III of the University of Bonn." .
@@ -1208,6 +1504,11 @@ sdaperson:FrankNietzsche a foaf:Person, sdatech:formerMember ;
                    foaf:firstName "Frank" ;
                    foaf:title "" ;
                    foaf:status "PhD Student" ;
+                   sda:publication """<div class="content-people">
+                     <div class="nostyle"  style="text-align:left; ">
+                       <script src="http://bibbase.org/show?bib=https://raw.githubusercontent.com/SmartDataAnalytics/sda.tech/mergeLayoutFeature/_publications/nietzsche.sda.bib&jsonp=1&fullnames=1&theme=side&token=8fdfccb91fb8675707dcb9b6ae18c8f5"></script>
+                     </div>
+                   </div>""" ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    cv:aboutPerson "Frank Nietzsche is a PhD Student at the Computer Science Department III of the University of Bonn." ;
                    foaf:currentProject sdaproject:GEISER .
@@ -1223,6 +1524,11 @@ sdaperson:BastianHaarmann a foaf:Person, sdatech:formerMember ;
                    foaf:firstName "Bastian" ;
                    foaf:title "Dr. " ;
                    foaf:status "Senior Researcher" ;
+                   sda:publication """<div class="content-people">
+                     <div class="nostyle"  style="text-align:left; ">
+                       <script src="http://bibbase.org/show?bib=https://raw.githubusercontent.com/SmartDataAnalytics/sda.tech/mergeLayoutFeature/_publications/haarmann.sda.bib&jsonp=1&fullnames=1&theme=side&token=8fdfccb91fb8675707dcb9b6ae18c8f5"></script>
+                     </div>
+                   </div>""" ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    cv:aboutPerson "Dr. Bastian Haarmann is a Senior Researcher at the Computer Science Department III of the University of Bonn." .
 
@@ -1237,6 +1543,11 @@ sdaperson:HenningPetzka a foaf:Person, sdatech:formerMember ;
                    foaf:firstName "Henning" ;
                    foaf:title "Dr. " ;
                    foaf:status "Senior Researcher" ;
+                   sda:publication """<div class="content-people">
+                     <div class="nostyle"  style="text-align:left; ">
+                       <script src="http://bibbase.org/show?bib=https://raw.githubusercontent.com/SmartDataAnalytics/sda.tech/mergeLayoutFeature/_publications/petzka.sda.bib&jsonp=1&fullnames=1&theme=side&token=8fdfccb91fb8675707dcb9b6ae18c8f5"></script>
+                     </div>
+                   </div>""" ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    cv:aboutPerson "Henning Petzka is a Senior Researcher at the Computer Science Department III of the University of Bonn." ;
                    foaf:currentProject sdaproject:HOBBIT .
@@ -1252,6 +1563,11 @@ sdaperson:MohamedSherif a foaf:Person, sdatech:formerMember ;
                    foaf:firstName "Mohamed" ;
                    foaf:title "Dr." ;
                    foaf:status "Senior Researcher" ;
+                   sda:publication """<div class="content-people">
+                     <div class="nostyle"  style="text-align:left; ">
+                       <script src="http://bibbase.org/show?bib=https://raw.githubusercontent.com/SmartDataAnalytics/sda.tech/mergeLayoutFeature/_publications/sherif.sda.bib&jsonp=1&fullnames=1&theme=side&token=8fdfccb91fb8675707dcb9b6ae18c8f5"></script>
+                     </div>
+                   </div>""" ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    cv:aboutPerson "Dr. Mohamed Sherif is a Senior Researcher at the Computer Science Department III of the University of Bonn." .
 
@@ -1266,6 +1582,11 @@ sdaperson:TiansiDong a foaf:Person, sdatech:formerMember ;
                    foaf:firstName "Tiansi" ;
                    foaf:title "Dr." ;
                    foaf:status "Senior Researcher" ;
+                   sda:publication """<div class="content-people">
+                     <div class="nostyle"  style="text-align:left; ">
+                       <script src="http://bibbase.org/show?bib=https://raw.githubusercontent.com/SmartDataAnalytics/sda.tech/mergeLayoutFeature/_publications/dong.sda.bib&jsonp=1&fullnames=1&theme=side&token=8fdfccb91fb8675707dcb9b6ae18c8f5"></script>
+                     </div>
+                   </div>""" ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    cv:aboutPerson "Dr. Tiansi Dong is a Senior Researcher at the University of Bonn. His research interests include AI/Machine Learning (deep learning), Spatial Representation and Reasoning, Natural Language Understanding." ;
                    foaf:currentProject sdaproject:OpenBudgetseu .
@@ -1281,6 +1602,11 @@ sdaperson:VinayModi a foaf:Person, sdatech:formerMember ;
                    foaf:firstName "Vinai" ;
                    foaf:title "" ;
                    foaf:status "Researcher" ;
+                   sda:publication """<div class="content-people">
+                     <div class="nostyle"  style="text-align:left; ">
+                       <script src="http://bibbase.org/show?bib=https://raw.githubusercontent.com/SmartDataAnalytics/sda.tech/mergeLayoutFeature/_publications/modi.sda.bib&jsonp=1&fullnames=1&theme=side&token=8fdfccb91fb8675707dcb9b6ae18c8f5"></script>
+                     </div>
+                   </div>""" ;
                    sda:profilepage <https://www.linkedin.com/in/vinaymodi/>;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    cv:aboutPerson "Vinay Modi is a Researcher at the Computer Science Department III of the University of Bonn." .
@@ -1296,6 +1622,11 @@ sdaperson:FabrizioOrlandi a foaf:Person, sdatech:formerMember ;
                   #foaf:phone <Tel:+49-341-123456789> ;
                   foaf:title "Dr. " ;
                   foaf:status "Senior Researcher" ;
+                  sda:publication """<div class="content-people">
+                    <div class="nostyle"  style="text-align:left; ">
+                      <script src="http://bibbase.org/show?bib=https://raw.githubusercontent.com/SmartDataAnalytics/sda.tech/mergeLayoutFeature/_publications/orlandi.sda.bib&jsonp=1&fullnames=1&theme=side&token=8fdfccb91fb8675707dcb9b6ae18c8f5"></script>
+                    </div>
+                  </div>""" ;
                   sda:profilepage <https://www.linkedin.com/in/fabriziorlandi/>;
                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
                   cv:aboutPerson "Dr. Fabrizio Orlandi is a Senior Researcher at the University of Bonn." ;
@@ -1316,6 +1647,11 @@ sdaperson:LuisPauloGarcia a foaf:Person, sdatech:formerMember ;
                   foaf:phone <Tel:+49-341-123456789> ;
                   foaf:title "Dr. " ;
                   foaf:status "Senior Researcher" ;
+                  sda:publication """<div class="content-people">
+                    <div class="nostyle"  style="text-align:left; ">
+                      <script src="http://bibbase.org/show?bib=https://raw.githubusercontent.com/SmartDataAnalytics/sda.tech/mergeLayoutFeature/_publications/garcia.sda.bib&jsonp=1&fullnames=1&theme=side&token=8fdfccb91fb8675707dcb9b6ae18c8f5"></script>
+                    </div>
+                  </div>""" ;
                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
                   cv:aboutPerson "Dr. Luís Paulo Garcia is a Senior Researcher at the University of Leipzig." ;
                   #sda:publication sdapublication:Publication1 ;
@@ -1333,6 +1669,11 @@ sdaperson:AdrianBajraktari a foaf:Person, sdatech:formerMember ;
                    foaf:firstName "Adrian" ;
                    foaf:title "" ;
                    foaf:status "Student Assistant" ;
+                   sda:publication """<div class="content-people">
+                     <div class="nostyle"  style="text-align:left; ">
+                       <script src="http://bibbase.org/show?bib=https://raw.githubusercontent.com/SmartDataAnalytics/sda.tech/mergeLayoutFeature/_publications/bajraktari.sda.bib&jsonp=1&fullnames=1&theme=side&token=8fdfccb91fb8675707dcb9b6ae18c8f5"></script>
+                     </div>
+                   </div>""" ;
                    sda:profilepage <https://twitter.com/nachbuddler>, <https://facebook.com/adrian.bajraktari.3>;
                    sda:website "" ;
                    sda:twitter "https://twitter.com/nachbuddler" ;
@@ -1353,6 +1694,11 @@ sdaperson:LavdimHalilaj a foaf:Person, sdatech:formerMember ;
                    foaf:firstName "Lavdim" ;
                    foaf:title "Dr. " ;
                    foaf:status "Senior Researcher" ;
+                   sda:publication """<div class="content-people">
+                     <div class="nostyle"  style="text-align:left; ">
+                       <script src="http://bibbase.org/show?bib=https://raw.githubusercontent.com/SmartDataAnalytics/sda.tech/mergeLayoutFeature/_publications/halilaj.sda.bib&jsonp=1&fullnames=1&theme=side&token=8fdfccb91fb8675707dcb9b6ae18c8f5"></script>
+                     </div>
+                   </div>""" ;
                    sda:profilepage <https://www.linkedin.com/in/lavdim-halilaj-843b1522>;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    cv:aboutPerson "Dr. Lavdim Halilaj is a Senior Researcher at the Fraunhofer IAIS." ;
@@ -1370,6 +1716,11 @@ sdaperson:IrlanGrangelGonzales a foaf:Person, sdatech:formerMember ;
                    foaf:firstName "Irlan" ;
                    foaf:title "Dr. " ;
                    foaf:status "Senior Researcher" ;
+                   sda:publication """<div class="content-people">
+                     <div class="nostyle"  style="text-align:left; ">
+                       <script src="http://bibbase.org/show?bib=https://raw.githubusercontent.com/SmartDataAnalytics/sda.tech/mergeLayoutFeature/_publications/grangelgonzales.sda.bib&jsonp=1&fullnames=1&theme=side&token=8fdfccb91fb8675707dcb9b6ae18c8f5"></script>
+                     </div>
+                   </div>""" ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    cv:aboutPerson "Dr. Irlan Grangel-Gonzales is a Senior Researcher at the Fraunhofer IAIS." ;
                    sda:group sdagroup:SemanticDataManagement ;
@@ -1388,6 +1739,11 @@ sdaperson:JuliusKaufmann a foaf:Person, sdatech:formerMember ;
                    foaf:firstName "Julius" ;
                    foaf:title "" ;
                    foaf:status "Student Assistant" ;
+                   sda:publication """<div class="content-people">
+                     <div class="nostyle"  style="text-align:left; ">
+                       <script src="http://bibbase.org/show?bib=https://raw.githubusercontent.com/SmartDataAnalytics/sda.tech/mergeLayoutFeature/_publications/kaufmann.sda.bib&jsonp=1&fullnames=1&theme=side&token=8fdfccb91fb8675707dcb9b6ae18c8f5"></script>
+                     </div>
+                   </div>""" ;
                    sda:profilepage <https://www.linkedin.com/in/julius-kaufmann-474953137/>;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    cv:aboutPerson "Julius Kaufmann is a Student Assistant at the Computer Science Department III of the University of Bonn." .
@@ -1403,6 +1759,11 @@ sdaperson:JeanHernandez a foaf:Person, sdatech:formerMember ;
                    foaf:firstName "Jean" ;
                    foaf:title "" ;
                    foaf:status "Student Assistant" ;
+                   sda:publication """<div class="content-people">
+                     <div class="nostyle"  style="text-align:left; ">
+                       <script src="http://bibbase.org/show?bib=https://raw.githubusercontent.com/SmartDataAnalytics/sda.tech/mergeLayoutFeature/_publications/hernandez.sda.bib&jsonp=1&fullnames=1&theme=side&token=8fdfccb91fb8675707dcb9b6ae18c8f5"></script>
+                     </div>
+                   </div>""" ;
                    sda:profilepage <https://www.linkedin.com/in/jeanpierohm/>;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    cv:aboutPerson "Jean Hernandez is a Student Assistant at the Computer Science Department III of the University of Bonn.".
@@ -1418,6 +1779,11 @@ sdaperson:GabrielGimenez a foaf:Person, sdatech:formerMember ;
                    foaf:firstName "Gabriel" ;
                    foaf:title "" ;
                    foaf:status "Student Assistant" ;
+                   sda:publication """<div class="content-people">
+                     <div class="nostyle"  style="text-align:left; ">
+                       <script src="http://bibbase.org/show?bib=https://raw.githubusercontent.com/SmartDataAnalytics/sda.tech/mergeLayoutFeature/_publications/gimenez.sda.bib&jsonp=1&fullnames=1&theme=side&token=8fdfccb91fb8675707dcb9b6ae18c8f5"></script>
+                     </div>
+                   </div>""" ;
                    sda:profilepage <https://www.linkedin.com/in/ggcatu/>;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    cv:aboutPerson "Gabriel Gimenez is a Student Assistant at the Computer Science Department III of the University of Bonn.".
@@ -1433,6 +1799,11 @@ sdaperson:GuillermoBetancourt a foaf:Person, sdatech:formerMember ;
                    foaf:firstName "Guillermo" ;
                    foaf:title "" ;
                    foaf:status "Student Assistant" ;
+                   sda:publication """<div class="content-people">
+                     <div class="nostyle"  style="text-align:left; ">
+                       <script src="http://bibbase.org/show?bib=https://raw.githubusercontent.com/SmartDataAnalytics/sda.tech/mergeLayoutFeature/_publications/betancourt.sda.bib&jsonp=1&fullnames=1&theme=side&token=8fdfccb91fb8675707dcb9b6ae18c8f5"></script>
+                     </div>
+                   </div>""" ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    cv:aboutPerson "Guillermo Betancourt is a Student Assistant at the Computer Science Department III of the University of Bonn." .
 
