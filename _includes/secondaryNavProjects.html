@@ -2,7 +2,7 @@
     {% for items in include.listItems %}
     {% assign url= items.project | remove: "http://sda.tech/" %}
     {% capture itemName %}{{items.title}}{% endcapture %}
-    <div class="cell {% if include.name == itemName %}cell-active{% endif %}">
+    <div class="cell {% if  include.name == itemName %}cell-active{% endif %}">
         <div class="cell-img">
           {% if include.fromAll == 1 %}
             <a onclick="setBoolFromAllToDetailProject('true', '../../{{url}}' )"><img class="img-circle-small" src="{{items.image}}" alt=""></a>

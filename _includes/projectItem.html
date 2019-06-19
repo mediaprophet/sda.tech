@@ -11,9 +11,6 @@
     {% if include.fromAll != 1 && include.fromAll != 2 %}
       <a href={% if include.projectItemFor == "projectList"%}"../{{include.href}}"{% elsif include.projectItemFor== "project" %}"{{include.href}}"{% endif %} ><h1>{{include.title}}</h1></a>
     {% endif %}
-    <!-- {% if include.fromAll == 2 %}
-      <h1>{{include.title}}</h1>
-    {% endif %} -->
   </div>
   <div class="image">
     {% if include.fromAll == 1 %}
@@ -22,9 +19,6 @@
     {% if include.fromAll != 1 && include.fromAll != 2 %}
       <a href={% if include.projectItemFor == "projectList"%}"../{{include.href}}"{% elsif include.projectItemFor== "project" %}"{{include.href}}"{% endif %}><img style="width: 200px;" src="{{include.image}}" alt="{{iclude.title}}"></a>
     {% endif %}
-    <!-- {% if include.fromAll == 2 %}
-      <img style="width: 200px;" src="{{include.image}}" alt="{{iclude.title}}">
-    {% endif %} -->
   </div>
   <div class="description">
     {{include.description}}<br/>

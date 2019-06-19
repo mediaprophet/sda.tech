@@ -5,7 +5,7 @@ toggledURL: project
 toggledURLTo: /project/allProjects
 navigationdiv: Projects
 ---
-{% capture title %} {{ page.rdf | rdf_property: 'rdfs:label' }} {% endcapture %}
+{% capture title %}{{ page.rdf | rdf_property: 'rdfs:label' }}{% endcapture %}
 {% capture pname %}{{ page.rdf | rdf_property: 'foaf:name' }}{% endcapture %}
 
 {% include projectQuerries.html %}
@@ -14,95 +14,19 @@ navigationdiv: Projects
 <div class="borderAll">
   <div class="pagination">
     <!-- Toggle Button Item -->
-    <!-- TODO: Toggle menu with updated SecondaryNavigation -->
-    {% assign completeList = fundprojects | concat: opensource | concat: incubators | concat: archiveds %}
     {% include toggleMenu.html type = "oneRow" id="projecttoggleicon" %}
 
-    {% assign x = 0 %}
-    {% for items in completeList %}
-      {% capture nameInListAll %}{{items.pname}}{% endcapture %}
-      {% if nameInListAll == title %}
-        {% assign indexPreviousAll = x | minus: 1 %}
-        {% assign indexNextAll = x | plus:1  %}
-      {% endif %}
-      {% assign x = x | plus:1 %}
-    {% endfor %}
-    {% capture previousTitleAll %}{{completeList[indexPreviousAll].title}}{% endcapture %}
-    {% assign previousUrlAll = completeList[indexPreviousAll].project | remove: "http://sda.tech/" %}
-    {% capture nextTitleAll %}{{completeList[indexNextAll].title}}{% endcapture %}
-    {% assign nextUrlAll = completeList[indexNextAll].project | remove: "http://sda.tech/" %}
-
-    <!--  -->
     <div id="allProjectHeader" style="display:none;">
-      {% include projectHeader.html active="Projects" total=allProjects.size %}
+      {% include projectAllProjectHeaderLogic.html %}
     </div>
     <div id="particularProjectHeader" style="display:block;">
-      <!-- Query For Funded Projects -->
-      {% capture query %} SELECT ?project ?projectname Where {
-          <{{page.rdf}}> a sdatech:fundedProject . ?project rdfs:label ?projectname . } {% endcapture %}
-      {% assign fundedprojects = page.rdf | sparql_query: query %}
-
-      {% if fundedprojects.size != 0 %}
-        {% include projectHeader.html active="Funded Projects" total=fundprojects.size %}
-        {% assign list = fundprojects %}
-      {% endif %}
-
-      <!--Query for Open source Projects  -->
-      {% capture query %} SELECT ?project ?projectname Where {
-          <{{page.rdf}}> a sdatech:openSourceProject . ?project rdfs:label ?projectname . } {% endcapture %}
-      {% assign opensourceprojects = page.rdf | sparql_query: query %}
-
-      {% if opensourceprojects.size != 0 %}
-        {% include projectHeader.html active="Open Source Projects" total=opensource.size %}
-        {% assign list = opensource %}
-      {% endif %}
-
-      <!--Query for Incubator Projects  -->
-      {% capture query %} SELECT ?project ?projectname Where {
-          <{{page.rdf}}> a sdatech:incubatorProject . ?project rdfs:label ?projectname . } {% endcapture %}
-      {% assign incubatorprojects = page.rdf | sparql_query: query %}
-
-      {% if incubatorprojects.size != 0 %}
-        {% include projectHeader.html active="Incubator Projects" total=incubators.size %}
-        {% assign list = incubators %}
-      {% endif %}
-
-      <!--Query for Archived Projects  -->
-      {% capture query %} SELECT ?project ?projectname Where {
-          <{{page.rdf}}> a sdatech:archivedProject . ?project rdfs:label ?projectname . } {% endcapture %}
-      {% assign archivedprojects = page.rdf | sparql_query: query %}
-
-      {% if archivedprojects.size != 0 %}
-        {% include projectHeader.html active="Archived Projects" total=archiveds.size %}
-        {% assign list = archiveds %}
-      {% endif %}
-
-      {% assign i = 0 %}
-      {% for items in list %}
-        {% capture nameInList %}{{items.projectname}}{% endcapture %}
-        {% if nameInList == title %}
-          {% assign indexPrevious = i | minus:1 %}
-          {% assign indexNext = i | plus:1  %}
-        {% endif %}
-        {% assign i = i | plus:1 %}
-      {% endfor %}
-      {% capture previousTitle %}{{list[indexPrevious].title}}{% endcapture %}
-      {% assign previousUrl = list[indexPrevious].project | remove: "http://sda.tech/" %}
-      {% capture nextTitle %}{{list[indexNext].title}}{% endcapture %}
-      {% assign nextUrl = list[indexNext].project | remove: "http://sda.tech/" %}
-
+      {% include projectParticularProjectHeaderLogic.html %}
     </div>
   </div>
   <div class="content-people" style="padding-right:0px !important; padding-top:0px !important; padding-bottom:0px !important; padding-left:0px !important;">
     <div class="view-table">
       <div class="view-row" id="projectTableRow">
         <div id="projectSecondaryNav" class="secondary-nav" style="display:none;">
-          <br>
-          TEST
-          {{pname}}
-          <br>TEST2 <br>
-          {{title}}
-          <br>
           <div id="secondaryNavProjectAll" style="display:none;">
             {% include secondaryNavProjects.html listItems=completeList status='all' name=title fromAll=1 %}
           </div>
