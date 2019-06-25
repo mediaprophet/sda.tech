@@ -864,7 +864,7 @@
 }
 
 // Reference SnackBar Implementation W3Schools: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_snackbar
-#snackbar, #snackbar2 {
+#snackbar, #snackbar2, #snackbar3 {
   visibility: hidden;
   min-width: 250px;
   margin-left: -125px;
@@ -880,7 +880,7 @@
   font-size: 17px;
 }
 
-#snackbar.show, #snackbar2.show {
+#snackbar.show, #snackbar2.show, #snackbar3.show {
   visibility: visible;
   -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
   animation: fadein 0.5s, fadeout 0.5s 2.5s;

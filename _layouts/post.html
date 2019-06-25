@@ -4,7 +4,7 @@ rdf_prefix_path: sda.tech.pref
 navigationdiv: Blog
 ---
 
-{% capture title %} {{ page.rdf | rdf_property: 'sioc:topic' }}{% endcapture %}
+{% capture title %}{{ page.rdf | rdf_property: 'sioc:topic' }}{% endcapture %}
 {% assign title = title | strip %}
 
 {% include postHeaderActivation.html %}
@@ -20,92 +20,35 @@ navigationdiv: Blog
 <div class="borderAll">
   <div class="pagination">
     <!-- Toggle Button Item -->
-    <!-- TODO: Toggle Functionality with updated secondaryNav -->
-    <!-- {% include toggleMenu.html type = "oneRow" %} -->
-    <!--  -->
-    <div id="allPostHeader" style="display:none;">
-      {% assign completeList = blogposts %}
-      {% include blogHeader.html active="Blog"%}
+    {% include toggleMenu.html type = "oneRow" id="posttoggleicon" %}
 
-      {% assign x = 0 %}
-      {% for items in completeList %}
-        {% capture titleInListAll %}{{items.title | strip }}{% endcapture %}
-        {% if titleInListAll == title %}
-          {% assign indexPreviousAll = x | minus: 1 %}
-          {% assign indexNextAll = x | plus:1  %}
-        {% endif %}
-        {% assign x = x | plus:1 %}
-      {% endfor %}
-      {% capture previousTitleAll %}{{completeList[indexPreviousAll].title}}{% endcapture %}
-      {% assign previousUrlAll = completeList[indexPreviousAll].blog | remove: "http://sda.tech/" %}
-      {% capture nextTitleAll %}{{completeList[indexNextAll].title}}{% endcapture %}
-      {% assign nextUrlAll = completeList[indexNextAll].blog | remove: "http://sda.tech/" %}
+    <div id="allPostHeader" style="display:none;">
+      {% include postAllPostHeaderLogic.html %}
     </div>
     <div id="particularPostHeader" style="display:block;">
-      <!-- Query for Paper Notifications -->
-      {% capture query %} SELECT ?paper ?papername Where {
-          <{{page.rdf}}> a sdatech:PaperNotification . ?paper dct:title ?papername . } {% endcapture %}
-      {% assign papernotifications = page.rdf | sparql_query: query %}
-
-      {% if papernotifications.size != 0 %}
-        {% include blogHeader.html active="Paper Notifications" total=paperNotificationsArray.size %}
-        {% assign list = paperNotificationsArray %}
-      {% endif %}
-
-      <!-- Query for Invited Talks -->
-      {% capture query %} SELECT ?paper ?papername Where {
-          <{{page.rdf}}> a sdatech:InvitedTalks . ?paper dct:title ?papername . } {% endcapture %}
-      {% assign invitedtalks = page.rdf | sparql_query: query %}
-
-      {% if invitedtalks.size != 0 %}
-        {% include blogHeader.html active="Invited Talks" total=invitedTalksArray.size %}
-        {% assign list = invitedTalksArray %}
-      {% endif %}
-
-      <!-- Query for Project Announcements -->
-      {% capture query %} SELECT ?paper ?papername Where {
-          <{{page.rdf}}> a sdatech:ProjectAnnouncements . ?paper dct:title ?papername . } {% endcapture %}
-      {% assign projectannouncements = page.rdf | sparql_query: query %}
-
-      {% if projectannouncements.size != 0 %}
-        {% include blogHeader.html active="Project Announcements" total=projectAnnouncementsArray %}
-        {% assign list = projectAnnouncementsArray %}
-      {% endif %}
-
-      <!-- Query for General Posts -->
-      {% capture query %} SELECT ?paper ?papername Where {
-          <{{page.rdf}}> a sdatech:GeneralPosts . ?paper dct:title ?papername . } {% endcapture %}
-      {% assign generalposts = page.rdf | sparql_query: query %}
-
-      {% if generalposts.size != 0 %}
-        {% include blogHeader.html active="General Posts" total=generalPostsArray.size %}
-        {% assign list = generalPostsArray %}
-      {% endif %}
-
-      {% assign i = 0 %}
-      {% for items in completeList %}
-        {% capture titleInListAll %}{{items.title | strip }}{% endcapture %}
-        {% if titleInListAll == title %}
-          {% assign indexPreviousAll = x | minus: 1 %}
-          {% assign indexNextAll = x | plus:1  %}
-        {% endif %}
-        {% assign i = i | plus:1 %}
-      {% endfor %}
-      {% capture previousTitleAll %}{{completeList[indexPreviousAll].title}}{% endcapture %}
-      {% assign previousUrlAll = completeList[indexPreviousAll].blog | remove: "http://sda.tech/" %}
-      {% capture nextTitleAll %}{{completeList[indexNextAll].title}}{% endcapture %}
-      {% assign nextUrlAll = completeList[indexNextAll].blog | remove: "http://sda.tech/" %}
-
+      {% include postParticularPostHeaderLogic.html %}
     </div>
   </div>
   <article class="post">
       <div class="post-content">
-        <div class="postentry">
-          <p><font size="5">{{title}}</font></p>
-          <div class="postmetadata">&#128467; {{date}} &nbsp;&nbsp; &#x270D; {{person}}</div>
-          <br/>
-          <p><img src="{{depiction}}" style="float:left;height:180px;width:230px;padding:30px;">{{content}}</p>
-          <br/>
+        <div class="view-table">
+          <div class="view-row" id="postTableRow">
+            <div id="postSecondaryNav" class="secondary-nav" style="display:none;">
+              <div id="secondaryNavPostAll" style="display:none;">
+                {% include secondaryNavPost.html listItems=completeList status='all' name=title fromAll=1 %}
+              </div>
+              <div id="secondaryNavParticularPost" style="display:none;">
+                {% include secondaryNavPost.html listItems=list name=title %}
+              </div>
+            </div>
+            <div class="postentry" id="post" >
+              <p><font size="5">{{title}}</font></p>
+              <div class="postmetadata">&#128467; {{date}} &nbsp;&nbsp; &#x270D; {{person}}</div>
+              <br/>
+              <p><img src="{{depiction}}" style="float:left;height:180px;width:230px;padding:30px;">{{content}}</p>
+              <br/>
+            </div>
+          </div>
         </div>
       </div>
   </article>
@@ -118,3 +61,4 @@ navigationdiv: Blog
     </div>
   </div>
 </div>
+<div id="snackbar3">Please wait the page is loading</div>
