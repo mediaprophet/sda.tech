@@ -3,7 +3,9 @@
 
 {% assign x = 0 %}
 {% for items in completeList %}
-  {% capture titleInListAll %}{{items.title | strip }}{% endcapture %}
+  {% capture titleInListAll %}{{items.title}}{% endcapture %}
+  {% assign titleInListAll = titleInListAll | strip %}
+
   {% if titleInListAll == title %}
     {% assign indexPreviousAll = x | minus: 1 %}
     {% assign indexNextAll = x | plus:1  %}
