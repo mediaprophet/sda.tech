@@ -1,9 +1,9 @@
 <div class="cardProfile">
   {% if include.fromAll == 1 %}
-    <a  onclick="setBoolFromAllToDetailPerson('true', '../../{{include.urlp}}' )"><h4>{{include.title}} {{include.firstname}} {{include.name}} </h4></a>
+    <a  onclick="setBoolFromAllToDetailPerson('true', '../../{{include.urlp}}' )" class="aOnTitle"><h4 class="personFullTitle">{{include.title}} {{include.firstname}} {{include.name}} </h4></a>
   {% endif %}
   {% if include.fromAll != 1 %}
-    <a href="../../{{include.urlp}}"><h4>{{include.title}} {{include.firstname}} {{include.name}} </h4></a>
+    <a href="../../{{include.urlp}}" class="aOnTitle"><h4 class="personFullTitle">{{include.title}} {{include.firstname}} {{include.name}} </h4></a>
   {% endif %}
   <img src="{{include.image}}" alt="{{include.name}}" >
   <hr/>
