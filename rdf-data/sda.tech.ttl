@@ -24319,6 +24319,44 @@ sdajob:studentassistant a foaf:Document ;
 
 ###################Paper Notifications#############
 
+sdablog:poster-and-workshop-papers-accepted-at-eswc-2019 a sioc:Post, sdatech:Blog, sdablog:papernotifications;
+    dct:title "Poster and Workshop papers accepted at ESWC 2019" ;
+    sioc:topic "Poster and Workshop papers accepted at ESWC 2019" ;
+    dct:creator sdaperson:GezimSejdiu ;
+    foaf:maker sdaperson:GezimSejdiu ;
+    sioc:has_creator sdaperson:GezimSejdiu ;
+    dct:created "2019-05-14"^^xsd:date ;
+    dct:language "en-US" ;
+    foaf:depiction <https://2019.eswc-conferences.org/wp-content/uploads/2018/11/logo-93px-2.png> ;
+    sioc:abstract """We are very pleased to announce that our group got 2 poster papers accepted for presentation at the <a href='https://2019.eswc-conferences.org/'>ESWC 2019 : The 16th edition of the The Extended Semantic Web Conference</a>, which will be held on June 2-6, 2019 in Portorož, Slovenia.""";
+    sioc:content """We are very pleased to announce that our group got 2 poster papers accepted for presentation at the <a href='https://2019.eswc-conferences.org/'>ESWC 2019 : The 16th edition of the The Extended Semantic Web Conference</a>, which will be held on June 2-6, 2019 in Portorož, Slovenia.
+</br></br>
+The ESWC is a major venue for discussing the latest scientific results and technology innovations around semantic technologies. Building on its past success, ESWC is seeking to broaden its focus to span other relevant related research areas in which Web semantics plays an important role. ESWC 2019 will present the latest results in research, technologies and applications in its field. Besides the technical program organized over twelve tracks, the conference will feature a workshop and tutorial program, a dedicated track on Semantic Web challenges, system descriptions and demos, a posters exhibition and a doctoral symposium.
+</br> </br>
+Here is the pre-print of the accepted papers with their abstract:
+<ul>
+    <li ><a href='https://dgraux.github.io/publications/PipingClustering_ESWC_2019_Poster.pdf'><b>“Clustering Pipelines of large RDF POI Data”</b></a> by Rajjat Dadwal, <a href='/Person/DamienGraux'>Damien Graux</a>, <a href='/Person/GezimSejdiu'>Gezim Sejdiu</a>, <a href='/Person/HajiraJabeen'>Hajira Jabeen</a>, and <a href='/Person/JensLehmann'>Jens Lehmann</a>.
+    <blockquote><strong>Abstract</strong>: <i>Among the various domains involved in large RDF graphs, applications may rely on geographical information which are often carried and presented via Points Of Interests. In particular, one challenge aims at extracting patterns from POIs sets to discover Areas Of Interest. To tackle it, an usual method is to aggregate various points according to specific distances (e.g. geographical) via clustering algorithms. In this study, we present a flexible architecture to design pipelines able to aggregate POIs from contextual to geographical dimensions in a single run. This solution allows any kind of state-of-the-art clustering algorithm combinations to compute AOIs and is built on top of a Semantic Web stack which allows multiple-source querying and filtering through SPARQL.</i></blockquote>
+    </li>
+    <li ><a href='https://drive.google.com/file/d/1CcrGay4xf9nVkZ4LhUJpWg85XWC2PdUL/view'><b>“OECM: A Cross-lingual Approach for Ontology Enrichment”</b></a> by <a href='/Person/ShimaaIbrahim'>Shimaa Ibrahim</a>, <a href='/Person/SaidFathalla'>Said Fathalla</a>, <a href='/Person/HamedShariatYazdi'>Hamed Shariat Yazdi</a>, <a href='/Person/JensLehmann'>Jens Lehmann</a>, and <a href='/Person/HajiraJabeen'>Hajira Jabeen</a>.
+    <blockquote><strong>Abstract</strong>: <i>Due to the rapid expansion of multilingual data on the web, developing ontology enrichment approaches has become an interesting and active subject of research. In this paper, we propose a cross-lingual matching approach for ontology enrichment (OECM) in order to enrich an ontology using another one in a different natural language. A prototype for the proposed approach has been implemented and evaluated using the MultiFarm benchmark. Evaluation results are promising and show high precision and recall compared to state-of-the-art approaches.</i></blockquote>
+    </li>
+</ul>
+</br> </br>
+Furthermore, we got a paper accepted at <a href='http://lascar.sda.tech/'>LASCAR Workshop: 1st Workshop on Large Scale RDF Analytics</a>, co-located with the ESWC 2019.
+</br> </br>
+LASCAR Workshop seeks original “articles and posters” describing theoretical and practical methods as well as techniques for performing scalable analytics on knowledge graphs.
+</br> </br>
+Here is the pre-print of the accepted paper with its abstract:
+<ul>
+    <li ><a href='http://lascar.sda.tech/assets/accepted-papers/LASCAR-19_paper_4.pdf'><b>“Towards Enforceable Usage Policies for Industry 4.0”</b></a> by Sebastian Bader and <a href='/Person/MariaMaleshkova/'>Maria Maleshkova</a>.
+    <blockquote><strong>Abstract</strong>: <i>Controlling the usage of business-critical data is essential for every company. While the upcoming age of Industry 4.0 propagates a seamless data exchange between all participating devices, facilities and companies along the production chain, the required data control mechanisms are lacking behind. We claim that for an effective protection, both access and usage control enforcement is a must-have for organizing Industry 4.0 collaboration networks. Formalized and machine-readable policies are one fundamental building block to achieve the needed trust level for real data-driven collaborations. We explain the current challenges of specifying access and usage control policies and outline respective approaches relying on Semantic Web of Things practices. We analyze the requirements and implications of existing technologies and discuss their shortcomings. Based on our experiences from the specification of the International Data Spaces Usage Control Language, the necessary next steps towards automatically monitored and enforced policies are outlined and research needs formulated.</i></blockquote>
+    </li>
+</ul>
+</br> This work was partially funded by the European H2020 <a href='http://slipo.eu/'>SLIPO project</a> (GA. 731581).
+</br></hr></br>
+Looking forward to seeing you at <a href='https://2019.eswc-conferences.org/'>The ESWC 2019</a>.""" .
+
 sdablog:workshop-proposal-accepted-at-ecml-2019 a sioc:Post, sdatech:Blog, sdablog:papernotifications;
     dct:title "Workshop proposal accepted at ECML 2019" ;
     sioc:topic "Workshop proposal accepted at ECML 2019" ;
