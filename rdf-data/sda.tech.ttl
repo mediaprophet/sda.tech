@@ -24319,6 +24319,27 @@ sdajob:studentassistant a foaf:Document ;
 
 ###################Paper Notifications#############
 
+sdablog:workshop-proposal-accepted-at-ecml-2019 a sioc:Post, sdatech:Blog, sdablog:papernotifications;
+    dct:title "Workshop proposal accepted at ECML 2019" ;
+    sioc:topic "Workshop proposal accepted at ECML 2019" ;
+    dct:creator sdaperson:GezimSejdiu ;
+    foaf:maker sdaperson:GezimSejdiu ;
+    sioc:has_creator sdaperson:GezimSejdiu ;
+    dct:created "2019-05-08"^^xsd:date ;
+    dct:language "en-US" ;
+    foaf:depiction <http://ecmlpkdd2019.org/img/breit_transparent300.png> ;
+    sioc:abstract """We are pleased to announce a new workshop on <a href='https://sites.google.com/view/kgrlfr-workshop/home'>“New Trends in Representation Learning with Knowledge Graphs”</a> which will be included in the program of <a href='http://ecmlpkdd2019.org/'>ECML 2019: The European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Database</a>. ECML 2019 will take place in Würzburg, Germany, from the 16th to the 20th of September 2019.""";
+    sioc:content """We are pleased to announce a new workshop on <a href='https://sites.google.com/view/kgrlfr-workshop/home'>“New Trends in Representation Learning with Knowledge Graphs”</a> which will be included in the program of <a href='http://ecmlpkdd2019.org/'>ECML 2019: The European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Database</a>. ECML 2019 will take place in Würzburg, Germany, from the 16th to the 20th of September 2019.
+</br></br>
+This conference is the premier European machine learning and data mining conference and builds upon over 17 years of successful events and conferences held across Europe.
+</br> </br>
+<strong>Title</strong>: New Trends in Representation Learning with Knowledge Graphs
+<blockquote><strong>Abstract</strong>: <i>Knowledge Graphs are becoming the standard for storing, retrieving and querying structured data. In academia and in industry, they are increasingly used to provide background knowledge. Over the last years, several research contributions are made to show machine learning especially representation learning is successfully applied to knowledge graphs enabling inductive inference about facts with unknown truth values. In this workshop we intend to focus on the most exciting new developments in Knowledge Graph learning, bridging the gap to recent developments in different fields. Also, we want to bring together researchers from different disciplines but united by their adoption of earlier mentioned techniques from machine learning.</i></blockquote>
+</br>
+<strong>Website</strong>: <a href='https://sites.google.com/view/kgrlfr-workshop/home'>https://sites.google.com/view/kgrlfr-workshop/home</a>
+</br></hr></br>
+Looking forward to seeing you at <a href='http://ecmlpkdd2019.org/'>The ECML/PKDD 2019</a>.""" .
+
 sdablog:paper-accepted-at-icwe-2019 a sioc:Post, sdatech:Blog, sdablog:papernotifications;
     dct:title "Paper accepted at ICWE 2019" ;
     sioc:topic "Paper accepted at ICWE 2019" ;
