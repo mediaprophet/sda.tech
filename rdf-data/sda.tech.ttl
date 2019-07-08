@@ -24319,6 +24319,29 @@ sdajob:studentassistant a foaf:Document ;
 
 ###################Paper Notifications#############
 
+sdablog:paper-accepted-at-icwe-2019 a sioc:Post, sdatech:Blog, sdablog:papernotifications;
+    dct:title "Paper accepted at ICWE 2019" ;
+    sioc:topic "Paper accepted at ICWE 2019" ;
+    dct:creator sdaperson:GezimSejdiu ;
+    foaf:maker sdaperson:GezimSejdiu ;
+    sioc:has_creator sdaperson:GezimSejdiu ;
+    dct:created "2019-04-29"^^xsd:date ;
+    dct:language "en-US" ;
+    foaf:depiction <https://icwe2019.webengineering.org/wp-content/uploads/2018/08/cropped-ICWE2019-LOGO-1.png> ;
+    sioc:abstract """We are very pleased to announce that our group got a paper accepted for presentation at the <a href='http://icwe2019.webengineering.org/'>ICWE 2019: The 19th International Conference on Web Engineering</a>, which will be held on June 11 – 14, 2019 / Daejeon Convention Center (DCC), Daejeon, Korea.""";
+    sioc:content """We are very pleased to announce that our group got a paper accepted for presentation at the <a href='http://icwe2019.webengineering.org/'>ICWE 2019: The 19th International Conference on Web Engineering</a>, which will be held on June 11 – 14, 2019 / Daejeon Convention Center (DCC), Daejeon, Korea. The ICWE is the prime yearly international conference on the different aspects of designing, building, maintaining and using Web applications.
+</br></br>
+The conference will cover the different aspects of Web Engineering, including the design, creation, maintenance and usage of Web applications. ICWE aims to bring together researchers and practitioners from various disciplines in academia and industry to tackle the emerging challenges in the engineering of Web applications and in the problems of its associated technologies, as well as the impact of those technologies on society, media and culture.
+</br> </br>
+Here is the accepted paper with its abstract:
+<ul>
+	<li ><a href='https://svn.aksw.org/papers/2019/ICWE_JekyllRDF/public.pdf'><b>"Jekyll RDF: Template-Based Linked Data Publication with Minimized Effort and Maximum Scalability"</b></a> by Natanael Arndt, Sebastian Zänker, <a href="/Person/GezimSejdiu/">Gezim Sejdiu</a>, and Sebastian Tramp.</li>
+</ul>
+<blockquote><strong>Abstract</strong>: <i>Over the last decades the Web has evolved from a human–human communication network to a network of complex human–machine interactions. An increasing amount of data is available as Linked Data which allows machines to “understand” the data, but RDF is not meant to be understood by humans. With Jekyll RDF we present a method to close the gap between structured data and human accessible exploration interfaces by publishing RDF datasets as customizable static HTML sites. It consists of an RDF resource mapping system to serve the resources under their respective IRI, a template mapping based on schema classes, and a markup language to define templates to render customized resource pages. Using the template system, it is possible to create domain specific browsing interfaces for RDF data next to the Linked Data resources. This enables content management and knowledge management systems to serve datasets in a highly customizable, low effort, and scalable way to be consumed by machines as well as humans.</i></blockquote>
+</br></hr></br>
+Looking forward to seeing you at <a href='http://icwe2019.webengineering.org/'>The ICWE 2019</a>.""" .
+
+
 sdablog:paper-accepted-at-naacl-2019 a sioc:Post, sdatech:Blog, sdablog:papernotifications;
     dct:title "Paper accepted at NAACL 2019" ;
     sioc:topic "Paper accepted at NAACL 2019" ;
