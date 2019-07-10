@@ -25323,7 +25323,7 @@ sdablog:asknow-0.2-released a sioc:Post, sdablog:projectannouncements ;
         foaf:maker sdaperson:JensLehmann ;
         dct:created "2019-07-10"^^xsd:date ;
         dct:language "en-US" ;
-        foaf:depiction <http://asknow.sda.tech/assets/asknowlogo.png> ;
+        foaf:depiction <https://avatars2.githubusercontent.com/u/29380235?s=200&v=4> ;
         sioc:abstract """We are very happy to announce the 0.2 release of the AskNow Question Answering components and tools!""";
         sioc:content """We are very happy to announce AskNow 0.2 – the second release of Question Answering Components and Tools over RDF Knowledge Graphs.
 </br></br>
@@ -25348,7 +25348,7 @@ We want to thank everyone who helped to create this release, in particular, the 
 
 Kind regards,
 </br>The AskNow Development Team
-</br>(<a href="http://asknow.sda.tech/people/">http://asknow.sda.tech/people/</a>)
+</br>(<a href="http://asknow.sda.tech/people.html">http://asknow.sda.tech/people.html</a>)
 
 </br></br>
 <br>[1] <a href="https://project-hobbit.eu/">https://project-hobbit.eu/</a>
