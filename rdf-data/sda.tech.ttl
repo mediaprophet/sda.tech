@@ -25316,6 +25316,46 @@ sdablog:Invited-talk-by-Svitlana-Vakulenko a sioc:Post, sdablog:invitedtalks ;
 
 ###################project announcements#############
 
+sdablog:asknow-0.2-released a sioc:Post, sdablog:projectannouncements ;
+        dct:title "AskNow 0.2 Released" ;
+        sioc:topic "AskNow 0.2 Released" ;
+        dct:creator sdaperson:JensLehmann ;
+        foaf:maker sdaperson:JensLehmann ;
+        dct:created "2019-07-10"^^xsd:date ;
+        dct:language "en-US" ;
+        foaf:depiction <http://asknow.sda.tech/assets/asknowlogo.png> ;
+        sioc:abstract """We are very happy to announce the 0.2 release of the AskNow Question Answering components and tools!""";
+        sioc:content """We are very happy to announce AskNow 0.2 – the second release of Question Answering Components and Tools over RDF Knowledge Graphs.
+</br></br>
+Website: <a href="http://asknow.sda.tech/">http://asknow.sda.tech/</a> 
+</br> </br>
+The following AskNow components, with corresponding features, have been updated or introduced:
+<ul>
+<li>EARL 0.1.2: EARL performs entity linking and relation linking as a joint task. It uses machine learning in order to exploit the Connection Density between nodes in the knowledge graph. It relies on three base features and re-ranking steps in order to predict entities and relations. <b>In this release, we add the ability to handle questions independent of case, i.e., both upper and lower case questions are handled well</b>.
+</br>ISWC 2018: <a href="https://arxiv.org/pdf/1801.03825.pdf">https://arxiv.org/pdf/1801.03825.pdf
+</a></br>Demo: <a href="https://earldemo.sda.tech/">https://earldemo.sda.tech/
+</a></br>Github: <a href="https://github.com/AskNowQA/EARL/releases/tag/0.1.2">https://github.com/AskNowQA/EARL/releases/tag/0.1.2</a></li>
+<li> Neural ranking system aka Krantikari 0.1: KrantikariQA - A Neural ranking approach for answering questions over Knowledge Graphs. Given a question, and the entities mentioned in it, our system is trained to choose a logical form, which fetches the correct answer to the question. It employs a novel neural architecture, which was designed to consider the structure of these logical forms specifically. For more details read our recently published ISWC paper on the same.
+</br>ISWC 2018 paper:
+<a href="http://jens-lehmann.org/files/2019/iswc_complex_qa_ranking.pdf">http://jens-lehmann.org/files/2019/iswc_complex_qa_ranking.pdf
+</a></br>Github: <a href="https://github.com/AskNowQA/KrantikariQA">https://github.com/AskNowQA/KrantikariQA
+</a></br>A tutorial consisting of slides and notebooks to illustrate QA concepts, loosely based on <a href="https://github.com/AskNowQA/QA-Tutorial">https://github.com/AskNowQA/QA-Tutorial</a></li>
+</ul>
+</br></br>
+We want to thank everyone who helped to create this release, in particular, the projects HOBBIT [1], SOLIDE [2], WDAqua [3], BigDataEurope [4].
+
+</br></br>
+
+Kind regards,
+</br>The AskNow Development Team
+</br>(<a href="http://asknow.sda.tech/people/">http://asknow.sda.tech/people/</a>)
+
+</br></br>
+<br>[1] <a href="https://project-hobbit.eu/">https://project-hobbit.eu/</a>
+</br>[2] <a href="http://solide-projekt.de/">http://solide-projekt.de/</a>
+</br>[3] <a href="http://wdaqua.eu/">http://wdaqua.eu/</a>
+</br>[4] <a href="https://www.big-data-europe.eu/">https://www.big-data-europe.eu/</a> """ .
+
 sdablog:sansa-0-5 a sioc:Post, sdablog:projectannouncements ;
         dct:title "SANSA 0.5 (Scalable Semantic Analytics Stack) Released" ;
         sioc:topic "SANSA 0.5 (Scalable Semantic Analytics Stack) Released" ;
