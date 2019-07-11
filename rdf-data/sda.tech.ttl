@@ -25336,7 +25336,7 @@ The following AskNow components, with corresponding features, have been updated 
 </a></br>Demo: <a href="https://earldemo.sda.tech/">https://earldemo.sda.tech/
 </a></br>Github: <a href="https://github.com/AskNowQA/EARL/releases/tag/0.1.2">https://github.com/AskNowQA/EARL/releases/tag/0.1.2</a></li>
 <li> Neural ranking system aka Krantikari 0.1: KrantikariQA - A Neural ranking approach for answering questions over Knowledge Graphs. Given a question, and the entities mentioned in it, our system is trained to choose a logical form, which fetches the correct answer to the question. It employs a novel neural architecture, which was designed to consider the structure of these logical forms specifically. For more details read our recently published ISWC paper on the same.
-</br>ISWC 2018 paper:
+</br>ISWC 2019 paper:
 <a href="http://jens-lehmann.org/files/2019/iswc_complex_qa_ranking.pdf">http://jens-lehmann.org/files/2019/iswc_complex_qa_ranking.pdf
 </a></br>Github: <a href="https://github.com/AskNowQA/KrantikariQA">https://github.com/AskNowQA/KrantikariQA
 </a></br>A tutorial consisting of slides and notebooks to illustrate QA concepts, loosely based on <a href="https://github.com/AskNowQA/QA-Tutorial">https://github.com/AskNowQA/QA-Tutorial</a></li>
