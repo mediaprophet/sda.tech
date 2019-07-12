@@ -62,7 +62,7 @@
 sdaperson:JensLehmann a foaf:Person, sdatech:professor ;
                   rdfs:seeAlso <http://aksw.org/JensLehmann> ;
                   owl:sameAs <http://aksw.org/JensLehmann> ;
-                  sda:publicationsTag "lehmann" ;
+                  sda:publicationTag "lehmann" ;
                   ex:address sda:Room22, sda:Roomc1227, sda:Roomp631 ;
                   foaf:familyName "Lehmann" ;
                   foaf:name "Prof. Dr. Jens Lehmann" ;
@@ -84,7 +84,7 @@ sdaperson:JensLehmann a foaf:Person, sdatech:professor ;
 sdaperson:HajiraJabeen a foaf:Person, sdatech:seniorResearcher ;
                   rdfs:seeAlso <http://aksw.org/HajiraJabeen> ;
                   owl:sameAs <http://aksw.org/HajiraJabeen> ;
-                  sda:publicationsTag "jabeen" ;
+                  sda:publicationTag "jabeen" ;
                   ex:address sda:Room66 ;
                   foaf:firstName "Hajira" ;
                   foaf:familyName "Jabeen" ;
@@ -102,7 +102,7 @@ sdaperson:HajiraJabeen a foaf:Person, sdatech:seniorResearcher ;
                   foaf:currentProject sdaproject:BigDataEurope, sdaproject:SANSAStack, sdaproject:SMLBench, sdaproject:DLLearner,sdaproject:BigDataOcean .
 
 sdaperson:GuenterKniesel a foaf:Person, sdatech:seniorResearcher ;
-                  sda:publicationsTag "kniesel" ;
+                  sda:publicationTag "kniesel" ;
                   ex:address sda:Room65 ;
                   foaf:firstName "Günter" ;
                   foaf:familyName "Kniesel" ;
@@ -119,7 +119,7 @@ sdaperson:GuenterKniesel a foaf:Person, sdatech:seniorResearcher ;
                   sda:group sdagroup:SoftwareEngineeringforDataScience .
 
 sdaperson:MariaMaleshkova a foaf:Person, sdatech:seniorResearcher ;
-                  sda:publicationsTag "maleshkova" ;
+                  sda:publicationTag "maleshkova" ;
                   ex:address sda:Room51 ;
                   foaf:firstName "Maria" ;
                   foaf:familyName "Maleshkova" ;
@@ -137,7 +137,7 @@ sdaperson:MariaMaleshkova a foaf:Person, sdatech:seniorResearcher ;
                   foaf:currentProject sdaproject:Boost40 .
 
 sdaperson:AlexanderKister a foaf:Person, sdatech:seniorResearcher ;
-                  sda:publicationsTag "kister" ;
+                  sda:publicationTag "kister" ;
                   ex:address sda:Roomc1227-1 ;
                   foaf:firstName "Alexander" ;
                   foaf:familyName "Kister" ;
@@ -154,7 +154,7 @@ sdaperson:AlexanderKister a foaf:Person, sdatech:seniorResearcher ;
                   foaf:currentProject sdaproject:SLIPO, sdaproject:GEISER .
 
 sdaperson:HamedShariatYazdi a foaf:Person, sdatech:seniorResearcher ;
-                  sda:publicationsTag "yazdi" ;
+                  sda:publicationTag "yazdi" ;
                   ex:address sda:Room66 ;
                   foaf:firstName "Hamed" ;
                   foaf:familyName "Shariat Yazdi" ;
@@ -172,7 +172,7 @@ sdaperson:HamedShariatYazdi a foaf:Person, sdatech:seniorResearcher ;
                   #foaf:currentProject sdaproject: .
 
 sdaperson:GiulioNapolitano a foaf:Person, sdatech:seniorResearcher ;
-                  sda:publicationsTag "napolitano" ;
+                  sda:publicationTag "napolitano" ;
                   ex:address sda:RoomB3236 ;
                   foaf:firstName "Giulio" ;
                   foaf:familyName "Napolitano" ;
@@ -190,7 +190,7 @@ sdaperson:GiulioNapolitano a foaf:Person, sdatech:seniorResearcher ;
                   foaf:currentProject sdaproject:AskNow, sdaproject:HOBBIT .
 
 sdaperson:AnisaRula a foaf:Person, sdatech:seniorResearcher ;
-                  sda:publicationsTag "rula" ;
+                  sda:publicationTag "rula" ;
                   foaf:firstName "Anisa" ;
                   foaf:familyName "Rula" ;
                   foaf:name "Dr. Anisa Rula" ;
@@ -207,7 +207,7 @@ sdaperson:AnisaRula a foaf:Person, sdatech:seniorResearcher ;
                   foaf:currentProject sdaproject:SANSA .
 
 sdaperson:IoannaLytra a foaf:Person, sdatech:seniorResearcher ;
-                  sda:publicationsTag "lytra" ;
+                  sda:publicationTag "lytra" ;
                   ex:address sda:Room51 ;
                   foaf:firstName "Ioanna" ;
                   foaf:familyName "Lytra" ;
@@ -225,7 +225,7 @@ sdaperson:IoannaLytra a foaf:Person, sdatech:seniorResearcher ;
                   foaf:currentProject sdaproject:AskNow, sdaproject:WDAqua, sdaproject:BigDataOcean .
 
 sdaperson:ChristophLange a foaf:Person, sdatech:seniorResearcher ;
-                  sda:publicationsTag "lange" ;
+                  sda:publicationTag "lange" ;
                   ex:address sda:Room38, sda:RoomB3216 ;
                   foaf:firstName "Christoph" ;
                   foaf:familyName "Lange" ;
@@ -243,7 +243,7 @@ sdaperson:ChristophLange a foaf:Person, sdatech:seniorResearcher ;
                   foaf:currentProject sdaproject:WDAqua, sdaproject:OSCOSS, sdaproject:Boost40, sdaproject:DIACHRON, sdaproject:LiDaKrA, sdaproject:OpenAIRE2020, sdaproject:SeReCo .
 
 sdaperson:SimonScerri a foaf:Person, sdatech:seniorResearcher ;
-                  sda:publicationsTag "scerri" ;
+                  sda:publicationTag "scerri" ;
                   ex:address sda:RoomB3236 ;
                   foaf:firstName "Simon" ;
                   foaf:familyName "Scerri" ;
@@ -261,7 +261,7 @@ sdaperson:SimonScerri a foaf:Person, sdatech:seniorResearcher ;
                   foaf:currentProject sdaproject:BigDataEurope, sdaproject:Boost40, sdaproject:EDSA .
 
 sdaperson:SaharVahdati a foaf:Person, sdatech:seniorResearcher ;
-                   sda:publicationsTag "vahdati" ;
+                   sda:publicationTag "vahdati" ;
                    ex:address sda:Room126 ;
                    foaf:familyName "Vahdati" ;
                    foaf:name "Dr. Sahar Vahdati" ;
@@ -282,7 +282,7 @@ sdaperson:SaharVahdati a foaf:Person, sdatech:seniorResearcher ;
 sdaperson:GezimSejdiu a foaf:Person, sdatech:phdStudent ;
                    rdfs:seeAlso <http://aksw.org/GezimSejdiu> ;
                    owl:sameAs <http://aksw.org/GezimSejdiu> ;
-                   sda:publicationsTag "sejdiu" ;
+                   sda:publicationTag "sejdiu" ;
                    ex:address sda:Room68 ;
                    foaf:familyName "Sejdiu" ;
                    foaf:name "Gezim Sejdiu" ;
@@ -303,7 +303,7 @@ sdaperson:GezimSejdiu a foaf:Person, sdatech:phdStudent ;
 sdaperson:LorenzBuehmann a foaf:Person, sdatech:phdStudent ;
                    rdfs:seeAlso <http://aksw.org/LorenzBuehmann> ;
                    owl:sameAs <http://aksw.org/LorenzBuehmann> ;
-                   sda:publicationsTag "buehmann" ;
+                   sda:publicationTag "buehmann" ;
                    foaf:firstName "Lorenz" ;
                    foaf:familyName "Bühmann" ;
                    foaf:name "Lorenz Bühmann" ;
@@ -323,7 +323,7 @@ sdaperson:LorenzBuehmann a foaf:Person, sdatech:phdStudent ;
 sdaperson:MohnishDubey a foaf:Person, sdatech:phdStudent ;
                    rdfs:seeAlso <http://aksw.org/MohnishDubey> ;
                    owl:sameAs <http://aksw.org/MohnishDubey> ;
-                   sda:publicationsTag "dubey" ;
+                   sda:publicationTag "dubey" ;
                    ex:address sda:Room51-1 ;
                    foaf:familyName "Dubey" ;
                    foaf:name "Mohnish Dubey" ;
@@ -344,7 +344,7 @@ sdaperson:MohnishDubey a foaf:Person, sdatech:phdStudent ;
 sdaperson:HarshThakkar a foaf:Person, sdatech:phdStudent ;
                    rdfs:seeAlso <http://harshthakkar.in/> ;
                    owl:sameAs <http://aksw.org/HarshThakkar> ;
-                   sda:publicationsTag "thakkar" ;
+                   sda:publicationTag "thakkar" ;
                    ex:address sda:Room68 ;
                    foaf:familyName "Thakkar" ;
                    foaf:name "Harsh Thakkar" ;
@@ -365,7 +365,7 @@ sdaperson:HarshThakkar a foaf:Person, sdatech:phdStudent ;
 sdaperson:DiegoEsteves a foaf:Person, sdatech:phdStudent ;
                    rdfs:seeAlso <http://aksw.org/DiegoEsteves> ;
                    owl:sameAs <http://aksw.org/DiegoEsteves> ;
-                   sda:publicationsTag "esteves" ;
+                   sda:publicationTag "esteves" ;
                    ex:address sda:Room68 ;
                    foaf:familyName "Esteves" ;
                    foaf:name "Diego Esteves" ;
@@ -384,7 +384,7 @@ sdaperson:DiegoEsteves a foaf:Person, sdatech:phdStudent ;
                    foaf:currentProject sdaproject:DeFacto, sdaproject:HORUS, sdaproject:MEX, sdaproject:LiDaKrA, ex:DeFacto .
 
 sdaperson:FathoniMusyaffa a foaf:Person, sdatech:phdStudent ;
-                   sda:publicationsTag "musyaffa" ;
+                   sda:publicationTag "musyaffa" ;
                    ex:address sda:Room37 ;
                    foaf:familyName "Musyaffa" ;
                    foaf:name "Fathoni A. Musyaffa" ;
@@ -403,7 +403,7 @@ sdaperson:FathoniMusyaffa a foaf:Person, sdatech:phdStudent ;
                    foaf:currentProject sdaproject:OpenBudgetseu.
 
 sdaperson:MousaviNajmeh a foaf:Person, sdatech:phdStudent ;
-                   sda:publicationsTag "mousavi" ;
+                   sda:publicationTag "mousavi" ;
                    foaf:familyName "Mousavi Nejad" ;
                    foaf:name "Najmeh Mousavi Nejad" ;
                    foaf:nick "Najmeh" ;
@@ -419,7 +419,7 @@ sdaperson:MousaviNajmeh a foaf:Person, sdatech:phdStudent ;
                    sda:group sdagroup:SemanticDataManagement .
 
 sdaperson:DebanjanChaudhuri a foaf:Person, sdatech:phdStudent ;
-                   sda:publicationsTag "chaudhuri" ;
+                   sda:publicationTag "chaudhuri" ;
                    ex:address sda:Room64 ;
                    foaf:familyName "Chaudhuri" ;
                    foaf:name "Debanjan Chaudhuri" ;
@@ -439,7 +439,7 @@ sdaperson:DebanjanChaudhuri a foaf:Person, sdatech:phdStudent ;
 sdaperson:SimonBin a foaf:Person, sdatech:phdStudent ;
                    rdfs:seeAlso <http://aksw.org/SimonBin> ;
                    owl:sameAs <http://aksw.org/SimonBin> ;
-                   sda:publicationsTag "bin" ;
+                   sda:publicationTag "bin" ;
                    foaf:familyName "Bin" ;
                    foaf:name "Simon Bin" ;
                    foaf:nick "Simon" ;
@@ -457,7 +457,7 @@ sdaperson:SimonBin a foaf:Person, sdatech:phdStudent ;
 sdaperson:PatrickWestphal a foaf:Person, sdatech:phdStudent ;
                    rdfs:seeAlso <http://aksw.org/PatrickWestphal.html> ;
                    owl:sameAs <http://aksw.org/PatrickWestphal.html> ;
-                   sda:publicationsTag "westphal" ;
+                   sda:publicationTag "westphal" ;
                    foaf:familyName "Westphal" ;
                    foaf:name "Patrick Westphal" ;
                    foaf:nick "Patrick" ;
@@ -475,7 +475,7 @@ sdaperson:PatrickWestphal a foaf:Person, sdatech:phdStudent ;
 sdaperson:ClausStadler a foaf:Person, sdatech:phdStudent ;
                    rdfs:seeAlso <http://aksw.org/ClausStadler> ;
                    owl:sameAs <http://aksw.org/ClausStadler> ;
-                   sda:publicationsTag "stadler" ;
+                   sda:publicationTag "stadler" ;
                    foaf:familyName "Stadler" ;
                    foaf:name "Claus Stadler" ;
                    foaf:nick "Claus" ;
@@ -494,7 +494,7 @@ sdaperson:ClausStadler a foaf:Person, sdatech:phdStudent ;
 sdaperson:KonradHoeffner a foaf:Person, sdatech:phdStudent ;
                    rdfs:seeAlso <http://aksw.org/KonradHoeffner> ;
                    owl:sameAs <http://aksw.org/KonradHoeffner> ;
-                   sda:publicationsTag "hoeffner" ;
+                   sda:publicationTag "hoeffner" ;
                    ex:address sda:RoomP905 ;
                    foaf:familyName "Höffner" ;
                    foaf:name "Konrad Höffner" ;
@@ -513,7 +513,7 @@ sdaperson:KonradHoeffner a foaf:Person, sdatech:phdStudent ;
 sdaperson:MofeedHassan a foaf:Person, sdatech:phdStudent ;
                    rdfs:seeAlso <http://aksw.org/MofeedHassan> ;
                    owl:sameAs <http://aksw.org/MofeedHassan> ;
-                   sda:publicationsTag "hassan" ;
+                   sda:publicationTag "hassan" ;
                    foaf:familyName "Hassan" ;
                    foaf:name "Mofeed Hassan" ;
                    foaf:nick "Mofeed" ;
@@ -527,7 +527,7 @@ sdaperson:MofeedHassan a foaf:Person, sdatech:phdStudent ;
                    cv:aboutPerson "Mofeed Hassan is a PhD Student at the University of Leipzig." .
 
 sdaperson:HamidZafar a foaf:Person, sdatech:phdStudent ;
-                   sda:publicationsTag "zafar" ;
+                   sda:publicationTag "zafar" ;
                    ex:address sda:Room64 ;
                    foaf:familyName "Zafar" ;
                    foaf:name "Hamid Zafar" ;
@@ -546,7 +546,7 @@ sdaperson:HamidZafar a foaf:Person, sdatech:phdStudent ;
 
 
 sdaperson:ShimaaIbrahim a foaf:Person, sdatech:phdStudent ;
-                   sda:publicationsTag "ibrahim" ;
+                   sda:publicationTag "ibrahim" ;
                    ex:address sda:Room52 ;
                    foaf:familyName "Ibrahim" ;
                    foaf:name "Shimaa Ibrahim" ;
@@ -564,7 +564,7 @@ sdaperson:ShimaaIbrahim a foaf:Person, sdatech:phdStudent ;
                    foaf:currentProject sdaproject:SANSAStack .
 
 sdaperson:ElisaMargarethSibarani a foaf:Person, sdatech:phdStudent ;
-                   sda:publicationsTag "Sibarani" ;
+                   sda:publicationTag "Sibarani" ;
                    ex:address sda:Room68 ;
                    foaf:familyName "Margareth Sibarani" ;
                    foaf:name "Elisa Margareth Sibarani" ;
@@ -581,7 +581,7 @@ sdaperson:ElisaMargarethSibarani a foaf:Person, sdatech:phdStudent ;
                    foaf:currentProject sdaproject:EDSA .
 
 sdaperson:AfshinSadeghi a foaf:Person, sdatech:phdStudent ;
-                   sda:publicationsTag "sadeghi" ;
+                   sda:publicationTag "sadeghi" ;
                    ex:address sda:Room52 ;
                    foaf:familyName "Sadeghi" ;
                    foaf:name "Afshin Sadeghi" ;
@@ -599,7 +599,7 @@ sdaperson:AfshinSadeghi a foaf:Person, sdatech:phdStudent ;
                    foaf:currentProject sdaproject:SANSAStack, sdaproject:OSCOSS .
 
 sdaperson:IsaiahOnandoMulang a foaf:Person, sdatech:phdStudent ;
-                   sda:publicationsTag "mulang" ;
+                   sda:publicationTag "mulang" ;
                    ex:address sda:Room68 ;
                    foaf:familyName "Onando Mulang'" ;
                    foaf:name "Isaiah Onando Mulang'" ;
@@ -616,7 +616,7 @@ sdaperson:IsaiahOnandoMulang a foaf:Person, sdatech:phdStudent ;
                    cv:aboutPerson "Isaiah Onando Mulang' is a PhD Student at the University of Bonn." .
 
 sdaperson:DenisLukovnikov a foaf:Person, sdatech:phdStudent ;
-                   sda:publicationsTag "lukovnikov" ;
+                   sda:publicationTag "lukovnikov" ;
                    ex:address sda:Room64 ;
                    foaf:familyName "Lukovnikov" ;
                    foaf:name "Denis Lukovnikov" ;
@@ -634,7 +634,7 @@ sdaperson:DenisLukovnikov a foaf:Person, sdatech:phdStudent ;
                    foaf:currentProject sdaproject:WDAqua .
 
 sdaperson:SaidFathalla a foaf:Person, sdatech:phdStudent ;
-                   sda:publicationsTag "fathalla" ;
+                   sda:publicationTag "fathalla" ;
                    ex:address sda:Room52 ;
                    foaf:familyName "Fathalla" ;
                    foaf:name "Said Fathalla" ;
@@ -652,7 +652,7 @@ sdaperson:SaidFathalla a foaf:Person, sdatech:phdStudent ;
 
 
 sdaperson:HebaIbrahim a foaf:Person, sdatech:phdStudent ;
-                   sda:publicationsTag "ibrahim" ;
+                   sda:publicationTag "ibrahim" ;
                    ex:address sda:Room52 ;
                    foaf:familyName "Ibrahim" ;
                    foaf:name "Heba Ibrahim" ;
@@ -670,7 +670,7 @@ sdaperson:HebaIbrahim a foaf:Person, sdatech:phdStudent ;
                    foaf:currentProject sdaproject:BigDataEurope.
 
 sdaperson:MojtabaNayyeri a foaf:Person, sdatech:phdStudent ;
-                   sda:publicationsTag "nayyeri" ;
+                   sda:publicationTag "nayyeri" ;
                    ex:address sda:Room52 ;
                    foaf:familyName "Nayyeri" ;
                    foaf:name "Mojtaba Nayyeri" ;
@@ -687,7 +687,7 @@ sdaperson:MojtabaNayyeri a foaf:Person, sdatech:phdStudent ;
                    cv:aboutPerson "Mojtaba Nayyeri is a PhD Student at the University of Bonn.".
 
 sdaperson:ChengjinXu a foaf:Person, sdatech:phdStudent ;
-                   sda:publicationsTag "Xu" ;
+                   sda:publicationTag "Xu" ;
                    ex:address sda:Room52 ;
                    foaf:familyName "Xu" ;
                    foaf:name "Chengjin Xu" ;
@@ -704,7 +704,7 @@ sdaperson:ChengjinXu a foaf:Person, sdatech:phdStudent ;
                    cv:aboutPerson "Chengjin Xu is a PhD student at the university of Bonn. Chengjin’s research interests are in the area of Knowledge Embedding and Machine Learning.".
 
 sdaperson:MehdiAli a foaf:Person, sdatech:phdStudent ;
-                   sda:publicationsTag "ali" ;
+                   sda:publicationTag "ali" ;
                    ex:address sda:Room51-2 ;
                    foaf:familyName "Ali" ;
                    foaf:name "Mehdi Ali" ;
@@ -720,7 +720,7 @@ sdaperson:MehdiAli a foaf:Person, sdatech:phdStudent ;
                    cv:aboutPerson "Mehdi Ali is a PhD Student at the Computer Science Department III of the University of Bonn." .
 
 sdaperson:FirasKassawat a foaf:Person, sdatech:phdStudent ;
-                  sda:publicationsTag "kassawat" ;
+                  sda:publicationTag "kassawat" ;
                   ex:address sda:Room64-1 ;
                   foaf:familyName "Kassawat" ;
                   foaf:name "Firas Kassawat" ;
@@ -736,7 +736,7 @@ sdaperson:FirasKassawat a foaf:Person, sdatech:phdStudent ;
                   cv:aboutPerson "Firas Kassawat is a PhD Student at the Computer Science Department III of the University of Bonn." .
 
 sdaperson:LarsReimann a foaf:Person, sdatech:phdStudent ;
-                  sda:publicationsTag "reimann" ;
+                  sda:publicationTag "reimann" ;
                   ex:address sda:Room52 ;
                   foaf:familyName "Reimann" ;
                   foaf:name "Lars Reimann" ;
@@ -755,7 +755,7 @@ sdaperson:LarsReimann a foaf:Person, sdatech:phdStudent ;
 ##############################Associated Researchers#####################
 
 sdaperson:SteffenLohmann a foaf:Person, sdatech:associateReseracher ;
-                  sda:publicationsTag "lohmann" ;
+                  sda:publicationTag "lohmann" ;
                   ex:address sda:RoomB3226 ;
                   foaf:firstName "Steffen" ;
                   foaf:familyName "Lohmann" ;
@@ -772,7 +772,7 @@ sdaperson:SteffenLohmann a foaf:Person, sdatech:associateReseracher ;
                   foaf:currentProject sdaproject:BeIoT, sdaproject:SlideWiki.
 
 sdaperson:DamienGraux a foaf:Person, sdatech:associateReseracher ;
-                  sda:publicationsTag "graux" ;
+                  sda:publicationTag "graux" ;
                   ex:address sda:RoomB3226 ;
                   foaf:firstName "Damien" ;
                   foaf:familyName "Graux" ;
@@ -789,7 +789,7 @@ sdaperson:DamienGraux a foaf:Person, sdatech:associateReseracher ;
                   foaf:currentProject sdaproject:SANSAStack, sdaproject:SLIPO .
 
 sdaperson:AsjaFischer a foaf:Person, sdatech:associateReseracher ;
-                  sda:publicationsTag "fischer" ;
+                  sda:publicationTag "fischer" ;
                   ex:address sda:Room65-2 ;
                   sda:address "Endenicher Allee 19a, 53115 Bonn" ;
                   foaf:firstName "Asja" ;
@@ -809,7 +809,7 @@ sdaperson:AsjaFischer a foaf:Person, sdatech:associateReseracher ;
 
 
 sdaperson:NiklasPetersen a foaf:Person, sdatech:associateReseracher ;
-                   sda:publicationsTag "petersen" ;
+                   sda:publicationTag "petersen" ;
                    ex:address sda:RoomB3236-1 ;
                    foaf:familyName "Petersen" ;
                    foaf:name "Niklas Petersen" ;
@@ -827,7 +827,7 @@ sdaperson:NiklasPetersen a foaf:Person, sdatech:associateReseracher ;
                    foaf:currentProject sdaproject:Boost40, sdaproject:LUCID .
 
 sdaperson:MohamedNadjibMami a foaf:Person, sdatech:associateReseracher ;
-                   sda:publicationsTag "mami" ;
+                   sda:publicationTag "mami" ;
                    ex:address sda:RoomB3206 ;
                    foaf:familyName "Nadjib Mami" ;
                    foaf:name "Mohamed Nadjib Mami" ;
@@ -845,7 +845,7 @@ sdaperson:MohamedNadjibMami a foaf:Person, sdatech:associateReseracher ;
                    foaf:currentProject sdaproject:SANSAStack, sdaproject:BigDataEurope .
 
 sdaperson:DiegoCollarana a foaf:Person, sdatech:associateReseracher ;
-                   sda:publicationsTag "collarana" ;
+                   sda:publicationTag "collarana" ;
                    foaf:familyName "Collarana" ;
                    foaf:name "Dr. Diego Collarana" ;
                    foaf:nick "Diego" ;
@@ -862,7 +862,7 @@ sdaperson:DiegoCollarana a foaf:Person, sdatech:associateReseracher ;
                    foaf:currentProject sdaproject:EDSA .
 
 sdaperson:KuldeepSingh a foaf:Person, sdatech:associateReseracher ;
-                   sda:publicationsTag "singh" ;
+                   sda:publicationTag "singh" ;
                    foaf:familyName "Singh" ;
                    foaf:name "Dr. Kuldeep Singh" ;
                    foaf:nick "Kuldeep" ;
@@ -879,7 +879,7 @@ sdaperson:KuldeepSingh a foaf:Person, sdatech:associateReseracher ;
                    foaf:currentProject sdaproject:AskNow, sdaproject:WDAqua .
 
 sdaperson:JewgeniRose a foaf:Person, sdatech:associateReseracher ;
-                   sda:publicationsTag "rose" ;
+                   sda:publicationTag "rose" ;
                    foaf:familyName "Rose" ;
                    foaf:name "Jewgeni Rose" ;
                    foaf:nick "Jewgeni" ;
@@ -895,7 +895,7 @@ sdaperson:JewgeniRose a foaf:Person, sdatech:associateReseracher ;
                    sda:group sdagroup:SemanticQuestionAnswering .
 
 sdaperson:AshwiniJayaKumar a foaf:Person, sdatech:associateReseracher ;
-                   sda:publicationsTag "kumar" ;
+                   sda:publicationTag "kumar" ;
                    foaf:familyName "Jaya Kumar" ;
                    foaf:name "Ashwini Jaya Kumar" ;
                    foaf:nick "Ashwini" ;
@@ -911,7 +911,7 @@ sdaperson:AshwiniJayaKumar a foaf:Person, sdatech:associateReseracher ;
                    foaf:currentProject sdaproject:WDAqua .
 
 sdaperson:MiretteElias a foaf:Person, sdatech:associateReseracher ;
-                   sda:publicationsTag "elias" ;
+                   sda:publicationTag "elias" ;
                    foaf:familyName "Elias" ;
                    foaf:name "Mirette Elias" ;
                    foaf:nick "Mirette" ;
@@ -925,7 +925,7 @@ sdaperson:MiretteElias a foaf:Person, sdatech:associateReseracher ;
                    cv:aboutPerson "Mirette Elias is a Researcher at the Fraunhofer IAIS." .
 
 sdaperson:VitalisWiens a foaf:Person, sdatech:associateReseracher ;
-                   sda:publicationsTag "wiens" ;
+                   sda:publicationTag "wiens" ;
                    ex:address sda:RoomB3236-1 ;
                    foaf:familyName "Wiens" ;
                    foaf:name "Vitalis Wiens" ;
@@ -940,7 +940,7 @@ sdaperson:VitalisWiens a foaf:Person, sdatech:associateReseracher ;
                    cv:aboutPerson "Vitalis Wiens is a Researcher at the Fraunhofer IAIS." .
 
 sdaperson:SebastianBader a foaf:Person, sdatech:associateReseracher ;
-                   sda:publicationsTag "bader" ;
+                   sda:publicationTag "bader" ;
                    ex:address sda:RoomC4a009 ;
                    foaf:familyName "Bader" ;
                    foaf:name "Sebastian Bader" ;
@@ -958,7 +958,7 @@ sdaperson:SebastianBader a foaf:Person, sdatech:associateReseracher ;
                    cv:aboutPerson "Sebastian Bader is a PhD Student & Research Associate at the University of Bonn and Fraunhofer IAIS. His research targets interoperability platforms powered by Semantic Web Technologies, Smart Services and the digital transformation of manufacturing facilities towards IoT-based systems." .
 
 sdaperson:RostislavNedelchev a foaf:Person, sdatech:associateReseracher ;
-                   sda:publicationsTag "nedelchev" ;
+                   sda:publicationTag "nedelchev" ;
                    ex:address sda:RoomB3236-1 ;
                    foaf:familyName "Nedelchev" ;
                    foaf:name "Rostislav Nedelchev" ;
@@ -976,7 +976,7 @@ sdaperson:RostislavNedelchev a foaf:Person, sdatech:associateReseracher ;
                    cv:aboutPerson "Rostislav Nedelchev is a PhD Student at the University of Bonn and a Research Engineer at Fraunhofer IAIS. Rostislav's research interests are in Natural Language Processing, Machine Learning and Data Science." .
 
 sdaperson:MichaelGalkin a foaf:Person, sdatech:associateReseracher ;
-                   sda:publicationsTag "galkin" ;
+                   sda:publicationTag "galkin" ;
                    foaf:familyName "Galkin" ;
                    foaf:name "Dr. Michael Galkin" ;
                    foaf:nick "Michael" ;
@@ -994,7 +994,7 @@ sdaperson:MichaelGalkin a foaf:Person, sdatech:associateReseracher ;
 ##############################Student Assistants#########################
 
 sdaperson:NileshChakraborty a foaf:Person, sdatech:studentAssistant ;
-                   sda:publicationsTag "chakraborty" ;
+                   sda:publicationTag "chakraborty" ;
                    ex:address sda:Room52-1 ;
                    foaf:familyName "Chakraborty" ;
                    foaf:name "Nilesh Chakraborty" ;
@@ -1013,7 +1013,7 @@ sdaperson:NileshChakraborty a foaf:Person, sdatech:studentAssistant ;
                    foaf:currentProject sdaproject:SANSAStack .
 
 sdaperson:GauravMaheshwari a foaf:Person, sdatech:studentAssistant ;
-                   sda:publicationsTag "maheshwari" ;
+                   sda:publicationTag "maheshwari" ;
                    ex:address sda:Room64-1 ;
                    foaf:familyName "Maheshwari" ;
                    foaf:name "Gaurav Maheshwari" ;
@@ -1031,7 +1031,7 @@ sdaperson:GauravMaheshwari a foaf:Person, sdatech:studentAssistant ;
                    foaf:currentProject sdaproject:AskNow .
 
 sdaperson:PriyanshTrivedi a foaf:Person, sdatech:studentAssistant ;
-                   sda:publicationsTag "trivedi" ;
+                   sda:publicationTag "trivedi" ;
                    ex:address sda:Room64-1 ;
                    foaf:familyName "Trivedi" ;
                    foaf:name "Priyansh Trivedi" ;
@@ -1049,7 +1049,7 @@ sdaperson:PriyanshTrivedi a foaf:Person, sdatech:studentAssistant ;
                    foaf:currentProject sdaproject:AskNow .
 
 sdaperson:YersonRoa a foaf:Person, sdatech:studentAssistant ;
-                   sda:publicationsTag "roa" ;
+                   sda:publicationTag "roa" ;
                    foaf:familyName "Roa" ;
                    foaf:name "Yerson Roa" ;
                    foaf:nick "Yerson" ;
@@ -1063,7 +1063,7 @@ sdaperson:YersonRoa a foaf:Person, sdatech:studentAssistant ;
                    cv:aboutPerson "Yerson Roa is a Student Assistant at the Computer Science Department III of the University of Bonn." .
 
 sdaperson:DebayanBanerjee a foaf:Person, sdatech:studentAssistant ;
-                   sda:publicationsTag "banerjee" ;
+                   sda:publicationTag "banerjee" ;
                    ex:address sda:Room55 ;
                    foaf:familyName "Banerjee" ;
                    foaf:name "Debayan Banerjee" ;
@@ -1080,7 +1080,7 @@ sdaperson:DebayanBanerjee a foaf:Person, sdatech:studentAssistant ;
                    cv:aboutPerson "Debayan Banerjee is a Student Assistant at the Computer Science Department III of the University of Bonn." .
 
 sdaperson:MingQu a foaf:Person, sdatech:studentAssistant ;
-                   sda:publicationsTag "qu" ;
+                   sda:publicationTag "qu" ;
                    ex:address sda:Room55 ;
                    foaf:familyName "Qu" ;
                    foaf:name "Ming Qu" ;
@@ -1096,7 +1096,7 @@ sdaperson:MingQu a foaf:Person, sdatech:studentAssistant ;
                    cv:aboutPerson "Ming Qu is a Student Assistant at the Computer Science Department III of the University of Bonn." .
 
 sdaperson:AsifKhan a foaf:Person, sdatech:studentAssistant ;
-                   sda:publicationsTag "khan" ;
+                   sda:publicationTag "khan" ;
                    ex:address sda:Room55 ;
                    foaf:familyName "Khan" ;
                    foaf:name "Asif Khan" ;
@@ -1112,7 +1112,7 @@ sdaperson:AsifKhan a foaf:Person, sdatech:studentAssistant ;
                    cv:aboutPerson "Asif Khan is a Student Assistant at the Computer Science Department III of the University of Bonn." .
 
 sdaperson:PiyushChawla a foaf:Person, sdatech:studentAssistant ;
-                   sda:publicationsTag "chawla" ;
+                   sda:publicationTag "chawla" ;
                    ex:address sda:Room55 ;
                    foaf:familyName "Chawla" ;
                    foaf:name "Piyush Chawla" ;
@@ -1128,7 +1128,7 @@ sdaperson:PiyushChawla a foaf:Person, sdatech:studentAssistant ;
                    cv:aboutPerson "Piyush Chawla is a Student Assistant at the Computer Science Department III of the University of Bonn." .
 
 sdaperson:MehrdadBozorg a foaf:Person, sdatech:studentAssistant ;
-                   sda:publicationsTag "mehrdad" ;
+                   sda:publicationTag "mehrdad" ;
                    ex:address sda:Room64-1 ;
                    foaf:familyName "Bozorg" ;
                    foaf:name "Mehrdad Bozorg" ;
@@ -1144,7 +1144,7 @@ sdaperson:MehrdadBozorg a foaf:Person, sdatech:studentAssistant ;
                    cv:aboutPerson "Mehrdad Bozorg is a Student Assistant at the Computer Science Department III of the University of Bonn." .
 
 sdaperson:MirzaMohtashimAlam a foaf:Person, sdatech:studentAssistant ;
-                  sda:publicationsTag "mirza" ;
+                  sda:publicationTag "mirza" ;
                   ex:address sda:Room64-1 ;
                   foaf:familyName "Mirza" ;
                   foaf:name "Mirza Mohtashim Alam" ;
@@ -1162,7 +1162,7 @@ sdaperson:MirzaMohtashimAlam a foaf:Person, sdatech:studentAssistant ;
 ##############################Interns####################################
 
 sdaperson:KathanKashiparekh a foaf:Person, sdatech:intern ;
-                   sda:publicationsTag "kashiparekh" ;
+                   sda:publicationTag "kashiparekh" ;
                    foaf:familyName "Kashiparekh" ;
                    foaf:name "Kathan Kashiparek" ;
                    foaf:nick "Kathan" ;
@@ -1177,7 +1177,7 @@ sdaperson:KathanKashiparekh a foaf:Person, sdatech:intern ;
                    cv:aboutPerson "Kathan Kashiparekh is a Student Intern at the Computer Science Department III of the University of Bonn." .
 
 sdaperson:AnikethReddy a foaf:Person, sdatech:intern ;
-                   sda:publicationsTag "reddy" ;
+                   sda:publicationTag "reddy" ;
                    foaf:familyName "Reddy" ;
                    foaf:name "Aniketh Reddy" ;
                    foaf:nick "Aniketh" ;
@@ -1194,7 +1194,7 @@ sdaperson:AnikethReddy a foaf:Person, sdatech:intern ;
 ##############################Former Members#############################
 
 sdaperson:FrankNietzsche a foaf:Person, sdatech:formerMember ;
-                   sda:publicationsTag "nietzsche" ;
+                   sda:publicationTag "nietzsche" ;
                    foaf:familyName "Nietzsche" ;
                    foaf:name "Frank Nietzsche" ;
                    foaf:nick "Frank" ;
@@ -1209,7 +1209,7 @@ sdaperson:FrankNietzsche a foaf:Person, sdatech:formerMember ;
                    foaf:currentProject sdaproject:GEISER .
 
 sdaperson:BastianHaarmann a foaf:Person, sdatech:formerMember ;
-                   sda:publicationsTag "haarmann" ;
+                   sda:publicationTag "haarmann" ;
                    foaf:familyName "Haarmann" ;
                    foaf:name "Dr. Bastian Haarmann" ;
                    foaf:nick "Bastian" ;
@@ -1223,7 +1223,7 @@ sdaperson:BastianHaarmann a foaf:Person, sdatech:formerMember ;
                    cv:aboutPerson "Dr. Bastian Haarmann is a Senior Researcher at the Computer Science Department III of the University of Bonn." .
 
 sdaperson:HenningPetzka a foaf:Person, sdatech:formerMember ;
-                   sda:publicationsTag "petzka" ;
+                   sda:publicationTag "petzka" ;
                    foaf:familyName "Petzka" ;
                    foaf:name "Dr. Henning Petzka" ;
                    foaf:nick "Henning" ;
@@ -1238,7 +1238,7 @@ sdaperson:HenningPetzka a foaf:Person, sdatech:formerMember ;
                    foaf:currentProject sdaproject:HOBBIT .
 
 sdaperson:MohamedSherif a foaf:Person, sdatech:formerMember ;
-                   sda:publicationsTag "sherif" ;
+                   sda:publicationTag "sherif" ;
                    foaf:familyName "Sherif" ;
                    foaf:name "Dr. Mohamed Sherif" ;
                    foaf:nick "Mohamed" ;
@@ -1252,7 +1252,7 @@ sdaperson:MohamedSherif a foaf:Person, sdatech:formerMember ;
                    cv:aboutPerson "Dr. Mohamed Sherif is a Senior Researcher at the Computer Science Department III of the University of Bonn." .
 
 sdaperson:TiansiDong a foaf:Person, sdatech:formerMember ;
-                   sda:publicationsTag "dong" ;
+                   sda:publicationTag "dong" ;
                    foaf:familyName "Dong" ;
                    foaf:name "Dr. Tiansi Dong" ;
                    foaf:nick "Tiansi" ;
@@ -1267,7 +1267,7 @@ sdaperson:TiansiDong a foaf:Person, sdatech:formerMember ;
                    foaf:currentProject sdaproject:OpenBudgetseu .
 
 sdaperson:VinayModi a foaf:Person, sdatech:formerMember ;
-                   sda:publicationsTag "modi" ;
+                   sda:publicationTag "modi" ;
                    foaf:familyName "Modi" ;
                    foaf:name "Vinay Modi" ;
                    foaf:nick "Vinay" ;
@@ -1282,7 +1282,7 @@ sdaperson:VinayModi a foaf:Person, sdatech:formerMember ;
                    cv:aboutPerson "Vinay Modi is a Researcher at the Computer Science Department III of the University of Bonn." .
 
 sdaperson:FabrizioOrlandi a foaf:Person, sdatech:formerMember ;
-                  sda:publicationsTag "orlandi" ;
+                  sda:publicationTag "orlandi" ;
                   ex:address sda:RoomB3210 ;
                   foaf:firstName "Fabrizio" ;
                   foaf:familyName "Orlandi" ;
@@ -1302,7 +1302,7 @@ sdaperson:FabrizioOrlandi a foaf:Person, sdatech:formerMember ;
 sdaperson:LuisPauloGarcia a foaf:Person, sdatech:formerMember ;
                   rdfs:seeAlso <http://aksw.org/LuisGarcia> ;
                   owl:sameAs <http://aksw.org/LuisGarcia> ;
-                  sda:publicationsTag "garcia" ;
+                  sda:publicationTag "garcia" ;
                   ex:address sda:RoomA108 ;
                   foaf:firstName "Luís" ;
                   foaf:familyName "Paulo Garcia" ;
@@ -1319,7 +1319,7 @@ sdaperson:LuisPauloGarcia a foaf:Person, sdatech:formerMember ;
                   foaf:currentProject sdaproject:QROWD .
 
 sdaperson:AdrianBajraktari a foaf:Person, sdatech:formerMember ;
-                   sda:publicationsTag "bajraktari" ;
+                   sda:publicationTag "bajraktari" ;
                    foaf:familyName "Bajraktari" ;
                    foaf:name "Adrian Bajraktari" ;
                    foaf:nick "Adrian" ;
@@ -1338,7 +1338,7 @@ sdaperson:AdrianBajraktari a foaf:Person, sdatech:formerMember ;
                    cv:aboutPerson "Adrian Bajraktari is a Student Assistant at the Computer Science Department III of the University of Bonn." .
 
 sdaperson:LavdimHalilaj a foaf:Person, sdatech:formerMember ;
-                   sda:publicationsTag "halilaj" ;
+                   sda:publicationTag "halilaj" ;
                    ex:address sda:RoomB3236-1 ;
                    foaf:familyName "Halilaj" ;
                    foaf:name "Dr. Lavdim Halilaj" ;
@@ -1356,7 +1356,7 @@ sdaperson:LavdimHalilaj a foaf:Person, sdatech:formerMember ;
                    foaf:currentProject sdaproject:LUCID .
 
 sdaperson:IrlanGrangelGonzales a foaf:Person, sdatech:formerMember ;
-                   sda:publicationsTag "grangel" ;
+                   sda:publicationTag "grangel" ;
                    foaf:familyName "Grangel-Gonzales" ;
                    foaf:name "Dr. Irlan Grangel-Gonzales" ;
                    foaf:nick "Irlan" ;
@@ -1373,7 +1373,7 @@ sdaperson:IrlanGrangelGonzales a foaf:Person, sdatech:formerMember ;
 
 
 sdaperson:JuliusKaufmann a foaf:Person, sdatech:formerMember ;
-                   sda:publicationsTag "kaufmann" ;
+                   sda:publicationTag "kaufmann" ;
                    ex:address sda:Room55 ;
                    foaf:familyName "Kaufmann" ;
                    foaf:name "Julius Kaufmann" ;
@@ -1389,7 +1389,7 @@ sdaperson:JuliusKaufmann a foaf:Person, sdatech:formerMember ;
                    cv:aboutPerson "Julius Kaufmann is a Student Assistant at the Computer Science Department III of the University of Bonn." .
 
 sdaperson:JeanHernandez a foaf:Person, sdatech:formerMember ;
-                   sda:publicationsTag "hernandez" ;
+                   sda:publicationTag "hernandez" ;
                    foaf:familyName "Hernandez" ;
                    foaf:name "Jean Hernandez" ;
                    foaf:nick "Jean" ;
@@ -1404,7 +1404,7 @@ sdaperson:JeanHernandez a foaf:Person, sdatech:formerMember ;
                    cv:aboutPerson "Jean Hernandez is a Student Assistant at the Computer Science Department III of the University of Bonn.".
 
 sdaperson:GabrielGimenez a foaf:Person, sdatech:formerMember ;
-                   sda:publicationsTag "gimenez" ;
+                   sda:publicationTag "gimenez" ;
                    foaf:familyName "Gimenez" ;
                    foaf:name "Gabriel Gimenez" ;
                    foaf:nick "Gabriel" ;
@@ -1419,7 +1419,7 @@ sdaperson:GabrielGimenez a foaf:Person, sdatech:formerMember ;
                    cv:aboutPerson "Gabriel Gimenez is a Student Assistant at the Computer Science Department III of the University of Bonn.".
 
 sdaperson:GuillermoBetancourt a foaf:Person, sdatech:formerMember ;
-                   sda:publicationsTag "betancourt" ;
+                   sda:publicationTag "betancourt" ;
                    foaf:familyName "Betancourt" ;
                    foaf:name "Guillermo Betancourt" ;
                    foaf:nick "Guillermo" ;
@@ -1959,8 +1959,7 @@ sdaproject:SANSAStack a foaf:Project, sdatech:openSourceProject ;
                  sda:source "https://github.com/SANSA-Stack" ;
                  sda:download "undefined" ;
                  site:content "";
-                 sda:publicationTag "sansa-stack" ;
-                 #dct:abstract "GEISER develops an open cloud-based platform for integrating geospatial data with sensor data from cyberphysical systems based on semantic and Big Data technologies." ;
+                 sda:publicationTag "sansa" ;
                  doap:maintainer sdaperson:JensLehmann ;
                  sda:relatedProject sdaproject:BigDataEurope ;
                  sdapublication:publication sdapublication:Publication1 ;
@@ -3192,13 +3191,13 @@ sdatech:PeopleNavigation a sdatech:SecondaryNavigation ;
         rdf:_8 sdapeople:formermembers .
 
 sdatech:PublicationNavigation a sdatech:SecondaryNavigation ;
-        rdf:_1 sdatech:publication ;
-        rdf:_2 sdapublication:Conference ;
-        rdf:_3 sdapublication:Journal ;
-        rdf:_4 sdapublication:ConferenceProceedings ;
-        rdf:_5 sdapublication:Book ;
-        rdf:_6 sdapublication:TechnicalReport ;
-        rdf:_7 sdapublication:Thesis .
+        rdf:_1 sdatech:publication . #;
+#        rdf:_2 sdapublication:Conference ;
+#        rdf:_3 sdapublication:Journal ;
+#        rdf:_4 sdapublication:ConferenceProceedings ;
+#        rdf:_5 sdapublication:Book ;
+#        rdf:_6 sdapublication:TechnicalReport ;
+#        rdf:_7 sdapublication:Thesis .
 
 ################################################################################
 ############################Publications########################################
