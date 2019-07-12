@@ -47,7 +47,7 @@ facebook_username: SDAResearch
 linkedin_username: SDA
 
 # BibBase URL
-bibbase: https://raw.githubusercontent.com/SmartDataAnalytics/sda.tech/master/sda.bib
+bibbase: http://bibbase.org/show?bib=https://raw.githubusercontent.com/SmartDataAnalytics/sda.tech/master/sda.bib
 
 #activeVars
 activePeople: All Members
