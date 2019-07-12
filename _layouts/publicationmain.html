@@ -15,7 +15,11 @@ activateHeader('{{page.navigationdiv}}');
     {% include publicationHeader.html active="Publications" %}
   </div>
   <div class="content-people">
-    {% include publicationContent.html active ="Publications" %}
+      <div class="publications-project" style="display:block !important;" min-width="100%">
+          <div class="nostyle"  style="text-align:left; ">
+            <script src="{{site.bibbase}}&filter=year:(2015|2016|2017|2018|2019|202.|203.)&fullnames=1&theme=side&jsonp=1"></script>
+          </div>
+    </div>
   </div>
   <br class="horizontal-separator" />
 </div>
