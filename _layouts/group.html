@@ -98,12 +98,25 @@ activateHeader('{{page.navigationdiv}}');
                   </div>
                   {% endfor %}
                 </div>
+
               <br class="horizontal-separator2" />
-              <br class="horizontal-separator" />
-              <h4>Publications</h4>
+
+              {% capture publicationTag %} {{ page.rdf | rdf_property: 'sda:shortcut' }} {% endcapture %}
+              {% if publicationTag.size %}
+              <br class="horizontal-separator2" />
+                <h4>Publications</h4>
+                <div class="publications-project" style="display:block !important;" min-width="100%">
+                  <div class="content-people">   
+                  <div class="nostyle"  style="text-align:left; ">
+                       <script src="{{site.bibbase}}&filter=keywords:{{publicationTag}}&fullnames=1&theme=side&jsonp=1"></script>
+                     </div>
+                    </div>
+               </div>
+             {% endif %}
+              <!--<h4>Publications</h4>
               {% for result4 in resultset4 %}
                 {% include pubEntry.html link=result4.link date=result4.date publisher=result4.publisher title=result4.title  %}
-              {% endfor %}
+              {% endfor %}-->
               <br class="horizontal-separator" />
             </div>
           </div>

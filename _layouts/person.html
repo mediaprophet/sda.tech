@@ -14,7 +14,7 @@ activateHeader('{{page.navigationdiv}}');
 
 <div class="borderAll">
   <article class="post">
-    <div class="pagination">
+    <div class="content-people">
       <div class="post-content">
         <br class="horizontal-separator" />
         <div style="text-align:center;"><img class="img-circle-small" style="width: 250px; height: 250px; border-radius: 0%; " src="{{ page.rdf | rdf_property: 'foaf:depiction'}}"></img>
@@ -170,7 +170,7 @@ activateHeader('{{page.navigationdiv}}');
                  {% for topic in thesistopics %}
                    <div class="links">
                      <ul>
-                       <li style="text-align: left;"><a href="../../bachelorthesis">{{topic.title}}</a> ({{topic.thesislevel}})<br>
+                       <li style="text-align: left;"><a href="../../thesis">{{topic.title}}</a> ({{topic.thesislevel}})<br>
                      </ul>
                    </div>
                  {% endfor %}
@@ -179,42 +179,18 @@ activateHeader('{{page.navigationdiv}}');
            <!-- <hr width="100%" > -->
            {% endif %}
 
-           <!-- Displaying all the publications of the PERSON  -->
-           {% capture query %} SELECT ?publication ?title ?date ?publisher ?link  WHERE{
-           <{{page.rdf}}> sda:publication ?publication . ?publication dc:title ?title . ?publication dc:date ?date . ?publication dc:publisher ?publisher . ?publication foaf:homepage ?link . } {% endcapture %} {% assign resultset2 = page.rdf | sparql_query: query %}
-           {% if resultset2.size != 0 %}
-           <!-- <hr class="" /> -->
+           <!-- Displaying all the publications of the PERSON -- using BibBase  -->
+           {% capture publicationTag %} {{ page.rdf | rdf_property: 'sda:publicationTag' }} {% endcapture %}
+           {% if publicationTag.size %}
            <br class="horizontal-separator2" />
-           <h4>Publications</h4>
-            <div class=""  width="100%">
-              <div class="partnersOfProject" style="display:block !important;" min-width="100%">
-                  <button class="collapsible">Conference Paper</button>
-                  <div class="content">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+             <h4>Publications</h4>
+             <div class="publications-project" style="display:block !important;" min-width="100%">
+                  <div class="nostyle"  style="text-align:left; ">
+                    <script src="{{site.bibbase}}&filter=keywords:{{publicationTag}}&fullnames=1&theme=side&jsonp=1"></script>
                   </div>
-                  <button class="collapsible">Proceeding</button>
-                  <div class="content">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                  </div>
-                  <button class="collapsible">Journal</button>
-                  <div class="content">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                  </div>
-
-                <!-- <div class="links">
-                  <h3 style="padding-left:48px !important; padding-top:16px !important; padding-bottom:16px !important ">Publications</h3>
-                  <div  style="padding:48px !important; margin-left:0px; margin-right:0px;">
-                  {% for result4 in resultset2 %}
-                    {% include pubEntry.html link=result4.link date=result4.date publisher=result4.publisher title=result4.title  %}
-                  {% endfor %}
-                  <br class="horizontal-separator2" />
-                  <br class="horizontal-separator" />
-                  </div>
-                </div> -->
-              </div>
             </div>
-            <!--<hr width="100%" > -->
-            {% endif %}
+          {% endif %}
+
             <br>
             <div style="text-align:center;">
               {% capture boolTwitter | strip  %}{{ page.rdf | rdf_property: 'sda:twitter' }}{% endcapture %}
