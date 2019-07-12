@@ -46,6 +46,9 @@ github_username: SmartDataAnalytics
 facebook_username: SDAResearch
 linkedin_username: SDA
 
+# BibBase URL
+bibbase: https://raw.githubusercontent.com/SmartDataAnalytics/sda.tech/master/sda.bib
+
 #activeVars
 activePeople: All Members
 activeGroup: Distributed Semantic Analytics
