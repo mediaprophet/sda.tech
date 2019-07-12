@@ -854,10 +854,10 @@ sdaperson:DiegoCollarana a foaf:Person, sdatech:associateReseracher ;
                    foaf:phone "" ;
                    foaf:firstName "Diego" ;
                    foaf:title "Dr. " ;
-                   foaf:status "Researcher" ;
+                   foaf:status "Senior Research Engineer" ;
                    sda:profilepage <https://www.linkedin.com/in/diego-collarana-60ab6127/>;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
-                   cv:aboutPerson "Dr. Diego Collarana is a Senior Researcher at the Fraunhofer IAIS." ;
+                   cv:aboutPerson "Dr. Diego Collarana is a Senior Research Engineer at the Fraunhofer IAIS." ;
                    sda:group sdagroup:SemanticDataManagement ;
                    foaf:currentProject sdaproject:EDSA .
 
@@ -1480,7 +1480,7 @@ sdagroup:DistributedSemanticAnalytics a aiiso:ResearchGroup, sdatech:Group ;
 ##Semantic Data Management
 sdagroup:SemanticDataManagement a aiiso:ResearchGroup, sdatech:Group ;
                                 rdfs:label "Semantic Data Management" ;
-                                dbo:leader sdaperson:ChristophLange, sdaperson:SteffenLohmann ;
+                                dbo:leader sdaperson:SteffenLohmann, sdaperson:DiegoCollarana ;
                                 foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
                                 foaf:currentProject sdaproject:BigDataEurope ;
                                 dct:description "The group's research focus is on knowledge and data representation, integration, and management based on semantic technologies." ;
