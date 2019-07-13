@@ -20,7 +20,7 @@ temp: temp value
 titleWithAcronym: Smart Data Analytics (SDA)
 author: Institut für Informatik III
 email: jens.lehmann@cs.uni-bonn.de
-copyrights: Smart Data Analytics, © 2018
+copyrights: Smart Data Analytics, © 2019
 addressLineOne: Endenicher Allee 19a
 addressLineTwo: 53115 Bonn, Germany
 phone: +49 228 73-4315
@@ -53,7 +53,7 @@ bibbase: http://bibbase.org/show?bib=https://raw.githubusercontent.com/SmartData
 activePeople: All Members
 activeGroup: Distributed Semantic Analytics
 currentSemester: Summer
-currentYear: 2018
+currentYear: 2019
 leader: Prof.Dr. Jens Lehmann
 leaderHomePage: http://jens-lehmann.org/
 
