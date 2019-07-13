@@ -58,7 +58,7 @@ activateHeader('{{page.navigationdiv}}');
     <!--Query to GET associated leaders with the Groupnames-->
     {% capture query %} SELECT ?group ?description ?leader ?leadername ?leaderimage WHERE{ ?group a aiiso:ResearchGroup . ?group rdfs:label ?description .  optional { ?group dbo:leader ?leader }. optional { ?leader foaf:name ?leadername }. optional { ?leader  foaf:depiction ?leaderimage }. } {% endcapture %} {% assign groupsWithdbo = page.rdf | sparql_query: query %}
     <header class="post-header">
-      <h2 class="post-title">Specialized Groups Working under SDA</h2>
+     <!-- <h2 class="post-title">Specialized Groups Working under SDA</h2> -->
     </header>
     <br class="horizontal-separator" /> {% for group in groups %} {% assign url= group.group | remove: "http://sda.tech/" %} {% capture imageClass %}{{group.imageclass}}{% endcapture %} {% capture name %}{{group.description}}{% endcapture %} {% capture longdescription %}{{group.longdescription}}{% endcapture %}  {% capture leader %}{{group.leadername}}{% endcapture %} {% assign
     image=imageClass | append:' fa-3x' %}
@@ -100,7 +100,7 @@ activateHeader('{{page.navigationdiv}}');
   <!-- <article class="post backgroundMain "> -->
     <!-- blogAndTweetPosts -->
     <header class="post-header">
-     <h2 class="post-title">Keep Connected with Our Posts</h2>
+     <!-- <h2 class="post-title">Keep Connected with Our Posts</h2> -->
    </header>
    <br class="horizontal-separator" />
    <div class="blogAndTweet" style="max-height: 1000px;">
