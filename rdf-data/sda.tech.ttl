@@ -77,7 +77,7 @@ sdaperson:JensLehmann a foaf:Person, sdatech:professor ;
                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
                   cv:aboutPerson "Prof. Dr. Jens Lehmann (<a href='http://jens-lehmann.org/'>http://www.jens-lehmann.org</a>) is a full professor at the University of Bonn and Fraunhofer IAIS. He is leading the SDA group with 50 researchers. He obtained a PhD with grade summa cum laude at the University of Leipzig in 2010 including research stays at the University of Oxford and a master degree in Computer Science from Technical University of Dresden in 2006. His research interests involve Semantic Web and Artificial Intelligence. He is founder, leader or contributor of several open source projects, including SANSA, AskNow, DL-Learner, DBpedia, LinkedGeoData and ORE. He works/worked in several funded projects, e.g. GeoKnow (EU STREP, coordinator), LOD2 (EU IP, work package lead), LATC (EU STREP, lead for University of Leipzig) and SoftWiki (BmBF). Prof. Dr. Jens Lehmann authored more than 100 articles in international journals and conferences cited more than 11000 times according to Google Scholar." ;
                   sda:publication sdapublication:Publication1 ;
-                  sda:group sdagroup:SemanticQuestionAnswering, sdagroup:DistributedSemanticAnalytics, sdagroup:SmartServices, sdagroup:KnowledgeGraph, sdagroup:SemanticDataManagement, sdagroup:SoftwareEngineeringForDataScience,sdagroup:StructuredMachineLearning ;
+                  sda:group sdagroup:SemanticQuestionAnswering, sdagroup:DistributedSemanticAnalytics, sdagroup:KnowledgeGraph, sdagroup:SemanticDataManagement, sdagroup:SoftwareEngineeringForDataScience,sdagroup:StructuredMachineLearning ;
                   foaf:currentProject sdaproject:BigDataEurope, sdaproject:Boost40, sdaproject:SANSAStack, sdaproject:DLLearner, sdaproject:AskNow, sdaproject:SMLBench, sdaproject:SLIPO, sdaproject:QROWD, sdaproject:HOBBIT, sdaproject:WDAqua, sdaproject:GEISER, sdaproject:BigDataOcean, ex:DeFacto, sdaproject:MEX, sdaproject:MLDSLs, sdaproject:CogRob, sdaproject:EACCP, sdaproject:SAML .
 
 ##############################Senior Researchers#########################
@@ -133,25 +133,8 @@ sdaperson:MariaMaleshkova a foaf:Person, sdatech:seniorResearcher ;
                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
                   cv:aboutPerson "Dr. Maria Maleshkova is an Assistant Professor at the Computer Science Department III of the University of Bonn. Before, she was a postdoctoral researcher at the Karlsruhe Service Research Institute (KSRI) and the Institute of Applied Informatics and Formal Description Methods (AIFB) at the Karlsruhe Institute of Technology. Her research work covers the Web of Things (WoT) and semantics-based data integration topics as well as work in the area of the semantic description of Web APIs, RESTful services and their joint use with Linked Data. Prior to that, she was a Research Associate and a PhD student at the Knowledge Media Institute (KMi) at the Open University, where she worked on projects in the domain of SOA and Web Services." ;
                   #sda:publication sdapublication:Publication1 ;
-                  sda:group sdagroup:SmartServices ;
+                  sda:group sdagroup:SemanticQuestionAnswering ;
                   foaf:currentProject sdaproject:Boost40 .
-
-sdaperson:AlexanderKister a foaf:Person, sdatech:seniorResearcher ;
-                  sda:publicationTag "kister" ;
-                  ex:address sda:Roomc1227-1 ;
-                  foaf:firstName "Alexander" ;
-                  foaf:familyName "Kister" ;
-                  foaf:name "Dr. Alexander Kister" ;
-                  foaf:mbox <mailto:Alexander.Kister@iais.fraunhofer.de> ;
-                  foaf:depiction </assets/images/people/alexander-kister.jpg> ;
-                  foaf:phone <Tel:+49-341-123456789> ;
-                  foaf:title "Dr. " ;
-                  foaf:status "Senior Researcher" ;
-                  ov:businessCard <http://aksw.org/vCard/Bonn> ;
-                  cv:aboutPerson "Dr. Alexander Kister is a Senior Researcher at the Fraunhofer IAIS." ;
-                  #sda:publication sdapublication:Publication1 ;
-                  sda:group sdagroup:SmartServices ;
-                  foaf:currentProject sdaproject:SLIPO, sdaproject:GEISER .
 
 sdaperson:HamedShariatYazdi a foaf:Person, sdatech:seniorResearcher ;
                   sda:publicationTag "yazdi" ;
@@ -257,7 +240,7 @@ sdaperson:SimonScerri a foaf:Person, sdatech:seniorResearcher ;
                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
                   cv:aboutPerson "Dr. Simon Scerri is a Senior Researcher at the University of Bonn." ;
                   #sda:publication sdapublication:Publication1 ;
-                  sda:group sdagroup:SmartServices ;
+                  sda:group sdagroup:SemanticDataManagement ;
                   foaf:currentProject sdaproject:BigDataEurope, sdaproject:Boost40, sdaproject:EDSA .
 
 sdaperson:SaharVahdati a foaf:Person, sdatech:seniorResearcher ;
@@ -343,7 +326,6 @@ sdaperson:MohnishDubey a foaf:Person, sdatech:phdStudent ;
 
 sdaperson:HarshThakkar a foaf:Person, sdatech:phdStudent ;
                    rdfs:seeAlso <http://harshthakkar.in/> ;
-                   owl:sameAs <http://aksw.org/HarshThakkar> ;
                    sda:publicationTag "thakkar" ;
                    ex:address sda:Room68 ;
                    foaf:familyName "Thakkar" ;
@@ -396,10 +378,9 @@ sdaperson:FathoniMusyaffa a foaf:Person, sdatech:phdStudent ;
                    foaf:title "" ;
                    foaf:status "PhD Student" ;
                    sda:profilepage <https://www.linkedin.com/in/fathoni/>, <https://twitter.com/fathoni_am>, <https://github.com/fathoni>;
-                   sda:group sdagroup:SmartServices ;
+                   sda:group sdagroup:SemanticDataManagement, sdagroup:DistributedSemanticAnalytics ;
                    cv:aboutPerson "Fathoni Musyaffa is a PhD Student & Research Associate at the University of Bonn. Fathoni's research interest are in the area of Semantic Web, Linked and Open Data especially in the domain of budget and spending from public administrations. He is also interested in the area of data interlinking and natural language processing." ;
                    #sda:publication sdapublication:Publication1 ;
-                   sda:group sdagroup:DistributedSemanticAnalytics ;
                    foaf:currentProject sdaproject:OpenBudgetseu.
 
 sdaperson:MousaviNajmeh a foaf:Person, sdatech:phdStudent ;
@@ -954,7 +935,7 @@ sdaperson:SebastianBader a foaf:Person, sdatech:associateReseracher ;
                    sda:profilepage <https://www.linkedin.com/in/sebastianrbader/>, <https://github.com/sebbader>, <http://dblp.org/pers/hd/b/Bader:Sebastian_R=>;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    foaf:currentProject sdaproject:Boost40 ;
-                   sda:group sdagroup:SmartServices ;
+                   sda:group sdagroup:SemanticDataManagement ;
                    cv:aboutPerson "Sebastian Bader is a PhD Student & Research Associate at the University of Bonn and Fraunhofer IAIS. His research targets interoperability platforms powered by Semantic Web Technologies, Smart Services and the digital transformation of manufacturing facilities towards IoT-based systems." .
 
 sdaperson:RostislavNedelchev a foaf:Person, sdatech:associateReseracher ;
@@ -1352,7 +1333,7 @@ sdaperson:LavdimHalilaj a foaf:Person, sdatech:formerMember ;
                    sda:profilepage <https://www.linkedin.com/in/lavdim-halilaj-843b1522>;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    cv:aboutPerson "Dr. Lavdim Halilaj is a Senior Researcher at the Fraunhofer IAIS." ;
-                   sda:group sdagroup:SemanticDataManagement ;
+#                   sda:group sdagroup:SemanticDataManagement ;
                    foaf:currentProject sdaproject:LUCID .
 
 sdaperson:IrlanGrangelGonzales a foaf:Person, sdatech:formerMember ;
@@ -1368,7 +1349,7 @@ sdaperson:IrlanGrangelGonzales a foaf:Person, sdatech:formerMember ;
                    foaf:status "Senior Researcher" ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    cv:aboutPerson "Dr. Irlan Grangel-Gonzales is a Senior Researcher at the Fraunhofer IAIS." ;
-                   sda:group sdagroup:SemanticDataManagement ;
+#                   sda:group sdagroup:SemanticDataManagement ;
                    foaf:currentProject sdaproject:Boost40, sdaproject:LUCID .
 
 
@@ -1432,6 +1413,23 @@ sdaperson:GuillermoBetancourt a foaf:Person, sdatech:formerMember ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    cv:aboutPerson "Guillermo Betancourt is a Student Assistant at the Computer Science Department III of the University of Bonn." .
 
+sdaperson:AlexanderKister a foaf:Person, sdatech:formerMember ;
+                  sda:publicationTag "kister" ;
+                  ex:address sda:Roomc1227-1 ;
+                  foaf:firstName "Alexander" ;
+                  foaf:familyName "Kister" ;
+                  foaf:name "Dr. Alexander Kister" ;
+                  foaf:mbox <mailto:Alexander.Kister@iais.fraunhofer.de> ;
+                  foaf:depiction </assets/images/people/alexander-kister.jpg> ;
+                  foaf:phone <Tel:+49-341-123456789> ;
+                  foaf:title "Dr. " ;
+                  foaf:status "Senior Researcher" ;
+                  ov:businessCard <http://aksw.org/vCard/Bonn> ;
+                  cv:aboutPerson "Dr. Alexander Kister is a Senior Researcher at the Fraunhofer IAIS." ;
+                  #sda:publication sdapublication:Publication1 ;
+#                 sda:group sdagroup:SmartServices ;
+                  foaf:currentProject sdaproject:SLIPO, sdaproject:GEISER .
+
 
 #######################################
 ##########Group Model##################
@@ -1493,7 +1491,7 @@ sdagroup:SemanticDataManagement a aiiso:ResearchGroup, sdatech:Group ;
 ##Semantic Question Answering
 sdagroup:SemanticQuestionAnswering a aiiso:ResearchGroup, sdatech:Group ;
                                 rdfs:label "Semantic Question Answering" ;
-                                dbo:leader sdaperson:GiulioNapolitano, sdaperson:IoannaLytra ;
+                                dbo:leader sdaperson:GiulioNapolitano, sdaperson:IoannaLytra, sdaperson:MariaMaleshkova ;
                                 foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
                                 foaf:currentProject sdaproject:AskNow, sdaproject:WDAqua ;
                                 dct:description "The use of Semantic Web technologies led to an increasing number of structured data published on the Web. Despite the advances in question answering systems retrieving the desired information from structured sources is still a substantial challenge." ;
@@ -1545,16 +1543,16 @@ sdagroup:StructuredMachineLearning a aiiso:ResearchGroup, sdatech:Group ;
 
 
 ##Smart Services
-sdagroup:SmartServices a aiiso:ResearchGroup, sdatech:Group ;
-                                rdfs:label "Smart Services" ;
-                                dbo:leader sdaperson:MariaMaleshkova, sdaperson:SimonScerri  ;
-                                foaf:currentProject sdaproject:SLIPO, sdaproject:BigDataEurope, sdaproject:Boost40 ;
-                                dct:description "Semantic services and their composition, applications in IoT." ;
-                                dct:abstract "Semantic services and their composition, applications in IoT." ;
-                                sda:publication sdapublication:Publication1 ;
-                                sda:imageclass "fa fa-podcast" ;
-                                sda:miniIcon "fa fa-podcast margin-icon" ;
-                                sda:shortcut "sms" .
+#sdagroup:SmartServices a aiiso:ResearchGroup, sdatech:Group ;
+#                                rdfs:label "Smart Services" ;
+#                                dbo:leader sdaperson:MariaMaleshkova, sdaperson:SimonScerri  ;
+#                                foaf:currentProject sdaproject:SLIPO, sdaproject:BigDataEurope, sdaproject:Boost40 ;
+#                                dct:description "Semantic services and their composition, applications in IoT." ;
+#                                dct:abstract "Semantic services and their composition, applications in IoT." ;
+#                                sda:publication sdapublication:Publication1 ;
+#                                sda:imageclass "fa fa-podcast" ;
+#                                sda:miniIcon "fa fa-podcast margin-icon" ;
+#                                sda:shortcut "sms" .
 
 
 #########################################################
