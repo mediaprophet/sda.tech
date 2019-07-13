@@ -970,7 +970,27 @@ sdaperson:MichaelGalkin a foaf:Person, sdatech:associateReseracher ;
                    sda:profilepage <https://www.linkedin.com/in/michael-galkin-80b71294/> ;
                    ov:businessCard <http://aksw.org/vCard/Bonn> ;
                    cv:aboutPerson "Dr. Michael Galkin is a Researcher at the Fraunhofer IAIS." ;
+                   sda:group sdagroup:SemanticQuestionAnswering ;
                    foaf:currentProject sdaproject:LinDA.
+
+sdaperson:RicardoUsbeck a foaf:Person, sdatech:associateReseracher ;
+                   sda:publicationTag "usbeck" ;
+                   rdfs:seeAlso <http://aksw.org/RicardoUsbeck> ;
+                   owl:sameAs <http://aksw.org/RicardoUsbeck> ;
+                   foaf:familyName "Usbeck" ;
+                   foaf:name "Dr. Ricardo Usbeck" ;
+                   foaf:nick "Ricardo" ;
+                   foaf:mbox <mailto:ricardo.usbeck@iais.fraunhofer.de> ;
+                   foaf:depiction <https://scholar.google.de/citations?view_op=view_photo&user=3YZb0hUAAAAJ&citpid=3> ;
+                   foaf:phone <Tel:+49-341-229037-99> ;
+                   foaf:firstName "Ricardo" ;
+                   foaf:title "Dr. " ;
+                   foaf:status "Lead Research Engineer" ;
+                   sda:profilepage <https://github.com/RicardoUsbeck> ;
+                   ov:businessCard <http://aksw.org/vCard/Bonn> ;
+                   cv:aboutPerson "Dr. Ricardo Usbeck is a Lead Research Engineer at the Fraunhofer IAIS." ;
+                   sda:group sdagroup:SemanticQuestionAnswering ;
+                   foaf:currentProject sdaproject:AskNow.
 
 ##############################Student Assistants#########################
 
@@ -1491,7 +1511,7 @@ sdagroup:SemanticDataManagement a aiiso:ResearchGroup, sdatech:Group ;
 ##Semantic Question Answering
 sdagroup:SemanticQuestionAnswering a aiiso:ResearchGroup, sdatech:Group ;
                                 rdfs:label "Semantic Question Answering" ;
-                                dbo:leader sdaperson:GiulioNapolitano, sdaperson:IoannaLytra, sdaperson:MariaMaleshkova ;
+                                dbo:leader sdaperson:GiulioNapolitano, sdaperson:RicardoUsbeck, sdaperson:MariaMaleshkova ;
                                 foaf:depiction <https://images.freecreatives.com/wp-content/uploads/2016/02/Download-Optopus-Logo-For-Free.jpeg> ;
                                 foaf:currentProject sdaproject:AskNow, sdaproject:WDAqua ;
                                 dct:description "The use of Semantic Web technologies led to an increasing number of structured data published on the Web. Despite the advances in question answering systems retrieving the desired information from structured sources is still a substantial challenge." ;
@@ -19962,11 +19982,6 @@ sdaperson:JohannaVolker  a  foaf:person ;
         foaf:familyName "Volker"  ;
         foaf:firstName "Johanna"  .
 
-sdaperson:RicardoUsbeck  a  foaf:person ;
-        foaf:name "Ricardo Usbeck"  ;
-        foaf:familyName "Usbeck"  ;
-        foaf:firstName "Ricardo"  .
-
 sdaperson:MuhammadSaleem  a  foaf:person ;
         foaf:name "Muhammad Saleem"  ;
         foaf:familyName "Saleem"  ;
@@ -25791,6 +25806,9 @@ sdablog:generalposts a foaf:Document ;
                                                           ex:buttonLabel "Linkedin" .
 
 <https://github.com/DeepInEvil> a schema:ProfilePage ;
+                                ex:buttonLabel "GitHub" .
+
+<https://github.com/RicardoUsbeck> a schema:ProfilePage ;
                                 ex:buttonLabel "GitHub" .
 
 <www.linkedin.com/in/najmeh-mousavi> a schema:ProfilePage ;
