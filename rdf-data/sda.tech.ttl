@@ -24331,6 +24331,31 @@ sdajob:studentassistant a foaf:Document ;
 
 ###################Paper Notifications#############
 
+sdablog:workshop-paper-accepted-at-amw-2019 a sioc:Post, sdatech:Blog, sdablog:papernotifications;
+    dct:title "Workshop paper accepted at AMW 2019" ;
+    sioc:topic "Workshop paper accepted at AMW 2019" ;
+    dct:creator sdaperson:GezimSejdiu ;
+    foaf:maker sdaperson:GezimSejdiu ;
+    sioc:has_creator sdaperson:GezimSejdiu ;
+    dct:created "2019-07-15"^^xsd:date ;
+    dct:language "en-US" ;
+    foaf:depiction <http://amw2019.uc.edu.py/themes/amw2019/assets/images/logos/nanduti_logo_small.png> ;
+    sioc:abstract """We are very pleased to announce that our group got a paper accepted for presentation at the <a href='http://amw2019.uc.edu.py/'>AMW 2019 : Alberto Mendelzon Workshop (AMW) on Foundations of Data Management</a>, which was held on June 03 - 07, 2019, Asuncion, Paraguay.  """;
+    sioc:content """We are very pleased to announce that our group got a paper accepted for presentation at the <a href='http://amw2019.uc.edu.py/'>AMW 2019 : Alberto Mendelzon Workshop (AMW) on Foundations of Data Management</a>, which was held on June 03 - 07, 2019, Asuncion, Paraguay.
+</br></br>
+Since 2006, the Alberto Mendelzon International Workshop on Foundation of Databases and the Web (AMW) brings together top researchers from all over the world, creating the opportunity to discuss and spread research results.
+</br></br>
+</br> </br>
+Here is the pre-print of the accepted paper with its abstract: 
+<ul>
+	<li ><a href='http://harshthakkar.in/wp-content/uploads/2019/05/RDF_and_Property_Graphs_Interoperability__Status_and_Issues_preprint.pdf'><b>"RDF and Property Graphs Interoperability: Status and Issues"</b></a> by Renzo Angles, <a href='/Person/HarshThakkar/'>Harsh Thakkar</a>, and Dominik Tomaszuk.</li>
+</ul>
+<blockquote><strong>Abstract</strong>: <i>RDF and Property Graph databases are two approaches for data management that are based on modeling, storing and querying graph-like data. In this paper, we present a short study about the interoperability between these approaches. We review the current solutions to the problem, identify their features, and discuss the inherent issues.</i></blockquote>
+</br></br>
+<b>Acknowledgment</b>
+</br></br>
+This work was partially funded by the EU H2020 R&I project <a href='/Project/Boost40/'>BOOST4.0</a> (GA 780732).""" .
+
 sdablog:paper-accepted-at-iswc-2019 a sioc:Post, sdatech:Blog, sdablog:papernotifications;
     dct:title "Papers accepted at ISWC 2019" ;
     sioc:topic "Papers accepted at ISWC 2019" ;
