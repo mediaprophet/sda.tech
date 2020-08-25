@@ -23,7 +23,7 @@ group :jekyll_plugins do
    #gem "jekyll-rdf", ">= 3.0.1.a"
    gem "jekyll-rdf", "~> 2.3.0"
    #gem "jekyll-rdf", :path => "../jekyll-rdf"
-   gem "jekyll-twitter-plugin"
+   # gem "jekyll-twitter-plugin"
    gem "jekyll-email-protect"
    gem 'jekyll-redirect-from'
    #gem 'jekyll-email-protect'

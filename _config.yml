@@ -41,10 +41,10 @@ leipzigDepName: Institute for Applied Computer Science Leipzig
 LeipzigHomePage: http://infai.org/de/Aktuelles
 
  # the subpath of your site, e.g. /blog
-twitter_username: SDA_Research
-github_username: SmartDataAnalytics
+# twitter_username: SDA_Research
+github_username: mediaprophet
 facebook_username: SDAResearch
-linkedin_username: SDA
+linkedin_username: ubiquitous
 
 # BibBase URL
 bibbase: http://bibbase.org/show?bib=https://raw.githubusercontent.com/SmartDataAnalytics/sda.tech/master/sda.bib
